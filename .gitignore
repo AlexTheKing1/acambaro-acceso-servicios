@@ -1,0 +1,9 @@
+# Datos crudos: nunca se suben (se bajan con src/01_descargar.py)
+data/raw/*
+!data/raw/LEEME.md
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.part
+.DS_Store

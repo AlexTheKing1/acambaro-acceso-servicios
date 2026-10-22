@@ -1,0 +1,303 @@
+{
+  "cuadre_poblacion_por_localidad": [
+    {
+      "LOC": "0001",
+      "localidad": "Acámbaro",
+      "iter_pobtot": 56597,
+      "total_localidad_en_tabla_mza": 56597,
+      "suma_agebs": 56597,
+      "suma_manzanas": 56596,
+      "manzanas": 1224,
+      "dif_manzanas_vs_iter": -1
+    },
+    {
+      "LOC": "0017",
+      "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+      "iter_pobtot": 2583,
+      "total_localidad_en_tabla_mza": 2583,
+      "suma_agebs": 2583,
+      "suma_manzanas": 2583,
+      "manzanas": 134,
+      "dif_manzanas_vs_iter": 0
+    },
+    {
+      "LOC": "0027",
+      "localidad": "Irámuco",
+      "iter_pobtot": 6275,
+      "total_localidad_en_tabla_mza": 6275,
+      "suma_agebs": 6275,
+      "suma_manzanas": 6275,
+      "manzanas": 147,
+      "dif_manzanas_vs_iter": 0
+    },
+    {
+      "LOC": "0047",
+      "localidad": "Parácuaro",
+      "iter_pobtot": 4159,
+      "total_localidad_en_tabla_mza": 4159,
+      "suma_agebs": 4159,
+      "suma_manzanas": 4159,
+      "manzanas": 147,
+      "dif_manzanas_vs_iter": 0
+    }
+  ],
+  "cobertura_manzanas": {
+    "pob_municipio_iter": 108697,
+    "pob_localidades_con_datos_por_manzana": 69614,
+    "pct_municipio_con_datos_por_manzana": 64.04,
+    "pob_sin_datos_por_manzana": 39083
+  },
+  "perdida_confidencialidad_2020": [
+    {
+      "variable": "POBTOT",
+      "grupo": "Población total",
+      "total_publicado_agebs": 69614,
+      "suma_visible_manzanas": 69613,
+      "oculta": 1,
+      "pct_oculta": 0.0,
+      "manzanas_con_asterisco": 0
+    },
+    {
+      "variable": "P_3A5",
+      "grupo": "3 a 5 años",
+      "total_publicado_agebs": 3463,
+      "suma_visible_manzanas": 2705,
+      "oculta": 758,
+      "pct_oculta": 21.89,
+      "manzanas_con_asterisco": 729
+    },
+    {
+      "variable": "P_6A11",
+      "grupo": "6 a 11 años",
+      "total_publicado_agebs": 6452,
+      "suma_visible_manzanas": 5856,
+      "oculta": 596,
+      "pct_oculta": 9.24,
+      "manzanas_con_asterisco": 571
+    },
+    {
+      "variable": "P_12A14",
+      "grupo": "12 a 14 años",
+      "total_publicado_agebs": 3377,
+      "suma_visible_manzanas": 2647,
+      "oculta": 730,
+      "pct_oculta": 21.62,
+      "manzanas_con_asterisco": 697
+    },
+    {
+      "variable": "P_15A17",
+      "grupo": "15 a 17 años",
+      "total_publicado_agebs": 3544,
+      "suma_visible_manzanas": 2830,
+      "oculta": 714,
+      "pct_oculta": 20.15,
+      "manzanas_con_asterisco": 701
+    },
+    {
+      "variable": "P_60YMAS",
+      "grupo": "60 años y más",
+      "total_publicado_agebs": 11146,
+      "suma_visible_manzanas": 10629,
+      "oculta": 517,
+      "pct_oculta": 4.64,
+      "manzanas_con_asterisco": 487
+    },
+    {
+      "variable": "PCON_DISC",
+      "grupo": "Con discapacidad",
+      "total_publicado_agebs": 4329,
+      "suma_visible_manzanas": 3690,
+      "oculta": 639,
+      "pct_oculta": 14.76,
+      "manzanas_con_asterisco": 636
+    }
+  ],
+  "manzanas_menos_de_3_viviendas_habitadas": {
+    "manzanas": 51,
+    "poblacion": 0
+  },
+  "union_censo_mg2020": {
+    "manzanas_tabla_censal": 1652,
+    "manzanas_mg2020_municipio": 3505,
+    "manzanas_mg2020_urbanas": 1620,
+    "unidas": 1620,
+    "tabla_sin_geometria": 32,
+    "pob_tabla_sin_geometria": 464,
+    "mg2020_urbanas_sin_dato_censal": 0,
+    "pob_unida": 69149,
+    "caserio_disperso_unido_a_puntos": 32,
+    "pob_caserio_disperso": 464,
+    "tabla_sin_ninguna_geometria": 0
+  },
+  "localidades_iter2020": {
+    "localidades": 212,
+    "suma_pobtot": 108697,
+    "total_municipal_iter": 108697,
+    "dif_suma_vs_total": 0,
+    "filas_9998_9999": [
+      {
+        "LOC": "9998",
+        "NOM_LOC": "Localidades de una vivienda",
+        "POBTOT": "141"
+      },
+      {
+        "LOC": "9999",
+        "NOM_LOC": "Localidades de dos viviendas",
+        "POBTOT": "137"
+      }
+    ],
+    "sin_coordenadas": 0,
+    "por_tipo_mg2020": {
+      "puntual": 108,
+      "amanzanada": 104
+    },
+    "pob_por_tipo_mg2020": {
+      "amanzanada": 107590,
+      "puntual": 1107
+    },
+    "por_tamano": {
+      "0": 0,
+      "1-49": 116,
+      "50-249": 42,
+      "250-499": 22,
+      "500-999": 21,
+      "1000-2499": 7,
+      "2500+": 4
+    }
+  },
+  "mg2010_manzanas_sin_clave": 0,
+  "alineacion_2010_2020": {
+    "Urbana": {
+      "pares_misma_clave": 1306,
+      "mediana_distancia_centroides_m": 0.0,
+      "p95_distancia_m": 34.3
+    },
+    "Rural": {
+      "pares_misma_clave": 1514,
+      "mediana_distancia_centroides_m": 0.0,
+      "p95_distancia_m": 45.9
+    }
+  },
+  "manzanas_nuevas_2020_a_eic2025": {
+    "manzanas_edicion_nueva": 3522,
+    "clave_nueva": 38,
+    "geometria_nueva": 17,
+    "clave_y_geometria_nuevas": 8,
+    "clave_nueva_pero_ya_existia_el_suelo": 30,
+    "area_nueva_ha": 12.8,
+    "geometria_nueva_en_localidad_ya_cartografiada": 17,
+    "geometria_nueva_en_localidad_sin_cartografia_previa": 0,
+    "area_nueva_ha_localidad_ya_cartografiada": 12.8,
+    "geometria_nueva_por_localidad": {
+      "0001": 4,
+      "0087": 3,
+      "0481": 3,
+      "0017": 1,
+      "0027": 1,
+      "0005": 1,
+      "0071": 1,
+      "0043": 1,
+      "0378": 1,
+      "0072": 1
+    },
+    "etiqueta": "MG EIC 2025 vs MG 2020"
+  },
+  "manzanas_nuevas_2010_a_2020": {
+    "manzanas_edicion_nueva": 3505,
+    "clave_nueva": 685,
+    "geometria_nueva": 323,
+    "clave_y_geometria_nuevas": 286,
+    "clave_nueva_pero_ya_existia_el_suelo": 399,
+    "area_nueva_ha": 247.8,
+    "geometria_nueva_en_localidad_ya_cartografiada": 174,
+    "geometria_nueva_en_localidad_sin_cartografia_previa": 149,
+    "area_nueva_ha_localidad_ya_cartografiada": 120.6,
+    "geometria_nueva_por_localidad": {
+      "0001": 30,
+      "0378": 13,
+      "0047": 12,
+      "0106": 10,
+      "0093": 10,
+      "0371": 10,
+      "0422": 9,
+      "0035": 9,
+      "0006": 8,
+      "0030": 8,
+      "0179": 8,
+      "0159": 7,
+      "0231": 7,
+      "0078": 6,
+      "0017": 6,
+      "0315": 6,
+      "0132": 6,
+      "0442": 5,
+      "0004": 5,
+      "0061": 5,
+      "0290": 5,
+      "0392": 5,
+      "0027": 5,
+      "0462": 5,
+      "0481": 5,
+      "0434": 4,
+      "0058": 4,
+      "0010": 4,
+      "0022": 4,
+      "0039": 4,
+      "0037": 4,
+      "0054": 4,
+      "0081": 4,
+      "0254": 4,
+      "0268": 4,
+      "0390": 4,
+      "0019": 4,
+      "0089": 3,
+      "0063": 3,
+      "0005": 3,
+      "0018": 3,
+      "0126": 3,
+      "0044": 3,
+      "0050": 3,
+      "0080": 3,
+      "0079": 3,
+      "0083": 3,
+      "0073": 3,
+      "0320": 3,
+      "0028": 2,
+      "0015": 2,
+      "0029": 2,
+      "0110": 2,
+      "0041": 2,
+      "0055": 2,
+      "0075": 2,
+      "0056": 2,
+      "0012": 1,
+      "0067": 1,
+      "0016": 1,
+      "0032": 1,
+      "0038": 1,
+      "0062": 1,
+      "0085": 1,
+      "0043": 1,
+      "0057": 1,
+      "0087": 1,
+      "0092": 1,
+      "0052": 1,
+      "0077": 1,
+      "0070": 1,
+      "0076": 1,
+      "0064": 1,
+      "0036": 1,
+      "0042": 1
+    },
+    "etiqueta": "MG 2020 vs cierre Censo 2010"
+  },
+  "manzanas_2020_que_ya_no_estan_en_eic2025": 21,
+  "eic2025_municipio": {
+    "Valor": "108140",
+    "Error estándar": "4550.55",
+    "Límite inferior de confianza": "100644.09",
+    "Límite superior de confianza": "115635.91",
+    "Coeficiente de variación": "4.21"
+  },
+  "eic2025_vs_censo2020": -0.51
+}
