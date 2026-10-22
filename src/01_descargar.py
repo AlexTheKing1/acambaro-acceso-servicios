@@ -63,6 +63,8 @@ FUENTES = {
     ],
     "mg_eic2025": [
         (f"{MG}/marcogeo/794551196649/11_guanajuato.zip", "11_guanajuato.zip"),
+        # Michoacán: solo para escuelas y centros de salud a <= 10 km del límite (fase 2).
+        (f"{MG}/marcogeo/794551196649/16_michoacandeocampo.zip", "16_michoacandeocampo.zip"),
     ],
     "eic2025": [
         (f"{INEGI}/programas/eic/2025/datosabiertos/conjunto_de_datos_eic2025_105_csv.zip",

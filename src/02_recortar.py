@@ -9,12 +9,14 @@ data/processed/ solo la parte de Acámbaro:
   iter2020_acambaro.csv, iter2010_acambaro.csv
   eic2025_acambaro.csv                       filas de Acámbaro en la EIC 2025
   denue_acambaro_buffer10km.csv              DENUE (Gto., Mich., Qro.) en el municipio + 10 km
+  mg_eic2025_servicios_buffer10km.gpkg       servicios del MG EIC 2025 (Gto. y Mich.) en el municipio + 10 km
   ghsl/ghsl_built_s_{año}_acambaro.tif       GHS-BUILT-S 1975–2020 (observado)
 
 Las tablas censales se guardan tal cual (texto), incluidos los asteriscos de
 confidencialidad; la conversión a números ocurre en 03_base_geografica.py.
 """
 
+import argparse
 import zipfile
 from pathlib import Path
 
@@ -148,6 +150,26 @@ def recortar_denue(municipio):
           f"por entidad: {dentro.cve_ent.value_counts().to_dict()}")
 
 
+def recortar_servicios_mg(municipio):
+    """Puntos y áreas de servicios (escuelas, salud, mercados...) del MG EIC 2025
+    en el municipio y la franja de 10 km, de Guanajuato y Michoacán."""
+    zona = municipio.buffer(BUFFER_DENUE_M).union_all()
+    salida = OUT / "mg_eic2025_servicios_buffer10km.gpkg"
+    salida.unlink(missing_ok=True)
+    for corto, capa in [("sip", "puntos"), ("sia", "areas")]:
+        partes = []
+        for zip_ in sorted((RAW / "mg_eic2025").glob("*.zip")):
+            ent = zip_.name[:2]
+            g = gpd.read_file(f"/vsizip/{zip_}/conjunto_de_datos/{ent}{corto}.shp", bbox=zona.bounds)
+            partes.append(g.to_crs(municipio.crs))
+        g = gpd.GeoDataFrame(pd.concat(partes, ignore_index=True), crs=municipio.crs)
+        g = g[g.intersects(zona)].copy()
+        g["en_acambaro"] = (g.CVE_ENT == CVE_ENT) & (g.CVE_MUN == CVE_MUN)
+        g.to_file(salida, layer=capa, driver="GPKG")
+        print(f"  servicios MG {capa}: {len(g)} ({int(g.en_acambaro.sum())} en Acámbaro); "
+              f"por entidad: {g.CVE_ENT.value_counts().to_dict()}")
+
+
 def recortar_ghsl(municipio):
     (OUT / "ghsl").mkdir(exist_ok=True)
     for zip_ in sorted((RAW / "ghsl_built_s").glob("*.zip")):
@@ -163,15 +185,29 @@ def recortar_ghsl(municipio):
     print("  GHSL recortado")
 
 
+PASOS = ["mg", "mg2010", "tablas", "denue", "servicios_mg", "ghsl"]
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--solo", nargs="+", choices=PASOS, default=PASOS,
+                    help="correr solo estos pasos (por omisión, todos)")
+    pasos = ap.parse_args().solo
     OUT.mkdir(parents=True, exist_ok=True)
-    for edicion in ["mg2020", "mg2025", "mg_eic2025"]:
-        recortar_mg(edicion)
-    recortar_mg2010()
-    recortar_tablas()
+    if "mg" in pasos:
+        for edicion in ["mg2020", "mg2025", "mg_eic2025"]:
+            recortar_mg(edicion)
+    if "mg2010" in pasos:
+        recortar_mg2010()
+    if "tablas" in pasos:
+        recortar_tablas()
     municipio = gpd.read_file(OUT / "mg_eic2025_acambaro.gpkg", layer="municipio")
-    recortar_denue(municipio)
-    recortar_ghsl(municipio)
+    if "denue" in pasos:
+        recortar_denue(municipio)
+    if "servicios_mg" in pasos:
+        recortar_servicios_mg(municipio)
+    if "ghsl" in pasos:
+        recortar_ghsl(municipio)
 
 
 if __name__ == "__main__":

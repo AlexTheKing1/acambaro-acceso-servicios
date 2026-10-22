@@ -59,3 +59,54 @@ La persona faltante está en la AGEB 0111 de Acámbaro: el total publicado de la
 **V10 · GHSL, superficie construida observada en el municipio.** 1 107 ha (2010) → 1 358 ha (2020): **+23 %**, mientras la población bajó 0.3 %. Serie completa en `docs/inventario.md`.
 
 **V11 · DENUE.** Corte 05_2026. 5 974 establecimientos en Acámbaro; 16 142 en la franja de 10 km (12 018 de Guanajuato, 4 124 de Michoacán, 0 de Querétaro).
+
+## Fase 2 — Catálogo de servicios (2026-10-22)
+
+Cifras generadas por `src/06_catalogo_servicios.py` en `data/processed/validacion_fase2.json`.
+
+**V12 · Fuentes disponibles.** El release `datos-crudos` sigue vacío (404): **no hay CLUES ni catálogo SEP**. El catálogo se armó con el MG EIC 2025 (Guanajuato y Michoacán) y el DENUE 05/2026 (D14). Recorte de servicios del MG a la franja de 10 km: 1 897 puntos (621 en Acámbaro, igual que el recorte municipal de la fase 1) y 829 áreas (226 en Acámbaro).
+
+**V13 · El DENUE registra pocas escuelas públicas y centros de salud.** Registros dentro de Acámbaro:
+
+| Tipo | MG EIC 2025 | DENUE | Registros del DENUE con un registro del MG a ≤ 150 m | Registros del MG con uno del DENUE a ≤ 150 m |
+|---|---:|---:|---:|---:|
+| Preescolar | 90 | 29 | 27 | 25 |
+| Primaria | 115 | 34 | 34 | 27 |
+| Secundaria | 34 | 9 | 9 | 8 |
+| Bachillerato | 6 | 10 | 4 | 4 |
+| Salud de primer nivel | 26 | 9 | 6 | 6 |
+
+- Casi todo lo que está en el DENUE también está en el MG (escuelas básicas: 70 de 72), pero el MG tiene unas 3 veces más escuelas. Las que solo están en el MG son sobre todo rurales (mapa `docs/figuras/fase2_servicios.png`): el DENUE casi no registra escuelas ni centros de salud de las localidades rurales.
+- **Bachillerato es al revés**: el MG solo dibuja 6 en el municipio y le faltan, por ejemplo, el CBTIS 147 de Acámbaro y el CBTA 298 de Parácuaro, que sí están en el DENUE. Ninguna de las dos fuentes es completa; se usa la unión.
+- Distancia mediana entre el MG y el DENUE cuando registran el mismo sitio: 23 m (preescolar), 23 m (primaria), 25 m (secundaria), 53 m (bachillerato), 21 m (salud).
+
+**V14 · Sedes (un punto por sitio, D16).** Dentro de Acámbaro / en la franja de 10 km:
+
+| Tipo | Acámbaro | Franja 10 km | Solo MG | Solo DENUE | Ambas | Sector conocido (Acámbaro) |
+|---|---:|---:|---:|---:|---:|---|
+| Preescolar | 92 | 204 | 65 | 2 | 25 | 24 públicas, 3 privadas, 65 sin dato |
+| Primaria | 112 | 208 | 88 | 0 | 24 | 22 públicas, 2 privadas, 88 sin dato |
+| Secundaria | 34 | 85 | 26 | 0 | 8 | 8 públicas, 26 sin dato |
+| Bachillerato | 12 | 23 | 2 | 6 | 4 | 7 públicos, 3 privados, 2 sin dato |
+| Salud de primer nivel | 29 | 67 | 20 | 3 | 6 | 9 públicas, 20 sin dato |
+| Abasto | 824 | 1 447 | — | — | — | — |
+
+- Abasto en Acámbaro: 792 abarrotes, 23 minisúper, 3 supermercados y 6 mercados (Miguel Hidalgo con 201 locales, 22 de Octubre, San Antonio y Sóstenes Rocha en la ciudad; los municipales de Parácuaro y Chupícuaro). Los 740 locales del DENUE en mercados públicos (todo el área) se juntaron en 12 mercados; 4 de los 6 de Acámbaro coinciden con un mercado del MG.
+- Franja de 10 km por entidad: Michoacán aporta 89 preescolares, 92 primarias, 39 secundarias, 9 bachilleratos, 38 unidades de salud y 614 comercios de abasto.
+- Excluidos del MG: 1 centro de salud "fuera de uso" y 1 preescolar "en construcción". Áreas del MG: 82, ninguna duplicada de un punto (son escuelas o centros de salud dibujados solo como polígono).
+- **"Sin dato" de sector**: el MG no dice si es pública o privada. Solo la SEP y la CLUES lo resuelven.
+
+**V15 · Reclasificación por nombre (D17).** 4 registros del DENUE pasaron a salud de primer nivel: UMAPS Loma Dorada y Unidad de Medicina Familiar del ISSSTE (Acámbaro, ambos codificados como hospital general 622112), "Centro de Salud" (Acámbaro, 621399) y Unidad Médica Rural IMSS-Bienestar (Mariano Escobedo, Cuitzeo, 622112). Los dos de Acámbaro coinciden con un centro de salud del MG a ≤ 150 m.
+
+**V16 · Casos dudosos detectados (quedan en la muestra para revisar).**
+- UMAPS Irámuco: el DENUE y el MG lo ubican a **291 m** de distancia; quedaron como dos sedes. Puede ser el mismo edificio mal ubicado en una de las dos fuentes.
+- "Centro Médico la Soledad" (MG, centro de salud) por el nombre parece privado.
+- "Preparatoria abierta" (DENUE, bachillerato público) es una modalidad no escolarizada: no es una escuela a la que se asista a diario (pregunta para Alejandro).
+- "Consultorio médico civil" (DENUE, consultorio público en Acámbaro): no se sabe qué institución es.
+- Hospitales en Acámbaro (no se miden): IMSS, Hospital Municipal, Centro Médico Guadalupano y dos privados del DENUE. No se sabe si el IMSS tiene ahí también consulta familiar: lo dirá la CLUES.
+
+**V17 · Listas de verificación (D13, D19).**
+- `docs/verificar_zonas_nuevas.csv`: **163 zonas**. 2010–2020: 150 zonas (323 cuadras, 247.7 ha); de ellas 114 zonas (174 cuadras, 120.5 ha) en localidades que ya estaban cartografiadas en 2010 y 36 zonas (149 cuadras, 127.2 ha) en localidades sin cartografía en 2010. Posterior a 2020: 13 zonas (17 cuadras, 12.8 ha). Las zonas 2010–2020 de las localidades urbanas tenían 356 habitantes en 2020 (254 en la ciudad de Acámbaro); las rurales no tienen dato por cuadra.
+- Una zona posterior a 2020 está en "Los Caballos [Fraccionamiento]" (0481), localidad dibujada en el MG 2020 pero **sin fila en el ITER 2020** (sin población censada); otra (San José de la Peña) mide 0.01 ha: probablemente un ajuste de dibujo.
+- `docs/verificar_servicios_muestra.csv`: **134 sedes** en 36 estratos (todas las de salud de primer nivel y bachillerato del municipio y los 12 mercados).
+- Los enlaces satelitales siguen el formato pedido (`https://www.google.com/maps/@LAT,LON,300m/data=!3m1!1e3`); los de Street View, el formato oficial `map_action=pano`. No se abrieron desde aquí (no hay navegador con Google Maps en el entorno): se comprobó solo que las coordenadas caen dentro del municipio o la franja.

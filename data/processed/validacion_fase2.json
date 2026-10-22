@@ -1,0 +1,355 @@
+{
+ "excluidos_mg": {
+  "fuera_de_uso_o_en_construccion": 2,
+  "areas_duplicadas_de_un_punto": 0,
+  "areas_sin_punto": 82
+ },
+ "excluidos_mg_detalle": [
+  {
+   "tipo": "salud_primer_nivel",
+   "CONDICION": "Fuera de Uso",
+   "capa_mg": "puntos"
+  },
+  {
+   "tipo": "preescolar",
+   "CONDICION": "En Construcción",
+   "capa_mg": "puntos"
+  }
+ ],
+ "locales_denue_en_mercados_publicos": 740,
+ "registros_por_tipo_fuente": {
+  "abasto": {
+   "DENUE Acámbaro": 824,
+   "DENUE franja 10 km": 1450,
+   "MG Acámbaro": 4,
+   "MG franja 10 km": 7
+  },
+  "bachillerato": {
+   "DENUE Acámbaro": 10,
+   "DENUE franja 10 km": 14,
+   "MG Acámbaro": 6,
+   "MG franja 10 km": 17
+  },
+  "consultorio_privado": {
+   "DENUE Acámbaro": 62,
+   "DENUE franja 10 km": 111,
+   "MG Acámbaro": 0,
+   "MG franja 10 km": 0
+  },
+  "escuela_varios_niveles": {
+   "DENUE Acámbaro": 7,
+   "DENUE franja 10 km": 13,
+   "MG Acámbaro": 1,
+   "MG franja 10 km": 3
+  },
+  "hospital": {
+   "DENUE Acámbaro": 5,
+   "DENUE franja 10 km": 12,
+   "MG Acámbaro": 4,
+   "MG franja 10 km": 13
+  },
+  "preescolar": {
+   "DENUE Acámbaro": 29,
+   "DENUE franja 10 km": 47,
+   "MG Acámbaro": 90,
+   "MG franja 10 km": 201
+  },
+  "primaria": {
+   "DENUE Acámbaro": 34,
+   "DENUE franja 10 km": 60,
+   "MG Acámbaro": 115,
+   "MG franja 10 km": 209
+  },
+  "salud_primer_nivel": {
+   "DENUE Acámbaro": 9,
+   "DENUE franja 10 km": 14,
+   "MG Acámbaro": 26,
+   "MG franja 10 km": 62
+  },
+  "secundaria": {
+   "DENUE Acámbaro": 9,
+   "DENUE franja 10 km": 22,
+   "MG Acámbaro": 34,
+   "MG franja 10 km": 82
+  }
+ },
+ "sedes_por_tipo": {
+  "abasto": {
+   "Acámbaro": 824,
+   "franja 10 km": 1447
+  },
+  "bachillerato": {
+   "Acámbaro": 12,
+   "franja 10 km": 23
+  },
+  "consultorio_privado": {
+   "Acámbaro": 44,
+   "franja 10 km": 81
+  },
+  "escuela_varios_niveles": {
+   "Acámbaro": 7,
+   "franja 10 km": 15
+  },
+  "hospital": {
+   "Acámbaro": 6,
+   "franja 10 km": 18
+  },
+  "preescolar": {
+   "Acámbaro": 92,
+   "franja 10 km": 204
+  },
+  "primaria": {
+   "Acámbaro": 112,
+   "franja 10 km": 208
+  },
+  "salud_primer_nivel": {
+   "Acámbaro": 29,
+   "franja 10 km": 67
+  },
+  "secundaria": {
+   "Acámbaro": 34,
+   "franja 10 km": 85
+  }
+ },
+ "sedes_por_tipo_y_fuentes_acambaro": {
+  "abasto": {
+   "DENUE": 820,
+   "MG": 0,
+   "MG+DENUE": 4
+  },
+  "bachillerato": {
+   "DENUE": 6,
+   "MG": 2,
+   "MG+DENUE": 4
+  },
+  "consultorio_privado": {
+   "DENUE": 44,
+   "MG": 0,
+   "MG+DENUE": 0
+  },
+  "escuela_varios_niveles": {
+   "DENUE": 6,
+   "MG": 1,
+   "MG+DENUE": 0
+  },
+  "hospital": {
+   "DENUE": 2,
+   "MG": 2,
+   "MG+DENUE": 2
+  },
+  "preescolar": {
+   "DENUE": 2,
+   "MG": 65,
+   "MG+DENUE": 25
+  },
+  "primaria": {
+   "DENUE": 0,
+   "MG": 88,
+   "MG+DENUE": 24
+  },
+  "salud_primer_nivel": {
+   "DENUE": 3,
+   "MG": 20,
+   "MG+DENUE": 6
+  },
+  "secundaria": {
+   "DENUE": 0,
+   "MG": 26,
+   "MG+DENUE": 8
+  }
+ },
+ "sedes_por_tipo_y_sector_acambaro": {
+  "abasto": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 818,
+   "público": 6
+  },
+  "bachillerato": {
+   "desconocido": 2,
+   "mixto": 0,
+   "privado": 3,
+   "público": 7
+  },
+  "consultorio_privado": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 44,
+   "público": 0
+  },
+  "escuela_varios_niveles": {
+   "desconocido": 1,
+   "mixto": 1,
+   "privado": 4,
+   "público": 1
+  },
+  "hospital": {
+   "desconocido": 2,
+   "mixto": 0,
+   "privado": 3,
+   "público": 1
+  },
+  "preescolar": {
+   "desconocido": 65,
+   "mixto": 0,
+   "privado": 3,
+   "público": 24
+  },
+  "primaria": {
+   "desconocido": 88,
+   "mixto": 0,
+   "privado": 2,
+   "público": 22
+  },
+  "salud_primer_nivel": {
+   "desconocido": 20,
+   "mixto": 0,
+   "privado": 0,
+   "público": 9
+  },
+  "secundaria": {
+   "desconocido": 26,
+   "mixto": 0,
+   "privado": 0,
+   "público": 8
+  }
+ },
+ "sedes_abasto_por_subtipo": {
+  "abarrotes": {
+   "Acámbaro": 792,
+   "franja 10 km": 1411
+  },
+  "mercado": {
+   "Acámbaro": 6,
+   "franja 10 km": 6
+  },
+  "minisúper": {
+   "Acámbaro": 23,
+   "franja 10 km": 25
+  },
+  "supermercado": {
+   "Acámbaro": 3,
+   "franja 10 km": 5
+  }
+ },
+ "sedes_franja_por_entidad": {
+  "abasto": {
+   "Guanajuato": 833,
+   "Michoacán": 614
+  },
+  "bachillerato": {
+   "Guanajuato": 14,
+   "Michoacán": 9
+  },
+  "consultorio_privado": {
+   "Guanajuato": 43,
+   "Michoacán": 38
+  },
+  "escuela_varios_niveles": {
+   "Guanajuato": 9,
+   "Michoacán": 6
+  },
+  "hospital": {
+   "Guanajuato": 14,
+   "Michoacán": 4
+  },
+  "preescolar": {
+   "Guanajuato": 115,
+   "Michoacán": 89
+  },
+  "primaria": {
+   "Guanajuato": 116,
+   "Michoacán": 92
+  },
+  "salud_primer_nivel": {
+   "Guanajuato": 29,
+   "Michoacán": 38
+  },
+  "secundaria": {
+   "Guanajuato": 46,
+   "Michoacán": 39
+  }
+ },
+ "coincidencia_mg_denue_150m": {
+  "preescolar": {
+   "mg": 90,
+   "denue": 29,
+   "mg_con_denue_cerca": 25,
+   "denue_con_mg_cerca": 27,
+   "mediana_m_mg_a_denue_si_coinciden": 22.8
+  },
+  "primaria": {
+   "mg": 115,
+   "denue": 34,
+   "mg_con_denue_cerca": 27,
+   "denue_con_mg_cerca": 34,
+   "mediana_m_mg_a_denue_si_coinciden": 23.1
+  },
+  "secundaria": {
+   "mg": 34,
+   "denue": 9,
+   "mg_con_denue_cerca": 8,
+   "denue_con_mg_cerca": 9,
+   "mediana_m_mg_a_denue_si_coinciden": 24.5
+  },
+  "bachillerato": {
+   "mg": 6,
+   "denue": 10,
+   "mg_con_denue_cerca": 4,
+   "denue_con_mg_cerca": 4,
+   "mediana_m_mg_a_denue_si_coinciden": 52.8
+  },
+  "salud_primer_nivel": {
+   "mg": 26,
+   "denue": 9,
+   "mg_con_denue_cerca": 6,
+   "denue_con_mg_cerca": 6,
+   "mediana_m_mg_a_denue_si_coinciden": 20.5
+  },
+  "hospital": {
+   "mg": 4,
+   "denue": 5,
+   "mg_con_denue_cerca": 2,
+   "denue_con_mg_cerca": 3,
+   "mediana_m_mg_a_denue_si_coinciden": 33.4
+  },
+  "escuela_varios_niveles": {
+   "mg": 1,
+   "denue": 7,
+   "mg_con_denue_cerca": 0,
+   "denue_con_mg_cerca": 0,
+   "mediana_m_mg_a_denue_si_coinciden": null
+  }
+ },
+ "denue_reclasificados_primer_nivel": [
+  {
+   "nombre": "CENTRO DE SALUD",
+   "codigo_act": "621399",
+   "municipio": "Acámbaro",
+   "localidad": "Acámbaro"
+  },
+  {
+   "nombre": "UMAPS LOMA DORADA",
+   "codigo_act": "622112",
+   "municipio": "Acámbaro",
+   "localidad": "Acámbaro"
+  },
+  {
+   "nombre": "UNIDAD DE MEDICA FAMILIAR ISSTE",
+   "codigo_act": "622112",
+   "municipio": "Acámbaro",
+   "localidad": "Acámbaro"
+  },
+  {
+   "nombre": "UNIDAD MEDICA RURAL IMSS BIENESTAR",
+   "codigo_act": "622112",
+   "municipio": "Cuitzeo",
+   "localidad": "Mariano Escobedo (San Lorenzo)"
+  }
+ ],
+ "parametros": {
+  "DIST_MISMA_SEDE_m": 60,
+  "DIST_AREA_PUNTO_m": 50,
+  "DIST_MG_DENUE_m": 150
+ }
+}

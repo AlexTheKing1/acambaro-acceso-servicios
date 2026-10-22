@@ -15,6 +15,7 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | mg2020 | 11_guanajuato.zip | 133.2 | 96 archivos; datos: 11a.shp, 11ar.shp, 11cd.shp, 11e.shp … (+18) |
 | mg2025 | 11_guanajuato.zip | 126.1 | 96 archivos; datos: 11a.shp, 11ar.shp, 11cd.shp, 11e.shp … (+18) |
 | mg_eic2025 | 11_guanajuato.zip | 126.4 | 101 archivos; datos: 11a.shp, 11ar.shp, 11cd.shp, 11e.shp … (+18) |
+| mg_eic2025 | 16_michoacandeocampo.zip | 119.5 | 101 archivos; datos: 16a.shp, 16ar.shp, 16cd.shp, 16e.shp … (+18) |
 | eic2025 | conjunto_de_datos_eic2025_105_csv.zip | 8.3 | 3 archivos; datos: conjunto_datos_eic2025_105.csv, diccionario_datos_eic2025_105.csv |
 | denue | denue_11_csv.zip | 28.0 | 3 archivos; datos: denue_diccionario_de_datos.csv, denue_inegi_11_.csv |
 | denue | denue_16_csv.zip | 26.9 | 3 archivos; datos: denue_diccionario_de_datos.csv, denue_inegi_16_.csv |
@@ -85,6 +86,10 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | mg_eic2025_acambaro.gpkg | servicios_puntos | 621 | Point | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, CVE_AGEB, CVE_MZA, NOMSERV, TIPO, AMBITO |
 | mg_eic2025_acambaro.gpkg | servicios_areas | 226 | Polygon | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, NOMSERV, TIPO, AMBITO |
 | mg_eic2025_acambaro.gpkg | servicios_lineas | 1413 | LineString | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, NOMSERV, TIPO, AMBITO |
+| mg_eic2025_servicios_buffer10km.gpkg | puntos | 1897 | Point | Mexico ITRF2008 / LCC (EPSG:6372) | CVEGEO, CVE_LOC, CVE_AGEB, CVE_MZA, NOMSERV, TIPO, AMBITO |
+| mg_eic2025_servicios_buffer10km.gpkg | areas | 829 | MultiPolygon | Mexico ITRF2008 / LCC (EPSG:6372) | CVEGEO, CVE_LOC, NOMSERV, TIPO, AMBITO |
+| servicios.gpkg | registros | 3606 | Point | Mexico ITRF2008 / LCC (EPSG:6372) | codigo_act |
+| servicios.gpkg | sedes | 3308 | Point | Mexico ITRF2008 / LCC (EPSG:6372) |  |
 
 ## Tablas recortadas a Acámbaro (data/processed/*.csv)
 
@@ -97,6 +102,7 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | iter2010_acambaro.csv | 217 | 200 | LOC, NOM_LOC, LONGITUD, LATITUD, POBTOT, VIVTOT |
 | iter2020_acambaro.csv | 215 | 286 | LOC, NOM_LOC, LONGITUD, LATITUD, POBTOT, VIVTOT |
 | localidades2020.csv | 212 | 9 | CVEGEO, LOC, NOM_LOC, POBTOT, VIVTOT |
+| servicios_sedes.csv | 3308 | 21 |  |
 
 ## GHS-BUILT-S R2023A dentro del municipio (solo años observados)
 
