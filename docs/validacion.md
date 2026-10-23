@@ -175,3 +175,66 @@ Cifras generadas por `src/09_catalogo_sep_clues.py` (`validacion_fase3_catalogo.
 - Contexto social: 126 AGEB urbanas y 212 localidades; 96 AGEB y 68 localidades tienen al menos un indicador oculto ("*", valores de 1 o 2).
 
 **V30 · Verificaciones de Alejandro.** `verificacion_zonas.csv` y `verificacion_servicios.csv` **no están** en el release: se incorporan en la siguiente fase. La muestra `docs/verificar_servicios_muestra.csv` no se regeneró; solo se le agregó la columna `confirmado_sep_clues` (resultado: de 103 escuelas y unidades de salud, 75 confirmadas por SEP (50) o CLUES (25), 25 no, 2 dadas de baja y 1 preparatoria abierta; 31 de abasto no aplican). Para comparar rutas: `docs/verificar_rutas.csv` (5 cuadras al azar, semilla 20261023).
+
+## Fase 4 — Decisiones finales y verificaciones (2026-10-23)
+
+Cifras generadas por `src/15_catalogo_fase4.py` (`validacion_fase4_catalogo.json`), `src/11_accesibilidad.py` (`validacion_fase4_acceso.json`), `src/17_zonas_kml.py` y `src/18_verificar_campo.py`.
+
+**V31 · Texto del SNEU (D33).** Dos búsquedas web dirigidas al tomo de Educación del Sistema Normativo de Equipamiento Urbano (SEDESOL). Solo aparecieron fuentes secundarias (tesis y planes municipales) que usan el "radio de influencia" como círculo de cobertura. **No se encontró el texto original**, así que no se pudo confirmar si el "radio de servicio urbano recomendable" se define en línea recta. Tampoco se confirmaron los valores (750 / 500 / 1 000 m). Se aplicó × 1.33 como decidió Alejandro para este caso. **Pendiente: cotejar el documento original antes de publicar.**
+
+**V32 · Red rural, nuevo intento (fase 4).** Overpass (`01_descargar.py --solo osm_caminos`), 2 intentos: "Connection reset by peer" en ambos, igual que en la fase 3. No se reintentó más. Lo rural se queda con línea recta × 1.33 (D26).
+
+**V33 · Factor de rodeo con el catálogo de la fase 4.** Se usa el factor fijo de 1.33 (D33). Recalibrado con el nuevo catálogo da **1.349**, con 14 544 pares (p25 1.24, p75 1.50). El cambio viene casi todo del bachillerato público: con el CECyTE en el sur (D37), la mediana red / línea recta de esa categoría pasa de 1.29 a 1.51: los recorridos desde el norte de la ciudad son largos y con más rodeo. Las demás categorías no cambian (1.27–1.37).
+- **Salió mal y se corrigió**: en la primera corrida el factor se recalibró solo (1.348) y movió entre 1 y 6 m distancias que no tenían por qué cambiar. Se fijó en 1.33. Además, la categoría del anexo (D34) quedó fuera de la calibración.
+- **Control contra la fase 3** (mismas cuadras y localidades): cambia el servicio más cercano solo donde se esperaba. En salud pública cambian 45 cuadras (32 usaban el consultorio del CERESO). En bachillerato público cambian 852 cuadras (475 usaban el punto SEP del CECyTE). En bachillerato (todos) cambian 258. Las demás diferencias son de redondeo (≤ 6 m), porque la fase 3 usaba 1.3304 sin redondear.
+- Población en los orígenes: igual que en la fase 3 (Acámbaro 56 596, Irámuco 6 275, Parácuaro 4 159, Chupícuaro 2 583). Distancia por red menor que la recta: 0 casos. En todas las filas, estricto ≥ principal ≥ holgado.
+- 56 de 1 092 combinaciones ciudad × categoría × umbral × grupo tienen el mínimo visible por encima de la estimación por AGEB (por 1 a 39 personas). Ahí la cifra real es al menos el mínimo (columna `minimo_supera_estimado`).
+
+**V34 · Parácuaro (D39).** Ninguna secundaria dentro de la localidad (SEP, MG, DENUE). Las más cercanas al centro del pueblo, en línea recta: la **Secundaria Técnica 24** (`secundaria-S0002`, SEP 11DST0024Y, campus de la Escuela Tecnológica Agropecuaria) a 4.2 km, y la Telesecundaria 847 de La Concepción (`secundaria-0015`) a 4.3 km, hacia el norte. Por camino estimado, la ST 24 es la más cercana para 72 de las 147 cuadras (3.3–6.3 km, mediana 5.5 km) y la Telesecundaria 847 para las otras 75 (mediana 5.3 km). Es la misma secundaria que calculó la fase 3: el "~4 km" era la línea recta.
+
+**V35 · Fecha del catálogo SEP (D40).** `cct11.csv` y `cct16.csv` tienen 93 columnas. La única fecha es `F_FUNDACION` (fecha de fundación): llena en 4 278 de 22 017 registros (Gto.) y 8 749 de 26 898 (Mich.), con la más reciente en diciembre de 2017. No hay ciclo escolar ni fecha de corte. Se cita la fecha de consulta: 2026-10-22.
+
+**V36 · Rutas contra Google Maps (verificación de Alejandro, `docs/verificar_rutas.csv`).**
+
+| Cuadra (servicio) | Claude (m) | Google (m) | Diferencia |
+|---|---:|---:|---:|
+| 1100200010520045 (secundaria) | 1 586 | 1 500 | +86 m (+5.7 %) |
+| 110020001054A026 (mercado o súper) | 1 392 | 1 400 | −8 m (−0.6 %) |
+| 1100200270395060 (bachillerato) | 3 153 | 3 100 | +53 m (+1.7 %) |
+| 1100200010234051 (tienda) | 148 | 110 | +38 m (+35 %) |
+| 1100200010465087 (primaria) | 1 009 | 1 000 | +9 m (+0.9 %) |
+
+- Diferencia absoluta mediana: **1.7 %**. Máxima en distancias de más de 1 km: **5.7 %**. La de 148 m difiere 38 m por el tramo de acceso (de la cuadra a la calle, 22 m en el cálculo). Google redondea a 10 o 100 m. En 4 de 5 rutas el cálculo sale algo más largo, así que la medida no subestima la distancia.
+- Son 5 rutas (4 en la ciudad de Acámbaro y 1 en Irámuco): sirven como control de orden de magnitud, no como tasa de error.
+
+**V37 · Verificación remota de servicios (D41).** `verificacion_servicios.csv` (release `datos-crudos`, subido el 2026-10-23) tiene 134 filas, 68 marcadas "revisado". Se unieron todas por `id` con el catálogo (0 sin pareja). 57 están dentro del municipio y 11 en la franja de 10 km.
+- **Advertencia: no es una muestra al azar.** Se revisaron todos los bachilleratos y casos priorizados (sin nombre, sin confirmar, raros). Las tasas describen esos casos y **no** la confiabilidad general del catálogo.
+- **Total**: 50 "sí", 11 "no" y 7 "no se ve" de 68 = **73.5 %** confirmados (82.0 % sin contar los "no se ve"). Dentro del municipio: 44 de 57 (77.2 %). En la franja: 6 de 11 (54.5 %).
+
+  | Tipo | Revisados | Sí | No | No se ve | % sí | % sí sin "no se ve" |
+  |---|---:|---:|---:|---:|---:|---:|
+  | Abasto | 15 | 13 | 2 | 0 | 86.7 % | 86.7 % |
+  | Bachillerato | 17 | 11 | 4 | 2 | 64.7 % | 73.3 % |
+  | Bachillerato no escolarizado | 1 | 0 | 1 | 0 | 0 % | 0 % |
+  | Preescolar | 4 | 3 | 0 | 1 | 75.0 % | 100 % |
+  | Primaria | 5 | 4 | 1 | 0 | 80.0 % | 80.0 % |
+  | Salud de primer nivel | 20 | 17 | 2 | 1 | 85.0 % | 89.5 % |
+  | Salud en el CERESO (D38) | 1 | 0 | 1 | 0 | 0 % | 0 % |
+  | Secundaria | 5 | 2 | 0 | 3 | 40.0 % | 100 % |
+
+  | Fuente del catálogo | Revisados | Sí | No | No se ve | % sí | % sí sin "no se ve" |
+  |---|---:|---:|---:|---:|---:|---:|
+  | Solo MG | 21 | 12 | 5 | 4 | 57.1 % | 70.6 % |
+  | Solo DENUE | 24 | 19 | 4 | 1 | 79.2 % | 82.6 % |
+  | MG + DENUE | 23 | 19 | 2 | 2 | 82.6 % | 90.5 % |
+
+- Por estado del cruce con SEP/CLUES: confirmadas 30 de 39 (76.9 %); no confirmadas 6 de 11 (54.5 %). La única "baja en SEP" revisada (Preparatoria Prof. Leopoldo Salgado) salió "no", lo que concuerda con la SEP. La UMAPS vieja de Irámuco ("baja en CLUES") salió "sí": se ve algo parecido a la nueva a una cuadra.
+- `visto_en`: street view 20, no especificado 18, ambos 10, ninguno 6, satélite 4, vacío 10.
+- **Los 11 "no" (`dudoso_remoto`)**: dentro del municipio hay 8. Son primaria-0030 (Monte Prieto; en el punto se ve la Telesecundaria 845, a 130 m, y la primaria sí está en la SEP), el mercado "22 de Octubre", la tienda "Abarrotes Juanita", la Preparatoria Prof. Leopoldo Salgado (ya dada de baja, no se usaba), la preparatoria abierta (no se mide), "Centro Médico la Soledad" y la unidad de La Presa de Santa Inés (ambas del anexo, D34), y el consultorio del CERESO (D38). En la franja hay 3, todos bachilleratos (Instituto Vasco de Quiroga en Salvatierra, Preparatoria Lázaro Cárdenas en Zinapécuaro y uno sin nombre).
+- **Sensibilidad sin dudosos remotos** (umbral principal, `acceso_sensibilidad.csv`): solo cambian dos cifras. Localidades rurales, primaria: +1 116 personas lejos (de 695 a 1 811), casi todo Monte Prieto (1 068 hab.). Ciudad de Acámbaro, abasto completo: +978 (de 20 267 a 21 245), por el mercado 22 de Octubre. Ninguna otra categoría ni localidad cambia.
+- **Sensibilidad solo confirmadas (D28)**, umbral principal: primaria en la ciudad +1 801 (de 17 853 a 19 654), Chupícuaro +403, rural +146 (preescolar), +210 (primaria), +234 (secundaria).
+
+**V38 · Archivos para Alejandro.**
+- `docs/zonas_nuevas.kml`: 28 zonas (las 13 posteriores a 2020 y las 15 más grandes de 2010–2020). Cada contorno es la unión de las cuadras nuevas de la zona, de la capa de su propio periodo. Se abrió con GDAL (LIBKML) sin errores. `docs/verificar_zonas_nuevas.csv` tiene ahora la columna `en_kml` (28 sí, 135 no).
+- `docs/verificar_campo.csv`: 19 puntos en 5 salidas (agrupados por cercanía a ≤ 10 km de diámetro). Son 12 "no" o "no se ve" del municipio (se quitó el del CERESO, ya resuelto), las 2 UMAPS de Irámuco y 5 "sí" al azar (semilla 2026) para medir el error de la verificación remota.
+- `verificacion_zonas.csv` sigue sin estar en el release (404).

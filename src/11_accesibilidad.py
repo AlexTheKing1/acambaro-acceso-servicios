@@ -1,4 +1,4 @@
-"""11 · Distancia al servicio más cercano y población lejana (fase 3, paso 2).
+"""11 · Distancia al servicio más cercano y población lejana (fase 3; umbrales definitivos en la fase 4).
 
 Escala ciudad (las 4 localidades urbanas, D09): distancia a pie por la red de
 calles (data/processed/red_peatonal.gpkg, 10_redes.py) desde cada cuadra al
@@ -15,7 +15,7 @@ servicio más cercano de cada categoría.
     municipio): línea recta × FACTOR de rodeo calibrado con la propia red. Se
     toma el menor de los dos y se dice cuál fue.
 Escala municipio (localidades rurales, ITER 2020): no fue posible bajar una red
-de caminos (D26), así que la distancia es línea recta × FACTOR desde el punto
+de caminos (D26; nuevo intento fallido con Overpass el 2026-10-23, fase 4), así que la distancia es línea recta × FACTOR desde el punto
 de la localidad.
 
 Población lejana:
@@ -28,7 +28,8 @@ Salidas en data/processed/:
   acceso_cuadras.gpkg / .csv       una fila por cuadra: d_<cat>, id_<cat>, via_<cat>
   acceso_localidades.csv           una fila por localidad rural
   acceso_resumen_por_localidad.csv población lejana por localidad × categoría × umbral × grupo
-  acceso_sensibilidad_confirmadas.csv  umbral propuesto: todas las sedes vs. solo confirmadas (D28)
+  acceso_sensibilidad.csv          umbral principal: todas las sedes vs. solo confirmadas (D28) y vs.
+                                   sin las marcadas "no" en la verificación remota (D41)
   conteo_servicios_por_localidad.csv   sedes de cada tipo por localidad (incluye las "aparte")
   validacion_fase3_acceso.json
 """
@@ -59,7 +60,8 @@ VEL_PIE = 4.0            # km/h, para traducir metros a minutos (adultos mayores
 
 # Categorías que se miden (D20–D22). filtro(sedes) -> sedes que cuentan.
 def _no_baja(s):
-    return ~s.estado_cruce.str.startswith("baja")
+    """Sin las dadas de baja (SEP/CLUES) ni las descartadas por ubicación errónea (D37)."""
+    return ~s.estado_cruce.str.startswith(("baja", "descartada"))
 
 
 CATEGORIAS = {
@@ -74,7 +76,10 @@ CATEGORIAS = {
     "salud_publica": lambda s: (s.tipo == "salud_primer_nivel") & (s.sector == "público") & _no_baja(s),
     "tienda_basica": lambda s: s.tipo == "abasto",
     "abasto_completo": lambda s: (s.tipo == "abasto") & s.subtipo.str.contains("mercado|supermercado"),
-    # Dato aparte (D20): no entra al resultado principal
+    # Datos aparte: no entran al resultado principal
+    # D34: salud pública + las unidades que solo dibuja el INEGI (anexo)
+    "salud_publica_con_anexo": lambda s: (s.tipo == "salud_primer_nivel")
+    & ((s.sector == "público") | s.anexo_salud_sin_clues.fillna(False).astype(bool)) & _no_baja(s),
     "consultorio_privado": lambda s: (s.tipo == "consultorio_privado") & _no_baja(s),
 }
 NOMBRES = {
@@ -83,29 +88,43 @@ NOMBRES = {
     "primaria_publica": "Primaria pública", "secundaria_publica": "Secundaria pública",
     "bachillerato_publico": "Bachillerato público", "salud_publica": "Salud pública de primer nivel",
     "tienda_basica": "Tienda básica", "abasto_completo": "Abasto completo (mercado o supermercado)",
+    "salud_publica_con_anexo": "Salud pública + unidades sin CLUES (anexo)",
     "consultorio_privado": "Consultorio privado (dato aparte)",
 }
 
-# Umbrales de "lejos" (D25, pendiente de Alejandro): (estricto, propuesto, holgado), en metros.
+# Umbrales de "lejos" (D25 definitivo, D33): (estricto, principal, holgado), en metros.
+# Ciudad: el radio de servicio urbano recomendable del SNEU (SEDESOL) se interpreta
+# como línea recta; la medida es por calle, así que principal = radio × 1.33 (factor
+# de rodeo calibrado en la fase 3), estricto = radio sin convertir y holgado =
+# principal × 1.5 (redondeo a 10 m). Tienda (500 m) y abasto completo (1 000 m = 15 min
+# a 4 km/h) no vienen del SNEU: misma proporción a partir de su principal.
 UMBRALES_CIUDAD = {
-    "preescolar": (500, 750, 1000), "primaria": (400, 500, 1000), "secundaria": (750, 1000, 1500),
-    "bachillerato": (1500, 2500, 5000), "salud_publica": (750, 1000, 1500),
-    "tienda_basica": (300, 500, 800), "abasto_completo": (750, 1200, 2000),
-    "consultorio_privado": (750, 1000, 1500),
+    "preescolar": (750, 1000, 1500), "primaria": (500, 670, 1000), "secundaria": (1000, 1330, 2000),
+    "bachillerato": (2500, 3330, 5000), "salud_publica": (1000, 1330, 2000),
+    "tienda_basica": (380, 500, 750), "abasto_completo": (750, 1000, 1500),
+    "salud_publica_con_anexo": (1000, 1330, 2000), "consultorio_privado": (1000, 1330, 2000),
 }
 UMBRALES_RURAL = {
     "preescolar": (1000, 2000, 3000), "primaria": (1000, 2000, 3000), "secundaria": (3000, 5000, 10000),
     "bachillerato": (5000, 10000, 15000), "salud_publica": (3000, 5000, 10000),
     "tienda_basica": (500, 1000, 2000), "abasto_completo": (5000, 10000, 15000),
-    "consultorio_privado": (3000, 5000, 10000),
+    "salud_publica_con_anexo": (3000, 5000, 10000), "consultorio_privado": (3000, 5000, 10000),
 }
-NIVELES = ["estricto", "propuesto", "holgado"]
+NIVELES = ["estricto", "principal", "holgado"]
+CALIBRACION_EXCLUYE = {"salud_publica_con_anexo"}
+# Factor de rodeo (red / línea recta). Calibrado en la fase 3 (1.33, V22) y fijo desde
+# la fase 4 (D33): los umbrales definitivos se derivan de él. Se sigue recalibrando
+# como chequeo; con el catálogo de la fase 4 sale 1.349 por la reubicación del CECyTE.
+FACTOR_FIJO = 1.33
 # El DENUE solo registra comercios y consultorios de las localidades urbanas (en
 # Acámbaro, 5 932 de sus 5 974 establecimientos están en las 4 urbanas; ninguna
 # tienda de abarrotes rural). En lo rural estas categorías no se pueden medir:
 # no hay fuente, y medir contra las tiendas de la ciudad inventaría lejanía (V24).
 NO_MEDIBLE_RURAL = {"tienda_basica": "el DENUE no registra tiendas en localidades rurales",
                     "consultorio_privado": "el DENUE no registra consultorios en localidades rurales"}
+# El abasto completo rural sí se mide (mercados y supermercados están en localidades
+# que el DENUE cubre), pero ninguna fuente registra tianguis (D35).
+NOTA_RURAL = {"abasto_completo": "no incluye tianguis: ninguna fuente los registra"}
 
 
 def umbral(cat, tabla):
@@ -118,6 +137,14 @@ def confirmada(s):
     """D28: sede respaldada por un registro con nombre (SEP, CLUES o DENUE)."""
     return (s.confirmado_por.fillna("") != "") | s.fuentes.fillna("").str.contains("DENUE") \
         | s.estado_cruce.str.startswith("nueva")
+
+
+def no_dudosa(s):
+    """D41: sin las sedes marcadas "no" en la verificación remota de Alejandro."""
+    return ~s.dudoso_remoto.fillna(False).astype(bool)
+
+
+SENSIBILIDADES = {"solo confirmadas (D28)": confirmada, "sin dudosos remotos (D41)": no_dudosa}
 
 
 # --- Red -------------------------------------------------------------------------
@@ -197,7 +224,7 @@ def poblacion_lejos_ciudad(cu, lejos, ageb_tot):
 
 
 def main():
-    sedes = gpd.read_file(P / "servicios_fase3.gpkg", layer="sedes")
+    sedes = gpd.read_file(P / "servicios_fase4.gpkg", layer="sedes")
     tramos = gpd.read_file(P / "red_peatonal.gpkg", layer="tramos")
     red = Red(tramos)
     crs = tramos.crs
@@ -235,11 +262,13 @@ def main():
         sel, arbol = red.componente(comp_loc[loc])
         o = cu[cu.CVE_LOC == loc]
         anclas[loc] = (red.anclar(o, sel, arbol), sel, arbol)
-    # Primera pasada: solo red, para calibrar el factor de rodeo
+    # Primera pasada: solo red, para calibrar el factor de rodeo. Solo con las
+    # categorías de la fase 3: agregar una categoría aparte (anexo) cambiaría el
+    # factor, y los umbrales definitivos (D33) se derivan del factor 1.33.
     for loc in URBANAS:
         ao, sel, arbol = anclas[loc]
         o = cu.loc[ao.index]
-        for cat in cats:
+        for cat in [c for c in cats if c not in CALIBRACION_EXCLUYE]:
             s = sedes[CATEGORIAS[cat](sedes)]
             ad = red.anclar(s, sel, arbol)
             ad = ad[ad.acceso <= SNAP_MAX]
@@ -252,8 +281,11 @@ def main():
             pares_factor.append(pd.DataFrame({"red": d[ok], "recta": recta, "cat": cat, "loc": loc}))
     pf = pd.concat(pares_factor)
     pf = pf[pf.recta >= 300]
-    FACTOR = float((pf.red / pf.recta).median())
-    v["factor_rodeo"] = {"valor": round(FACTOR, 3), "pares_usados": len(pf),
+    calibrado = float((pf.red / pf.recta).median())
+    FACTOR = FACTOR_FIJO
+    v["factor_rodeo"] = {"valor_usado": FACTOR, "calibrado_con_este_catalogo": round(calibrado, 3),
+                         "mediana_por_categoria": (pf.red / pf.recta).groupby(pf.cat).median().round(3).to_dict(),
+                         "pares_usados": len(pf),
                          "p25": round(float((pf.red / pf.recta).quantile(0.25)), 3),
                          "p75": round(float((pf.red / pf.recta).quantile(0.75)), 3),
                          "nota": "mediana de distancia por red / línea recta, pares cuadra–servicio más cercano con recta >= 300 m"}
@@ -343,7 +375,7 @@ def main():
                               "pct_lejos": round(100 * vis / tot_vis, 1) if tot_vis and medible else None,
                               "cuadras_lejos": None, "cuadras": None, "cuadras_nuevas_post2020_lejos": None,
                               "localidades_lejos": int(lejos_r.sum()) if medible else None,
-                              "nota": NO_MEDIBLE_RURAL.get(cat, "")})
+                              "nota": NO_MEDIBLE_RURAL.get(cat, NOTA_RURAL.get(cat, ""))})
     resumen = pd.DataFrame(filas)
     # Si el mínimo visible (a) supera la estimación (c), el supuesto de (c) falla en
     # esa localidad (los lejanos tienen más de ese grupo que el promedio de su AGEB):
@@ -359,42 +391,43 @@ def main():
         "oculto_en_rurales": float(mun_tot[g] - loc_tab[loc_tab.LOC.isin(URBANAS)][g].sum() - tr[g].sum())}
         for g in GRUPOS}
 
-    # --- Sensibilidad D28: solo sedes confirmadas, umbral propuesto ---------------------
+    # --- Sensibilidades, umbral principal: solo confirmadas (D28), sin dudosos remotos (D41)
     sens = []
-    conf = sedes[confirmada(sedes)]
-    for cat in cats:
-        s_all = sedes[CATEGORIAS[cat](sedes)]
-        s_conf = conf[CATEGORIAS[cat](conf)]
-        quitadas = len(s_all) - len(s_conf)
-        uc, ur = umbral(cat, UMBRALES_CIUDAD)[1], umbral(cat, UMBRALES_RURAL)[1]
-        for cl, nombre in URBANAS.items():
-            c = tc[(tc.CVE_LOC == cl) & (tc.origen != "cuadra nueva posterior a 2020")]
-            ao, sel, arbol = anclas[cl]
-            ao = ao.loc[c.index]
-            o = cu.loc[c.index]
-            ad = red.anclar(s_conf, sel, arbol)
-            en_red = ad[ad.acceso <= SNAP_MAX]
-            d_red = red.distancias(ao, en_red)[0] if len(en_red) else np.full(len(o), np.inf)
-            fuera = s_conf.loc[s_conf.index.difference(en_red.index)]
-            d_rec = np.full(len(o), np.inf)
-            if len(fuera):
-                j = gpd.sjoin_nearest(o[["geometry"]], fuera[["geometry"]], how="left", distance_col="dr")
-                d_rec = j[~j.index.duplicated()].dr.to_numpy() * FACTOR
-            d2 = np.round(np.minimum(d_red, d_rec), 0)   # igual que en la tabla principal
-            p1 = float(c.loc[c[f"d_{cat}"] > uc, "POBTOT"].sum())
-            p2 = float(c.loc[d2 > uc, "POBTOT"].sum())
-            sens.append({"localidad": nombre, "categoria": cat, "umbral_propuesto_m": uc,
-                         "pob_lejos_todas": round(p1), "pob_lejos_solo_confirmadas": round(p2),
+    for variante, filtro in SENSIBILIDADES.items():
+        conf = sedes[filtro(sedes)]
+        for cat in cats:
+            s_all = sedes[CATEGORIAS[cat](sedes)]
+            s_conf = conf[CATEGORIAS[cat](conf)]
+            quitadas = len(s_all) - len(s_conf)
+            uc, ur = umbral(cat, UMBRALES_CIUDAD)[1], umbral(cat, UMBRALES_RURAL)[1]
+            for cl, nombre in URBANAS.items():
+                c = tc[(tc.CVE_LOC == cl) & (tc.origen != "cuadra nueva posterior a 2020")]
+                ao, sel, arbol = anclas[cl]
+                ao = ao.loc[c.index]
+                o = cu.loc[c.index]
+                ad = red.anclar(s_conf, sel, arbol)
+                en_red = ad[ad.acceso <= SNAP_MAX]
+                d_red = red.distancias(ao, en_red)[0] if len(en_red) else np.full(len(o), np.inf)
+                fuera = s_conf.loc[s_conf.index.difference(en_red.index)]
+                d_rec = np.full(len(o), np.inf)
+                if len(fuera):
+                    j = gpd.sjoin_nearest(o[["geometry"]], fuera[["geometry"]], how="left", distance_col="dr")
+                    d_rec = j[~j.index.duplicated()].dr.to_numpy() * FACTOR
+                d2 = np.round(np.minimum(d_red, d_rec), 0)   # igual que en la tabla principal
+                p1 = float(c.loc[c[f"d_{cat}"] > uc, "POBTOT"].sum())
+                p2 = float(c.loc[d2 > uc, "POBTOT"].sum())
+                sens.append({"variante": variante, "localidad": nombre, "categoria": cat, "umbral_principal_m": uc,
+                             "pob_lejos_todas": round(p1), "pob_lejos_variante": round(p2),
+                             "diferencia": round(p2 - p1), "sedes_quitadas_en_toda_la_zona": quitadas})
+            if cat in NO_MEDIBLE_RURAL:
+                continue
+            j = gpd.sjoin_nearest(rur[["geometry"]], s_conf[["geometry"]], how="left", distance_col="dr")
+            d2 = np.round(j[~j.index.duplicated()].dr.to_numpy() * FACTOR, 0)
+            p1 = float(tr.loc[tr[f"d_{cat}"] > ur, "POBTOT"].sum())
+            p2 = float(tr.loc[d2 > ur, "POBTOT"].sum())
+            sens.append({"variante": variante, "localidad": "Localidades rurales (208)", "categoria": cat,
+                         "umbral_principal_m": ur, "pob_lejos_todas": round(p1), "pob_lejos_variante": round(p2),
                          "diferencia": round(p2 - p1), "sedes_quitadas_en_toda_la_zona": quitadas})
-        if cat in NO_MEDIBLE_RURAL:
-            continue
-        j = gpd.sjoin_nearest(rur[["geometry"]], s_conf[["geometry"]], how="left", distance_col="dr")
-        d2 = np.round(j[~j.index.duplicated()].dr.to_numpy() * FACTOR, 0)
-        p1 = float(tr.loc[tr[f"d_{cat}"] > ur, "POBTOT"].sum())
-        p2 = float(tr.loc[d2 > ur, "POBTOT"].sum())
-        sens.append({"localidad": "Localidades rurales (208)", "categoria": cat, "umbral_propuesto_m": ur,
-                     "pob_lejos_todas": round(p1), "pob_lejos_solo_confirmadas": round(p2),
-                     "diferencia": round(p2 - p1), "sedes_quitadas_en_toda_la_zona": quitadas})
     sens = pd.DataFrame(sens)
 
     # --- Conteo de sedes por localidad (incluye las que se registran aparte) ------------
@@ -418,7 +451,7 @@ def main():
     tr.assign(lat=rr.geometry.y.round(6).values, lon=rr.geometry.x.round(6).values).to_csv(
         P / "acceso_localidades.csv", index=False)
     resumen.to_csv(P / "acceso_resumen_por_localidad.csv", index=False)
-    sens.to_csv(P / "acceso_sensibilidad_confirmadas.csv", index=False)
+    sens.to_csv(P / "acceso_sensibilidad.csv", index=False)
     conteo.to_csv(P / "conteo_servicios_por_localidad.csv", index=False)
 
     # --- Chequeos -----------------------------------------------------------------------
@@ -448,7 +481,7 @@ def main():
     # Control: población total en orígenes = V01
     v["poblacion_en_origenes"] = tc.groupby("localidad").POBTOT.sum().to_dict()
     # Control: distancia por red nunca menor que la recta (ver red_menor_que_recta)
-    (P / "validacion_fase3_acceso.json").write_text(json.dumps(v, ensure_ascii=False, indent=1, default=str))
+    (P / "validacion_fase4_acceso.json").write_text(json.dumps(v, ensure_ascii=False, indent=1, default=str))
     print(json.dumps({k: v[k] for k in ["factor_rodeo", "red_menor_que_recta", "poblacion_en_origenes",
                                         "componente_por_localidad", "acceso_red_m", "via_recta_factor"]},
                      ensure_ascii=False, indent=1, default=str))

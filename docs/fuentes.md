@@ -42,8 +42,8 @@ Escuelas, salud de primer nivel y mercados: capas de servicios del MG EIC 2025 (
 | Dato | Versión / fecha | URL directa | Uso |
 |---|---|---|---|
 | CLUES, establecimientos de salud (nacional; hoja `CLUES_202608`) | Corte **agosto 2026** (DGIS, Secretaría de Salud). Subido por Alejandro al release | `https://github.com/AlexTheKing1/acambaro-acceso-servicios/releases/download/datos-crudos/ESTABLECIMIENTO_SALUD_202608.xlsx` | Confirmar unidades de salud, institución, estatus de operación, público/privado |
-| Catálogo de centros de trabajo de la SEP, **Guanajuato** | Archivo `cct11.csv` (latin-1), 22 017 registros; fecha de corte no indicada en el archivo (**pendiente: que Alejandro anote de qué fecha o ciclo es**) | `.../releases/download/datos-crudos/cct11.csv` | Confirmar escuelas, nivel, sostenimiento, estatus y turnos |
-| Catálogo de centros de trabajo de la SEP, **Michoacán** | Archivo `cct16.csv` (latin-1), 26 898 registros; misma observación | `.../releases/download/datos-crudos/cct16.csv` | Escuelas de Michoacán en la franja de 10 km |
+| Catálogo de centros de trabajo de la SEP, **Guanajuato** | Archivo `cct11.csv` (latin-1), 22 017 registros; sin fecha de corte ni ciclo escolar en el archivo; se cita la **fecha de consulta 2026-10-22** (D40, V35) | `.../releases/download/datos-crudos/cct11.csv` | Confirmar escuelas, nivel, sostenimiento, estatus y turnos |
+| Catálogo de centros de trabajo de la SEP, **Michoacán** | Archivo `cct16.csv` (latin-1), 26 898 registros; misma observación (consulta 2026-10-22) | `.../releases/download/datos-crudos/cct16.csv` | Escuelas de Michoacán en la franja de 10 km |
 | Catálogo de asentamientos humanos de Acámbaro (Catálogo Único de Claves Geoestadísticas, INEGI) | Servicio web v2; 147 asentamientos; campo `periodo` = **11/2021**; fuente declarada: Censo 2020. **Sin polígonos** | `https://gaia.inegi.org.mx/wscatgeo/v2/asentamientos/11/002` (JSON) | Nombres de colonia (D24) |
 
 - Del catálogo SEP se quitan, al recortar, las columnas de contacto (nombre, CURP, RFC, teléfono y correo del director); de la CLUES, teléfonos y RFC. No se usan y no se versionan.
@@ -61,4 +61,18 @@ Escuelas, salud de primer nivel y mercados: capas de servicios del MG EIC 2025 (
 
 - CLUES y catálogo SEP: no se podían bajar desde el entorno (dgis.salud.gob.mx no responde; datos.gob.mx 403; certificado incompleto en la API de SIGED). Alejandro los subió al release `datos-crudos` el 2026-10-23 (tabla de arriba).
 - CONAPO, índice de marginación urbana 2020 por AGEB y por colonia (https://www.gob.mx/conapo/documentos/indices-de-marginacion-2020-284372): los enlaces `conapo.segob.gob.mx/work/models/CONAPO/Datos_Abiertos/...` redirigen a una página 404 y conapo.gob.mx no responde. **No disponible**: sustituido según D24 y declarado como limitación.
-- Pendiente opcional: `verificacion_zonas.csv` y `verificacion_servicios.csv` (revisión de Alejandro en Google Maps) en el release; `01_descargar.py` los baja cuando existan.
+- `verificacion_servicios.csv`: subido el 2026-10-23 (fase 4, tabla de abajo). `verificacion_zonas.csv`: sigue pendiente (404); `01_descargar.py` lo baja cuando exista.
+
+## Fase 4 (2026-10-23)
+
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| Verificación remota de servicios de Alejandro (Google Maps: satélite y Street View) | `verificacion_servicios.csv`, 134 filas, 68 revisadas; subido al release el 2026-10-23 | `.../releases/download/datos-crudos/verificacion_servicios.csv` | Marca `dudoso_remoto`, tasas de confirmación y lista de campo (D41, V37) |
+| Verificación de rutas de Alejandro (Google Maps, a pie) | 5 rutas, 2026-10-23 (cifras dadas en la conversación) | — (anotadas en `docs/verificar_rutas.csv`) | V36 |
+| Ubicación del CECyTE, ISSSTE, Secundaria Técnica 24 | Consulta de Alejandro en Google Maps y verificación local, 2026-10-23 | — | D36, D37, D39 |
+
+### Intentadas sin éxito (fase 4)
+| Dato | Qué se intentó | Resultado |
+|---|---|---|
+| OpenStreetMap vía Overpass (sesión nueva) | `https://overpass-api.de/api/interpreter`, misma consulta | "Connection reset by peer", 2 intentos |
+| Texto del SNEU (SEDESOL), tomo Educación | 2 búsquedas web dirigidas | Solo fuentes secundarias; no se encontró el documento original (V31) |

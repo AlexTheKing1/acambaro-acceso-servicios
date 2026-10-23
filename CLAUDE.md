@@ -36,11 +36,15 @@ python src/07_listas_verificacion.py  # docs/verificar_zonas_nuevas.csv, docs/ve
 python src/08_mapa_fase2.py     # docs/figuras/fase2_servicios.png
 python src/09_catalogo_sep_clues.py   # catálogo con SEP y CLUES: servicios_fase3.gpkg, servicios_sedes_fase3.csv (+ columna en la muestra)
 python src/10_redes.py          # red de calles para caminar: red_peatonal.gpkg
-python src/11_accesibilidad.py  # distancias y población lejana: acceso_*.csv/gpkg, conteo_servicios_por_localidad.csv
+python src/15_catalogo_fase4.py # decisiones finales + verificación remota: servicios_fase4.gpkg, servicios_sedes_fase4.csv
+python src/11_accesibilidad.py  # distancias y población lejana (umbrales definitivos): acceso_*.csv/gpkg, conteo_servicios_por_localidad.csv
 python src/12_colonias_contexto.py  # colonias_cuadras.csv, contexto_ageb.csv, contexto_localidades.csv
-python src/13_mapas_fase3.py    # docs/figuras/fase3_<categoría>.png
-python src/14_verificar_rutas.py  # docs/verificar_rutas.csv
+python src/13_mapas_fase3.py    # docs/figuras/fase4_<categoría>.png (las fase3_*.png quedan como registro)
+python src/14_verificar_rutas.py  # docs/verificar_rutas.csv (conserva lo anotado por Alejandro)
+python src/17_zonas_kml.py      # docs/zonas_nuevas.kml + columna en_kml en verificar_zonas_nuevas.csv
+python src/18_verificar_campo.py  # docs/verificar_campo.csv
 ```
+`15` necesita `data/raw/verificacion/verificacion_servicios.csv` (`01_descargar.py --solo verificacion`). No hay `16` (reservado para la red rural si algún día se baja).
 `01_descargar.py --solo <fuentes>` baja solo esas fuentes (p. ej. `clues sep_escuelas asentamientos`); la red de OpenStreetMap solo se intenta con `--solo osm_caminos`.
 `02_recortar.py --solo <pasos>` corre solo algunos pasos (mg, mg2010, tablas, denue, servicios_mg, ghsl, sep, clues).
 
@@ -54,7 +58,8 @@ python src/14_verificar_rutas.py  # docs/verificar_rutas.csv
 - Decisiones de Alejandro vigentes: "la ciudad" = cabecera (0001); Irámuco, Parácuaro y Chupícuaro son localidades aparte; las 4 urbanas se analizan por cuadra y se reportan por separado (D09). En textos públicos: "cuadra" o "localidad", no "manzana". Grupos ocultos por "*": por AGEB con el mínimo visible de apoyo (D10). Servicios hasta 10 km fuera, incluido Michoacán (D11). Cuadra nueva: < 50 % ya era manzana (D12). Validación con imágenes satelitales y Street View, no campo (D13).
 - El DENUE registra pocas escuelas y centros de salud rurales: el catálogo usa MG EIC 2025 + DENUE (D14), contrastado con SEP y CLUES en la fase 3 (D29): sedes confirmadas, no confirmadas (se conservan), nuevas y dadas de baja (no se usan).
 - El DENUE prácticamente no registra comercios ni consultorios fuera de las 4 localidades urbanas: tienda básica y consultorio privado no se miden en lo rural (D32).
-- Decisiones de fase 3 vigentes: salud principal = públicas de primer nivel confirmadas (D20; consultorios privados, casas de salud y unidad móvil aparte, D27); escuelas todas y solo públicas (D21); tienda básica / abasto completo (D22); preparatoria abierta = "bachillerato no escolarizado", no cuenta (D23); CONAPO sustituido (D24); umbrales en 3 niveles, **definitivo pendiente de Alejandro** (D25); red rural = línea recta × 1.33 porque no hubo red descargable (D26); sensibilidad con solo confirmadas (D28).
+- Decisiones de fase 3 vigentes: salud principal = públicas de primer nivel (D20; consultorios privados, casas de salud y unidad móvil aparte, D27); escuelas todas y solo públicas (D21); tienda básica / abasto completo (D22); preparatoria abierta = "bachillerato no escolarizado", no cuenta (D23); CONAPO sustituido (D24); red rural = línea recta × 1.33 porque no hubo red descargable (D26; Overpass volvió a fallar en la fase 4); sensibilidad con solo confirmadas (D28).
+- Decisiones de fase 4 (Alejandro): umbral principal en ciudad = radio SNEU × 1.33 (preescolar 1 000, primaria 670, secundaria 1 330, bachillerato 3 330, salud 1 330, tienda 500, abasto 1 000 m); estricto = radio sin convertir, holgado = principal × 1.5; rural igual que en la fase 3; factor fijo 1.33 (D33). Salud sin CLUES (6) solo en anexo (D34). Tienda rural no medible; abasto completo rural sí se mide, sin tianguis (D35). ISSSTE en operación (D36). CECyTE = punto MG/DENUE de Valle de Acámbaro; punto SEP descartado (D37). Consultorio del CERESO fuera (D38). Parácuaro: "no hay secundaria dentro de la localidad", la atiende la ST 24 (D39). SEP fechado por consulta 2026-10-22 (D40). Verificación remota: "no" = `dudoso_remoto`, nunca se borra; sensibilidad sin ellos; las tasas no son muestra al azar (D41).
 - Red y proxy: overpass-api.de y download.geofabrik.de cortan la conexión en el proxy (2026-10-23) aunque Alejandro los agregó; la RNC del INEGI no tiene URL directa localizable. No reintentar más de dos veces por fuente.
 - La CLUES trae espacios al final en algunos campos (p. ej. "SERVICIOS DE SALUD IMSS BIENESTAR "): limpiar antes de comparar. El catálogo SEP trae datos personales del director (CONTACTO_*): se quitan al recortar.
 - La clave de una cuadra nueva posterior a 2020 puede repetir la de una cuadra 2020 renumerada: no unir tablas por CVEGEO entre ediciones; usar posición o la pareja (CVEGEO, origen).
@@ -62,4 +67,5 @@ python src/14_verificar_rutas.py  # docs/verificar_rutas.csv
 ## Estado
 - Fase 0 y 1 (inventario y base geográfica): terminadas y revisadas por Alejandro el 2026-10-22 (decisiones D09–D12).
 - Fase 2 (catálogo de servicios): terminada el 2026-10-22; preguntas de criterio respondidas por Alejandro el 2026-10-23 (D20–D24). Alejandro está revisando `docs/verificar_servicios_muestra.csv` (no regenerarla).
-- Fase 3 (accesibilidad): terminada el 2026-10-23. Resumen en `docs/resumen_fase3.md`. Pendiente de Alejandro: umbral definitivo (D25), unidades de salud sin CLUES (D30), ISSSTE, ubicación del CECyTE, Parácuaro sin secundaria, tiendas rurales (D32), red de caminos (subir RNC al release), fecha de corte SEP, y subir `verificacion_zonas.csv` / `verificacion_servicios.csv` para incorporarlos a `docs/validacion.md` en la fase 4.
+- Fase 3 (accesibilidad): terminada el 2026-10-23. Resumen en `docs/resumen_fase3.md`; sus pendientes se cerraron en la fase 4.
+- Fase 4 (decisiones finales y números definitivos): terminada el 2026-10-23. Resumen en `docs/resumen_fase4.md`. Pendiente de Alejandro: cotejar el texto original del SNEU (no se pudo abrir), salidas de campo con `docs/verificar_campo.csv`, revisar zonas con `docs/zonas_nuevas.kml` y subir `verificacion_zonas.csv`, red de caminos (RNC al release). Siguiente: sitio web y reporte PDF.

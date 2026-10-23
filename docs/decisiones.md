@@ -152,7 +152,7 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Método de nombres** (`src/12_colonias_contexto.py`): los registros del DENUE, la SEP y la CLUES traen el nombre del asentamiento y coordenadas. Cada cuadra toma el nombre más frecuente entre los registros que caen dentro de ella; si no hay, entre los 5 más cercanos a ≤ 300 m. Solo se aceptan nombres que existen en el catálogo del INEGI para esa localidad. Es aproximado: el límite entre colonias queda donde cambian los registros, no donde lo dibuja un plano.
 - **Indicadores**: escolaridad promedio, % de 15+ analfabeta, % sin afiliación a servicios de salud, % de viviendas sin agua entubada dentro, sin drenaje, sin electricidad y **sin automóvil** (este último lo agregó Claude: dice quién depende de caminar o del transporte público).
 
-### D25 · 2026-10-23 · Umbrales de "lejos" (pendiente de Alejandro)
+### D25 · 2026-10-23 · Umbrales de "lejos" (cerrada: los definitivos están en D33)
 - **Decisión**: se calculan tres umbrales por categoría; **Alejandro elige el definitivo después de ver los resultados.**
 - **Ciudad, a pie por calles (m)** — estricto / **propuesto** / holgado:
 
@@ -179,9 +179,10 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Decisión**: se reportan como dato aparte y **no cuentan** como unidad de salud de primer nivel en la medida principal (suelen no tener médico permanente).
 - **Quién**: Alejandro.
 - **Resultado**: la CLUES de agosto de 2026 no registra ninguna "casa de salud" en el municipio ni en la franja de 10 km. Por la misma razón, Claude dejó también aparte la **unidad móvil** (ESI 29 Cútaro, sin sede fija) (provisional).
+- **Cerrada** (fase 4): ya no es un pendiente.
 
 ### D28 · 2026-10-23 · Sensibilidad: solo sedes confirmadas
-- **Decisión**: además de los tres umbrales, el resultado con el umbral propuesto se recalcula usando **solo sedes confirmadas** por SEP, CLUES o DENUE (se quitan las que solo dibuja el MG sin confirmación). Tabla comparativa en `data/processed/acceso_sensibilidad_confirmadas.csv`.
+- **Decisión**: además de los tres umbrales, el resultado con el umbral propuesto se recalcula usando **solo sedes confirmadas** por SEP, CLUES o DENUE (se quitan las que solo dibuja el MG sin confirmación). Tabla comparativa en `data/processed/acceso_sensibilidad_confirmadas.csv` (desde la fase 4: `acceso_sensibilidad.csv`, que agrega la sensibilidad sin dudosos remotos, D41).
 - **Quién**: Alejandro.
 
 ### D29 · 2026-10-23 · Cómo se cruzan SEP y CLUES con el catálogo de la fase 2
@@ -191,7 +192,7 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 
 ### D30 · 2026-10-23 · Unidades de salud del MG sin registro en la CLUES
 - **Decisión** (provisional): las 6 sedes de salud del municipio que solo dibuja el MG y que la CLUES no registra (sector desconocido: Solís, La Ortiga, La Encarnación, San Luis de los Agustinos, La Presa de Santa Inés y "Centro Médico la Soledad" en la ciudad) **no entran** en "salud pública", porque no hay evidencia de que sean unidades públicas con médico. Pueden ser casas de salud (D27) o consultorios. Quedan en el catálogo para revisión.
-- **Quién**: Claude (provisional). **Pregunta para Alejandro.**
+- **Quién**: Claude (provisional). **Cerrada en D34** (Alejandro: fuera de la medida principal, en un anexo).
 
 ### D31 · 2026-10-23 · Detalles técnicos de la medición a pie
 - **Red**: ejes viales del MG EIC 2025 (todos los tipos, incluidos andadores y peatonales), sin sentido de circulación. Extremos sueltos a < 15 m de otro tramo se unen (455 uniones, V21).
@@ -203,4 +204,64 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 ### D32 · 2026-10-23 · Tiendas y consultorios privados en lo rural: no medibles
 - **Decisión**: en las localidades rurales **no se mide** la distancia a tienda básica ni a consultorio privado.
 - **Por qué**: el DENUE solo registra comercios y consultorios de las localidades urbanas: de los 5 974 establecimientos del municipio, 5 932 están en las 4 urbanas y **ninguna tienda de abarrotes, minisúper o supermercado** está fuera de ellas (V24). Medir contra las tiendas de la ciudad haría parecer que 96 % de la población rural vive lejos de una tienda, lo cual es un efecto de la fuente, no un hecho.
-- **Quién**: Claude (provisional). Se puede resolver con verificación en imágenes o con otra fuente (pregunta para Alejandro).
+- **Quién**: Claude (provisional). **Confirmada por Alejandro en D35** para la tienda básica; el abasto completo rural sí se mide.
+
+## Fase 4 — Decisiones finales (2026-10-23)
+
+### D33 · 2026-10-23 · Umbrales definitivos (cierra D25)
+- **Decisión**: el "radio de servicio urbano recomendable" del Sistema Normativo de Equipamiento Urbano (SNEU, SEDESOL) se interpreta como un radio **en línea recta**. Nuestra medida es por calle, así que el umbral principal por calle = radio SNEU × **1.33** (factor de rodeo calibrado en la fase 3, V23). Estricto = radio SNEU sin convertir; holgado = principal × 1.5. La tienda básica (500 m) y el abasto completo (1 000 m = 15 min a pie a 4 km/h) no vienen del SNEU: se les aplica la misma proporción.
+
+  | Ciudad, a pie por calles (m) | Estricto | **Principal** | Holgado |
+  |---|---:|---:|---:|
+  | Preescolar (SNEU 750 m) | 750 | **1 000** | 1 500 |
+  | Primaria (SNEU 500 m) | 500 | **670** | 1 000 |
+  | Secundaria (SNEU 1 000 m) | 1 000 | **1 330** | 2 000 |
+  | Bachillerato (SNEU 2 500 m) | 2 500 | **3 330** | 5 000 |
+  | Salud pública de primer nivel (SNEU 1 000 m) | 1 000 | **1 330** | 2 000 |
+  | Tienda básica | 380 | **500** | 750 |
+  | Abasto completo (mercado o supermercado) | 750 | **1 000** | 1 500 |
+
+- **Rural**: sin cambios respecto a D25 (preescolar y primaria 2 km, secundaria 5 km, bachillerato 10 km, salud 5 km, abasto completo 10 km; estricto y holgado igual que en la fase 3).
+- **Factor fijo**: el factor queda fijo en 1.33 (`FACTOR_FIJO` en `11_accesibilidad.py`). Recalibrado con el catálogo de la fase 4 sale 1.349, porque al reubicar el CECyTE (D37) los recorridos al bachillerato público cruzan la ciudad (V33). Cambiarlo movería los umbrales que se derivan de él.
+- **Verificación del SNEU**: Alejandro pidió verificar en el texto que el radio es en línea recta. No se pudo abrir el texto original (V31). Alejandro decidió de antemano que, si el texto no lo dice explícitamente, se aplica × 1.33 y se avisa. **Si el SNEU definiera el radio como distancia recorrida, el umbral correcto sería el estricto.**
+- **Cómo se reporta**: el principal es la cifra del reporte. Si un hallazgo solo aparece con uno de los tres umbrales, se dice.
+- **Quién**: Alejandro (2026-10-23), con el ajuste de estricto y holgado.
+
+### D34 · 2026-10-23 · Unidades de salud sin CLUES: anexo (cierra D30)
+- **Decisión**: los 6 puntos de salud que solo dibuja el INEGI y que no están en la CLUES (Solís, La Ortiga, La Encarnación, San Luis de los Agustinos, La Presa de Santa Inés y "Centro Médico la Soledad" en la ciudad) quedan **fuera de la medida principal**. En un anexo se muestra qué pasaría si contaran (categoría `salud_publica_con_anexo`).
+- **Quién**: Alejandro.
+
+### D35 · 2026-10-23 · Tiendas y mercados en lo rural
+- **Decisión**: la **tienda básica** en lo rural es "no medible": el DENUE no registra los negocios de las localidades rurales pequeñas (D32). El **abasto completo** (mercado o supermercado) rural **sí se mide**, porque esos están en localidades que el DENUE cubre. Se anota que **ninguna fuente registra tianguis**.
+- **Redacción para Irámuco**: "no hay mercado ni supermercado registrado; puede existir un tianguis que ninguna fuente captura".
+- **Quién**: Alejandro (corrigió la propuesta inicial de declarar también el abasto rural como no medible).
+
+### D36 · 2026-10-23 · Clínica del ISSSTE
+- **Decisión**: la UMF del ISSSTE en la ciudad (`salud_primer_nivel-0011`) está **en operación** y cuenta en salud pública. Alejandro la verificó localmente, y Google Maps no la marca como cerrada. Se declara la discrepancia: la CLUES de agosto de 2026 la registra "fuera de operación", sin motivo.
+- **Quién**: Alejandro.
+
+### D37 · 2026-10-23 · Ubicación del CECyTE Acámbaro
+- **Decisión**: Google Maps lo ubica como "CECYTEG Plantel Acámbaro", en Av. San Pablo 8, col. Valle de Acámbaro. El DENUE trae el mismo número (8) y la misma colonia (Valle de Acámbaro) en el punto del sur de la ciudad, que es también el del MG (`bachillerato-0022`, a 680 m de las cuadras de esa colonia). Se **conserva** ese punto, que queda confirmado con la clave SEP 11ETC0037Z. Se **descarta** el punto de la SEP (calle Loma Bonita, col. Loma Bonita, 4.3 km al norte; `bachillerato-S0004`).
+- El MG no trae ninguna calle llamada "San Pablo", así que no se pudo cotejar la calle.
+- **Quién**: Alejandro (ubicación); Claude (cuál punto coincide).
+
+### D38 · 2026-10-23 · Consultorio del CERESO
+- **Decisión**: el "CONSULTORIO MEDICO CIVIL" del DENUE (`salud_primer_nivel-0093`) está dentro del CERESO y no es un servicio abierto a la población. Sale de salud pública (tipo `salud_centro_penitenciario`). Es el mismo criterio que se usó con las escuelas del penal en la fase 3.
+- **Quién**: Alejandro.
+
+### D39 · 2026-10-23 · Parácuaro: secundaria
+- **Decisión**: la secundaria que atiende a Parácuaro es la **Escuela Secundaria Técnica Núm. 24** (clave 11DST0024Y), en la carretera Acámbaro–Parácuaro km 9, fuera del pueblo. Redacción: "no hay secundaria dentro de la localidad".
+- **Comprobación** (V34): es la misma que calculó la fase 3. Está a 4.2 km en línea recta del centro de Parácuaro (5.5 km estimados por camino, mediana). Para la mitad norte del pueblo, la Telesecundaria 847 de La Concepción queda a una distancia casi igual.
+- **Quién**: Alejandro.
+
+### D40 · 2026-10-23 · Fecha del catálogo SEP
+- **Decisión**: el catálogo de centros de trabajo de la SEP (`cct11.csv`, `cct16.csv`) se cita con **fecha de consulta 2026-10-22**. El archivo no trae columna de fecha de corte ni de ciclo escolar. La única fecha es `F_FUNDACION`, llena solo en 19–33 % de los registros, y la más reciente es de diciembre de 2017, así que no sirve como fecha de corte (V35).
+- **Quién**: Alejandro.
+
+### D41 · 2026-10-23 · Verificación remota de servicios: "dudoso_remoto"
+- **Decisión**: la verificación de Alejandro en Google Maps (satélite y Street View, 68 servicios revisados) es **preliminar**. Un "no" **no borra** el servicio: se marca `dudoso_remoto` y se calcula una sensibilidad sin esos servicios. Los "no" y los "no se ve" del municipio pasan a la lista de campo (`docs/verificar_campo.csv`).
+- **No es muestra al azar**: se revisaron todos los bachilleratos y casos priorizados. Las tasas se reportan por tipo y por fuente, y la total con esa advertencia. No describen la confiabilidad general del catálogo.
+- **Excepción**: el consultorio del CERESO (D38).
+- **Casas de salud (D27)**: decididas; ya no son un pendiente.
+- **Quién**: Alejandro.
+

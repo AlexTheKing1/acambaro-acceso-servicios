@@ -1,0 +1,1005 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Acámbaro: zonas de crecimiento urbano</name>
+    <description>Contorno de las cuadras nuevas de cada zona (Marco Geoestadístico del INEGI). Rojo: posteriores a 2020 (MG EIC 2025 vs. MG 2020). Naranja: las 15 más grandes de 2010–2020. Lista completa: docs/verificar_zonas_nuevas.csv.</description>
+    <Style id="2010-2020">
+      <LineStyle>
+        <color>ff1e90ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>551e90ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="posterior_a_2020">
+      <LineStyle>
+        <color>ff0000e6</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>660000e6</color>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>Posteriores a 2020 (todas)</name>
+      <Placemark>
+        <name>Z20-001</name>
+        <description>Zona Z20-001. Periodo: posterior a 2020. Localidad: Acámbaro. Superficie: 1.29 ha. Cuadras: 2; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.707590,20.043358,0 -100.709017,20.042967,0 -100.709085,20.043463,0 -100.708919,20.043495,0 -100.708850,20.043195,0 -100.707766,20.043490,0 -100.707864,20.044076,0 -100.709031,20.043763,0 -100.708953,20.043630,0 -100.709135,20.043582,0 -100.709288,20.043864,0 -100.708352,20.044149,0 -100.707727,20.044257,0 -100.707590,20.043358,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.708784,20.043304,0 -100.708881,20.043721,0 -100.707955,20.043967,0 -100.707873,20.043546,0 -100.708784,20.043304,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z20-002</name>
+        <description>Zona Z20-002. Periodo: posterior a 2020. Localidad: Acámbaro. Superficie: 0.79 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.728637,20.044170,0 -100.729151,20.044083,0 -100.729326,20.044142,0 -100.730285,20.044474,0 -100.730273,20.044598,0 -100.730151,20.044919,0 -100.729248,20.044583,0 -100.729220,20.044558,0 -100.728651,20.044390,0 -100.728637,20.044170,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-003</name>
+        <description>Zona Z20-003. Periodo: posterior a 2020. Localidad: Acámbaro. Superficie: 0.39 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.713164,20.007201,0 -100.713203,20.007169,0 -100.713649,20.007429,0 -100.713505,20.007621,0 -100.713071,20.008022,0 -100.712846,20.008187,0 -100.712815,20.008166,0 -100.713164,20.007201,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-004</name>
+        <description>Zona Z20-004. Periodo: posterior a 2020. Localidad: Arroyo Colorado. Superficie: 0.72 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.628096,20.008730,0 -100.627729,20.008651,0 -100.627729,20.008649,0 -100.628213,20.007132,0 -100.628619,20.007244,0 -100.628096,20.008730,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-005</name>
+        <description>Zona Z20-005. Periodo: posterior a 2020. Localidad: Chupícuaro (Nuevo Chupícuaro). Superficie: 1.24 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.696526,20.066489,0 -100.697964,20.066034,0 -100.698212,20.066703,0 -100.696746,20.067162,0 -100.696526,20.066489,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-006</name>
+        <description>Zona Z20-006. Periodo: posterior a 2020. Localidad: Colonia Eduardo Morales Herrejón. Superficie: 0.61 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.741657,20.003954,0 -100.740839,20.003658,0 -100.741060,20.003094,0 -100.741871,20.003365,0 -100.741657,20.003954,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-007</name>
+        <description>Zona Z20-007. Periodo: posterior a 2020. Localidad: Irámuco. Superficie: 0.78 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.927076,19.968992,0 -100.926644,19.968949,0 -100.926302,19.967460,0 -100.926754,19.967424,0 -100.927076,19.968992,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-008</name>
+        <description>Zona Z20-008. Periodo: posterior a 2020. Localidad: La Ortiga. Superficie: 0.45 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-101.001282,19.962924,0 -101.001382,19.962710,0 -101.001602,19.962740,0 -101.002089,19.962902,0 -101.002241,19.963623,0 -101.001282,19.962924,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-009</name>
+        <description>Zona Z20-009. Periodo: posterior a 2020. Localidad: Los Caballos [Fraccionamiento]. Superficie: 2.58 ha. Cuadras: 3; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.682958,20.051360,0 -100.682757,20.050968,0 -100.683402,20.050650,0 -100.683385,20.050612,0 -100.683368,20.050577,0 -100.682713,20.050878,0 -100.682494,20.050475,0 -100.683086,20.050172,0 -100.683047,20.050116,0 -100.683011,20.050065,0 -100.682422,20.050362,0 -100.682186,20.049955,0 -100.682656,20.049717,0 -100.682772,20.049646,0 -100.682864,20.049580,0 -100.683065,20.049406,0 -100.683111,20.049484,0 -100.683144,20.049480,0 -100.683227,20.049617,0 -100.683278,20.049594,0 -100.683419,20.049834,0 -100.683621,20.050145,0 -100.683774,20.050434,0 -100.683958,20.050864,0 -100.682958,20.051360,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.682269,20.050429,0 -100.681600,20.050797,0 -100.681170,20.050497,0 -100.682051,20.050046,0 -100.682269,20.050429,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.681432,20.050880,0 -100.680986,20.051099,0 -100.680788,20.050691,0 -100.680995,20.050583,0 -100.681432,20.050880,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z20-010</name>
+        <description>Zona Z20-010. Periodo: posterior a 2020. Localidad: San José de la Peña. Superficie: 0.01 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.713679,19.969372,0 -100.713606,19.969421,0 -100.713615,19.969272,0 -100.713682,19.969266,0 -100.713679,19.969372,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-011</name>
+        <description>Zona Z20-011. Periodo: posterior a 2020. Localidad: San José de las Pilas. Superficie: 2.04 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.887583,19.991790,0 -100.886721,19.992042,0 -100.886563,19.992086,0 -100.885373,19.992511,0 -100.885067,19.992302,0 -100.885017,19.992197,0 -100.885006,19.991969,0 -100.885534,19.991871,0 -100.885503,19.991774,0 -100.885963,19.991621,0 -100.885984,19.991681,0 -100.886756,19.991454,0 -100.887294,19.991278,0 -100.887267,19.991184,0 -100.887853,19.990988,0 -100.887978,19.991639,0 -100.887583,19.991790,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-012</name>
+        <description>Zona Z20-012. Periodo: posterior a 2020. Localidad: San Vicente Munguía. Superficie: 0.98 ha. Cuadras: 1; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.598460,20.110468,0 -100.599143,20.110694,0 -100.599163,20.110926,0 -100.598973,20.111501,0 -100.598846,20.111882,0 -100.598543,20.112671,0 -100.598460,20.110468,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Z20-013</name>
+        <description>Zona Z20-013. Periodo: posterior a 2020. Localidad: San Vicente Munguía. Superficie: 0.87 ha. Cuadras: 2; sin población censada (posterior al Censo 2020).</description>
+        <styleUrl>#posterior_a_2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.595675,20.108603,0 -100.595345,20.108601,0 -100.595147,20.108094,0 -100.595133,20.107825,0 -100.595106,20.107651,0 -100.595139,20.107246,0 -100.595176,20.107190,0 -100.595525,20.107273,0 -100.595455,20.107535,0 -100.595511,20.107873,0 -100.595562,20.108092,0 -100.595715,20.108575,0 -100.595675,20.108603,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.595349,20.109137,0 -100.595067,20.108722,0 -100.595291,20.108671,0 -100.595720,20.108649,0 -100.595736,20.108664,0 -100.595494,20.109324,0 -100.595349,20.109137,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>2010–2020 (las 15 más grandes)</name>
+      <Placemark>
+        <name>Z10-116</name>
+        <description>Zona Z10-116. Periodo: 2010-2020. Localidad: Piedras Chinas. Superficie: 12.45 ha. Cuadras: 6.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.728300,19.954835,0 -100.728266,19.954719,0 -100.728271,19.954498,0 -100.728386,19.954085,0 -100.728529,19.953622,0 -100.728562,19.953618,0 -100.728767,19.953826,0 -100.728805,19.953926,0 -100.729149,19.954248,0 -100.729607,19.954670,0 -100.728720,19.955266,0 -100.728354,19.954916,0 -100.728300,19.954835,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.730876,19.955544,0 -100.730607,19.955400,0 -100.730257,19.955191,0 -100.731195,19.954587,0 -100.731529,19.954962,0 -100.731698,19.955101,0 -100.731858,19.955543,0 -100.731887,19.955618,0 -100.731874,19.955711,0 -100.731620,19.955731,0 -100.731437,19.955711,0 -100.731183,19.955638,0 -100.730876,19.955544,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.733103,19.955307,0 -100.733156,19.955241,0 -100.733199,19.955254,0 -100.733237,19.955285,0 -100.733300,19.955357,0 -100.733365,19.955429,0 -100.733450,19.955514,0 -100.733531,19.955583,0 -100.733628,19.955630,0 -100.733714,19.955658,0 -100.733854,19.955692,0 -100.733904,19.955717,0 -100.733923,19.955745,0 -100.733916,19.955834,0 -100.733871,19.956011,0 -100.733870,19.956096,0 -100.733891,19.956186,0 -100.733814,19.956307,0 -100.733028,19.955868,0 -100.732886,19.955792,0 -100.732808,19.955766,0 -100.733103,19.955307,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.733719,19.957000,0 -100.733585,19.956993,0 -100.733365,19.956957,0 -100.733111,19.956917,0 -100.732887,19.956855,0 -100.732519,19.956794,0 -100.732209,19.956804,0 -100.731239,19.956949,0 -100.730672,19.957049,0 -100.729964,19.957255,0 -100.729250,19.957438,0 -100.728885,19.957560,0 -100.728920,19.957384,0 -100.729022,19.957209,0 -100.729427,19.956700,0 -100.729623,19.956450,0 -100.729688,19.956327,0 -100.729752,19.956189,0 -100.729741,19.956113,0 -100.729508,19.955953,0 -100.728940,19.955487,0 -100.728760,19.955312,0 -100.729644,19.954715,0 -100.730081,19.955125,0 -100.730187,19.955209,0 -100.730342,19.955303,0 -100.730613,19.955463,0 -100.730862,19.955590,0 -100.731197,19.955691,0 -100.731420,19.955744,0 -100.731608,19.955773,0 -100.731797,19.955778,0 -100.732020,19.955788,0 -100.732796,19.955815,0 -100.732860,19.955837,0 -100.733009,19.955918,0 -100.733263,19.956058,0 -100.733597,19.956243,0 -100.733843,19.956398,0 -100.734147,19.956499,0 -100.734336,19.956515,0 -100.734452,19.956490,0 -100.734402,19.956582,0 -100.734376,19.956737,0 -100.734390,19.956899,0 -100.734378,19.956956,0 -100.734324,19.957012,0 -100.734261,19.957028,0 -100.734059,19.956998,0 -100.733719,19.957000,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.732587,19.957125,0 -100.732472,19.957351,0 -100.732360,19.957313,0 -100.732021,19.957337,0 -100.731978,19.957281,0 -100.731238,19.957317,0 -100.730990,19.957275,0 -100.730049,19.957437,0 -100.730021,19.957305,0 -100.730720,19.957104,0 -100.731261,19.957005,0 -100.731518,19.956962,0 -100.731883,19.956907,0 -100.732220,19.956849,0 -100.732514,19.956843,0 -100.732773,19.956884,0 -100.733055,19.956958,0 -100.733260,19.956999,0 -100.733567,19.957045,0 -100.733753,19.957337,0 -100.733678,19.957358,0 -100.733287,19.957277,0 -100.732587,19.957125,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.728925,19.957264,0 -100.728751,19.957609,0 -100.727920,19.957934,0 -100.727832,19.957659,0 -100.728925,19.957264,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-053</name>
+        <description>Zona Z10-053. Periodo: 2010-2020. Localidad: Juan Pablo II (Las Varas). Superficie: 9.85 ha. Cuadras: 9.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769425,20.130968,0 -100.769818,20.131121,0 -100.769134,20.132694,0 -100.768767,20.132548,0 -100.769063,20.131821,0 -100.769425,20.130968,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.770809,20.131519,0 -100.770081,20.133104,0 -100.769196,20.132728,0 -100.769886,20.131138,0 -100.770809,20.131519,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.770895,20.131500,0 -100.771606,20.131793,0 -100.770849,20.133492,0 -100.770390,20.133237,0 -100.770171,20.133147,0 -100.770895,20.131500,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.772037,20.131976,0 -100.771287,20.133716,0 -100.770895,20.133532,0 -100.771673,20.131822,0 -100.772037,20.131976,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.772453,20.132146,0 -100.771697,20.133931,0 -100.771340,20.133745,0 -100.772096,20.131998,0 -100.772453,20.132146,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.772116,20.133134,0 -100.772277,20.132769,0 -100.772540,20.132175,0 -100.772541,20.132175,0 -100.772878,20.132319,0 -100.772883,20.132321,0 -100.772089,20.134119,0 -100.771751,20.133958,0 -100.772116,20.133134,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.768486,20.134090,0 -100.768938,20.133095,0 -100.768624,20.132967,0 -100.768757,20.132634,0 -100.769556,20.132967,0 -100.768828,20.134585,0 -100.767477,20.134038,0 -100.767610,20.133738,0 -100.768486,20.134090,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.767353,20.133331,0 -100.767658,20.133452,0 -100.767424,20.133985,0 -100.766701,20.133705,0 -100.766796,20.133462,0 -100.767241,20.133636,0 -100.767353,20.133331,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769347,20.134794,0 -100.768895,20.134609,0 -100.769633,20.132981,0 -100.770066,20.133172,0 -100.769347,20.134794,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-030</name>
+        <description>Zona Z10-030. Periodo: 2010-2020. Localidad: Colonia Eduardo Morales Herrejón. Superficie: 9.59 ha. Cuadras: 13.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739649,20.002492,0 -100.739257,20.002400,0 -100.739437,20.001805,0 -100.739882,20.001751,0 -100.739883,20.001824,0 -100.739649,20.002492,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.740123,20.001941,0 -100.740180,20.002180,0 -100.740081,20.002602,0 -100.739729,20.002512,0 -100.739938,20.001803,0 -100.739957,20.001772,0 -100.739976,20.001754,0 -100.740103,20.001709,0 -100.740121,20.001756,0 -100.740125,20.001862,0 -100.740123,20.001941,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739863,20.003306,0 -100.739303,20.003111,0 -100.739521,20.002516,0 -100.740116,20.002659,0 -100.739863,20.003306,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739794,20.004122,0 -100.739279,20.003825,0 -100.739468,20.003654,0 -100.739535,20.003573,0 -100.739597,20.003443,0 -100.740606,20.003839,0 -100.740326,20.004429,0 -100.739794,20.004122,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739243,20.003878,0 -100.739735,20.004139,0 -100.739645,20.004267,0 -100.739120,20.003996,0 -100.739243,20.003878,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.741121,20.004458,0 -100.740512,20.004213,0 -100.740680,20.003863,0 -100.742929,20.004743,0 -100.742816,20.004945,0 -100.742668,20.005058,0 -100.741680,20.004660,0 -100.741520,20.004999,0 -100.740972,20.004791,0 -100.741121,20.004458,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.742822,20.005020,0 -100.742861,20.005052,0 -100.742638,20.005499,0 -100.742578,20.006117,0 -100.741915,20.005405,0 -100.742693,20.005105,0 -100.742822,20.005020,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.737920,20.001883,0 -100.737884,20.001864,0 -100.737489,20.002659,0 -100.737484,20.002711,0 -100.737015,20.002800,0 -100.736951,20.002711,0 -100.736856,20.002645,0 -100.736645,20.002496,0 -100.736885,20.002077,0 -100.736975,20.001736,0 -100.737128,20.001467,0 -100.737203,20.001293,0 -100.738107,20.001693,0 -100.738883,20.001759,0 -100.738564,20.002778,0 -100.738065,20.002683,0 -100.737589,20.002664,0 -100.737955,20.001902,0 -100.737920,20.001883,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739213,20.002385,0 -100.738805,20.002289,0 -100.738945,20.001828,0 -100.739393,20.001810,0 -100.739213,20.002385,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.739228,20.003061,0 -100.738631,20.002840,0 -100.738778,20.002354,0 -100.739428,20.002486,0 -100.739228,20.003061,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.736893,20.003332,0 -100.736674,20.003320,0 -100.736494,20.003163,0 -100.737003,20.003068,0 -100.737621,20.003627,0 -100.737518,20.003831,0 -100.736893,20.003332,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.738158,20.003516,0 -100.738822,20.003909,0 -100.738852,20.003863,0 -100.738190,20.003471,0 -100.737427,20.002894,0 -100.737631,20.002887,0 -100.738126,20.002916,0 -100.738569,20.003039,0 -100.739535,20.003423,0 -100.739482,20.003553,0 -100.739431,20.003629,0 -100.739208,20.003810,0 -100.739017,20.003987,0 -100.738550,20.004420,0 -100.737008,20.002978,0 -100.737227,20.002901,0 -100.737339,20.002898,0 -100.738158,20.003516,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.736864,20.003380,0 -100.737492,20.003881,0 -100.737336,20.004186,0 -100.736217,20.003215,0 -100.736423,20.003177,0 -100.736643,20.003367,0 -100.736864,20.003380,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-032</name>
+        <description>Zona Z10-032. Periodo: 2010-2020. Localidad: Colonia la Esperanza (Hilario Hernández). Superficie: 7.67 ha. Cuadras: 7.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.742239,20.016947,0 -100.742303,20.016961,0 -100.742353,20.017007,0 -100.742449,20.017114,0 -100.742592,20.017329,0 -100.742728,20.017475,0 -100.742860,20.017582,0 -100.743028,20.017696,0 -100.743438,20.017907,0 -100.742917,20.018796,0 -100.741646,20.017664,0 -100.742239,20.016947,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.741618,20.017693,0 -100.742200,20.018235,0 -100.741643,20.018899,0 -100.741079,20.018385,0 -100.741618,20.017693,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.742207,20.019512,0 -100.742221,20.019489,0 -100.742239,20.019459,0 -100.741675,20.018930,0 -100.741935,20.018641,0 -100.742478,20.019112,0 -100.742495,20.019094,0 -100.742510,20.019077,0 -100.741971,20.018599,0 -100.742235,20.018257,0 -100.742878,20.018835,0 -100.742094,20.019968,0 -100.740754,20.018741,0 -100.741032,20.018438,0 -100.741632,20.018986,0 -100.742207,20.019512,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.740734,20.018805,0 -100.742058,20.020018,0 -100.741880,20.020372,0 -100.740463,20.019094,0 -100.740734,20.018805,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.740420,20.019151,0 -100.741851,20.020407,0 -100.741641,20.020743,0 -100.740163,20.019472,0 -100.740420,20.019151,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.740014,20.019974,0 -100.739967,20.019935,0 -100.739917,20.019867,0 -100.739896,20.019813,0 -100.739896,20.019763,0 -100.740114,20.019528,0 -100.741595,20.020806,0 -100.741256,20.021334,0 -100.739900,20.020095,0 -100.740014,20.019974,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.741242,20.021373,0 -100.741177,20.021566,0 -100.739739,20.020263,0 -100.739875,20.020131,0 -100.741242,20.021373,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-119</name>
+        <description>Zona Z10-119. Periodo: 2010-2020. Localidad: Providencia de San Agustín. Superficie: 7.62 ha. Cuadras: 2.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.846972,20.126265,0 -100.844817,20.124500,0 -100.845773,20.123668,0 -100.846445,20.123115,0 -100.847415,20.123900,0 -100.847766,20.124186,0 -100.848069,20.124382,0 -100.848391,20.124519,0 -100.847480,20.125596,0 -100.846972,20.126265,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.848271,20.125551,0 -100.848193,20.125642,0 -100.847877,20.126006,0 -100.847498,20.125708,0 -100.847790,20.125358,0 -100.848456,20.124549,0 -100.848801,20.124596,0 -100.849354,20.124662,0 -100.848506,20.125685,0 -100.848271,20.125551,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-149</name>
+        <description>Zona Z10-149. Periodo: 2010-2020. Localidad: Tres Marías. Superficie: 7.52 ha. Cuadras: 9.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.696770,20.134624,0 -100.696713,20.134432,0 -100.697069,20.134353,0 -100.697744,20.134089,0 -100.698219,20.134178,0 -100.698229,20.134382,0 -100.698401,20.134371,0 -100.698404,20.134507,0 -100.698262,20.134649,0 -100.696873,20.134664,0 -100.696823,20.134653,0 -100.696770,20.134624,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.698353,20.134857,0 -100.698352,20.134664,0 -100.698543,20.134548,0 -100.698559,20.134237,0 -100.699351,20.134268,0 -100.699350,20.134350,0 -100.699196,20.134367,0 -100.699092,20.134508,0 -100.699076,20.134620,0 -100.699105,20.134623,0 -100.699136,20.134626,0 -100.699153,20.134530,0 -100.699232,20.134428,0 -100.699561,20.134460,0 -100.699593,20.134507,0 -100.699589,20.135001,0 -100.699509,20.135002,0 -100.698964,20.134887,0 -100.698353,20.134857,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.698958,20.134924,0 -100.699263,20.135000,0 -100.699236,20.135436,0 -100.698902,20.135427,0 -100.698914,20.135177,0 -100.698945,20.134983,0 -100.698958,20.134924,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.698758,20.134908,0 -100.698937,20.134923,0 -100.698890,20.135237,0 -100.698858,20.135496,0 -100.698350,20.135426,0 -100.698354,20.134899,0 -100.698758,20.134908,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.699637,20.135673,0 -100.699521,20.136066,0 -100.699491,20.136354,0 -100.699101,20.136424,0 -100.699093,20.135822,0 -100.699121,20.135690,0 -100.699134,20.135577,0 -100.699114,20.135459,0 -100.699259,20.135452,0 -100.699280,20.135004,0 -100.699570,20.135068,0 -100.699637,20.135673,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.698906,20.135453,0 -100.699091,20.135453,0 -100.699110,20.135581,0 -100.699101,20.135674,0 -100.699069,20.135816,0 -100.699074,20.136428,0 -100.698907,20.136460,0 -100.698909,20.135538,0 -100.698906,20.135453,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.698360,20.136620,0 -100.698346,20.136086,0 -100.698367,20.135534,0 -100.698420,20.135486,0 -100.698854,20.135530,0 -100.698878,20.135558,0 -100.698869,20.136458,0 -100.698820,20.136520,0 -100.698770,20.136562,0 -100.698360,20.136620,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.697754,20.137542,0 -100.697505,20.136850,0 -100.698292,20.136699,0 -100.698775,20.136627,0 -100.699151,20.137976,0 -100.698622,20.138136,0 -100.698390,20.138090,0 -100.698116,20.137978,0 -100.697919,20.137771,0 -100.697754,20.137542,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.697916,20.138605,0 -100.697846,20.139158,0 -100.697423,20.139258,0 -100.697156,20.138634,0 -100.697142,20.138377,0 -100.696747,20.137472,0 -100.696657,20.137035,0 -100.697428,20.136859,0 -100.697689,20.137572,0 -100.697984,20.138068,0 -100.697923,20.138549,0 -100.697410,20.138650,0 -100.697422,20.138703,0 -100.697916,20.138605,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-017</name>
+        <description>Zona Z10-017. Periodo: 2010-2020. Localidad: Andocutín. Superficie: 7.36 ha. Cuadras: 5.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.869073,19.956541,0 -100.869525,19.956571,0 -100.869951,19.956621,0 -100.870397,19.956724,0 -100.870939,19.956981,0 -100.871268,19.957229,0 -100.870887,19.957719,0 -100.870501,19.957329,0 -100.870153,19.957160,0 -100.869883,19.957084,0 -100.869867,19.957080,0 -100.869189,19.957023,0 -100.869073,19.956541,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.870444,19.957367,0 -100.870904,19.957819,0 -100.871337,19.957298,0 -100.871632,19.957639,0 -100.871821,19.957917,0 -100.871965,19.958232,0 -100.872089,19.958609,0 -100.869789,19.959210,0 -100.869659,19.958766,0 -100.869446,19.957999,0 -100.870006,19.958085,0 -100.870008,19.958072,0 -100.870033,19.957853,0 -100.869819,19.957772,0 -100.869837,19.957888,0 -100.869777,19.957894,0 -100.869804,19.958004,0 -100.869429,19.957939,0 -100.869341,19.957622,0 -100.869762,19.957622,0 -100.869760,19.957572,0 -100.869757,19.957518,0 -100.869318,19.957527,0 -100.869217,19.957109,0 -100.869884,19.957147,0 -100.870164,19.957233,0 -100.870444,19.957367,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.869826,19.959334,0 -100.869885,19.959318,0 -100.871520,19.958854,0 -100.871520,19.958854,0 -100.871692,19.959311,0 -100.869926,19.959744,0 -100.869826,19.959334,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.870516,19.960005,0 -100.870426,19.959901,0 -100.870326,19.959687,0 -100.871220,19.959472,0 -100.871330,19.959734,0 -100.870721,19.959891,0 -100.870799,19.960090,0 -100.870516,19.960005,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.869745,19.959373,0 -100.869831,19.959691,0 -100.869493,19.959796,0 -100.869617,19.960553,0 -100.869412,19.960553,0 -100.869403,19.960853,0 -100.869069,19.960853,0 -100.869231,19.959453,0 -100.869745,19.959373,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-064</name>
+        <description>Zona Z10-064. Periodo: 2010-2020. Localidad: La Mesa de San José. Superficie: 7.07 ha. Cuadras: 7.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.714630,20.176810,0 -100.714677,20.176977,0 -100.714659,20.177203,0 -100.714582,20.177423,0 -100.713901,20.178687,0 -100.713880,20.178714,0 -100.713844,20.178732,0 -100.713821,20.178744,0 -100.713577,20.178476,0 -100.714630,20.176810,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.715429,20.179369,0 -100.715086,20.179398,0 -100.714635,20.179268,0 -100.714878,20.178896,0 -100.714959,20.178321,0 -100.714359,20.178041,0 -100.714633,20.177572,0 -100.715187,20.177831,0 -100.715325,20.178117,0 -100.715354,20.178379,0 -100.715287,20.178683,0 -100.715473,20.178755,0 -100.715725,20.178455,0 -100.716030,20.178598,0 -100.716168,20.178993,0 -100.716072,20.179316,0 -100.715503,20.179362,0 -100.715798,20.178884,0 -100.715777,20.178875,0 -100.715754,20.178863,0 -100.715429,20.179369,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.713992,20.178971,0 -100.713949,20.178919,0 -100.713934,20.178852,0 -100.714348,20.178086,0 -100.714872,20.178348,0 -100.714834,20.178848,0 -100.714563,20.179262,0 -100.713992,20.178971,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.713764,20.178854,0 -100.713807,20.178887,0 -100.713826,20.178944,0 -100.713817,20.179006,0 -100.713764,20.179063,0 -100.713422,20.179401,0 -100.713365,20.178839,0 -100.713679,20.178835,0 -100.713764,20.178854,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.713431,20.179746,0 -100.713307,20.179623,0 -100.713893,20.178995,0 -100.714321,20.179247,0 -100.714516,20.179337,0 -100.714539,20.179467,0 -100.714659,20.179666,0 -100.714654,20.180065,0 -100.714483,20.180089,0 -100.713622,20.179856,0 -100.713431,20.179746,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.715378,20.180629,0 -100.715092,20.180672,0 -100.714978,20.181290,0 -100.714707,20.181028,0 -100.714721,20.180686,0 -100.714711,20.180162,0 -100.714697,20.179634,0 -100.714573,20.179453,0 -100.714608,20.179330,0 -100.714868,20.179414,0 -100.715064,20.179515,0 -100.715225,20.179682,0 -100.715148,20.180010,0 -100.715127,20.180183,0 -100.715182,20.180405,0 -100.715207,20.180393,0 -100.715230,20.180381,0 -100.715173,20.180179,0 -100.715194,20.180023,0 -100.715310,20.179692,0 -100.715068,20.179453,0 -100.715507,20.179407,0 -100.715731,20.179719,0 -100.715806,20.179806,0 -100.715378,20.180629,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.714483,20.180952,0 -100.714288,20.180995,0 -100.714026,20.180234,0 -100.713388,20.180081,0 -100.713422,20.180215,0 -100.713522,20.180415,0 -100.713379,20.180491,0 -100.712679,20.180177,0 -100.713269,20.179653,0 -100.713436,20.179796,0 -100.713617,20.179882,0 -100.714454,20.180120,0 -100.714654,20.180096,0 -100.714673,20.180375,0 -100.714370,20.180492,0 -100.714385,20.180520,0 -100.714397,20.180542,0 -100.714665,20.180447,0 -100.714683,20.180486,0 -100.714664,20.181028,0 -100.714707,20.181114,0 -100.714868,20.181271,0 -100.714764,20.181376,0 -100.714616,20.181324,0 -100.714483,20.180952,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-088</name>
+        <description>Zona Z10-088. Periodo: 2010-2020. Localidad: Loretito de las Casas. Superficie: 6.83 ha. Cuadras: 7.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.705649,20.078388,0 -100.706316,20.078388,0 -100.706330,20.078302,0 -100.706573,20.078320,0 -100.706630,20.078520,0 -100.705649,20.078527,0 -100.705649,20.078388,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.706163,20.078581,0 -100.706148,20.078724,0 -100.706088,20.078973,0 -100.706045,20.079202,0 -100.705627,20.079173,0 -100.705749,20.078577,0 -100.706163,20.078581,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.706141,20.078913,0 -100.706191,20.078702,0 -100.706202,20.078577,0 -100.706666,20.078588,0 -100.706523,20.079323,0 -100.706238,20.079309,0 -100.706073,20.079284,0 -100.706141,20.078913,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.703050,20.079499,0 -100.704097,20.079504,0 -100.704044,20.079771,0 -100.703040,20.079771,0 -100.703050,20.079499,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.706029,20.079225,0 -100.705979,20.079710,0 -100.705921,20.079997,0 -100.705771,20.079977,0 -100.705767,20.080031,0 -100.705910,20.080050,0 -100.705809,20.080552,0 -100.705779,20.080596,0 -100.705354,20.080590,0 -100.705626,20.079196,0 -100.706029,20.079225,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.705559,20.079218,0 -100.705440,20.079860,0 -100.705263,20.080609,0 -100.705153,20.081224,0 -100.703759,20.081188,0 -100.704230,20.079211,0 -100.705559,20.079218,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.705320,20.080657,0 -100.705334,20.080644,0 -100.705350,20.080637,0 -100.705821,20.080637,0 -100.706007,20.079846,0 -100.706033,20.079650,0 -100.706208,20.079656,0 -100.706209,20.079649,0 -100.706209,20.079645,0 -100.706035,20.079640,0 -100.706077,20.079316,0 -100.706527,20.079355,0 -100.706207,20.081660,0 -100.705215,20.081545,0 -100.705320,20.080657,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-073</name>
+        <description>Zona Z10-073. Periodo: 2010-2020. Localidad: La Purísima Concepción. Superficie: 5.88 ha. Cuadras: 3.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.656044,20.080442,0 -100.655608,20.080621,0 -100.655066,20.079594,0 -100.655009,20.079597,0 -100.654942,20.079599,0 -100.654888,20.079603,0 -100.654851,20.079580,0 -100.654819,20.079535,0 -100.654789,20.079502,0 -100.654758,20.079469,0 -100.654714,20.079429,0 -100.654580,20.079330,0 -100.654486,20.079295,0 -100.654336,20.079252,0 -100.654197,20.079215,0 -100.654152,20.079208,0 -100.654078,20.079197,0 -100.653976,20.079200,0 -100.653890,20.079200,0 -100.653845,20.079205,0 -100.653814,20.079161,0 -100.654067,20.079048,0 -100.654067,20.079048,0 -100.654604,20.078781,0 -100.654638,20.078764,0 -100.655351,20.078401,0 -100.656595,20.077758,0 -100.656602,20.077789,0 -100.656600,20.077845,0 -100.656554,20.078053,0 -100.656533,20.078409,0 -100.656645,20.080277,0 -100.656403,20.080344,0 -100.656044,20.080442,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.654813,20.080376,0 -100.654791,20.080335,0 -100.654455,20.079689,0 -100.654439,20.079657,0 -100.654421,20.079624,0 -100.654414,20.079627,0 -100.654224,20.079266,0 -100.654330,20.079303,0 -100.654464,20.079341,0 -100.654556,20.079381,0 -100.654649,20.079451,0 -100.654707,20.079503,0 -100.654728,20.079529,0 -100.654755,20.079562,0 -100.654816,20.079618,0 -100.654886,20.079655,0 -100.654998,20.079662,0 -100.655269,20.080177,0 -100.655524,20.080661,0 -100.655320,20.080769,0 -100.655111,20.080925,0 -100.654813,20.080376,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.654525,20.080516,0 -100.654282,20.080070,0 -100.654143,20.079794,0 -100.653871,20.079256,0 -100.653968,20.079252,0 -100.654049,20.079260,0 -100.654120,20.079263,0 -100.654357,20.079694,0 -100.654373,20.079723,0 -100.654740,20.080410,0 -100.654762,20.080451,0 -100.655036,20.080947,0 -100.654886,20.081181,0 -100.654543,20.080549,0 -100.654525,20.080516,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-050</name>
+        <description>Zona Z10-050. Periodo: 2010-2020. Localidad: Isla Cerro Grande (Isla Chanaco). Superficie: 5.74 ha. Cuadras: 8.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.955746,19.931046,0 -100.956088,19.931082,0 -100.956162,19.931315,0 -100.955400,19.931636,0 -100.955207,19.931092,0 -100.955746,19.931046,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.954587,19.931272,0 -100.955149,19.931098,0 -100.955349,19.931657,0 -100.954487,19.932019,0 -100.954192,19.931477,0 -100.954587,19.931272,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.956188,19.931382,0 -100.956349,19.931854,0 -100.955593,19.932142,0 -100.955430,19.931711,0 -100.956188,19.931382,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.953711,19.931781,0 -100.954111,19.931517,0 -100.954411,19.932038,0 -100.953669,19.932438,0 -100.953321,19.932096,0 -100.953711,19.931781,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.955379,19.931733,0 -100.955540,19.932162,0 -100.954772,19.932455,0 -100.954575,19.932081,0 -100.955379,19.931733,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.953090,19.932581,0 -100.953305,19.932167,0 -100.953633,19.932474,0 -100.953140,19.932745,0 -100.953119,19.932688,0 -100.953090,19.932581,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.956600,19.933499,0 -100.956850,19.933699,0 -100.956353,19.934301,0 -100.955989,19.935029,0 -100.955489,19.934794,0 -100.955910,19.933802,0 -100.956600,19.933499,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.953797,19.934052,0 -100.953933,19.934944,0 -100.954125,19.935629,0 -100.954261,19.935865,0 -100.954382,19.935972,0 -100.954518,19.935986,0 -100.954732,19.935922,0 -100.955325,19.935536,0 -100.955817,19.935144,0 -100.955867,19.935472,0 -100.955111,19.935986,0 -100.954711,19.936150,0 -100.954489,19.936150,0 -100.954290,19.936057,0 -100.954018,19.935829,0 -100.953876,19.935565,0 -100.953619,19.934965,0 -100.953126,19.932817,0 -100.953911,19.932410,0 -100.953690,19.933038,0 -100.953697,19.933402,0 -100.953797,19.934052,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-118</name>
+        <description>Zona Z10-118. Periodo: 2010-2020. Localidad: Presa Solís [Campamento]. Superficie: 5.38 ha. Cuadras: 6.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.672579,20.053881,0 -100.673592,20.053346,0 -100.673902,20.053912,0 -100.672871,20.054416,0 -100.672579,20.053881,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.672507,20.053924,0 -100.672793,20.054445,0 -100.671902,20.054906,0 -100.671611,20.054417,0 -100.672507,20.053924,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.674287,20.054688,0 -100.674387,20.054531,0 -100.674457,20.054410,0 -100.674619,20.054322,0 -100.675032,20.055143,0 -100.673677,20.055817,0 -100.673327,20.055204,0 -100.674203,20.054766,0 -100.674287,20.054688,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.670844,20.054809,0 -100.671525,20.054452,0 -100.671787,20.054875,0 -100.671849,20.054916,0 -100.672304,20.055612,0 -100.671561,20.055972,0 -100.670844,20.054809,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.673263,20.055236,0 -100.673616,20.055864,0 -100.672861,20.056236,0 -100.672492,20.055628,0 -100.673263,20.055236,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.672389,20.055689,0 -100.672770,20.056278,0 -100.672089,20.056606,0 -100.671735,20.056021,0 -100.672389,20.055689,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-025</name>
+        <description>Zona Z10-025. Periodo: 2010-2020. Localidad: Buenavista (Los Moscos). Superficie: 5.25 ha. Cuadras: 4.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.972611,19.969213,0 -100.972721,19.969159,0 -100.973155,19.969911,0 -100.973146,19.970010,0 -100.973057,19.970042,0 -100.972611,19.969213,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.973886,19.970325,0 -100.973842,19.970309,0 -100.973867,19.970218,0 -100.973993,19.970228,0 -100.973996,19.970173,0 -100.973845,19.970162,0 -100.973817,19.970182,0 -100.973789,19.970289,0 -100.973227,19.970078,0 -100.973246,19.969923,0 -100.974235,19.970004,0 -100.974729,19.970064,0 -100.974726,19.970102,0 -100.974574,19.970189,0 -100.973886,19.970325,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.973991,19.970344,0 -100.974266,19.970302,0 -100.974566,19.970244,0 -100.974759,19.970135,0 -100.974687,19.970415,0 -100.974568,19.970623,0 -100.973985,19.970385,0 -100.973991,19.970344,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.972212,19.972057,0 -100.971909,19.969939,0 -100.972123,19.969951,0 -100.972623,19.970040,0 -100.972767,19.971711,0 -100.972796,19.971709,0 -100.972817,19.971708,0 -100.972694,19.970058,0 -100.972803,19.970085,0 -100.972862,19.970566,0 -100.972919,19.970559,0 -100.972863,19.970100,0 -100.973354,19.970221,0 -100.973432,19.972116,0 -100.973455,19.972114,0 -100.973485,19.972110,0 -100.973416,19.970236,0 -100.973735,19.970332,0 -100.973919,19.970416,0 -100.973840,19.971830,0 -100.973867,19.971834,0 -100.973891,19.971837,0 -100.973968,19.970452,0 -100.974200,19.970577,0 -100.974315,19.970651,0 -100.974290,19.970844,0 -100.974152,19.970861,0 -100.974039,19.972378,0 -100.973456,19.972314,0 -100.972212,19.972057,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-135</name>
+        <description>Zona Z10-135. Periodo: 2010-2020. Localidad: San Nicolás de Tolentino. Superficie: 5.2 ha. Cuadras: 4.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.670564,20.020821,0 -100.670622,20.020782,0 -100.671955,20.020668,0 -100.672284,20.021329,0 -100.672097,20.022046,0 -100.671722,20.021978,0 -100.671700,20.021970,0 -100.671684,20.022006,0 -100.671714,20.022017,0 -100.672084,20.022088,0 -100.671932,20.022673,0 -100.671261,20.022600,0 -100.671478,20.021459,0 -100.671420,20.021454,0 -100.671204,20.022594,0 -100.670522,20.022520,0 -100.670552,20.020926,0 -100.670564,20.020821,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.672545,20.021838,0 -100.672644,20.022155,0 -100.672177,20.022074,0 -100.672336,20.021423,0 -100.672545,20.021838,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.671935,20.022742,0 -100.671832,20.023280,0 -100.670513,20.023149,0 -100.670528,20.022589,0 -100.671935,20.022742,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.671828,20.023340,0 -100.671787,20.023887,0 -100.670517,20.023761,0 -100.670530,20.023207,0 -100.671828,20.023340,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Z10-082</name>
+        <description>Zona Z10-082. Periodo: 2010-2020. Localidad: Las Trancas (Los Milagros). Superficie: 4.93 ha. Cuadras: 7.</description>
+        <styleUrl>#2010-2020</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.772857,20.045367,0 -100.772686,20.046460,0 -100.771959,20.046295,0 -100.772091,20.045304,0 -100.772857,20.045367,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769441,20.046817,0 -100.768175,20.046507,0 -100.768275,20.045660,0 -100.769576,20.045972,0 -100.769441,20.046817,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769907,20.046532,0 -100.769873,20.047053,0 -100.769485,20.046975,0 -100.769652,20.045985,0 -100.769968,20.046058,0 -100.769907,20.046532,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.771933,20.046978,0 -100.771967,20.046888,0 -100.771976,20.046859,0 -100.772001,20.046783,0 -100.770195,20.046146,0 -100.770124,20.046393,0 -100.770036,20.046373,0 -100.769995,20.046364,0 -100.770045,20.046011,0 -100.773032,20.046734,0 -100.772814,20.046764,0 -100.772787,20.047158,0 -100.771947,20.046981,0 -100.771933,20.046978,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.770906,20.046953,0 -100.770877,20.047053,0 -100.770838,20.047132,0 -100.770574,20.047174,0 -100.770442,20.047167,0 -100.770424,20.047132,0 -100.769962,20.047145,0 -100.769932,20.047146,0 -100.769901,20.047147,0 -100.769926,20.046932,0 -100.769954,20.046930,0 -100.770551,20.046895,0 -100.770551,20.046895,0 -100.770559,20.046894,0 -100.770794,20.046826,0 -100.770955,20.046778,0 -100.771427,20.046768,0 -100.771649,20.046837,0 -100.771649,20.046889,0 -100.770966,20.046907,0 -100.770962,20.046910,0 -100.770906,20.046953,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769882,20.047132,0 -100.769879,20.047154,0 -100.769808,20.047664,0 -100.769804,20.047695,0 -100.769381,20.047635,0 -100.769385,20.047604,0 -100.769408,20.047458,0 -100.769728,20.047521,0 -100.769732,20.047497,0 -100.769735,20.047473,0 -100.769414,20.047414,0 -100.769454,20.047154,0 -100.769472,20.047037,0 -100.769474,20.047037,0 -100.769882,20.047132,0 -100.769882,20.047132,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-100.769043,20.046769,0 -100.769431,20.046861,0 -100.769369,20.047243,0 -100.769348,20.047392,0 -100.769212,20.048413,0 -100.768819,20.048348,0 -100.768983,20.047185,0 -100.769043,20.046769,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
