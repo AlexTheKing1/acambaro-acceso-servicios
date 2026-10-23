@@ -114,5 +114,275 @@
   },
   "ciudad_construido_2020_ha": 456.4,
   "ciudad_cuadras_mg2020_ha": 1271.2
+ },
+ "ghsl_sin_cuadras": {
+  "celdas_dominio": 9078,
+  "celdas_sin_dato": 0,
+  "celdas_con_perdida": 0,
+  "perdida_m2": 0.0,
+  "contabilidad": [
+   {
+    "cve_loc": "0001",
+    "localidad": "Acámbaro",
+    "celdas": 4927,
+    "construido_2010_ha": 389.8,
+    "construido_2020_ha": 456.4,
+    "ganancia_neta_ha": 66.6,
+    "ganancia_positiva_ha": 66.6,
+    "dentro_cuadras_ha": 25.0,
+    "dentro_consolidadas_ha": 22.4,
+    "dentro_nuevas_1020_ha": 0.6,
+    "dentro_nuevas_post2020_ha": 0.1,
+    "fuera_cuadras_ha": 41.6,
+    "fuera_poligono_localidad_ha": 34.6
+   },
+   {
+    "cve_loc": "0027",
+    "localidad": "Irámuco",
+    "celdas": 1713,
+    "construido_2010_ha": 67.3,
+    "construido_2020_ha": 71.3,
+    "ganancia_neta_ha": 4.0,
+    "ganancia_positiva_ha": 4.0,
+    "dentro_cuadras_ha": 2.0,
+    "dentro_consolidadas_ha": 1.3,
+    "dentro_nuevas_1020_ha": 0.0,
+    "dentro_nuevas_post2020_ha": 0.0,
+    "fuera_cuadras_ha": 2.0,
+    "fuera_poligono_localidad_ha": 1.6
+   },
+   {
+    "cve_loc": "0047",
+    "localidad": "Parácuaro",
+    "celdas": 1281,
+    "construido_2010_ha": 62.7,
+    "construido_2020_ha": 72.8,
+    "ganancia_neta_ha": 10.0,
+    "ganancia_positiva_ha": 10.0,
+    "dentro_cuadras_ha": 4.6,
+    "dentro_consolidadas_ha": 2.1,
+    "dentro_nuevas_1020_ha": 0.4,
+    "dentro_nuevas_post2020_ha": 0.0,
+    "fuera_cuadras_ha": 5.5,
+    "fuera_poligono_localidad_ha": 4.6
+   },
+   {
+    "cve_loc": "0017",
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 1157,
+    "construido_2010_ha": 52.9,
+    "construido_2020_ha": 62.4,
+    "ganancia_neta_ha": 9.5,
+    "ganancia_positiva_ha": 9.5,
+    "dentro_cuadras_ha": 4.0,
+    "dentro_consolidadas_ha": 3.2,
+    "dentro_nuevas_1020_ha": 0.2,
+    "dentro_nuevas_post2020_ha": 0.0,
+    "fuera_cuadras_ha": 5.5,
+    "fuera_poligono_localidad_ha": 4.4
+   }
+  ],
+  "frac_cuadras_celdas_construidas_2010_percentiles": {
+   "0.1": 0.69,
+   "0.25": 0.76,
+   "0.5": 0.81,
+   "0.75": 0.86,
+   "0.9": 0.9
+  },
+  "frac_cuadras_celdas_con_ganancia": {
+   "<10%": 205,
+   "10-25%": 14,
+   "25-50%": 50,
+   ">=50%": 233
+  },
+  "sensibilidad": [
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.25,
+    "localidad": "Acámbaro",
+    "celdas": 173,
+    "zonas": 52,
+    "m2_ganados_ha": 25.9
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.25,
+    "localidad": "Irámuco",
+    "celdas": 7,
+    "zonas": 5,
+    "m2_ganados_ha": 0.9
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.25,
+    "localidad": "Parácuaro",
+    "celdas": 18,
+    "zonas": 10,
+    "m2_ganados_ha": 2.8
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.25,
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 21,
+    "zonas": 11,
+    "m2_ganados_ha": 2.6
+   },
+   {
+    "ganancia_min_m2": 200,
+    "cobertura_max": 0.25,
+    "localidad": "Acámbaro",
+    "celdas": 279,
+    "zonas": 68,
+    "m2_ganados_ha": 29.3
+   },
+   {
+    "ganancia_min_m2": 200,
+    "cobertura_max": 0.25,
+    "localidad": "Irámuco",
+    "celdas": 12,
+    "zonas": 7,
+    "m2_ganados_ha": 1.0
+   },
+   {
+    "ganancia_min_m2": 200,
+    "cobertura_max": 0.25,
+    "localidad": "Parácuaro",
+    "celdas": 36,
+    "zonas": 12,
+    "m2_ganados_ha": 3.3
+   },
+   {
+    "ganancia_min_m2": 200,
+    "cobertura_max": 0.25,
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 36,
+    "zonas": 13,
+    "m2_ganados_ha": 3.1
+   },
+   {
+    "ganancia_min_m2": 1000,
+    "cobertura_max": 0.25,
+    "localidad": "Acámbaro",
+    "celdas": 103,
+    "zonas": 40,
+    "m2_ganados_ha": 20.8
+   },
+   {
+    "ganancia_min_m2": 1000,
+    "cobertura_max": 0.25,
+    "localidad": "Irámuco",
+    "celdas": 2,
+    "zonas": 1,
+    "m2_ganados_ha": 0.5
+   },
+   {
+    "ganancia_min_m2": 1000,
+    "cobertura_max": 0.25,
+    "localidad": "Parácuaro",
+    "celdas": 11,
+    "zonas": 6,
+    "m2_ganados_ha": 2.3
+   },
+   {
+    "ganancia_min_m2": 1000,
+    "cobertura_max": 0.25,
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 9,
+    "zonas": 6,
+    "m2_ganados_ha": 1.8
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.1,
+    "localidad": "Acámbaro",
+    "celdas": 165,
+    "zonas": 47,
+    "m2_ganados_ha": 25.2
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.1,
+    "localidad": "Irámuco",
+    "celdas": 5,
+    "zonas": 3,
+    "m2_ganados_ha": 0.7
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.1,
+    "localidad": "Parácuaro",
+    "celdas": 16,
+    "zonas": 8,
+    "m2_ganados_ha": 2.6
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.1,
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 19,
+    "zonas": 10,
+    "m2_ganados_ha": 2.4
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.5,
+    "localidad": "Acámbaro",
+    "celdas": 208,
+    "zonas": 70,
+    "m2_ganados_ha": 30.0
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.5,
+    "localidad": "Irámuco",
+    "celdas": 8,
+    "zonas": 6,
+    "m2_ganados_ha": 1.0
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.5,
+    "localidad": "Parácuaro",
+    "celdas": 23,
+    "zonas": 13,
+    "m2_ganados_ha": 3.6
+   },
+   {
+    "ganancia_min_m2": 500,
+    "cobertura_max": 0.5,
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "celdas": 30,
+    "zonas": 15,
+    "m2_ganados_ha": 3.6
+   }
+  ],
+  "zonas": 78,
+  "zonas_por_localidad": {
+   "Acámbaro": {
+    "zonas": 52,
+    "celdas": 173,
+    "m2_ganados": 258676.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "zonas": 11,
+    "celdas": 21,
+    "m2_ganados": 26193.0
+   },
+   "Irámuco": {
+    "zonas": 5,
+    "celdas": 7,
+    "m2_ganados": 8882.0
+   },
+   "Parácuaro": {
+    "zonas": 10,
+    "celdas": 18,
+    "m2_ganados": 27968.0
+   }
+  },
+  "zonas_de_1_celda": 33,
+  "zonas_con_localidad_rural_o_caserio": 18,
+  "celdas_dominio_fuera_del_municipio": 563,
+  "zonas_fuera_del_municipio": 0
  }
 }

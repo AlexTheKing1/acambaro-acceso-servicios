@@ -296,3 +296,34 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Propuesta**: nueva = ≥ 30 % de la superficie de sus cuadras es nueva (2010–2020 o posterior). Desatendida = en ≥ 3 de 5 servicios básicos (preescolar, primaria, secundaria, salud pública, abasto completo), más de la mitad de su población (o de su superficie, si no tiene población) está lejos con el umbral principal. Vaciándose = % no habitadas ≥ percentil 75 de las AGEB consolidadas de su localidad con ≥ 30 viviendas, **y** población 2020 menor que la de 2010 en su unidad comparable. Clases: nueva y desatendida · nueva y bien servida · consolidada y vaciándose (prioridad sobre desatendida; se marca si también lo es) · consolidada desatendida · consolidada estable.
 - **Sensibilidad** (`tipologia_sensibilidad.csv`): nueva 25/40 % (0–2 AGEB cambian); servicios 2 o 4 (30 y 26 cambian); percentil 66/90 (1–2); percentil de las 4 localidades juntas (5).
 - **Quién**: Claude propone; Alejandro decide después de ver los resultados.
+
+---
+
+## Fase 4c — Decisiones de la 4b y crecimiento no registrado
+
+### D47 · 2026-10-23 · Tipología de AGEB: criterios finales (cierra D46)
+- **Decisión**: "desatendida" = en ≥ 3 de 5 servicios básicos (preescolar, primaria, secundaria, salud pública, abasto completo) más de la mitad de la población (o de la superficie, si no tiene población) está lejos con el umbral principal. Con 2 de 5 se reporta como sensibilidad. "Vaciándose" se compara con las AGEB de su propia localidad (percentil 75 de % no habitadas entre las consolidadas con ≥ 30 viviendas), y sigue pidiendo pérdida de población 2010–2020 en su unidad comparable. Nueva = ≥ 30 % de su superficie es cuadra nueva, como se propuso.
+- **Quién**: Alejandro.
+- **Por qué**: 3 de 5 separa la orilla más alejada sin marcar como desatendida casi toda la periferia (con 2 de 5 cambian 30 AGEB). Cada localidad tiene su propio nivel de viviendas no habitadas.
+
+### D48 · 2026-10-23 · Centro de cada localidad (cierra D43)
+- **Decisión**: el centro es el punto de la localidad en el ITER 2020. Se mantienen los anillos de 500 m.
+- **Quién**: Alejandro.
+
+### D49 · 2026-10-23 · Cómo se presentan las cuadras nuevas
+- **Decisión**: en los textos públicos, las cuadras nuevas se presentan con conteos (personas, cuadras, hectáreas), no con porcentajes, porque son un grupo pequeño (356 personas en 2010–2020). El hallazgo del preescolar se mantiene porque aparece con los tres umbrales. En los documentos de trabajo se conservan los porcentajes.
+- **Quién**: Alejandro.
+
+### D50 · 2026-10-23 · Población 1990–2005
+- **Decisión**: los ITER 1990–2005 no se buscan por ahora. La superficie construida por habitante se queda en 2010 y 2020, y se declara como limitación.
+- **Quién**: Alejandro.
+
+### D51 · 2026-10-23 · Título de trabajo
+- **Decisión**: "¿Quién está lejos hoy? Acceso a servicios y vaciamiento urbano en Acámbaro". Puede cambiar al redactar.
+- **Quién**: Alejandro.
+
+### D52 · 2026-10-23 · Construcción del GHSL fuera de las cuadras del INEGI (provisional)
+- **Decisión**: (a) **Contabilidad sin umbral**: se usan las celdas GHS-BUILT-S de 100 m a ≤ 1 km de las 4 localidades urbanas, con la misma asignación que D45. Para cada celda, los m² ganados entre 2010 y 2020 se reparten según qué fracción de la celda está cubierta por cuadras del MG más reciente (MG EIC 2025, todas las del municipio): esa parte cuenta "dentro de cuadras" y el resto "fuera". (b) Una **celda "sin cuadras"** ganó ≥ 500 m² (5 % de la celda) y tiene < 25 % de su superficie en cuadras. (c) Las celdas sin cuadras que se tocan (también por la esquina) forman una **zona**. Las zonas se ordenan por m² ganados; el KML lleva las 20 más grandes.
+- **Opciones**: corte de cobertura en 10, 25 o 50 %; ganancia mínima de 200, 500 o 1 000 m²; usar el polígono de la localidad en lugar de las cuadras (incluye calles); contar solo celdas sin ninguna cuadra.
+- **Quién**: Claude (provisional, **pendiente de la revisión de Alejandro** con `docs/verificar_zonas_ghsl.csv`).
+- **Por qué**: una celda urbana ya construida en 2010 tiene normalmente 69–90 % de su superficie en cuadras (percentiles 10–90), porque las calles no son cuadra. Con menos de 25 %, la celda está claramente fuera de la traza del INEGI. 500 m² equivale a unas 4–5 casas y evita contar como crecimiento las variaciones pequeñas del modelo. Los resultados se mueven poco con los cortes alternativos (V46).
