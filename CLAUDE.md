@@ -31,7 +31,11 @@ python src/02_recortar.py       # recortes de Acámbaro -> data/processed/
 python src/03_base_geografica.py  # población 2020 por manzana, localidades, manzanas nuevas, chequeos
 python src/04_inventario.py     # docs/inventario.md
 python src/05_mapa_fase1.py     # docs/figuras/fase1_base.png
+python src/06_catalogo_servicios.py   # catálogo: data/processed/servicios.gpkg, servicios_sedes.csv
+python src/07_listas_verificacion.py  # docs/verificar_zonas_nuevas.csv, docs/verificar_servicios_muestra.csv
+python src/08_mapa_fase2.py     # docs/figuras/fase2_servicios.png
 ```
+`02_recortar.py --solo <pasos>` corre solo algunos pasos (mg, mg2010, tablas, denue, servicios_mg, ghsl).
 
 ## Notas técnicas para Claude
 - Red: inegi.org.mx, gob.mx y jrc.ec.europa.eu responden; **datos.gob.mx responde 403** (bloqueado por el proxy), dgis.salud.gob.mx y conapo.gob.mx no responden, y la API de SIGED (SEP) tiene una cadena de certificados incompleta (no desactivar la verificación TLS). Por eso CLUES, SEP y CONAPO vienen del release `datos-crudos` (ver `data/raw/LEEME.md`).
@@ -39,6 +43,10 @@ python src/05_mapa_fase1.py     # docs/figuras/fase1_base.png
 - Leer zips sin descomprimir con `/vsizip/` (pyogrio/rasterio). Los CSV 2010 vienen en UTF-8 con BOM; el DENUE y la EIC en latin-1.
 - Sistema de coordenadas de trabajo: el del MG (Cónica Conforme de Lambert, ITRF2008, metros). Los shapefiles rurales de 2010 no traen `.prj`; se les asigna la proyección de los urbanos (verificado: mediana de desplazamiento 0 m).
 - Clave de manzana `800` = caserío disperso (puntos en la capa `caserio_disperso`, no polígonos).
+- El MG de Michoacán se llama `16_michoacandeocampo.zip` (no `16_michoacan.zip`).
+- Decisiones de Alejandro vigentes: "la ciudad" = cabecera (0001); Irámuco, Parácuaro y Chupícuaro son localidades aparte; las 4 urbanas se analizan por cuadra y se reportan por separado (D09). En textos públicos: "cuadra" o "localidad", no "manzana". Grupos ocultos por "*": por AGEB con el mínimo visible de apoyo (D10). Servicios hasta 10 km fuera, incluido Michoacán (D11). Cuadra nueva: < 50 % ya era manzana (D12). Validación con imágenes satelitales y Street View, no campo (D13).
+- El DENUE registra pocas escuelas y centros de salud rurales: el catálogo usa MG EIC 2025 + DENUE (D14). Al llegar CLUES y SEP, contrastar y decidir.
 
 ## Estado
-- Fase 0 y 1 (inventario y base geográfica): terminadas el 2026-10-22, pendiente revisión de Alejandro. Faltan CLUES, SEP y CONAPO (los sube Alejandro).
+- Fase 0 y 1 (inventario y base geográfica): terminadas y revisadas por Alejandro el 2026-10-22 (decisiones D09–D12).
+- Fase 2 (catálogo de servicios): versión con MG EIC 2025 + DENUE terminada el 2026-10-22. Pendiente: que Alejandro revise las listas de verificación y responda las preguntas de criterio (consultorios privados, escuelas privadas, qué tiendas cuentan como abasto, preparatoria abierta). Siguen faltando CLUES, SEP y CONAPO (release `datos-crudos` vacío).

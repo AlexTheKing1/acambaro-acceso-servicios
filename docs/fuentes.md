@@ -19,8 +19,9 @@ Prefijos usados abajo:
 | Marco Geoestadístico, Censo de Población y Vivienda 2020, Guanajuato | Producto 889463807469; fecha de referencia 2019-09-13, insumos al 2020-11-30 | `MG/marcogeo/889463807469/11_guanajuato.zip` | Manzanas, localidades, AGEB, calles 2020 |
 | Marco Geoestadístico 2025, Guanajuato | Producto 794551163061; edición 2025, referencia 2025-07-31 | `MG/marcogeo/794551163061/11_guanajuato.zip` | Respaldo / control (no es la más reciente) |
 | **Marco Geoestadístico, Encuesta Intercensal 2025**, Guanajuato | Producto 794551196649; edición 2026, referencia 2025-11-14 (verificación de campo 8-sep a 14-nov-2025); metadatos 2026-08-25 | `MG/marcogeo/794551196649/11_guanajuato.zip` | **Versión más reciente**: manzanas posteriores a 2020 |
+| Marco Geoestadístico, Encuesta Intercensal 2025, **Michoacán** (descargado 2026-10-22, fase 2) | Producto 794551196649; misma edición y referencia que el de Guanajuato | `MG/marcogeo/794551196649/16_michoacandeocampo.zip` (ojo: el nombre es `michoacandeocampo`; `16_michoacan.zip` devuelve una página HTML) | Escuelas, centros de salud y mercados de Michoacán a ≤ 10 km (capas `sip` y `sia`) |
 | Encuesta Intercensal 2025, conjunto de datos abiertos "Principales resultados por localidad de 50 000 y más habitantes" (incluye total de cada municipio) | Levantamiento oct–nov 2025; publicado 2026-09-22 | `INEGI/programas/eic/2025/datosabiertos/conjunto_de_datos_eic2025_105_csv.zip` | Total municipal 2025 con error estándar e intervalo de confianza |
-| DENUE Guanajuato | Corte 05_2026, modificado 2026-05-20 | `INEGI/masiva/denue/denue_11_csv.zip` | Abasto; contraste de escuelas y salud |
+| DENUE Guanajuato | Corte 05_2026, modificado 2026-05-20 | `INEGI/masiva/denue/denue_11_csv.zip` | Abasto; escuelas y salud (con nombre y sector), junto con el MG |
 | DENUE Michoacán | Corte 05_2026 | `INEGI/masiva/denue/denue_16_csv.zip` | Servicios del otro lado del límite estatal |
 | DENUE Querétaro | Corte 05_2026 | `INEGI/masiva/denue/denue_22_csv.zip` | Ídem (resultó sin establecimientos a ≤ 10 km) |
 | GHSL GHS-BUILT-S R2023A, 100 m, Mollweide, mosaico R7_C9, años 1975–2020 (cada 5) | Release R2023A, V1-0; archivos del servidor fechados 2025-01-27 | `https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E{AÑO}_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_S_E{AÑO}_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip` | Serie histórica de superficie construida (solo observada) |
@@ -32,6 +33,9 @@ Páginas donde se localizaron (por si cambian las URLs):
 - Marco Geoestadístico: https://www.inegi.org.mx/temas/mg/ (Descargas) y fichas `https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=<producto>`
 - DENUE: https://www.inegi.org.mx/app/descarga/ (DENUE, CSV por entidad)
 - GHSL: https://human-settlement.emergency.copernicus.eu/download.php y el FTP del JRC
+
+## Uso en la fase 2 (catálogo de servicios)
+Escuelas, salud de primer nivel y mercados: capas de servicios del MG EIC 2025 (Gto. y Mich.) unidas con el DENUE 05/2026. Abarrotes, minisúper y supermercados: solo DENUE. Detalle en `docs/decisiones.md` (D14–D17).
 
 ## Pendientes (las sube Alejandro al release `datos-crudos`; ver `data/raw/LEEME.md`)
 

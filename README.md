@@ -20,6 +20,9 @@ python src/02_recortar.py
 python src/03_base_geografica.py
 python src/04_inventario.py
 python src/05_mapa_fase1.py
+python src/06_catalogo_servicios.py
+python src/07_listas_verificacion.py
+python src/08_mapa_fase2.py
 ```
 
 Fuentes y versiones: [docs/fuentes.md](docs/fuentes.md) · Decisiones: [docs/decisiones.md](docs/decisiones.md) · Chequeos: [docs/validacion.md](docs/validacion.md)
