@@ -1,0 +1,1387 @@
+{
+ "sep": {
+  "registros_en_franja": 1620,
+  "por_estatus_y_tipo_de_centro": {
+   "ACTIVO | ADMINISTRATIVO": 1,
+   "ACTIVO | ALMACEN DE LIBROS GRATUITOS": 1,
+   "ACTIVO | APOYO A LA EDUCACION": 11,
+   "ACTIVO | ASISTENCIAL": 2,
+   "ACTIVO | BIBLIOTECA": 48,
+   "ACTIVO | BOLSA (EN LIQUIDACION)": 11,
+   "ACTIVO | CENTRO DE MAESTROS": 4,
+   "ACTIVO | DESARROLLO COMUNITARIO": 2,
+   "ACTIVO | ESCUELA": 907,
+   "ACTIVO | JEFATURA DE SECTOR": 8,
+   "ACTIVO | PLANTEL (MEDIA SUPERIOR)": 72,
+   "ACTIVO | RECTORIA": 7,
+   "ACTIVO | SERVICIO REGIONAL": 5,
+   "ACTIVO | SUPERVISION DE ZONA DE EDUCACION": 50,
+   "INACTIVO | ADMINISTRATIVO": 6,
+   "INACTIVO | APOYO A LA EDUCACION": 5,
+   "INACTIVO | BIBLIOTECA": 6,
+   "INACTIVO | COORDINACION DE ZONA DE EDUCACION FISICA": 3,
+   "INACTIVO | ESCUELA": 429,
+   "INACTIVO | JEFATURA DE SECTOR": 5,
+   "INACTIVO | SUPERVISION DE ZONA DE EDUCACION": 37
+  },
+  "escuelas_activas_sin_turno_activo": [],
+  "escuelas_de_otros_niveles_no_usadas": {
+   "SUPERIOR": 15,
+   "INICIAL": 14,
+   "FORMACIÓN PARA EL TRABAJO": 11
+  },
+  "escuelas_que_operan_por_tipo": {
+   "bachillerato": {
+    "false": 40,
+    "true": 25
+   },
+   "escuela_centro_penitenciario": {
+    "false": 0,
+    "true": 1
+   },
+   "escuela_varios_niveles": {
+    "false": 4,
+    "true": 1
+   },
+   "preescolar": {
+    "false": 211,
+    "true": 103
+   },
+   "primaria": {
+    "false": 242,
+    "true": 116
+   },
+   "secundaria": {
+    "false": 83,
+    "true": 41
+   }
+  },
+  "escuelas_sin_operar_por_tipo": {
+   "bachillerato": {
+    "false": 6,
+    "true": 9
+   },
+   "preescolar": {
+    "false": 130,
+    "true": 63
+   },
+   "primaria": {
+    "false": 121,
+    "true": 53
+   },
+   "secundaria": {
+    "false": 9,
+    "true": 10
+   }
+  },
+  "sin_dato_de_matricula": "El catálogo de centros de trabajo no trae matrícula ni número de alumnos (columnas revisadas: 83)."
+ },
+ "clues": {
+  "registros_en_franja": 173,
+  "por_estatus": {
+   "EN OPERACION": 124,
+   "FUERA DE OPERACION": 49
+  },
+  "en_operacion_por_institucion_tipologia": {
+   "INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO | CONSULTORIO DE ATENCION FAMILIAR | salud_primer_nivel": 3,
+   "INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO | UNIDAD DE MEDICINA FAMILIAR | salud_primer_nivel": 1,
+   "INSTITUTO MEXICANO DEL SEGURO SOCIAL | HOSPITAL GENERAL DE SUBZONA CON MEDICINA FAMILIAR | salud_primer_nivel": 1,
+   "INSTITUTO MEXICANO DEL SEGURO SOCIAL | UNIDAD DE MEDICINA FAMILIAR | salud_primer_nivel": 1,
+   "INSTITUTO MEXICANO DEL SEGURO SOCIAL | UNIDAD DE MEDICINA FAMILIAR CON HOSPITALIZACIÓN | salud_primer_nivel": 1,
+   "INSTITUTO MEXICANO DEL SEGURO SOCIAL | UNIDAD MÉDICA RURAL | salud_primer_nivel": 11,
+   "SECRETARIA DE SALUD | CENTROS DE SALUD CON SERVICIOS AMPLIADOS | salud_primer_nivel": 1,
+   "SECRETARIA DE SALUD | HOSPITAL GENERAL | hospital": 2,
+   "SECRETARIA DE SALUD | HOSPITAL INTEGRAL (COMUNITARIO) | hospital": 2,
+   "SECRETARIA DE SALUD | OFICINAS ADMINISTRATIVAS | no se usa": 1,
+   "SECRETARIA DE SALUD | OTROS ESTABLECIMIENTOS DE APOYO | no se usa": 1,
+   "SECRETARIA DE SALUD | RURAL DE 01 NÚCLEO BÁSICO | salud_primer_nivel": 30,
+   "SECRETARIA DE SALUD | RURAL DE 02 NÚCLEOS BÁSICOS | salud_primer_nivel": 2,
+   "SECRETARIA DE SALUD | UNIDAD MÓVIL | unidad_movil": 4,
+   "SECRETARIA DE SALUD | URBANO DE 01 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SECRETARIA DE SALUD | URBANO DE 02 NÚCLEOS BÁSICOS | salud_primer_nivel": 4,
+   "SECRETARIA DE SALUD | URBANO DE 03 NÚCLEOS BÁSICOS | salud_primer_nivel": 3,
+   "SECRETARIA DE SALUD | URBANO DE 06 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SECRETARIA DE SALUD | URBANO DE 10 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SECRETARIA DE SALUD | URBANO DE 11 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | RURAL DE 01 NÚCLEO BÁSICO | salud_primer_nivel": 8,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | RURAL DE 03 NÚCLEOS BÁSICOS Y MÁS | salud_primer_nivel": 2,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | URBANO DE 01 NÚCLEOS BÁSICOS | salud_primer_nivel": 2,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | URBANO DE 03 NÚCLEOS BÁSICOS | salud_primer_nivel": 2,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | URBANO DE 04 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SERVICIOS DE SALUD IMSS BIENESTAR | URBANO DE 09 NÚCLEOS BÁSICOS | salud_primer_nivel": 1,
+   "SERVICIOS MEDICOS PRIVADOS | CONSULTORIO ADYACENTE A FARMACIA | consultorio_privado": 14,
+   "SERVICIOS MEDICOS PRIVADOS | NO ESPECIFICADO | hospital": 19,
+   "SERVICIOS MEDICOS PRIVADOS | NO ESPECIFICADO | no se usa": 1,
+   "SERVICIOS MEDICOS PRIVADOS | OTRO | consultorio_privado": 1,
+   "SISTEMA NACIONAL PARA EL DESARROLLO INTEGRAL DE LA FAMILIA | NO ESPECIFICADO | no se usa": 1
+  },
+  "en_operacion_por_tipo": {
+   "consultorio_privado": {
+    "false": 8,
+    "true": 7
+   },
+   "hospital": {
+    "false": 15,
+    "true": 8
+   },
+   "salud_primer_nivel": {
+    "false": 56,
+    "true": 22
+   },
+   "unidad_movil": {
+    "false": 3,
+    "true": 1
+   }
+  },
+  "fuera_de_operacion_por_tipo": {
+   "consultorio_privado": {
+    "false": 0,
+    "true": 1
+   },
+   "hospital": {
+    "false": 5,
+    "true": 4
+   },
+   "salud_primer_nivel": {
+    "false": 31,
+    "true": 4
+   },
+   "unidad_movil": {
+    "false": 2,
+    "true": 0
+   }
+  }
+ },
+ "sedes_por_tipo_y_estado": {
+  "Acámbaro": {
+   "abasto": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 824,
+    "no confirmada": 0,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 0
+   },
+   "bachillerato": {
+    "baja en CLUES": 0,
+    "baja en SEP": 1,
+    "confirmada": 8,
+    "no aplica": 0,
+    "no confirmada": 2,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 16
+   },
+   "bachillerato_no_escolarizado": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 1,
+    "no confirmada": 0,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 0
+   },
+   "consultorio_privado": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 5,
+    "no aplica": 0,
+    "no confirmada": 39,
+    "nueva (CLUES)": 1,
+    "nueva (SEP)": 0
+   },
+   "escuela_centro_penitenciario": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 0,
+    "no confirmada": 0,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 1
+   },
+   "escuela_varios_niveles": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 1,
+    "no aplica": 0,
+    "no confirmada": 6,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 0
+   },
+   "hospital": {
+    "baja en CLUES": 1,
+    "baja en SEP": 0,
+    "confirmada": 3,
+    "no aplica": 0,
+    "no confirmada": 2,
+    "nueva (CLUES)": 4,
+    "nueva (SEP)": 0
+   },
+   "preescolar": {
+    "baja en CLUES": 0,
+    "baja en SEP": 6,
+    "confirmada": 83,
+    "no aplica": 0,
+    "no confirmada": 3,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 15
+   },
+   "primaria": {
+    "baja en CLUES": 0,
+    "baja en SEP": 1,
+    "confirmada": 94,
+    "no aplica": 0,
+    "no confirmada": 17,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 6
+   },
+   "salud_primer_nivel": {
+    "baja en CLUES": 1,
+    "baja en SEP": 0,
+    "confirmada": 20,
+    "no aplica": 0,
+    "no confirmada": 8,
+    "nueva (CLUES)": 2,
+    "nueva (SEP)": 0
+   },
+   "secundaria": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 34,
+    "no aplica": 0,
+    "no confirmada": 0,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 7
+   },
+   "unidad_movil": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 0,
+    "no confirmada": 0,
+    "nueva (CLUES)": 1,
+    "nueva (SEP)": 0
+   }
+  },
+  "franja 10 km": {
+   "abasto": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 1447,
+    "no confirmada": 0,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 0
+   },
+   "bachillerato": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 11,
+    "no aplica": 0,
+    "no confirmada": 12,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 26
+   },
+   "consultorio_privado": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 7,
+    "no aplica": 0,
+    "no confirmada": 74,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 0
+   },
+   "escuela_varios_niveles": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 1,
+    "no aplica": 0,
+    "no confirmada": 14,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 3
+   },
+   "hospital": {
+    "baja en CLUES": 1,
+    "baja en SEP": 0,
+    "confirmada": 7,
+    "no aplica": 0,
+    "no confirmada": 11,
+    "nueva (CLUES)": 4,
+    "nueva (SEP)": 0
+   },
+   "preescolar": {
+    "baja en CLUES": 0,
+    "baja en SEP": 3,
+    "confirmada": 125,
+    "no aplica": 0,
+    "no confirmada": 76,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 79
+   },
+   "primaria": {
+    "baja en CLUES": 0,
+    "baja en SEP": 2,
+    "confirmada": 138,
+    "no aplica": 0,
+    "no confirmada": 68,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 64
+   },
+   "salud_primer_nivel": {
+    "baja en CLUES": 1,
+    "baja en SEP": 0,
+    "confirmada": 42,
+    "no aplica": 0,
+    "no confirmada": 23,
+    "nueva (CLUES)": 13,
+    "nueva (SEP)": 0
+   },
+   "secundaria": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 48,
+    "no aplica": 0,
+    "no confirmada": 37,
+    "nueva (CLUES)": 0,
+    "nueva (SEP)": 35
+   },
+   "unidad_movil": {
+    "baja en CLUES": 0,
+    "baja en SEP": 0,
+    "confirmada": 0,
+    "no aplica": 0,
+    "no confirmada": 0,
+    "nueva (CLUES)": 1,
+    "nueva (SEP)": 0
+   }
+  }
+ },
+ "sedes_por_tipo_y_sector_acambaro": {
+  "abasto": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 818,
+   "público": 6
+  },
+  "bachillerato": {
+   "desconocido": 1,
+   "mixto": 0,
+   "privado": 9,
+   "público": 17
+  },
+  "bachillerato_no_escolarizado": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 0,
+   "público": 1
+  },
+  "consultorio_privado": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 45,
+   "público": 0
+  },
+  "escuela_centro_penitenciario": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 0,
+   "público": 1
+  },
+  "escuela_varios_niveles": {
+   "desconocido": 0,
+   "mixto": 1,
+   "privado": 4,
+   "público": 2
+  },
+  "hospital": {
+   "desconocido": 2,
+   "mixto": 0,
+   "privado": 6,
+   "público": 2
+  },
+  "preescolar": {
+   "desconocido": 8,
+   "mixto": 0,
+   "privado": 8,
+   "público": 91
+  },
+  "primaria": {
+   "desconocido": 18,
+   "mixto": 0,
+   "privado": 5,
+   "público": 95
+  },
+  "salud_primer_nivel": {
+   "desconocido": 7,
+   "mixto": 0,
+   "privado": 0,
+   "público": 24
+  },
+  "secundaria": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 4,
+   "público": 37
+  },
+  "unidad_movil": {
+   "desconocido": 0,
+   "mixto": 0,
+   "privado": 0,
+   "público": 1
+  }
+ },
+ "sedes_fase2_por_tipo": {
+  "abasto": {
+   "Acámbaro": 824,
+   "franja 10 km": 1447
+  },
+  "bachillerato": {
+   "Acámbaro": 12,
+   "franja 10 km": 23
+  },
+  "consultorio_privado": {
+   "Acámbaro": 44,
+   "franja 10 km": 81
+  },
+  "escuela_varios_niveles": {
+   "Acámbaro": 7,
+   "franja 10 km": 15
+  },
+  "hospital": {
+   "Acámbaro": 6,
+   "franja 10 km": 18
+  },
+  "preescolar": {
+   "Acámbaro": 92,
+   "franja 10 km": 204
+  },
+  "primaria": {
+   "Acámbaro": 112,
+   "franja 10 km": 208
+  },
+  "salud_primer_nivel": {
+   "Acámbaro": 29,
+   "franja 10 km": 67
+  },
+  "secundaria": {
+   "Acámbaro": 34,
+   "franja 10 km": 85
+  }
+ },
+ "como_cruzaron_registros": {
+  "CLUES | <= 150 m": 85,
+  "CLUES | sin sede (nueva)": 28,
+  "CLUES | vecinos mutuos <= 300 m": 7,
+  "SEP | <= 150 m": 395,
+  "SEP | sin sede (nueva)": 271,
+  "SEP | vecinos mutuos <= 300 m": 201
+ },
+ "distancia_registro_a_sede_m": {
+  "SEP": {
+   "mediana": 62.5,
+   "p90": 215.0
+  },
+  "CLUES": {
+   "mediana": 23.5,
+   "p90": 131.70000000000007
+  }
+ },
+ "cambios_de_tipo": [
+  {
+   "id_sede": "salud_primer_nivel-0076",
+   "nombre": "CLÍNICA LOS ÁNGELES",
+   "de": "salud_primer_nivel",
+   "a": "hospital"
+  }
+ ],
+ "conflictos_sector_denue_vs_oficial": [
+  {
+   "id_sede": "secundaria-0095",
+   "nombre": "ESCUELA SECUNDARIA FEDERAL LIC RAFAEL CARRILLO",
+   "denue": "público",
+   "oficial": "privado"
+  },
+  {
+   "id_sede": "bachillerato-0024",
+   "nombre": "BACHILLERATO BIVALENTE MILITARIZADO BATALLON PRIMER LIGERO",
+   "denue": "público",
+   "oficial": "privado"
+  },
+  {
+   "id_sede": "escuela_varios_niveles-0007",
+   "nombre": "CENTRO EDUCATIVO GABRIELA MISTRAL",
+   "denue": "privado",
+   "oficial": "público"
+  },
+  {
+   "id_sede": "bachillerato-0034",
+   "nombre": "ESCUELA PREPARATORIA POR COOPERACION MELCHOR OCAMPO",
+   "denue": "privado",
+   "oficial": "público"
+  }
+ ],
+ "no_confirmadas_acambaro": [
+  {
+   "id_sede": "primaria-0005",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Valle Cuauhtémoc",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "preescolar-0011",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Santa Rosa de Lima",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0022",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San José de las Pilas",
+   "oficial_otro_tipo_cerca": "SEP secundaria"
+  },
+  {
+   "id_sede": "primaria-0042",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+   "oficial_otro_tipo_cerca": "SEP bachillerato; SEP secundaria"
+  },
+  {
+   "id_sede": "primaria-0049",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Arroyo de la Luna",
+   "oficial_otro_tipo_cerca": "SEP bachillerato"
+  },
+  {
+   "id_sede": "primaria-0050",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Arroyo de la Luna",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "primaria-0058",
+   "tipo": "primaria",
+   "nombre": "UTL",
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0067",
+   "tipo": "primaria",
+   "nombre": "Jardín de Niños Fray Pedro de Gante",
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0007",
+   "tipo": "salud_primer_nivel",
+   "nombre": "Centro Medico la Soledad",
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "preescolar-0061",
+   "tipo": "preescolar",
+   "nombre": "Ignacio Ramírez López",
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0083",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Corral de Piedras",
+   "oficial_otro_tipo_cerca": "SEP bachillerato"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0008",
+   "tipo": "salud_primer_nivel",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "La Presa de Santa Inés",
+   "oficial_otro_tipo_cerca": "SEP preescolar; SEP primaria"
+  },
+  {
+   "id_sede": "bachillerato-0004",
+   "tipo": "bachillerato",
+   "nombre": "GRUPO IMPULSOR EDUCATIVO PREPARATORIA TECNOLOGICA DEL SISTEMA ABIERTO",
+   "fuentes": "MG+DENUE",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0092",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Los Fresnos",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "salud_primer_nivel-0011",
+   "tipo": "salud_primer_nivel",
+   "nombre": "UNIDAD DE MEDICA FAMILIAR ISSTE",
+   "fuentes": "MG+DENUE",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "primaria-0094",
+   "tipo": "primaria",
+   "nombre": "Miguel Hidalgo y Costilla",
+   "fuentes": "MG",
+   "localidad": "San Diego de Alcalá (Hacienda de San Diego)",
+   "oficial_otro_tipo_cerca": "SEP bachillerato"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0014",
+   "tipo": "salud_primer_nivel",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Solís",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "salud_primer_nivel-0019",
+   "tipo": "salud_primer_nivel",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "La Ortiga",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0102",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Piedras Chinas",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0289",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San Miguel del Puerto",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "salud_primer_nivel-0080",
+   "tipo": "salud_primer_nivel",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San Luis de los Agustinos",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0291",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San Luis de los Agustinos",
+   "oficial_otro_tipo_cerca": "SEP secundaria"
+  },
+  {
+   "id_sede": "primaria-0292",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Las Partidas",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "primaria-0293",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "La Granja",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "primaria-0294",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Chamácuaro",
+   "oficial_otro_tipo_cerca": "SEP bachillerato"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0081",
+   "tipo": "salud_primer_nivel",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "La Encarnación",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "primaria-0296",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San Miguel",
+   "oficial_otro_tipo_cerca": "SEP preescolar"
+  },
+  {
+   "id_sede": "bachillerato-0022",
+   "tipo": "bachillerato",
+   "nombre": "CECYTEC",
+   "fuentes": "MG+DENUE",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "preescolar-0292",
+   "tipo": "preescolar",
+   "nombre": "ESCUELA PREESCOLAR CARRUSEL",
+   "fuentes": "DENUE",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  },
+  {
+   "id_sede": "salud_primer_nivel-0093",
+   "tipo": "salud_primer_nivel",
+   "nombre": "CONSULTORIO MEDICO CIVIL",
+   "fuentes": "DENUE",
+   "localidad": "Acámbaro",
+   "oficial_otro_tipo_cerca": ""
+  }
+ ],
+ "bajas_oficiales": [
+  {
+   "id_sede": "preescolar-0010",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "El Sauz",
+   "en_acambaro": true,
+   "baja_oficial": "11EJN1201P MIGUEL HIDALGO Y COSTILLA (79 m)"
+  },
+  {
+   "id_sede": "preescolar-0018",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San José de la Peña",
+   "en_acambaro": true,
+   "baja_oficial": "11DJN3448W CUITLAHUAC (25 m)"
+  },
+  {
+   "id_sede": "primaria-0023",
+   "tipo": "primaria",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "San José de la Peña",
+   "en_acambaro": true,
+   "baja_oficial": "11EPR0414A EMILIANO ZAPATA (8 m)"
+  },
+  {
+   "id_sede": "preescolar-0022",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "El Moral",
+   "en_acambaro": true,
+   "baja_oficial": "11DJN3389X NETZAHUALCOYOTL (10 m)"
+  },
+  {
+   "id_sede": "hospital-0001",
+   "tipo": "hospital",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "en_acambaro": true,
+   "baja_oficial": "GTSMP000115 SANATORIO DEL REFUGIO S.A. DE C.V. (38 m)"
+  },
+  {
+   "id_sede": "bachillerato-0003",
+   "tipo": "bachillerato",
+   "nombre": "Preparatoria Profesor Leopoldo Salgado Soler",
+   "fuentes": "MG",
+   "localidad": "Acámbaro",
+   "en_acambaro": true,
+   "baja_oficial": "11PBH0251C ESCUELA PREPARATORIA PROFR. LEOPOLDO SALGADO TOVAR (8 m)"
+  },
+  {
+   "id_sede": "preescolar-0083",
+   "tipo": "preescolar",
+   "nombre": "Preescolar Comunitario",
+   "fuentes": "MG",
+   "localidad": "San Ramón",
+   "en_acambaro": true,
+   "baja_oficial": "11DJN1119Q GUILLERMO PRIETO (128 m)"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0021",
+   "tipo": "salud_primer_nivel",
+   "nombre": "Unión Multidisciplinaria de Atención Primaria para la Salud",
+   "fuentes": "MG",
+   "localidad": "Irámuco",
+   "en_acambaro": true,
+   "baja_oficial": "GTSSA000194 IRAMUCO-UMAPS (9 m)"
+  },
+  {
+   "id_sede": "preescolar-0088",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": "Los Ángeles (El Carrizo)",
+   "en_acambaro": true,
+   "baja_oficial": "11KJN1372T PREESCOLAR COMUNITARIO (8 m)"
+  },
+  {
+   "id_sede": "preescolar-0089",
+   "tipo": "preescolar",
+   "nombre": "José María Liceaga",
+   "fuentes": "MG",
+   "localidad": "La Carpa",
+   "en_acambaro": true,
+   "baja_oficial": "11KJN1381A PREESCOLAR COMUNITARIO (14 m)"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0030",
+   "tipo": "salud_primer_nivel",
+   "nombre": "Centro de Salud",
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "GTSSA017163 JERECUARO - CAISES (35 m)"
+  },
+  {
+   "id_sede": "primaria-0168",
+   "tipo": "primaria",
+   "nombre": "Instituto Vasco de Quiroga",
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "11PPR0962L CENTRO CREATIVO INSTITUCION DE EDUCACION PRIMARIA (122 m)"
+  },
+  {
+   "id_sede": "primaria-0172",
+   "tipo": "primaria",
+   "nombre": "ESCUELA EMPERADOR CUAUHTEMOC",
+   "fuentes": "MG+DENUE",
+   "localidad": "Salvatierra",
+   "en_acambaro": false,
+   "baja_oficial": "11PPR0906T LICEO SAN LUIS (149 m)"
+  },
+  {
+   "id_sede": "hospital-0011",
+   "tipo": "hospital",
+   "nombre": "Sanatorio Siglo XXI",
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "GTSMP001800 SANATORIO SIGLO XXI (123 m)"
+  },
+  {
+   "id_sede": "preescolar-0166",
+   "tipo": "preescolar",
+   "nombre": "Comunitario",
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "11DJN2466E NICOLAS GARCIA (126 m)"
+  },
+  {
+   "id_sede": "preescolar-0264",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "11KJN1444W PREESCOLAR COMUNITARIO (98 m)"
+  },
+  {
+   "id_sede": "preescolar-0276",
+   "tipo": "preescolar",
+   "nombre": NaN,
+   "fuentes": "MG",
+   "localidad": NaN,
+   "en_acambaro": false,
+   "baja_oficial": "11DJN1158S PROMOTOR TECNICO (138 m)"
+  }
+ ],
+ "nuevas_acambaro": [
+  {
+   "id_sede": "preescolar-S0007",
+   "tipo": "preescolar",
+   "nombre": "CARMEN BAEZ",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "La Ortiga"
+  },
+  {
+   "id_sede": "preescolar-S0012",
+   "tipo": "preescolar",
+   "nombre": "JUAN DEWEY",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "Arroyo De La Luna"
+  },
+  {
+   "id_sede": "preescolar-S0013",
+   "tipo": "preescolar",
+   "nombre": "JUAN FEDERICO HERBART",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "La Presa De Santa Inés"
+  },
+  {
+   "id_sede": "preescolar-S0014",
+   "tipo": "preescolar",
+   "nombre": "CARLOS PELLICER",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "San Miguel"
+  },
+  {
+   "id_sede": "preescolar-S0017",
+   "tipo": "preescolar",
+   "nombre": "MOCTOCOHZOMA XOCOYOTZIN",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "Puerto De Cabras"
+  },
+  {
+   "id_sede": "preescolar-S0018",
+   "tipo": "preescolar",
+   "nombre": "ROSARIO CASTELLANOS",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "Las Partidas"
+  },
+  {
+   "id_sede": "bachillerato-S0001",
+   "tipo": "bachillerato",
+   "nombre": "PLANTEL CONALEP 163. ACAMBARO",
+   "sector": "público",
+   "subtipo_oficial": "tecnológico",
+   "localidad": "Jesús Ruiz Ruiz (San Miguel)"
+  },
+  {
+   "id_sede": "secundaria-S0002",
+   "tipo": "secundaria",
+   "nombre": "SECUNDARIA TECNICA NUM. 24",
+   "sector": "público",
+   "subtipo_oficial": "técnica",
+   "localidad": "Ninguno [Escuela Tecnológica Agropecuaria]"
+  },
+  {
+   "id_sede": "bachillerato-S0002",
+   "tipo": "bachillerato",
+   "nombre": "CENTRO DE BACHILLERATO TECNOLÓGICO AGROPECUARIO NO. 298",
+   "sector": "público",
+   "subtipo_oficial": "tecnológico",
+   "localidad": "Ninguno [Escuela Tecnológica Agropecuaria]"
+  },
+  {
+   "id_sede": "primaria-S0022",
+   "tipo": "primaria",
+   "nombre": "BENITO JUAREZ",
+   "sector": "público",
+   "subtipo_oficial": "general",
+   "localidad": "San Juan Jaripeo"
+  },
+  {
+   "id_sede": "bachillerato-S0004",
+   "tipo": "bachillerato",
+   "nombre": "COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL",
+   "sector": "público",
+   "subtipo_oficial": "tecnológico",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0005",
+   "tipo": "bachillerato",
+   "nombre": "VIDEOBACHILLERATO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Arroyo De La Luna"
+  },
+  {
+   "id_sede": "bachillerato-S0006",
+   "tipo": "bachillerato",
+   "nombre": "VIDEOBACHILLERATO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Loreto (Teresa)"
+  },
+  {
+   "id_sede": "bachillerato-S0010",
+   "tipo": "bachillerato",
+   "nombre": "VIDEOBACHILLERATO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Chamácuaro"
+  },
+  {
+   "id_sede": "escuela_centro_penitenciario-S0001",
+   "tipo": "escuela_centro_penitenciario",
+   "nombre": "VIDEOBACHILLERATO CERESO ACAMBARO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0012",
+   "tipo": "bachillerato",
+   "nombre": "TELEBACHILLERATO COMUNITARIO ACAMBARO-MONTE PRIETO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Monte Prieto"
+  },
+  {
+   "id_sede": "bachillerato-S0017",
+   "tipo": "bachillerato",
+   "nombre": "TELEBACHILLERATO COMUNITARIO ACAMBARO-LA ORTIGA",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "La Ortiga"
+  },
+  {
+   "id_sede": "bachillerato-S0018",
+   "tipo": "bachillerato",
+   "nombre": "TELEBACHILLERATO COMUNITARIO ACAMBARO-SAN MATEO TO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "San Mateo Tócuaro"
+  },
+  {
+   "id_sede": "bachillerato-S0019",
+   "tipo": "bachillerato",
+   "nombre": "TELEBACHILLERATO COMUNITARIO ACAMBARO ANDOCUTIN",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Andocutín"
+  },
+  {
+   "id_sede": "bachillerato-S0020",
+   "tipo": "bachillerato",
+   "nombre": "TELEBACHILLERATO COMUNITARIO ACAMBARO EL RODEO",
+   "sector": "público",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "El Rodeo"
+  },
+  {
+   "id_sede": "secundaria-S0003",
+   "tipo": "secundaria",
+   "nombre": "TELESECUNDARIA NUM. 59",
+   "sector": "público",
+   "subtipo_oficial": "telesecundaria",
+   "localidad": "Santiaguillo"
+  },
+  {
+   "id_sede": "secundaria-S0006",
+   "tipo": "secundaria",
+   "nombre": "TELESECUNDARIA NUM. 210",
+   "sector": "público",
+   "subtipo_oficial": "telesecundaria",
+   "localidad": "San José De Las Pilas"
+  },
+  {
+   "id_sede": "secundaria-S0007",
+   "tipo": "secundaria",
+   "nombre": "TELESECUNDARIA NUM. 259",
+   "sector": "público",
+   "subtipo_oficial": "telesecundaria",
+   "localidad": "San Luis De Los Agustinos"
+  },
+  {
+   "id_sede": "secundaria-S0008",
+   "tipo": "secundaria",
+   "nombre": "TELESECUNDARIA NUM. 544",
+   "sector": "público",
+   "subtipo_oficial": "telesecundaria",
+   "localidad": "Tres Marías"
+  },
+  {
+   "id_sede": "preescolar-S0029",
+   "tipo": "preescolar",
+   "nombre": "PREESCOLAR COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "Palo Blanco Del Refugio"
+  },
+  {
+   "id_sede": "preescolar-S0032",
+   "tipo": "preescolar",
+   "nombre": "PREESCOLAR COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "Piedras Chinas"
+  },
+  {
+   "id_sede": "preescolar-S0037",
+   "tipo": "preescolar",
+   "nombre": "PREESCOLAR COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "San Ramón"
+  },
+  {
+   "id_sede": "preescolar-S0038",
+   "tipo": "preescolar",
+   "nombre": "PREESCOLAR COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "La Granja"
+  },
+  {
+   "id_sede": "preescolar-S0049",
+   "tipo": "preescolar",
+   "nombre": "PREESCOLAR COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "La Mesa De San José"
+  },
+  {
+   "id_sede": "primaria-S0026",
+   "tipo": "primaria",
+   "nombre": "CURSO COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "Piedras Chinas"
+  },
+  {
+   "id_sede": "primaria-S0027",
+   "tipo": "primaria",
+   "nombre": "CURSO COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "Isla Cerro Grande (Isla Chanaco)"
+  },
+  {
+   "id_sede": "primaria-S0033",
+   "tipo": "primaria",
+   "nombre": "CURSO COMUNITARIO",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "El Moral"
+  },
+  {
+   "id_sede": "secundaria-S0016",
+   "tipo": "secundaria",
+   "nombre": "SECUNDARIA COMUNITARIA",
+   "sector": "público",
+   "subtipo_oficial": "comunitario",
+   "localidad": "La Chicharronera (Camino Blanco)"
+  },
+  {
+   "id_sede": "bachillerato-S0030",
+   "tipo": "bachillerato",
+   "nombre": "CENTRO DE ESTUDIOS DE CELAYA",
+   "sector": "privado",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0032",
+   "tipo": "bachillerato",
+   "nombre": "JOSEFA ORTIZ DE DOMINGUEZ",
+   "sector": "privado",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0034",
+   "tipo": "bachillerato",
+   "nombre": "INSTITUTO AMERICANO",
+   "sector": "privado",
+   "subtipo_oficial": "bachillerato general; tecnológico",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0035",
+   "tipo": "bachillerato",
+   "nombre": "INSTITUTO PREUNIVERSITARIO DEL CENTRO DE MEXICO CA",
+   "sector": "privado",
+   "subtipo_oficial": "bachillerato general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "secundaria-S0018",
+   "tipo": "secundaria",
+   "nombre": "COLEGIO OXFORD",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "bachillerato-S0036",
+   "tipo": "bachillerato",
+   "nombre": "INSTITUTO TECNICO COMERCIAL ACAMBARO",
+   "sector": "privado",
+   "subtipo_oficial": "profesional técnico",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "preescolar-S0050",
+   "tipo": "preescolar",
+   "nombre": "MONTAÑEZ CENTRO EDUCATIVO ACAMBARENSE A. C.",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "preescolar-S0053",
+   "tipo": "preescolar",
+   "nombre": "COLEGIO TERESA MARTIN",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "preescolar-S0054",
+   "tipo": "preescolar",
+   "nombre": "JOSEFA ORTIZ DE DOMINGUEZ INSTITUCION DE EDUCACIO",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "preescolar-S0055",
+   "tipo": "preescolar",
+   "nombre": "JEAN PIAGET",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Parácuaro"
+  },
+  {
+   "id_sede": "primaria-S0034",
+   "tipo": "primaria",
+   "nombre": "MONTAÑEZ CENTRO EDUCATIVO ACAMBARENSE A. C.",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "primaria-S0036",
+   "tipo": "primaria",
+   "nombre": "JOSEFA ORTIZ DE DOMINGUEZ",
+   "sector": "privado",
+   "subtipo_oficial": "general",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "salud_primer_nivel-C0001",
+   "tipo": "salud_primer_nivel",
+   "nombre": "HGSMF 13 ACAMBARO",
+   "sector": "público",
+   "subtipo_oficial": "hospital general de subzona con medicina familiar",
+   "localidad": "Acambaro"
+  },
+  {
+   "id_sede": "hospital-C0001",
+   "tipo": "hospital",
+   "nombre": "CLÍNICA SAN FRANCISCO",
+   "sector": "privado",
+   "subtipo_oficial": "no especificado",
+   "localidad": "Acambaro"
+  },
+  {
+   "id_sede": "hospital-C0002",
+   "tipo": "hospital",
+   "nombre": "CLÍNICA SANTA CRUZ",
+   "sector": "privado",
+   "subtipo_oficial": "no especificado",
+   "localidad": "Acambaro"
+  },
+  {
+   "id_sede": "hospital-C0005",
+   "tipo": "hospital",
+   "nombre": "CLÍNICA MATERNIDAD SIGLO XXI",
+   "sector": "privado",
+   "subtipo_oficial": "no especificado",
+   "localidad": "Acambaro"
+  },
+  {
+   "id_sede": "consultorio_privado-C0001",
+   "tipo": "consultorio_privado",
+   "nombre": "F-6852 ACAMBARO 9, GTO A TM",
+   "sector": "privado",
+   "subtipo_oficial": "consultorio adyacente a farmacia",
+   "localidad": "Acambaro"
+  },
+  {
+   "id_sede": "unidad_movil-C0001",
+   "tipo": "unidad_movil",
+   "nombre": "ESI 29 CUTARO",
+   "sector": "público",
+   "subtipo_oficial": "unidad móvil",
+   "localidad": "Cutaro"
+  },
+  {
+   "id_sede": "salud_primer_nivel-C0004",
+   "tipo": "salud_primer_nivel",
+   "nombre": "SAN JUAN JARIPEO-UMAPS",
+   "sector": "público",
+   "subtipo_oficial": "rural de 01 núcleo básico",
+   "localidad": "San Juan Jaripeo"
+  },
+  {
+   "id_sede": "hospital-C0006",
+   "tipo": "hospital",
+   "nombre": "HOSPITAL GENERAL ACAMBARO MIGUEL HIDALGO",
+   "sector": "público",
+   "subtipo_oficial": "hospital general",
+   "localidad": "Acambaro"
+  }
+ ],
+ "aparte_acambaro": [
+  {
+   "id_sede": "bachillerato-0032",
+   "tipo": "bachillerato_no_escolarizado",
+   "nombre": "PREPARATORIA ABIERTA",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "escuela_centro_penitenciario-S0001",
+   "tipo": "escuela_centro_penitenciario",
+   "nombre": "VIDEOBACHILLERATO CERESO ACAMBARO",
+   "localidad": "Acámbaro"
+  },
+  {
+   "id_sede": "unidad_movil-C0001",
+   "tipo": "unidad_movil",
+   "nombre": "ESI 29 CUTARO",
+   "localidad": "Cutaro"
+  }
+ ],
+ "parametros": {
+  "DIST_MISMA_SEDE_m": 60,
+  "DIST_CONFIRMA_m": 150,
+  "DIST_MUTUO_m": 300
+ },
+ "muestra_confirmado_sep_clues": {
+  "abasto | no aplica (abasto: no está en SEP ni CLUES)": 31,
+  "bachillerato | SEP": 12,
+  "bachillerato | baja en SEP (dada de baja)": 1,
+  "bachillerato | no": 4,
+  "bachillerato | no aplica (bachillerato no escolarizado)": 1,
+  "preescolar | SEP": 14,
+  "preescolar | no": 4,
+  "primaria | SEP": 11,
+  "primaria | no": 5,
+  "salud_primer_nivel | CLUES": 25,
+  "salud_primer_nivel | baja en CLUES (dada de baja)": 1,
+  "salud_primer_nivel | no": 9,
+  "secundaria | SEP": 13,
+  "secundaria | no": 3
+ }
+}

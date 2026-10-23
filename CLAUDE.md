@@ -34,19 +34,32 @@ python src/05_mapa_fase1.py     # docs/figuras/fase1_base.png
 python src/06_catalogo_servicios.py   # catálogo: data/processed/servicios.gpkg, servicios_sedes.csv
 python src/07_listas_verificacion.py  # docs/verificar_zonas_nuevas.csv, docs/verificar_servicios_muestra.csv
 python src/08_mapa_fase2.py     # docs/figuras/fase2_servicios.png
+python src/09_catalogo_sep_clues.py   # catálogo con SEP y CLUES: servicios_fase3.gpkg, servicios_sedes_fase3.csv (+ columna en la muestra)
+python src/10_redes.py          # red de calles para caminar: red_peatonal.gpkg
+python src/11_accesibilidad.py  # distancias y población lejana: acceso_*.csv/gpkg, conteo_servicios_por_localidad.csv
+python src/12_colonias_contexto.py  # colonias_cuadras.csv, contexto_ageb.csv, contexto_localidades.csv
+python src/13_mapas_fase3.py    # docs/figuras/fase3_<categoría>.png
+python src/14_verificar_rutas.py  # docs/verificar_rutas.csv
 ```
-`02_recortar.py --solo <pasos>` corre solo algunos pasos (mg, mg2010, tablas, denue, servicios_mg, ghsl).
+`01_descargar.py --solo <fuentes>` baja solo esas fuentes (p. ej. `clues sep_escuelas asentamientos`); la red de OpenStreetMap solo se intenta con `--solo osm_caminos`.
+`02_recortar.py --solo <pasos>` corre solo algunos pasos (mg, mg2010, tablas, denue, servicios_mg, ghsl, sep, clues).
 
 ## Notas técnicas para Claude
-- Red: inegi.org.mx, gob.mx y jrc.ec.europa.eu responden; **datos.gob.mx responde 403** (bloqueado por el proxy), dgis.salud.gob.mx y conapo.gob.mx no responden, y la API de SIGED (SEP) tiene una cadena de certificados incompleta (no desactivar la verificación TLS). Por eso CLUES, SEP y CONAPO vienen del release `datos-crudos` (ver `data/raw/LEEME.md`).
+- Red: inegi.org.mx, gob.mx y jrc.ec.europa.eu responden; **datos.gob.mx responde 403** (bloqueado por el proxy), dgis.salud.gob.mx y conapo.gob.mx no responden, y la API de SIGED (SEP) tiene una cadena de certificados incompleta (no desactivar la verificación TLS). Por eso CLUES y SEP vienen del release `datos-crudos` (ver `data/raw/LEEME.md`); CONAPO no está disponible (D24). gaia.inegi.org.mx (servicios web del Catálogo Único) sí responde: claves con formato `/asentamientos/11/002`.
 - Las páginas de INEGI son dinámicas; las URLs directas ya están en `src/01_descargar.py` y `docs/fuentes.md`, no hace falta volver a buscarlas.
 - Leer zips sin descomprimir con `/vsizip/` (pyogrio/rasterio). Los CSV 2010 vienen en UTF-8 con BOM; el DENUE y la EIC en latin-1.
 - Sistema de coordenadas de trabajo: el del MG (Cónica Conforme de Lambert, ITRF2008, metros). Los shapefiles rurales de 2010 no traen `.prj`; se les asigna la proyección de los urbanos (verificado: mediana de desplazamiento 0 m).
 - Clave de manzana `800` = caserío disperso (puntos en la capa `caserio_disperso`, no polígonos).
 - El MG de Michoacán se llama `16_michoacandeocampo.zip` (no `16_michoacan.zip`).
 - Decisiones de Alejandro vigentes: "la ciudad" = cabecera (0001); Irámuco, Parácuaro y Chupícuaro son localidades aparte; las 4 urbanas se analizan por cuadra y se reportan por separado (D09). En textos públicos: "cuadra" o "localidad", no "manzana". Grupos ocultos por "*": por AGEB con el mínimo visible de apoyo (D10). Servicios hasta 10 km fuera, incluido Michoacán (D11). Cuadra nueva: < 50 % ya era manzana (D12). Validación con imágenes satelitales y Street View, no campo (D13).
-- El DENUE registra pocas escuelas y centros de salud rurales: el catálogo usa MG EIC 2025 + DENUE (D14). Al llegar CLUES y SEP, contrastar y decidir.
+- El DENUE registra pocas escuelas y centros de salud rurales: el catálogo usa MG EIC 2025 + DENUE (D14), contrastado con SEP y CLUES en la fase 3 (D29): sedes confirmadas, no confirmadas (se conservan), nuevas y dadas de baja (no se usan).
+- El DENUE prácticamente no registra comercios ni consultorios fuera de las 4 localidades urbanas: tienda básica y consultorio privado no se miden en lo rural (D32).
+- Decisiones de fase 3 vigentes: salud principal = públicas de primer nivel confirmadas (D20; consultorios privados, casas de salud y unidad móvil aparte, D27); escuelas todas y solo públicas (D21); tienda básica / abasto completo (D22); preparatoria abierta = "bachillerato no escolarizado", no cuenta (D23); CONAPO sustituido (D24); umbrales en 3 niveles, **definitivo pendiente de Alejandro** (D25); red rural = línea recta × 1.33 porque no hubo red descargable (D26); sensibilidad con solo confirmadas (D28).
+- Red y proxy: overpass-api.de y download.geofabrik.de cortan la conexión en el proxy (2026-10-23) aunque Alejandro los agregó; la RNC del INEGI no tiene URL directa localizable. No reintentar más de dos veces por fuente.
+- La CLUES trae espacios al final en algunos campos (p. ej. "SERVICIOS DE SALUD IMSS BIENESTAR "): limpiar antes de comparar. El catálogo SEP trae datos personales del director (CONTACTO_*): se quitan al recortar.
+- La clave de una cuadra nueva posterior a 2020 puede repetir la de una cuadra 2020 renumerada: no unir tablas por CVEGEO entre ediciones; usar posición o la pareja (CVEGEO, origen).
 
 ## Estado
 - Fase 0 y 1 (inventario y base geográfica): terminadas y revisadas por Alejandro el 2026-10-22 (decisiones D09–D12).
-- Fase 2 (catálogo de servicios): versión con MG EIC 2025 + DENUE terminada el 2026-10-22. Pendiente: que Alejandro revise las listas de verificación y responda las preguntas de criterio (consultorios privados, escuelas privadas, qué tiendas cuentan como abasto, preparatoria abierta). Siguen faltando CLUES, SEP y CONAPO (release `datos-crudos` vacío).
+- Fase 2 (catálogo de servicios): terminada el 2026-10-22; preguntas de criterio respondidas por Alejandro el 2026-10-23 (D20–D24). Alejandro está revisando `docs/verificar_servicios_muestra.csv` (no regenerarla).
+- Fase 3 (accesibilidad): terminada el 2026-10-23. Resumen en `docs/resumen_fase3.md`. Pendiente de Alejandro: umbral definitivo (D25), unidades de salud sin CLUES (D30), ISSSTE, ubicación del CECyTE, Parácuaro sin secundaria, tiendas rurales (D32), red de caminos (subir RNC al release), fecha de corte SEP, y subir `verificacion_zonas.csv` / `verificacion_servicios.csv` para incorporarlos a `docs/validacion.md` en la fase 4.

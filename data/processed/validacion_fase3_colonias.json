@@ -1,0 +1,96 @@
+{
+ "colonias": {
+  "catalogo_asentamientos": 147,
+  "catalogo_periodo": [
+   "11/2021",
+   "11/2025"
+  ],
+  "catalogo_por_localidad": {
+   "0001": 122,
+   "0027": 11,
+   "0017": 5,
+   "0047": 3,
+   "0378": 3,
+   "0070": 1,
+   "0390": 1,
+   "0434": 1
+  },
+  "catalogo_por_tipo": {
+   "COLONIA": 97,
+   "NINGUNO": 32,
+   "FRACCIONAMIENTO": 15,
+   "CONJUNTO HABITACIONAL": 2,
+   "EJIDO": 1
+  },
+  "registros_con_asentamiento": {
+   "CLUES": 37,
+   "DENUE": 5932,
+   "SEP": 260
+  },
+  "registros_con_nombre_en_catalogo": {
+   "CLUES": 9,
+   "DENUE": 5024,
+   "SEP": 85
+  },
+  "nombres_fuera_de_catalogo_mas_frecuentes": {
+   "IRAMUCO": 319,
+   "PARACUARO": 266,
+   "NUEVO CHUPICUARO": 203,
+   "ZONA CENTRO": 73,
+   "NO APLICA": 56,
+   "ACAMBARO": 29,
+   "PARCIALIDAD": 28,
+   "ACAMBARO CENTRO": 25,
+   "LA ASCENSION": 18,
+   "SAN PEDRO": 9,
+   "CAMBARO": 9,
+   "ACÁMBARO CENTRO": 8,
+   "PAREDONES": 6,
+   "CAMELINAS": 6,
+   "IRAMCO": 5
+  },
+  "cuadras_por_metodo": {
+   "Acámbaro": {
+    "5 registros más cercanos (<= 300 m)": 717,
+    "registros dentro de la cuadra": 488,
+    "sin registros cerca": 3
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "5 registros más cercanos (<= 300 m)": 40,
+    "registros dentro de la cuadra": 0,
+    "sin registros cerca": 91
+   },
+   "Irámuco": {
+    "5 registros más cercanos (<= 300 m)": 44,
+    "registros dentro de la cuadra": 0,
+    "sin registros cerca": 98
+   },
+   "Parácuaro": {
+    "5 registros más cercanos (<= 300 m)": 32,
+    "registros dentro de la cuadra": 1,
+    "sin registros cerca": 106
+   }
+  },
+  "cuadras_con_nombre_pct": {
+   "Acámbaro": 99.8,
+   "Chupícuaro (Nuevo Chupícuaro)": 30.5,
+   "Irámuco": 31.0,
+   "Parácuaro": 23.7
+  },
+  "poblacion_con_nombre_pct": {
+   "Acámbaro": 100.0,
+   "Chupícuaro (Nuevo Chupícuaro)": 37.4,
+   "Irámuco": 35.5,
+   "Parácuaro": 30.0
+  },
+  "cuadras_con_empate": 59,
+  "asentamientos_del_catalogo_sin_cuadra_urbana": 70,
+  "asentamientos_del_catalogo_en_localidades_urbanas": 141
+ },
+ "contexto": {
+  "agebs": 126,
+  "localidades": 212,
+  "localidades_con_algun_indicador_oculto": 68,
+  "agebs_con_algun_indicador_oculto": 96
+ }
+}

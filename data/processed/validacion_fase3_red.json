@@ -1,0 +1,123 @@
+{
+ "ejes_viales": 9648,
+ "tramos_iniciales": 24969,
+ "ejes_por_tipo": {
+  "Calle": 8138,
+  "Privada": 937,
+  "Avenida": 227,
+  "Prolongación": 146,
+  "Carretera": 96,
+  "Cerrada": 37,
+  "Andador": 36,
+  "Callejón": 15,
+  "Boulevard": 12,
+  "Peatonal": 2,
+  "Ampliación": 2
+ },
+ "componentes_antes_de_unir": 164,
+ "extremos_sueltos": 2046,
+ "uniones_agregadas": 455,
+ "uniones_longitud_m": {
+  "mediana": 8.8,
+  "max": 14.9
+ },
+ "componentes_despues_de_unir": 138,
+ "localidades_urbanas": {
+  "Acámbaro": {
+   "componente_principal": 0,
+   "cuadras": 1224,
+   "cuadras_en_otro_componente": 8,
+   "pob_en_otro_componente": 193,
+   "detalle_otros": [
+    {
+     "componente": 58,
+     "cuadras": 1,
+     "pob": 10
+    },
+    {
+     "componente": 82,
+     "cuadras": 1,
+     "pob": 24
+    },
+    {
+     "componente": 97,
+     "cuadras": 6,
+     "pob": 159
+    }
+   ],
+   "acceso_m_mediana": 25.9,
+   "acceso_m_p95": 66.9,
+   "acceso_m_max": 489.8
+  },
+  "Irámuco": {
+   "componente_principal": 2,
+   "cuadras": 147,
+   "cuadras_en_otro_componente": 6,
+   "pob_en_otro_componente": 28,
+   "detalle_otros": [
+    {
+     "componente": 98,
+     "cuadras": 3,
+     "pob": 11
+    },
+    {
+     "componente": 119,
+     "cuadras": 1,
+     "pob": 5
+    },
+    {
+     "componente": 120,
+     "cuadras": 1,
+     "pob": 0
+    },
+    {
+     "componente": 131,
+     "cuadras": 1,
+     "pob": 12
+    }
+   ],
+   "acceso_m_mediana": 27.9,
+   "acceso_m_p95": 73.4,
+   "acceso_m_max": 159.2
+  },
+  "Parácuaro": {
+   "componente_principal": 9,
+   "cuadras": 147,
+   "cuadras_en_otro_componente": 1,
+   "pob_en_otro_componente": 8,
+   "detalle_otros": [
+    {
+     "componente": 113,
+     "cuadras": 1,
+     "pob": 8
+    }
+   ],
+   "acceso_m_mediana": 36.6,
+   "acceso_m_p95": 77.4,
+   "acceso_m_max": 373.5
+  },
+  "Chupícuaro (Nuevo Chupícuaro)": {
+   "componente_principal": 7,
+   "cuadras": 134,
+   "cuadras_en_otro_componente": 0,
+   "pob_en_otro_componente": 0,
+   "detalle_otros": [],
+   "acceso_m_mediana": 34.6,
+   "acceso_m_p95": 58.6,
+   "acceso_m_max": 176.3
+  }
+ },
+ "componentes_longitud_km_top10": {
+  "0": 282.29,
+  "9": 39.28,
+  "2": 36.58,
+  "7": 31.97,
+  "14": 16.45,
+  "5": 16.0,
+  "1": 15.74,
+  "42": 14.67,
+  "34": 11.72,
+  "8": 10.61
+ },
+ "componentes_menores_a_200m": 26
+}

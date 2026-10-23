@@ -110,3 +110,68 @@ Cifras generadas por `src/06_catalogo_servicios.py` en `data/processed/validacio
 - Una zona posterior a 2020 está en "Los Caballos [Fraccionamiento]" (0481), localidad dibujada en el MG 2020 pero **sin fila en el ITER 2020** (sin población censada); otra (San José de la Peña) mide 0.01 ha: probablemente un ajuste de dibujo.
 - `docs/verificar_servicios_muestra.csv`: **134 sedes** en 36 estratos (todas las de salud de primer nivel y bachillerato del municipio y los 12 mercados).
 - Los enlaces satelitales siguen el formato pedido (`https://www.google.com/maps/@LAT,LON,300m/data=!3m1!1e3`); los de Street View, el formato oficial `map_action=pano`. No se abrieron desde aquí (no hay navegador con Google Maps en el entorno): se comprobó solo que las coordenadas caen dentro del municipio o la franja.
+
+## Fase 3 — Accesibilidad (2026-10-23)
+
+Cifras generadas por `src/09_catalogo_sep_clues.py` (`validacion_fase3_catalogo.json`), `src/10_redes.py` (`validacion_fase3_red.json`), `src/11_accesibilidad.py` (`validacion_fase3_acceso.json`) y `src/12_colonias_contexto.py` (`validacion_fase3_colonias.json`), todos en `data/processed/`.
+
+**V18 · SEP y CLUES recortados.** Catálogo SEP (Gto. + Mich.): 1 620 registros en la franja de 10 km, 565 dentro del municipio; ninguno de Acámbaro sin coordenadas; 1 de Salvatierra cae dentro del límite de Acámbaro. De los centros tipo "escuela" de la franja, 429 están INACTIVOS. CLUES: 173 registros en la franja (124 en operación, 49 fuera de operación); 57 declarados en Acámbaro, de los cuales **5 no tienen coordenadas** (consultorios junto a farmacias: 4 Farmacias Similares en operación y 1 Benavides fuera de operación) y quedan fuera.
+- **Salió mal y se corrigió**: la CLUES trae la institución "SERVICIOS DE SALUD IMSS BIENESTAR " con un espacio al final; en la primera corrida eso dejó fuera las 16 unidades de IMSS-Bienestar de Michoacán y 12 centros de salud de Michoacán aparecían "dados de baja" (eran el cambio de la Secretaría de Salud a IMSS-Bienestar en 2024, con nueva clave y mismas coordenadas). Ahora se limpian los espacios.
+
+**V19 · Cruce del catálogo con SEP y CLUES (D29). Sedes dentro de Acámbaro:**
+
+| Tipo | Fase 2 | Confirmadas | No confirmadas | Dadas de baja | Nuevas (solo SEP/CLUES) | Fase 3 (que se miden) |
+|---|---:|---:|---:|---:|---:|---:|
+| Preescolar | 92 | 83 | 3 | 6 | 15 | **101** |
+| Primaria | 112 | 94 | 17 | 1 | 6 | **117** |
+| Secundaria | 34 | 34 | 0 | 0 | 7 | **41** |
+| Bachillerato (escolarizado) | 12 | 8 | 2 | 1 | 16 | **26** |
+| Salud de primer nivel | 29 | 20 | 8 | 1 | 2 | 24 públicas (D30) |
+| Consultorio privado (aparte) | 44 | 5 | 39 | 0 | 1 | 45 |
+
+- **Cuántas cambiaron en Acámbaro**: 46 sedes nuevas (15 preescolares, 6 primarias, 7 secundarias, 16 bachilleratos, 2 de salud), 10 dadas de baja (incluido un hospital privado), 1 preparatoria abierta pasa a "bachillerato no escolarizado" y 1 videobachillerato del CERESO a "escuela en centro penitenciario"; además el sector (público/privado) se conoce ahora en casi todas: escuelas con sector desconocido pasan de 181 a 27.
+- Registros que cruzaron: SEP 395 a ≤ 150 m y 201 como vecinos mutuos a ≤ 300 m; 271 sin sede (nuevos). CLUES 85 a ≤ 150 m, 7 vecinos mutuos, 28 nuevos. Distancia entre el registro oficial y la sede: SEP mediana 62 m (p90 215 m); CLUES mediana 24 m (p90 132 m).
+- **Lo nuevo son sobre todo escuelas rurales pequeñas** que ni el MG ni el DENUE tenían: telebachilleratos comunitarios (Monte Prieto, La Ortiga, San Mateo Tócuaro, Andocutín, El Rodeo), videobachilleratos (Arroyo de la Luna, Loreto, Chamácuaro), telesecundarias (Santiaguillo, San José de las Pilas, San Luis de los Agustinos, Tres Marías) y preescolares y primarias comunitarias (CONAFE). En la ciudad: preparatorias privadas y el CONALEP 163 (en Jesús Ruiz Ruiz).
+- **Dadas de baja**: 6 preescolares y 1 primaria rurales (El Sauz, San José de la Peña ×2, El Moral, San Ramón, Los Ángeles (El Carrizo), La Carpa), la Preparatoria Prof. Leopoldo Salgado (ciudad; ojo: su "plantel" sigue activo en la SEP, ver V27), la **UMAPS vieja de Irámuco** (la CLUES la sustituyó por la nueva, a unos 300 m; resuelve el caso dudoso de V16) y un hospital privado (Sanatorio del Refugio).
+- 4 conflictos de sector entre DENUE y SEP (se usa la SEP): Secundaria Federal Lic. Rafael Carrillo y Bachillerato Bivalente Militarizado (DENUE: público; SEP: privado); Centro Educativo Gabriela Mistral y Preparatoria por Cooperación Melchor Ocampo (al revés).
+- 1 cambio de tipo por la CLUES: "Clínica Los Ángeles" (franja) pasa de primer nivel a hospital.
+- De las 30 sedes "no confirmadas" de Acámbaro (17 primarias, 8 de salud, 3 preescolares, 2 bachilleratos), 25 vienen solo del MG y 20 no tienen nombre; 14 tienen a ≤ 60 m un registro SEP de **otro nivel** (p. ej. el MG dice "primaria" donde la SEP tiene un preescolar o un videobachillerato): el MG pudo haber etiquetado mal el nivel. Columna `oficial_otro_tipo_cerca` en `servicios_sedes_fase3.csv`.
+
+**V20 · Matrícula.** Ninguna fuente disponible (SEP, CLUES, DENUE, MG) trae matrícula o número de alumnos. No se puede decir cuántos estudian en la preparatoria abierta.
+
+**V21 · Red de calles (D31).** 9 648 ejes del MG EIC 2025 → 24 969 tramos. Antes de unir: 164 pedazos sin conexión y 2 046 extremos sueltos. Se agregaron 455 uniones de calles "cortadas" (mediana 8.8 m, máximo 14.9 m) → 138 pedazos (la mayoría son localidades rurales distintas, que en el MG no están unidas por caminos). En las localidades urbanas quedan cuadras en pedazos aislados de la red principal: Acámbaro 8 cuadras (193 personas, un grupo de 6 cuadras con 159), Irámuco 6 (28), Parácuaro 1 (8), Chupícuaro 0. Esas cuadras se conectan a la red principal con su tramo de acceso en línea recta.
+- Tramo de acceso de la cuadra a la calle: mediana 26–38 m según la localidad, p95 70–85 m; máximos de 450–700 m en puntos de caserío disperso (viviendas fuera de cuadra). 14 cuadras tienen acceso > 100 m.
+- **Riesgo**: una unión de < 15 m puede cruzar un muro o un canal que en realidad no se puede cruzar. No se revisaron una por una (capa `uniones` en `red_peatonal.gpkg`).
+
+**V22 · Red rural no disponible (D26).** RNC: sin enlace directo (2 intentos). Overpass: conexión cortada por el proxy ("tunnel closed after 8 s"), 2 intentos — y **2 más por un error de Claude** al volver a correr la descarga con esa fuente incluida (se corrigió: ahora solo se intenta con `--solo osm_caminos`). Geofabrik: conexión cortada, 2 intentos. Se usó línea recta × factor.
+
+**V23 · Factor de rodeo y controles de la medición.**
+- Factor = **1.33** (mediana de distancia por red / línea recta en 14 456 pares cuadra–servicio más cercano con recta ≥ 300 m; p25 1.23, p75 1.47).
+- Distancia por red menor que la línea recta: **0 casos** (control de que la red no "atajó").
+- Población en los orígenes por localidad = V01 (Acámbaro 56 596 —falta la persona de la AGEB 0111—, Irámuco 6 275, Parácuaro 4 159, Chupícuaro 2 583).
+- Servicios medidos en línea recta × factor por estar fuera de la red de la localidad (a > 300 m de ella): en Parácuaro **todas** las cuadras para secundaria (no hay secundaria en la localidad, ver V25); en Irámuco todas para abasto completo; en Acámbaro 550 cuadras para bachillerato público (el CECyTE y el CONALEP están en la orilla o fuera de la red).
+
+**V24 · El DENUE no cubre comercios rurales (D32).** De los 5 974 establecimientos del DENUE en Acámbaro, 5 932 están en las 4 localidades urbanas; los 42 restantes están dispersos en 28 localidades rurales y **ninguno es abarrotes, minisúper o supermercado**. La tienda básica y el consultorio privado no se pueden medir en lo rural.
+
+**V25 · Casos raros (distancias extremas y sin ruta).**
+- **Parácuaro no tiene secundaria** según la SEP, el MG y el DENUE: la más cercana es la Secundaria Técnica 24, en el campus agropecuario a ~4 km (5.4 km mediana estimada). Todas sus 4 159 personas quedan "lejos" con cualquier umbral. Vale la pena confirmarlo.
+- **Irámuco no tiene mercado ni supermercado**: el más cercano está a 15–17.6 km (estimado en línea recta × factor).
+- El Bachillerato SABES de Irámuco está ~2 km al oeste del pueblo: 57 % de Irámuco queda a más de 2.5 km.
+- Máximos dentro de la ciudad de Acámbaro: preescolar y primaria ~2.8 km (puntos de caserío disperso de la orilla), secundaria 3.4 km, bachillerato 3.8 km, salud 3.6 km.
+- Rurales: **Isla Cerro Grande (Isla Chanaco), 73 hab., es una isla**: no hay ruta por tierra; su distancia estimada (4.8 km a preescolar, 6.7 km a secundaria) no representa el viaje real. La Ortiga (1 107 hab.) queda a 7.3 km de una unidad pública de salud (su punto de salud del MG no está en la CLUES, D30). Gaytán del Refugio (536 hab.) y El Sauz (229 hab.) quedan a ~11 km de un bachillerato. Abasto completo: hasta 20.9 km (localidades de 1 a 19 habitantes).
+- Ninguna localidad queda "sin ruta" en el cálculo porque la línea recta siempre existe; ese es justamente el límite del método (D26).
+
+**V26 · Población por grupo (D10).** En 34 de 1 008 combinaciones ciudad × categoría × umbral × grupo, el mínimo visible (a) supera la estimación por AGEB (c) por 1 a 31 personas (sobre todo adultos mayores de Irámuco): ahí el supuesto de (c) falla y la cifra real es al menos (a). Columna `minimo_supera_estimado`. Población oculta en el ITER rural: 13 (3–5 años), 22 (6–11), 16 (12–14), 17 (15–17), 56 (60+), 26 (con discapacidad); la población total no tiene ocultos.
+
+**V27 · Duplicados probables que quedan.**
+- **CECyTE Acámbaro**: el MG y el DENUE lo ubican al sur de la ciudad (20.0135, −100.7402) y la SEP 4 km al norte (20.0451, −100.7158). Quedan los dos puntos; uno está mal. Afecta mucho al bachillerato público de la ciudad (es el más cercano para 548 cuadras).
+- **CBTA 298**: el DENUE lo pone en Parácuaro y la SEP en el campus agropecuario a 4 km; el punto de Parácuaro coincide con el Videobachillerato de Parácuaro (SEP), así que ahí sí hay un bachillerato.
+- **UMF del ISSSTE** (ciudad): el MG y el DENUE la tienen; la CLUES tiene una "UMF Acámbaro" del ISSSTE a 167 m **fuera de operación**, sin motivo ni fecha de baja. Se dejó como unidad que opera (el DENUE la registra en mayo de 2026); hay que confirmarlo.
+- Preparatoria Prof. Leopoldo Salgado: la escuela está INACTIVA en la SEP pero su "plantel" sigue activo.
+
+**V28 · Sensibilidad con solo sedes confirmadas (D28), umbral propuesto.** Quitar las 65 escuelas de preescolar, 66 primarias y 27 secundarias que solo dibuja el MG (en toda la franja) cambia poco: primaria en la ciudad de Acámbaro +1 381 personas lejos (de 31 392 a 32 773), Chupícuaro +275, localidades rurales +146 (preescolar), +210 (primaria), +234 (secundaria). Las demás categorías no cambian. Tabla completa: `data/processed/acceso_sensibilidad_confirmadas.csv`.
+
+**V29 · Colonias (D24).** Catálogo INEGI: 147 asentamientos (141 en las 4 localidades urbanas), periodo 11/2021. Registros con nombre de asentamiento: DENUE 5 932, SEP 260, CLUES 13; de ellos coinciden con un nombre del catálogo 5 024, 85 y 9. Cuadras con nombre: **Acámbaro 99.8 %**, pero Irámuco 31 %, Chupícuaro 31 % y Parácuaro 24 %: en esas localidades casi todos los registros ponen como asentamiento el nombre del pueblo ("IRAMUCO", "PARACUARO"), no la colonia. 59 cuadras quedaron con empate entre dos nombres (se tomó el primero). 70 asentamientos del catálogo no quedaron en ninguna cuadra.
+- Contexto social: 126 AGEB urbanas y 212 localidades; 96 AGEB y 68 localidades tienen al menos un indicador oculto ("*", valores de 1 o 2).
+
+**V30 · Verificaciones de Alejandro.** `verificacion_zonas.csv` y `verificacion_servicios.csv` **no están** en el release: se incorporan en la siguiente fase. La muestra `docs/verificar_servicios_muestra.csv` no se regeneró; solo se le agregó la columna `confirmado_sep_clues` (resultado: de 103 escuelas y unidades de salud, 75 confirmadas por SEP (50) o CLUES (25), 25 no, 2 dadas de baja y 1 preparatoria abierta; 31 de abasto no aplican). Para comparar rutas: `docs/verificar_rutas.csv` (5 cuadras al azar, semilla 20261023).

@@ -2,7 +2,21 @@
 
 Esta carpeta no se sube al repositorio. `python src/01_descargar.py` la llena sola con todo lo que tiene URL directa (lista completa en `docs/fuentes.md`) y escribe `manifiesto.csv` (tamaño y huella sha256 de cada archivo).
 
-## Lo que Alejandro debe bajar y subir al release `datos-crudos`
+## Lo que está en el release `datos-crudos` (lo baja `01_descargar.py`)
+
+| Archivo | Qué es | Subido |
+|---|---|---|
+| `ESTABLECIMIENTO_SALUD_202608.xlsx` | CLUES, corte agosto 2026 | 2026-10-23 |
+| `cct11.csv`, `cct16.csv` | Catálogo de centros de trabajo SEP, Guanajuato y Michoacán | 2026-10-23 |
+| `verificacion_zonas.csv`, `verificacion_servicios.csv` | (opcionales) revisión de las listas de verificación en Google Maps | pendiente |
+
+CONAPO no está disponible y ya no se busca (D24).
+
+La red de caminos de OpenStreetMap solo se intenta bajar si se pide: `python src/01_descargar.py --solo osm_caminos` (falló en el entorno de trabajo; ver `docs/fuentes.md`).
+
+## Historial: instrucciones originales para subir CLUES, SEP y CONAPO
+
+### Lo que Alejandro debía bajar y subir al release `datos-crudos`
 
 Estos tres no se pueden bajar desde el entorno de trabajo (sitio bloqueado, caído o con certificado defectuoso). Súbelos como *assets* del release con etiqueta **`datos-crudos`** de este repositorio (GitHub → Releases → Draft a new release → tag `datos-crudos`), **con exactamente estos nombres**. El script los baja de ahí.
 
