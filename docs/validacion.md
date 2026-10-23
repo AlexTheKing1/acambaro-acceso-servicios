@@ -238,3 +238,37 @@ Cifras generadas por `src/15_catalogo_fase4.py` (`validacion_fase4_catalogo.json
 - `docs/zonas_nuevas.kml`: 28 zonas (las 13 posteriores a 2020 y las 15 más grandes de 2010–2020). Cada contorno es la unión de las cuadras nuevas de la zona, de la capa de su propio periodo. Se abrió con GDAL (LIBKML) sin errores. `docs/verificar_zonas_nuevas.csv` tiene ahora la columna `en_kml` (28 sí, 135 no).
 - `docs/verificar_campo.csv`: 19 puntos en 5 salidas (agrupados por cercanía a ≤ 10 km de diámetro). Son 12 "no" o "no se ve" del municipio (se quitó el del CERESO, ya resuelto), las 2 UMAPS de Irámuco y 5 "sí" al azar (semilla 2026) para medir el error de la verificación remota.
 - `verificacion_zonas.csv` sigue sin estar en el release (404).
+
+## Fase 4b (2026-10-23) — crecimiento urbano y acceso
+
+Todos los resultados son **provisionales**: `verificacion_zonas.csv` sigue sin estar en el release (`01_descargar.py --solo verificacion`, 2026-10-23: solo bajó `verificacion_servicios.csv`).
+
+**V39 · Clasificación de cuadras (`cuadras_antiguedad.csv`).**
+- 4 localidades: 1 567 consolidadas, 53 nuevas 2010–2020, 6 posteriores a 2020 y 32 puntos de caserío. Coinciden con `acceso_cuadras` (1 620 + 6 + 32).
+- Cuadras nuevas 2010–2020 / posteriores a 2020: Acámbaro 30 / 4, Irámuco 5 / 1, Parácuaro 12 / 0, Chupícuaro 6 / 1. Superficie nueva 2010–2020: 29.3 ha. Población 2020 en cuadras nuevas: 356.
+- 0 cuadras en localidades sin cartografía en 2010.
+- Chequeo de población: la suma por localidad (56 596 / 6 275 / 4 159 / 2 583) es igual a la de `acceso_resumen_por_localidad.csv`.
+
+**V40 · Comparación por anillos (`crecimiento_acceso_periferia.csv`).**
+- En todos los anillos con cuadras nuevas hay consolidadas: la columna `peso_sin_consolidadas_en_su_anillo` es 0 en todas las filas.
+- Las 4 localidades juntas, umbral principal, % de población lejos (nuevas / consolidadas del mismo anillo / todas las consolidadas): preescolar 48 / 13 / 10; primaria 43 / 42 / 37; secundaria 54 / 51 / 30; bachillerato público 45 / 41 / 36; salud 38 / 32 / 24; abasto completo 69 / 59 / 39; tienda 6 / 1 / 1.
+- El preescolar mantiene el sentido con los tres umbrales. Salud se invierte con el holgado (17 contra 23).
+- **Cuidado**: el grupo nuevo tiene 356 personas en total (Irámuco 25, Parácuaro 19). Los porcentajes por localidad de las nuevas son frágiles.
+
+**V41 · GHSL contra el MG.**
+- La superficie construida de la ciudad (+1 km) creció 66.6 ha entre 2010 y 2020. Las cuadras nuevas del MG en ese periodo suman 18.3 ha. El GHSL registra construcción dentro de cuadras que ya existían; el MG no la cuenta como crecimiento.
+- Superficie construida 2020 de la ciudad (GHSL): 456 ha. Superficie de cuadras del MG 2020: 1 271 ha (las cuadras incluyen patios, huertas y lotes baldíos).
+- Celdas sin dato dentro del municipio: 0.
+
+**V42 · Viviendas y "*".**
+- 2020, cuadras urbanas: deshabitadas ocultas en 602 de 1 652; uso temporal en 713; habitadas en 51.
+- Ocultas por localidad (total publicado − suma visible): deshabitadas 587 / 73 / 74 / 91 y uso temporal 479 / 55 / 61 / 65 (Acámbaro / Irámuco / Parácuaro / Chupícuaro).
+- "Viviendas − habitadas" en la ciudad: 25.9 %, contra 26.1 % publicado (deshabitadas + uso temporal).
+- 2010: deshabitadas ocultas en 1 339 de 1 478 manzanas urbanas del MG. 127 manzanas del MG 2010 no tienen fila en el censo por manzana: son todas las de Chupícuaro, que en 2010 no tenía tabla por manzana. 28 manzanas 2010 cayeron fuera de toda AGEB 2020 y se asignaron a la más cercana de su localidad.
+- AGEB con total oculto: 35 de 110 (2010) y 41 de 126 (2020).
+- Se formaron 122 unidades comparables (103 con una sola AGEB 2010 y 4 con dos). Las unidades con dato completo en los dos años cubren el 92 % de las viviendas 2020 de la ciudad.
+- Totales por localidad 2010 → 2020 (ITER): la ciudad pierde 1 375 habitantes y gana 2 508 viviendas; deshabitadas 3 178 → 4 606.
+
+**V43 · ITER históricos.** Se probaron dos patrones de URL (`ccpv/{año}/datosabiertos/iter_11_{año}_csv.zip` y `.../iter/iter_11_{año}_csv.zip`) para 1990, 1995, 2000 y 2005. Los 8 devolvieron una página HTML (2 263 bytes), no un zip. No se buscó más: la superficie por habitante solo se calcula para 2010 y 2020.
+
+**V44 · Tipología.** 126 AGEB: 53 consolidada estable (60 143 hab.), 43 consolidada desatendida (7 408), 4 consolidada y vaciándose (1 227; 3 también desatendidas), 11 nueva y bien servida (225), 15 nueva y desatendida (146). Corte de % no habitadas (percentil 75 dentro de la localidad): Acámbaro 31.6, Irámuco 39.1, Parácuaro 44.4, Chupícuaro 51.2.

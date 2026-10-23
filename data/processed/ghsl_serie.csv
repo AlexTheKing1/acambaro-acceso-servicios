@@ -1,0 +1,52 @@
+zona,nombre,anio,construido_ha,celdas,poblacion,m2_construidos_por_hab,fuente_poblacion,poblacion_li,poblacion_ls,indice_1975_100
+municipio,Municipio de Acámbaro,1975,357.0,88206,,,,,,100.0
+municipio,Municipio de Acámbaro,1980,421.4,88206,,,,,,118.0
+municipio,Municipio de Acámbaro,1985,503.4,88206,,,,,,141.0
+municipio,Municipio de Acámbaro,1990,602.8,88206,,,,,,169.0
+municipio,Municipio de Acámbaro,1995,763.1,88206,,,,,,214.0
+municipio,Municipio de Acámbaro,2000,970.8,88206,,,,,,272.0
+municipio,Municipio de Acámbaro,2005,1031.3,88206,,,,,,289.0
+municipio,Municipio de Acámbaro,2010,1106.8,88206,109030.0,101.5,Censo 2010 (ITER),,,310.0
+municipio,Municipio de Acámbaro,2015,1203.3,88206,,,,,,337.0
+municipio,Municipio de Acámbaro,2020,1357.7,88206,108697.0,124.9,Censo 2020 (ITER),,,380.0
+municipio,Municipio de Acámbaro,2025,,88206,108140.0,,EIC 2025 (estimación con intervalo de 90 %); GHSL observado termina en 2020,100644.09,115635.91,
+loc_0001,Acámbaro (+1000 m),1975,160.9,4927,,,,,,100.0
+loc_0001,Acámbaro (+1000 m),1980,175.0,4927,,,,,,109.0
+loc_0001,Acámbaro (+1000 m),1985,192.9,4927,,,,,,120.0
+loc_0001,Acámbaro (+1000 m),1990,213.4,4927,,,,,,133.0
+loc_0001,Acámbaro (+1000 m),1995,270.8,4927,,,,,,168.0
+loc_0001,Acámbaro (+1000 m),2000,349.0,4927,,,,,,217.0
+loc_0001,Acámbaro (+1000 m),2005,366.7,4927,,,,,,228.0
+loc_0001,Acámbaro (+1000 m),2010,389.8,4927,57972.0,67.2,Censo 2010 (ITER),,,242.0
+loc_0001,Acámbaro (+1000 m),2015,417.5,4927,,,,,,259.0
+loc_0001,Acámbaro (+1000 m),2020,456.4,4927,56597.0,80.6,Censo 2020 (ITER),,,284.0
+loc_0027,Irámuco (+1000 m),1975,30.8,1713,,,,,,100.0
+loc_0027,Irámuco (+1000 m),1980,35.3,1713,,,,,,115.0
+loc_0027,Irámuco (+1000 m),1985,40.8,1713,,,,,,132.0
+loc_0027,Irámuco (+1000 m),1990,47.5,1713,,,,,,154.0
+loc_0027,Irámuco (+1000 m),1995,55.0,1713,,,,,,179.0
+loc_0027,Irámuco (+1000 m),2000,63.1,1713,,,,,,205.0
+loc_0027,Irámuco (+1000 m),2005,65.1,1713,,,,,,211.0
+loc_0027,Irámuco (+1000 m),2010,67.3,1713,5954.0,113.0,Censo 2010 (ITER),,,219.0
+loc_0027,Irámuco (+1000 m),2015,69.7,1713,,,,,,226.0
+loc_0027,Irámuco (+1000 m),2020,71.3,1713,6275.0,113.6,Censo 2020 (ITER),,,231.0
+loc_0047,Parácuaro (+1000 m),1975,19.6,1281,,,,,,100.0
+loc_0047,Parácuaro (+1000 m),1980,23.0,1281,,,,,,117.0
+loc_0047,Parácuaro (+1000 m),1985,27.4,1281,,,,,,140.0
+loc_0047,Parácuaro (+1000 m),1990,32.0,1281,,,,,,163.0
+loc_0047,Parácuaro (+1000 m),1995,43.2,1281,,,,,,220.0
+loc_0047,Parácuaro (+1000 m),2000,56.1,1281,,,,,,286.0
+loc_0047,Parácuaro (+1000 m),2005,59.0,1281,,,,,,301.0
+loc_0047,Parácuaro (+1000 m),2010,62.7,1281,4058.0,154.6,Censo 2010 (ITER),,,320.0
+loc_0047,Parácuaro (+1000 m),2015,66.7,1281,,,,,,340.0
+loc_0047,Parácuaro (+1000 m),2020,72.8,1281,4159.0,175.0,Censo 2020 (ITER),,,371.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),1975,16.1,1157,,,,,,100.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),1980,18.7,1157,,,,,,116.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),1985,22.2,1157,,,,,,138.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),1990,26.6,1157,,,,,,165.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),1995,35.4,1157,,,,,,220.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),2000,47.7,1157,,,,,,296.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),2005,50.2,1157,,,,,,312.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),2010,52.9,1157,2273.0,232.8,Censo 2010 (ITER),,,329.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),2015,56.2,1157,,,,,,349.0
+loc_0017,Chupícuaro (Nuevo Chupícuaro) (+1000 m),2020,62.4,1157,2583.0,241.6,Censo 2020 (ITER),,,388.0

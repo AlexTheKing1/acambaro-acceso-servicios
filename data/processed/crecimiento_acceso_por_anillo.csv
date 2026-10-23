@@ -1,0 +1,904 @@
+cve_loc,localidad,servicio,umbral,umbral_m,anillo_m,anillo_ini,grupo,cuadras,superficie_ha,poblacion_2020,dist_mediana_pob_m,dist_mediana_cuadras_m,pob_lejos,pct_pob_lejos,pct_cuadras_lejos,pct_superficie_lejos,dist_centro_mediana_m
+0001,Acámbaro,preescolar,estricto,750,0–500,0,consolidada,48,61.4,3779.0,384.0,356,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,preescolar,estricto,750,500–1000,500,consolidada,129,189.1,12218.0,437.0,458,731.0,6.0,7.8,12.8,775
+0001,Acámbaro,preescolar,estricto,750,1000–1500,1000,consolidada,232,212.0,13207.0,464.0,466,1684.0,12.8,10.3,24.3,1277
+0001,Acámbaro,preescolar,estricto,750,1500–2000,1500,consolidada,232,222.8,8374.0,618.0,624,2738.0,32.7,37.1,37.3,1714
+0001,Acámbaro,preescolar,estricto,750,2000–2500,2000,consolidada,142,184.9,8942.0,733.0,744,4119.0,46.1,49.3,68.9,2279
+0001,Acámbaro,preescolar,estricto,750,2500–3000,2500,consolidada,93,119.2,3686.0,515.0,563,550.0,14.9,29.0,50.7,2707
+0001,Acámbaro,preescolar,estricto,750,3000–3500,3000,consolidada,149,103.3,3366.0,488.0,573,639.0,19.0,28.2,40.6,3270
+0001,Acámbaro,preescolar,estricto,750,3500–4000,3500,consolidada,117,108.1,2123.0,956.0,995,1551.0,73.1,82.1,89.8,3669
+0001,Acámbaro,preescolar,estricto,750,4000–4500,4000,consolidada,12,34.9,257.0,1110.0,1378,243.0,94.6,91.7,98.8,4181
+0001,Acámbaro,preescolar,estricto,750,4500–5000,4500,consolidada,19,15.1,177.0,385.0,416,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,preescolar,estricto,750,5000–5500,5000,consolidada,5,2.2,6.0,172.0,186,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,preescolar,estricto,750,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,434.0,531,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,preescolar,estricto,750,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1132.0,646,40.0,100.0,50.0,73.4,1703
+0001,Acámbaro,preescolar,estricto,750,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,261.0,528,0.0,0.0,50.0,18.4,2374
+0001,Acámbaro,preescolar,estricto,750,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,343.0,842,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,preescolar,estricto,750,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,367.0,530,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,preescolar,estricto,750,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1339.0,1465,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,preescolar,estricto,750,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1285.0,1285,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,preescolar,estricto,750,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,594.0,594,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,preescolar,estricto,750,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,271.0,271,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,preescolar,estricto,750,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1088,,,100.0,100.0,1468
+0001,Acámbaro,preescolar,estricto,750,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1428,,,100.0,100.0,1513
+0001,Acámbaro,preescolar,estricto,750,3000–3500,3000,nueva posterior a 2020,1,0.4,,,470,,,0.0,0.0,3108
+0001,Acámbaro,preescolar,principal,1000,0–500,0,consolidada,48,61.4,3779.0,384.0,356,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,preescolar,principal,1000,500–1000,500,consolidada,129,189.1,12218.0,437.0,458,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,preescolar,principal,1000,1000–1500,1000,consolidada,232,212.0,13207.0,464.0,466,198.0,1.5,3.4,11.1,1277
+0001,Acámbaro,preescolar,principal,1000,1500–2000,1500,consolidada,232,222.8,8374.0,618.0,624,954.0,11.4,17.7,13.2,1714
+0001,Acámbaro,preescolar,principal,1000,2000–2500,2000,consolidada,142,184.9,8942.0,733.0,744,1321.0,14.8,25.4,39.3,2279
+0001,Acámbaro,preescolar,principal,1000,2500–3000,2500,consolidada,93,119.2,3686.0,515.0,563,348.0,9.4,14.0,42.7,2707
+0001,Acámbaro,preescolar,principal,1000,3000–3500,3000,consolidada,149,103.3,3366.0,488.0,573,341.0,10.1,18.1,32.0,3270
+0001,Acámbaro,preescolar,principal,1000,3500–4000,3500,consolidada,117,108.1,2123.0,956.0,995,1021.0,48.1,49.6,62.5,3669
+0001,Acámbaro,preescolar,principal,1000,4000–4500,4000,consolidada,12,34.9,257.0,1110.0,1378,223.0,86.8,83.3,61.3,4181
+0001,Acámbaro,preescolar,principal,1000,4500–5000,4500,consolidada,19,15.1,177.0,385.0,416,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,preescolar,principal,1000,5000–5500,5000,consolidada,5,2.2,6.0,172.0,186,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,preescolar,principal,1000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,434.0,531,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,preescolar,principal,1000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1132.0,646,40.0,100.0,50.0,73.4,1703
+0001,Acámbaro,preescolar,principal,1000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,261.0,528,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,preescolar,principal,1000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,343.0,842,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,preescolar,principal,1000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,367.0,530,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,preescolar,principal,1000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1339.0,1465,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,preescolar,principal,1000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1285.0,1285,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,preescolar,principal,1000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,594.0,594,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,preescolar,principal,1000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,271.0,271,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,preescolar,principal,1000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1088,,,50.0,37.2,1468
+0001,Acámbaro,preescolar,principal,1000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1428,,,100.0,100.0,1513
+0001,Acámbaro,preescolar,principal,1000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,470,,,0.0,0.0,3108
+0001,Acámbaro,preescolar,holgado,1500,0–500,0,consolidada,48,61.4,3779.0,384.0,356,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,preescolar,holgado,1500,500–1000,500,consolidada,129,189.1,12218.0,437.0,458,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,preescolar,holgado,1500,1000–1500,1000,consolidada,232,212.0,13207.0,464.0,466,0.0,0.0,0.0,0.0,1277
+0001,Acámbaro,preescolar,holgado,1500,1500–2000,1500,consolidada,232,222.8,8374.0,618.0,624,350.0,4.2,7.3,3.6,1714
+0001,Acámbaro,preescolar,holgado,1500,2000–2500,2000,consolidada,142,184.9,8942.0,733.0,744,111.0,1.2,4.2,8.9,2279
+0001,Acámbaro,preescolar,holgado,1500,2500–3000,2500,consolidada,93,119.2,3686.0,515.0,563,46.0,1.2,1.1,18.1,2707
+0001,Acámbaro,preescolar,holgado,1500,3000–3500,3000,consolidada,149,103.3,3366.0,488.0,573,71.0,2.1,4.7,16.2,3270
+0001,Acámbaro,preescolar,holgado,1500,3500–4000,3500,consolidada,117,108.1,2123.0,956.0,995,568.0,26.8,22.2,32.8,3669
+0001,Acámbaro,preescolar,holgado,1500,4000–4500,4000,consolidada,12,34.9,257.0,1110.0,1378,33.0,12.8,33.3,27.5,4181
+0001,Acámbaro,preescolar,holgado,1500,4500–5000,4500,consolidada,19,15.1,177.0,385.0,416,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,preescolar,holgado,1500,5000–5500,5000,consolidada,5,2.2,6.0,172.0,186,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,preescolar,holgado,1500,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,434.0,531,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,preescolar,holgado,1500,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1132.0,646,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,preescolar,holgado,1500,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,261.0,528,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,preescolar,holgado,1500,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,343.0,842,0.0,0.0,25.0,50.0,2907
+0001,Acámbaro,preescolar,holgado,1500,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,367.0,530,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,preescolar,holgado,1500,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1339.0,1465,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,preescolar,holgado,1500,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1285.0,1285,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,preescolar,holgado,1500,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,594.0,594,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,preescolar,holgado,1500,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,271.0,271,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,preescolar,holgado,1500,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1088,,,0.0,0.0,1468
+0001,Acámbaro,preescolar,holgado,1500,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1428,,,0.0,0.0,1513
+0001,Acámbaro,preescolar,holgado,1500,3000–3500,3000,nueva posterior a 2020,1,0.4,,,470,,,0.0,0.0,3108
+0001,Acámbaro,primaria,estricto,500,0–500,0,consolidada,48,61.4,3779.0,392.0,306,732.0,19.4,14.6,10.9,324
+0001,Acámbaro,primaria,estricto,500,500–1000,500,consolidada,129,189.1,12218.0,418.0,434,3320.0,27.2,34.1,41.7,775
+0001,Acámbaro,primaria,estricto,500,1000–1500,1000,consolidada,232,212.0,13207.0,613.0,618,9215.0,69.8,72.4,79.0,1277
+0001,Acámbaro,primaria,estricto,500,1500–2000,1500,consolidada,232,222.8,8374.0,610.0,622,5427.0,64.8,65.9,57.0,1714
+0001,Acámbaro,primaria,estricto,500,2000–2500,2000,consolidada,142,184.9,8942.0,542.0,690,4726.0,52.9,65.5,81.0,2279
+0001,Acámbaro,primaria,estricto,500,2500–3000,2500,consolidada,93,119.2,3686.0,793.0,779,3452.0,93.7,90.3,84.9,2707
+0001,Acámbaro,primaria,estricto,500,3000–3500,3000,consolidada,149,103.3,3366.0,588.0,609,1972.0,58.6,64.4,72.9,3270
+0001,Acámbaro,primaria,estricto,500,3500–4000,3500,consolidada,117,108.1,2123.0,926.0,962,1910.0,90.0,91.5,95.9,3669
+0001,Acámbaro,primaria,estricto,500,4000–4500,4000,consolidada,12,34.9,257.0,1061.0,1128,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,primaria,estricto,500,4500–5000,4500,consolidada,19,15.1,177.0,356.0,387,33.0,18.6,26.3,23.2,4776
+0001,Acámbaro,primaria,estricto,500,5000–5500,5000,consolidada,5,2.2,6.0,214.0,229,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,primaria,estricto,500,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,528.0,572,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,primaria,estricto,500,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,553.0,809,40.0,100.0,83.3,81.1,1703
+0001,Acámbaro,primaria,estricto,500,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1462.0,957,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,primaria,estricto,500,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,558.0,953,42.0,100.0,100.0,100.0,2907
+0001,Acámbaro,primaria,estricto,500,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,299.0,368,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,primaria,estricto,500,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1296.0,1422,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,primaria,estricto,500,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,993.0,993,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,primaria,estricto,500,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,565.0,565,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,primaria,estricto,500,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,314.0,314,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,primaria,estricto,500,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1190,,,100.0,100.0,1468
+0001,Acámbaro,primaria,estricto,500,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1192,,,100.0,100.0,1513
+0001,Acámbaro,primaria,estricto,500,3000–3500,3000,nueva posterior a 2020,1,0.4,,,402,,,0.0,0.0,3108
+0001,Acámbaro,primaria,principal,670,0–500,0,consolidada,48,61.4,3779.0,392.0,306,302.0,8.0,8.3,3.0,324
+0001,Acámbaro,primaria,principal,670,500–1000,500,consolidada,129,189.1,12218.0,418.0,434,472.0,3.9,8.5,21.6,775
+0001,Acámbaro,primaria,principal,670,1000–1500,1000,consolidada,232,212.0,13207.0,613.0,618,5303.0,40.2,40.1,52.1,1277
+0001,Acámbaro,primaria,principal,670,1500–2000,1500,consolidada,232,222.8,8374.0,610.0,622,3276.0,39.1,44.8,38.3,1714
+0001,Acámbaro,primaria,principal,670,2000–2500,2000,consolidada,142,184.9,8942.0,542.0,690,2718.0,30.4,51.4,55.4,2279
+0001,Acámbaro,primaria,principal,670,2500–3000,2500,consolidada,93,119.2,3686.0,793.0,779,2440.0,66.2,66.7,71.8,2707
+0001,Acámbaro,primaria,principal,670,3000–3500,3000,consolidada,149,103.3,3366.0,588.0,609,1160.0,34.5,43.6,49.8,3270
+0001,Acámbaro,primaria,principal,670,3500–4000,3500,consolidada,117,108.1,2123.0,926.0,962,1708.0,80.5,82.9,87.7,3669
+0001,Acámbaro,primaria,principal,670,4000–4500,4000,consolidada,12,34.9,257.0,1061.0,1128,243.0,94.6,91.7,98.8,4181
+0001,Acámbaro,primaria,principal,670,4500–5000,4500,consolidada,19,15.1,177.0,356.0,387,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,primaria,principal,670,5000–5500,5000,consolidada,5,2.2,6.0,214.0,229,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,primaria,principal,670,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,528.0,572,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,primaria,principal,670,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,553.0,809,0.0,0.0,66.7,34.6,1703
+0001,Acámbaro,primaria,principal,670,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1462.0,957,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,primaria,principal,670,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,558.0,953,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,primaria,principal,670,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,299.0,368,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,primaria,principal,670,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1296.0,1422,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,primaria,principal,670,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,993.0,993,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,primaria,principal,670,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,565.0,565,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,primaria,principal,670,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,314.0,314,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,primaria,principal,670,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1190,,,100.0,100.0,1468
+0001,Acámbaro,primaria,principal,670,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1192,,,100.0,100.0,1513
+0001,Acámbaro,primaria,principal,670,3000–3500,3000,nueva posterior a 2020,1,0.4,,,402,,,0.0,0.0,3108
+0001,Acámbaro,primaria,holgado,1000,0–500,0,consolidada,48,61.4,3779.0,392.0,306,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,primaria,holgado,1000,500–1000,500,consolidada,129,189.1,12218.0,418.0,434,26.0,0.2,0.8,4.2,775
+0001,Acámbaro,primaria,holgado,1000,1000–1500,1000,consolidada,232,212.0,13207.0,613.0,618,843.0,6.4,8.2,10.1,1277
+0001,Acámbaro,primaria,holgado,1000,1500–2000,1500,consolidada,232,222.8,8374.0,610.0,622,886.0,10.6,19.0,14.4,1714
+0001,Acámbaro,primaria,holgado,1000,2000–2500,2000,consolidada,142,184.9,8942.0,542.0,690,1463.0,16.4,32.4,38.5,2279
+0001,Acámbaro,primaria,holgado,1000,2500–3000,2500,consolidada,93,119.2,3686.0,793.0,779,456.0,12.4,17.2,44.2,2707
+0001,Acámbaro,primaria,holgado,1000,3000–3500,3000,consolidada,149,103.3,3366.0,588.0,609,440.0,13.1,19.5,30.5,3270
+0001,Acámbaro,primaria,holgado,1000,3500–4000,3500,consolidada,117,108.1,2123.0,926.0,962,996.0,46.9,47.9,63.3,3669
+0001,Acámbaro,primaria,holgado,1000,4000–4500,4000,consolidada,12,34.9,257.0,1061.0,1128,223.0,86.8,83.3,61.3,4181
+0001,Acámbaro,primaria,holgado,1000,4500–5000,4500,consolidada,19,15.1,177.0,356.0,387,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,primaria,holgado,1000,5000–5500,5000,consolidada,5,2.2,6.0,214.0,229,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,primaria,holgado,1000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,528.0,572,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,primaria,holgado,1000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,553.0,809,0.0,0.0,16.7,8.0,1703
+0001,Acámbaro,primaria,holgado,1000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1462.0,957,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,primaria,holgado,1000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,558.0,953,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,primaria,holgado,1000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,299.0,368,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,primaria,holgado,1000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1296.0,1422,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,primaria,holgado,1000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,993.0,993,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,primaria,holgado,1000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,565.0,565,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,primaria,holgado,1000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,314.0,314,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,primaria,holgado,1000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1190,,,100.0,100.0,1468
+0001,Acámbaro,primaria,holgado,1000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1192,,,100.0,100.0,1513
+0001,Acámbaro,primaria,holgado,1000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,402,,,0.0,0.0,3108
+0001,Acámbaro,secundaria,estricto,1000,0–500,0,consolidada,48,61.4,3779.0,663.0,640,560.0,14.8,6.2,10.7,324
+0001,Acámbaro,secundaria,estricto,1000,500–1000,500,consolidada,129,189.1,12218.0,944.0,754,5320.0,43.5,31.8,27.3,775
+0001,Acámbaro,secundaria,estricto,1000,1000–1500,1000,consolidada,232,212.0,13207.0,823.0,756,5104.0,38.6,33.6,31.9,1277
+0001,Acámbaro,secundaria,estricto,1000,1500–2000,1500,consolidada,232,222.8,8374.0,833.0,912,2896.0,34.6,42.2,46.6,1714
+0001,Acámbaro,secundaria,estricto,1000,2000–2500,2000,consolidada,142,184.9,8942.0,646.0,852,2698.0,30.2,42.3,68.3,2279
+0001,Acámbaro,secundaria,estricto,1000,2500–3000,2500,consolidada,93,119.2,3686.0,1153.0,1094,2466.0,66.9,62.4,80.5,2707
+0001,Acámbaro,secundaria,estricto,1000,3000–3500,3000,consolidada,149,103.3,3366.0,1645.0,1549,2669.0,79.3,65.8,67.7,3270
+0001,Acámbaro,secundaria,estricto,1000,3500–4000,3500,consolidada,117,108.1,2123.0,2137.0,1986,1716.0,80.8,74.4,85.0,3669
+0001,Acámbaro,secundaria,estricto,1000,4000–4500,4000,consolidada,12,34.9,257.0,2492.0,2554,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,secundaria,estricto,1000,4500–5000,4500,consolidada,19,15.1,177.0,3040.0,3040,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,secundaria,estricto,1000,5000–5500,5000,consolidada,5,2.2,6.0,3275.0,3280,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,secundaria,estricto,1000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1523.0,1584,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,secundaria,estricto,1000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,464.0,1016,0.0,0.0,66.7,45.5,1703
+0001,Acámbaro,secundaria,estricto,1000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1436.0,1114,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,secundaria,estricto,1000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,1670.0,1527,42.0,100.0,100.0,100.0,2907
+0001,Acámbaro,secundaria,estricto,1000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,2083.0,2256,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,secundaria,estricto,1000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,621.0,663,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,secundaria,estricto,1000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1887.0,1887,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,secundaria,estricto,1000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3013.0,3013,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,secundaria,estricto,1000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3352.0,3379,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,secundaria,estricto,1000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1082,,,100.0,100.0,1468
+0001,Acámbaro,secundaria,estricto,1000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1178,,,100.0,100.0,1513
+0001,Acámbaro,secundaria,estricto,1000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,2186,,,100.0,100.0,3108
+0001,Acámbaro,secundaria,principal,1330,0–500,0,consolidada,48,61.4,3779.0,663.0,640,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,secundaria,principal,1330,500–1000,500,consolidada,129,189.1,12218.0,944.0,754,957.0,7.8,7.8,3.9,775
+0001,Acámbaro,secundaria,principal,1330,1000–1500,1000,consolidada,232,212.0,13207.0,823.0,756,3002.0,22.7,19.0,22.8,1277
+0001,Acámbaro,secundaria,principal,1330,1500–2000,1500,consolidada,232,222.8,8374.0,833.0,912,1708.0,20.4,27.2,36.8,1714
+0001,Acámbaro,secundaria,principal,1330,2000–2500,2000,consolidada,142,184.9,8942.0,646.0,852,1598.0,17.9,29.6,60.0,2279
+0001,Acámbaro,secundaria,principal,1330,2500–3000,2500,consolidada,93,119.2,3686.0,1153.0,1094,1083.0,29.4,26.9,42.1,2707
+0001,Acámbaro,secundaria,principal,1330,3000–3500,3000,consolidada,149,103.3,3366.0,1645.0,1549,2628.0,78.1,62.4,65.3,3270
+0001,Acámbaro,secundaria,principal,1330,3500–4000,3500,consolidada,117,108.1,2123.0,2137.0,1986,1633.0,76.9,68.4,71.8,3669
+0001,Acámbaro,secundaria,principal,1330,4000–4500,4000,consolidada,12,34.9,257.0,2492.0,2554,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,secundaria,principal,1330,4500–5000,4500,consolidada,19,15.1,177.0,3040.0,3040,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,secundaria,principal,1330,5000–5500,5000,consolidada,5,2.2,6.0,3275.0,3280,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,secundaria,principal,1330,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1523.0,1584,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,secundaria,principal,1330,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,464.0,1016,0.0,0.0,33.3,19.9,1703
+0001,Acámbaro,secundaria,principal,1330,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1436.0,1114,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,secundaria,principal,1330,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,1670.0,1527,42.0,100.0,75.0,76.0,2907
+0001,Acámbaro,secundaria,principal,1330,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,2083.0,2256,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,secundaria,principal,1330,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,621.0,663,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,secundaria,principal,1330,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1887.0,1887,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,secundaria,principal,1330,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3013.0,3013,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,secundaria,principal,1330,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3352.0,3379,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,secundaria,principal,1330,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1082,,,0.0,0.0,1468
+0001,Acámbaro,secundaria,principal,1330,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1178,,,0.0,0.0,1513
+0001,Acámbaro,secundaria,principal,1330,3000–3500,3000,nueva posterior a 2020,1,0.4,,,2186,,,100.0,100.0,3108
+0001,Acámbaro,secundaria,holgado,2000,0–500,0,consolidada,48,61.4,3779.0,663.0,640,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,secundaria,holgado,2000,500–1000,500,consolidada,129,189.1,12218.0,944.0,754,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,secundaria,holgado,2000,1000–1500,1000,consolidada,232,212.0,13207.0,823.0,756,0.0,0.0,0.0,0.0,1277
+0001,Acámbaro,secundaria,holgado,2000,1500–2000,1500,consolidada,232,222.8,8374.0,833.0,912,54.0,0.6,1.3,2.1,1714
+0001,Acámbaro,secundaria,holgado,2000,2000–2500,2000,consolidada,142,184.9,8942.0,646.0,852,794.0,8.9,9.9,36.6,2279
+0001,Acámbaro,secundaria,holgado,2000,2500–3000,2500,consolidada,93,119.2,3686.0,1153.0,1094,23.0,0.6,3.2,13.4,2707
+0001,Acámbaro,secundaria,holgado,2000,3000–3500,3000,consolidada,149,103.3,3366.0,1645.0,1549,624.0,18.5,13.4,11.5,3270
+0001,Acámbaro,secundaria,holgado,2000,3500–4000,3500,consolidada,117,108.1,2123.0,2137.0,1986,1281.0,60.3,48.7,51.5,3669
+0001,Acámbaro,secundaria,holgado,2000,4000–4500,4000,consolidada,12,34.9,257.0,2492.0,2554,233.0,90.7,75.0,95.0,4181
+0001,Acámbaro,secundaria,holgado,2000,4500–5000,4500,consolidada,19,15.1,177.0,3040.0,3040,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,secundaria,holgado,2000,5000–5500,5000,consolidada,5,2.2,6.0,3275.0,3280,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,secundaria,holgado,2000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1523.0,1584,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,secundaria,holgado,2000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,464.0,1016,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,secundaria,holgado,2000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1436.0,1114,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,secundaria,holgado,2000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,1670.0,1527,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,secundaria,holgado,2000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,2083.0,2256,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,secundaria,holgado,2000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,621.0,663,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,secundaria,holgado,2000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1887.0,1887,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,secundaria,holgado,2000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3013.0,3013,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,secundaria,holgado,2000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3352.0,3379,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,secundaria,holgado,2000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1082,,,0.0,0.0,1468
+0001,Acámbaro,secundaria,holgado,2000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1178,,,0.0,0.0,1513
+0001,Acámbaro,secundaria,holgado,2000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,2186,,,100.0,100.0,3108
+0001,Acámbaro,bachillerato_publico,estricto,2500,0–500,0,consolidada,48,61.4,3779.0,3736.0,3830,3779.0,100.0,100.0,100.0,324
+0001,Acámbaro,bachillerato_publico,estricto,2500,500–1000,500,consolidada,129,189.1,12218.0,3642.0,3711,12218.0,100.0,100.0,100.0,775
+0001,Acámbaro,bachillerato_publico,estricto,2500,1000–1500,1000,consolidada,232,212.0,13207.0,3216.0,3446,12255.0,92.8,91.4,93.0,1277
+0001,Acámbaro,bachillerato_publico,estricto,2500,1500–2000,1500,consolidada,232,222.8,8374.0,2557.0,3014,4323.0,51.6,65.5,70.1,1714
+0001,Acámbaro,bachillerato_publico,estricto,2500,2000–2500,2000,consolidada,142,184.9,8942.0,1978.0,1710,2486.0,27.8,24.6,47.8,2279
+0001,Acámbaro,bachillerato_publico,estricto,2500,2500–3000,2500,consolidada,93,119.2,3686.0,2444.0,1927,1697.0,46.0,24.7,16.1,2707
+0001,Acámbaro,bachillerato_publico,estricto,2500,3000–3500,3000,consolidada,149,103.3,3366.0,2927.0,1446,2089.0,62.1,43.0,36.4,3270
+0001,Acámbaro,bachillerato_publico,estricto,2500,3500–4000,3500,consolidada,117,108.1,2123.0,1819.0,1612,858.0,40.4,32.5,25.8,3669
+0001,Acámbaro,bachillerato_publico,estricto,2500,4000–4500,4000,consolidada,12,34.9,257.0,2686.0,2524,209.0,81.3,50.0,64.3,4181
+0001,Acámbaro,bachillerato_publico,estricto,2500,4500–5000,4500,consolidada,19,15.1,177.0,3182.0,3182,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,bachillerato_publico,estricto,2500,5000–5500,5000,consolidada,5,2.2,6.0,3342.0,3382,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,bachillerato_publico,estricto,2500,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,4158.0,4194,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,bachillerato_publico,estricto,2500,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,2628.0,3357,40.0,100.0,83.3,93.3,1703
+0001,Acámbaro,bachillerato_publico,estricto,2500,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1158.0,1870,0.0,0.0,50.0,18.4,2374
+0001,Acámbaro,bachillerato_publico,estricto,2500,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,3376.0,2289,42.0,100.0,50.0,26.0,2907
+0001,Acámbaro,bachillerato_publico,estricto,2500,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,3791.0,3960,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,bachillerato_publico,estricto,2500,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1418.0,1458,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,bachillerato_publico,estricto,2500,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1670.0,1670,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,bachillerato_publico,estricto,2500,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3322.0,3322,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,bachillerato_publico,estricto,2500,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3473.0,3422,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,bachillerato_publico,estricto,2500,1000–1500,1000,nueva posterior a 2020,2,1.3,,,4386,,,100.0,100.0,1468
+0001,Acámbaro,bachillerato_publico,estricto,2500,1500–2000,1500,nueva posterior a 2020,1,0.8,,,4398,,,100.0,100.0,1513
+0001,Acámbaro,bachillerato_publico,estricto,2500,3000–3500,3000,nueva posterior a 2020,1,0.4,,,3850,,,100.0,100.0,3108
+0001,Acámbaro,bachillerato_publico,principal,3330,0–500,0,consolidada,48,61.4,3779.0,3736.0,3830,3475.0,92.0,93.8,94.8,324
+0001,Acámbaro,bachillerato_publico,principal,3330,500–1000,500,consolidada,129,189.1,12218.0,3642.0,3711,9531.0,78.0,83.7,76.4,775
+0001,Acámbaro,bachillerato_publico,principal,3330,1000–1500,1000,consolidada,232,212.0,13207.0,3216.0,3446,5811.0,44.0,53.0,47.6,1277
+0001,Acámbaro,bachillerato_publico,principal,3330,1500–2000,1500,consolidada,232,222.8,8374.0,2557.0,3014,2165.0,25.9,38.8,54.5,1714
+0001,Acámbaro,bachillerato_publico,principal,3330,2000–2500,2000,consolidada,142,184.9,8942.0,1978.0,1710,1347.0,15.1,16.2,40.2,2279
+0001,Acámbaro,bachillerato_publico,principal,3330,2500–3000,2500,consolidada,93,119.2,3686.0,2444.0,1927,38.0,1.0,2.2,1.0,2707
+0001,Acámbaro,bachillerato_publico,principal,3330,3000–3500,3000,consolidada,149,103.3,3366.0,2927.0,1446,1065.0,31.6,22.1,17.4,3270
+0001,Acámbaro,bachillerato_publico,principal,3330,3500–4000,3500,consolidada,117,108.1,2123.0,1819.0,1612,716.0,33.7,27.4,19.9,3669
+0001,Acámbaro,bachillerato_publico,principal,3330,4000–4500,4000,consolidada,12,34.9,257.0,2686.0,2524,0.0,0.0,0.0,0.0,4181
+0001,Acámbaro,bachillerato_publico,principal,3330,4500–5000,4500,consolidada,19,15.1,177.0,3182.0,3182,4.0,2.3,10.5,4.6,4776
+0001,Acámbaro,bachillerato_publico,principal,3330,5000–5500,5000,consolidada,5,2.2,6.0,3342.0,3382,6.0,100.0,80.0,86.2,5028
+0001,Acámbaro,bachillerato_publico,principal,3330,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,4158.0,4194,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,bachillerato_publico,principal,3330,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,2628.0,3357,0.0,0.0,50.0,38.7,1703
+0001,Acámbaro,bachillerato_publico,principal,3330,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1158.0,1870,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,bachillerato_publico,principal,3330,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,3376.0,2289,42.0,100.0,50.0,26.0,2907
+0001,Acámbaro,bachillerato_publico,principal,3330,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,3791.0,3960,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,bachillerato_publico,principal,3330,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1418.0,1458,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,bachillerato_publico,principal,3330,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1670.0,1670,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,bachillerato_publico,principal,3330,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3322.0,3322,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,bachillerato_publico,principal,3330,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3473.0,3422,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,bachillerato_publico,principal,3330,1000–1500,1000,nueva posterior a 2020,2,1.3,,,4386,,,100.0,100.0,1468
+0001,Acámbaro,bachillerato_publico,principal,3330,1500–2000,1500,nueva posterior a 2020,1,0.8,,,4398,,,100.0,100.0,1513
+0001,Acámbaro,bachillerato_publico,principal,3330,3000–3500,3000,nueva posterior a 2020,1,0.4,,,3850,,,100.0,100.0,3108
+0001,Acámbaro,bachillerato_publico,holgado,5000,0–500,0,consolidada,48,61.4,3779.0,3736.0,3830,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,bachillerato_publico,holgado,5000,500–1000,500,consolidada,129,189.1,12218.0,3642.0,3711,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,bachillerato_publico,holgado,5000,1000–1500,1000,consolidada,232,212.0,13207.0,3216.0,3446,0.0,0.0,0.0,0.0,1277
+0001,Acámbaro,bachillerato_publico,holgado,5000,1500–2000,1500,consolidada,232,222.8,8374.0,2557.0,3014,461.0,5.5,5.6,21.6,1714
+0001,Acámbaro,bachillerato_publico,holgado,5000,2000–2500,2000,consolidada,142,184.9,8942.0,1978.0,1710,346.0,3.9,4.2,7.5,2279
+0001,Acámbaro,bachillerato_publico,holgado,5000,2500–3000,2500,consolidada,93,119.2,3686.0,2444.0,1927,0.0,0.0,0.0,0.0,2707
+0001,Acámbaro,bachillerato_publico,holgado,5000,3000–3500,3000,consolidada,149,103.3,3366.0,2927.0,1446,0.0,0.0,0.0,0.0,3270
+0001,Acámbaro,bachillerato_publico,holgado,5000,3500–4000,3500,consolidada,117,108.1,2123.0,1819.0,1612,0.0,0.0,0.0,0.0,3669
+0001,Acámbaro,bachillerato_publico,holgado,5000,4000–4500,4000,consolidada,12,34.9,257.0,2686.0,2524,0.0,0.0,0.0,0.0,4181
+0001,Acámbaro,bachillerato_publico,holgado,5000,4500–5000,4500,consolidada,19,15.1,177.0,3182.0,3182,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,bachillerato_publico,holgado,5000,5000–5500,5000,consolidada,5,2.2,6.0,3342.0,3382,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,bachillerato_publico,holgado,5000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,4158.0,4194,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,bachillerato_publico,holgado,5000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,2628.0,3357,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,bachillerato_publico,holgado,5000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1158.0,1870,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,bachillerato_publico,holgado,5000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,3376.0,2289,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,bachillerato_publico,holgado,5000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,3791.0,3960,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,bachillerato_publico,holgado,5000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1418.0,1458,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,bachillerato_publico,holgado,5000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1670.0,1670,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,bachillerato_publico,holgado,5000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3322.0,3322,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,bachillerato_publico,holgado,5000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3473.0,3422,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,bachillerato_publico,holgado,5000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,4386,,,0.0,0.0,1468
+0001,Acámbaro,bachillerato_publico,holgado,5000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,4398,,,0.0,0.0,1513
+0001,Acámbaro,bachillerato_publico,holgado,5000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,3850,,,0.0,0.0,3108
+0001,Acámbaro,salud_publica,estricto,1000,0–500,0,consolidada,48,61.4,3779.0,1120.0,1070,2332.0,61.7,58.3,54.4,324
+0001,Acámbaro,salud_publica,estricto,1000,500–1000,500,consolidada,129,189.1,12218.0,935.0,884,5430.0,44.4,37.2,45.3,775
+0001,Acámbaro,salud_publica,estricto,1000,1000–1500,1000,consolidada,232,212.0,13207.0,833.0,816,5022.0,38.0,34.1,43.1,1277
+0001,Acámbaro,salud_publica,estricto,1000,1500–2000,1500,consolidada,232,222.8,8374.0,861.0,894,3294.0,39.3,42.2,57.0,1714
+0001,Acámbaro,salud_publica,estricto,1000,2000–2500,2000,consolidada,142,184.9,8942.0,1222.0,1234,5029.0,56.2,57.7,78.7,2279
+0001,Acámbaro,salud_publica,estricto,1000,2500–3000,2500,consolidada,93,119.2,3686.0,1265.0,1105,3006.0,81.6,60.2,69.1,2707
+0001,Acámbaro,salud_publica,estricto,1000,3000–3500,3000,consolidada,149,103.3,3366.0,591.0,591,283.0,8.4,14.1,25.9,3270
+0001,Acámbaro,salud_publica,estricto,1000,3500–4000,3500,consolidada,117,108.1,2123.0,813.0,838,699.0,32.9,31.6,45.0,3669
+0001,Acámbaro,salud_publica,estricto,1000,4000–4500,4000,consolidada,12,34.9,257.0,2873.0,2934,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,salud_publica,estricto,1000,4500–5000,4500,consolidada,19,15.1,177.0,3420.0,3420,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,salud_publica,estricto,1000,5000–5500,5000,consolidada,5,2.2,6.0,3511.0,3468,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,salud_publica,estricto,1000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,864.0,972,0.0,0.0,50.0,46.7,1290
+0001,Acámbaro,salud_publica,estricto,1000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1150.0,970,40.0,100.0,33.3,54.5,1703
+0001,Acámbaro,salud_publica,estricto,1000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1100.0,1352,8.0,100.0,100.0,100.0,2374
+0001,Acámbaro,salud_publica,estricto,1000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,706.0,867,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,salud_publica,estricto,1000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,426.0,494,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,salud_publica,estricto,1000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1058.0,1184,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,salud_publica,estricto,1000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1240.0,1240,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,salud_publica,estricto,1000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3393.0,3393,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,salud_publica,estricto,1000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3384.0,3384,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,salud_publica,estricto,1000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1218,,,100.0,100.0,1468
+0001,Acámbaro,salud_publica,estricto,1000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1438,,,100.0,100.0,1513
+0001,Acámbaro,salud_publica,estricto,1000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,529,,,0.0,0.0,3108
+0001,Acámbaro,salud_publica,principal,1330,0–500,0,consolidada,48,61.4,3779.0,1120.0,1070,511.0,13.5,6.2,8.0,324
+0001,Acámbaro,salud_publica,principal,1330,500–1000,500,consolidada,129,189.1,12218.0,935.0,884,2435.0,19.9,14.7,19.9,775
+0001,Acámbaro,salud_publica,principal,1330,1000–1500,1000,consolidada,232,212.0,13207.0,833.0,816,1573.0,11.9,11.6,16.3,1277
+0001,Acámbaro,salud_publica,principal,1330,1500–2000,1500,consolidada,232,222.8,8374.0,861.0,894,1313.0,15.7,25.4,35.0,1714
+0001,Acámbaro,salud_publica,principal,1330,2000–2500,2000,consolidada,142,184.9,8942.0,1222.0,1234,3783.0,42.3,43.7,66.8,2279
+0001,Acámbaro,salud_publica,principal,1330,2500–3000,2500,consolidada,93,119.2,3686.0,1265.0,1105,1301.0,35.3,28.0,34.1,2707
+0001,Acámbaro,salud_publica,principal,1330,3000–3500,3000,consolidada,149,103.3,3366.0,591.0,591,153.0,4.5,6.0,16.7,3270
+0001,Acámbaro,salud_publica,principal,1330,3500–4000,3500,consolidada,117,108.1,2123.0,813.0,838,586.0,27.6,22.2,31.7,3669
+0001,Acámbaro,salud_publica,principal,1330,4000–4500,4000,consolidada,12,34.9,257.0,2873.0,2934,233.0,90.7,75.0,95.0,4181
+0001,Acámbaro,salud_publica,principal,1330,4500–5000,4500,consolidada,19,15.1,177.0,3420.0,3420,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,salud_publica,principal,1330,5000–5500,5000,consolidada,5,2.2,6.0,3511.0,3468,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,salud_publica,principal,1330,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,864.0,972,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,salud_publica,principal,1330,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1150.0,970,0.0,0.0,16.7,8.0,1703
+0001,Acámbaro,salud_publica,principal,1330,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1100.0,1352,0.0,0.0,50.0,18.4,2374
+0001,Acámbaro,salud_publica,principal,1330,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,706.0,867,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,salud_publica,principal,1330,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,426.0,494,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,salud_publica,principal,1330,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1058.0,1184,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,salud_publica,principal,1330,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1240.0,1240,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,salud_publica,principal,1330,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3393.0,3393,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,salud_publica,principal,1330,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3384.0,3384,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,salud_publica,principal,1330,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1218,,,50.0,37.2,1468
+0001,Acámbaro,salud_publica,principal,1330,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1438,,,100.0,100.0,1513
+0001,Acámbaro,salud_publica,principal,1330,3000–3500,3000,nueva posterior a 2020,1,0.4,,,529,,,0.0,0.0,3108
+0001,Acámbaro,salud_publica,holgado,2000,0–500,0,consolidada,48,61.4,3779.0,1120.0,1070,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,salud_publica,holgado,2000,500–1000,500,consolidada,129,189.1,12218.0,935.0,884,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,salud_publica,holgado,2000,1000–1500,1000,consolidada,232,212.0,13207.0,833.0,816,636.0,4.8,4.7,3.4,1277
+0001,Acámbaro,salud_publica,holgado,2000,1500–2000,1500,consolidada,232,222.8,8374.0,861.0,894,442.0,5.3,5.6,6.0,1714
+0001,Acámbaro,salud_publica,holgado,2000,2000–2500,2000,consolidada,142,184.9,8942.0,1222.0,1234,445.0,5.0,6.3,19.5,2279
+0001,Acámbaro,salud_publica,holgado,2000,2500–3000,2500,consolidada,93,119.2,3686.0,1265.0,1105,0.0,0.0,0.0,0.0,2707
+0001,Acámbaro,salud_publica,holgado,2000,3000–3500,3000,consolidada,149,103.3,3366.0,591.0,591,70.0,2.1,2.7,5.9,3270
+0001,Acámbaro,salud_publica,holgado,2000,3500–4000,3500,consolidada,117,108.1,2123.0,813.0,838,548.0,25.8,20.5,30.9,3669
+0001,Acámbaro,salud_publica,holgado,2000,4000–4500,4000,consolidada,12,34.9,257.0,2873.0,2934,233.0,90.7,75.0,95.0,4181
+0001,Acámbaro,salud_publica,holgado,2000,4500–5000,4500,consolidada,19,15.1,177.0,3420.0,3420,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,salud_publica,holgado,2000,5000–5500,5000,consolidada,5,2.2,6.0,3511.0,3468,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,salud_publica,holgado,2000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,864.0,972,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,salud_publica,holgado,2000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,1150.0,970,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,salud_publica,holgado,2000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1100.0,1352,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,salud_publica,holgado,2000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,706.0,867,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,salud_publica,holgado,2000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,426.0,494,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,salud_publica,holgado,2000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,1058.0,1184,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,salud_publica,holgado,2000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,1240.0,1240,0.0,0.0,0.0,0.0,4166
+0001,Acámbaro,salud_publica,holgado,2000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3393.0,3393,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,salud_publica,holgado,2000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3384.0,3384,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,salud_publica,holgado,2000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1218,,,0.0,0.0,1468
+0001,Acámbaro,salud_publica,holgado,2000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1438,,,0.0,0.0,1513
+0001,Acámbaro,salud_publica,holgado,2000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,529,,,0.0,0.0,3108
+0001,Acámbaro,tienda_basica,estricto,380,0–500,0,consolidada,48,61.4,3779.0,155.0,144,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,tienda_basica,estricto,380,500–1000,500,consolidada,129,189.1,12218.0,133.0,137,266.0,2.2,3.1,11.7,775
+0001,Acámbaro,tienda_basica,estricto,380,1000–1500,1000,consolidada,232,212.0,13207.0,125.0,135,7.0,0.1,1.3,7.5,1277
+0001,Acámbaro,tienda_basica,estricto,380,1500–2000,1500,consolidada,232,222.8,8374.0,122.0,150,172.0,2.1,9.9,14.0,1714
+0001,Acámbaro,tienda_basica,estricto,380,2000–2500,2000,consolidada,142,184.9,8942.0,136.0,142,263.0,2.9,5.6,25.8,2279
+0001,Acámbaro,tienda_basica,estricto,380,2500–3000,2500,consolidada,93,119.2,3686.0,131.0,158,161.0,4.4,8.6,43.8,2707
+0001,Acámbaro,tienda_basica,estricto,380,3000–3500,3000,consolidada,149,103.3,3366.0,131.0,151,117.0,3.5,6.7,21.0,3270
+0001,Acámbaro,tienda_basica,estricto,380,3500–4000,3500,consolidada,117,108.1,2123.0,164.0,184,150.0,7.1,7.7,24.4,3669
+0001,Acámbaro,tienda_basica,estricto,380,4000–4500,4000,consolidada,12,34.9,257.0,375.0,511,77.0,30.0,75.0,75.3,4181
+0001,Acámbaro,tienda_basica,estricto,380,4500–5000,4500,consolidada,19,15.1,177.0,238.0,238,5.0,2.8,5.3,4.2,4776
+0001,Acámbaro,tienda_basica,estricto,380,5000–5500,5000,consolidada,5,2.2,6.0,122.0,137,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,tienda_basica,estricto,380,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,205.0,254,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,tienda_basica,estricto,380,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,142.0,284,0.0,0.0,50.0,38.7,1703
+0001,Acámbaro,tienda_basica,estricto,380,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,345.0,180,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,tienda_basica,estricto,380,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,168.0,352,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,tienda_basica,estricto,380,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,190.0,328,19.0,41.3,50.0,39.3,3276
+0001,Acámbaro,tienda_basica,estricto,380,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,190.0,196,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,tienda_basica,estricto,380,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,903.0,903,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,tienda_basica,estricto,380,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,498.0,498,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,tienda_basica,estricto,380,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,222.0,222,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,tienda_basica,estricto,380,1000–1500,1000,nueva posterior a 2020,2,1.3,,,502,,,100.0,100.0,1468
+0001,Acámbaro,tienda_basica,estricto,380,1500–2000,1500,nueva posterior a 2020,1,0.8,,,680,,,100.0,100.0,1513
+0001,Acámbaro,tienda_basica,estricto,380,3000–3500,3000,nueva posterior a 2020,1,0.4,,,293,,,0.0,0.0,3108
+0001,Acámbaro,tienda_basica,principal,500,0–500,0,consolidada,48,61.4,3779.0,155.0,144,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,tienda_basica,principal,500,500–1000,500,consolidada,129,189.1,12218.0,133.0,137,26.0,0.2,1.6,7.4,775
+0001,Acámbaro,tienda_basica,principal,500,1000–1500,1000,consolidada,232,212.0,13207.0,125.0,135,0.0,0.0,0.4,2.0,1277
+0001,Acámbaro,tienda_basica,principal,500,1500–2000,1500,consolidada,232,222.8,8374.0,122.0,150,29.0,0.3,3.4,0.6,1714
+0001,Acámbaro,tienda_basica,principal,500,2000–2500,2000,consolidada,142,184.9,8942.0,136.0,142,158.0,1.8,2.8,13.2,2279
+0001,Acámbaro,tienda_basica,principal,500,2500–3000,2500,consolidada,93,119.2,3686.0,131.0,158,125.0,3.4,5.4,41.2,2707
+0001,Acámbaro,tienda_basica,principal,500,3000–3500,3000,consolidada,149,103.3,3366.0,131.0,151,45.0,1.3,4.0,13.3,3270
+0001,Acámbaro,tienda_basica,principal,500,3500–4000,3500,consolidada,117,108.1,2123.0,164.0,184,0.0,0.0,0.0,0.0,3669
+0001,Acámbaro,tienda_basica,principal,500,4000–4500,4000,consolidada,12,34.9,257.0,375.0,511,55.0,21.4,58.3,67.0,4181
+0001,Acámbaro,tienda_basica,principal,500,4500–5000,4500,consolidada,19,15.1,177.0,238.0,238,5.0,2.8,5.3,4.2,4776
+0001,Acámbaro,tienda_basica,principal,500,5000–5500,5000,consolidada,5,2.2,6.0,122.0,137,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,tienda_basica,principal,500,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,205.0,254,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,tienda_basica,principal,500,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,142.0,284,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,tienda_basica,principal,500,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,345.0,180,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,tienda_basica,principal,500,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,168.0,352,0.0,0.0,25.0,50.0,2907
+0001,Acámbaro,tienda_basica,principal,500,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,190.0,328,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,tienda_basica,principal,500,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,190.0,196,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,tienda_basica,principal,500,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,903.0,903,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,tienda_basica,principal,500,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,498.0,498,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,tienda_basica,principal,500,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,222.0,222,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,tienda_basica,principal,500,1000–1500,1000,nueva posterior a 2020,2,1.3,,,502,,,50.0,37.2,1468
+0001,Acámbaro,tienda_basica,principal,500,1500–2000,1500,nueva posterior a 2020,1,0.8,,,680,,,100.0,100.0,1513
+0001,Acámbaro,tienda_basica,principal,500,3000–3500,3000,nueva posterior a 2020,1,0.4,,,293,,,0.0,0.0,3108
+0001,Acámbaro,tienda_basica,holgado,750,0–500,0,consolidada,48,61.4,3779.0,155.0,144,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,tienda_basica,holgado,750,500–1000,500,consolidada,129,189.1,12218.0,133.0,137,0.0,0.0,0.0,0.0,775
+0001,Acámbaro,tienda_basica,holgado,750,1000–1500,1000,consolidada,232,212.0,13207.0,125.0,135,0.0,0.0,0.0,0.0,1277
+0001,Acámbaro,tienda_basica,holgado,750,1500–2000,1500,consolidada,232,222.8,8374.0,122.0,150,0.0,0.0,0.0,0.0,1714
+0001,Acámbaro,tienda_basica,holgado,750,2000–2500,2000,consolidada,142,184.9,8942.0,136.0,142,0.0,0.0,0.7,1.0,2279
+0001,Acámbaro,tienda_basica,holgado,750,2500–3000,2500,consolidada,93,119.2,3686.0,131.0,158,14.0,0.4,3.2,13.1,2707
+0001,Acámbaro,tienda_basica,holgado,750,3000–3500,3000,consolidada,149,103.3,3366.0,131.0,151,44.0,1.3,3.4,5.4,3270
+0001,Acámbaro,tienda_basica,holgado,750,3500–4000,3500,consolidada,117,108.1,2123.0,164.0,184,0.0,0.0,0.0,0.0,3669
+0001,Acámbaro,tienda_basica,holgado,750,4000–4500,4000,consolidada,12,34.9,257.0,375.0,511,15.0,5.8,33.3,24.9,4181
+0001,Acámbaro,tienda_basica,holgado,750,4500–5000,4500,consolidada,19,15.1,177.0,238.0,238,0.0,0.0,0.0,0.0,4776
+0001,Acámbaro,tienda_basica,holgado,750,5000–5500,5000,consolidada,5,2.2,6.0,122.0,137,0.0,0.0,0.0,0.0,5028
+0001,Acámbaro,tienda_basica,holgado,750,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,205.0,254,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,tienda_basica,holgado,750,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,142.0,284,0.0,0.0,0.0,0.0,1703
+0001,Acámbaro,tienda_basica,holgado,750,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,345.0,180,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,tienda_basica,holgado,750,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,168.0,352,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,tienda_basica,holgado,750,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,190.0,328,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,tienda_basica,holgado,750,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,190.0,196,0.0,0.0,0.0,0.0,3634
+0001,Acámbaro,tienda_basica,holgado,750,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,903.0,903,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,tienda_basica,holgado,750,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,498.0,498,0.0,0.0,0.0,0.0,4747
+0001,Acámbaro,tienda_basica,holgado,750,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,222.0,222,0.0,0.0,0.0,0.0,5121
+0001,Acámbaro,tienda_basica,holgado,750,1000–1500,1000,nueva posterior a 2020,2,1.3,,,502,,,0.0,0.0,1468
+0001,Acámbaro,tienda_basica,holgado,750,1500–2000,1500,nueva posterior a 2020,1,0.8,,,680,,,0.0,0.0,1513
+0001,Acámbaro,tienda_basica,holgado,750,3000–3500,3000,nueva posterior a 2020,1,0.4,,,293,,,0.0,0.0,3108
+0001,Acámbaro,abasto_completo,estricto,750,0–500,0,consolidada,48,61.4,3779.0,652.0,608,1078.0,28.5,25.0,25.1,324
+0001,Acámbaro,abasto_completo,estricto,750,500–1000,500,consolidada,129,189.1,12218.0,691.0,819,5173.0,42.3,53.5,55.0,775
+0001,Acámbaro,abasto_completo,estricto,750,1000–1500,1000,consolidada,232,212.0,13207.0,999.0,1102,10550.0,79.9,78.0,82.2,1277
+0001,Acámbaro,abasto_completo,estricto,750,1500–2000,1500,consolidada,232,222.8,8374.0,1138.0,1453,6211.0,74.2,81.0,85.8,1714
+0001,Acámbaro,abasto_completo,estricto,750,2000–2500,2000,consolidada,142,184.9,8942.0,837.0,852,6178.0,69.1,65.5,82.8,2279
+0001,Acámbaro,abasto_completo,estricto,750,2500–3000,2500,consolidada,93,119.2,3686.0,509.0,837,806.0,21.9,52.7,74.4,2707
+0001,Acámbaro,abasto_completo,estricto,750,3000–3500,3000,consolidada,149,103.3,3366.0,859.0,2738,2008.0,59.7,72.5,81.6,3270
+0001,Acámbaro,abasto_completo,estricto,750,3500–4000,3500,consolidada,117,108.1,2123.0,2120.0,2417,2123.0,100.0,100.0,100.0,3669
+0001,Acámbaro,abasto_completo,estricto,750,4000–4500,4000,consolidada,12,34.9,257.0,2928.0,2854,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,abasto_completo,estricto,750,4500–5000,4500,consolidada,19,15.1,177.0,3176.0,3176,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,abasto_completo,estricto,750,5000–5500,5000,consolidada,5,2.2,6.0,3411.0,3416,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,abasto_completo,estricto,750,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1092.0,1152,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,abasto_completo,estricto,750,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,923.0,1508,40.0,100.0,100.0,100.0,1703
+0001,Acámbaro,abasto_completo,estricto,750,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1154.0,995,8.0,100.0,100.0,100.0,2374
+0001,Acámbaro,abasto_completo,estricto,750,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,616.0,849,0.0,0.0,50.0,74.0,2907
+0001,Acámbaro,abasto_completo,estricto,750,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,919.0,1064,46.0,100.0,100.0,100.0,3276
+0001,Acámbaro,abasto_completo,estricto,750,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,4321.0,4361,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,abasto_completo,estricto,750,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,4574.0,4574,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,abasto_completo,estricto,750,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3149.0,3149,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,abasto_completo,estricto,750,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3488.0,3515,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,abasto_completo,estricto,750,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1796,,,100.0,100.0,1468
+0001,Acámbaro,abasto_completo,estricto,750,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1541,,,100.0,100.0,1513
+0001,Acámbaro,abasto_completo,estricto,750,3000–3500,3000,nueva posterior a 2020,1,0.4,,,1022,,,100.0,100.0,3108
+0001,Acámbaro,abasto_completo,principal,1000,0–500,0,consolidada,48,61.4,3779.0,652.0,608,153.0,4.0,4.2,7.7,324
+0001,Acámbaro,abasto_completo,principal,1000,500–1000,500,consolidada,129,189.1,12218.0,691.0,819,2353.0,19.3,30.2,37.0,775
+0001,Acámbaro,abasto_completo,principal,1000,1000–1500,1000,consolidada,232,212.0,13207.0,999.0,1102,6516.0,49.3,58.2,55.2,1277
+0001,Acámbaro,abasto_completo,principal,1000,1500–2000,1500,consolidada,232,222.8,8374.0,1138.0,1453,4652.0,55.6,71.6,74.4,1714
+0001,Acámbaro,abasto_completo,principal,1000,2000–2500,2000,consolidada,142,184.9,8942.0,837.0,852,1914.0,21.4,35.2,62.4,2279
+0001,Acámbaro,abasto_completo,principal,1000,2500–3000,2500,consolidada,93,119.2,3686.0,509.0,837,580.0,15.7,45.2,71.8,2707
+0001,Acámbaro,abasto_completo,principal,1000,3000–3500,3000,consolidada,149,103.3,3366.0,859.0,2738,1343.0,39.9,59.7,66.7,3270
+0001,Acámbaro,abasto_completo,principal,1000,3500–4000,3500,consolidada,117,108.1,2123.0,2120.0,2417,1964.0,92.5,96.6,96.4,3669
+0001,Acámbaro,abasto_completo,principal,1000,4000–4500,4000,consolidada,12,34.9,257.0,2928.0,2854,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,abasto_completo,principal,1000,4500–5000,4500,consolidada,19,15.1,177.0,3176.0,3176,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,abasto_completo,principal,1000,5000–5500,5000,consolidada,5,2.2,6.0,3411.0,3416,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,abasto_completo,principal,1000,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1092.0,1152,8.0,100.0,100.0,100.0,1290
+0001,Acámbaro,abasto_completo,principal,1000,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,923.0,1508,0.0,0.0,66.7,46.7,1703
+0001,Acámbaro,abasto_completo,principal,1000,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1154.0,995,8.0,100.0,50.0,81.6,2374
+0001,Acámbaro,abasto_completo,principal,1000,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,616.0,849,0.0,0.0,25.0,50.0,2907
+0001,Acámbaro,abasto_completo,principal,1000,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,919.0,1064,19.0,41.3,50.0,39.3,3276
+0001,Acámbaro,abasto_completo,principal,1000,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,4321.0,4361,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,abasto_completo,principal,1000,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,4574.0,4574,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,abasto_completo,principal,1000,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3149.0,3149,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,abasto_completo,principal,1000,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3488.0,3515,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,abasto_completo,principal,1000,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1796,,,100.0,100.0,1468
+0001,Acámbaro,abasto_completo,principal,1000,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1541,,,100.0,100.0,1513
+0001,Acámbaro,abasto_completo,principal,1000,3000–3500,3000,nueva posterior a 2020,1,0.4,,,1022,,,100.0,100.0,3108
+0001,Acámbaro,abasto_completo,holgado,1500,0–500,0,consolidada,48,61.4,3779.0,652.0,608,0.0,0.0,0.0,0.0,324
+0001,Acámbaro,abasto_completo,holgado,1500,500–1000,500,consolidada,129,189.1,12218.0,691.0,819,342.0,2.8,4.7,9.0,775
+0001,Acámbaro,abasto_completo,holgado,1500,1000–1500,1000,consolidada,232,212.0,13207.0,999.0,1102,2232.0,16.9,21.1,30.4,1277
+0001,Acámbaro,abasto_completo,holgado,1500,1500–2000,1500,consolidada,232,222.8,8374.0,1138.0,1453,2256.0,26.9,45.3,56.5,1714
+0001,Acámbaro,abasto_completo,holgado,1500,2000–2500,2000,consolidada,142,184.9,8942.0,837.0,852,1595.0,17.8,29.6,60.2,2279
+0001,Acámbaro,abasto_completo,holgado,1500,2500–3000,2500,consolidada,93,119.2,3686.0,509.0,837,448.0,12.2,40.9,42.1,2707
+0001,Acámbaro,abasto_completo,holgado,1500,3000–3500,3000,consolidada,149,103.3,3366.0,859.0,2738,1194.0,35.5,55.0,55.2,3270
+0001,Acámbaro,abasto_completo,holgado,1500,3500–4000,3500,consolidada,117,108.1,2123.0,2120.0,2417,1265.0,59.6,67.5,74.2,3669
+0001,Acámbaro,abasto_completo,holgado,1500,4000–4500,4000,consolidada,12,34.9,257.0,2928.0,2854,257.0,100.0,100.0,100.0,4181
+0001,Acámbaro,abasto_completo,holgado,1500,4500–5000,4500,consolidada,19,15.1,177.0,3176.0,3176,177.0,100.0,100.0,100.0,4776
+0001,Acámbaro,abasto_completo,holgado,1500,5000–5500,5000,consolidada,5,2.2,6.0,3411.0,3416,6.0,100.0,100.0,100.0,5028
+0001,Acámbaro,abasto_completo,holgado,1500,1000–1500,1000,nueva 2010–2020,2,1.8,8.0,1092.0,1152,0.0,0.0,0.0,0.0,1290
+0001,Acámbaro,abasto_completo,holgado,1500,1500–2000,1500,nueva 2010–2020,6,2.6,40.0,923.0,1508,0.0,0.0,50.0,38.1,1703
+0001,Acámbaro,abasto_completo,holgado,1500,2000–2500,2000,nueva 2010–2020,2,1.5,8.0,1154.0,995,0.0,0.0,0.0,0.0,2374
+0001,Acámbaro,abasto_completo,holgado,1500,2500–3000,2500,nueva 2010–2020,4,3.3,42.0,616.0,849,0.0,0.0,0.0,0.0,2907
+0001,Acámbaro,abasto_completo,holgado,1500,3000–3500,3000,nueva 2010–2020,4,2.5,46.0,919.0,1064,0.0,0.0,0.0,0.0,3276
+0001,Acámbaro,abasto_completo,holgado,1500,3500–4000,3500,nueva 2010–2020,5,2.8,53.0,4321.0,4361,53.0,100.0,100.0,100.0,3634
+0001,Acámbaro,abasto_completo,holgado,1500,4000–4500,4000,nueva 2010–2020,1,0.7,2.0,4574.0,4574,2.0,100.0,100.0,100.0,4166
+0001,Acámbaro,abasto_completo,holgado,1500,4500–5000,4500,nueva 2010–2020,1,0.6,3.0,3149.0,3149,3.0,100.0,100.0,100.0,4747
+0001,Acámbaro,abasto_completo,holgado,1500,5000–5500,5000,nueva 2010–2020,5,2.3,52.0,3488.0,3515,52.0,100.0,100.0,100.0,5121
+0001,Acámbaro,abasto_completo,holgado,1500,1000–1500,1000,nueva posterior a 2020,2,1.3,,,1796,,,50.0,62.8,1468
+0001,Acámbaro,abasto_completo,holgado,1500,1500–2000,1500,nueva posterior a 2020,1,0.8,,,1541,,,100.0,100.0,1513
+0001,Acámbaro,abasto_completo,holgado,1500,3000–3500,3000,nueva posterior a 2020,1,0.4,,,1022,,,0.0,0.0,3108
+0027,Irámuco,preescolar,estricto,750,0–500,0,consolidada,32,42.2,2437.0,849.0,742,1436.0,58.9,43.8,69.2,362
+0027,Irámuco,preescolar,estricto,750,500–1000,500,consolidada,67,82.3,2906.0,647.0,648,1268.0,43.6,41.8,64.4,811
+0027,Irámuco,preescolar,estricto,750,1000–1500,1000,consolidada,28,87.4,674.0,416.0,497,18.0,2.7,7.1,7.0,1205
+0027,Irámuco,preescolar,estricto,750,1500–2000,1500,consolidada,7,17.8,164.0,925.0,923,146.0,89.0,71.4,65.3,1760
+0027,Irámuco,preescolar,estricto,750,2000–2500,2000,consolidada,3,5.4,47.0,1380.0,1380,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,preescolar,estricto,750,500–1000,500,nueva 2010–2020,1,0.4,9.0,188.0,188,0.0,0.0,0.0,0.0,583
+0027,Irámuco,preescolar,estricto,750,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,410.0,414,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,preescolar,estricto,750,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,586.0,586,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,preescolar,estricto,750,1000–1500,1000,nueva posterior a 2020,1,0.8,,,793,,,100.0,100.0,1030
+0027,Irámuco,preescolar,principal,1000,0–500,0,consolidada,32,42.2,2437.0,849.0,742,1156.0,47.4,31.2,57.1,362
+0027,Irámuco,preescolar,principal,1000,500–1000,500,consolidada,67,82.3,2906.0,647.0,648,341.0,11.7,13.4,15.4,811
+0027,Irámuco,preescolar,principal,1000,1000–1500,1000,consolidada,28,87.4,674.0,416.0,497,0.0,0.0,0.0,0.0,1205
+0027,Irámuco,preescolar,principal,1000,1500–2000,1500,consolidada,7,17.8,164.0,925.0,923,0.0,0.0,0.0,0.0,1760
+0027,Irámuco,preescolar,principal,1000,2000–2500,2000,consolidada,3,5.4,47.0,1380.0,1380,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,preescolar,principal,1000,500–1000,500,nueva 2010–2020,1,0.4,9.0,188.0,188,0.0,0.0,0.0,0.0,583
+0027,Irámuco,preescolar,principal,1000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,410.0,414,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,preescolar,principal,1000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,586.0,586,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,preescolar,principal,1000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,793,,,0.0,0.0,1030
+0027,Irámuco,preescolar,holgado,1500,0–500,0,consolidada,32,42.2,2437.0,849.0,742,0.0,0.0,0.0,0.0,362
+0027,Irámuco,preescolar,holgado,1500,500–1000,500,consolidada,67,82.3,2906.0,647.0,648,0.0,0.0,0.0,0.0,811
+0027,Irámuco,preescolar,holgado,1500,1000–1500,1000,consolidada,28,87.4,674.0,416.0,497,0.0,0.0,0.0,0.0,1205
+0027,Irámuco,preescolar,holgado,1500,1500–2000,1500,consolidada,7,17.8,164.0,925.0,923,0.0,0.0,0.0,0.0,1760
+0027,Irámuco,preescolar,holgado,1500,2000–2500,2000,consolidada,3,5.4,47.0,1380.0,1380,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,preescolar,holgado,1500,500–1000,500,nueva 2010–2020,1,0.4,9.0,188.0,188,0.0,0.0,0.0,0.0,583
+0027,Irámuco,preescolar,holgado,1500,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,410.0,414,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,preescolar,holgado,1500,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,586.0,586,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,preescolar,holgado,1500,1000–1500,1000,nueva posterior a 2020,1,0.8,,,793,,,0.0,0.0,1030
+0027,Irámuco,primaria,estricto,500,0–500,0,consolidada,32,42.2,2437.0,1170.0,1212,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,primaria,estricto,500,500–1000,500,consolidada,67,82.3,2906.0,1058.0,986,2583.0,88.9,91.0,81.2,811
+0027,Irámuco,primaria,estricto,500,1000–1500,1000,consolidada,28,87.4,674.0,302.0,758,258.0,38.3,78.6,47.2,1205
+0027,Irámuco,primaria,estricto,500,1500–2000,1500,consolidada,7,17.8,164.0,842.0,839,164.0,100.0,100.0,100.0,1760
+0027,Irámuco,primaria,estricto,500,2000–2500,2000,consolidada,3,5.4,47.0,1265.0,1265,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,primaria,estricto,500,500–1000,500,nueva 2010–2020,1,0.4,9.0,1407.0,1407,9.0,100.0,100.0,100.0,583
+0027,Irámuco,primaria,estricto,500,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,630.0,720,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,primaria,estricto,500,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,489.0,489,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,primaria,estricto,500,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1927,,,100.0,100.0,1030
+0027,Irámuco,primaria,principal,670,0–500,0,consolidada,32,42.2,2437.0,1170.0,1212,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,primaria,principal,670,500–1000,500,consolidada,67,82.3,2906.0,1058.0,986,2195.0,75.5,76.1,65.8,811
+0027,Irámuco,primaria,principal,670,1000–1500,1000,consolidada,28,87.4,674.0,302.0,758,172.0,25.5,60.7,34.1,1205
+0027,Irámuco,primaria,principal,670,1500–2000,1500,consolidada,7,17.8,164.0,842.0,839,164.0,100.0,85.7,91.1,1760
+0027,Irámuco,primaria,principal,670,2000–2500,2000,consolidada,3,5.4,47.0,1265.0,1265,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,primaria,principal,670,500–1000,500,nueva 2010–2020,1,0.4,9.0,1407.0,1407,9.0,100.0,100.0,100.0,583
+0027,Irámuco,primaria,principal,670,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,630.0,720,5.0,45.5,66.7,77.4,1339
+0027,Irámuco,primaria,principal,670,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,489.0,489,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,primaria,principal,670,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1927,,,100.0,100.0,1030
+0027,Irámuco,primaria,holgado,1000,0–500,0,consolidada,32,42.2,2437.0,1170.0,1212,1897.0,77.8,75.0,75.5,362
+0027,Irámuco,primaria,holgado,1000,500–1000,500,consolidada,67,82.3,2906.0,1058.0,986,1502.0,51.7,49.3,38.0,811
+0027,Irámuco,primaria,holgado,1000,1000–1500,1000,consolidada,28,87.4,674.0,302.0,758,61.0,9.1,28.6,12.3,1205
+0027,Irámuco,primaria,holgado,1000,1500–2000,1500,consolidada,7,17.8,164.0,842.0,839,7.0,4.3,14.3,18.6,1760
+0027,Irámuco,primaria,holgado,1000,2000–2500,2000,consolidada,3,5.4,47.0,1265.0,1265,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,primaria,holgado,1000,500–1000,500,nueva 2010–2020,1,0.4,9.0,1407.0,1407,9.0,100.0,100.0,100.0,583
+0027,Irámuco,primaria,holgado,1000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,630.0,720,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,primaria,holgado,1000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,489.0,489,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,primaria,holgado,1000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1927,,,100.0,100.0,1030
+0027,Irámuco,secundaria,estricto,1000,0–500,0,consolidada,32,42.2,2437.0,1460.0,1475,2374.0,97.4,96.9,97.1,362
+0027,Irámuco,secundaria,estricto,1000,500–1000,500,consolidada,67,82.3,2906.0,1496.0,1529,2146.0,73.8,76.1,68.1,811
+0027,Irámuco,secundaria,estricto,1000,1000–1500,1000,consolidada,28,87.4,674.0,517.0,600,318.0,47.2,42.9,53.4,1205
+0027,Irámuco,secundaria,estricto,1000,1500–2000,1500,consolidada,7,17.8,164.0,870.0,883,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,secundaria,estricto,1000,2000–2500,2000,consolidada,3,5.4,47.0,1293.0,1293,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,secundaria,estricto,1000,500–1000,500,nueva 2010–2020,1,0.4,9.0,1647.0,1647,9.0,100.0,100.0,100.0,583
+0027,Irámuco,secundaria,estricto,1000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,357.0,448,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,secundaria,estricto,1000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3545.0,3545,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,secundaria,estricto,1000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1655,,,100.0,100.0,1030
+0027,Irámuco,secundaria,principal,1330,0–500,0,consolidada,32,42.2,2437.0,1460.0,1475,1594.0,65.4,65.6,66.1,362
+0027,Irámuco,secundaria,principal,1330,500–1000,500,consolidada,67,82.3,2906.0,1496.0,1529,1857.0,63.9,65.7,48.3,811
+0027,Irámuco,secundaria,principal,1330,1000–1500,1000,consolidada,28,87.4,674.0,517.0,600,318.0,47.2,39.3,53.2,1205
+0027,Irámuco,secundaria,principal,1330,1500–2000,1500,consolidada,7,17.8,164.0,870.0,883,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,secundaria,principal,1330,2000–2500,2000,consolidada,3,5.4,47.0,1293.0,1293,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,secundaria,principal,1330,500–1000,500,nueva 2010–2020,1,0.4,9.0,1647.0,1647,9.0,100.0,100.0,100.0,583
+0027,Irámuco,secundaria,principal,1330,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,357.0,448,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,secundaria,principal,1330,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3545.0,3545,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,secundaria,principal,1330,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1655,,,100.0,100.0,1030
+0027,Irámuco,secundaria,holgado,2000,0–500,0,consolidada,32,42.2,2437.0,1460.0,1475,0.0,0.0,0.0,0.0,362
+0027,Irámuco,secundaria,holgado,2000,500–1000,500,consolidada,67,82.3,2906.0,1496.0,1529,611.0,21.0,28.4,26.0,811
+0027,Irámuco,secundaria,holgado,2000,1000–1500,1000,consolidada,28,87.4,674.0,517.0,600,257.0,38.1,17.9,46.2,1205
+0027,Irámuco,secundaria,holgado,2000,1500–2000,1500,consolidada,7,17.8,164.0,870.0,883,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,secundaria,holgado,2000,2000–2500,2000,consolidada,3,5.4,47.0,1293.0,1293,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,secundaria,holgado,2000,500–1000,500,nueva 2010–2020,1,0.4,9.0,1647.0,1647,0.0,0.0,0.0,0.0,583
+0027,Irámuco,secundaria,holgado,2000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,357.0,448,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,secundaria,holgado,2000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3545.0,3545,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,secundaria,holgado,2000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1655,,,0.0,0.0,1030
+0027,Irámuco,bachillerato_publico,estricto,2500,0–500,0,consolidada,32,42.2,2437.0,2356.0,2448,638.0,26.2,43.8,22.6,362
+0027,Irámuco,bachillerato_publico,estricto,2500,500–1000,500,consolidada,67,82.3,2906.0,2766.0,2758,2295.0,79.0,71.6,74.0,811
+0027,Irámuco,bachillerato_publico,estricto,2500,1000–1500,1000,consolidada,28,87.4,674.0,3344.0,3467,417.0,61.9,82.1,53.8,1205
+0027,Irámuco,bachillerato_publico,estricto,2500,1500–2000,1500,consolidada,7,17.8,164.0,3977.0,3974,164.0,100.0,71.4,90.4,1760
+0027,Irámuco,bachillerato_publico,estricto,2500,2000–2500,2000,consolidada,3,5.4,47.0,4400.0,4400,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,bachillerato_publico,estricto,2500,500–1000,500,nueva 2010–2020,1,0.4,9.0,2567.0,2567,9.0,100.0,100.0,100.0,583
+0027,Irámuco,bachillerato_publico,estricto,2500,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,3765.0,3855,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,bachillerato_publico,estricto,2500,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,196.0,196,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,bachillerato_publico,estricto,2500,1000–1500,1000,nueva posterior a 2020,1,0.8,,,3297,,,100.0,100.0,1030
+0027,Irámuco,bachillerato_publico,principal,3330,0–500,0,consolidada,32,42.2,2437.0,2356.0,2448,0.0,0.0,0.0,0.0,362
+0027,Irámuco,bachillerato_publico,principal,3330,500–1000,500,consolidada,67,82.3,2906.0,2766.0,2758,0.0,0.0,1.5,5.1,811
+0027,Irámuco,bachillerato_publico,principal,3330,1000–1500,1000,consolidada,28,87.4,674.0,3344.0,3467,356.0,52.8,53.6,41.5,1205
+0027,Irámuco,bachillerato_publico,principal,3330,1500–2000,1500,consolidada,7,17.8,164.0,3977.0,3974,164.0,100.0,71.4,90.4,1760
+0027,Irámuco,bachillerato_publico,principal,3330,2000–2500,2000,consolidada,3,5.4,47.0,4400.0,4400,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,bachillerato_publico,principal,3330,500–1000,500,nueva 2010–2020,1,0.4,9.0,2567.0,2567,0.0,0.0,0.0,0.0,583
+0027,Irámuco,bachillerato_publico,principal,3330,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,3765.0,3855,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,bachillerato_publico,principal,3330,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,196.0,196,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,bachillerato_publico,principal,3330,1000–1500,1000,nueva posterior a 2020,1,0.8,,,3297,,,0.0,0.0,1030
+0027,Irámuco,bachillerato_publico,holgado,5000,0–500,0,consolidada,32,42.2,2437.0,2356.0,2448,0.0,0.0,0.0,0.0,362
+0027,Irámuco,bachillerato_publico,holgado,5000,500–1000,500,consolidada,67,82.3,2906.0,2766.0,2758,0.0,0.0,0.0,0.0,811
+0027,Irámuco,bachillerato_publico,holgado,5000,1000–1500,1000,consolidada,28,87.4,674.0,3344.0,3467,0.0,0.0,0.0,0.0,1205
+0027,Irámuco,bachillerato_publico,holgado,5000,1500–2000,1500,consolidada,7,17.8,164.0,3977.0,3974,0.0,0.0,0.0,0.0,1760
+0027,Irámuco,bachillerato_publico,holgado,5000,2000–2500,2000,consolidada,3,5.4,47.0,4400.0,4400,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,bachillerato_publico,holgado,5000,500–1000,500,nueva 2010–2020,1,0.4,9.0,2567.0,2567,0.0,0.0,0.0,0.0,583
+0027,Irámuco,bachillerato_publico,holgado,5000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,3765.0,3855,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,bachillerato_publico,holgado,5000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,196.0,196,0.0,0.0,0.0,0.0,1736
+0027,Irámuco,bachillerato_publico,holgado,5000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,3297,,,0.0,0.0,1030
+0027,Irámuco,salud_publica,estricto,1000,0–500,0,consolidada,32,42.2,2437.0,1555.0,1570,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,salud_publica,estricto,1000,500–1000,500,consolidada,67,82.3,2906.0,1471.0,1531,2274.0,78.3,85.1,71.4,811
+0027,Irámuco,salud_publica,estricto,1000,1000–1500,1000,consolidada,28,87.4,674.0,441.0,525,318.0,47.2,42.9,53.4,1205
+0027,Irámuco,salud_publica,estricto,1000,1500–2000,1500,consolidada,7,17.8,164.0,844.0,880,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,salud_publica,estricto,1000,2000–2500,2000,consolidada,3,5.4,47.0,1299.0,1299,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,salud_publica,estricto,1000,500–1000,500,nueva 2010–2020,1,0.4,9.0,1741.0,1741,9.0,100.0,100.0,100.0,583
+0027,Irámuco,salud_publica,estricto,1000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,329.0,420,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,salud_publica,estricto,1000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3639.0,3639,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,salud_publica,estricto,1000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1538,,,100.0,100.0,1030
+0027,Irámuco,salud_publica,principal,1330,0–500,0,consolidada,32,42.2,2437.0,1555.0,1570,1897.0,77.8,75.0,75.5,362
+0027,Irámuco,salud_publica,principal,1330,500–1000,500,consolidada,67,82.3,2906.0,1471.0,1531,1842.0,63.4,64.2,47.5,811
+0027,Irámuco,salud_publica,principal,1330,1000–1500,1000,consolidada,28,87.4,674.0,441.0,525,268.0,39.8,28.6,51.4,1205
+0027,Irámuco,salud_publica,principal,1330,1500–2000,1500,consolidada,7,17.8,164.0,844.0,880,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,salud_publica,principal,1330,2000–2500,2000,consolidada,3,5.4,47.0,1299.0,1299,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,salud_publica,principal,1330,500–1000,500,nueva 2010–2020,1,0.4,9.0,1741.0,1741,9.0,100.0,100.0,100.0,583
+0027,Irámuco,salud_publica,principal,1330,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,329.0,420,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,salud_publica,principal,1330,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3639.0,3639,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,salud_publica,principal,1330,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1538,,,100.0,100.0,1030
+0027,Irámuco,salud_publica,holgado,2000,0–500,0,consolidada,32,42.2,2437.0,1555.0,1570,318.0,13.0,3.1,11.4,362
+0027,Irámuco,salud_publica,holgado,2000,500–1000,500,consolidada,67,82.3,2906.0,1471.0,1531,611.0,21.0,28.4,26.0,811
+0027,Irámuco,salud_publica,holgado,2000,1000–1500,1000,consolidada,28,87.4,674.0,441.0,525,257.0,38.1,17.9,46.2,1205
+0027,Irámuco,salud_publica,holgado,2000,1500–2000,1500,consolidada,7,17.8,164.0,844.0,880,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,salud_publica,holgado,2000,2000–2500,2000,consolidada,3,5.4,47.0,1299.0,1299,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,salud_publica,holgado,2000,500–1000,500,nueva 2010–2020,1,0.4,9.0,1741.0,1741,0.0,0.0,0.0,0.0,583
+0027,Irámuco,salud_publica,holgado,2000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,329.0,420,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,salud_publica,holgado,2000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,3639.0,3639,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,salud_publica,holgado,2000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,1538,,,0.0,0.0,1030
+0027,Irámuco,tienda_basica,estricto,380,0–500,0,consolidada,32,42.2,2437.0,136.0,94,0.0,0.0,0.0,0.0,362
+0027,Irámuco,tienda_basica,estricto,380,500–1000,500,consolidada,67,82.3,2906.0,133.0,124,68.0,2.3,6.0,20.7,811
+0027,Irámuco,tienda_basica,estricto,380,1000–1500,1000,consolidada,28,87.4,674.0,355.0,254,227.0,33.7,28.6,58.9,1205
+0027,Irámuco,tienda_basica,estricto,380,1500–2000,1500,consolidada,7,17.8,164.0,261.0,268,7.0,4.3,42.9,28.2,1760
+0027,Irámuco,tienda_basica,estricto,380,2000–2500,2000,consolidada,3,5.4,47.0,679.0,679,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,tienda_basica,estricto,380,500–1000,500,nueva 2010–2020,1,0.4,9.0,138.0,138,0.0,0.0,0.0,0.0,583
+0027,Irámuco,tienda_basica,estricto,380,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,358.0,358,5.0,45.5,33.3,29.1,1339
+0027,Irámuco,tienda_basica,estricto,380,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,761.0,761,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,tienda_basica,estricto,380,1000–1500,1000,nueva posterior a 2020,1,0.8,,,32,,,0.0,0.0,1030
+0027,Irámuco,tienda_basica,principal,500,0–500,0,consolidada,32,42.2,2437.0,136.0,94,0.0,0.0,0.0,0.0,362
+0027,Irámuco,tienda_basica,principal,500,500–1000,500,consolidada,67,82.3,2906.0,133.0,124,7.0,0.2,4.5,6.4,811
+0027,Irámuco,tienda_basica,principal,500,1000–1500,1000,consolidada,28,87.4,674.0,355.0,254,85.0,12.6,10.7,25.8,1205
+0027,Irámuco,tienda_basica,principal,500,1500–2000,1500,consolidada,7,17.8,164.0,261.0,268,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,tienda_basica,principal,500,2000–2500,2000,consolidada,3,5.4,47.0,679.0,679,28.0,59.6,66.7,67.4,2145
+0027,Irámuco,tienda_basica,principal,500,500–1000,500,nueva 2010–2020,1,0.4,9.0,138.0,138,0.0,0.0,0.0,0.0,583
+0027,Irámuco,tienda_basica,principal,500,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,358.0,358,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,tienda_basica,principal,500,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,761.0,761,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,tienda_basica,principal,500,1000–1500,1000,nueva posterior a 2020,1,0.8,,,32,,,0.0,0.0,1030
+0027,Irámuco,tienda_basica,holgado,750,0–500,0,consolidada,32,42.2,2437.0,136.0,94,0.0,0.0,0.0,0.0,362
+0027,Irámuco,tienda_basica,holgado,750,500–1000,500,consolidada,67,82.3,2906.0,133.0,124,0.0,0.0,0.0,0.0,811
+0027,Irámuco,tienda_basica,holgado,750,1000–1500,1000,consolidada,28,87.4,674.0,355.0,254,0.0,0.0,0.0,0.0,1205
+0027,Irámuco,tienda_basica,holgado,750,1500–2000,1500,consolidada,7,17.8,164.0,261.0,268,0.0,0.0,28.6,9.6,1760
+0027,Irámuco,tienda_basica,holgado,750,2000–2500,2000,consolidada,3,5.4,47.0,679.0,679,0.0,0.0,0.0,0.0,2145
+0027,Irámuco,tienda_basica,holgado,750,500–1000,500,nueva 2010–2020,1,0.4,9.0,138.0,138,0.0,0.0,0.0,0.0,583
+0027,Irámuco,tienda_basica,holgado,750,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,358.0,358,0.0,0.0,0.0,0.0,1339
+0027,Irámuco,tienda_basica,holgado,750,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,761.0,761,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,tienda_basica,holgado,750,1000–1500,1000,nueva posterior a 2020,1,0.8,,,32,,,0.0,0.0,1030
+0027,Irámuco,abasto_completo,estricto,750,0–500,0,consolidada,32,42.2,2437.0,15107.0,15070,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,abasto_completo,estricto,750,500–1000,500,consolidada,67,82.3,2906.0,14938.0,14848,2906.0,100.0,100.0,100.0,811
+0027,Irámuco,abasto_completo,estricto,750,1000–1500,1000,consolidada,28,87.4,674.0,15852.0,15738,674.0,100.0,100.0,100.0,1205
+0027,Irámuco,abasto_completo,estricto,750,1500–2000,1500,consolidada,7,17.8,164.0,16927.0,16775,164.0,100.0,100.0,100.0,1760
+0027,Irámuco,abasto_completo,estricto,750,2000–2500,2000,consolidada,3,5.4,47.0,17398.0,17398,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,abasto_completo,estricto,750,500–1000,500,nueva 2010–2020,1,0.4,9.0,14678.0,14678,9.0,100.0,100.0,100.0,583
+0027,Irámuco,abasto_completo,estricto,750,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,16023.0,15958,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,abasto_completo,estricto,750,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,12883.0,12883,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,abasto_completo,estricto,750,1000–1500,1000,nueva posterior a 2020,1,0.8,,,14424,,,100.0,100.0,1030
+0027,Irámuco,abasto_completo,principal,1000,0–500,0,consolidada,32,42.2,2437.0,15107.0,15070,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,abasto_completo,principal,1000,500–1000,500,consolidada,67,82.3,2906.0,14938.0,14848,2906.0,100.0,100.0,100.0,811
+0027,Irámuco,abasto_completo,principal,1000,1000–1500,1000,consolidada,28,87.4,674.0,15852.0,15738,674.0,100.0,100.0,100.0,1205
+0027,Irámuco,abasto_completo,principal,1000,1500–2000,1500,consolidada,7,17.8,164.0,16927.0,16775,164.0,100.0,100.0,100.0,1760
+0027,Irámuco,abasto_completo,principal,1000,2000–2500,2000,consolidada,3,5.4,47.0,17398.0,17398,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,abasto_completo,principal,1000,500–1000,500,nueva 2010–2020,1,0.4,9.0,14678.0,14678,9.0,100.0,100.0,100.0,583
+0027,Irámuco,abasto_completo,principal,1000,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,16023.0,15958,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,abasto_completo,principal,1000,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,12883.0,12883,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,abasto_completo,principal,1000,1000–1500,1000,nueva posterior a 2020,1,0.8,,,14424,,,100.0,100.0,1030
+0027,Irámuco,abasto_completo,holgado,1500,0–500,0,consolidada,32,42.2,2437.0,15107.0,15070,2437.0,100.0,100.0,100.0,362
+0027,Irámuco,abasto_completo,holgado,1500,500–1000,500,consolidada,67,82.3,2906.0,14938.0,14848,2906.0,100.0,100.0,100.0,811
+0027,Irámuco,abasto_completo,holgado,1500,1000–1500,1000,consolidada,28,87.4,674.0,15852.0,15738,674.0,100.0,100.0,100.0,1205
+0027,Irámuco,abasto_completo,holgado,1500,1500–2000,1500,consolidada,7,17.8,164.0,16927.0,16775,164.0,100.0,100.0,100.0,1760
+0027,Irámuco,abasto_completo,holgado,1500,2000–2500,2000,consolidada,3,5.4,47.0,17398.0,17398,47.0,100.0,100.0,100.0,2145
+0027,Irámuco,abasto_completo,holgado,1500,500–1000,500,nueva 2010–2020,1,0.4,9.0,14678.0,14678,9.0,100.0,100.0,100.0,583
+0027,Irámuco,abasto_completo,holgado,1500,1000–1500,1000,nueva 2010–2020,3,1.1,11.0,16023.0,15958,11.0,100.0,100.0,100.0,1339
+0027,Irámuco,abasto_completo,holgado,1500,1500–2000,1500,nueva 2010–2020,1,0.3,5.0,12883.0,12883,5.0,100.0,100.0,100.0,1736
+0027,Irámuco,abasto_completo,holgado,1500,1000–1500,1000,nueva posterior a 2020,1,0.8,,,14424,,,100.0,100.0,1030
+0047,Parácuaro,preescolar,estricto,750,0–500,0,consolidada,49,60.8,1723.0,465.0,394,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,preescolar,estricto,750,500–1000,500,consolidada,72,94.7,2194.0,827.0,875,1439.0,65.6,77.8,74.0,696
+0047,Parácuaro,preescolar,estricto,750,1000–1500,1000,consolidada,6,5.0,70.0,1199.0,1208,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,preescolar,estricto,750,500–1000,500,nueva 2010–2020,5,3.0,0.0,,972,,,100.0,100.0,726
+0047,Parácuaro,preescolar,estricto,750,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1199.0,1222,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,preescolar,principal,1000,0–500,0,consolidada,49,60.8,1723.0,465.0,394,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,preescolar,principal,1000,500–1000,500,consolidada,72,94.7,2194.0,827.0,875,232.0,10.6,27.8,17.6,696
+0047,Parácuaro,preescolar,principal,1000,1000–1500,1000,consolidada,6,5.0,70.0,1199.0,1208,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,preescolar,principal,1000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,972,,,40.0,42.8,726
+0047,Parácuaro,preescolar,principal,1000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1199.0,1222,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,preescolar,holgado,1500,0–500,0,consolidada,49,60.8,1723.0,465.0,394,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,preescolar,holgado,1500,500–1000,500,consolidada,72,94.7,2194.0,827.0,875,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,preescolar,holgado,1500,1000–1500,1000,consolidada,6,5.0,70.0,1199.0,1208,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,preescolar,holgado,1500,500–1000,500,nueva 2010–2020,5,3.0,0.0,,972,,,0.0,0.0,726
+0047,Parácuaro,preescolar,holgado,1500,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1199.0,1222,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,primaria,estricto,500,0–500,0,consolidada,49,60.8,1723.0,507.0,440,867.0,50.3,36.7,49.1,307
+0047,Parácuaro,primaria,estricto,500,500–1000,500,consolidada,72,94.7,2194.0,789.0,843,1903.0,86.7,94.4,88.7,696
+0047,Parácuaro,primaria,estricto,500,1000–1500,1000,consolidada,6,5.0,70.0,949.0,958,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,primaria,estricto,500,500–1000,500,nueva 2010–2020,5,3.0,0.0,,942,,,100.0,100.0,726
+0047,Parácuaro,primaria,estricto,500,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1126.0,1097,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,primaria,principal,670,0–500,0,consolidada,49,60.8,1723.0,507.0,440,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,primaria,principal,670,500–1000,500,consolidada,72,94.7,2194.0,789.0,843,1682.0,76.7,87.5,83.3,696
+0047,Parácuaro,primaria,principal,670,1000–1500,1000,consolidada,6,5.0,70.0,949.0,958,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,primaria,principal,670,500–1000,500,nueva 2010–2020,5,3.0,0.0,,942,,,100.0,100.0,726
+0047,Parácuaro,primaria,principal,670,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1126.0,1097,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,primaria,holgado,1000,0–500,0,consolidada,49,60.8,1723.0,507.0,440,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,primaria,holgado,1000,500–1000,500,consolidada,72,94.7,2194.0,789.0,843,170.0,7.7,19.4,20.4,696
+0047,Parácuaro,primaria,holgado,1000,1000–1500,1000,consolidada,6,5.0,70.0,949.0,958,14.0,20.0,33.3,61.7,1142
+0047,Parácuaro,primaria,holgado,1000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,942,,,20.0,22.3,726
+0047,Parácuaro,primaria,holgado,1000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1126.0,1097,15.0,78.9,71.4,84.4,1204
+0047,Parácuaro,secundaria,estricto,1000,0–500,0,consolidada,49,60.8,1723.0,5453.0,5453,1723.0,100.0,100.0,100.0,307
+0047,Parácuaro,secundaria,estricto,1000,500–1000,500,consolidada,72,94.7,2194.0,5260.0,5368,2194.0,100.0,100.0,100.0,696
+0047,Parácuaro,secundaria,estricto,1000,1000–1500,1000,consolidada,6,5.0,70.0,4155.0,4130,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,secundaria,estricto,1000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,5030,,,100.0,100.0,726
+0047,Parácuaro,secundaria,estricto,1000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,5021.0,4056,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,secundaria,principal,1330,0–500,0,consolidada,49,60.8,1723.0,5453.0,5453,1723.0,100.0,100.0,100.0,307
+0047,Parácuaro,secundaria,principal,1330,500–1000,500,consolidada,72,94.7,2194.0,5260.0,5368,2194.0,100.0,100.0,100.0,696
+0047,Parácuaro,secundaria,principal,1330,1000–1500,1000,consolidada,6,5.0,70.0,4155.0,4130,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,secundaria,principal,1330,500–1000,500,nueva 2010–2020,5,3.0,0.0,,5030,,,100.0,100.0,726
+0047,Parácuaro,secundaria,principal,1330,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,5021.0,4056,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,secundaria,holgado,2000,0–500,0,consolidada,49,60.8,1723.0,5453.0,5453,1723.0,100.0,100.0,100.0,307
+0047,Parácuaro,secundaria,holgado,2000,500–1000,500,consolidada,72,94.7,2194.0,5260.0,5368,2194.0,100.0,100.0,100.0,696
+0047,Parácuaro,secundaria,holgado,2000,1000–1500,1000,consolidada,6,5.0,70.0,4155.0,4130,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,secundaria,holgado,2000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,5030,,,100.0,100.0,726
+0047,Parácuaro,secundaria,holgado,2000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,5021.0,4056,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,bachillerato_publico,estricto,2500,0–500,0,consolidada,49,60.8,1723.0,539.0,471,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,bachillerato_publico,estricto,2500,500–1000,500,consolidada,72,94.7,2194.0,855.0,880,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,bachillerato_publico,estricto,2500,1000–1500,1000,consolidada,6,5.0,70.0,1366.0,1374,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,bachillerato_publico,estricto,2500,500–1000,500,nueva 2010–2020,5,3.0,0.0,,929,,,0.0,0.0,726
+0047,Parácuaro,bachillerato_publico,estricto,2500,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1206.0,1388,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,bachillerato_publico,principal,3330,0–500,0,consolidada,49,60.8,1723.0,539.0,471,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,bachillerato_publico,principal,3330,500–1000,500,consolidada,72,94.7,2194.0,855.0,880,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,bachillerato_publico,principal,3330,1000–1500,1000,consolidada,6,5.0,70.0,1366.0,1374,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,bachillerato_publico,principal,3330,500–1000,500,nueva 2010–2020,5,3.0,0.0,,929,,,0.0,0.0,726
+0047,Parácuaro,bachillerato_publico,principal,3330,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1206.0,1388,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,bachillerato_publico,holgado,5000,0–500,0,consolidada,49,60.8,1723.0,539.0,471,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,bachillerato_publico,holgado,5000,500–1000,500,consolidada,72,94.7,2194.0,855.0,880,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,bachillerato_publico,holgado,5000,1000–1500,1000,consolidada,6,5.0,70.0,1366.0,1374,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,bachillerato_publico,holgado,5000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,929,,,0.0,0.0,726
+0047,Parácuaro,bachillerato_publico,holgado,5000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1206.0,1388,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,salud_publica,estricto,1000,0–500,0,consolidada,49,60.8,1723.0,688.0,622,93.0,5.4,6.1,5.0,307
+0047,Parácuaro,salud_publica,estricto,1000,500–1000,500,consolidada,72,94.7,2194.0,906.0,1146,1012.0,46.1,69.4,62.7,696
+0047,Parácuaro,salud_publica,estricto,1000,1000–1500,1000,consolidada,6,5.0,70.0,920.0,928,14.0,20.0,33.3,61.7,1142
+0047,Parácuaro,salud_publica,estricto,1000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,1002,,,60.0,69.7,726
+0047,Parácuaro,salud_publica,estricto,1000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1601.0,1067,15.0,78.9,71.4,84.4,1204
+0047,Parácuaro,salud_publica,principal,1330,0–500,0,consolidada,49,60.8,1723.0,688.0,622,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,salud_publica,principal,1330,500–1000,500,consolidada,72,94.7,2194.0,906.0,1146,262.0,11.9,23.6,14.1,696
+0047,Parácuaro,salud_publica,principal,1330,1000–1500,1000,consolidada,6,5.0,70.0,920.0,928,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,salud_publica,principal,1330,500–1000,500,nueva 2010–2020,5,3.0,0.0,,1002,,,0.0,0.0,726
+0047,Parácuaro,salud_publica,principal,1330,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1601.0,1067,15.0,78.9,28.6,45.5,1204
+0047,Parácuaro,salud_publica,holgado,2000,0–500,0,consolidada,49,60.8,1723.0,688.0,622,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,salud_publica,holgado,2000,500–1000,500,consolidada,72,94.7,2194.0,906.0,1146,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,salud_publica,holgado,2000,1000–1500,1000,consolidada,6,5.0,70.0,920.0,928,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,salud_publica,holgado,2000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,1002,,,0.0,0.0,726
+0047,Parácuaro,salud_publica,holgado,2000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1601.0,1067,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,tienda_basica,estricto,380,0–500,0,consolidada,49,60.8,1723.0,166.0,133,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,tienda_basica,estricto,380,500–1000,500,consolidada,72,94.7,2194.0,172.0,210,87.0,4.0,11.1,24.0,696
+0047,Parácuaro,tienda_basica,estricto,380,1000–1500,1000,consolidada,6,5.0,70.0,118.0,129,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,tienda_basica,estricto,380,500–1000,500,nueva 2010–2020,5,3.0,0.0,,267,,,0.0,0.0,726
+0047,Parácuaro,tienda_basica,estricto,380,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,582.0,286,15.0,78.9,42.9,57.3,1204
+0047,Parácuaro,tienda_basica,principal,500,0–500,0,consolidada,49,60.8,1723.0,166.0,133,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,tienda_basica,principal,500,500–1000,500,consolidada,72,94.7,2194.0,172.0,210,37.0,1.7,4.2,11.8,696
+0047,Parácuaro,tienda_basica,principal,500,1000–1500,1000,consolidada,6,5.0,70.0,118.0,129,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,tienda_basica,principal,500,500–1000,500,nueva 2010–2020,5,3.0,0.0,,267,,,0.0,0.0,726
+0047,Parácuaro,tienda_basica,principal,500,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,582.0,286,15.0,78.9,28.6,45.5,1204
+0047,Parácuaro,tienda_basica,holgado,750,0–500,0,consolidada,49,60.8,1723.0,166.0,133,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,tienda_basica,holgado,750,500–1000,500,consolidada,72,94.7,2194.0,172.0,210,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,tienda_basica,holgado,750,1000–1500,1000,consolidada,6,5.0,70.0,118.0,129,0.0,0.0,0.0,0.0,1142
+0047,Parácuaro,tienda_basica,holgado,750,500–1000,500,nueva 2010–2020,5,3.0,0.0,,267,,,0.0,0.0,726
+0047,Parácuaro,tienda_basica,holgado,750,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,582.0,286,0.0,0.0,0.0,0.0,1204
+0047,Parácuaro,abasto_completo,estricto,750,0–500,0,consolidada,49,60.8,1723.0,553.0,482,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,abasto_completo,estricto,750,500–1000,500,consolidada,72,94.7,2194.0,832.0,954,1927.0,87.8,91.7,92.9,696
+0047,Parácuaro,abasto_completo,estricto,750,1000–1500,1000,consolidada,6,5.0,70.0,1320.0,1328,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,abasto_completo,estricto,750,500–1000,500,nueva 2010–2020,5,3.0,0.0,,925,,,100.0,100.0,726
+0047,Parácuaro,abasto_completo,estricto,750,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1288.0,1343,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,abasto_completo,principal,1000,0–500,0,consolidada,49,60.8,1723.0,553.0,482,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,abasto_completo,principal,1000,500–1000,500,consolidada,72,94.7,2194.0,832.0,954,412.0,18.8,37.5,37.2,696
+0047,Parácuaro,abasto_completo,principal,1000,1000–1500,1000,consolidada,6,5.0,70.0,1320.0,1328,70.0,100.0,100.0,100.0,1142
+0047,Parácuaro,abasto_completo,principal,1000,500–1000,500,nueva 2010–2020,5,3.0,0.0,,925,,,40.0,49.2,726
+0047,Parácuaro,abasto_completo,principal,1000,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1288.0,1343,19.0,100.0,100.0,100.0,1204
+0047,Parácuaro,abasto_completo,holgado,1500,0–500,0,consolidada,49,60.8,1723.0,553.0,482,0.0,0.0,0.0,0.0,307
+0047,Parácuaro,abasto_completo,holgado,1500,500–1000,500,consolidada,72,94.7,2194.0,832.0,954,0.0,0.0,0.0,0.0,696
+0047,Parácuaro,abasto_completo,holgado,1500,1000–1500,1000,consolidada,6,5.0,70.0,1320.0,1328,14.0,20.0,33.3,61.7,1142
+0047,Parácuaro,abasto_completo,holgado,1500,500–1000,500,nueva 2010–2020,5,3.0,0.0,,925,,,0.0,0.0,726
+0047,Parácuaro,abasto_completo,holgado,1500,1000–1500,1000,nueva 2010–2020,7,3.3,19.0,1288.0,1343,0.0,0.0,14.3,17.3,1204
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,0–500,0,consolidada,59,56.3,1390.0,696.0,656,589.0,42.4,42.4,48.6,309
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,500–1000,500,consolidada,61,70.7,962.0,982.0,1138,608.0,63.2,72.1,81.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,1000–1500,1000,consolidada,5,5.6,91.0,518.0,1556,43.0,47.3,60.0,66.4,1106
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,500–1000,500,nueva 2010–2020,1,0.9,8.0,1530.0,1530,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1595.0,1647,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,estricto,750,500–1000,500,nueva posterior a 2020,1,1.2,,,1229,,,100.0,100.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,0–500,0,consolidada,59,56.3,1390.0,696.0,656,200.0,14.4,16.9,18.9,309
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,500–1000,500,consolidada,61,70.7,962.0,982.0,1138,440.0,45.7,63.9,62.4,648
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,1000–1500,1000,consolidada,5,5.6,91.0,518.0,1556,43.0,47.3,60.0,66.4,1106
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,500–1000,500,nueva 2010–2020,1,0.9,8.0,1530.0,1530,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1595.0,1647,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,principal,1000,500–1000,500,nueva posterior a 2020,1,1.2,,,1229,,,100.0,100.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,0–500,0,consolidada,59,56.3,1390.0,696.0,656,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,500–1000,500,consolidada,61,70.7,962.0,982.0,1138,35.0,3.6,3.3,14.7,648
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,1000–1500,1000,consolidada,5,5.6,91.0,518.0,1556,43.0,47.3,60.0,66.4,1106
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,500–1000,500,nueva 2010–2020,1,0.9,8.0,1530.0,1530,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1595.0,1647,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),preescolar,holgado,1500,500–1000,500,nueva posterior a 2020,1,1.2,,,1229,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,0–500,0,consolidada,59,56.3,1390.0,463.0,455,520.0,37.4,37.3,44.7,309
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,500–1000,500,consolidada,61,70.7,962.0,707.0,676,898.0,93.3,88.5,94.8,648
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,1000–1500,1000,consolidada,5,5.6,91.0,1027.0,959,91.0,100.0,100.0,100.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,500–1000,500,nueva 2010–2020,1,0.9,8.0,763.0,763,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,999.0,999,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,estricto,500,500–1000,500,nueva posterior a 2020,1,1.2,,,805,,,100.0,100.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,0–500,0,consolidada,59,56.3,1390.0,463.0,455,182.0,13.1,13.6,21.4,309
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,500–1000,500,consolidada,61,70.7,962.0,707.0,676,582.0,60.5,50.8,67.5,648
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,1000–1500,1000,consolidada,5,5.6,91.0,1027.0,959,91.0,100.0,100.0,100.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,500–1000,500,nueva 2010–2020,1,0.9,8.0,763.0,763,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,999.0,999,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,principal,670,500–1000,500,nueva posterior a 2020,1,1.2,,,805,,,100.0,100.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,0–500,0,consolidada,59,56.3,1390.0,463.0,455,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,500–1000,500,consolidada,61,70.7,962.0,707.0,676,127.0,13.2,11.5,21.6,648
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,1000–1500,1000,consolidada,5,5.6,91.0,1027.0,959,48.0,52.7,40.0,33.6,1106
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,500–1000,500,nueva 2010–2020,1,0.9,8.0,763.0,763,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,999.0,999,9.0,18.0,40.0,19.5,1179
+0017,Chupícuaro (Nuevo Chupícuaro),primaria,holgado,1000,500–1000,500,nueva posterior a 2020,1,1.2,,,805,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,0–500,0,consolidada,59,56.3,1390.0,617.0,607,148.0,10.6,6.8,11.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,500–1000,500,consolidada,61,70.7,962.0,889.0,806,376.0,39.1,27.9,52.6,648
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,1000–1500,1000,consolidada,5,5.6,91.0,1636.0,1019,59.0,64.8,60.0,79.5,1106
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,500–1000,500,nueva 2010–2020,1,0.9,8.0,823.0,823,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1059.0,1059,38.0,76.0,80.0,73.2,1179
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,estricto,1000,500–1000,500,nueva posterior a 2020,1,1.2,,,953,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,0–500,0,consolidada,59,56.3,1390.0,617.0,607,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,500–1000,500,consolidada,61,70.7,962.0,889.0,806,152.0,15.8,11.5,11.1,648
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,1000–1500,1000,consolidada,5,5.6,91.0,1636.0,1019,48.0,52.7,40.0,33.6,1106
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,500–1000,500,nueva 2010–2020,1,0.9,8.0,823.0,823,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1059.0,1059,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,principal,1330,500–1000,500,nueva posterior a 2020,1,1.2,,,953,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,0–500,0,consolidada,59,56.3,1390.0,617.0,607,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,500–1000,500,consolidada,61,70.7,962.0,889.0,806,0.0,0.0,0.0,0.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,1000–1500,1000,consolidada,5,5.6,91.0,1636.0,1019,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,500–1000,500,nueva 2010–2020,1,0.9,8.0,823.0,823,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1059.0,1059,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),secundaria,holgado,2000,500–1000,500,nueva posterior a 2020,1,1.2,,,953,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,0–500,0,consolidada,59,56.3,1390.0,644.0,634,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,500–1000,500,consolidada,61,70.7,962.0,916.0,768,0.0,0.0,0.0,0.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,1000–1500,1000,consolidada,5,5.6,91.0,1663.0,947,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,500–1000,500,nueva 2010–2020,1,0.9,8.0,751.0,751,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,987.0,987,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,estricto,2500,500–1000,500,nueva posterior a 2020,1,1.2,,,980,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,0–500,0,consolidada,59,56.3,1390.0,644.0,634,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,500–1000,500,consolidada,61,70.7,962.0,916.0,768,0.0,0.0,0.0,0.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,1000–1500,1000,consolidada,5,5.6,91.0,1663.0,947,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,500–1000,500,nueva 2010–2020,1,0.9,8.0,751.0,751,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,987.0,987,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,principal,3330,500–1000,500,nueva posterior a 2020,1,1.2,,,980,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,0–500,0,consolidada,59,56.3,1390.0,644.0,634,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,500–1000,500,consolidada,61,70.7,962.0,916.0,768,0.0,0.0,0.0,0.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,1000–1500,1000,consolidada,5,5.6,91.0,1663.0,947,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,500–1000,500,nueva 2010–2020,1,0.9,8.0,751.0,751,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,987.0,987,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,holgado,5000,500–1000,500,nueva posterior a 2020,1,1.2,,,980,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,0–500,0,consolidada,59,56.3,1390.0,475.0,464,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,500–1000,500,consolidada,61,70.7,962.0,897.0,904,216.0,22.5,27.9,44.5,648
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,1000–1500,1000,consolidada,5,5.6,91.0,1286.0,1347,91.0,100.0,100.0,100.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,500–1000,500,nueva 2010–2020,1,0.9,8.0,1222.0,1222,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1386.0,1386,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,estricto,1000,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,0–500,0,consolidada,59,56.3,1390.0,475.0,464,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,500–1000,500,consolidada,61,70.7,962.0,897.0,904,0.0,0.0,1.6,2.4,648
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,1000–1500,1000,consolidada,5,5.6,91.0,1286.0,1347,37.0,40.7,60.0,74.9,1106
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,500–1000,500,nueva 2010–2020,1,0.9,8.0,1222.0,1222,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1386.0,1386,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,principal,1330,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,0–500,0,consolidada,59,56.3,1390.0,475.0,464,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,500–1000,500,consolidada,61,70.7,962.0,897.0,904,0.0,0.0,0.0,0.0,648
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,1000–1500,1000,consolidada,5,5.6,91.0,1286.0,1347,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,500–1000,500,nueva 2010–2020,1,0.9,8.0,1222.0,1222,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1386.0,1386,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),salud_publica,holgado,2000,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,0–500,0,consolidada,59,56.3,1390.0,181.0,174,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,500–1000,500,consolidada,61,70.7,962.0,205.0,209,36.0,3.7,4.9,14.9,648
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,1000–1500,1000,consolidada,5,5.6,91.0,140.0,155,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,500–1000,500,nueva 2010–2020,1,0.9,8.0,203.0,203,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,129.0,129,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,estricto,380,500–1000,500,nueva posterior a 2020,1,1.2,,,336,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,0–500,0,consolidada,59,56.3,1390.0,181.0,174,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,500–1000,500,consolidada,61,70.7,962.0,205.0,209,35.0,3.6,3.3,14.7,648
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,1000–1500,1000,consolidada,5,5.6,91.0,140.0,155,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,500–1000,500,nueva 2010–2020,1,0.9,8.0,203.0,203,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,129.0,129,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,principal,500,500–1000,500,nueva posterior a 2020,1,1.2,,,336,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,0–500,0,consolidada,59,56.3,1390.0,181.0,174,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,500–1000,500,consolidada,61,70.7,962.0,205.0,209,0.0,0.0,1.6,2.4,648
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,1000–1500,1000,consolidada,5,5.6,91.0,140.0,155,0.0,0.0,0.0,0.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,500–1000,500,nueva 2010–2020,1,0.9,8.0,203.0,203,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,129.0,129,0.0,0.0,0.0,0.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),tienda_basica,holgado,750,500–1000,500,nueva posterior a 2020,1,1.2,,,336,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,0–500,0,consolidada,59,56.3,1390.0,552.0,533,165.0,11.9,13.6,16.8,309
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,500–1000,500,consolidada,61,70.7,962.0,931.0,982,701.0,72.9,80.3,75.3,648
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,1000–1500,1000,consolidada,5,5.6,91.0,1328.0,1374,91.0,100.0,100.0,100.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,500–1000,500,nueva 2010–2020,1,0.9,8.0,1310.0,1310,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1474.0,1474,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,estricto,750,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,100.0,100.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,0–500,0,consolidada,59,56.3,1390.0,552.0,533,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,500–1000,500,consolidada,61,70.7,962.0,931.0,982,312.0,32.4,42.6,49.8,648
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,1000–1500,1000,consolidada,5,5.6,91.0,1328.0,1374,91.0,100.0,100.0,100.0,1106
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,500–1000,500,nueva 2010–2020,1,0.9,8.0,1310.0,1310,8.0,100.0,100.0,100.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1474.0,1474,50.0,100.0,100.0,100.0,1179
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,principal,1000,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,0.0,0.0,593
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,0–500,0,consolidada,59,56.3,1390.0,552.0,533,0.0,0.0,0.0,0.0,309
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,500–1000,500,consolidada,61,70.7,962.0,931.0,982,0.0,0.0,1.6,2.4,648
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,1000–1500,1000,consolidada,5,5.6,91.0,1328.0,1374,11.0,12.1,20.0,45.9,1106
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,500–1000,500,nueva 2010–2020,1,0.9,8.0,1310.0,1310,0.0,0.0,0.0,0.0,996
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,1000–1500,1000,nueva 2010–2020,5,2.1,50.0,1474.0,1474,9.0,18.0,40.0,19.5,1179
+0017,Chupícuaro (Nuevo Chupícuaro),abasto_completo,holgado,1500,500–1000,500,nueva posterior a 2020,1,1.2,,,912,,,0.0,0.0,593

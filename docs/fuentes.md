@@ -76,3 +76,13 @@ Escuelas, salud de primer nivel y mercados: capas de servicios del MG EIC 2025 (
 |---|---|---|
 | OpenStreetMap vía Overpass (sesión nueva) | `https://overpass-api.de/api/interpreter`, misma consulta | "Connection reset by peer", 2 intentos |
 | Texto del SNEU (SEDESOL), tomo Educación | 2 búsquedas web dirigidas | Solo fuentes secundarias; no se encontró el documento original (V31) |
+
+## Fase 4b (2026-10-23)
+
+No se bajaron datos nuevos: se usaron los recortes ya versionados (MG 2010/2020/EIC 2025, Censo 2010 y 2020 por manzana, ITER 2010 y 2020, EIC 2025 municipal, GHSL 1975–2020).
+
+### Intentadas sin éxito (fase 4b)
+| Dato | Qué se intentó | Resultado |
+|---|---|---|
+| ITER 1990, 1995, 2000, 2005 (Guanajuato) | `https://www.inegi.org.mx/contenidos/programas/ccpv/{año}/datosabiertos/iter_11_{año}_csv.zip` y `.../datosabiertos/iter/iter_11_{año}_csv.zip` | Página HTML en lugar del zip (V43); no se exploraron catálogos |
+| `verificacion_zonas.csv` (release `datos-crudos`) | `01_descargar.py --solo verificacion` | Sigue sin estar (404) |

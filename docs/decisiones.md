@@ -265,3 +265,34 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Casas de salud (D27)**: decididas; ya no son un pendiente.
 - **Quién**: Alejandro.
 
+
+---
+
+## Fase 4b — Crecimiento urbano y acceso
+
+### D42 · 2026-10-23 · Antigüedad de las cuadras
+- **Decisión**: en las 4 localidades urbanas, cada cuadra 2020 es **consolidada** si al menos la mitad de su superficie ya era manzana en el MG 2010, y **nueva 2010–2020** si no (D12, `manzanas_cambios.gpkg`, capa `mg2020_vs_2010`). Las cuadras del MG EIC 2025 con menos de la mitad de su superficie en manzanas 2020 son **nuevas posteriores a 2020** (sin población). El caserío disperso queda aparte. Las cuadras posteriores a 2020 se unen por la pareja (clave, periodo), nunca solo por clave.
+- **Quién**: Alejandro (criterio, D12); Claude (aplicación).
+- **Por qué**: es el criterio ya aprobado. Las 4 localidades estaban cartografiadas en 2010, así que ninguna cuadra es "nueva" solo porque su localidad no tenía cartografía (V39).
+
+### D43 · 2026-10-23 · Centro de cada localidad y anillos (propuesta)
+- **Decisión**: el centro es la coordenada de la localidad en el ITER 2020 (el INEGI la ubica en la plaza o el centro). La distancia al centro es en línea recta desde un punto interior de cada cuadra. Para separar "periferia" de "zona nueva", cada cuadra nueva se compara con las consolidadas de su mismo anillo de 500 m: % esperado = tasa de las consolidadas del anillo, ponderada por la población (o por las cuadras) de las nuevas.
+- **Opciones**: punto del ITER · presidencia o plaza digitalizada a mano · centroide de la localidad · anillos de 250, 500 o 1 000 m.
+- **Quién**: Claude (provisional; **pendiente de Alejandro**).
+- **Por qué**: es un punto oficial y reproducible. 500 m es el ancho que deja cuadras consolidadas en todos los anillos donde hay cuadras nuevas (V40).
+
+### D44 · 2026-10-23 · Viviendas no habitadas y el "*"
+- **Decisión**: (a) **2020 por cuadra**: % no habitadas = (viviendas − habitadas) / viviendas, sumando solo cuadras con dato visible. Se usa porque "habitadas" solo está oculta en 51 cuadras, contra 602 de "deshabitadas". (b) **2010 → 2020**: "deshabitadas" y "uso temporal" de 2010 están ocultas en 1 339 de 1 478 manzanas. Por eso la década se compara con totales publicados por localidad y por AGEB. Las AGEB 2010 y 2020 se agrupan en **unidades comparables**: cada manzana 2010 se asigna, por su centroide, a la AGEB 2020 que la contiene, y se unen las AGEB que comparten ≥ 5 % de viviendas. Población y viviendas totales (sin ocultos) se comparan además por cuadra y anillo. (c) Lo oculto se reporta en cifras (total publicado − suma visible).
+- **Opciones**: deshabitadas visibles por cuadra · viviendas − habitadas · repartir el oculto (descartado: regla 3).
+- **Quién**: Claude (método); Alejandro pidió la comparación 2010–2020 por anillo y por AGEB.
+- **Por qué**: no se imputa nada y se usa la medida con menos ocultos. En la ciudad, viviendas − habitadas da 25.9 % contra 26.1 % de deshabitadas + uso temporal publicadas (V42).
+
+### D45 · 2026-10-23 · GHSL: zonas, sectores y población
+- **Decisión**: superficie construida (GHS-BUILT-S, 1975–2020) por celdas cuyo centro está en el municipio, o a ≤ 1 km del polígono de cada localidad urbana (MG EIC 2025; si una celda queda cerca de dos, va a la más cercana). Direcciones: 8 sectores y anillos de 1 km desde el centro de la ciudad (D43). La superficie por habitante solo se calcula con población del mismo año (2010 y 2020). La EIC 2025 se muestra sin superficie. Los ITER 1990–2005 no se pudieron bajar (V43).
+- **Quién**: Claude (provisional).
+- **Por qué**: D07 (solo serie observada) y regla 3 (no se interpola población entre censos).
+
+### D46 · 2026-10-23 · Tipología de AGEB (propuesta, **pendiente de Alejandro**)
+- **Propuesta**: nueva = ≥ 30 % de la superficie de sus cuadras es nueva (2010–2020 o posterior). Desatendida = en ≥ 3 de 5 servicios básicos (preescolar, primaria, secundaria, salud pública, abasto completo), más de la mitad de su población (o de su superficie, si no tiene población) está lejos con el umbral principal. Vaciándose = % no habitadas ≥ percentil 75 de las AGEB consolidadas de su localidad con ≥ 30 viviendas, **y** población 2020 menor que la de 2010 en su unidad comparable. Clases: nueva y desatendida · nueva y bien servida · consolidada y vaciándose (prioridad sobre desatendida; se marca si también lo es) · consolidada desatendida · consolidada estable.
+- **Sensibilidad** (`tipologia_sensibilidad.csv`): nueva 25/40 % (0–2 AGEB cambian); servicios 2 o 4 (30 y 26 cambian); percentil 66/90 (1–2); percentil de las 4 localidades juntas (5).
+- **Quién**: Claude propone; Alejandro decide después de ver los resultados.
