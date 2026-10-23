@@ -1,0 +1,127 @@
+cve_loc,localidad,cve_ageb,cuadras,poblacion_2020,superficie_ha,frac_sup_nueva,frac_sup_nueva_post2020,dist_centro_m,frac_lejos_preescolar,frac_lejos_primaria,frac_lejos_secundaria,frac_lejos_salud_publica,frac_lejos_abasto_completo,servicios_lejos,medida_lejania,viviendas_2020,pct_no_habitadas,unidad_2010_2020,cambio_pob_unidad,corte_no_habitadas_pct,clase,tambien_desatendida
+0001,Acámbaro,008A,41,3230,61.2,0.0,0.0,1145,0.095,0.392,0.0,0.15,0.88,1,población,1311,23.2,U001,-377.0,31.6,consolidada estable,False
+0001,Acámbaro,0094,31,2105,35.8,0.0,0.0,451,0.0,0.0,0.0,0.0,0.117,0,población,1034,29.2,U002,-188.0,31.6,consolidada estable,False
+0001,Acámbaro,0111,32,4056,41.0,0.0,0.0,706,0.0,0.0,0.248,0.062,0.058,0,población,1513,23.7,U003,-559.0,31.6,consolidada estable,False
+0001,Acámbaro,0126,66,4468,68.7,0.003,0.0,1230,0.0,0.402,0.0,0.081,0.143,0,población,1718,22.3,U004,-601.0,31.6,consolidada estable,False
+0001,Acámbaro,0130,52,5286,55.3,0.0,0.0,1186,0.0,0.092,0.374,0.0,0.279,0,población,1876,24.7,U005,-531.0,31.6,consolidada estable,False
+0001,Acámbaro,0234,71,3341,153.7,0.0,0.0,1178,0.089,0.342,0.502,0.423,0.799,2,población,1256,25.6,U006,-158.0,31.6,consolidada estable,False
+0001,Acámbaro,0287,56,3777,48.2,0.0,0.0,1613,0.0,0.08,0.0,0.0,0.065,0,población,1280,19.6,U007,-110.0,31.6,consolidada estable,False
+0001,Acámbaro,0291,41,2206,37.9,0.0,0.0,1999,0.043,0.485,0.0,0.0,0.0,0,población,896,31.2,U008,-417.0,31.6,consolidada estable,False
+0001,Acámbaro,0304,48,2709,32.4,0.0,0.0,2795,0.0,0.378,0.387,0.347,0.0,0,población,989,27.9,U009,-304.0,31.6,consolidada estable,False
+0001,Acámbaro,0319,49,4179,37.7,0.04,0.0,2248,0.212,0.215,0.051,0.564,0.093,1,población,1409,24.8,U010,-92.0,31.6,consolidada estable,False
+0001,Acámbaro,0412,38,594,32.5,0.0,0.0,3365,0.098,0.372,0.931,0.003,1.0,2,población,282,38.4,U011,-72.0,31.6,consolidada y vaciándose,False
+0001,Acámbaro,0427,56,823,32.8,0.0,0.0,3514,0.405,0.84,0.0,0.0,1.0,2,población,316,29.1,U012,129.0,31.6,consolidada estable,False
+0001,Acámbaro,0431,32,345,33.0,0.0,0.0,3034,0.217,0.38,0.214,0.012,1.0,1,población,143,31.2,U013,83.0,31.6,consolidada estable,False
+0001,Acámbaro,0446,25,261,25.9,0.0,0.0,2607,0.621,1.0,0.621,0.0,1.0,4,población,123,33.3,U014,-9.0,31.6,consolidada y vaciándose,True
+0001,Acámbaro,0450,16,204,29.8,0.0,0.0,2329,0.985,1.0,1.0,1.0,1.0,5,población,86,34.9,U015,-8.0,31.6,consolidada y vaciándose,True
+0001,Acámbaro,0465,59,1598,117.3,0.0,0.0,3539,0.6,0.971,0.715,0.637,0.579,5,población,615,31.6,U016,178.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0484,29,3188,42.5,0.0,0.0,457,0.0,0.0,0.002,0.646,0.0,1,población,1248,26.5,U017,-624.0,31.6,consolidada estable,False
+0001,Acámbaro,0499,25,1469,41.3,0.0,0.0,1289,0.0,0.259,0.761,1.0,0.05,2,población,520,21.7,U018,-392.0,31.6,consolidada estable,False
+0001,Acámbaro,0501,48,1417,41.7,0.0,0.0,1234,0.0,0.459,0.0,0.0,1.0,1,población,557,31.6,U019,318.0,31.6,consolidada estable,False
+0001,Acámbaro,0516,23,983,14.0,0.0,0.0,1300,0.0,0.0,0.0,0.0,0.961,1,población,419,28.6,U020,-8.0,31.6,consolidada estable,False
+0001,Acámbaro,0520,44,864,59.1,0.022,0.022,1547,0.231,0.233,0.163,0.207,0.91,1,población,333,39.6,U021,101.0,31.6,consolidada estable,False
+0001,Acámbaro,0535,31,2184,15.8,0.0,0.0,2338,0.0,0.585,0.0,0.0,0.002,1,población,862,22.3,U022,858.0,31.6,consolidada estable,False
+0001,Acámbaro,054A,34,1830,20.6,0.0,0.0,1610,0.0,0.834,0.145,0.0,0.803,2,población,588,21.6,U023,39.0,31.6,consolidada estable,False
+0001,Acámbaro,0569,22,665,8.2,0.0,0.0,3234,0.0,0.083,1.0,0.0,0.0,1,población,221,21.3,U024,37.0,31.6,consolidada estable,False
+0001,Acámbaro,061A,2,32,1.6,0.0,0.0,1663,0.0,0.0,0.0,0.0,1.0,1,población,22,59.1,U025,-2.0,31.6,consolidada estable,False
+0001,Acámbaro,0624,17,621,11.4,0.0,0.0,3565,0.0,0.25,1.0,0.0,0.317,1,población,198,23.9,U026,82.0,31.6,consolidada estable,False
+0001,Acámbaro,0696,5,296,4.7,0.0,0.0,1587,0.051,1.0,0.0,0.963,1.0,3,población,99,21.2,U001,-377.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0732,4,106,2.9,0.0,0.0,3756,0.0,1.0,1.0,0.0,1.0,3,población,38,36.8,U027,11.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0747,5,146,6.2,0.0,0.0,3528,0.0,0.815,1.0,0.0,0.815,3,población,49,32.7,U028,52.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0770,5,105,4.7,0.0,0.0,3781,1.0,1.0,1.0,1.0,1.0,5,población,48,45.8,U029,4.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0836,3,29,5.2,0.0,0.0,3730,0.0,1.0,1.0,0.0,1.0,3,población,7,14.3,U030,14.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0840,7,99,6.0,0.0,0.0,1747,0.0,0.0,0.0,0.0,1.0,1,población,38,28.9,U031,44.0,31.6,consolidada estable,False
+0001,Acámbaro,0893,10,317,6.2,0.0,0.0,1761,0.0,1.0,0.0,0.782,1.0,3,población,102,20.6,U032,110.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0959,1,12,1.6,0.0,0.0,3914,1.0,1.0,0.0,0.0,1.0,3,población,5,40.0,U033,-9.0,31.6,consolidada desatendida,False
+0001,Acámbaro,0963,3,32,2.5,0.333,0.0,3633,1.0,1.0,0.0,0.0,1.0,3,población,10,20.0,U034,13.0,31.6,nueva y desatendida,False
+0001,Acámbaro,1001,1,17,0.3,0.0,0.0,2985,0.0,0.0,1.0,0.0,0.0,1,población,5,0.0,U035,8.0,31.6,consolidada estable,False
+0001,Acámbaro,1016,1,21,0.9,0.0,0.0,2997,0.0,0.0,1.0,0.0,1.0,2,población,7,28.6,U036,-6.0,31.6,consolidada estable,False
+0001,Acámbaro,1035,8,175,11.5,0.0,0.0,3849,0.463,0.714,1.0,0.0,1.0,3,población,62,33.9,U037,176.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1054,1,3,0.4,0.0,0.0,4369,1.0,1.0,1.0,1.0,1.0,5,población,1,0.0,U038,18.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1069,1,70,0.7,0.0,0.0,2326,0.0,0.0,0.0,0.0,0.0,0,población,20,10.0,U039,1.0,31.6,consolidada estable,False
+0001,Acámbaro,1073,1,0,10.7,0.0,0.0,1525,0.0,1.0,0.0,0.0,1.0,2,superficie (sin población),0,,U040,0.0,31.6,consolidada estable,False
+0001,Acámbaro,1139,3,53,2.5,0.0,0.0,1226,0.0,0.0,1.0,0.0,1.0,2,población,18,22.2,U041,30.0,31.6,consolidada estable,False
+0001,Acámbaro,1143,1,0,0.4,0.0,0.0,1558,0.0,1.0,1.0,0.0,1.0,3,superficie (sin población),1,,U042,0.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1196,1,19,0.8,0.0,0.0,1747,1.0,1.0,1.0,1.0,1.0,5,población,15,53.3,U043,-2.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1209,2,8,0.5,0.0,0.0,1640,0.0,1.0,0.0,0.0,1.0,2,población,3,66.7,U044,0.0,31.6,consolidada estable,False
+0001,Acámbaro,1213,2,16,0.5,0.0,0.0,1648,0.0,1.0,0.0,1.0,1.0,3,población,4,0.0,U045,13.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1228,5,144,2.2,0.0,0.0,1916,0.0,1.0,0.0,0.0,1.0,2,población,43,25.6,U046,138.0,31.6,consolidada estable,False
+0001,Acámbaro,1232,1,125,6.9,0.0,0.0,2393,0.0,1.0,0.0,1.0,0.0,2,población,35,28.6,U047,57.0,31.6,consolidada estable,False
+0001,Acámbaro,1251,15,128,9.1,0.0,0.0,4789,0.0,0.0,1.0,1.0,1.0,3,población,49,29.2,U016,178.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1266,12,173,5.2,0.0,0.0,3210,0.0,1.0,1.0,0.0,0.0,2,población,48,18.8,U048,32.0,31.6,consolidada estable,False
+0001,Acámbaro,1270,7,136,4.4,0.3,0.088,3311,0.0,0.0,1.0,0.0,0.044,1,población,45,25.0,U049,71.0,31.6,nueva y bien servida,False
+0001,Acámbaro,1285,11,229,5.6,0.0,0.0,3669,0.0,0.009,1.0,0.0,1.0,2,población,76,21.1,U050,48.0,31.6,consolidada estable,False
+0001,Acámbaro,129A,15,281,7.4,0.0,0.0,1816,0.0,0.0,0.712,0.0,1.0,2,población,102,31.7,U051,29.0,31.6,consolidada estable,False
+0001,Acámbaro,1302,3,251,4.3,0.0,0.0,1122,0.0,0.0,1.0,0.0,0.709,2,población,79,24.1,U052,12.0,31.6,consolidada estable,False
+0001,Acámbaro,1317,8,58,18.6,0.0,0.0,3911,1.0,1.0,0.517,0.0,1.0,4,población,29,44.8,U053,-21.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1321,8,288,3.2,0.0,0.0,1892,1.0,1.0,1.0,1.0,1.0,5,población,143,24.6,U054,46.0,31.6,consolidada desatendida,False
+0001,Acámbaro,136A,1,8,0.7,0.0,0.0,4001,1.0,1.0,1.0,0.0,1.0,4,población,4,25.0,U055,2.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1374,6,168,1.9,0.0,0.0,3446,1.0,1.0,0.0,0.0,1.0,3,población,94,46.2,U056,-13.0,31.6,consolidada y vaciándose,True
+0001,Acámbaro,1389,5,6,2.2,0.0,0.0,5028,0.0,0.0,1.0,1.0,1.0,3,población,5,50.0,U057,6.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1393,1,30,0.9,0.0,0.0,2857,0.0,1.0,1.0,0.0,0.0,2,población,12,16.7,U058,9.0,31.6,consolidada estable,False
+0001,Acámbaro,1406,1,24,0.4,1.0,0.0,2955,0.0,0.0,1.0,0.0,0.0,1,población,8,37.5,U059,19.0,31.6,nueva y bien servida,False
+0001,Acámbaro,1410,1,18,0.4,1.0,0.0,2986,0.0,0.0,1.0,0.0,0.0,1,población,6,33.3,U060,12.0,31.6,nueva y bien servida,False
+0001,Acámbaro,1425,2,12,0.9,0.0,0.0,3370,0.0,0.0,1.0,0.0,1.0,2,población,5,40.0,U061,16.0,31.6,consolidada estable,False
+0001,Acámbaro,143A,4,81,1.4,0.0,0.0,2396,0.0,0.691,0.0,0.0,0.691,2,población,25,32.0,U062,63.0,31.6,consolidada estable,False
+0001,Acámbaro,1463,5,14,1.2,0.0,0.0,1586,0.0,1.0,1.0,0.0,1.0,3,población,2,0.0,U063,2.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1478,1,0,0.1,0.0,0.0,2289,0.0,1.0,0.0,0.0,0.0,1,superficie (sin población),0,,U064,0.0,31.6,consolidada estable,False
+0001,Acámbaro,1482,5,45,1.6,0.0,0.0,1684,1.0,1.0,0.0,1.0,1.0,4,población,15,26.7,U065,41.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1497,11,45,1.3,0.0,0.0,1863,1.0,1.0,0.0,1.0,1.0,4,población,13,15.4,U066,36.0,31.6,consolidada desatendida,False
+0001,Acámbaro,150A,2,9,1.0,0.494,0.0,1928,0.0,0.0,0.0,0.0,1.0,1,población,4,0.0,U067,3.0,31.6,nueva y bien servida,False
+0001,Acámbaro,1514,2,6,0.9,0.791,0.0,4126,1.0,1.0,1.0,0.0,1.0,4,población,8,75.0,U068,6.0,31.6,nueva y desatendida,False
+0001,Acámbaro,1529,2,27,1.0,0.592,0.0,3772,1.0,1.0,0.0,0.0,1.0,3,población,9,33.3,U069,23.0,31.6,nueva y desatendida,False
+0001,Acámbaro,1533,1,3,0.3,0.0,0.0,3684,0.0,1.0,1.0,0.0,1.0,3,población,4,75.0,U070,3.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1548,1,16,0.4,0.0,0.0,4532,0.0,0.0,1.0,1.0,1.0,3,población,5,40.0,U071,16.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1552,1,1,8.1,0.0,0.0,3112,1.0,1.0,1.0,1.0,1.0,5,población,3,66.7,U072,-5.0,31.6,consolidada desatendida,False
+0001,Acámbaro,1567,2,0,1.1,0.7,0.7,1460,0.0,1.0,0.0,0.0,1.0,2,superficie (sin población),0,,U073,13.0,31.6,nueva y bien servida,False
+0001,Acámbaro,1622,5,52,2.3,1.0,0.0,5121,0.0,0.0,1.0,1.0,1.0,3,población,7,0.0,U108,,31.6,nueva y desatendida,False
+0001,Acámbaro,1637,2,8,1.8,1.0,0.0,1290,0.0,0.0,1.0,0.0,1.0,2,población,2,0.0,U109,,31.6,nueva y bien servida,False
+0001,Acámbaro,1641,2,0,0.5,1.0,0.0,1667,0.0,1.0,1.0,0.0,1.0,3,superficie (sin población),0,,U110,,31.6,nueva y desatendida,False
+0001,Acámbaro,1656,1,8,1.3,1.0,0.0,2477,0.0,1.0,1.0,0.0,1.0,3,población,4,25.0,U111,,31.6,nueva y desatendida,False
+0001,Acámbaro,1675,1,0,0.6,1.0,0.0,3333,0.0,0.0,1.0,0.0,0.0,1,superficie (sin población),0,,U112,,31.6,nueva y bien servida,False
+0001,Acámbaro,168A,1,3,0.6,1.0,0.0,4747,0.0,0.0,1.0,1.0,1.0,3,población,1,0.0,U113,,31.6,nueva y desatendida,False
+0001,Acámbaro,1694,1,0,0.2,1.0,0.0,1736,1.0,1.0,0.0,1.0,1.0,4,superficie (sin población),0,,U114,,31.6,nueva y desatendida,False
+0001,Acámbaro,1707,3,14,1.3,1.0,0.0,3592,1.0,1.0,0.0,0.0,1.0,3,población,2,0.0,U115,,31.6,nueva y desatendida,False
+0001,Acámbaro,1711,2,19,1.0,1.0,0.0,3276,0.0,0.0,1.0,0.0,1.0,2,población,6,33.3,U116,,31.6,nueva y bien servida,False
+0001,Acámbaro,1726,2,0,2.4,1.0,0.0,2808,1.0,1.0,0.676,0.0,0.676,4,superficie (sin población),0,,U117,,31.6,nueva y desatendida,False
+0017,Chupícuaro (Nuevo Chupícuaro),0022,48,773,55.0,0.016,0.0,535,0.662,0.282,0.0,0.0,0.259,1,población,451,53.7,U074,,51.2,consolidada estable,False
+0017,Chupícuaro (Nuevo Chupícuaro),0056,48,930,40.8,0.052,0.0,587,0.231,0.355,0.0,0.074,0.158,0,población,402,35.2,U074,,51.2,consolidada estable,False
+0017,Chupícuaro (Nuevo Chupícuaro),0164,36,798,41.0,0.03,0.03,438,0.018,0.457,0.251,0.023,0.143,0,población,451,48.6,U074,,51.2,consolidada estable,False
+0027,Irámuco,0380,22,833,57.3,0.0,0.0,865,0.158,0.635,1.0,1.0,1.0,4,población,332,39.1,U075,94.0,39.1,consolidada desatendida,False
+0027,Irámuco,0395,38,1394,66.8,0.0,0.0,932,0.173,0.716,0.546,0.503,1.0,4,población,482,37.7,U076,128.0,39.1,consolidada desatendida,False
+0027,Irámuco,0408,26,2187,48.8,0.0,0.0,438,0.333,0.773,0.305,0.444,1.0,2,población,854,38.2,U077,-3.0,39.1,consolidada estable,False
+0027,Irámuco,047A,28,1442,31.1,0.036,0.025,555,0.275,0.99,1.0,1.0,1.0,4,población,511,35.5,U078,-30.0,39.1,consolidada desatendida,False
+0027,Irámuco,0573,1,65,4.2,0.0,0.0,1835,0.0,1.0,0.0,0.0,1.0,2,población,18,16.7,U079,19.0,39.1,consolidada estable,False
+0027,Irámuco,0662,4,51,2.2,0.249,0.0,1270,0.0,0.961,0.0,0.0,1.0,2,población,16,31.2,U080,5.0,39.1,consolidada estable,False
+0027,Irámuco,0677,4,100,9.1,0.0,0.0,1839,0.19,1.0,0.0,0.0,1.0,2,población,40,40.0,U081,17.0,39.1,consolidada estable,False
+0027,Irámuco,0681,2,5,1.8,0.138,0.0,1705,0.0,0.0,1.0,1.0,1.0,3,población,3,0.0,U082,4.0,39.1,consolidada desatendida,False
+0027,Irámuco,0906,4,62,7.9,0.0,0.0,1488,0.0,1.0,0.0,0.0,1.0,2,población,25,48.0,U083,41.0,39.1,consolidada estable,False
+0027,Irámuco,1092,1,18,1.0,0.0,0.0,985,0.0,1.0,1.0,1.0,1.0,4,población,6,33.3,U084,0.0,39.1,consolidada desatendida,False
+0027,Irámuco,1105,2,5,0.8,0.0,0.0,1133,0.0,1.0,1.0,0.0,1.0,3,población,7,50.0,U085,-2.0,39.1,consolidada desatendida,False
+0027,Irámuco,1158,2,28,3.6,0.0,0.0,2186,1.0,1.0,0.0,0.0,1.0,3,población,8,37.5,U086,12.0,39.1,consolidada desatendida,False
+0027,Irámuco,1162,2,11,0.6,1.0,0.0,1331,0.0,0.455,0.0,0.0,1.0,1,población,5,40.0,U087,11.0,39.1,nueva y bien servida,False
+0027,Irámuco,1459,1,18,1.7,0.0,0.0,1218,0.0,1.0,1.0,1.0,1.0,4,población,7,42.9,U088,-1.0,39.1,consolidada desatendida,False
+0027,Irámuco,1571,1,0,0.1,0.0,0.0,1654,0.0,1.0,1.0,1.0,1.0,4,superficie (sin población),1,,U089,0.0,39.1,consolidada desatendida,False
+0027,Irámuco,1586,2,18,0.2,0.0,0.0,643,0.0,1.0,1.0,1.0,1.0,4,población,6,16.7,U090,9.0,39.1,consolidada desatendida,False
+0027,Irámuco,1590,3,16,0.4,0.0,0.0,811,0.0,1.0,1.0,1.0,1.0,4,población,8,50.0,U091,17.0,39.1,consolidada desatendida,False
+0047,Parácuaro,0342,27,1260,40.0,0.0,0.0,467,0.027,0.429,1.0,0.0,0.0,1,población,633,41.4,U092,-50.0,44.4,consolidada estable,False
+0047,Parácuaro,0357,20,1149,34.6,0.0,0.0,430,0.007,0.24,1.0,0.0,0.007,1,población,556,42.8,U093,-46.0,44.4,consolidada estable,False
+0047,Parácuaro,0361,35,974,34.0,0.045,0.0,663,0.074,0.631,1.0,0.191,0.275,2,población,468,40.2,U094,-34.0,44.4,consolidada estable,False
+0047,Parácuaro,0376,24,410,39.1,0.0,0.0,443,0.02,0.31,1.0,0.0,0.088,1,población,217,45.0,U095,128.0,44.4,consolidada estable,False
+0047,Parácuaro,0658,1,7,0.2,0.0,0.0,794,1.0,1.0,1.0,0.0,1.0,4,población,4,25.0,U096,7.0,44.4,consolidada desatendida,False
+0047,Parácuaro,0785,1,0,0.2,0.0,0.0,892,1.0,1.0,1.0,1.0,1.0,5,superficie (sin población),1,,U097,-4.0,44.4,consolidada desatendida,False
+0047,Parácuaro,079A,5,87,3.7,0.0,0.0,911,1.0,1.0,1.0,1.0,1.0,5,población,34,42.4,U098,39.0,44.4,consolidada desatendida,False
+0047,Parácuaro,0925,3,12,1.1,0.0,0.0,687,0.833,1.0,1.0,0.0,0.0,3,población,7,71.4,U099,-9.0,44.4,consolidada desatendida,False
+0047,Parácuaro,111A,1,3,0.4,0.0,0.0,749,0.0,1.0,1.0,0.0,0.0,2,población,1,0.0,U100,1.0,44.4,consolidada estable,False
+0047,Parácuaro,1124,2,9,1.7,0.0,0.0,810,1.0,1.0,1.0,0.0,1.0,4,población,4,25.0,U101,1.0,44.4,consolidada desatendida,False
+0047,Parácuaro,1177,1,9,0.3,0.0,0.0,772,0.0,1.0,1.0,0.0,0.0,2,población,5,60.0,U102,1.0,44.4,consolidada estable,False
+0047,Parácuaro,1181,2,15,0.5,0.0,0.0,1012,1.0,1.0,1.0,0.0,1.0,4,población,5,20.0,U103,12.0,44.4,consolidada desatendida,False
+0047,Parácuaro,1247,1,4,1.0,0.0,0.0,926,1.0,1.0,1.0,1.0,1.0,5,población,6,83.3,U104,31.0,44.4,consolidada desatendida,False
+0047,Parácuaro,1336,8,63,5.7,0.149,0.0,1207,1.0,1.0,1.0,0.0,1.0,4,población,44,58.5,U105,20.0,44.4,consolidada desatendida,False
+0047,Parácuaro,1603,1,0,0.6,1.0,0.0,726,0.0,1.0,1.0,0.0,0.0,2,superficie (sin población),0,,U106,0.0,44.4,nueva y bien servida,False
+0047,Parácuaro,1618,2,4,1.2,0.518,0.0,767,1.0,1.0,1.0,0.0,1.0,4,población,3,50.0,U107,4.0,44.4,nueva y desatendida,False
+0047,Parácuaro,1660,1,0,0.3,1.0,0.0,665,0.0,1.0,1.0,0.0,0.0,2,superficie (sin población),1,,U118,,44.4,nueva y bien servida,False
+0047,Parácuaro,1730,1,0,0.7,1.0,0.0,847,1.0,1.0,1.0,0.0,1.0,4,superficie (sin población),0,,U119,,44.4,nueva y desatendida,False
+0047,Parácuaro,1745,1,0,0.4,1.0,0.0,1361,1.0,1.0,1.0,0.0,1.0,4,superficie (sin población),0,,U120,,44.4,nueva y desatendida,False
+0047,Parácuaro,175A,1,0,0.8,1.0,0.0,782,0.0,1.0,1.0,0.0,1.0,3,superficie (sin población),0,,U121,,44.4,nueva y desatendida,False
+0047,Parácuaro,1764,1,0,0.6,1.0,0.0,1189,1.0,1.0,1.0,0.0,1.0,4,superficie (sin población),1,,U122,,44.4,nueva y desatendida,False

@@ -1,0 +1,118 @@
+{
+ "cuadras_por_periodo": {
+  "Acámbaro | caserío disperso": 16,
+  "Acámbaro | consolidada": 1178,
+  "Acámbaro | nueva 2010–2020": 30,
+  "Acámbaro | nueva posterior a 2020": 4,
+  "Chupícuaro (Nuevo Chupícuaro) | caserío disperso": 3,
+  "Chupícuaro (Nuevo Chupícuaro) | consolidada": 125,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva 2010–2020": 6,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva posterior a 2020": 1,
+  "Irámuco | caserío disperso": 5,
+  "Irámuco | consolidada": 137,
+  "Irámuco | nueva 2010–2020": 5,
+  "Irámuco | nueva posterior a 2020": 1,
+  "Parácuaro | caserío disperso": 8,
+  "Parácuaro | consolidada": 127,
+  "Parácuaro | nueva 2010–2020": 12
+ },
+ "superficie_ha_por_periodo": {
+  "Acámbaro | caserío disperso": 0.0,
+  "Acámbaro | consolidada": 1252.9,
+  "Acámbaro | nueva 2010–2020": 18.3,
+  "Acámbaro | nueva posterior a 2020": 2.5,
+  "Chupícuaro (Nuevo Chupícuaro) | caserío disperso": 0.0,
+  "Chupícuaro (Nuevo Chupícuaro) | consolidada": 132.5,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva 2010–2020": 3.0,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva posterior a 2020": 1.2,
+  "Irámuco | caserío disperso": 0.0,
+  "Irámuco | consolidada": 235.1,
+  "Irámuco | nueva 2010–2020": 1.7,
+  "Irámuco | nueva posterior a 2020": 0.8,
+  "Parácuaro | caserío disperso": 0.0,
+  "Parácuaro | consolidada": 160.4,
+  "Parácuaro | nueva 2010–2020": 6.3
+ },
+ "poblacion_por_periodo": {
+  "Acámbaro | caserío disperso": 207,
+  "Acámbaro | consolidada": 56135,
+  "Acámbaro | nueva 2010–2020": 254,
+  "Acámbaro | nueva posterior a 2020": 0,
+  "Chupícuaro (Nuevo Chupícuaro) | caserío disperso": 82,
+  "Chupícuaro (Nuevo Chupícuaro) | consolidada": 2443,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva 2010–2020": 58,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva posterior a 2020": 0,
+  "Irámuco | caserío disperso": 22,
+  "Irámuco | consolidada": 6228,
+  "Irámuco | nueva 2010–2020": 25,
+  "Irámuco | nueva posterior a 2020": 0,
+  "Parácuaro | caserío disperso": 153,
+  "Parácuaro | consolidada": 3987,
+  "Parácuaro | nueva 2010–2020": 19
+ },
+ "localidad_no_cartografiada_2010": 0,
+ "dist_centro_mediana_m": {
+  "Acámbaro | caserío disperso": 2985.5,
+  "Acámbaro | consolidada": 1863.0,
+  "Acámbaro | nueva 2010–2020": 3214.5,
+  "Acámbaro | nueva posterior a 2020": 1494.5,
+  "Chupícuaro (Nuevo Chupícuaro) | caserío disperso": 1217.0,
+  "Chupícuaro (Nuevo Chupícuaro) | consolidada": 515.0,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva 2010–2020": 1168.5,
+  "Chupícuaro (Nuevo Chupícuaro) | nueva posterior a 2020": 593.0,
+  "Irámuco | caserío disperso": 1496.0,
+  "Irámuco | consolidada": 841.0,
+  "Irámuco | nueva 2010–2020": 1339.0,
+  "Irámuco | nueva posterior a 2020": 1030.0,
+  "Parácuaro | caserío disperso": 1032.0,
+  "Parácuaro | consolidada": 578.0,
+  "Parácuaro | nueva 2010–2020": 1081.5
+ },
+ "chequeo_poblacion": {
+  "Acámbaro": 56596,
+  "Chupícuaro (Nuevo Chupícuaro)": 2583,
+  "Irámuco": 6275,
+  "Parácuaro": 4159
+ },
+ "verificacion_zonas": "no está en el release: resultados provisionales",
+ "manzanas_2010_fuera_de_ageb_2020": 28,
+ "manzanas_2010_sin_censo": 127,
+ "manzanas_2010_deshabitadas_oculto": "1339 de 1478",
+ "unidades_comparables": 122,
+ "tipologia": {
+  "consolidada estable": 53,
+  "consolidada desatendida": 43,
+  "nueva y desatendida": 15,
+  "nueva y bien servida": 11,
+  "consolidada y vaciándose": 4
+ },
+ "tipologia_corte_no_habitadas_pct": {
+  "Acámbaro": 31.6,
+  "Chupícuaro (Nuevo Chupícuaro)": 51.2,
+  "Irámuco": 39.1,
+  "Parácuaro": 44.4
+ },
+ "chequeo_poblacion_resumen_11": {
+  "Acámbaro": 56596,
+  "Irámuco": 6275,
+  "Parácuaro": 4159,
+  "Chupícuaro (Nuevo Chupícuaro)": 2583
+ },
+ "ghsl": {
+  "celdas": 246609,
+  "celdas_sin_dato": {
+   "1975": 2008,
+   "1980": 2008,
+   "1985": 2008,
+   "1990": 2008,
+   "1995": 2008,
+   "2000": 2008,
+   "2005": 2008,
+   "2010": 2008,
+   "2015": 2008,
+   "2020": 2008
+  },
+  "ciudad_construido_2020_ha": 456.4,
+  "ciudad_cuadras_mg2020_ha": 1271.2
+ }
+}
