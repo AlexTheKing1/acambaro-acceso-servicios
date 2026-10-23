@@ -20,7 +20,7 @@ Luego compara, por localidad:
      temporal de 2010 están ocultas en casi todas las manzanas, así que la década se
      compara con los totales publicados por AGEB, agrupados en "unidades comparables"
      (conjuntos de AGEB 2010 y 2020 que cubren el mismo suelo);
-  5. una tipología de AGEB propuesta (criterios en CRITERIOS; los aprueba Alejandro).
+  5. una tipología de AGEB (criterios en CRITERIOS, aprobados por Alejandro: D47).
 Si data/raw/verificacion/verificacion_zonas.csv existe, repite 1 y 5 sin las cuadras
 de las zonas marcadas "no"; si no, todo es provisional.
 
@@ -31,7 +31,7 @@ Salidas en data/processed/:
   crecimiento_acceso_periferia.csv         nuevas contra consolidadas a igual distancia del centro
   crecimiento_viviendas.csv                viviendas 2020 por localidad / anillo / AGEB × grupo
   crecimiento_viviendas_2010_2020.csv      población y viviendas 2010 vs 2020 (anillo, unidad, localidad)
-  tipologia_ageb.csv                       tipología propuesta por AGEB 2020
+  tipologia_ageb.csv                       tipología final por AGEB 2020
   tipologia_sensibilidad.csv               cuántas AGEB cambian de clase al mover cada umbral
   validacion_fase4b.json
 """
@@ -63,7 +63,7 @@ SERVICIOS = ["preescolar", "primaria", "secundaria", "bachillerato_publico", "sa
 CONSOL, N1020, N20 = "consolidada", "nueva 2010–2020", "nueva posterior a 2020"
 GRUPOS = [CONSOL, N1020, N20]
 SECTORES = ["N", "NE", "E", "SE", "S", "SO", "O", "NO"]
-# Tipología propuesta (D46): umbrales y alternativas para la sensibilidad
+# Tipología final (D46, criterios aprobados por Alejandro en D47): umbrales y alternativas para la sensibilidad
 # - nueva: al menos frac_sup_nueva de la superficie de sus cuadras es nueva (2010–2020 o posterior);
 # - desatendida: en al menos servicios_lejos de los 5 BASICOS, más de la mitad de su población
 #   (o de su superficie, si no tiene población) está lejos con el umbral principal;

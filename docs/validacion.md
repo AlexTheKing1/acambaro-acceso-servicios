@@ -272,3 +272,22 @@ Todos los resultados son **provisionales**: `verificacion_zonas.csv` sigue sin e
 **V43 · ITER históricos.** Se probaron dos patrones de URL (`ccpv/{año}/datosabiertos/iter_11_{año}_csv.zip` y `.../iter/iter_11_{año}_csv.zip`) para 1990, 1995, 2000 y 2005. Los 8 devolvieron una página HTML (2 263 bytes), no un zip. No se buscó más: la superficie por habitante solo se calcula para 2010 y 2020.
 
 **V44 · Tipología.** 126 AGEB: 53 consolidada estable (60 143 hab.), 43 consolidada desatendida (7 408), 4 consolidada y vaciándose (1 227; 3 también desatendidas), 11 nueva y bien servida (225), 15 nueva y desatendida (146). Corte de % no habitadas (percentil 75 dentro de la localidad): Acámbaro 31.6, Irámuco 39.1, Parácuaro 44.4, Chupícuaro 51.2.
+
+## Fase 4c (2026-10-23) — decisiones de la 4b y crecimiento no registrado
+
+**V45 · Tipología final (D47).** Al volver a correr `19_crecimiento.py` con los criterios aprobados (que son los propuestos), `tipologia_ageb.csv` y `tipologia_sensibilidad.csv` no cambian: 53 consolidada estable (60 143 hab.), 43 consolidada desatendida (7 408), 4 consolidada y vaciándose (1 227), 11 nueva y bien servida (225), 15 nueva y desatendida (146). Con 2 de 5 (sensibilidad) cambian 30 AGEB: 68 consolidada desatendida, 28 estable, 4 vaciándose, 6 nueva y bien servida, 20 nueva y desatendida. (`19` también reescribe `validacion_fase4b.json` sin la clave `ghsl` de `20`; se restauró desde git. Hay que correr `20` y `22` después de `19`.)
+
+**V46 · GHSL dentro y fuera de cuadras (`ghsl_dentro_fuera_cuadras.csv`).**
+- Dominio: 9 078 celdas; 0 sin dato; ninguna perdió superficie construida entre 2010 y 2020. 563 celdas del margen de 1 km caen fuera del municipio (Michoacán o municipios vecinos), donde no hay cuadras del MG de Acámbaro; ninguna zona sin cuadras queda fuera del municipio.
+- Cierre: la ganancia de la ciudad (+1 km) es 66.6 ha, igual que en `ghsl_serie.csv` (389.8 → 456.4 ha). Irámuco 4.0, Parácuaro 10.0, Chupícuaro 9.5 ha, también iguales.
+- Ciudad: 25.0 ha dentro de cuadras (22.4 en consolidadas, **0.6 en cuadras nuevas 2010–2020**, 0.1 en posteriores a 2020 y 1.9 en otras cuadras: de localidades rurales vecinas o fuera de la clasificación de `cuadras_antiguedad`) y **41.6 ha fuera de cuadras**, de las cuales 34.6 ha quedan fuera también del polígono de la localidad (el resto son calles). Irámuco 2.0 / 2.0, Parácuaro 4.6 / 5.5, Chupícuaro 4.0 / 5.5 ha (dentro / fuera).
+- Que las cuadras nuevas 2010–2020 (18.3 ha en la ciudad) solo reciban 0.6 ha de construcción nueva del GHSL indica que en 2020 estaban casi vacías vistas desde el satélite (lotes trazados con pocas casas). Concuerda con las 82 viviendas que tienen.
+- Cobertura por cuadras de las celdas ya construidas en 2010 (≥ 3 000 m²): percentiles 10 / 25 / 50 / 75 / 90 = 69 / 76 / 81 / 86 / 90 %. Celdas con ganancia ≥ 500 m²: 205 con < 10 % en cuadras, 14 con 10–25 %, 50 con 25–50 % y 233 con ≥ 50 %.
+
+**V47 · Zonas sin cuadras (`ghsl_zonas_sin_cuadras.csv`, `ghsl_sin_cuadras_sensibilidad.csv`).**
+- Criterio base (≥ 500 m², < 25 %): 78 zonas (219 celdas), 33 de ellas de una sola celda. Ciudad: 52 zonas, 25.9 ha ganadas; Irámuco 5 zonas, 0.9 ha; Parácuaro 10, 2.8 ha; Chupícuaro 11, 2.6 ha. Las 20 del KML suman 22.7 ha.
+- Sensibilidad, ciudad (ha ganadas en zonas): ganancia ≥ 200 m² → 29.3; ≥ 1 000 m² → 20.8; cobertura < 10 % → 25.2; < 50 % → 30.0. **El orden de magnitud (20–30 ha) es firme.**
+- 18 zonas contienen un punto de localidad rural o de caserío del INEGI (p. ej. G-002 Las Malayas, G-003 Hacienda Real de Acámbaro, G-011 Puente de Fierro [Invernadero]). En la ciudad, 9.4 de las 25.9 ha caen en zonas así: ese crecimiento el INEGI sí lo registra, pero como localidad rural sin cuadras, no como parte de la ciudad. G-011 se llama "[Invernadero]": es un caso probable de falso positivo (techo de invernadero leído como construcción).
+- Mediana de distancia al centro de las zonas: ciudad 3.2 km (igual que las cuadras nuevas del MG), Parácuaro 1.3 km, Chupícuaro 1.6 km, Irámuco 2.5 km.
+- KML: 20 Placemark; se abre con ElementTree. `verificar_zonas_ghsl.csv`: 78 filas, columnas vacías existe_en_imagen / que_se_ve / notas; al volver a correr se conserva lo anotado (por id).
+- **Sin revisar en imágenes**: todo lo anterior es provisional.

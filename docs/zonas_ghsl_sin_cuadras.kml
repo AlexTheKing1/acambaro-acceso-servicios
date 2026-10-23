@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Acámbaro: construcción 2010–2020 (GHSL) fuera de las cuadras del INEGI</name>
+    <description>Celdas de 100 m del GHSL con al menos 500 m² construidos nuevos entre 2010 y 2020 y menos de 25% de su superficie dentro de cuadras del Marco Geoestadístico (EIC 2025). Las 20 zonas más grandes. El GHSL es un modelo con celdas de 100 m y su capa 2020 combina imágenes de varios años: puede haber falsos positivos. Lista: docs/verificar_zonas_ghsl.csv.</description>
+    <Style id="ghsl">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>44ff00ff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>G-001</name>
+      <description>Zona G-001. Localidad: Acámbaro. Superficie: 29 ha (29 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 38,567 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.710116,20.009227,0 -100.710444,20.010056,0 -100.710772,20.010884,0 -100.709735,20.010884,0 -100.708698,20.010884,0 -100.709026,20.011712,0 -100.709355,20.012540,0 -100.710392,20.012540,0 -100.710720,20.013369,0 -100.709683,20.013369,0 -100.710011,20.014197,0 -100.711048,20.014197,0 -100.712085,20.014197,0 -100.713122,20.014197,0 -100.713450,20.015025,0 -100.713778,20.015853,0 -100.712742,20.015853,0 -100.711705,20.015853,0 -100.712033,20.016682,0 -100.710996,20.016682,0 -100.709959,20.016682,0 -100.709631,20.015853,0 -100.708594,20.015853,0 -100.708265,20.015025,0 -100.707937,20.014197,0 -100.706900,20.014197,0 -100.706572,20.013369,0 -100.707609,20.013369,0 -100.707281,20.012540,0 -100.706953,20.011712,0 -100.707990,20.011712,0 -100.707661,20.010884,0 -100.707333,20.010056,0 -100.708370,20.010056,0 -100.708042,20.009227,0 -100.707714,20.008399,0 -100.708751,20.008399,0 -100.708423,20.007571,0 -100.708095,20.006743,0 -100.709131,20.006743,0 -100.709460,20.007571,0 -100.709788,20.008399,0 -100.710116,20.009227,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+        <innerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.708974,20.014197,0 -100.709302,20.015025,0 -100.710339,20.015025,0 -100.710011,20.014197,0 -100.708974,20.014197,0</coordinates>
+          </LinearRing>
+        </innerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-002</name>
+      <description>Zona G-002. Localidad: Acámbaro. Superficie: 12 ha (12 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 26,153 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Las Malayas (La Providencia) (0270).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.744075,20.021651,0 -100.744403,20.022479,0 -100.743366,20.022479,0 -100.743695,20.023308,0 -100.744023,20.024136,0 -100.742986,20.024136,0 -100.741949,20.024136,0 -100.740913,20.024136,0 -100.740584,20.023308,0 -100.740255,20.022479,0 -100.741292,20.022479,0 -100.740964,20.021651,0 -100.742001,20.021651,0 -100.741672,20.020823,0 -100.742709,20.020823,0 -100.743746,20.020823,0 -100.744783,20.020823,0 -100.745112,20.021651,0 -100.744075,20.021651,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-003</name>
+      <description>Zona G-003. Localidad: Acámbaro. Superficie: 13 ha (13 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 25,426 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Hacienda Real de Acámbaro (0338).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.695685,20.038217,0 -100.696014,20.039045,0 -100.696343,20.039873,0 -100.697380,20.039873,0 -100.697708,20.040702,0 -100.696671,20.040702,0 -100.695634,20.040702,0 -100.695963,20.041530,0 -100.694926,20.041530,0 -100.693889,20.041530,0 -100.693560,20.040702,0 -100.693232,20.039873,0 -100.692903,20.039045,0 -100.692574,20.038217,0 -100.693611,20.038217,0 -100.694648,20.038217,0 -100.694320,20.037388,0 -100.695357,20.037388,0 -100.695685,20.038217,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-004</name>
+      <description>Zona G-004. Localidad: Acámbaro. Superficie: 8 ha (8 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 20,110 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.739426,20.012540,0 -100.739754,20.013369,0 -100.740791,20.013369,0 -100.741119,20.014197,0 -100.740082,20.014197,0 -100.740411,20.015025,0 -100.739374,20.015025,0 -100.738337,20.015025,0 -100.738008,20.014197,0 -100.737680,20.013369,0 -100.738717,20.013369,0 -100.738389,20.012540,0 -100.739426,20.012540,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.741776,20.015853,0 -100.742104,20.016682,0 -100.741067,20.016682,0 -100.740739,20.015853,0 -100.740411,20.015025,0 -100.741447,20.015025,0 -100.741776,20.015853,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-005</name>
+      <description>Zona G-005. Localidad: Acámbaro. Superficie: 12 ha (12 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 13,413 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.744805,20.036560,0 -100.745134,20.037388,0 -100.746171,20.037388,0 -100.747208,20.037388,0 -100.747537,20.038217,0 -100.746500,20.038217,0 -100.746829,20.039045,0 -100.747158,20.039873,0 -100.746121,20.039873,0 -100.745792,20.039045,0 -100.744755,20.039045,0 -100.743718,20.039045,0 -100.742681,20.039045,0 -100.742352,20.038217,0 -100.743389,20.038217,0 -100.743060,20.037388,0 -100.742023,20.037388,0 -100.741694,20.036560,0 -100.742731,20.036560,0 -100.743768,20.036560,0 -100.744805,20.036560,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+          <innerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.744097,20.037388,0 -100.744426,20.038217,0 -100.745463,20.038217,0 -100.745134,20.037388,0 -100.744097,20.037388,0</coordinates>
+            </LinearRing>
+          </innerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.742023,20.037388,0 -100.742352,20.038217,0 -100.741315,20.038217,0 -100.740986,20.037388,0 -100.742023,20.037388,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-006</name>
+      <description>Zona G-006. Localidad: Acámbaro. Superficie: 9 ha (9 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 11,634 m². Dentro del polígono de la localidad: en parte.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.745147,20.003430,0 -100.745475,20.004258,0 -100.745803,20.005086,0 -100.744767,20.005086,0 -100.743730,20.005086,0 -100.742693,20.005086,0 -100.742365,20.004258,0 -100.742036,20.003430,0 -100.743073,20.003430,0 -100.743402,20.004258,0 -100.744438,20.004258,0 -100.744110,20.003430,0 -100.743782,20.002602,0 -100.744819,20.002602,0 -100.745147,20.003430,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.747169,20.005915,0 -100.746132,20.005915,0 -100.745803,20.005086,0 -100.746840,20.005086,0 -100.747877,20.005086,0 -100.748205,20.005915,0 -100.747169,20.005915,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.746132,20.005915,0 -100.746460,20.006743,0 -100.745423,20.006743,0 -100.745095,20.005915,0 -100.746132,20.005915,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-007</name>
+      <description>Zona G-007. Localidad: Parácuaro. Superficie: 4 ha (4 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 9,310 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Los Coss [Rancho] (0323).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.752309,20.130996,0 -100.752639,20.131825,0 -100.751602,20.131825,0 -100.750564,20.131825,0 -100.750234,20.130996,0 -100.749903,20.130168,0 -100.750941,20.130168,0 -100.751978,20.130168,0 -100.752309,20.130996,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-008</name>
+      <description>Zona G-008. Localidad: Chupícuaro (Nuevo Chupícuaro). Superficie: 6 ha (6 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 8,855 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.693915,20.057268,0 -100.692878,20.057268,0 -100.691840,20.057268,0 -100.692169,20.058096,0 -100.691132,20.058096,0 -100.691461,20.058925,0 -100.690424,20.058925,0 -100.690095,20.058096,0 -100.689766,20.057268,0 -100.690803,20.057268,0 -100.690474,20.056440,0 -100.691511,20.056440,0 -100.692549,20.056440,0 -100.693586,20.056440,0 -100.693915,20.057268,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-009</name>
+      <description>Zona G-009. Localidad: Acámbaro. Superficie: 4 ha (4 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 8,296 m². Dentro del polígono de la localidad: en parte.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.709773,20.042358,0 -100.710102,20.043187,0 -100.709065,20.043187,0 -100.708028,20.043187,0 -100.707699,20.042358,0 -100.707371,20.041530,0 -100.708408,20.041530,0 -100.709445,20.041530,0 -100.709773,20.042358,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-010</name>
+      <description>Zona G-010. Localidad: Acámbaro. Superficie: 3 ha (3 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 7,184 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.745872,20.018338,0 -100.746200,20.019166,0 -100.745163,20.019166,0 -100.745492,20.019995,0 -100.744455,20.019995,0 -100.744126,20.019166,0 -100.743798,20.018338,0 -100.744835,20.018338,0 -100.745872,20.018338,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-011</name>
+      <description>Zona G-011. Localidad: Acámbaro. Superficie: 2 ha (2 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 7,052 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Puente de Fierro [Invernadero] (0451).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.728339,20.047328,0 -100.729376,20.047328,0 -100.729705,20.048156,0 -100.730034,20.048985,0 -100.728997,20.048985,0 -100.728668,20.048156,0 -100.728339,20.047328,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-012</name>
+      <description>Zona G-012. Localidad: Acámbaro. Superficie: 3 ha (3 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 6,828 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Hacienda de Guadalupe (El Rancho) (0336).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.733375,20.054783,0 -100.734412,20.054783,0 -100.734741,20.055611,0 -100.735070,20.056440,0 -100.734033,20.056440,0 -100.732996,20.056440,0 -100.732667,20.055611,0 -100.733704,20.055611,0 -100.733375,20.054783,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-013</name>
+      <description>Zona G-013. Localidad: Acámbaro. Superficie: 2 ha (2 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 6,162 m². Dentro del polígono de la localidad: en parte.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.719513,20.056440,0 -100.720550,20.056440,0 -100.720879,20.057268,0 -100.721209,20.058096,0 -100.720171,20.058096,0 -100.719842,20.057268,0 -100.719513,20.056440,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-014</name>
+      <description>Zona G-014. Localidad: Acámbaro. Superficie: 2 ha (2 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,915 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.682358,20.030762,0 -100.682687,20.031590,0 -100.681650,20.031590,0 -100.680613,20.031590,0 -100.680284,20.030762,0 -100.681321,20.030762,0 -100.682358,20.030762,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-015</name>
+      <description>Zona G-015. Localidad: Parácuaro. Superficie: 3 ha (3 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,869 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: Isaías Zúñiga (Las Varas) (0389).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.770230,20.134310,0 -100.771267,20.134310,0 -100.771598,20.135139,0 -100.771929,20.135967,0 -100.770891,20.135967,0 -100.769854,20.135967,0 -100.769523,20.135139,0 -100.770560,20.135139,0 -100.770230,20.134310,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-016</name>
+      <description>Zona G-016. Localidad: Acámbaro. Superficie: 5 ha (5 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,559 m². Dentro del polígono de la localidad: no. Localidades rurales del INEGI dentro: La Escondida (0224); El Milagro (0450).</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.737344,20.046500,0 -100.737673,20.047328,0 -100.736636,20.047328,0 -100.736307,20.046500,0 -100.735978,20.045672,0 -100.737015,20.045672,0 -100.737344,20.046500,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.739747,20.047328,0 -100.740076,20.048156,0 -100.739039,20.048156,0 -100.738002,20.048156,0 -100.737673,20.047328,0 -100.738710,20.047328,0 -100.738381,20.046500,0 -100.739418,20.046500,0 -100.739747,20.047328,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-017</name>
+      <description>Zona G-017. Localidad: Acámbaro. Superficie: 4 ha (4 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,354 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.724568,19.995976,0 -100.724896,19.996804,0 -100.725224,19.997632,0 -100.724187,19.997632,0 -100.723859,19.996804,0 -100.723531,19.995976,0 -100.724568,19.995976,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.726261,19.997632,0 -100.726589,19.998460,0 -100.726917,19.999289,0 -100.725880,19.999289,0 -100.725552,19.998460,0 -100.725224,19.997632,0 -100.726261,19.997632,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-018</name>
+      <description>Zona G-018. Localidad: Acámbaro. Superficie: 8 ha (8 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,152 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.698933,20.015025,0 -100.697896,20.015025,0 -100.697568,20.014197,0 -100.698605,20.014197,0 -100.698933,20.015025,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-100.696859,20.015025,0 -100.697896,20.015025,0 -100.698224,20.015853,0 -100.699261,20.015853,0 -100.699590,20.016682,0 -100.698553,20.016682,0 -100.698881,20.017510,0 -100.697844,20.017510,0 -100.697516,20.016682,0 -100.696479,20.016682,0 -100.695442,20.016682,0 -100.695114,20.015853,0 -100.694785,20.015025,0 -100.695822,20.015025,0 -100.696150,20.015853,0 -100.697187,20.015853,0 -100.696859,20.015025,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>G-019</name>
+      <description>Zona G-019. Localidad: Parácuaro. Superficie: 2 ha (2 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,091 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.745677,20.153366,0 -100.746715,20.153366,0 -100.747046,20.154195,0 -100.747377,20.155023,0 -100.746339,20.155023,0 -100.746008,20.154195,0 -100.745677,20.153366,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>G-020</name>
+      <description>Zona G-020. Localidad: Irámuco. Superficie: 2 ha (2 celdas de 100 m). Construcción ganada 2010–2020 según el GHSL: 5,039 m². Dentro del polígono de la localidad: no.</description>
+      <styleUrl>#ghsl</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-100.934201,19.970302,0 -100.935238,19.970302,0 -100.935566,19.971130,0 -100.935894,19.971958,0 -100.934858,19.971958,0 -100.934529,19.971130,0 -100.934201,19.970302,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

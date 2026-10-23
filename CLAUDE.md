@@ -1,7 +1,7 @@
 # CLAUDE.md — contexto y reglas del proyecto
 
 ## Proyecto
-**"¿Quién está lejos hoy? Acceso a servicios básicos y expansión urbana en el municipio de Acámbaro, Guanajuato (clave 11002), 2010–2026."**
+**"¿Quién está lejos hoy? Acceso a servicios y vaciamiento urbano en Acámbaro"** (título de trabajo, D51; puede cambiar al redactar). Municipio de Acámbaro, Guanajuato (clave 11002), 2010–2026.
 
 Roles: Alejandro define preguntas, umbrales, interpretaciones y conclusiones. Claude hace el trabajo técnico, propone opciones con pros y contras y pide decisión cuando algo es de criterio y no técnico. Alejandro no programa: los resultados se le explican en lenguaje llano, con cifras y mapas, no con código.
 
@@ -46,6 +46,7 @@ python src/18_verificar_campo.py  # docs/verificar_campo.csv
 python src/19_crecimiento.py    # fase 4b: cuadras_antiguedad, crecimiento_*.csv, tipologia_ageb.csv
 python src/20_ghsl_serie.py     # ghsl_serie.csv, ghsl_sectores.csv
 python src/21_mapas_fase4b.py   # docs/figuras/fase4b_*.png
+python src/22_ghsl_sin_cuadras.py  # fase 4c: construcción GHSL fuera de cuadras -> ghsl_*.csv/gpkg, docs/zonas_ghsl_sin_cuadras.kml, docs/verificar_zonas_ghsl.csv
 ```
 `15` necesita `data/raw/verificacion/verificacion_servicios.csv` (`01_descargar.py --solo verificacion`). No hay `16` (reservado para la red rural si algún día se baja).
 `01_descargar.py --solo <fuentes>` baja solo esas fuentes (p. ej. `clues sep_escuelas asentamientos`); la red de OpenStreetMap solo se intenta con `--solo osm_caminos`.
@@ -67,10 +68,13 @@ python src/21_mapas_fase4b.py   # docs/figuras/fase4b_*.png
 - La CLUES trae espacios al final en algunos campos (p. ej. "SERVICIOS DE SALUD IMSS BIENESTAR "): limpiar antes de comparar. El catálogo SEP trae datos personales del director (CONTACTO_*): se quitan al recortar.
 - Fase 4b: las deshabitadas y de uso temporal de 2010 están ocultas en 9 de cada 10 manzanas; la década se compara con totales por localidad y por "unidades comparables" de AGEB (D44). En 2020 se usa viviendas − habitadas (pocos ocultos). Los ITER 1990–2005 no tienen URL directa (V43): no reintentar.
 - La clave de una cuadra nueva posterior a 2020 puede repetir la de una cuadra 2020 renumerada: no unir tablas por CVEGEO entre ediciones; usar posición o la pareja (CVEGEO, origen).
+- Decisiones de fase 4c (Alejandro): tipología final con desatendida = 3 de 5 (2 de 5 como sensibilidad) y vaciándose dentro de su localidad (D47); centro = punto ITER 2020 (D48); cuadras nuevas en textos públicos con conteos, no porcentajes, y se mantiene el preescolar (D49); ITER 1990–2005 no se buscan (D50); título de trabajo (D51). Zona GHSL sin cuadras = ≥ 500 m² ganados 2010–2020 y < 25 % de la celda en cuadras del MG EIC 2025 (D52, provisional).
+- `19_crecimiento.py` reescribe `validacion_fase4b.json` sin las claves de `20` y `22`: correr `20` y `22` después de `19`.
 
 ## Estado
 - Fase 0 y 1 (inventario y base geográfica): terminadas y revisadas por Alejandro el 2026-10-22 (decisiones D09–D12).
 - Fase 2 (catálogo de servicios): terminada el 2026-10-22; preguntas de criterio respondidas por Alejandro el 2026-10-23 (D20–D24). Alejandro está revisando `docs/verificar_servicios_muestra.csv` (no regenerarla).
 - Fase 3 (accesibilidad): terminada el 2026-10-23. Resumen en `docs/resumen_fase3.md`; sus pendientes se cerraron en la fase 4.
 - Fase 4 (decisiones finales y números definitivos): terminada el 2026-10-23. Resumen en `docs/resumen_fase4.md`. Pendiente de Alejandro: cotejar el texto original del SNEU (no se pudo abrir), salidas de campo con `docs/verificar_campo.csv`, revisar zonas con `docs/zonas_nuevas.kml` y subir `verificacion_zonas.csv`, red de caminos (RNC al release). Siguiente: sitio web y reporte PDF.
-- Fase 4b (crecimiento urbano y acceso): terminada el 2026-10-23, **provisional** hasta que llegue `verificacion_zonas.csv`. Resumen en `docs/resumen_fase4b.md`. Pendiente de Alejandro: criterios de la tipología (D46), centro de localidad (D43), cómo comunicar grupos nuevos tan pequeños (356 personas); opcional subir ITER 1990–2005.
+- Fase 4b (crecimiento urbano y acceso): terminada el 2026-10-23, **provisional** hasta que llegue `verificacion_zonas.csv`. Resumen en `docs/resumen_fase4b.md`.
+- Fase 4c (decisiones de la 4b y crecimiento no registrado): terminada el 2026-10-23. Decisiones D47–D51 registradas; tipología final sin cambios en cifras. El GHSL ve 41.6 de 66.6 ha nuevas de la ciudad fuera de cuadras (sección 6 del resumen de la 4b, **provisional**). Pendiente de Alejandro: revisar `docs/zonas_ghsl_sin_cuadras.kml` / `docs/verificar_zonas_ghsl.csv` y aprobar el criterio D52. Siguiente: sitio web y reporte PDF.

@@ -1,14 +1,16 @@
 # Fase 4b — Crecimiento urbano y acceso: resumen para Alejandro
 
-Fecha: 2026-10-23. Detalle técnico en `docs/validacion.md` (V39–V44) y `docs/decisiones.md` (D42–D46).
+Fecha: 2026-10-23; actualizado en la fase 4c (tipología final y crecimiento no registrado). Detalle técnico en `docs/validacion.md` (V39–V47) y `docs/decisiones.md` (D42–D52).
 
 > **Resultados provisionales.** `verificacion_zonas.csv` todavía no está en el release, así que las cuadras nuevas no se han revisado en imágenes. Cuando lo subas, `src/19_crecimiento.py` repite la comparación sin las zonas que marques "no".
+>
+> **Cómo se cuentan las cuadras nuevas en textos públicos (D49)**: con personas, cuadras y hectáreas, no con porcentajes, porque es un grupo pequeño. Los porcentajes de este documento son de trabajo. El hallazgo del preescolar se mantiene porque aparece con los tres umbrales.
 >
 > **Todo es descriptivo, no causal.** Que las cuadras nuevas estén más lejos de un servicio no dice por qué. Puede ser por dónde se construyó, por dónde se pusieron las escuelas o por otra razón.
 
 ## La respuesta corta
 
-1. **La ciudad casi no creció en cuadras nuevas.** Entre 2010 y 2020 aparecieron 53 cuadras nuevas en las 4 localidades urbanas: 29 ha, con 356 habitantes en 2020 (el 0.5 % de su población). Después de 2020 aparecieron 6 más (4.5 ha, sin población censada). La gran mayoría de la gente vive en cuadras que ya existían en 2010.
+1. **La ciudad casi no creció en cuadras nuevas, pero sí construyó fuera de ellas.** Entre 2010 y 2020 aparecieron 53 cuadras nuevas en las 4 localidades urbanas: 29 ha, con 356 habitantes en 2020 (el 0.5 % de su población). Después de 2020 aparecieron 6 más (4.5 ha, sin población censada). La gran mayoría de la gente vive en cuadras que ya existían en 2010. En cambio, el GHSL ve unas 42 ha de construcción nueva en la ciudad **fuera** de las cuadras del INEGI (sección 6, provisional).
 2. **Las cuadras nuevas 2010–2020 sí quedaron peor servidas, sobre todo por estar en la orilla.** Comparadas con cuadras viejas *a la misma distancia del centro*, la diferencia se reduce mucho. La excepción clara es el **preescolar**: en las cuadras nuevas, el 48 % de la gente está lejos de uno; en las cuadras viejas a la misma distancia del centro, el 13 %.
 3. **La ciudad de Acámbaro sí se vació por dentro mientras crecía en suelo.** Entre 2010 y 2020 perdió 1 375 habitantes (de 57 972 a 56 597), pero ganó 2 508 viviendas (de 18 813 a 21 321). Las viviendas deshabitadas pasaron de 3 178 (17 %) a 4 606 (22 %). La pérdida de población se concentró en el primer kilómetro alrededor del centro (−2 093 personas, −12 %). Al mismo tiempo, la superficie construida (GHSL) creció 17 %.
 4. **El vaciamiento no está solo en el centro.** El % de viviendas deshabitadas subió en todos los anillos de la ciudad, no solo en el centro. En 2020 el % de viviendas no habitadas es casi igual en el centro (26 %) que a 1–3 km (24–26 %), y un poco mayor en la orilla, a más de 3 km (31 %).
@@ -30,7 +32,7 @@ Las cuadras nuevas son pocas y chicas, y casi no tienen gente: en la ciudad son 
 
 Las nuevas están más lejos del centro: en la ciudad, la mediana es de 3.2 km, contra 1.9 km de las consolidadas. Mapa: `docs/figuras/fase4b_antiguedad.png`.
 
-**Ojo: el GHSL ve más crecimiento que el Marco Geoestadístico.** Entre 2010 y 2020 la superficie construida de la ciudad creció 67 ha, pero las cuadras nuevas suman solo 18 ha. La mayor parte de lo que se construyó cayó dentro de cuadras que ya existían, sobre todo las cuadras grandes de la orilla. El MG no marca eso como crecimiento.
+**Ojo: el GHSL ve más crecimiento que el Marco Geoestadístico.** Entre 2010 y 2020 la superficie construida de la ciudad creció 67 ha, pero las cuadras nuevas suman solo 18 ha. Con el cruce celda por celda de la fase 4c (sección 6), de esas 67 ha, 25 caen dentro de cuadras (22 en cuadras que ya existían en 2010 y menos de 1 ha en las cuadras nuevas) y **42 ha fuera de toda cuadra**.
 
 ## 2. ¿Quedaron peor servidas las zonas nuevas?
 
@@ -141,29 +143,61 @@ El municipio construyó 23 % más superficie en la década con la misma poblaci�
 
 **Limitación**: los ITER de 1990, 1995, 2000 y 2005 no tienen enlace directo de descarga (2 intentos). Por eso la superficie por habitante solo se calcula para 2010 y 2020. Si los subes al release, se completa la serie desde 1990.
 
-## 5. Tipología de AGEB (propuesta: **tú apruebas los criterios**)
+## 5. Tipología de AGEB (criterios finales, D47)
 
-| Clase | Criterio propuesto | AGEB | Habitantes 2020 |
-|---|---|---:|---:|
-| Nueva y desatendida | ≥ 30 % de su superficie es cuadra nueva **y** en ≥ 3 de 5 servicios básicos (preescolar, primaria, secundaria, salud pública, mercado) más de la mitad de su gente (o de su superficie, si no tiene gente) está lejos | 15 | 146 |
-| Nueva y bien servida | ≥ 30 % nueva y lejos en menos de 3 | 11 | 225 |
-| Consolidada y vaciándose | < 30 % nueva, % de viviendas no habitadas en el cuarto más alto de su localidad (≥ 30 viviendas) **y** perdió población entre 2010 y 2020 | 4 | 1 227 |
-| Consolidada desatendida | < 30 % nueva y lejos en ≥ 3 de 5 | 43 | 7 408 |
-| Consolidada estable | lo demás | 53 | 60 143 |
+Criterios aprobados por Alejandro: **nueva** = ≥ 30 % de su superficie es cuadra nueva; **desatendida** = en ≥ 3 de 5 servicios básicos (preescolar, primaria, secundaria, salud pública, mercado o supermercado) más de la mitad de su gente (o de su superficie, si no tiene gente) está lejos con el umbral principal; **vaciándose** = % de viviendas no habitadas en el cuarto más alto **de su propia localidad** (AGEB con ≥ 30 viviendas) y pérdida de población entre 2010 y 2020. Recalculada: los números no cambian respecto a la propuesta.
 
-Mapa: `docs/figuras/fase4b_tipologia.png`. Tabla: `data/processed/tipologia_ageb.csv`, con cada indicador para que veas por qué cayó cada AGEB en su clase.
+| Clase | AGEB | Habitantes 2020 | Con 2 de 5 (sensibilidad) |
+|---|---:|---:|---:|
+| Nueva y desatendida | 15 | 146 | 20 |
+| Nueva y bien servida | 11 | 225 | 6 |
+| Consolidada y vaciándose | 4 | 1 227 | 4 |
+| Consolidada desatendida | 43 | 7 408 | 68 |
+| Consolidada estable | 53 | 60 143 | 28 |
+
+Por localidad: la ciudad tiene 39 AGEB estables (51 372 hab.), 24 desatendidas (3 434), las 4 que se vacían (1 227) y 18 nuevas (356 hab.; 10 de ellas desatendidas). Irámuco: 11 consolidadas desatendidas (3 777 hab.). Parácuaro: 8 desatendidas (197 hab.) y 7 nuevas casi sin gente. Chupícuaro: 3 estables.
+
+Mapa: `docs/figuras/fase4b_tipologia.png`. Tabla: `data/processed/tipologia_ageb.csv`.
 
 Qué tan firme es (`tipologia_sensibilidad.csv`):
-- El umbral de "nueva" (25 % o 40 % en vez de 30 %) mueve 0–2 AGEB. **Firme.** Las AGEB nuevas son muy chicas: el INEGI suele crear una AGEB nueva para cada fraccionamiento.
-- El número de servicios lejos es **el criterio que más pesa**: con 2 de 5 cambian 30 AGEB (68 quedarían "consolidada desatendida"); con 4 de 5 cambian 26. El mercado, la primaria y la secundaria están lejos para la mitad o más de la gente en muchas AGEB, así que con 2 de 5 casi toda la orilla queda desatendida.
-- "Vaciándose" depende poco del percentil (2–5 AGEB). Las 4 que salen están **en la orilla oriente de la ciudad** (2.3–3.4 km del centro), no en el centro. Tres de esas cuatro también cumplen el criterio de "desatendida" (columna `tambien_desatendida`). El centro perdió población, pero su % de no habitadas (26 %) no llega al cuarto más alto de la ciudad (≥ 32 %).
+- El umbral de "nueva" (25 % o 40 %) mueve 0–2 AGEB. **Firme.**
+- **Con 2 de 5 servicios** cambian 30 AGEB: casi toda la orilla queda "desatendida" (68 consolidadas), porque el mercado, la primaria y la secundaria están lejos para la mitad de la gente en muchas AGEB. Con 4 de 5 cambian 26. Por eso el número de servicios es el criterio que más pesa, y el texto lo dirá.
+- Las 4 AGEB que se vacían están en la **orilla oriente de la ciudad** (2.3–3.4 km del centro), no en el centro; 3 de ellas también son desatendidas. El centro perdió población, pero su % de no habitadas (26 %) no llega al cuarto más alto de la ciudad (≥ 32 %).
+
+## 6. Crecimiento que el INEGI no dibuja (provisional hasta tu revisión)
+
+El GHSL ve 67 ha nuevas construidas en la ciudad entre 2010 y 2020; las cuadras nuevas del Marco Geoestadístico suman 18 ha. Se cruzó cada celda de 100 m del GHSL con las cuadras del MG más reciente (EIC 2025):
+
+| Localidad (+1 km) | Construcción nueva 2010–2020 | Dentro de cuadras | Fuera de cuadras | Zonas sin cuadras* |
+|---|---:|---:|---:|---:|
+| Ciudad de Acámbaro | 66.6 ha | 25.0 ha | **41.6 ha** | 52 zonas · 25.9 ha |
+| Irámuco | 4.0 | 2.0 | 2.0 | 5 · 0.9 |
+| Parácuaro | 10.0 | 4.6 | 5.5 | 10 · 2.8 |
+| Chupícuaro | 9.5 | 4.0 | 5.5 | 11 · 2.6 |
+
+\* Zona = celdas contiguas que ganaron ≥ 500 m² construidos y tienen menos de 25 % de su superficie en cuadras (D52). Con criterios más laxos o más estrictos, la ciudad queda entre 21 y 30 ha: el orden de magnitud es firme.
+
+Lo que se encontró:
+- **Casi nada de la construcción nueva cayó en las cuadras nuevas del MG** (0.6 ha de 18). Esas cuadras estaban trazadas pero casi vacías en 2020, lo que coincide con sus 82 viviendas.
+- **La mayor parte de lo construido quedó fuera de la traza del INEGI**, en la orilla (mediana a 3.2 km del centro). La zona más grande (G-001, 29 ha de celdas, 3.9 ha construidas) está al sur de la ciudad, a 2.9 km del centro.
+- **Parte de eso el INEGI sí lo registra, pero como localidad rural**: 18 de las 78 zonas contienen un punto de localidad rural o caserío (por ejemplo Las Malayas, Hacienda Real de Acámbaro). En la ciudad son 9.4 de las 25.9 ha. Ahí la gente se cuenta en el censo, pero no dentro de la ciudad ni con cuadras.
+- Una zona se llama "Puente de Fierro [Invernadero]": probablemente es un invernadero que el GHSL leyó como construcción.
+
+**Limitaciones**: el GHSL es un modelo con celdas de 100 m, no un dibujo de casas: una zona de una sola celda (33 de las 78) puede ser una nave, una bodega o un bordo. Su capa 2020 combina imágenes de varios años y puede confundir invernaderos, techos agrícolas o suelo desnudo con construcción. **Puede haber falsos positivos**, por eso hace falta tu revisión. Además, no se sabe cuánta gente vive ahí: el censo no la reporta por cuadra fuera de las cuadras, y **no se inventa población**.
+
+Para revisar: `docs/zonas_ghsl_sin_cuadras.kml` (las 20 zonas más grandes, en Google Earth) y `docs/verificar_zonas_ghsl.csv` (las 78, con enlace a Google Maps satelital; llena `existe_en_imagen` con si / no / no se ve, `que_se_ve` y `notas`).
 
 ## Qué revisar
 1. Los cuatro mapas `docs/figuras/fase4b_*.png`.
 2. `docs/zonas_nuevas.kml` en Google Earth y subir `verificacion_zonas.csv`: con eso estos resultados dejan de ser provisionales.
+3. `docs/zonas_ghsl_sin_cuadras.kml` y `docs/verificar_zonas_ghsl.csv` (sección 6): con eso la sección 6 deja de ser provisional.
 
-## Decisiones que necesito
-1. **Criterios de la tipología (D46)**: ¿los aceptas? Sobre todo, ¿"desatendida" con ≥ 3 de 5 servicios (propuesta) o con ≥ 2? ¿"Vaciándose" con percentil dentro de cada localidad (propuesta) o de las 4 juntas? ¿Pedir también que haya perdido población?
-2. **Centro de cada localidad (D43)**: se usó el punto del ITER 2020, que el INEGI pone en la plaza principal. ¿Te parece bien, o prefieres otro punto (por ejemplo, la presidencia municipal)?
-3. **Cómo contar las cuadras nuevas en el texto público**: son muy pocas (356 personas). Propongo decir "el crecimiento de 2010–2020 fue chico y en la orilla; ahí el problema es el preescolar". ¿O prefieres no destacar porcentajes de grupos tan pequeños?
-4. **ITER 1990–2005** (opcional): si los subes al release, se calcula la superficie por habitante desde 1990.
+## Decisiones tomadas (fase 4c, Alejandro)
+1. Tipología: "desatendida" con 3 de 5; 2 de 5 como sensibilidad; "vaciándose" dentro de su localidad (D47).
+2. Centro de cada localidad: el punto del ITER 2020 (D48).
+3. Cuadras nuevas en textos públicos: conteos, no porcentajes; se mantiene el preescolar (D49).
+4. ITER 1990–2005: no se buscan; queda como limitación (D50).
+5. Título de trabajo: "¿Quién está lejos hoy? Acceso a servicios y vaciamiento urbano en Acámbaro" (D51).
+
+## Decisión que necesito
+- **Criterio de "zona sin cuadras" (D52)**: ≥ 500 m² ganados y < 25 % de la celda en cuadras. ¿Te parece bien, o lo ajustamos después de revisar las zonas?
