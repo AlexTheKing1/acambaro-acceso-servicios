@@ -37,10 +37,28 @@ Páginas donde se localizaron (por si cambian las URLs):
 ## Uso en la fase 2 (catálogo de servicios)
 Escuelas, salud de primer nivel y mercados: capas de servicios del MG EIC 2025 (Gto. y Mich.) unidas con el DENUE 05/2026. Abarrotes, minisúper y supermercados: solo DENUE. Detalle en `docs/decisiones.md` (D14–D17).
 
-## Pendientes (las sube Alejandro al release `datos-crudos`; ver `data/raw/LEEME.md`)
+## Fase 3 (descargadas el 2026-10-23)
 
-| Dato | Página | Por qué no se bajó |
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| CLUES, establecimientos de salud (nacional; hoja `CLUES_202608`) | Corte **agosto 2026** (DGIS, Secretaría de Salud). Subido por Alejandro al release | `https://github.com/AlexTheKing1/acambaro-acceso-servicios/releases/download/datos-crudos/ESTABLECIMIENTO_SALUD_202608.xlsx` | Confirmar unidades de salud, institución, estatus de operación, público/privado |
+| Catálogo de centros de trabajo de la SEP, **Guanajuato** | Archivo `cct11.csv` (latin-1), 22 017 registros; fecha de corte no indicada en el archivo (**pendiente: que Alejandro anote de qué fecha o ciclo es**) | `.../releases/download/datos-crudos/cct11.csv` | Confirmar escuelas, nivel, sostenimiento, estatus y turnos |
+| Catálogo de centros de trabajo de la SEP, **Michoacán** | Archivo `cct16.csv` (latin-1), 26 898 registros; misma observación | `.../releases/download/datos-crudos/cct16.csv` | Escuelas de Michoacán en la franja de 10 km |
+| Catálogo de asentamientos humanos de Acámbaro (Catálogo Único de Claves Geoestadísticas, INEGI) | Servicio web v2; 147 asentamientos; campo `periodo` = **11/2021**; fuente declarada: Censo 2020. **Sin polígonos** | `https://gaia.inegi.org.mx/wscatgeo/v2/asentamientos/11/002` (JSON) | Nombres de colonia (D24) |
+
+- Del catálogo SEP se quitan, al recortar, las columnas de contacto (nombre, CURP, RFC, teléfono y correo del director); de la CLUES, teléfonos y RFC. No se usan y no se versionan.
+- Ninguna de estas fuentes trae matrícula o número de alumnos (D23).
+
+### Intentadas sin éxito (fase 3)
+| Dato | Qué se intentó | Resultado |
 |---|---|---|
-| CLUES vigente | http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html | dgis.salud.gob.mx no responde desde el entorno (error 502 en el proxy); datos.gob.mx responde 403 |
-| Catálogo de escuelas SEP vigente | datos.gob.mx (`catalogo_centros_trabajo_sep`) o https://www.siged.sep.gob.mx/SIGED/escuelas.html | datos.gob.mx 403; la API de SIGED (`api.siged.sep.gob.mx`) presenta un certificado TLS incompleto y no se desactivó la verificación |
-| CONAPO, índice de marginación urbana 2020 por AGEB y por colonia | https://www.gob.mx/conapo/documentos/indices-de-marginacion-2020-284372 | Los enlaces (`conapo.segob.gob.mx/work/models/CONAPO/Datos_Abiertos/Marginacion/IMU_2020.zip`, `.../Colonia/IMC_2020.zip`, `.../Colonia/imc2020_shp.zip`) redirigen a una página 404 de gob.mx; conapo.gob.mx no responde |
+| Red Nacional de Caminos (RNC) 2024, INEGI | Ficha `https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=794551132173` y página `https://www.inegi.org.mx/programas/rnc/` (2 intentos) | Páginas dinámicas: no muestran el enlace de descarga sin navegador |
+| OpenStreetMap vía Overpass | `https://overpass-api.de/api/interpreter`, recuadro municipio + 15 km (consulta en `src/01_descargar.py`) | Conexión cortada por el proxy del entorno ("tunnel closed"), 2 intentos; por un error de Claude se hicieron 2 intentos más al volver a correr la descarga (4 en total) |
+| OpenStreetMap, extracto de México de Geofabrik | `https://download.geofabrik.de/north-america/mexico-latest.osm.pbf` | Conexión cortada por el proxy, 2 intentos (una consulta de encabezados y una descarga) |
+| CONAPO, índices de marginación urbana 2020 | (fase 0) | No disponible; sustituido según D24 |
+
+## Antes pendientes
+
+- CLUES y catálogo SEP: no se podían bajar desde el entorno (dgis.salud.gob.mx no responde; datos.gob.mx 403; certificado incompleto en la API de SIGED). Alejandro los subió al release `datos-crudos` el 2026-10-23 (tabla de arriba).
+- CONAPO, índice de marginación urbana 2020 por AGEB y por colonia (https://www.gob.mx/conapo/documentos/indices-de-marginacion-2020-284372): los enlaces `conapo.segob.gob.mx/work/models/CONAPO/Datos_Abiertos/...` redirigen a una página 404 y conapo.gob.mx no responde. **No disponible**: sustituido según D24 y declarado como limitación.
+- Pendiente opcional: `verificacion_zonas.csv` y `verificacion_servicios.csv` (revisión de Alejandro en Google Maps) en el release; `01_descargar.py` los baja cuando existan.

@@ -11,6 +11,12 @@ data/processed/ solo la parte de Acámbaro:
   denue_acambaro_buffer10km.csv              DENUE (Gto., Mich., Qro.) en el municipio + 10 km
   mg_eic2025_servicios_buffer10km.gpkg       servicios del MG EIC 2025 (Gto. y Mich.) en el municipio + 10 km
   ghsl/ghsl_built_s_{año}_acambaro.tif       GHS-BUILT-S 1975–2020 (observado)
+  sep_escuelas_buffer10km.csv                catálogo SEP (Gto. y Mich.) en el municipio + 10 km
+  clues_buffer10km.csv                       CLUES (Gto. y Mich.) en el municipio + 10 km
+
+Del catálogo SEP y de la CLUES se quitan los datos de contacto de personas
+(nombre, CURP, RFC, teléfono y correo del director o responsable): no se usan
+y no deben quedar en el repositorio.
 
 Las tablas censales se guardan tal cual (texto), incluidos los asteriscos de
 confidencialidad; la conversión a números ocurre en 03_base_geografica.py.
@@ -185,7 +191,44 @@ def recortar_ghsl(municipio):
     print("  GHSL recortado")
 
 
-PASOS = ["mg", "mg2010", "tablas", "denue", "servicios_mg", "ghsl"]
+def puntos_en_franja(t, lat, lon, municipio, etiqueta, cve_ent, cve_mun):
+    """Filas con coordenadas dentro del municipio + 10 km. Reporta las de Acámbaro
+    que no tienen coordenadas o que las tienen fuera de la franja."""
+    la, lo = pd.to_numeric(t[lat], errors="coerce"), pd.to_numeric(t[lon], errors="coerce")
+    sin = la.isna() | lo.isna() | (la == 0) | (lo == 0)
+    decl = (t[cve_ent] == CVE_ENT) & (t[cve_mun] == CVE_MUN)
+    pts = gpd.GeoDataFrame(t[~sin], geometry=gpd.points_from_xy(lo[~sin], la[~sin]),
+                           crs="EPSG:4326").to_crs(municipio.crs)
+    zona = municipio.buffer(BUFFER_DENUE_M).union_all()
+    dentro = pts[pts.within(zona)].copy()
+    dentro["en_acambaro"] = dentro.within(municipio.union_all())
+    fuera = decl & ~sin & ~t.index.isin(dentro.index)
+    print(f"  {etiqueta}: {len(dentro)} en la franja ({int(dentro.en_acambaro.sum())} dentro del municipio); "
+          f"declarados en Acámbaro: {int(decl.sum())}, sin coordenadas: {int((decl & sin).sum())}, "
+          f"con coordenadas fuera de la franja: {int(fuera.sum())}")
+    return dentro.drop(columns="geometry")
+
+
+def recortar_sep(municipio):
+    t = pd.concat([pd.read_csv(RAW / "sep_escuelas" / f"cct{e}.csv", dtype=str, encoding="latin-1")
+                   for e in ("11", "16")], ignore_index=True)
+    t = t.drop(columns=[c for c in t.columns if c.startswith("CONTACTO_") or c.startswith("Unnamed")])
+    dentro = puntos_en_franja(t, "INMUEBLE_LATITUD", "INMUEBLE_LONGITUD", municipio, "SEP",
+                                 "INMUEBLE_CV_ENT", "INMUEBLE_CV_MUN")
+    dentro.to_csv(OUT / "sep_escuelas_buffer10km.csv", index=False)
+
+
+def recortar_clues(municipio):
+    t = pd.read_excel(RAW / "clues" / "ESTABLECIMIENTO_SALUD_202608.xlsx", sheet_name="CLUES_202608", dtype=str)
+    t = t[t["CLAVE DE LA ENTIDAD"].isin([CVE_ENT, "16", "22"])]
+    t = t.drop(columns=[c for c in t.columns if c.startswith("TELEFONO") or c.startswith("EXTENSION")
+                        or c.startswith("RFC")])
+    dentro = puntos_en_franja(t, "LATITUD", "LONGITUD", municipio, "CLUES",
+                                 "CLAVE DE LA ENTIDAD", "CLAVE DEL MUNICIPIO")
+    dentro.to_csv(OUT / "clues_buffer10km.csv", index=False)
+
+
+PASOS = ["mg", "mg2010", "tablas", "denue", "servicios_mg", "ghsl", "sep", "clues"]
 
 
 def main():
@@ -208,6 +251,10 @@ def main():
         recortar_servicios_mg(municipio)
     if "ghsl" in pasos:
         recortar_ghsl(municipio)
+    if "sep" in pasos:
+        recortar_sep(municipio)
+    if "clues" in pasos:
+        recortar_clues(municipio)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,59 @@
+localidad,categoria,umbral_propuesto_m,pob_lejos_todas,pob_lejos_solo_confirmadas,diferencia,sedes_quitadas_en_toda_la_zona
+Acámbaro,preescolar,750,12518,12518,0,65
+Irámuco,preescolar,750,2929,2929,0,65
+Parácuaro,preescolar,750,1681,1681,0,65
+Chupícuaro (Nuevo Chupícuaro),preescolar,750,1380,1380,0,65
+Localidades rurales (208),preescolar,2000,1158,1304,146,65
+Acámbaro,primaria,500,31392,32773,1381,66
+Irámuco,primaria,500,5531,5531,0,66
+Parácuaro,primaria,500,3012,3012,0,66
+Chupícuaro (Nuevo Chupícuaro),primaria,500,1649,1924,275,66
+Localidades rurales (208),primaria,2000,695,905,210,66
+Acámbaro,secundaria,1000,24237,24237,0,27
+Irámuco,secundaria,1000,4921,4921,0,27
+Parácuaro,secundaria,1000,4159,4159,0,27
+Chupícuaro (Nuevo Chupícuaro),secundaria,1000,671,671,0,27
+Localidades rurales (208),secundaria,5000,1040,1274,234,27
+Acámbaro,bachillerato,2500,3139,3139,0,6
+Irámuco,bachillerato,2500,3589,3589,0,6
+Parácuaro,bachillerato,2500,0,0,0,6
+Chupícuaro (Nuevo Chupícuaro),bachillerato,2500,0,0,0,6
+Localidades rurales (208),bachillerato,10000,1107,1107,0,6
+Acámbaro,preescolar_publica,750,14424,14424,0,0
+Irámuco,preescolar_publica,750,2929,2929,0,0
+Parácuaro,preescolar_publica,750,2221,2221,0,0
+Chupícuaro (Nuevo Chupícuaro),preescolar_publica,750,1380,1380,0,0
+Localidades rurales (208),preescolar_publica,2000,1304,1304,0,0
+Acámbaro,primaria_publica,500,34821,34821,0,0
+Irámuco,primaria_publica,500,5531,5531,0,0
+Parácuaro,primaria_publica,500,3012,3012,0,0
+Chupícuaro (Nuevo Chupícuaro),primaria_publica,500,1924,1924,0,0
+Localidades rurales (208),primaria_publica,2000,910,910,0,0
+Acámbaro,secundaria_publica,1000,31999,31999,0,0
+Irámuco,secundaria_publica,1000,4921,4921,0,0
+Parácuaro,secundaria_publica,1000,4159,4159,0,0
+Chupícuaro (Nuevo Chupícuaro),secundaria_publica,1000,671,671,0,0
+Localidades rurales (208),secundaria_publica,5000,1274,1274,0,0
+Acámbaro,bachillerato_publico,2500,20281,20281,0,0
+Irámuco,bachillerato_publico,2500,3589,3589,0,0
+Parácuaro,bachillerato_publico,2500,0,0,0,0
+Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,2500,0,0,0,0
+Localidades rurales (208),bachillerato_publico,10000,1107,1107,0,0
+Acámbaro,salud_publica,1000,25479,25479,0,0
+Irámuco,salud_publica,1000,5112,5112,0,0
+Parácuaro,salud_publica,1000,1281,1281,0,0
+Chupícuaro (Nuevo Chupícuaro),salud_publica,1000,415,415,0,0
+Localidades rurales (208),salud_publica,5000,6635,6635,0,0
+Acámbaro,tienda_basica,500,556,556,0,1
+Irámuco,tienda_basica,500,139,139,0,1
+Parácuaro,tienda_basica,500,167,167,0,1
+Chupícuaro (Nuevo Chupícuaro),tienda_basica,500,35,35,0,1
+Acámbaro,abasto_completo,1200,15125,15125,0,1
+Irámuco,abasto_completo,1200,6275,6275,0,1
+Parácuaro,abasto_completo,1200,246,246,0,1
+Chupícuaro (Nuevo Chupícuaro),abasto_completo,1200,210,210,0,1
+Localidades rurales (208),abasto_completo,10000,15733,15733,0,1
+Acámbaro,consultorio_privado,1000,16212,16212,0,0
+Irámuco,consultorio_privado,1000,510,510,0,0
+Parácuaro,consultorio_privado,1000,188,188,0,0
+Chupícuaro (Nuevo Chupícuaro),consultorio_privado,1000,234,234,0,0
