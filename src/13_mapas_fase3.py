@@ -1,9 +1,12 @@
-"""13 · Mapas de accesibilidad por categoría (docs/figuras/fase3_<categoria>.png).
+"""13 · Mapas de accesibilidad por categoría (docs/figuras/fase4_<categoria>.png).
+
+(En la fase 3 este script generó docs/figuras/fase3_*.png con los umbrales
+provisionales; esas figuras se conservan como registro.)
 
 Cada mapa tiene: la ciudad de Acámbaro (grande), Irámuco, Parácuaro y
 Chupícuaro (pequeños) con cada cuadra coloreada según la distancia a pie al
 servicio más cercano, en 4 clases definidas por los 3 umbrales (estricto,
-propuesto, holgado); y el municipio con cada localidad rural como un punto del
+principal = definitivo, holgado; D33); y el municipio con cada localidad rural como un punto del
 mismo color (tamaño = población 2020). Los servicios van en negro.
 
 Paleta: una sola tonalidad de azul, de claro (cerca) a oscuro (lejos); validada
@@ -47,7 +50,7 @@ def clase(d, u):
 
 def etiquetas(u, unidad):
     f = (lambda x: f"{x / 1000:g} km") if unidad == "km" else (lambda x: f"{x:,.0f} m".replace(",", " "))
-    return [f"hasta {f(u[0])} (estricto)", f"{f(u[0])} a {f(u[1])} (propuesto)",
+    return [f"hasta {f(u[0])} (estricto)", f"{f(u[0])} a {f(u[1])} (principal)",
             f"{f(u[1])} a {f(u[2])} (holgado)", f"más de {f(u[2])}"]
 
 
@@ -55,7 +58,7 @@ def main():
     cu = gpd.read_file(P / "acceso_cuadras.gpkg", layer="cuadras")
     loc = pd.read_csv(P / "acceso_localidades.csv", dtype={"LOC": str})
     rur = gpd.GeoDataFrame(loc, geometry=gpd.points_from_xy(loc.lon, loc.lat), crs=4326).to_crs(cu.crs)
-    sedes = gpd.read_file(P / "servicios_fase3.gpkg", layer="sedes").to_crs(cu.crs)
+    sedes = gpd.read_file(P / "servicios_fase4.gpkg", layer="sedes").to_crs(cu.crs)
     mun = gpd.read_file(P / "mg_eic2025_acambaro.gpkg", layer="municipio").to_crs(cu.crs)
     mza25 = gpd.read_file(P / "mg_eic2025_acambaro.gpkg", layer="manzanas").to_crs(cu.crs)
 
@@ -63,7 +66,9 @@ def main():
         uc = acc11.umbral(cat, acc11.UMBRALES_CIUDAD)
         ur = acc11.umbral(cat, acc11.UMBRALES_RURAL)
         s = sedes[acc11.CATEGORIAS[cat](sedes)]
-        aparte = sedes[sedes.tipo.isin(APARTE.get(cat, [])) & ~sedes.estado_cruce.str.startswith("baja")]
+        aparte = sedes[(sedes.tipo.isin(APARTE.get(cat, []))
+                        | ((cat == "salud_publica") & sedes.anexo_salud_sin_clues.fillna(False).astype(bool)))
+                       & ~sedes.estado_cruce.str.startswith(("baja", "descartada"))]
         cu["k"] = clase(cu[f"d_{cat}"].to_numpy(), uc)
 
         fig = plt.figure(figsize=(16, 10.5))
@@ -104,6 +109,8 @@ def main():
             sm.plot(ax=ax, color="#333", markersize=1.5, marker="o", zorder=4)
             titulo = ("Localidades rurales (tamaño = población 2020)\n"
                       "distancia estimada: línea recta × 1.33")
+            if cat in acc11.NOTA_RURAL:
+                titulo += "\n(" + acc11.NOTA_RURAL[cat] + ")"
         else:
             rur.plot(ax=ax, color=SIN_DATO, markersize=8, zorder=3)
             titulo = "Localidades rurales: no se puede medir\n(" + acc11.NO_MEDIBLE_RURAL[cat] + ")"
@@ -117,7 +124,7 @@ def main():
         h.append(Line2D([], [], marker="o", ls="", color="#111", label=acc11.NOMBRES[cat]))
         if len(aparte):
             nom = {"bachillerato_no_escolarizado": "bachillerato no escolarizado (no cuenta)",
-                   "consultorio_privado": "consultorio privado, unidad móvil (no cuentan)"}
+                   "consultorio_privado": "consultorio privado, unidad móvil, casa de salud o\nunidad sin CLUES (anexo; no cuentan)"}
             h.append(Line2D([], [], marker="D", ls="", markerfacecolor="none", color="#111",
                             label=nom.get(APARTE[cat][0], "registrado aparte")))
         fig.legend(handles=h, title="Distancia a pie por calles (cuadras)", loc="lower left",
@@ -128,9 +135,10 @@ def main():
                        bbox_to_anchor=(0.99, 0.02), fontsize=9, title_fontsize=9, frameon=False)
         fig.suptitle(f"{acc11.NOMBRES[cat]}: distancia al servicio más cercano", x=0.03, ha="left",
                      fontsize=14, y=0.97)
-        fig.text(0.03, 0.935, "Umbrales en análisis (Alejandro elige el definitivo). Población: Censo 2020. "
+        fig.text(0.03, 0.935, "Lejos = más allá del umbral principal (radio SNEU × 1.33); estricto y holgado son sensibilidad. "
+                 "Población: Censo 2020. "
                  "Servicios: MG EIC 2025, DENUE 05/2026, SEP, CLUES 08/2026.", fontsize=9, color="#555")
-        fig.savefig(FIG / f"fase3_{cat}.png", dpi=130, bbox_inches="tight")
+        fig.savefig(FIG / f"fase4_{cat}.png", dpi=130, bbox_inches="tight")
         plt.close(fig)
         print("mapa", cat)
 

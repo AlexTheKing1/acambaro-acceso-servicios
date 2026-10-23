@@ -1,0 +1,1330 @@
+{
+ "parametros": {
+  "SNAP_MAX_m": 300,
+  "velocidad_km_h": 4.0,
+  "umbrales_ciudad_m": {
+   "preescolar": [
+    750,
+    1000,
+    1500
+   ],
+   "primaria": [
+    500,
+    670,
+    1000
+   ],
+   "secundaria": [
+    1000,
+    1330,
+    2000
+   ],
+   "bachillerato": [
+    2500,
+    3330,
+    5000
+   ],
+   "salud_publica": [
+    1000,
+    1330,
+    2000
+   ],
+   "tienda_basica": [
+    380,
+    500,
+    750
+   ],
+   "abasto_completo": [
+    750,
+    1000,
+    1500
+   ],
+   "salud_publica_con_anexo": [
+    1000,
+    1330,
+    2000
+   ],
+   "consultorio_privado": [
+    1000,
+    1330,
+    2000
+   ]
+  },
+  "umbrales_rural_m": {
+   "preescolar": [
+    1000,
+    2000,
+    3000
+   ],
+   "primaria": [
+    1000,
+    2000,
+    3000
+   ],
+   "secundaria": [
+    3000,
+    5000,
+    10000
+   ],
+   "bachillerato": [
+    5000,
+    10000,
+    15000
+   ],
+   "salud_publica": [
+    3000,
+    5000,
+    10000
+   ],
+   "tienda_basica": [
+    500,
+    1000,
+    2000
+   ],
+   "abasto_completo": [
+    5000,
+    10000,
+    15000
+   ],
+   "salud_publica_con_anexo": [
+    3000,
+    5000,
+    10000
+   ],
+   "consultorio_privado": [
+    3000,
+    5000,
+    10000
+   ]
+  }
+ },
+ "origenes_ciudad": {
+  "Acámbaro | caserío disperso 2020": 16,
+  "Acámbaro | cuadra 2020": 1208,
+  "Acámbaro | cuadra nueva posterior a 2020": 4,
+  "Chupícuaro (Nuevo Chupícuaro) | caserío disperso 2020": 3,
+  "Chupícuaro (Nuevo Chupícuaro) | cuadra 2020": 131,
+  "Chupícuaro (Nuevo Chupícuaro) | cuadra nueva posterior a 2020": 1,
+  "Irámuco | caserío disperso 2020": 5,
+  "Irámuco | cuadra 2020": 142,
+  "Irámuco | cuadra nueva posterior a 2020": 1,
+  "Parácuaro | caserío disperso 2020": 8,
+  "Parácuaro | cuadra 2020": 139
+ },
+ "factor_rodeo": {
+  "valor_usado": 1.33,
+  "calibrado_con_este_catalogo": 1.349,
+  "mediana_por_categoria": {
+   "abasto_completo": 1.321,
+   "bachillerato": 1.323,
+   "bachillerato_publico": 1.51,
+   "consultorio_privado": 1.272,
+   "preescolar": 1.369,
+   "preescolar_publica": 1.369,
+   "primaria": 1.351,
+   "primaria_publica": 1.342,
+   "salud_publica": 1.359,
+   "secundaria": 1.346,
+   "secundaria_publica": 1.359,
+   "tienda_basica": 1.345
+  },
+  "pares_usados": 14544,
+  "p25": 1.238,
+  "p75": 1.496,
+  "nota": "mediana de distancia por red / línea recta, pares cuadra–servicio más cercano con recta >= 300 m"
+ },
+ "red_menor_que_recta": 0,
+ "iter_rural_oculto": {
+  "Población total": {
+   "total_municipal": 108697.0,
+   "visible_urbanas": 69614.0,
+   "visible_rurales": 39083.0,
+   "oculto_en_rurales": 0.0
+  },
+  "3 a 5 años": {
+   "total_municipal": 5724.0,
+   "visible_urbanas": 3507.0,
+   "visible_rurales": 2204.0,
+   "oculto_en_rurales": 13.0
+  },
+  "6 a 11 años": {
+   "total_municipal": 10519.0,
+   "visible_urbanas": 6490.0,
+   "visible_rurales": 4007.0,
+   "oculto_en_rurales": 22.0
+  },
+  "12 a 14 años": {
+   "total_municipal": 5296.0,
+   "visible_urbanas": 3408.0,
+   "visible_rurales": 1872.0,
+   "oculto_en_rurales": 16.0
+  },
+  "15 a 17 años": {
+   "total_municipal": 5439.0,
+   "visible_urbanas": 3576.0,
+   "visible_rurales": 1846.0,
+   "oculto_en_rurales": 17.0
+  },
+  "60 años y más": {
+   "total_municipal": 18338.0,
+   "visible_urbanas": 11183.0,
+   "visible_rurales": 7099.0,
+   "oculto_en_rurales": 56.0
+  },
+  "Con discapacidad": {
+   "total_municipal": 7385.0,
+   "visible_urbanas": 4355.0,
+   "visible_rurales": 3004.0,
+   "oculto_en_rurales": 26.0
+  }
+ },
+ "componente_por_localidad": {
+  "0001": 0,
+  "0027": 2,
+  "0047": 9,
+  "0017": 7
+ },
+ "filas_con_minimo_visible_mayor_que_estimado": 56,
+ "filas_ciudad": 1092,
+ "acceso_red_m": {
+  "Acámbaro": {
+   "count": 1228.0,
+   "mean": 32.1,
+   "std": 28.9,
+   "min": 0.3,
+   "50%": 26.1,
+   "95%": 69.9,
+   "max": 489.8
+  },
+  "Chupícuaro (Nuevo Chupícuaro)": {
+   "count": 135.0,
+   "mean": 43.5,
+   "std": 66.3,
+   "min": 5.1,
+   "50%": 34.9,
+   "95%": 76.1,
+   "max": 699.2
+  },
+  "Irámuco": {
+   "count": 148.0,
+   "mean": 36.1,
+   "std": 24.6,
+   "min": 7.9,
+   "50%": 29.2,
+   "95%": 73.3,
+   "max": 159.2
+  },
+  "Parácuaro": {
+   "count": 147.0,
+   "mean": 46.6,
+   "std": 50.1,
+   "min": 8.8,
+   "50%": 37.7,
+   "95%": 84.7,
+   "max": 447.0
+  }
+ },
+ "cuadras_acceso_mayor_100m": [
+  {
+   "CVEGEO": "110020001143A001",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 111.6
+  },
+  {
+   "CVEGEO": "1100200010747004",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 101.0
+  },
+  {
+   "CVEGEO": "1100200010520027",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 102.3
+  },
+  {
+   "CVEGEO": "110020001143A003",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 116.9
+  },
+  {
+   "CVEGEO": "1100200270380003",
+   "localidad": "Irámuco",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 150.4
+  },
+  {
+   "CVEGEO": "1100200270380001",
+   "localidad": "Irámuco",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 159.2
+  },
+  {
+   "CVEGEO": "1100200011656001",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 144.8
+  },
+  {
+   "CVEGEO": "110020001143A004",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 155.6
+  },
+  {
+   "CVEGEO": "1100200270395012",
+   "localidad": "Irámuco",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 130.2
+  },
+  {
+   "CVEGEO": "1100200010126030",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 106.8
+  },
+  {
+   "CVEGEO": "1100200010465001",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 144.3
+  },
+  {
+   "CVEGEO": "1100200010520059",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 109.5
+  },
+  {
+   "CVEGEO": "1100200010234103",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 133.8
+  },
+  {
+   "CVEGEO": "1100200010234099",
+   "localidad": "Acámbaro",
+   "origen": "cuadra 2020",
+   "acceso_red_m": 156.4
+  },
+  {
+   "CVEGEO": "1100200011321800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 489.8
+  },
+  {
+   "CVEGEO": "1100200470342800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 373.5
+  },
+  {
+   "CVEGEO": "1100200471247800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 119.3
+  },
+  {
+   "CVEGEO": "1100200471336800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 447.0
+  },
+  {
+   "CVEGEO": "1100200471764800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 171.3
+  },
+  {
+   "CVEGEO": "1100200010465800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 185.3
+  },
+  {
+   "CVEGEO": "1100200010535800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 408.8
+  },
+  {
+   "CVEGEO": "1100200011035800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 258.7
+  },
+  {
+   "CVEGEO": "1100200011054800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 309.5
+  },
+  {
+   "CVEGEO": "1100200011374800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 134.8
+  },
+  {
+   "CVEGEO": "1100200011622800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 211.8
+  },
+  {
+   "CVEGEO": "1100200011726800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 289.0
+  },
+  {
+   "CVEGEO": "1100200271158800",
+   "localidad": "Irámuco",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 108.1
+  },
+  {
+   "CVEGEO": "1100200470357800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 126.9
+  },
+  {
+   "CVEGEO": "1100200470361800",
+   "localidad": "Parácuaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 176.1
+  },
+  {
+   "CVEGEO": "110020001054A800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 103.5
+  },
+  {
+   "CVEGEO": "1100200011567800",
+   "localidad": "Acámbaro",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 159.6
+  },
+  {
+   "CVEGEO": "1100200170022800",
+   "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 699.2
+  },
+  {
+   "CVEGEO": "1100200170056800",
+   "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 179.3
+  },
+  {
+   "CVEGEO": "1100200170164800",
+   "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+   "origen": "caserío disperso 2020",
+   "acceso_red_m": 358.4
+  }
+ ],
+ "via_recta_factor": {
+  "preescolar": {
+   "Acámbaro": 5,
+   "Chupícuaro (Nuevo Chupícuaro)": 1,
+   "Irámuco": 2,
+   "Parácuaro": 0
+  },
+  "primaria": {
+   "Acámbaro": 7,
+   "Chupícuaro (Nuevo Chupícuaro)": 5,
+   "Irámuco": 3,
+   "Parácuaro": 0
+  },
+  "secundaria": {
+   "Acámbaro": 1,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 147
+  },
+  "bachillerato": {
+   "Acámbaro": 117,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  },
+  "preescolar_publica": {
+   "Acámbaro": 5,
+   "Chupícuaro (Nuevo Chupícuaro)": 1,
+   "Irámuco": 2,
+   "Parácuaro": 0
+  },
+  "primaria_publica": {
+   "Acámbaro": 7,
+   "Chupícuaro (Nuevo Chupícuaro)": 5,
+   "Irámuco": 3,
+   "Parácuaro": 0
+  },
+  "secundaria_publica": {
+   "Acámbaro": 1,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 147
+  },
+  "bachillerato_publico": {
+   "Acámbaro": 802,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  },
+  "salud_publica": {
+   "Acámbaro": 14,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  },
+  "tienda_basica": {
+   "Acámbaro": 1,
+   "Chupícuaro (Nuevo Chupícuaro)": 1,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  },
+  "abasto_completo": {
+   "Acámbaro": 0,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 148,
+   "Parácuaro": 0
+  },
+  "salud_publica_con_anexo": {
+   "Acámbaro": 14,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  },
+  "consultorio_privado": {
+   "Acámbaro": 0,
+   "Chupícuaro (Nuevo Chupícuaro)": 0,
+   "Irámuco": 0,
+   "Parácuaro": 0
+  }
+ },
+ "distancias_ciudad_m": {
+  "preescolar": {
+   "Acámbaro": {
+    "50%": 588.0,
+    "90%": 1236.0,
+    "max": 2845.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 905.0,
+    "90%": 1420.0,
+    "max": 1986.0
+   },
+   "Irámuco": {
+    "50%": 643.0,
+    "90%": 1089.0,
+    "max": 1454.0
+   },
+   "Parácuaro": {
+    "50%": 825.0,
+    "90%": 1191.0,
+    "max": 1837.0
+   }
+  },
+  "primaria": {
+   "Acámbaro": {
+    "50%": 619.0,
+    "90%": 1258.0,
+    "max": 2796.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 624.0,
+    "90%": 995.0,
+    "max": 1991.0
+   },
+   "Irámuco": {
+    "50%": 994.0,
+    "90%": 1534.0,
+    "max": 1953.0
+   },
+   "Parácuaro": {
+    "50%": 782.0,
+    "90%": 1068.0,
+    "max": 1587.0
+   }
+  },
+  "secundaria": {
+   "Acámbaro": {
+    "50%": 986.0,
+    "90%": 2131.0,
+    "max": 3436.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 771.0,
+    "90%": 1190.0,
+    "max": 2131.0
+   },
+   "Irámuco": {
+    "50%": 1423.0,
+    "90%": 2657.0,
+    "max": 3653.0
+   },
+   "Parácuaro": {
+    "50%": 5361.0,
+    "90%": 5851.0,
+    "max": 6452.0
+   }
+  },
+  "bachillerato": {
+   "Acámbaro": {
+    "50%": 1157.0,
+    "90%": 2803.0,
+    "max": 3751.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 751.0,
+    "90%": 1218.0,
+    "max": 2159.0
+   },
+   "Irámuco": {
+    "50%": 2716.0,
+    "90%": 3848.0,
+    "max": 4474.0
+   },
+   "Parácuaro": {
+    "50%": 848.0,
+    "90%": 1255.0,
+    "max": 2094.0
+   }
+  },
+  "preescolar_publica": {
+   "Acámbaro": {
+    "50%": 608.0,
+    "90%": 1236.0,
+    "max": 2845.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 905.0,
+    "90%": 1420.0,
+    "max": 1986.0
+   },
+   "Irámuco": {
+    "50%": 643.0,
+    "90%": 1089.0,
+    "max": 1454.0
+   },
+   "Parácuaro": {
+    "50%": 862.0,
+    "90%": 1265.0,
+    "max": 2046.0
+   }
+  },
+  "primaria_publica": {
+   "Acámbaro": {
+    "50%": 678.0,
+    "90%": 1274.0,
+    "max": 2796.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 790.0,
+    "90%": 1208.0,
+    "max": 1991.0
+   },
+   "Irámuco": {
+    "50%": 994.0,
+    "90%": 1534.0,
+    "max": 1953.0
+   },
+   "Parácuaro": {
+    "50%": 782.0,
+    "90%": 1068.0,
+    "max": 1587.0
+   }
+  },
+  "secundaria_publica": {
+   "Acámbaro": {
+    "50%": 1116.0,
+    "90%": 2179.0,
+    "max": 3436.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 771.0,
+    "90%": 1190.0,
+    "max": 2131.0
+   },
+   "Irámuco": {
+    "50%": 1423.0,
+    "90%": 2657.0,
+    "max": 3653.0
+   },
+   "Parácuaro": {
+    "50%": 5361.0,
+    "90%": 5851.0,
+    "max": 6452.0
+   }
+  },
+  "bachillerato_publico": {
+   "Acámbaro": {
+    "50%": 2932.0,
+    "90%": 4240.0,
+    "max": 5429.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 751.0,
+    "90%": 1218.0,
+    "max": 2159.0
+   },
+   "Irámuco": {
+    "50%": 2716.0,
+    "90%": 3848.0,
+    "max": 4474.0
+   },
+   "Parácuaro": {
+    "50%": 848.0,
+    "90%": 1255.0,
+    "max": 2094.0
+   }
+  },
+  "salud_publica": {
+   "Acámbaro": {
+    "50%": 902.0,
+    "90%": 1840.0,
+    "max": 3578.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 759.0,
+    "90%": 1247.0,
+    "max": 2097.0
+   },
+   "Irámuco": {
+    "50%": 1451.0,
+    "90%": 2752.0,
+    "max": 3747.0
+   },
+   "Parácuaro": {
+    "50%": 977.0,
+    "90%": 1454.0,
+    "max": 1869.0
+   }
+  },
+  "tienda_basica": {
+   "Acámbaro": {
+    "50%": 149.0,
+    "90%": 320.0,
+    "max": 1092.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 197.0,
+    "90%": 336.0,
+    "max": 760.0
+   },
+   "Irámuco": {
+    "50%": 142.0,
+    "90%": 446.0,
+    "max": 869.0
+   },
+   "Parácuaro": {
+    "50%": 201.0,
+    "90%": 372.0,
+    "max": 1569.0
+   }
+  },
+  "abasto_completo": {
+   "Acámbaro": {
+    "50%": 1170.0,
+    "90%": 3396.0,
+    "max": 4584.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 789.0,
+    "90%": 1237.0,
+    "max": 2097.0
+   },
+   "Irámuco": {
+    "50%": 15003.0,
+    "90%": 16183.0,
+    "max": 17596.0
+   },
+   "Parácuaro": {
+    "50%": 853.0,
+    "90%": 1268.0,
+    "max": 2070.0
+   }
+  },
+  "salud_publica_con_anexo": {
+   "Acámbaro": {
+    "50%": 862.0,
+    "90%": 1840.0,
+    "max": 3578.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 759.0,
+    "90%": 1247.0,
+    "max": 2097.0
+   },
+   "Irámuco": {
+    "50%": 1451.0,
+    "90%": 2752.0,
+    "max": 3747.0
+   },
+   "Parácuaro": {
+    "50%": 977.0,
+    "90%": 1454.0,
+    "max": 1869.0
+   }
+  },
+  "consultorio_privado": {
+   "Acámbaro": {
+    "50%": 995.0,
+    "90%": 3640.0,
+    "max": 4874.0
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "50%": 572.0,
+    "90%": 1027.0,
+    "max": 1912.0
+   },
+   "Irámuco": {
+    "50%": 606.0,
+    "90%": 1136.0,
+    "max": 1667.0
+   },
+   "Parácuaro": {
+    "50%": 663.0,
+    "90%": 1009.0,
+    "max": 1782.0
+   }
+  }
+ },
+ "distancias_rural_m": {
+  "preescolar": {
+   "50%": 1063.0,
+   "90%": 2567.0,
+   "max": 4749.0
+  },
+  "primaria": {
+   "50%": 968.0,
+   "90%": 2175.0,
+   "max": 4187.0
+  },
+  "secundaria": {
+   "50%": 2100.0,
+   "90%": 4136.0,
+   "max": 6716.0
+  },
+  "bachillerato": {
+   "50%": 3133.0,
+   "90%": 6972.0,
+   "max": 11236.0
+  },
+  "preescolar_publica": {
+   "50%": 1092.0,
+   "90%": 2625.0,
+   "max": 4749.0
+  },
+  "primaria_publica": {
+   "50%": 1070.0,
+   "90%": 2320.0,
+   "max": 4187.0
+  },
+  "secundaria_publica": {
+   "50%": 2105.0,
+   "90%": 4164.0,
+   "max": 6716.0
+  },
+  "bachillerato_publico": {
+   "50%": 3321.0,
+   "90%": 6972.0,
+   "max": 11236.0
+  },
+  "salud_publica": {
+   "50%": 2780.0,
+   "90%": 5280.0,
+   "max": 8291.0
+  },
+  "tienda_basica": {
+   "50%": NaN,
+   "90%": NaN,
+   "max": NaN
+  },
+  "abasto_completo": {
+   "50%": 7072.0,
+   "90%": 14281.0,
+   "max": 20887.0
+  },
+  "salud_publica_con_anexo": {
+   "50%": 2492.0,
+   "90%": 4873.0,
+   "max": 8291.0
+  },
+  "consultorio_privado": {
+   "50%": NaN,
+   "90%": NaN,
+   "max": NaN
+  }
+ },
+ "rural_mas_lejanas": {
+  "preescolar": [
+   {
+    "NOM_LOC": "Isla Cerro Grande (Isla Chanaco)",
+    "POBTOT": 73,
+    "d_preescolar": 4749.0
+   },
+   {
+    "NOM_LOC": "Las Marías",
+    "POBTOT": 1,
+    "d_preescolar": 4273.0
+   },
+   {
+    "NOM_LOC": "Tres Marías",
+    "POBTOT": 96,
+    "d_preescolar": 4014.0
+   }
+  ],
+  "primaria": [
+   {
+    "NOM_LOC": "Las Marías",
+    "POBTOT": 1,
+    "d_primaria": 4187.0
+   },
+   {
+    "NOM_LOC": "La Mora (La Chumbacua)",
+    "POBTOT": 24,
+    "d_primaria": 3573.0
+   },
+   {
+    "NOM_LOC": "Los Nieto (Los Pérez)",
+    "POBTOT": 1,
+    "d_primaria": 3364.0
+   }
+  ],
+  "secundaria": [
+   {
+    "NOM_LOC": "Isla Cerro Grande (Isla Chanaco)",
+    "POBTOT": 73,
+    "d_secundaria": 6716.0
+   },
+   {
+    "NOM_LOC": "La Soledad",
+    "POBTOT": 217,
+    "d_secundaria": 6326.0
+   },
+   {
+    "NOM_LOC": "Isaías Zúñiga (Las Varas)",
+    "POBTOT": 6,
+    "d_secundaria": 5796.0
+   }
+  ],
+  "bachillerato": [
+   {
+    "NOM_LOC": "El Sauz",
+    "POBTOT": 229,
+    "d_bachillerato": 11236.0
+   },
+   {
+    "NOM_LOC": "Gaytán del Refugio",
+    "POBTOT": 536,
+    "d_bachillerato": 10771.0
+   },
+   {
+    "NOM_LOC": "Santa Rosa de Lima",
+    "POBTOT": 146,
+    "d_bachillerato": 10114.0
+   }
+  ],
+  "preescolar_publica": [
+   {
+    "NOM_LOC": "Isla Cerro Grande (Isla Chanaco)",
+    "POBTOT": 73,
+    "d_preescolar_publica": 4749.0
+   },
+   {
+    "NOM_LOC": "Las Marías",
+    "POBTOT": 1,
+    "d_preescolar_publica": 4273.0
+   },
+   {
+    "NOM_LOC": "Tres Marías",
+    "POBTOT": 96,
+    "d_preescolar_publica": 4225.0
+   }
+  ],
+  "primaria_publica": [
+   {
+    "NOM_LOC": "Las Marías",
+    "POBTOT": 1,
+    "d_primaria_publica": 4187.0
+   },
+   {
+    "NOM_LOC": "La Mora (La Chumbacua)",
+    "POBTOT": 24,
+    "d_primaria_publica": 3573.0
+   },
+   {
+    "NOM_LOC": "Los Nieto (Los Pérez)",
+    "POBTOT": 1,
+    "d_primaria_publica": 3364.0
+   }
+  ],
+  "secundaria_publica": [
+   {
+    "NOM_LOC": "Isla Cerro Grande (Isla Chanaco)",
+    "POBTOT": 73,
+    "d_secundaria_publica": 6716.0
+   },
+   {
+    "NOM_LOC": "La Soledad",
+    "POBTOT": 217,
+    "d_secundaria_publica": 6326.0
+   },
+   {
+    "NOM_LOC": "Isaías Zúñiga (Las Varas)",
+    "POBTOT": 6,
+    "d_secundaria_publica": 5796.0
+   }
+  ],
+  "bachillerato_publico": [
+   {
+    "NOM_LOC": "El Sauz",
+    "POBTOT": 229,
+    "d_bachillerato_publico": 11236.0
+   },
+   {
+    "NOM_LOC": "Gaytán del Refugio",
+    "POBTOT": 536,
+    "d_bachillerato_publico": 10771.0
+   },
+   {
+    "NOM_LOC": "La Chicharronera (Camino Blanco)",
+    "POBTOT": 196,
+    "d_bachillerato_publico": 10271.0
+   }
+  ],
+  "salud_publica": [
+   {
+    "NOM_LOC": "La Mora (La Chumbacua)",
+    "POBTOT": 24,
+    "d_salud_publica": 8291.0
+   },
+   {
+    "NOM_LOC": "Buenavista (Los Moscos)",
+    "POBTOT": 100,
+    "d_salud_publica": 8226.0
+   },
+   {
+    "NOM_LOC": "La Ortiga",
+    "POBTOT": 1107,
+    "d_salud_publica": 7347.0
+   }
+  ],
+  "abasto_completo": [
+   {
+    "NOM_LOC": "Adolfo Ruiz Cortínez",
+    "POBTOT": 19,
+    "d_abasto_completo": 20887.0
+   },
+   {
+    "NOM_LOC": "El Gonzaleño",
+    "POBTOT": 2,
+    "d_abasto_completo": 20782.0
+   },
+   {
+    "NOM_LOC": "El Arenal [Rancho]",
+    "POBTOT": 1,
+    "d_abasto_completo": 19845.0
+   }
+  ],
+  "salud_publica_con_anexo": [
+   {
+    "NOM_LOC": "La Mora (La Chumbacua)",
+    "POBTOT": 24,
+    "d_salud_publica_con_anexo": 8291.0
+   },
+   {
+    "NOM_LOC": "Los Nieto (Los Pérez)",
+    "POBTOT": 1,
+    "d_salud_publica_con_anexo": 7228.0
+   },
+   {
+    "NOM_LOC": "Las Marías",
+    "POBTOT": 1,
+    "d_salud_publica_con_anexo": 7189.0
+   }
+  ]
+ },
+ "denue_establecimientos_acambaro_por_localidad": {
+  "4 localidades urbanas": 5932,
+  "resto": 42,
+  "localidades_rurales_con_algun_registro": 28,
+  "abarrotes_minisuper_super_fuera_de_las_urbanas": 0
+ },
+ "ciudad_mas_lejanas": {
+  "preescolar": [
+   {
+    "CVEGEO": "1100200011054800",
+    "localidad": "Acámbaro",
+    "d_preescolar": 2845.0,
+    "via_preescolar": "red"
+   },
+   {
+    "CVEGEO": "1100200010465006",
+    "localidad": "Acámbaro",
+    "d_preescolar": 2699.0,
+    "via_preescolar": "red"
+   },
+   {
+    "CVEGEO": "1100200011321800",
+    "localidad": "Acámbaro",
+    "d_preescolar": 2539.0,
+    "via_preescolar": "red"
+   }
+  ],
+  "primaria": [
+   {
+    "CVEGEO": "1100200011054800",
+    "localidad": "Acámbaro",
+    "d_primaria": 2796.0,
+    "via_primaria": "red"
+   },
+   {
+    "CVEGEO": "1100200010465006",
+    "localidad": "Acámbaro",
+    "d_primaria": 2649.0,
+    "via_primaria": "red"
+   },
+   {
+    "CVEGEO": "1100200010770003",
+    "localidad": "Acámbaro",
+    "d_primaria": 2328.0,
+    "via_primaria": "red"
+   }
+  ],
+  "secundaria": [
+   {
+    "CVEGEO": "1100200470342800",
+    "localidad": "Parácuaro",
+    "d_secundaria": 6452.0,
+    "via_secundaria": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200470361800",
+    "localidad": "Parácuaro",
+    "d_secundaria": 6197.0,
+    "via_secundaria": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200470342025",
+    "localidad": "Parácuaro",
+    "d_secundaria": 6160.0,
+    "via_secundaria": "recta×factor"
+   }
+  ],
+  "bachillerato": [
+   {
+    "CVEGEO": "1100200271158800",
+    "localidad": "Irámuco",
+    "d_bachillerato": 4474.0,
+    "via_bachillerato": "red"
+   },
+   {
+    "CVEGEO": "1100200271158002",
+    "localidad": "Irámuco",
+    "d_bachillerato": 4411.0,
+    "via_bachillerato": "red"
+   },
+   {
+    "CVEGEO": "1100200271158001",
+    "localidad": "Irámuco",
+    "d_bachillerato": 4400.0,
+    "via_bachillerato": "red"
+   }
+  ],
+  "preescolar_publica": [
+   {
+    "CVEGEO": "1100200011054800",
+    "localidad": "Acámbaro",
+    "d_preescolar_publica": 2845.0,
+    "via_preescolar_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200010465006",
+    "localidad": "Acámbaro",
+    "d_preescolar_publica": 2699.0,
+    "via_preescolar_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200011321800",
+    "localidad": "Acámbaro",
+    "d_preescolar_publica": 2539.0,
+    "via_preescolar_publica": "red"
+   }
+  ],
+  "primaria_publica": [
+   {
+    "CVEGEO": "1100200011054800",
+    "localidad": "Acámbaro",
+    "d_primaria_publica": 2796.0,
+    "via_primaria_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200010465006",
+    "localidad": "Acámbaro",
+    "d_primaria_publica": 2649.0,
+    "via_primaria_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200010770003",
+    "localidad": "Acámbaro",
+    "d_primaria_publica": 2328.0,
+    "via_primaria_publica": "red"
+   }
+  ],
+  "secundaria_publica": [
+   {
+    "CVEGEO": "1100200470342800",
+    "localidad": "Parácuaro",
+    "d_secundaria_publica": 6452.0,
+    "via_secundaria_publica": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200470361800",
+    "localidad": "Parácuaro",
+    "d_secundaria_publica": 6197.0,
+    "via_secundaria_publica": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200470342025",
+    "localidad": "Parácuaro",
+    "d_secundaria_publica": 6160.0,
+    "via_secundaria_publica": "recta×factor"
+   }
+  ],
+  "bachillerato_publico": [
+   {
+    "CVEGEO": "1100200010234102",
+    "localidad": "Acámbaro",
+    "d_bachillerato_publico": 5429.0,
+    "via_bachillerato_publico": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200010234103",
+    "localidad": "Acámbaro",
+    "d_bachillerato_publico": 5419.0,
+    "via_bachillerato_publico": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200010234075",
+    "localidad": "Acámbaro",
+    "d_bachillerato_publico": 5382.0,
+    "via_bachillerato_publico": "recta×factor"
+   }
+  ],
+  "salud_publica": [
+   {
+    "CVEGEO": "1100200270681001",
+    "localidad": "Irámuco",
+    "d_salud_publica": 3747.0,
+    "via_salud_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200271571001",
+    "localidad": "Irámuco",
+    "d_salud_publica": 3743.0,
+    "via_salud_publica": "red"
+   },
+   {
+    "CVEGEO": "1100200270681002",
+    "localidad": "Irámuco",
+    "d_salud_publica": 3639.0,
+    "via_salud_publica": "red"
+   }
+  ],
+  "tienda_basica": [
+   {
+    "CVEGEO": "1100200470376800",
+    "localidad": "Parácuaro",
+    "d_tienda_basica": 1569.0,
+    "via_tienda_basica": "red"
+   },
+   {
+    "CVEGEO": "1100200010450018",
+    "localidad": "Acámbaro",
+    "d_tienda_basica": 1092.0,
+    "via_tienda_basica": "red"
+   },
+   {
+    "CVEGEO": "1100200010412037",
+    "localidad": "Acámbaro",
+    "d_tienda_basica": 1082.0,
+    "via_tienda_basica": "red"
+   }
+  ],
+  "abasto_completo": [
+   {
+    "CVEGEO": "1100200271158002",
+    "localidad": "Irámuco",
+    "d_abasto_completo": 17596.0,
+    "via_abasto_completo": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200271158001",
+    "localidad": "Irámuco",
+    "d_abasto_completo": 17398.0,
+    "via_abasto_completo": "recta×factor"
+   },
+   {
+    "CVEGEO": "1100200271158800",
+    "localidad": "Irámuco",
+    "d_abasto_completo": 17329.0,
+    "via_abasto_completo": "recta×factor"
+   }
+  ],
+  "salud_publica_con_anexo": [
+   {
+    "CVEGEO": "1100200270681001",
+    "localidad": "Irámuco",
+    "d_salud_publica_con_anexo": 3747.0,
+    "via_salud_publica_con_anexo": "red"
+   },
+   {
+    "CVEGEO": "1100200271571001",
+    "localidad": "Irámuco",
+    "d_salud_publica_con_anexo": 3743.0,
+    "via_salud_publica_con_anexo": "red"
+   },
+   {
+    "CVEGEO": "1100200270681002",
+    "localidad": "Irámuco",
+    "d_salud_publica_con_anexo": 3639.0,
+    "via_salud_publica_con_anexo": "red"
+   }
+  ],
+  "consultorio_privado": [
+   {
+    "CVEGEO": "1100200010959001",
+    "localidad": "Acámbaro",
+    "d_consultorio_privado": 4874.0,
+    "via_consultorio_privado": "red"
+   },
+   {
+    "CVEGEO": "1100200011514002",
+    "localidad": "Acámbaro",
+    "d_consultorio_privado": 4864.0,
+    "via_consultorio_privado": "red"
+   },
+   {
+    "CVEGEO": "1100200011317003",
+    "localidad": "Acámbaro",
+    "d_consultorio_privado": 4855.0,
+    "via_consultorio_privado": "red"
+   }
+  ]
+ },
+ "poblacion_en_origenes": {
+  "Acámbaro": 56596.0,
+  "Chupícuaro (Nuevo Chupícuaro)": 2583.0,
+  "Irámuco": 6275.0,
+  "Parácuaro": 4159.0
+ }
+}

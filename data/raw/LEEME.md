@@ -8,7 +8,8 @@ Esta carpeta no se sube al repositorio. `python src/01_descargar.py` la llena so
 |---|---|---|
 | `ESTABLECIMIENTO_SALUD_202608.xlsx` | CLUES, corte agosto 2026 | 2026-10-23 |
 | `cct11.csv`, `cct16.csv` | Catálogo de centros de trabajo SEP, Guanajuato y Michoacán | 2026-10-23 |
-| `verificacion_zonas.csv`, `verificacion_servicios.csv` | (opcionales) revisión de las listas de verificación en Google Maps | pendiente |
+| `verificacion_servicios.csv` | Revisión remota de servicios en Google Maps (Alejandro) | 2026-10-23 |
+| `verificacion_zonas.csv` | (opcional) revisión de las zonas de crecimiento | pendiente |
 
 CONAPO no está disponible y ya no se busca (D24).
 

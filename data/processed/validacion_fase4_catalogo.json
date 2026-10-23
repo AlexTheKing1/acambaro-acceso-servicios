@@ -1,0 +1,366 @@
+{
+ "cecyte": {
+  "conservada": "bachillerato-0022",
+  "descartada": "bachillerato-S0004",
+  "distancia_entre_puntos_m": 4320.0,
+  "estado_antes": "no confirmada"
+ },
+ "anexo_salud_sin_clues": [
+  {
+   "id_sede": "salud_primer_nivel-0007",
+   "nombre": "Centro Medico la Soledad",
+   "localidad": "Acámbaro",
+   "sector": "desconocido"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0008",
+   "nombre": NaN,
+   "localidad": "La Presa de Santa Inés",
+   "sector": "desconocido"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0014",
+   "nombre": NaN,
+   "localidad": "Solís",
+   "sector": "desconocido"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0019",
+   "nombre": NaN,
+   "localidad": "La Ortiga",
+   "sector": "desconocido"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0080",
+   "nombre": NaN,
+   "localidad": "San Luis de los Agustinos",
+   "sector": "desconocido"
+  },
+  {
+   "id_sede": "salud_primer_nivel-0081",
+   "nombre": NaN,
+   "localidad": "La Encarnación",
+   "sector": "desconocido"
+  }
+ ],
+ "verificacion_remota": {
+  "advertencia": "No es una muestra al azar: se revisaron todos los bachilleratos y casos priorizados. Las tasas describen esos casos, no la confiabilidad general del catálogo.",
+  "filas_en_archivo": 134,
+  "revisados": 68,
+  "total": {
+   "revisados": 68.0,
+   "si": 50.0,
+   "no": 11.0,
+   "no_se_ve": 7.0,
+   "pct_si_de_revisados": 73.5,
+   "pct_si_sin_contar_no_se_ve": 82.0
+  },
+  "por_tipo": {
+   "abasto": {
+    "revisados": 15.0,
+    "si": 13.0,
+    "no": 2.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 86.7,
+    "pct_si_sin_contar_no_se_ve": 86.7
+   },
+   "bachillerato": {
+    "revisados": 17.0,
+    "si": 11.0,
+    "no": 4.0,
+    "no_se_ve": 2.0,
+    "pct_si_de_revisados": 64.7,
+    "pct_si_sin_contar_no_se_ve": 73.3
+   },
+   "bachillerato_no_escolarizado": {
+    "revisados": 1.0,
+    "si": 0.0,
+    "no": 1.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 0.0,
+    "pct_si_sin_contar_no_se_ve": 0.0
+   },
+   "preescolar": {
+    "revisados": 4.0,
+    "si": 3.0,
+    "no": 0.0,
+    "no_se_ve": 1.0,
+    "pct_si_de_revisados": 75.0,
+    "pct_si_sin_contar_no_se_ve": 100.0
+   },
+   "primaria": {
+    "revisados": 5.0,
+    "si": 4.0,
+    "no": 1.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 80.0,
+    "pct_si_sin_contar_no_se_ve": 80.0
+   },
+   "salud_centro_penitenciario": {
+    "revisados": 1.0,
+    "si": 0.0,
+    "no": 1.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 0.0,
+    "pct_si_sin_contar_no_se_ve": 0.0
+   },
+   "salud_primer_nivel": {
+    "revisados": 20.0,
+    "si": 17.0,
+    "no": 2.0,
+    "no_se_ve": 1.0,
+    "pct_si_de_revisados": 85.0,
+    "pct_si_sin_contar_no_se_ve": 89.5
+   },
+   "secundaria": {
+    "revisados": 5.0,
+    "si": 2.0,
+    "no": 0.0,
+    "no_se_ve": 3.0,
+    "pct_si_de_revisados": 40.0,
+    "pct_si_sin_contar_no_se_ve": 100.0
+   }
+  },
+  "por_fuente": {
+   "DENUE": {
+    "revisados": 24.0,
+    "si": 19.0,
+    "no": 4.0,
+    "no_se_ve": 1.0,
+    "pct_si_de_revisados": 79.2,
+    "pct_si_sin_contar_no_se_ve": 82.6
+   },
+   "MG": {
+    "revisados": 21.0,
+    "si": 12.0,
+    "no": 5.0,
+    "no_se_ve": 4.0,
+    "pct_si_de_revisados": 57.1,
+    "pct_si_sin_contar_no_se_ve": 70.6
+   },
+   "MG+DENUE": {
+    "revisados": 23.0,
+    "si": 19.0,
+    "no": 2.0,
+    "no_se_ve": 2.0,
+    "pct_si_de_revisados": 82.6,
+    "pct_si_sin_contar_no_se_ve": 90.5
+   }
+  },
+  "por_donde": {
+   "dentro del municipio": {
+    "revisados": 57.0,
+    "si": 44.0,
+    "no": 8.0,
+    "no_se_ve": 5.0,
+    "pct_si_de_revisados": 77.2,
+    "pct_si_sin_contar_no_se_ve": 84.6
+   },
+   "fuera (hasta 10 km)": {
+    "revisados": 11.0,
+    "si": 6.0,
+    "no": 3.0,
+    "no_se_ve": 2.0,
+    "pct_si_de_revisados": 54.5,
+    "pct_si_sin_contar_no_se_ve": 66.7
+   }
+  },
+  "por_estado_cruce": {
+   "baja en CLUES": {
+    "revisados": 1.0,
+    "si": 1.0,
+    "no": 0.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 100.0,
+    "pct_si_sin_contar_no_se_ve": 100.0
+   },
+   "baja en SEP": {
+    "revisados": 1.0,
+    "si": 0.0,
+    "no": 1.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 0.0,
+    "pct_si_sin_contar_no_se_ve": 0.0
+   },
+   "confirmada": {
+    "revisados": 39.0,
+    "si": 30.0,
+    "no": 3.0,
+    "no_se_ve": 6.0,
+    "pct_si_de_revisados": 76.9,
+    "pct_si_sin_contar_no_se_ve": 90.9
+   },
+   "no aplica": {
+    "revisados": 16.0,
+    "si": 13.0,
+    "no": 3.0,
+    "no_se_ve": 0.0,
+    "pct_si_de_revisados": 81.2,
+    "pct_si_sin_contar_no_se_ve": 81.2
+   },
+   "no confirmada": {
+    "revisados": 11.0,
+    "si": 6.0,
+    "no": 4.0,
+    "no_se_ve": 1.0,
+    "pct_si_de_revisados": 54.5,
+    "pct_si_sin_contar_no_se_ve": 60.0
+   }
+  },
+  "visto_en": {
+   "street view": 20,
+   "no especificado": 18,
+   "ambos": 10,
+   "(vacío)": 10,
+   "ninguno": 6,
+   "satélite": 4
+  },
+  "dudosos_remotos": [
+   {
+    "id_sede": "primaria-0030",
+    "tipo": "primaria",
+    "nombre": "EMILIANO ZAPATA",
+    "localidad": "Monte Prieto",
+    "fuentes": "MG",
+    "en_acambaro": true,
+    "estado_cruce": "confirmada",
+    "notas_verificacion": "En el punto aparece la Escuela Telesecundaria No. 845, no una primaria."
+   },
+   {
+    "id_sede": "abasto-0002",
+    "tipo": "abasto",
+    "nombre": "22 DE OCTUBRE",
+    "localidad": "Acámbaro",
+    "fuentes": "MG+DENUE",
+    "en_acambaro": true,
+    "estado_cruce": "no aplica",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "salud_primer_nivel-0007",
+    "tipo": "salud_primer_nivel",
+    "nombre": "Centro Medico la Soledad",
+    "localidad": "Acámbaro",
+    "fuentes": "MG",
+    "en_acambaro": true,
+    "estado_cruce": "no confirmada",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "bachillerato-0003",
+    "tipo": "bachillerato",
+    "nombre": "Preparatoria Profesor Leopoldo Salgado Soler",
+    "localidad": "Acámbaro",
+    "fuentes": "MG",
+    "en_acambaro": true,
+    "estado_cruce": "baja en SEP",
+    "notas_verificacion": "No sé si siga operando."
+   },
+   {
+    "id_sede": "salud_primer_nivel-0008",
+    "tipo": "salud_primer_nivel",
+    "nombre": NaN,
+    "localidad": "La Presa de Santa Inés",
+    "fuentes": "MG",
+    "en_acambaro": true,
+    "estado_cruce": "no confirmada",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "bachillerato-0006",
+    "tipo": "bachillerato",
+    "nombre": NaN,
+    "localidad": NaN,
+    "fuentes": "MG",
+    "en_acambaro": false,
+    "estado_cruce": "no confirmada",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "bachillerato-0020",
+    "tipo": "bachillerato",
+    "nombre": "ESCUELA PREPARATORIA GENERAL LAZARO CARDENAS",
+    "localidad": "Zinapécuaro de Figueroa",
+    "fuentes": "MG+DENUE",
+    "en_acambaro": false,
+    "estado_cruce": "confirmada",
+    "notas_verificacion": "aparece la universidad tecnologica de morelia en street view"
+   },
+   {
+    "id_sede": "abasto-0216",
+    "tipo": "abasto",
+    "nombre": "ABARROTES JUANITA",
+    "localidad": "Acámbaro",
+    "fuentes": "DENUE",
+    "en_acambaro": true,
+    "estado_cruce": "no aplica",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "bachillerato-0031",
+    "tipo": "bachillerato",
+    "nombre": "INSTITUTO VASCO DE QUIROGA",
+    "localidad": "Salvatierra",
+    "fuentes": "DENUE",
+    "en_acambaro": false,
+    "estado_cruce": "confirmada",
+    "notas_verificacion": "Al buscar en maps, aparece un colegio vasco de quiroga en salvatierra gto"
+   },
+   {
+    "id_sede": "bachillerato-0032",
+    "tipo": "bachillerato_no_escolarizado",
+    "nombre": "PREPARATORIA ABIERTA",
+    "localidad": "Acámbaro",
+    "fuentes": "DENUE",
+    "en_acambaro": true,
+    "estado_cruce": "no aplica",
+    "notas_verificacion": NaN
+   },
+   {
+    "id_sede": "salud_primer_nivel-0093",
+    "tipo": "salud_centro_penitenciario",
+    "nombre": "CONSULTORIO MEDICO CIVIL",
+    "localidad": "Acámbaro",
+    "fuentes": "DENUE",
+    "en_acambaro": true,
+    "estado_cruce": "no confirmada",
+    "notas_verificacion": "aparece el cereso"
+   }
+  ]
+ },
+ "conteo_por_tipo_estado": {
+  "abasto | no aplica": 824,
+  "bachillerato | baja en SEP": 1,
+  "bachillerato | confirmada": 9,
+  "bachillerato | descartada (ubicación errónea, D37)": 1,
+  "bachillerato | no confirmada": 1,
+  "bachillerato | nueva (SEP)": 15,
+  "bachillerato_no_escolarizado | no aplica": 1,
+  "consultorio_privado | confirmada": 5,
+  "consultorio_privado | no confirmada": 39,
+  "consultorio_privado | nueva (CLUES)": 1,
+  "escuela_centro_penitenciario | nueva (SEP)": 1,
+  "escuela_varios_niveles | confirmada": 1,
+  "escuela_varios_niveles | no confirmada": 6,
+  "hospital | baja en CLUES": 1,
+  "hospital | confirmada": 3,
+  "hospital | no confirmada": 2,
+  "hospital | nueva (CLUES)": 4,
+  "preescolar | baja en SEP": 6,
+  "preescolar | confirmada": 83,
+  "preescolar | no confirmada": 3,
+  "preescolar | nueva (SEP)": 15,
+  "primaria | baja en SEP": 1,
+  "primaria | confirmada": 94,
+  "primaria | no confirmada": 17,
+  "primaria | nueva (SEP)": 6,
+  "salud_centro_penitenciario | no confirmada": 1,
+  "salud_primer_nivel | baja en CLUES": 1,
+  "salud_primer_nivel | confirmada": 20,
+  "salud_primer_nivel | no confirmada": 7,
+  "salud_primer_nivel | nueva (CLUES)": 2,
+  "secundaria | confirmada": 34,
+  "secundaria | nueva (SEP)": 7,
+  "unidad_movil | nueva (CLUES)": 1
+ }
+}

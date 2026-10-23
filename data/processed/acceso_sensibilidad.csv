@@ -1,0 +1,127 @@
+variante,localidad,categoria,umbral_principal_m,pob_lejos_todas,pob_lejos_variante,diferencia,sedes_quitadas_en_toda_la_zona
+solo confirmadas (D28),Acámbaro,preescolar,1000,4636,4636,0,65
+solo confirmadas (D28),Irámuco,preescolar,1000,1544,1544,0,65
+solo confirmadas (D28),Parácuaro,preescolar,1000,367,367,0,65
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),preescolar,1000,791,791,0,65
+solo confirmadas (D28),Localidades rurales (208),preescolar,2000,1158,1304,146,65
+solo confirmadas (D28),Acámbaro,primaria,670,17853,19654,1801,66
+solo confirmadas (D28),Irámuco,primaria,670,5051,5051,0,66
+solo confirmadas (D28),Parácuaro,primaria,670,1820,1820,0,66
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),primaria,670,995,1398,403,66
+solo confirmadas (D28),Localidades rurales (208),primaria,2000,695,905,210,66
+solo confirmadas (D28),Acámbaro,secundaria,1330,13400,13400,0,27
+solo confirmadas (D28),Irámuco,secundaria,1330,3805,3805,0,27
+solo confirmadas (D28),Parácuaro,secundaria,1330,4159,4159,0,27
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),secundaria,1330,250,250,0,27
+solo confirmadas (D28),Localidades rurales (208),secundaria,5000,1040,1274,234,27
+solo confirmadas (D28),Acámbaro,bachillerato,3330,1042,1042,0,6
+solo confirmadas (D28),Irámuco,bachillerato,3330,578,578,0,6
+solo confirmadas (D28),Parácuaro,bachillerato,3330,0,0,0,6
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),bachillerato,3330,0,0,0,6
+solo confirmadas (D28),Localidades rurales (208),bachillerato,10000,1107,1107,0,6
+solo confirmadas (D28),Acámbaro,preescolar_publica,1000,4636,4636,0,0
+solo confirmadas (D28),Irámuco,preescolar_publica,1000,1544,1544,0,0
+solo confirmadas (D28),Parácuaro,preescolar_publica,1000,370,370,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),preescolar_publica,1000,791,791,0,0
+solo confirmadas (D28),Localidades rurales (208),preescolar_publica,2000,1304,1304,0,0
+solo confirmadas (D28),Acámbaro,primaria_publica,670,21460,21460,0,0
+solo confirmadas (D28),Irámuco,primaria_publica,670,5051,5051,0,0
+solo confirmadas (D28),Parácuaro,primaria_publica,670,1820,1820,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),primaria_publica,670,1398,1398,0,0
+solo confirmadas (D28),Localidades rurales (208),primaria_publica,2000,910,910,0,0
+solo confirmadas (D28),Acámbaro,secundaria_publica,1330,21102,21102,0,0
+solo confirmadas (D28),Irámuco,secundaria_publica,1330,3805,3805,0,0
+solo confirmadas (D28),Parácuaro,secundaria_publica,1330,4159,4159,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),secundaria_publica,1330,250,250,0,0
+solo confirmadas (D28),Localidades rurales (208),secundaria_publica,5000,1274,1274,0,0
+solo confirmadas (D28),Acámbaro,bachillerato_publico,3330,24430,24430,0,0
+solo confirmadas (D28),Irámuco,bachillerato_publico,3330,578,578,0,0
+solo confirmadas (D28),Parácuaro,bachillerato_publico,3330,0,0,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,3330,0,0,0,0
+solo confirmadas (D28),Localidades rurales (208),bachillerato_publico,10000,1107,1107,0,0
+solo confirmadas (D28),Acámbaro,salud_publica,1330,12205,12205,0,0
+solo confirmadas (D28),Irámuco,salud_publica,1330,4043,4043,0,0
+solo confirmadas (D28),Parácuaro,salud_publica,1330,424,424,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),salud_publica,1330,137,137,0,0
+solo confirmadas (D28),Localidades rurales (208),salud_publica,5000,6635,6635,0,0
+solo confirmadas (D28),Acámbaro,tienda_basica,500,556,556,0,1
+solo confirmadas (D28),Irámuco,tienda_basica,500,139,139,0,1
+solo confirmadas (D28),Parácuaro,tienda_basica,500,167,167,0,1
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),tienda_basica,500,35,35,0,1
+solo confirmadas (D28),Acámbaro,abasto_completo,1000,20267,20267,0,1
+solo confirmadas (D28),Irámuco,abasto_completo,1000,6275,6275,0,1
+solo confirmadas (D28),Parácuaro,abasto_completo,1000,654,654,0,1
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),abasto_completo,1000,511,511,0,1
+solo confirmadas (D28),Localidades rurales (208),abasto_completo,10000,15733,15733,0,1
+solo confirmadas (D28),Acámbaro,salud_publica_con_anexo,1330,11464,12205,741,6
+solo confirmadas (D28),Irámuco,salud_publica_con_anexo,1330,4043,4043,0,6
+solo confirmadas (D28),Parácuaro,salud_publica_con_anexo,1330,424,424,0,6
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),salud_publica_con_anexo,1330,137,137,0,6
+solo confirmadas (D28),Localidades rurales (208),salud_publica_con_anexo,5000,2992,6635,3643,6
+solo confirmadas (D28),Acámbaro,consultorio_privado,1330,10004,10004,0,0
+solo confirmadas (D28),Irámuco,consultorio_privado,1330,52,52,0,0
+solo confirmadas (D28),Parácuaro,consultorio_privado,1330,111,111,0,0
+solo confirmadas (D28),Chupícuaro (Nuevo Chupícuaro),consultorio_privado,1330,50,50,0,0
+sin dudosos remotos (D41),Acámbaro,preescolar,1000,4636,4636,0,0
+sin dudosos remotos (D41),Irámuco,preescolar,1000,1544,1544,0,0
+sin dudosos remotos (D41),Parácuaro,preescolar,1000,367,367,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),preescolar,1000,791,791,0,0
+sin dudosos remotos (D41),Localidades rurales (208),preescolar,2000,1158,1158,0,0
+sin dudosos remotos (D41),Acámbaro,primaria,670,17853,17853,0,1
+sin dudosos remotos (D41),Irámuco,primaria,670,5051,5051,0,1
+sin dudosos remotos (D41),Parácuaro,primaria,670,1820,1820,0,1
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),primaria,670,995,995,0,1
+sin dudosos remotos (D41),Localidades rurales (208),primaria,2000,695,1811,1116,1
+sin dudosos remotos (D41),Acámbaro,secundaria,1330,13400,13400,0,0
+sin dudosos remotos (D41),Irámuco,secundaria,1330,3805,3805,0,0
+sin dudosos remotos (D41),Parácuaro,secundaria,1330,4159,4159,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),secundaria,1330,250,250,0,0
+sin dudosos remotos (D41),Localidades rurales (208),secundaria,5000,1040,1040,0,0
+sin dudosos remotos (D41),Acámbaro,bachillerato,3330,1042,1042,0,3
+sin dudosos remotos (D41),Irámuco,bachillerato,3330,578,578,0,3
+sin dudosos remotos (D41),Parácuaro,bachillerato,3330,0,0,0,3
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),bachillerato,3330,0,0,0,3
+sin dudosos remotos (D41),Localidades rurales (208),bachillerato,10000,1107,1107,0,3
+sin dudosos remotos (D41),Acámbaro,preescolar_publica,1000,4636,4636,0,0
+sin dudosos remotos (D41),Irámuco,preescolar_publica,1000,1544,1544,0,0
+sin dudosos remotos (D41),Parácuaro,preescolar_publica,1000,370,370,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),preescolar_publica,1000,791,791,0,0
+sin dudosos remotos (D41),Localidades rurales (208),preescolar_publica,2000,1304,1304,0,0
+sin dudosos remotos (D41),Acámbaro,primaria_publica,670,21460,21460,0,1
+sin dudosos remotos (D41),Irámuco,primaria_publica,670,5051,5051,0,1
+sin dudosos remotos (D41),Parácuaro,primaria_publica,670,1820,1820,0,1
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),primaria_publica,670,1398,1398,0,1
+sin dudosos remotos (D41),Localidades rurales (208),primaria_publica,2000,910,2026,1116,1
+sin dudosos remotos (D41),Acámbaro,secundaria_publica,1330,21102,21102,0,0
+sin dudosos remotos (D41),Irámuco,secundaria_publica,1330,3805,3805,0,0
+sin dudosos remotos (D41),Parácuaro,secundaria_publica,1330,4159,4159,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),secundaria_publica,1330,250,250,0,0
+sin dudosos remotos (D41),Localidades rurales (208),secundaria_publica,5000,1274,1274,0,0
+sin dudosos remotos (D41),Acámbaro,bachillerato_publico,3330,24430,24430,0,0
+sin dudosos remotos (D41),Irámuco,bachillerato_publico,3330,578,578,0,0
+sin dudosos remotos (D41),Parácuaro,bachillerato_publico,3330,0,0,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),bachillerato_publico,3330,0,0,0,0
+sin dudosos remotos (D41),Localidades rurales (208),bachillerato_publico,10000,1107,1107,0,0
+sin dudosos remotos (D41),Acámbaro,salud_publica,1330,12205,12205,0,0
+sin dudosos remotos (D41),Irámuco,salud_publica,1330,4043,4043,0,0
+sin dudosos remotos (D41),Parácuaro,salud_publica,1330,424,424,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),salud_publica,1330,137,137,0,0
+sin dudosos remotos (D41),Localidades rurales (208),salud_publica,5000,6635,6635,0,0
+sin dudosos remotos (D41),Acámbaro,tienda_basica,500,556,556,0,2
+sin dudosos remotos (D41),Irámuco,tienda_basica,500,139,139,0,2
+sin dudosos remotos (D41),Parácuaro,tienda_basica,500,167,167,0,2
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),tienda_basica,500,35,35,0,2
+sin dudosos remotos (D41),Acámbaro,abasto_completo,1000,20267,21245,978,1
+sin dudosos remotos (D41),Irámuco,abasto_completo,1000,6275,6275,0,1
+sin dudosos remotos (D41),Parácuaro,abasto_completo,1000,654,654,0,1
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),abasto_completo,1000,511,511,0,1
+sin dudosos remotos (D41),Localidades rurales (208),abasto_completo,10000,15733,15733,0,1
+sin dudosos remotos (D41),Acámbaro,salud_publica_con_anexo,1330,11464,12205,741,2
+sin dudosos remotos (D41),Irámuco,salud_publica_con_anexo,1330,4043,4043,0,2
+sin dudosos remotos (D41),Parácuaro,salud_publica_con_anexo,1330,424,424,0,2
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),salud_publica_con_anexo,1330,137,137,0,2
+sin dudosos remotos (D41),Localidades rurales (208),salud_publica_con_anexo,5000,2992,2992,0,2
+sin dudosos remotos (D41),Acámbaro,consultorio_privado,1330,10004,10004,0,0
+sin dudosos remotos (D41),Irámuco,consultorio_privado,1330,52,52,0,0
+sin dudosos remotos (D41),Parácuaro,consultorio_privado,1330,111,111,0,0
+sin dudosos remotos (D41),Chupícuaro (Nuevo Chupícuaro),consultorio_privado,1330,50,50,0,0
