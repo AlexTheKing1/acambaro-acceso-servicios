@@ -1,0 +1,23 @@
+unidad,anio,valor,li90,ls90,fuente,serie,documento,pagina,cuadro,tipo,nota
+municipio,2000,110718.0,,,ITER 2000,censada,,,,,
+subregion,2000,187959.0,,,ITER 2000 (suma de 4 municipios),censada,,,,,
+ciudad,2000,55516.0,,,"ITER 2000, localidad 0001",censada,,,,,
+municipio,2005,101762.0,,,ITER 2005,censada,,,,,
+subregion,2005,169123.0,,,ITER 2005 (suma de 4 municipios),censada,,,,,
+ciudad,2005,55082.0,,,"ITER 2005, localidad 0001",censada,,,,,
+municipio,2010,109030.0,,,ITER 2010,censada,,,,,
+subregion,2010,183194.0,,,ITER 2010 (suma de 4 municipios),censada,,,,,
+ciudad,2010,57972.0,,,"ITER 2010, localidad 0001",censada,,,,,
+municipio,2020,108697.0,,,ITER 2020,censada,,,,,
+subregion,2020,180601.0,,,ITER 2020 (suma de 4 municipios),censada,,,,,
+ciudad,2020,56597.0,,,"ITER 2020, localidad 0001",censada,,,,,
+municipio,2025,108140.0,100654.0,115626.0,EIC 2025,censada,,,,,
+subregion,2025,182793.0,173784.19058920658,191801.80941079342,EIC 2025 (suma de 4 municipios; IC suponiendo errores independientes),censada,,,,,
+ciudad,2025,56771.0,50795.0,62747.0,"EIC 2025, cabecera",censada,,,,,
+municipio,2006,115121.0,,,,proyectada,Plan Municipal,18 y 34,tabla 'Población atendida por institución 2006',exacta,2006 no fue año censal; la tabla de p. 34 da como fuente la proyección CONAPO 2000-2030
+municipio,2014,112076.0,,,,proyectada,PROT,38,"Cuadro 3, columna 'Población 2014'",exacta,"proyección (CONAPO 2010-2030, según la fuente del cuadro)"
+subregion,2014,189535.0,,,,proyectada,PROT,38,"Cuadro 3, columna 'Población 2014'",exacta,ídem
+subregion,2016,188946.0,,,,proyectada,PROT,59,"texto, 'Crecimiento poblacional'",derivada,+3.14 % sobre 2010 de 183 194 (PROT p. 29)
+subregion,2020,192482.0,,,,proyectada,PROT,59,"texto, 'Crecimiento poblacional'",derivada,+5.07 % sobre 2010 de 183 194 (PROT p. 29)
+subregion,2030,199498.0,,,,proyectada,PROT,59,"texto, 'Crecimiento poblacional'",derivada,+8.9 % sobre 2010 de 183 194 (PROT p. 29)
+ciudad,2030,51613.0,,,,proyectada,PROT,42,"texto, esquema subregional de ciudades 2030",exacta,estimación CONAPO (2010)

@@ -97,3 +97,32 @@ No se bajaron datos nuevos: se usaron los recortes ya versionados (MG 2010/2020/
 | EIC 2025 (ya descargada) | ver arriba | ver arriba | Población 2025 de los 7 municipios, Guanajuato y el país; migración y remesas de Acámbaro y Guanajuato |
 | Revisión de zonas INEGI de Alejandro (Google Earth) | `verificacion_zonas.csv`, 28 zonas; subido al release antes del 2026-11-13 | `.../releases/download/datos-crudos/verificacion_zonas.csv` | V48, D53 |
 | Revisión de zonas GHSL de Alejandro (Google Earth) | `verificacion_zonas_ghsl.csv`, 20 zonas | `.../releases/download/datos-crudos/verificacion_zonas_ghsl.csv` | V50, D52 |
+
+## Fase 6 (2026-11-13)
+
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| Plan Municipal de Desarrollo Acámbaro 2030 | COPLADEM Acámbaro, administración 2003–2006; 256 páginas (página del PDF = página impresa). Subido por Alejandro al release | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2030.pdf` | Contraste con los planes; polos de desarrollo (D60) |
+| Programa Regional de Ordenamiento Territorial, Subregión 10 "Sierra de los Agustinos" (Acámbaro, Coroneo, Jerécuaro, Tarandacuao) | SEDATU–IPLANEG, 2014; 124 páginas (página impresa = página del PDF − 1). Subido por Alejandro al release | `.../releases/download/datos-crudos/prot_subregion10_2014.pdf` | Proyecciones de población, Irámuco, cuadro 3 (D62) |
+| ITER 2000, Guanajuato (XII Censo General de Población y Vivienda) | Archivos de datos abiertos fechados 2017-06-22 | `INEGI/programas/ccpv/2000/datosabiertos/cgpv2000_iter_11_csv.zip` | Población 2000 (gráfica de proyección, Irámuco) (D63) |
+| ITER 2005, Guanajuato (II Conteo de Población y Vivienda) | Archivos de datos abiertos fechados 2017-06-22 | `INEGI/programas/ccpv/2005/datosabiertos/cpv2005_iter_11_csv.zip` | Población 2005 (ídem) |
+
+Las URLs del ITER 2000 y 2005 se localizaron el 2026-11-13 y funcionaron al primer intento (a diferencia de los patrones probados en la fase 4b, V43).
+
+### Referencias normativas (citadas, no descargadas)
+No están en el release ni en el repositorio. Se citan con las páginas que dio Alejandro; **Claude no las cotejó**.
+
+| Documento | Qué se cita |
+|---|---|
+| SEDESOL (1999), *Sistema Normativo de Equipamiento Urbano*, tomo I Educación y cultura, tomo II Salud y asistencia social, tomo III Comercio y abasto | Radios de servicio urbano recomendables; un centro de salud rural por localidad de 2 500 a 10 000 hab.; preparatoria general y Colegio de Bachilleres 2–5 km, CBTIS y CONALEP 5–10 km; mercado público 750 m; tianguis o mercado sobre ruedas 750–1 000 m. Sin glosario ni definición de si el radio es en línea recta |
+| SEDATU y GIZ (2024), *Lineamientos de equipamiento* | p. 19 (no sustituyen al "Sistema Normativo vigente"), p. 26–27 (marco de accesibilidad), p. 80 ("radio caminable de 800 metros") |
+| NOM-002-SEDATU-2022 | Clasificación del equipamiento; no fija distancias |
+
+### Ampliación del contraste (2026-11-13)
+
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| Plan Municipal de Desarrollo 2040 de Acámbaro | Aprobado por el Ayuntamiento el 25/03/2015 (acta 86); Periódico Oficial del Gobierno del Estado de Guanajuato núm. 118, 2.ª parte, 24/07/2015, p. 106–186. Escaneo de 264 páginas (todo el ejemplar; página del PDF = página impresa) | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2040.pdf` | Contraste (D65) |
+| Texto OCR del Plan 2040 | Subido por Alejandro; trae los encabezados "PAGINA 106…186" del Periódico Oficial | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2040_ocr.txt` | Verificación de citas |
+| Programa de Gobierno Municipal 2024–2027 de Acámbaro | Aprobado el 23/07/2025; Periódico Oficial núm. 173, 2.ª parte, 29/08/2025, p. 18–97. Escaneo de 82 páginas (página impresa = página del PDF + 15) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027.pdf` | Contraste (D65) |
+| Texto OCR del Programa de Gobierno | Subido por Alejandro; encabezados "PÁGINA N" (dobles en algunas páginas de tablas) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027_ocr.txt` | Verificación de citas |

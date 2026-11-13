@@ -1,0 +1,452 @@
+{
+ "salud_abierta": {
+  "clasificacion": {
+   "sedes_salud_publica": 78,
+   "por_clase": {
+    "abierta": 60,
+    "abierta_umr": 11,
+    "derechohabientes": 7
+   },
+   "por_clase_en_acambaro": {
+    "abierta": 21,
+    "derechohabientes": 2
+   },
+   "clasificadas_por_nombre": [
+    {
+     "id_sede": "salud_primer_nivel-0011",
+     "nombre": "UNIDAD DE MEDICA FAMILIAR ISSTE",
+     "clase": "derechohabientes"
+    },
+    {
+     "id_sede": "salud_primer_nivel-0054",
+     "nombre": "CLINICA CENTRO DE SALUD RURAL",
+     "clase": "abierta"
+    },
+    {
+     "id_sede": "salud_primer_nivel-0094",
+     "nombre": "INSTITUTO DE SEGURIDAD SOCIAL PARA TRABAJADORES DEL ESTADO",
+     "clase": "derechohabientes"
+    }
+   ],
+   "derechohabientes_en_acambaro": [
+    {
+     "id_sede": "salud_primer_nivel-0011",
+     "nombre": "UNIDAD DE MEDICA FAMILIAR ISSTE"
+    },
+    {
+     "id_sede": "salud_primer_nivel-C0001",
+     "nombre": "HGSMF 13 ACAMBARO"
+    }
+   ]
+  },
+  "control_smp_dif": {
+   "registros_clues_SMP": 45,
+   "registros_clues_DIF": [
+    {
+     "NOMBRE DE LA UNIDAD": "DIF ZINAPECUARO",
+     "NOMBRE TIPO ESTABLECIMIENTO": "DE ASISTENCIA SOCIAL",
+     "NIVEL ATENCION": "NO APLICA"
+    }
+   ],
+   "sedes_salud_publica_con_clave_SMP_o_DIF": 0
+  },
+  "control_igual_a_11_ciudad": {
+   "cuadras": 1658,
+   "max_diferencia_m": 0.0
+  },
+  "psinder_oculto": {
+   "municipio_total": 22418.0,
+   "ciudad_agebs_publicado": {
+    "Acámbaro": 11479.0,
+    "Irámuco": 950.0,
+    "Parácuaro": 1085.0,
+    "Chupícuaro (Nuevo Chupícuaro)": 756.0
+   },
+   "ciudad_suma_visible_cuadras": {
+    "Acámbaro": 11106.0,
+    "Irámuco": 929.0,
+    "Parácuaro": 1056.0,
+    "Chupícuaro (Nuevo Chupícuaro)": 666.0
+   },
+   "cuadras_con_asterisco": 420,
+   "rural_visible": 8039.0,
+   "rural_localidades_con_asterisco": 67,
+   "rural_pob_en_localidades_con_asterisco": 278.0,
+   "iter_municipio": 22418.0,
+   "iter_urbanas": 14321.0,
+   "rural_oculto": 58.0
+  },
+  "resumen_principal": {
+   "Acámbaro | POBTOT | salud_publica": [
+    12205,
+    21.6,
+    0
+   ],
+   "Acámbaro | PSINDER | salud_publica": [
+    2380,
+    20.7,
+    0
+   ],
+   "Irámuco | POBTOT | salud_publica": [
+    4043,
+    64.4,
+    0
+   ],
+   "Irámuco | PSINDER | salud_publica": [
+    577,
+    60.8,
+    0
+   ],
+   "Parácuaro | POBTOT | salud_publica": [
+    424,
+    10.2,
+    0
+   ],
+   "Parácuaro | PSINDER | salud_publica": [
+    86,
+    7.9,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_publica": [
+    137,
+    5.3,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_publica": [
+    39,
+    5.2,
+    0
+   ],
+   "Localidades rurales (208) | POBTOT | salud_publica": [
+    6635,
+    17.0,
+    0
+   ],
+   "Localidades rurales (208) | PSINDER | salud_publica": [
+    1152,
+    14.3,
+    0
+   ],
+   "Acámbaro | POBTOT | salud_abierta": [
+    32660,
+    57.7,
+    20455
+   ],
+   "Acámbaro | PSINDER | salud_abierta": [
+    7039,
+    61.3,
+    4659
+   ],
+   "Irámuco | POBTOT | salud_abierta": [
+    4043,
+    64.4,
+    0
+   ],
+   "Irámuco | PSINDER | salud_abierta": [
+    577,
+    60.8,
+    0
+   ],
+   "Parácuaro | POBTOT | salud_abierta": [
+    424,
+    10.2,
+    0
+   ],
+   "Parácuaro | PSINDER | salud_abierta": [
+    86,
+    7.9,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_abierta": [
+    137,
+    5.3,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_abierta": [
+    39,
+    5.2,
+    0
+   ],
+   "Localidades rurales (208) | POBTOT | salud_abierta": [
+    6635,
+    17.0,
+    0
+   ],
+   "Localidades rurales (208) | PSINDER | salud_abierta": [
+    1152,
+    14.3,
+    0
+   ],
+   "Acámbaro | POBTOT | salud_abierta_sin_umr": [
+    32660,
+    57.7,
+    20455
+   ],
+   "Acámbaro | PSINDER | salud_abierta_sin_umr": [
+    7039,
+    61.3,
+    4659
+   ],
+   "Irámuco | POBTOT | salud_abierta_sin_umr": [
+    4043,
+    64.4,
+    0
+   ],
+   "Irámuco | PSINDER | salud_abierta_sin_umr": [
+    577,
+    60.8,
+    0
+   ],
+   "Parácuaro | POBTOT | salud_abierta_sin_umr": [
+    424,
+    10.2,
+    0
+   ],
+   "Parácuaro | PSINDER | salud_abierta_sin_umr": [
+    86,
+    7.9,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_abierta_sin_umr": [
+    137,
+    5.3,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_abierta_sin_umr": [
+    39,
+    5.2,
+    0
+   ],
+   "Localidades rurales (208) | POBTOT | salud_abierta_sin_umr": [
+    6637,
+    17.0,
+    2
+   ],
+   "Localidades rurales (208) | PSINDER | salud_abierta_sin_umr": [
+    1152,
+    14.3,
+    0
+   ]
+  },
+  "cuadras_que_cambian_de_sede": {
+   "Acámbaro": 336,
+   "Irámuco": 0,
+   "Parácuaro": 0,
+   "Chupícuaro (Nuevo Chupícuaro)": 0
+  },
+  "localidades_rurales_que_cambian_de_sede": 16,
+  "localidades_rurales_que_cambian_sin_umr": 6
+ },
+ "localidades_y_polos": {
+  "localidades_2500": [
+   {
+    "localidad": "Acámbaro",
+    "pob_2020": 56597,
+    "salud_abierta_dentro": "sí",
+    "secundaria_dentro": "sí",
+    "secundaria_dist_m": 0.0
+   },
+   {
+    "localidad": "Irámuco",
+    "pob_2020": 6275,
+    "salud_abierta_dentro": "sí",
+    "secundaria_dentro": "sí",
+    "secundaria_dist_m": 0.0
+   },
+   {
+    "localidad": "Parácuaro",
+    "pob_2020": 4159,
+    "salud_abierta_dentro": "sí",
+    "secundaria_dentro": "no",
+    "secundaria_dist_m": 5620.0
+   },
+   {
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "pob_2020": 2583,
+    "salud_abierta_dentro": "sí",
+    "secundaria_dentro": "sí",
+    "secundaria_dist_m": 0.0
+   }
+  ],
+  "polos": [
+   {
+    "localidad": "Acámbaro",
+    "cumple_meta_plan": "referencia (no se evalúa)"
+   },
+   {
+    "localidad": "Irámuco",
+    "cumple_meta_plan": "no verificable (escuelas y salud sí; abasto sin registro)"
+   },
+   {
+    "localidad": "Parácuaro",
+    "cumple_meta_plan": "no (falta: secundaria)"
+   },
+   {
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "cumple_meta_plan": "sí"
+   },
+   {
+    "localidad": "Chamácuaro",
+    "cumple_meta_plan": "no verificable (escuelas y salud sí; abasto sin registro)"
+   },
+   {
+    "localidad": "San Mateo Tócuaro",
+    "cumple_meta_plan": "no verificable (escuelas y salud sí; abasto sin registro)"
+   },
+   {
+    "localidad": "Arroyo de la Luna",
+    "cumple_meta_plan": "no verificable (escuelas y salud sí; abasto sin registro)"
+   },
+   {
+    "localidad": "Inchamácuaro (Chamacuarillo)",
+    "cumple_meta_plan": "no (falta: bachillerato, salud_abierta)"
+   }
+  ],
+  "control_cada_si_tiene_id": true
+ },
+ "vialidades": {
+  "tramos_por_tipo_km": {
+   "Ampliación": 0.2,
+   "Andador": 1.8,
+   "Avenida": 18.7,
+   "Boulevard": 0.7,
+   "Calle": 722.9,
+   "Callejón": 1.0,
+   "Carretera": 10.8,
+   "Cerrada": 2.2,
+   "Peatonal": 0.2,
+   "Privada": 61.4,
+   "Prolongación": 15.4,
+   "unión agregada": 3.8
+  },
+  "localidades_con_tramos_de_carretera": 5,
+  "resumen": {
+   "preescolar": {
+    "sedes": 101,
+    "carretera_25m": 0,
+    "carretera_50m": 0,
+    "carretera_100m": 0,
+    "carretera_50m_urbanas": 0,
+    "carretera_50m_rurales": 0,
+    "avenida_bulevar_50m": 3
+   },
+   "primaria": {
+    "sedes": 117,
+    "carretera_25m": 0,
+    "carretera_50m": 0,
+    "carretera_100m": 2,
+    "carretera_50m_urbanas": 0,
+    "carretera_50m_rurales": 0,
+    "avenida_bulevar_50m": 3
+   },
+   "secundaria": {
+    "sedes": 41,
+    "carretera_25m": 0,
+    "carretera_50m": 0,
+    "carretera_100m": 0,
+    "carretera_50m_urbanas": 0,
+    "carretera_50m_rurales": 0,
+    "avenida_bulevar_50m": 0
+   },
+   "bachillerato": {
+    "sedes": 25,
+    "carretera_25m": 0,
+    "carretera_50m": 0,
+    "carretera_100m": 0,
+    "carretera_50m_urbanas": 0,
+    "carretera_50m_rurales": 0,
+    "avenida_bulevar_50m": 1
+   },
+   "salud_publica": {
+    "sedes": 23,
+    "carretera_25m": 0,
+    "carretera_50m": 0,
+    "carretera_100m": 0,
+    "carretera_50m_urbanas": 0,
+    "carretera_50m_rurales": 0,
+    "avenida_bulevar_50m": 3
+   }
+  },
+  "junto_carretera_50m": [],
+  "no_realizable": "vialidad primaria: el MG no trae jerarquía funcional; tramos de carretera fuera de las localidades no están en la red"
+ },
+ "planes": {
+  "citas": {
+   "total": 64,
+   "por_documento": {
+    "municipal": 19,
+    "programa": 17,
+    "prot": 15,
+    "plan2040": 13
+   },
+   "no_encontradas": [],
+   "pagina_vecina": []
+  },
+  "iramuco_2010_2020": {
+   "POBTOT": {
+    "2010": 5954.0,
+    "2020": 6275.0,
+    "cambio": 321.0,
+    "cambio_pct": 5.4
+   },
+   "VIVTOT": {
+    "2010": 1839.0,
+    "2020": 2336.0,
+    "cambio": 497.0,
+    "cambio_pct": 27.0
+   },
+   "viviendas_habitadas": {
+    "2010": 1218.0,
+    "2020": 1444.0,
+    "cambio": 226.0,
+    "cambio_pct": 18.6
+   },
+   "VIVPAR_DES": {
+    "2010": 356.0,
+    "2020": 658.0,
+    "cambio": 302.0,
+    "cambio_pct": 84.8
+   },
+   "VIVPAR_UT": {
+    "2010": 265.0,
+    "2020": 234.0,
+    "cambio": -31.0,
+    "cambio_pct": -11.7
+   }
+  },
+  "proyeccion_vs_censo": {
+   "subregion_2020_proyectada": 192482,
+   "subregion_2020_censada": 180601.0,
+   "subregion_diferencia_2020": -11881.0,
+   "municipio_2014_proyectada_PROT": 112076,
+   "municipio_2010": 109030.0,
+   "municipio_2020": 108697.0,
+   "municipio_2006_plan": 115121,
+   "municipio_2005": 101762.0,
+   "municipio_2000": 110718.0,
+   "ciudad_2030_proyectada": 51613,
+   "ciudad_2010": 57972.0,
+   "ciudad_2020": 56597.0,
+   "ciudad_2020_interpolada_lineal_2010_2030": 54792,
+   "ciudad_pct_prot_p30_x_pob_2010": 57963,
+   "nota_definicion_ciudad": "PROT p. 30: la ciudad tiene 31.64 % de 183 194 = 57 963 hab., igual a la localidad 0001 del censo 2010 (57 972): misma definición",
+   "censada": {
+    "municipio 2000": 110718.0,
+    "subregion 2000": 187959.0,
+    "ciudad 2000": 55516.0,
+    "municipio 2005": 101762.0,
+    "subregion 2005": 169123.0,
+    "ciudad 2005": 55082.0,
+    "municipio 2010": 109030.0,
+    "subregion 2010": 183194.0,
+    "ciudad 2010": 57972.0,
+    "municipio 2020": 108697.0,
+    "subregion 2020": 180601.0,
+    "ciudad 2020": 56597.0,
+    "municipio 2025": 108140.0,
+    "subregion 2025": 182793.0,
+    "ciudad 2025": 56771.0
+   }
+  }
+ }
+}

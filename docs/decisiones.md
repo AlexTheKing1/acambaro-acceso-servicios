@@ -363,3 +363,79 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Decisión**: AGEB urbanas y localidades rurales con ≥ 30 viviendas (mismo mínimo que la tipología, D47). Correlación de rangos de Spearman y medianas por cuartil. Descriptivo, no causal.
 - **Quién**: Claude.
 - **Por qué**: con menos viviendas los porcentajes saltan con una sola casa y el "*" del INEGI oculta casi todo.
+
+---
+
+## Fase 6 — Ajustes, referencias normativas y contraste con los planes (2026-11-13)
+
+### D58 · 2026-11-13 · Salud abierta: clasificación de instituciones
+- **Decisión**: dentro de las sedes de "salud pública de primer nivel" (D20), se separan las que atienden a cualquier persona (**abierta**) de las que atienden solo a sus derechohabientes. La regla se aplica con la institución de la CLUES (agosto 2026) y, sin CLUES, con el nombre (marcado `clasificado_por_nombre`).
+
+  | Institución (CLUES) | Clase | Sedes (78 en total; dentro de Acámbaro) |
+  |---|---|---|
+  | Secretaría de Salud de Guanajuato (SSA/SSG: centros de salud, UMAPS), incluida la que comparte con ISSSTE (CAISES Salvatierra) | abierta | 44 (21) |
+  | Servicios de Salud IMSS-Bienestar (IMB; Michoacán) | abierta | 15 (0) |
+  | Unidades Médicas Rurales del IMSS (IMS con tipología UMR) | abierta, con sensibilidad sin ellas | 11 (0) |
+  | "Centro de salud" sin CLUES (por nombre) | abierta | 1 (0) |
+  | IMSS ordinario: UMF, UMFH, HGSMF | solo derechohabientes | 3 (1: HGSMF 13) |
+  | ISSSTE (CLUES o por nombre; incluye la UMF de la ciudad, D36) | solo derechohabientes | 4 (1: UMF ISSSTE) |
+  | IMSS Régimen Bienestar (IMO) | abierta | 0 en uso: sus 14 registros están "fuera de operación" (cambio de institución) |
+  | Servicios médicos privados (SMP) | fuera: no son públicos ni abiertos | 0 en salud pública (45 registros de la CLUES en la franja; ya estaban fuera como consultorios privados o sector mixto) |
+  | DIF | abierta solo si da consulta médica general; las UBR no cuentan | 0 sedes cambian: el único registro (DIF Zinapécuaro) es "de asistencia social", sin nivel de atención, y no está en el catálogo de salud |
+  | PEMEX, SEDENA, SEMAR, ISSEG | solo derechohabientes | 0 en la zona |
+
+- **UMR**: la CLUES las registra como IMSS (o "IMSS Régimen Bienestar") porque el decreto del 1 de julio de 2025 incorporó el antiguo IMSS-Bienestar programa (COPLAMAR) al IMSS ordinario. Siguen atendiendo a población sin seguridad social.
+- **Sector mixto** ("IMSS-Bienestar; privado" y "ISSSTE; privado", 2 sedes fuera del municipio): siguen fuera, como en D20, para que "salud abierta" sea un subconjunto de "salud pública" y la comparación aísle el efecto de la derechohabiencia.
+- **Población**: total y sin afiliación a servicios de salud (PSINDER, Censo 2020), con el método D10 por AGEB y el mínimo visible por cuadra.
+- **Quién**: Alejandro (separar las instituciones, UMR abiertas con sensibilidad, SMP fuera, regla del DIF); Claude (aplicación por tipología y por nombre).
+- **Efecto**: en la ciudad, personas lejos de salud con el umbral principal: 12 205 (22 %) → **32 660 (58 %)**; sin afiliación: 2 380 → 7 039 (61 %). En Irámuco, Parácuaro, Chupícuaro y lo rural: sin cambio con el principal. Sin UMR: +2 personas rurales.
+
+### D59 · 2026-11-13 · "Dentro de la localidad" y distancia al más cercano
+- **Decisión**: una localidad "tiene" un servicio si hay al menos una sede del catálogo de la fase 4 dentro del municipio con su misma clave de localidad, sin las dadas de baja. Si no tiene, la distancia al más cercano se mide desde el punto ITER 2020 (D48) en línea recta × 1.33 (como en lo rural, D26), hacia cualquier sede, también fuera del municipio. En las 4 urbanas se añade la mediana por persona de la distancia a pie.
+- **Secundaria** incluye general, técnica y telesecundaria. **Salud** = salud abierta (D58).
+- **Quién**: Claude (técnica).
+
+### D60 · 2026-11-13 · Polos de desarrollo del Plan Municipal
+- **Decisión**: polos = los 8 "ejes de desarrollo" o micro regiones del Plan Municipal 2030 (p. 6: "microregiones o polos de desarrollo"; secciones en p. 53–83). Sede = la localidad que da nombre al eje (el plan no lo dice explícitamente, salvo Irámuco como "principal concentrador", p. 61, y los "Centros de Servicios" de p. 22–23). Se evalúan los **7 rurales** contra la meta de p. 254–255; la ciudad va como referencia, sin "cumple".
+- **Mercado o tianguis**: si no hay mercado registrado, la casilla es "no verificable" (ninguna fuente registra tianguis, D35), y el polo no puede quedar en "sí" ni en "no" solo por eso.
+- **Quién**: Alejandro (7 rurales + ciudad como referencia); Claude (sede homónima, regla de "no verificable").
+
+### D61 · 2026-11-13 · Servicios junto a carreteras (ajuste 6)
+- **Decisión**: se mide la distancia de cada escuela y unidad de salud a los tramos con TIPOVIAL = "Carretera" de la red caminable (≤ 50 m; sensibilidad 25 y 100 m); avenidas y bulevares aparte. **"Vialidad primaria" no es realizable**: el MG da el tipo de nombre de la vialidad, no su jerarquía, y no se inventa.
+- **Resultado**: ninguna sede queda a ≤ 50 m de una carretera (2 primarias a ≤ 100 m). La red solo tiene 10.8 km de carretera, en 5 localidades, porque los ejes del MG cubren el interior de las localidades. Por eso el resultado **no se puede interpretar** como "no hay escuelas junto a carreteras" (la ST 24 está sobre una carretera, fuera de toda localidad). Queda documentado y **no se usa en los textos**.
+- **Quién**: Claude.
+
+### D62 · 2026-11-13 · Cifras de los planes
+- **Decisión**: las cifras proyectadas se transcriben con documento, página y cuadro (`PROYECCIONES` en `30_planes.py`): Plan Municipal 2006 = 115 121 (p. 18 y 34); PROT 2014 = 112 076 (Acámbaro) y 189 535 (subregión) (cuadro 3, p. 38); ciudad 2030 = 51 613 (p. 42). Los porcentajes del PROT (p. 59: +3.14 % a 2016, +5.07 % a 2020, +8.9 % a 2030) se aplican a la base que el propio PROT da para 2010 (183 194, p. 29), que coincide con la suma del censo 2010 de los 4 municipios.
+- **No hay cifras aproximadas**: la sección 2.2.2.3 del PROT (p. 47) no trae gráfica en el PDF, y el Plan Municipal no publica la serie CONAPO 2000–2030 (sus imágenes son la marca de agua).
+- **Ciudad**: la cifra de 2030 es comparable con la localidad 0001 del censo: el PROT da a la ciudad el 31.64 % de la población de 2010 (p. 30), unos 57 960 hab., igual al censo (57 972).
+- **Páginas**: en el PROT se cita la página impresa (la del PDF es una más). Cada cita se verifica de forma automática (`docs/verificar_citas_planes.csv`).
+- **Correcciones a las citas del encargo**: secundaria técnica de Parácuaro, p. 64 (no p. 63); Irámuco en el Plan Municipal, p. 58–62 (escenario en p. 61); PROT p. 59 describe un crecimiento "actual" en 2014, no una proyección.
+- **Quién**: Claude; la lectura de p. 59 como descripción de 2014, Alejandro.
+
+### D63 · 2026-11-13 · Población 2000 y 2005
+- **Decisión**: un intento por año para bajar del INEGI los ITER 2000 y 2005 de Guanajuato (autorizado por Alejandro en esta fase; D50 sigue sin cambio para la superficie por habitante). **Ambos funcionaron** (`cgpv2000_iter_11_csv.zip`, `cpv2005_iter_11_csv.zip`). Se usan solo para la gráfica de proyección contra censo y la serie de población de Irámuco. 2005 es el II Conteo de Población y Vivienda. No traen viviendas deshabitadas.
+- **Pendiente propuesto (no aplicado)**: con estos ITER se podría extender la serie de superficie construida por habitante (GHSL 2000 y 2005, D45/D50). No se hizo porque D50 la deja en 2010 y 2020.
+- **Quién**: Alejandro (autorizó el intento); Claude.
+
+### D64 · 2026-11-13 · Medida principal y titular de salud
+- **Decisión**: la medida principal de salud es **salud abierta** (D58). El **titular** en `docs/resumen_final.md`, `docs/contraste_planes.md` y el sitio es la población **sin afiliación** lejos de una unidad abierta (ciudad: 7 039 de 11 479, 61 %). El 58 % (toda la población, salud abierta) y el 22 % (toda la población, cualquier unidad pública) van como comparación, con la explicación de que los afiliados al IMSS o al ISSSTE sí pueden usar esas clínicas.
+- **Nota obligatoria**: parte de la población sin afiliación se atiende en consultorios de farmacia (servicios médicos privados en la CLUES), que no se cuentan como salud pública.
+- **Campo**: las 4 unidades abiertas de la ciudad pasan a `docs/verificar_campo_fase6.csv` (confirmar que funcionan y atienden a cualquier persona).
+- **Opciones**: salud pública como principal (D20); salud abierta para toda la población como titular.
+- **Quién**: Alejandro.
+
+### D65 · 2026-11-13 · Plan Municipal de Desarrollo 2040 y Programa de Gobierno 2024–2027
+- **Decisión**: el contraste se amplía a cuatro documentos. Los dos nuevos están escaneados y se citan sobre el texto OCR que subió Alejandro, siempre con la **página impresa del Periódico Oficial**: en el Plan 2040, la página del PDF coincide con la impresa; en el Programa, página impresa = página del PDF + 15. La página de cada línea del OCR se toma del último encabezado "PAGINA N"; la verificación automática acepta la página vecina y la marca (no hizo falta: 64 de 64 en su página). Las dudosas se revisan en la imagen.
+- **Ajustes a las citas propuestas**: la frase textual "menor número de [...] escuelas" está solo en p. 158; en p. 143 la idea aparece con otras palabras ("Proporción de equipamiento educativo [...] inferior a la proporción estatal"). En p. 172 el ordenamiento aparece como "Contar con un instrumento técnico normativo en materia ambiental y territorial dentro del Municipio" (corrección de Alejandro). La población 2010 y 2015 del Programa empieza en p. 41 y sigue en p. 42: se cita p. 41–42.
+- **Errata del Programa**: en p. 55 dice que Irámuco tiene "6,725" habitantes (revisado en la imagen); en p. 43 da 6 275, igual que el censo. Se anota sin darle peso.
+- **Dato no verificado**: el PMDUOET podría estar en revisión del IPLANEG; no se afirma.
+- **Quién**: Alejandro (documentos, citas, páginas); Claude (verificación).
+
+### D66 · 2026-11-13 · Los polos se evalúan con el plan de 2006
+- **Decisión** (redacción de Alejandro): "La evaluación usa el plan de 2006 porque es el único que nombra sedes y fija metas por polo. El Plan 2040 no enumera polos ni fija metas por localidad en su texto, y el Programa 2025 menciona 11 polos de desarrollo rural (p. 55) sin enumerarlos ni fijarles metas." El Programa atribuye su imagen de polos al Plan 2040. No se dice que el Plan 2040 haya abandonado el enfoque, porque su Mapa 4 (p. 175) no es legible en el escaneo y podría mostrarlos.
+- **Quién**: Alejandro (enfoque); Claude agregó la mención de los 11 polos del Programa, encontrada al verificar p. 55.
+
+### D67 · 2026-11-13 · Superficie construida por habitante 2000 y 2005: versión 1.1
+- **Decisión**: no se calcula ahora. Queda como pendiente de la versión 1.1 (anotado en `CLAUDE.md`). Responde a la propuesta de D63.
+- **Quién**: Alejandro.

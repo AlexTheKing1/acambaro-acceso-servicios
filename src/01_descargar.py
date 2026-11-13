@@ -12,6 +12,7 @@ Uso:
     python src/01_descargar.py                    # baja lo que falte
     python src/01_descargar.py --forzar           # vuelve a bajar todo
     python src/01_descargar.py --solo clues sep_escuelas   # solo esas fuentes
+    python src/01_descargar.py --solo planes iter2000 iter2005   # fase 6
 """
 
 import argparse
@@ -53,6 +54,16 @@ FUENTES = {
          "iter_00_cpv2020_csv.zip"),
         (f"{INEGI}/programas/ccpv/2010/datosabiertos/iter_nal_2010_csv.zip",
          "iter_nal_2010_csv.zip"),
+    ],
+    # Fase 6: ITER 2000 y 2005 de Guanajuato (totales municipales para la gráfica
+    # de proyección contra censo). URLs localizadas el 2026-11-13, 1 intento cada una.
+    "iter2000": [
+        (f"{INEGI}/programas/ccpv/2000/datosabiertos/cgpv2000_iter_11_csv.zip",
+         "cgpv2000_iter_11_csv.zip"),
+    ],
+    "iter2005": [
+        (f"{INEGI}/programas/ccpv/2005/datosabiertos/cpv2005_iter_11_csv.zip",
+         "cpv2005_iter_11_csv.zip"),
     ],
     "iter2010": [
         (f"{INEGI}/programas/ccpv/2010/datosabiertos/iter_11_2010_csv.zip",
@@ -106,6 +117,14 @@ DEL_RELEASE = {
     "clues": ["ESTABLECIMIENTO_SALUD_202608.xlsx"],
     # Catálogo de centros de trabajo de la SEP: Guanajuato (11) y Michoacán (16)
     "sep_escuelas": ["cct11.csv", "cct16.csv"],
+    # Fase 6: Plan Municipal de Desarrollo Acámbaro 2030 (COPLADEM 2003–2006) y
+    # Programa Regional de Ordenamiento Territorial, Subregión 10 (SEDATU–IPLANEG 2014)
+    # Ampliación (D65): Plan Municipal de Desarrollo 2040 (P.O. núm. 118, 2.ª parte, 24/07/2015) y
+    # Programa de Gobierno Municipal 2024–2027 (P.O. núm. 173, 2.ª parte, 29/08/2025). Son escaneos:
+    # se usan los textos OCR que subió Alejandro.
+    "planes": ["plan_municipal_desarrollo_2030.pdf", "prot_subregion10_2014.pdf",
+               "plan_municipal_desarrollo_2040.pdf", "programa_gobierno_2024_2027.pdf",
+               "plan_municipal_desarrollo_2040_ocr.txt", "programa_gobierno_2024_2027_ocr.txt"],
 }
 # Red de caminos para la escala municipio (D26). La Red Nacional de Caminos del
 # INEGI no tiene URL directa localizable (sus páginas son dinámicas; 2 intentos
@@ -129,7 +148,7 @@ OPCIONALES = {
 }
 
 
-DOS_INTENTOS = {"iter_nacional"}
+DOS_INTENTOS = {"iter_nacional", "iter2000", "iter2005"}
 
 
 def bajar(url, destino, intentos=4):

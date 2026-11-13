@@ -1,0 +1,308 @@
+id_sede,categoria,nombre,localidad,cve_loc,urbana,clase_salud,d_carretera_m,d_avenida_bulevar_m,carretera_25m,carretera_50m,carretera_100m,avenida_bulevar_25m,avenida_bulevar_50m,avenida_bulevar_100m,lat,lon
+preescolar-0001,preescolar,PREESCOLAR COMUNITARIO,Los Órganos de Arriba,0176,False,,4292.0,6606.0,False,False,False,False,False,False,20.04774,-100.827482
+preescolar-0002,preescolar,PREESCOLAR COMUNITARIO,El Tenorio,0134,False,,1832.0,2402.0,False,False,False,False,False,False,20.056334,-100.766925
+preescolar-0003,preescolar,FRANCISCO I. MADERO,San Miguel del Puerto,0123,False,,5372.0,4491.0,False,False,False,False,False,False,20.030847,-100.630304
+preescolar-0004,preescolar,JOSE MARIA LICEAGA,San Juan (El Zapote),0097,False,,19064.0,3675.0,False,False,False,False,False,False,19.964712,-100.945287
+preescolar-0005,preescolar,MARIA MONTESSORI,San Mateo Tócuaro,0092,False,,2923.0,335.0,False,False,False,False,False,False,19.967776,-100.728775
+preescolar-0006,preescolar,JUAN ESCUTIA,Solís,0089,False,,2316.0,2309.0,False,False,False,False,False,False,20.050563,-100.680246
+preescolar-0007,preescolar,JOSE VASCONCELOS,La Soledad,0088,False,,8939.0,7880.0,False,False,False,False,False,False,19.979052,-100.827439
+preescolar-0008,preescolar,LAURO AGUIRRE,San Vicente Munguía,0087,False,,12330.0,11924.0,False,False,False,False,False,False,20.107939,-100.59771
+preescolar-0009,preescolar,MELCHOR OCAMPO,Santiaguillo,0086,False,,9136.0,9465.0,False,False,False,False,False,False,20.107971,-100.642056
+preescolar-0011,preescolar,,Santa Rosa de Lima,0084,False,,7993.0,7969.0,False,False,False,False,False,False,20.157521,-100.681762
+preescolar-0012,preescolar,DIEGO RIVERA,Santa Inés,0083,False,,9426.0,8648.0,False,False,False,False,False,False,20.043404,-100.592622
+preescolar-0013,preescolar,ISABEL LA CATOLICA,Santa Clara,0081,False,,5510.0,3671.0,False,False,False,False,False,False,19.955629,-100.76917
+preescolar-0014,preescolar,JUAN DE LA BARRERA,San Nicolás de Tolentino,0078,False,,1204.0,22.0,False,False,False,True,True,True,20.022701,-100.672624
+preescolar-0015,preescolar,DON IGNACIO ALLENDE Y UNZAGA,San Luis de los Agustinos,0076,False,,8821.0,8249.0,False,False,False,False,False,False,20.192407,-100.693109
+preescolar-0016,preescolar,JUSTO SIERRA,San Juan Viejo,0075,False,,4638.0,2957.0,False,False,False,False,False,False,20.09383,-100.748775
+preescolar-0017,preescolar,JUAN AMOS COMENIO,San José de las Pilas,0072,False,,12201.0,3607.0,False,False,False,False,False,False,19.990914,-100.885183
+preescolar-0019,preescolar,GABRIELA MISTRAL,San Francisco Parácuaro,0070,False,,116.0,143.0,False,False,False,False,False,False,20.142024,-100.757522
+preescolar-0020,preescolar,ANTON DAVID,San Francisco de la Piedad (La Codorniz),0069,False,,2310.0,1507.0,False,False,False,False,False,False,20.028393,-100.659666
+preescolar-0021,preescolar,JOSE VASCONCELOS,Obrajuelo,0041,False,,9161.0,8579.0,False,False,False,False,False,False,20.108731,-100.848745
+preescolar-0023,preescolar,JUAN ENRIQUE PESTALOZZI,Monte Prieto,0037,False,,3945.0,1233.0,False,False,False,False,False,False,20.085702,-100.781855
+preescolar-0024,preescolar,PREESCOLAR COMUNITARIO,Moncloa,0036,False,,7041.0,6809.0,False,False,False,False,False,False,20.165179,-100.694612
+preescolar-0025,preescolar,LUIS MOTA MACIEL,La Merced,0034,False,,3203.0,5691.0,False,False,False,False,False,False,20.030311,-100.808777
+preescolar-0026,preescolar,LUIS G URBINA,El Maguey,0032,False,,6466.0,6962.0,False,False,False,False,False,False,20.105194,-100.687164
+preescolar-0027,preescolar,VASCO DE QUIROGA,Las Jícamas (La Purísima),0029,False,,6234.0,7652.0,False,False,False,False,False,False,20.063118,-100.844614
+preescolar-0028,preescolar,JARDIN DE NIÑOS JOSE VASCONCELOS,Irámuco,0027,True,,17318.0,1668.0,False,False,False,False,False,False,19.965114,-100.92597
+preescolar-0029,preescolar,JARDIN DE NIÑOS CARLOS A CARRILLO,Irámuco,0027,True,,16485.0,584.0,False,False,False,False,False,False,19.964119,-100.915622
+preescolar-0030,preescolar,JARDIN DE NIÑOS MOCTEZUMA,Irámuco,0027,True,,18476.0,2745.0,False,False,False,False,False,False,19.960869,-100.936271
+preescolar-0031,preescolar,Rosaura Zapata Cano,Inchamácuaro (Chamacuarillo),0026,False,,5532.0,5884.0,False,False,False,False,False,False,20.07956,-100.82942
+preescolar-0032,preescolar,José Ma. Morelos y Pavón,Gaytán del Refugio,0023,False,,9172.0,9332.0,False,False,False,False,False,False,20.148135,-100.668171
+preescolar-0033,preescolar,Pedro Moreno,El Español,0020,False,,4561.0,3327.0,False,False,False,False,False,False,20.106453,-100.78447
+preescolar-0034,preescolar,Ricardo Flores Magón,La Encarnación,0019,False,,6827.0,6437.0,False,False,False,False,False,False,20.072894,-100.63529
+preescolar-0035,preescolar,Ignacio Zaragoza,Los Desmontes,0018,False,,3967.0,1030.0,False,False,False,False,False,False,19.957987,-100.739936
+preescolar-0036,preescolar,JARDIN DE NIÑOS ROSARIO CATELLANOS GOBIERNO FEDERAL,Chupícuaro (Nuevo Chupícuaro),0017,True,,2858.0,3573.0,False,False,False,False,False,False,20.07261,-100.692965
+preescolar-0037,preescolar,PREESCOLAR SOR JUANA INES DE LA CRUZ,Chupícuaro (Nuevo Chupícuaro),0017,True,,2699.0,3248.0,False,False,False,False,False,False,20.072542,-100.698095
+preescolar-0038,preescolar,José María Luis Mora,Cútaro,0014,False,,8610.0,6917.0,False,False,False,False,False,False,19.998495,-100.84825
+preescolar-0039,preescolar,Josefa Ortiz de Domínguez,Las Cruces,0013,False,,9006.0,9371.0,False,False,False,False,False,False,20.127197,-100.669729
+preescolar-0040,preescolar,Benito Juárez,La Concepción,0012,False,,4375.0,3650.0,False,False,False,False,False,False,20.17601,-100.737218
+preescolar-0041,preescolar,CITLALLI,La Cañada,0009,False,,23536.0,9055.0,False,False,False,False,False,False,19.972016,-100.996413
+preescolar-0042,preescolar,Federico Froebel,Andocutín,0004,False,,13469.0,4260.0,False,False,False,False,False,False,19.952191,-100.863432
+preescolar-0043,preescolar,Enrique C. Rebsamen,Agua Caliente,0003,False,,1737.0,1795.0,False,False,False,False,False,False,20.044058,-100.675936
+preescolar-0044,preescolar,JARDIN DE NIÑOS JUSTO SIERRA,Acámbaro,0001,True,,262.0,77.0,False,False,False,False,False,True,19.99245,-100.732635
+preescolar-0045,preescolar,JARDIN DE NIÑOS NARCISO MENDOZA,Acámbaro,0001,True,,1047.0,392.0,False,False,False,False,False,False,20.022729,-100.712953
+preescolar-0046,preescolar,JARDIN DE NIÑOS CALMECAC,Acámbaro,0001,True,,181.0,318.0,False,False,False,False,False,False,20.038816,-100.715915
+preescolar-0047,preescolar,JARDIN DE NIÑOS ENRIQUE REBSAMEN,Acámbaro,0001,True,,482.0,170.0,False,False,False,False,False,False,20.046751,-100.716434
+preescolar-0048,preescolar,JARDIN DE NIÑOS JUSTO SIERRA,Acámbaro,0001,True,,934.0,442.0,False,False,False,False,False,False,20.038671,-100.70312
+preescolar-0049,preescolar,COLEGIO TERESA MARTIN,Acámbaro,0001,True,,398.0,423.0,False,False,False,False,False,False,20.036583,-100.717608
+preescolar-0050,preescolar,JARDIN DE NIÑOS ENRIQUE LAUBSCHER,Acámbaro,0001,True,,1307.0,31.0,False,False,False,False,True,True,20.006722,-100.716494
+preescolar-0051,preescolar,JARDIN DE NIÑOS DIEGO RIVERA,Acámbaro,0001,True,,844.0,236.0,False,False,False,False,False,False,20.024815,-100.73411
+preescolar-0052,preescolar,Jardín de Niños Carrusel,Acámbaro,0001,True,,141.0,593.0,False,False,False,False,False,False,20.022755,-100.727658
+preescolar-0053,preescolar,JARDIN DE NIÑOS HEROE DE NACOZARI,Acámbaro,0001,True,,757.0,845.0,False,False,False,False,False,False,20.039417,-100.727797
+preescolar-0054,preescolar,JARDIN DE NIÑOS VASCO DE QUIROGA,Acámbaro,0001,True,,788.0,204.0,False,False,False,False,False,False,20.024144,-100.715209
+preescolar-0055,preescolar,JARDIN DE NIÑOS FELIX C VERA,Acámbaro,0001,True,,286.0,497.0,False,False,False,False,False,False,20.02744,-100.722269
+preescolar-0056,preescolar,JARDIN DE NIÑOS FLOR Y CANTO,Acámbaro,0001,True,,490.0,733.0,False,False,False,False,False,False,20.029282,-100.723425
+preescolar-0057,preescolar,JARDIN DE NIÑOS MOCTEZUMA,Acámbaro,0001,True,,893.0,774.0,False,False,False,False,False,False,20.029334,-100.713637
+preescolar-0058,preescolar,JARDIN DE NIÑOS ZARAGOZA,Acámbaro,0001,True,,996.0,999.0,False,False,False,False,False,False,20.033525,-100.72553
+preescolar-0059,preescolar,GUARDERIA Y JARDIN DE NIÑOS EL KARROUSEL,Acámbaro,0001,True,,703.0,498.0,False,False,False,False,False,False,20.036126,-100.720774
+preescolar-0060,preescolar,Jardín de Niños José María Vilaseca,Acámbaro,0001,True,,854.0,675.0,False,False,False,False,False,False,20.035706,-100.72344
+preescolar-0061,preescolar,Ignacio Ramírez López,Acámbaro,0001,True,,500.0,427.0,False,False,False,False,False,False,20.03985,-100.723708
+preescolar-0062,preescolar,Pablo Neruda,San Francisco Rancho Viejo,0068,False,,2632.0,3839.0,False,False,False,False,False,False,20.026626,-100.790852
+preescolar-0063,preescolar,Rosaura Zapata Cano,San Cayetano,0065,False,,5560.0,5777.0,False,False,False,False,False,False,20.078422,-100.660159
+preescolar-0064,preescolar,Francisco Gabilondo Soler,San Antonio,0064,False,,3281.0,1508.0,False,False,False,False,False,False,20.002462,-100.697717
+preescolar-0065,preescolar,Jean Piaget,El Romero,0062,False,,3402.0,1597.0,False,False,False,False,False,False,20.018885,-100.770371
+preescolar-0066,preescolar,Santos Degollado,El Rodeo,0061,False,,9605.0,8216.0,False,False,False,False,False,False,19.961912,-100.623493
+preescolar-0067,preescolar,Lucila Godoy,La Purísima Concepción,0058,False,,6067.0,6174.0,False,False,False,False,False,False,20.081052,-100.656171
+preescolar-0068,preescolar,Jaime Nunó,Providencia de San Agustín,0056,False,,9500.0,8584.0,False,False,False,False,False,False,20.122441,-100.847709
+preescolar-0069,preescolar,DON NICOLAS DE SAN LUIS MONTAÑEZ,Corral de Piedras,0055,False,,2812.0,1724.0,False,False,False,False,False,False,20.070813,-100.756572
+preescolar-0070,preescolar,PREESCOLAR COMUNITARIO,La Pila de los Árboles,0052,False,,12101.0,9389.0,False,False,False,False,False,False,20.048205,-100.902456
+preescolar-0071,preescolar,Preescolar Comunitario,Piedras de Amolar,0051,False,,12849.0,13316.0,False,False,False,False,False,False,20.139588,-100.626201
+preescolar-0072,preescolar,JARDIN DE NIÑOS MANUEL M PONCE,Parácuaro,0047,True,,409.0,112.0,False,False,False,False,False,False,20.143482,-100.762523
+preescolar-0073,preescolar,Leona Vicario,Pantaleón,0046,False,,6291.0,4365.0,False,False,False,False,False,False,19.98919,-100.795034
+preescolar-0074,preescolar,Juan de Dios Peza,San Juan Jaripeo,0073,False,,2839.0,599.0,False,False,False,False,False,False,20.003324,-100.760115
+preescolar-0075,preescolar,Simón Bolivar,San Agustín,0063,False,,10057.0,9119.0,False,False,False,False,False,False,20.126815,-100.854097
+preescolar-0076,preescolar,José María Velazco,Los Órganos (Los Órganos de Abajo),0042,False,,2721.0,4736.0,False,False,False,False,False,False,20.055956,-100.811772
+preescolar-0077,preescolar,Antonio Caso,Chamácuaro,0015,False,,6852.0,6076.0,False,False,False,False,False,False,20.099056,-100.826987
+preescolar-0078,preescolar,Rosalía de Castro,Arroyo Colorado,0005,False,,6631.0,5370.0,False,False,False,False,False,False,20.008789,-100.622032
+preescolar-0079,preescolar,General Manuel Ávila Camacho,Jaral del Refugio,0028,False,,4123.0,4478.0,False,False,False,False,False,False,20.115698,-100.723305
+preescolar-0080,preescolar,Vasco de Quiroga,San Diego de Alcalá (Hacienda de San Diego),0067,False,,8075.0,8573.0,False,False,False,False,False,False,20.029527,-100.860698
+preescolar-0081,preescolar,Niños Héroes,El Piloncillo,0053,False,,5580.0,5272.0,False,False,False,False,False,False,20.16311,-100.709332
+preescolar-0082,preescolar,Darío Rubio,La Chicharronera (Camino Blanco),0016,False,,12274.0,11931.0,False,False,False,False,False,False,20.190331,-100.651801
+preescolar-0084,preescolar,JARDIN DE NIÑOS ALBERTO QUINTERO,Acámbaro,0001,True,,449.0,23.0,False,False,False,True,True,True,20.01011,-100.724129
+preescolar-0085,preescolar,JARDIN DE NIÑOS MARIA MONTESSORI,Acámbaro,0001,True,,498.0,79.0,False,False,False,False,False,True,20.023917,-100.718066
+preescolar-0086,preescolar,JARDIN DE NIÑOS FRANCISCO GAVILONDO SOLER,Acámbaro,0001,True,,606.0,526.0,False,False,False,False,False,False,20.026396,-100.730172
+preescolar-0087,preescolar,JARDIN DE NIÑOS NIÑOS HEROES,Acámbaro,0001,True,,440.0,111.0,False,False,False,False,False,False,20.029651,-100.691813
+preescolar-0263,preescolar,Guadalupe Victoria,La Carpa,0010,False,,1782.0,1568.0,False,False,False,False,False,False,20.064681,-100.777507
+preescolar-0292,preescolar,ESCUELA PREESCOLAR CARRUSEL,Acámbaro,0001,True,,858.0,86.0,False,False,False,False,False,True,20.019087,-100.735957
+preescolar-0293,preescolar,JARDIN DE NIÑOS FRAY PEDRO DE GANTE,Acámbaro,0001,True,,525.0,386.0,False,False,False,False,False,False,20.050825,-100.723328
+preescolar-S0007,preescolar,CARMEN BAEZ,La Ortiga,0043,False,,24091.0,9291.0,False,False,False,False,False,False,19.965031,-100.999142
+preescolar-S0012,preescolar,JUAN DEWEY,Arroyo De La Luna,0006,False,,9574.0,8476.0,False,False,False,False,False,False,20.018138,-100.59074
+preescolar-S0013,preescolar,JUAN FEDERICO HERBART,La Presa De Santa Inés,0054,False,,9618.0,8278.0,False,False,False,False,False,False,19.989379,-100.599812
+preescolar-S0014,preescolar,CARLOS PELLICER,San Miguel,0077,False,,3751.0,3097.0,False,False,False,False,False,False,20.039179,-100.647371
+preescolar-S0017,preescolar,MOCTOCOHZOMA XOCOYOTZIN,Puerto De Cabras,0057,False,,21042.0,7748.0,False,False,False,False,False,False,19.991171,-100.978305
+preescolar-S0018,preescolar,ROSARIO CASTELLANOS,Las Partidas,0050,False,,6959.0,9181.0,False,False,False,False,False,False,20.028806,-100.849187
+preescolar-S0029,preescolar,PREESCOLAR COMUNITARIO,Palo Blanco Del Refugio,0044,False,,4630.0,3355.0,False,False,False,False,False,False,20.008097,-100.791102
+preescolar-S0032,preescolar,PREESCOLAR COMUNITARIO,Piedras Chinas,0159,False,,4196.0,1333.0,False,False,False,False,False,False,19.956107,-100.728322
+preescolar-S0037,preescolar,PREESCOLAR COMUNITARIO,San Ramón,0080,False,,3906.0,4425.0,False,False,False,False,False,False,20.083057,-100.694722
+preescolar-S0038,preescolar,PREESCOLAR COMUNITARIO,La Granja,0024,False,,3760.0,3763.0,False,False,False,False,False,False,20.082235,-100.708632
+preescolar-S0049,preescolar,PREESCOLAR COMUNITARIO,La Mesa De San José,0035,False,,6161.0,5581.0,False,False,False,False,False,False,20.178338,-100.713943
+preescolar-S0050,preescolar,MONTAÑEZ CENTRO EDUCATIVO ACAMBARENSE A. C.,Acámbaro,0001,True,,1525.0,266.0,False,False,False,False,False,False,20.036105,-100.735575
+preescolar-S0053,preescolar,COLEGIO TERESA MARTIN,Acámbaro,0001,True,,546.0,401.0,False,False,False,False,False,False,20.036716,-100.719078
+preescolar-S0054,preescolar,JOSEFA ORTIZ DE DOMINGUEZ INSTITUCION DE EDUCACIO,Acámbaro,0001,True,,765.0,1022.0,False,False,False,False,False,False,20.031524,-100.724859
+preescolar-S0055,preescolar,JEAN PIAGET,Parácuaro,0047,True,,343.0,178.0,False,False,False,False,False,False,20.144505,-100.760911
+primaria-0001,primaria,BENITO JUAREZ,La Providencia,0441,False,,2605.0,1776.0,False,False,False,False,False,False,20.068723,-100.757277
+primaria-0002,primaria,JOSE MA MORELOS,El Tenorio,0134,False,,1918.0,2433.0,False,False,False,False,False,False,20.05634,-100.765552
+primaria-0003,primaria,MUNICIPIO LIBRE,San Miguel del Puerto,0123,False,,5544.0,4647.0,False,False,False,False,False,False,20.030365,-100.628638
+primaria-0004,primaria,JUSTO SIERRA,San Juan (El Zapote),0097,False,,19035.0,3601.0,False,False,False,False,False,False,19.964095,-100.944597
+primaria-0005,primaria,,Valle Cuauhtémoc,0094,False,,1715.0,1835.0,False,False,False,False,False,False,20.04427,-100.677286
+primaria-0006,primaria,NIÑOS HEROES,San Mateo Tócuaro,0092,False,,2918.0,414.0,False,False,False,False,False,False,19.967993,-100.728015
+primaria-0007,primaria,MIGUEL HIDALGO,Loreto (Teresa),0091,False,,3070.0,1658.0,False,False,False,False,False,False,20.073267,-100.75623
+primaria-0008,primaria,GENERAL LAZARO CARDENAS,Solís,0089,False,,2689.0,2777.0,False,False,False,False,False,False,20.053245,-100.676767
+primaria-0009,primaria,MIGUEL HIDALGO,San Vicente Munguía,0087,False,,12280.0,11869.0,False,False,False,False,False,False,20.107068,-100.597479
+primaria-0010,primaria,DOCE DE OCTUBRE,Santiaguillo,0086,False,,9203.0,9691.0,False,False,False,False,False,False,20.11101,-100.644591
+primaria-0011,primaria,BENITO JUAREZ,El Sauz,0085,False,,10518.0,10653.0,False,False,False,False,False,False,20.150685,-100.655494
+primaria-0012,primaria,PROFR. LADISLAO NAVARRO RANGEL,Santa Rosa de Lima,0084,False,,7952.0,7948.0,False,False,False,False,False,False,20.156384,-100.681832
+primaria-0013,primaria,GENERAL FELIPE ANGELES,Santa Inés,0083,False,,9433.0,8684.0,False,False,False,False,False,False,20.045385,-100.592925
+primaria-0014,primaria,BENITO JUAREZ,Santa Clara,0081,False,,5578.0,3735.0,False,False,False,False,False,False,19.955226,-100.769674
+primaria-0015,primaria,JOSEFA ORTIZ DE DOMINGUEZ,San Ramón,0080,False,,4027.0,4639.0,False,False,False,False,False,False,20.08319,-100.690934
+primaria-0016,primaria,VICENTE GUERRERO,San Nicolás de Tolentino,0078,False,,977.0,22.0,False,False,False,True,True,True,20.024822,-100.673733
+primaria-0017,primaria,PLAN DE AYUTLA,San Miguel,0077,False,,3645.0,3009.0,False,False,False,False,False,False,20.040062,-100.648736
+primaria-0018,primaria,DIVISION DEL NORTE,San Luis de los Agustinos,0076,False,,8794.0,8223.0,False,False,False,False,False,False,20.192121,-100.693196
+primaria-0019,primaria,LIC. BENITO JUAREZ,San Juan Viejo,0075,False,,4734.0,2937.0,False,False,False,False,False,False,20.094468,-100.749544
+primaria-0020,primaria,CURSO COMUNITARIO,San Juan Rancho Viejo (Hacienda Nueva),0074,False,,1607.0,2144.0,False,False,False,False,False,False,20.064715,-100.787677
+primaria-0021,primaria,BENITO JUAREZ,San José de las Pilas,0072,False,,12099.0,3783.0,False,False,False,False,False,False,19.992789,-100.885266
+primaria-0022,primaria,,San José de las Pilas,0072,False,,12044.0,3931.0,False,False,False,False,False,False,19.994566,-100.885788
+primaria-0024,primaria,BENITO JUAREZ,San Francisco Parácuaro,0070,False,,57.0,80.0,False,False,True,False,False,True,20.141929,-100.75815
+primaria-0025,primaria,PRESIDENTE CARRANZA,San Francisco de la Piedad (La Codorniz),0069,False,,2262.0,1491.0,False,False,False,False,False,False,20.028974,-100.660112
+primaria-0026,primaria,EMILIANO ZAPATA,Palo Blanco del Refugio,0044,False,,4318.0,3065.0,False,False,False,False,False,False,20.010534,-100.788311
+primaria-0027,primaria,VICENTE GUERRERO,La Ortiga,0043,False,,24073.0,9294.0,False,False,False,False,False,False,19.965501,-100.999161
+primaria-0028,primaria,EMILIANO ZAPATA,Los Órganos (Los Órganos de Abajo),0042,False,,2853.0,4814.0,False,False,False,False,False,False,20.056437,-100.812949
+primaria-0029,primaria,18 DE MARZO,Obrajuelo,0041,False,,9226.0,8645.0,False,False,False,False,False,False,20.109057,-100.849288
+primaria-0030,primaria,EMILIANO ZAPATA,Monte Prieto,0037,False,,3734.0,1232.0,False,False,False,False,False,False,20.083919,-100.783204
+primaria-0031,primaria,JUAN ALDAMA,Moncloa,0036,False,,7120.0,6884.0,False,False,False,False,False,False,20.16562,-100.693995
+primaria-0032,primaria,PROFR. IGNACIO RAMIREZ,La Merced,0034,False,,3254.0,5725.0,False,False,False,False,False,False,20.030107,-100.809235
+primaria-0033,primaria,LEONA VICARIO,El Maguey,0032,False,,6341.0,6862.0,False,False,False,False,False,False,20.103758,-100.686201
+primaria-0034,primaria,EL PIPILA,Jaral del Refugio,0028,False,,4262.0,4613.0,False,False,False,False,False,False,20.114028,-100.722959
+primaria-0035,primaria,ESCUELA PRIMARIA JUAN JOSE TORRES LANDA,Irámuco,0027,True,,16610.0,589.0,False,False,False,False,False,False,19.962089,-100.915563
+primaria-0036,primaria,ESCUELA PRIMARIA LICENCIADO ADOLFO LOPEZ MATEOS,Irámuco,0027,True,,18514.0,2830.0,False,False,False,False,False,False,19.961543,-100.937151
+primaria-0037,primaria,Miguel Hidalgo,Inchamácuaro (Chamacuarillo),0026,False,,5565.0,5896.0,False,False,False,False,False,False,20.079921,-100.829531
+primaria-0038,primaria,José Ma. Morelos,La Granja,0024,False,,3998.0,3984.0,False,False,False,False,False,False,20.084549,-100.709428
+primaria-0039,primaria,Niños Héroes,El Español,0020,False,,4845.0,3008.0,False,False,False,False,False,False,20.103239,-100.784667
+primaria-0040,primaria,Héroes de Chapultepec,La Encarnación,0019,False,,6749.0,6372.0,False,False,False,False,False,False,20.073186,-100.636676
+primaria-0041,primaria,Niños Héroes,Los Desmontes,0018,False,,4037.0,1068.0,False,False,False,False,False,False,19.957227,-100.738815
+primaria-0042,primaria,,Chupícuaro (Nuevo Chupícuaro),0017,True,,2696.0,3508.0,False,False,False,False,False,False,20.068849,-100.688727
+primaria-0043,primaria,ESCUELA PRIMARIA JOSE MARIA MORELOS,Chupícuaro (Nuevo Chupícuaro),0017,True,,2564.0,3334.0,False,False,False,False,False,False,20.069715,-100.692971
+primaria-0044,primaria,Guadalupe Victoria,La Chicharronera (Camino Blanco),0016,False,,12332.0,11976.0,False,False,False,False,False,False,20.191521,-100.651857
+primaria-0045,primaria,José Maria Morelos,Cútaro,0014,False,,8692.0,6859.0,False,False,False,False,False,False,19.996846,-100.847737
+primaria-0046,primaria,Benito Juárez,Las Cruces,0013,False,,9203.0,9568.0,False,False,False,False,False,False,20.128223,-100.667689
+primaria-0047,primaria,La Corregidora,La Concepción,0012,False,,4096.0,3337.0,False,False,False,False,False,False,20.175656,-100.742205
+primaria-0048,primaria,Alfonso Teja Sabre,La Carpa,0010,False,,1803.0,1560.0,False,False,False,False,False,False,20.065158,-100.778503
+primaria-0049,primaria,,Arroyo de la Luna,0006,False,,9317.0,8301.0,False,False,False,False,False,False,20.025383,-100.592533
+primaria-0050,primaria,,Arroyo de la Luna,0006,False,,9587.0,8488.0,False,False,False,False,False,False,20.018075,-100.590626
+primaria-0051,primaria,Niños Héroes,Arroyo de la Luna,0006,False,,9422.0,8380.0,False,False,False,False,False,False,20.023228,-100.591662
+primaria-0052,primaria,Margarita Maza de Juárez,Arroyo Colorado,0005,False,,6384.0,5115.0,False,False,False,False,False,False,20.008688,-100.62459
+primaria-0053,primaria,José Ma. Morelos,Andocutín,0004,False,,13249.0,3981.0,False,False,False,False,False,False,19.956002,-100.865225
+primaria-0054,primaria,Francisco I. Madero,Agua Caliente,0003,False,,1517.0,1480.0,False,False,False,False,False,False,20.04126,-100.674598
+primaria-0055,primaria,ESCUELA PRIMARIA CLUB ROTARIO,Acámbaro,0001,True,,1494.0,19.0,False,False,False,True,True,True,20.005702,-100.714891
+primaria-0056,primaria,ESCUELA PRIMARIA CLUB DE LEONES II,Acámbaro,0001,True,,253.0,75.0,False,False,False,False,False,True,19.992672,-100.73254
+primaria-0057,primaria,ESCUELA PRIMARIA EL PROGRESO,Acámbaro,0001,True,,602.0,74.0,False,False,False,False,False,True,20.022404,-100.732771
+primaria-0058,primaria,UTL,Acámbaro,0001,True,,458.0,401.0,False,False,False,False,False,False,20.048733,-100.711314
+primaria-0059,primaria,ESCUELA PRIMARIA JUAN ESCUTIA,Acámbaro,0001,True,,133.0,185.0,False,False,False,False,False,False,20.043154,-100.716894
+primaria-0060,primaria,ESCUELA PRIMARIA URBANA NIÑOS HEROES N6,Acámbaro,0001,True,,253.0,791.0,False,False,False,False,False,False,20.037464,-100.711462
+primaria-0061,primaria,ESCUELA GENERAL IGNACIO ALLENDE,Acámbaro,0001,True,,301.0,867.0,False,False,False,False,False,False,20.036701,-100.711112
+primaria-0062,primaria,Colegio Teresa Martín,Acámbaro,0001,True,,508.0,359.0,False,False,False,False,False,False,20.037069,-100.718772
+primaria-0063,primaria,ESCUELA FRANCISCO I MADERO,Acámbaro,0001,True,,518.0,596.0,False,False,False,False,False,False,20.034928,-100.718103
+primaria-0064,primaria,ESCUELA PRIMARIA CRISTOBAL COLON,Acámbaro,0001,True,,441.0,211.0,False,False,False,False,False,False,20.015537,-100.72317
+primaria-0065,primaria,ESCUELA PRIMARIA GENERAL IGNACIO ZARAGOZA,Acámbaro,0001,True,,233.0,527.0,False,False,False,False,False,False,20.023194,-100.728408
+primaria-0066,primaria,ESCUELA PRIMARIA EMILIANO ZAPATA,Acámbaro,0001,True,,68.0,1299.0,False,False,True,False,False,False,20.054994,-100.730967
+primaria-0067,primaria,Jardín de Niños Fray Pedro de Gante,Acámbaro,0001,True,,500.0,377.0,False,False,False,False,False,False,20.050476,-100.723333
+primaria-0068,primaria,ESCUELA PRIMARIA DIEGO RIVERA,Acámbaro,0001,True,,662.0,542.0,False,False,False,False,False,False,20.028054,-100.717341
+primaria-0069,primaria,ESCUELA PRIMARIA CLUB DE LEONES,Acámbaro,0001,True,,982.0,741.0,False,False,False,False,False,False,20.028582,-100.712838
+primaria-0070,primaria,ESCUELA PRIMARIA IGNACIO RAMIREZ,Acámbaro,0001,True,,767.0,854.0,False,False,False,False,False,False,20.031282,-100.719846
+primaria-0071,primaria,ESCUELA PRIMARIA UJRBANA N 9 MARGARITA MAZA DE JUAREZ,Acámbaro,0001,True,,888.0,862.0,False,False,False,False,False,False,20.032792,-100.72109
+primaria-0072,primaria,CENTRO EDUCATIVO FRAY PEDRO DE GANTE,Acámbaro,0001,True,,942.0,748.0,False,False,False,False,False,False,20.034611,-100.723013
+primaria-0073,primaria,ESCUELA PRIVADA JOSE MA VILASECA,Acámbaro,0001,True,,863.0,684.0,False,False,False,False,False,False,20.035624,-100.723469
+primaria-0074,primaria,ESCUELA PRIMARIA 7 DE NOVIEMBRE,Acámbaro,0001,True,,932.0,815.0,False,False,False,False,False,False,20.036549,-100.725984
+primaria-0075,primaria,Lázaro Cárdenas,San Francisco Rancho Viejo,0068,False,,2585.0,3667.0,False,False,False,False,False,False,20.026604,-100.78894
+primaria-0076,primaria,Emiliano Zapata,San Antonio,0064,False,,3298.0,1486.0,False,False,False,False,False,False,20.00199,-100.698043
+primaria-0077,primaria,Valentín Gómez Farías,San Agustín,0063,False,,10063.0,9126.0,False,False,False,False,False,False,20.126244,-100.854045
+primaria-0078,primaria,Valentín Gómez Farías,El Romero,0062,False,,3264.0,1705.0,False,False,False,False,False,False,20.020383,-100.770288
+primaria-0079,primaria,Presidente Juárez,El Rodeo,0061,False,,9507.0,8114.0,False,False,False,False,False,False,19.963575,-100.622858
+primaria-0080,primaria,Cuauhtémoc,La Purísima Concepción,0058,False,,6102.0,6247.0,False,False,False,False,False,False,20.081801,-100.656345
+primaria-0081,primaria,Lic. Benito Juárez,Puerto de Cabras,0057,False,,21096.0,7774.0,False,False,False,False,False,False,19.990821,-100.978734
+primaria-0082,primaria,Benito Juárez,Providencia de San Agustín,0056,False,,9800.0,8878.0,False,False,False,False,False,False,20.123093,-100.850818
+primaria-0083,primaria,,Corral de Piedras,0055,False,,2867.0,1720.0,False,False,False,False,False,False,20.071369,-100.756347
+primaria-0084,primaria,Hermanos Flores Magón,La Presa de Santa Inés,0054,False,,9586.0,8248.0,False,False,False,False,False,False,19.989726,-100.599958
+primaria-0085,primaria,Vicente Guerrero,La Pila de los Árboles,0052,False,,12117.0,9371.0,False,False,False,False,False,False,20.048049,-100.902605
+primaria-0086,primaria,Niños Héroes,Piedras de Amolar,0051,False,,12802.0,13265.0,False,False,False,False,False,False,20.139141,-100.626329
+primaria-0087,primaria,Vicente Guerrero,Las Partidas,0050,False,,7209.0,8964.0,False,False,False,False,False,False,20.027916,-100.851397
+primaria-0088,primaria,ESCUELA JOSE MARIA MORELOS Y PAVON,Parácuaro,0047,True,,344.0,27.0,False,False,False,False,True,True,20.145076,-100.75816
+primaria-0089,primaria,ESCUELA PRIMARIA URBANA NUMERO 12 EMPERADOR CUAHUTEMOC,Parácuaro,0047,True,,523.0,144.0,False,False,False,False,False,False,20.14391,-100.763521
+primaria-0090,primaria,Niños Héroes,Pantaleón,0046,False,,6384.0,4391.0,False,False,False,False,False,False,19.990345,-100.796017
+primaria-0091,primaria,Miguel Hidalgo,Gaytán del Refugio,0023,False,,9070.0,9266.0,False,False,False,False,False,False,20.145825,-100.668874
+primaria-0092,primaria,,Los Fresnos,0022,False,,964.0,3654.0,False,False,False,False,False,False,20.052723,-100.795243
+primaria-0093,primaria,Ignacio Zaragoza,Chamácuaro,0015,False,,7049.0,6260.0,False,False,False,False,False,False,20.100327,-100.82834
+primaria-0094,primaria,Miguel Hidalgo y Costilla,San Diego de Alcalá (Hacienda de San Diego),0067,False,,8311.0,8514.0,False,False,False,False,False,False,20.030311,-100.863282
+primaria-0095,primaria,Dr. Jaime Torres Bodet,El Piloncillo,0053,False,,5571.0,5275.0,False,False,False,False,False,False,20.1627,-100.709173
+primaria-0096,primaria,Flores Magón,Las Jícamas (La Purísima),0029,False,,5885.0,7259.0,False,False,False,False,False,False,20.063924,-100.840942
+primaria-0097,primaria,División del Norte,San Cayetano,0065,False,,5644.0,5741.0,False,False,False,False,False,False,20.077656,-100.6586
+primaria-0098,primaria,ESCUELA PRIMARIA AURORA JIMENEZ ALDERETE,Acámbaro,0001,True,,708.0,63.0,False,False,False,False,False,True,20.022427,-100.716464
+primaria-0099,primaria,ESCUELA PRIMARIA INDEPENDECIA NACIONAL,Acámbaro,0001,True,,421.0,62.0,False,False,False,False,False,True,20.029226,-100.691471
+primaria-0100,primaria,General Lázaro Cárdenas,La Mesa de San José,0035,False,,6139.0,5547.0,False,False,False,False,False,False,20.179155,-100.714981
+primaria-0101,primaria,Adolfo López Mateos,Tres Marías,0093,False,,6049.0,6399.0,False,False,False,False,False,False,20.137912,-100.697427
+primaria-0102,primaria,,Piedras Chinas,0159,False,,4295.0,1371.0,False,False,False,False,False,False,19.954857,-100.731228
+primaria-0103,primaria,CONAFE,Buenavista (Los Moscos),0039,False,,21379.0,6591.0,False,False,False,False,False,False,19.969722,-100.972917
+primaria-0289,primaria,,San Miguel del Puerto,0123,False,,4140.0,3277.0,False,False,False,False,False,False,20.029768,-100.642095
+primaria-0290,primaria,CURSO COMUNITARIO,La Soledad,0088,False,,8899.0,7729.0,False,False,False,False,False,False,19.978534,-100.825575
+primaria-0291,primaria,,San Luis de los Agustinos,0076,False,,8846.0,8300.0,False,False,False,False,False,False,20.189643,-100.690548
+primaria-0292,primaria,,Las Partidas,0050,False,,6974.0,9181.0,False,False,False,False,False,False,20.028949,-100.849395
+primaria-0293,primaria,,La Granja,0024,False,,3756.0,3755.0,False,False,False,False,False,False,20.082184,-100.70872
+primaria-0294,primaria,,Chamácuaro,0015,False,,7759.0,7099.0,False,False,False,False,False,False,20.102587,-100.836064
+primaria-0295,primaria,Miguel Hidalgo y Costilla,San Diego de Alcalá (Hacienda de San Diego),0067,False,,8658.0,8487.0,False,False,False,False,False,False,20.031936,-100.867165
+primaria-0296,primaria,,San Miguel,0077,False,,3747.0,3092.0,False,False,False,False,False,False,20.039135,-100.647399
+primaria-0297,primaria,CURSO COMUNITARIO,Loretito de las Casas,0030,False,,3537.0,3798.0,False,False,False,False,False,False,20.080613,-100.703345
+primaria-S0022,primaria,BENITO JUAREZ,San Juan Jaripeo,0073,False,,3024.0,252.0,False,False,False,False,False,False,20.007208,-100.760087
+primaria-S0026,primaria,CURSO COMUNITARIO,Piedras Chinas,0159,False,,4196.0,1333.0,False,False,False,False,False,False,19.956107,-100.728322
+primaria-S0027,primaria,CURSO COMUNITARIO,Isla Cerro Grande (Isla Chanaco),0179,False,,21648.0,5591.0,False,False,False,False,False,False,19.935804,-100.955067
+primaria-S0033,primaria,CURSO COMUNITARIO,El Moral,0038,False,,2651.0,1507.0,False,False,False,False,False,False,19.976713,-100.752948
+primaria-S0034,primaria,MONTAÑEZ CENTRO EDUCATIVO ACAMBARENSE A. C.,Acámbaro,0001,True,,1525.0,266.0,False,False,False,False,False,False,20.036105,-100.735575
+primaria-S0036,primaria,JOSEFA ORTIZ DE DOMINGUEZ,Acámbaro,0001,True,,765.0,1022.0,False,False,False,False,False,False,20.031524,-100.724859
+secundaria-0001,secundaria,TELESECUNDARIA NUM. 500,San Mateo Tócuaro,0092,False,,2982.0,451.0,False,False,False,False,False,False,19.967473,-100.727693
+secundaria-0002,secundaria,TELESECUNDARIA NUM. 543,Loreto (Teresa),0091,False,,3181.0,1523.0,False,False,False,False,False,False,20.074089,-100.757322
+secundaria-0003,secundaria,TELESECUNDARIA NUM. 64,Solís,0089,False,,2615.0,2713.0,False,False,False,False,False,False,20.052612,-100.677016
+secundaria-0004,secundaria,TELESECUNDARIA NUM. 485,San Juan Jaripeo,0073,False,,3266.0,1244.0,False,False,False,False,False,False,19.999826,-100.765527
+secundaria-0005,secundaria,TELESECUNDARIA NUM. 627,La Ortiga,0043,False,,24115.0,9317.0,False,False,False,False,False,False,19.965027,-100.999389
+secundaria-0006,secundaria,TELESECUNDARIA NUM. 62,Obrajuelo,0041,False,,9650.0,8964.0,False,False,False,False,False,False,20.113139,-100.850699
+secundaria-0007,secundaria,TELESECUNDARIA NUM. 845,Monte Prieto,0037,False,,3866.0,1255.0,False,False,False,False,False,False,20.085071,-100.782657
+secundaria-0008,secundaria,TELESECUNDARIA NUM. 58,El Maguey,0032,False,,6480.0,6989.0,False,False,False,False,False,False,20.105124,-100.686394
+secundaria-0009,secundaria,ESCUELA SECUNDARIA GENERAL GUATIMURAC,Irámuco,0027,True,,16455.0,484.0,False,False,False,False,False,False,19.963392,-100.91472
+secundaria-0010,secundaria,Telesecundaria No. 545,Inchamácuaro (Chamacuarillo),0026,False,,5854.0,6028.0,False,False,False,False,False,False,20.08291,-100.830617
+secundaria-0011,secundaria,Telesecundaria No. 258,La Encarnación,0019,False,,6819.0,6434.0,False,False,False,False,False,False,20.073191,-100.63572
+secundaria-0012,secundaria,Telesecundaria No. 60,Los Desmontes,0018,False,,4058.0,1092.0,False,False,False,False,False,False,19.957054,-100.739016
+secundaria-0013,secundaria,TELESECUNADARIA 63 RAMON FRAUSTO,Chupícuaro (Nuevo Chupícuaro),0017,True,,2676.0,3503.0,False,False,False,False,False,False,20.068961,-100.68927
+secundaria-0014,secundaria,Telesecundaria No. 61,Chamácuaro,0015,False,,6735.0,6112.0,False,False,False,False,False,False,20.096644,-100.828328
+secundaria-0015,secundaria,Telesecundaria No. 847,La Concepción,0012,False,,4191.0,3466.0,False,False,False,False,False,False,20.174578,-100.738136
+secundaria-0016,secundaria,Telesecundaria No. 207,Arroyo de la Luna,0006,False,,9439.0,8403.0,False,False,False,False,False,False,20.023639,-100.591463
+secundaria-0017,secundaria,Telesecundaria No. 260,Andocutín,0004,False,,13479.0,4204.0,False,False,False,False,False,False,19.952423,-100.863919
+secundaria-0018,secundaria,Montañez Centro Educativo Acambarense,Acámbaro,0001,True,,1556.0,238.0,False,False,False,False,False,False,20.035713,-100.735543
+secundaria-0019,secundaria,TELESECUNDARIA NO 846,Acámbaro,0001,True,,1083.0,270.0,False,False,False,False,False,False,20.021746,-100.69207
+secundaria-0020,secundaria,TELESECUNDARIA 208,Acámbaro,0001,True,,856.0,191.0,False,False,False,False,False,False,20.022524,-100.735318
+secundaria-0021,secundaria,Colegio Josefa Ortiz de Domínguez,Acámbaro,0001,True,,753.0,1016.0,False,False,False,False,False,False,20.031355,-100.725051
+secundaria-0022,secundaria,Instituto Americano,Acámbaro,0001,True,,1417.0,429.0,False,False,False,False,False,False,20.03575,-100.733438
+secundaria-0023,secundaria,ESCUELA SECUNDARIA GENERAL ELIAS MACOTELA GARCIA,Acámbaro,0001,True,,1071.0,961.0,False,False,False,False,False,False,20.035836,-100.727161
+secundaria-0024,secundaria,ESCUELA SECUNDARIA ESTI 6,Acámbaro,0001,True,,863.0,814.0,False,False,False,False,False,False,20.03789,-100.726818
+secundaria-0025,secundaria,Telesecundaria No. 628,San Cayetano,0065,False,,5465.0,5735.0,False,False,False,False,False,False,20.078279,-100.661184
+secundaria-0026,secundaria,Telesecundaria No. 760,San Agustín,0063,False,,10145.0,9215.0,False,False,False,False,False,False,20.124391,-100.854487
+secundaria-0027,secundaria,Telesecundaria No. 626,El Rodeo,0061,False,,9417.0,8021.0,False,False,False,False,False,False,19.965583,-100.621717
+secundaria-0028,secundaria,Telesecundaria No. 516,San Diego de Alcalá (Hacienda de San Diego),0067,False,,8057.0,8554.0,False,False,False,False,False,False,20.029151,-100.860395
+secundaria-0029,secundaria,Telesecundaria No. 541,San Francisco Rancho Viejo,0068,False,,2594.0,3877.0,False,False,False,False,False,False,20.027023,-100.791026
+secundaria-0030,secundaria,Telesecundaria No. 209,Las Jícamas (La Purísima),0029,False,,6123.0,7637.0,False,False,False,False,False,False,20.061171,-100.843971
+secundaria-0031,secundaria,ESCUELA SECUNDARIA GENERAL CENTEOTL,Acámbaro,0001,True,,290.0,242.0,False,False,False,False,False,False,20.017577,-100.724798
+secundaria-0032,secundaria,ESCUELA SECUNDARIA GENERAL MIGUEL BERNAL JIMENEZ,Acámbaro,0001,True,,268.0,317.0,False,False,False,False,False,False,20.044997,-100.715548
+secundaria-0104,secundaria,San Juan Vallejo,San Juan Viejo,0075,False,,4197.0,2416.0,False,False,False,False,False,False,20.088314,-100.751157
+secundaria-0105,secundaria,Telesecundaria 517,Gaytán del Refugio,0023,False,,8634.0,8942.0,False,False,False,False,False,False,20.138798,-100.672623
+secundaria-S0002,secundaria,SECUNDARIA TECNICA NUM. 24,Ninguno [Escuela Tecnológica Agropecuaria],0329,False,,3214.0,3545.0,False,False,False,False,False,False,20.116472,-100.734083
+secundaria-S0003,secundaria,TELESECUNDARIA NUM. 59,Santiaguillo,0086,False,,9161.0,9668.0,False,False,False,False,False,False,20.110978,-100.645161
+secundaria-S0006,secundaria,TELESECUNDARIA NUM. 210,San José De Las Pilas,0072,False,,12047.0,3937.0,False,False,False,False,False,False,19.994679,-100.885896
+secundaria-S0007,secundaria,TELESECUNDARIA NUM. 259,San Luis De Los Agustinos,0076,False,,8836.0,8292.0,False,False,False,False,False,False,20.189452,-100.690513
+secundaria-S0008,secundaria,TELESECUNDARIA NUM. 544,Tres Marías,0093,False,,6187.0,6211.0,False,False,False,False,False,False,20.152293,-100.698216
+secundaria-S0016,secundaria,SECUNDARIA COMUNITARIA,La Chicharronera (Camino Blanco),0016,False,,12350.0,12005.0,False,False,False,False,False,False,20.190765,-100.651223
+secundaria-S0018,secundaria,COLEGIO OXFORD,Acámbaro,0001,True,,507.0,307.0,False,False,False,False,False,False,20.038016,-100.720787
+bachillerato-0001,bachillerato,BACHILLERATO SABES,Irámuco,0027,True,,18674.0,3174.0,False,False,False,False,False,False,19.963967,-100.940504
+bachillerato-0002,bachillerato,PREPARATORIA MIGUEL HIDALGO Y COSTILLA,Acámbaro,0001,True,,129.0,356.0,False,False,False,False,False,False,20.025936,-100.722181
+bachillerato-0004,bachillerato,GRUPO IMPULSOR EDUCATIVO PREPARATORIA TECNOLOGICA DEL SISTEMA ABIERTO,Acámbaro,0001,True,,307.0,680.0,False,False,False,False,False,False,20.026127,-100.725835
+bachillerato-0005,bachillerato,SABES,San Diego de Alcalá (Hacienda de San Diego),0067,False,,8292.0,8518.0,False,False,False,False,False,False,20.030243,-100.863073
+bachillerato-0022,bachillerato,CECYTEC,Acámbaro,0001,True,,1270.0,687.0,False,False,False,False,False,False,20.013452,-100.740234
+bachillerato-0024,bachillerato,BACHILLERATO BIVALENTE MILITARIZADO BATALLON PRIMER LIGERO,Acámbaro,0001,True,,1524.0,268.0,False,False,False,False,False,False,20.036129,-100.73558
+bachillerato-0025,bachillerato,BACHILLERATO SABES CHUPICUARO,Chupícuaro (Nuevo Chupícuaro),0017,True,,2680.0,3492.0,False,False,False,False,False,False,20.068709,-100.688786
+bachillerato-0027,bachillerato,CENTRO DE BACHILLERATO TECNOLOGICO AGROPECUARIO 298,Parácuaro,0047,True,,414.0,142.0,False,False,False,False,False,False,20.143747,-100.762437
+bachillerato-0028,bachillerato,CENTRO DE BACHILLERATO TECNOLOGICO INDUSTRIAL Y DE SERVICIOS NO 147,Acámbaro,0001,True,,807.0,18.0,False,False,False,True,True,True,20.026976,-100.694419
+bachillerato-0030,bachillerato,ESCUELA PREPARATORIA CEAC,Acámbaro,0001,True,,692.0,502.0,False,False,False,False,False,False,20.036728,-100.722132
+bachillerato-S0001,bachillerato,PLANTEL CONALEP 163. ACAMBARO,Jesús Ruiz Ruiz (San Miguel),0287,False,,1174.0,2447.0,False,False,False,False,False,False,20.038667,-100.76104
+bachillerato-S0002,bachillerato,CENTRO DE BACHILLERATO TECNOLÓGICO AGROPECUARIO NO. 298,Ninguno [Escuela Tecnológica Agropecuaria],0329,False,,3102.0,3400.0,False,False,False,False,False,False,20.113983,-100.739081
+bachillerato-S0005,bachillerato,VIDEOBACHILLERATO,Arroyo De La Luna,0006,False,,9289.0,8273.0,False,False,False,False,False,False,20.025398,-100.592803
+bachillerato-S0006,bachillerato,VIDEOBACHILLERATO,Loreto (Teresa),0091,False,,2858.0,1727.0,False,False,False,False,False,False,20.071294,-100.756303
+bachillerato-S0010,bachillerato,VIDEOBACHILLERATO,Chamácuaro,0015,False,,7715.0,7065.0,False,False,False,False,False,False,20.102205,-100.835881
+bachillerato-S0012,bachillerato,TELEBACHILLERATO COMUNITARIO ACAMBARO-MONTE PRIETO,Monte Prieto,0037,False,,3727.0,1222.0,False,False,False,False,False,False,20.083851,-100.783135
+bachillerato-S0017,bachillerato,TELEBACHILLERATO COMUNITARIO ACAMBARO-LA ORTIGA,La Ortiga,0043,False,,24118.0,9314.0,False,False,False,False,False,False,19.964911,-100.999364
+bachillerato-S0018,bachillerato,TELEBACHILLERATO COMUNITARIO ACAMBARO-SAN MATEO TO,San Mateo Tócuaro,0092,False,,2980.0,405.0,False,False,False,False,False,False,19.967383,-100.728141
+bachillerato-S0019,bachillerato,TELEBACHILLERATO COMUNITARIO ACAMBARO ANDOCUTIN,Andocutín,0004,False,,13445.0,4245.0,False,False,False,False,False,False,19.952504,-100.863489
+bachillerato-S0020,bachillerato,TELEBACHILLERATO COMUNITARIO ACAMBARO EL RODEO,El Rodeo,0061,False,,9417.0,8021.0,False,False,False,False,False,False,19.965498,-100.621819
+bachillerato-S0030,bachillerato,CENTRO DE ESTUDIOS DE CELAYA,Acámbaro,0001,True,,209.0,771.0,False,False,False,False,False,False,20.037131,-100.711916
+bachillerato-S0032,bachillerato,JOSEFA ORTIZ DE DOMINGUEZ,Acámbaro,0001,True,,765.0,1022.0,False,False,False,False,False,False,20.031524,-100.724859
+bachillerato-S0034,bachillerato,INSTITUTO AMERICANO,Acámbaro,0001,True,,1400.0,441.0,False,False,False,False,False,False,20.035885,-100.733371
+bachillerato-S0035,bachillerato,INSTITUTO PREUNIVERSITARIO DEL CENTRO DE MEXICO CA,Acámbaro,0001,True,,664.0,604.0,False,False,False,False,False,False,20.034945,-100.719692
+bachillerato-S0036,bachillerato,INSTITUTO TECNICO COMERCIAL ACAMBARO,Acámbaro,0001,True,,962.0,1045.0,False,False,False,False,False,False,20.033142,-100.725727
+salud_primer_nivel-0001,salud_publica,SAN VICENTE MUNGUIA-UMAPS,San Vicente Munguía,0087,False,abierta,12100.0,11687.0,False,False,False,False,False,False,20.105609,-100.59839
+salud_primer_nivel-0002,salud_publica,EL MAGUEY-UMAPS,El Maguey,0032,False,abierta,6506.0,7016.0,False,False,False,False,False,False,20.105331,-100.686262
+salud_primer_nivel-0003,salud_publica,LA CONCEPCION-UMAPS,La Concepción,0012,False,abierta,4311.0,3561.0,False,False,False,False,False,False,20.176925,-100.740238
+salud_primer_nivel-0004,salud_publica,ARROYO DE LA LUNA-UMAPS,Arroyo de la Luna,0006,False,abierta,9550.0,8468.0,False,False,False,False,False,False,20.019612,-100.590777
+salud_primer_nivel-0005,salud_publica,CENTRO DE SALUD,Acámbaro,0001,True,abierta,1490.0,137.0,False,False,False,False,False,False,20.004298,-100.715257
+salud_primer_nivel-0006,salud_publica,UMAPS LOMA DORADA,Acámbaro,0001,True,abierta,510.0,81.0,False,False,False,False,False,True,20.047322,-100.715718
+salud_primer_nivel-0009,salud_publica,LOS ORGANOS-UMAPS,Los Órganos (Los Órganos de Abajo),0042,False,abierta,2710.0,4749.0,False,False,False,False,False,False,20.055673,-100.811731
+salud_primer_nivel-0010,salud_publica,GAYTAN-UMAPS,Gaytán del Refugio,0023,False,abierta,9209.0,9392.0,False,False,False,False,False,False,20.146673,-100.66763
+salud_primer_nivel-0011,salud_publica,UNIDAD DE MEDICA FAMILIAR ISSTE,Acámbaro,0001,True,derechohabientes,503.0,50.0,False,False,False,False,True,True,20.023649,-100.718086
+salud_primer_nivel-0012,salud_publica,ANDOCUTIN-UMAPS,Andocutín,0004,False,abierta,13427.0,4144.0,False,False,False,False,False,False,19.95327,-100.864273
+salud_primer_nivel-0013,salud_publica,SANTIAGUILLO-UMAPS,Santiaguillo,0086,False,abierta,9146.0,9491.0,False,False,False,False,False,False,20.108305,-100.642293
+salud_primer_nivel-0015,salud_publica,CHAMACUARO-UMAPS,Chamácuaro,0015,False,abierta,7554.0,6592.0,False,False,False,False,False,False,20.105308,-100.829418
+salud_primer_nivel-0016,salud_publica,UMAPS CHUPICUARO CENTRO DE SALUD,Chupícuaro (Nuevo Chupícuaro),0017,True,abierta,2623.0,3417.0,False,False,False,False,False,False,20.069877,-100.692005
+salud_primer_nivel-0017,salud_publica,EL JARAL DEL REFUGIO-UMAPS,Jaral del Refugio,0028,False,abierta,4180.0,4533.0,False,False,False,False,False,False,20.11479,-100.72333
+salud_primer_nivel-0018,salud_publica,MONTE PRIETO-UMAPS,Monte Prieto,0037,False,abierta,3933.0,1232.0,False,False,False,False,False,False,20.085605,-100.781928
+salud_primer_nivel-0020,salud_publica,TOCUARO-UMAPS,San Mateo Tócuaro,0092,False,abierta,2910.0,860.0,False,False,False,False,False,False,19.969398,-100.72388
+salud_primer_nivel-0022,salud_publica,UMAPS PARACUARO,Parácuaro,0047,True,abierta,472.0,21.0,False,False,False,True,True,True,20.146194,-100.759954
+salud_primer_nivel-0023,salud_publica,CENTRO DE SALUD ACAMBARO,Acámbaro,0001,True,abierta,410.0,160.0,False,False,False,False,False,False,20.020351,-100.731537
+salud_primer_nivel-0082,salud_publica,SAN DIEGO-UMAPS,San Diego de Alcalá (Hacienda de San Diego),0067,False,abierta,8711.0,8467.0,False,False,False,False,False,False,20.031974,-100.867694
+salud_primer_nivel-0092,salud_publica,CENTRO UMAPS VELASCO IBARRA,Acámbaro,0001,True,abierta,373.0,11.0,False,False,False,True,True,True,20.027989,-100.689917
+salud_primer_nivel-0096,salud_publica,UMAPS IRAMUCO,Irámuco,0027,True,abierta,16439.0,515.0,False,False,False,False,False,False,19.96398,-100.914982
+salud_primer_nivel-C0001,salud_publica,HGSMF 13 ACAMBARO,Acambaro,0001,True,derechohabientes,686.0,602.0,False,False,False,False,False,False,20.038597,-100.724892
+salud_primer_nivel-C0004,salud_publica,SAN JUAN JARIPEO-UMAPS,San Juan Jaripeo,0073,False,abierta,3016.0,416.0,False,False,False,False,False,False,20.005842,-100.760773

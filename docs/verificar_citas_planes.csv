@@ -1,0 +1,65 @@
+id,documento,texto_de,pagina_impresa,pagina_pdf,texto,encontrada_en_la_pagina,paginas_donde_aparece
+mun_migracion,municipal,pdftotext,18,18,considerado como de muy alta migración,sí,18
+mun_pob_1980_2006,municipal,pdftotext,18,18,"98,126 habitantes en 1980 a una de 115,121 en el 2006",sí,18
+mun_turnos_emigracion,municipal,pdftotext,31,31,emigración y la baja población que existe en edad escolar,sí,31
+mun_derechohabiencia_2006,municipal,pdftotext,34,34,Para 2006 se tuvo una disminución considerable a 19.01%,sí,34
+mun_conapo_fuente,municipal,pdftotext,34,34,Proyección de Población del Consejo Nacional de Población (CONAPO) 2000-2030,sí,34
+mun_polos,municipal,pdftotext,6,6,microregiones o polos de desarrollo,sí,6
+mun_eje_iramuco,municipal,pdftotext,58,58,"Eje de desarrollo, Irámuco",sí,58
+mun_iramuco_viviendas,municipal,pdftotext,59,59,"concentró un total de 3,557 viviendas",sí,59
+mun_iramuco_escuelas,municipal,pdftotext,60,60,"11 centros de educación preescolar, 9 primarias y 3 tele secundarias",sí,60
+mun_iramuco_concentrador,municipal,pdftotext,61,61,Irámuco se constituirá como el principal concentrador de población micro regional,sí,61
+mun_paracuaro_secundaria,municipal,pdftotext,64,64,secundaria técnica localizada en la carretera Parácuaro- El Jaral,sí,64
+mun_deficit_habitacional,municipal,pdftotext,214,214,disminuir el déficit habitacional,sí,214
+mun_reservas_vivienda,municipal,pdftotext,215,215,Identificar y adquirir reservas de terreno para las acciones de vivienda,sí,215
+mun_fraccionamientos,municipal,pdftotext,216,216,Mantener estricto control de los fraccionamientos,sí,216
+mun_ordenamiento_6_meses,municipal,pdftotext,241,241,en un plazo no mayor a 6 meses a partir de la publicación de este plan,sí,241
+mun_meta_educacion_polos,municipal,pdftotext,254,254,medio superior al 100% en los Polos de Desarrollo Rural,sí,254
+mun_meta_abasto_polos,municipal,pdftotext,255,255,Cada Polo de Desarrollo contará con plazas públicas para el,sí,255
+mun_meta_escuelas_polos,municipal,pdftotext,255,255,Cada Polo deberá contar con escuelas desde preescolar hasta nivel,sí,255
+mun_meta_salud_polos,municipal,pdftotext,255,255,Crear centros comunitarios de salud en cada polo de desarrollo,sí,255
+prot_pob_2010,prot,pdftotext,29,30,183 mil 194 personas,sí,29
+prot_ciudad_pct,prot,pdftotext,30,31,alberga al 31.64% de la población de la Subregión,sí,30
+prot_acambaro_tasas,prot,pdftotext,30,31,un decremento en sus tasas poblacionales,sí,30
+prot_remesas,prot,pdftotext,31,32,El 20% de las viviendas de la Subregión reciben remesas,sí,31
+prot_cuadro3,prot,pdftotext,38,39,Dotación de equipamiento en la Subregión 10,sí,38
+prot_cuadro3_acambaro_2014,prot,pdftotext,38,39,"112,076",sí,38
+prot_cuadro3_subregion_2014,prot,pdftotext,38,39,"189,535",sí,38
+prot_ciudad_2030,prot,pdftotext,42,43,"con una población esperada de 51,613",sí,42
+prot_proyecciones,prot,pdftotext,47,48,2.2.2.3 Proyecciones de población,sí,8;47
+prot_exponencial,prot,pdftotext,47,48,La tendencia muestra un crecimiento poblacional exponencial,sí,47
+prot_migracion_no_contemplada,prot,pdftotext,47,48,no parecen contempladas en esta proyección,sí,47
+prot_iramuco,prot,pdftotext,59,60,actualmente haya un fuerte crecimiento poblacional y de desarrollo habitacional,sí,59
+prot_crec_2016,prot,pdftotext,59,60,3.14%,sí,45;59
+prot_crec_2020,prot,pdftotext,59,60,5.07%,sí,59
+prot_crec_2030,prot,pdftotext,59,60,8.9%,sí,30;59
+p40_unidades_2010,plan2040,OCR,127,127,"23 unidades de servicio médico, 1 IMSS, 1 ISSTE y 21 de SSG",sí,127
+p40_carencia_salud,plan2040,OCR,138,138,el 24.6% de la población presenta carencia por acceso a servicios de salud,sí,138
+p40_intensidad_migratoria,plan2040,OCR,138,138,intensidad migratoria clasificado como alto,sí,138
+p40_amenaza_migracion,plan2040,OCR,142,142,"amenazas los temas de corrupción en gobierno, el narcotráfico y la migración",sí,142
+p40_equipamiento_educativo,plan2040,OCR,143,143,"Proporción de equipamiento educativo (primarias, secundarias, bachillerato y universidad) por número de habitantes inferior a la proporción estatal",sí,143
+p40_menor_numero_escuelas,plan2040,OCR,158,158,"menor número de bibliotecas públicas, escuelas en primarias, en secundaria y en bachillerato por habitante",sí,158
+p40_salud_localidades,plan2040,OCR,162,162,Garantizar el acceso a servicios de salud en localidades rurales y urbanas,sí,162
+p40_instituto_planeacion,plan2040,OCR,166,166,Contar con el Instituto de Planeación que integre los planes y proyectos,sí,166
+p40_equipamiento_urbano,plan2040,OCR,169,169,"Impulsar el equipamiento urbano de educación, salud, vialidad y deporte acorde a las necesidades de todo el municipio",sí,169
+p40_instrumento_territorial,plan2040,OCR,172,172,Contar con un instrumento técnico normativo en materia ambiental y territorial dentro del Municipio,sí,172
+p40_pduoet,plan2040,OCR,174,174,Programa de Desarrollo Urbano y Ordenamiento Ecológico Territorial del Municipio,sí,174
+p40_implan,plan2040,OCR,174,174,Creación de Instituto Municipal de Planeación,sí,174
+p40_observatorio,plan2040,OCR,176,176,la creación de un observatorio ciudadano local,sí,176
+pg_pob_2010_2015,programa,OCR,41,26,presentó una población de 109 mil 30 habitantes,sí,41
+pg_pob_2015,programa,OCR,41,26,contaba con 112 mil 125 habitantes,sí,41
+pg_pob_2020_disminucion,programa,OCR,42,27,"de 108 mil 697 habitantes, esto significa que en el último quinquenio la población tuvo paulatina disminución",sí,42
+pg_remesas,programa,OCR,43,28,fue un total de 68 millones de dólares,sí,43
+pg_iramuco_p43,programa,OCR,43,28,275 habitantes siendo el 5.77 por ciento,sí,43
+pg_sin_afiliacion,programa,OCR,44,29,el 20.72,sí,44
+pg_unidades_salud,programa,OCR,45,30,"26 unidades de atención médica, de las cuales 1 corresponde al Instituto Mexicano del Seguro Social",sí,45
+pg_unidades_ssg,programa,OCR,45,30,24 unidades a la Secretaría de Salud del Estado de Guanajuato,sí,45
+pg_viviendas_habitadas,programa,OCR,49,34,"30,171 viviendas habitadas",sí,49
+pg_iramuco_6725,programa,OCR,55,40,"6.18 por ciento con 6,725",sí,55
+pg_baja_cobertura,programa,OCR,55,40,"baja cobertura de servicios públicos y equipamiento, debido a condiciones de dispersión y baja accesibilidad",sí,55
+pg_11_polos,programa,OCR,55,40,el municipio cuenta con 11 polos de desarrollo rural,sí,55
+pg_pmduoet_elaboracion,programa,OCR,60,45,encuentra en elaboración por un grupo de especialistas,sí,60
+pg_concluir_pmduoet,programa,OCR,68,53,Concluir el Programa Municipal de Desarrollo Urbano,sí,68
+pg_actualizar_2040,programa,OCR,68,53,Actualizar el Plan de Desarrollo Municipal visión 2040,sí,68
+pg_unidad_medica_dif,programa,OCR,73,58,llevando la Unidad médica,sí,73
+pg_4_mercados,programa,OCR,83,68,proyecto integral de los 4 mercados,sí,83
