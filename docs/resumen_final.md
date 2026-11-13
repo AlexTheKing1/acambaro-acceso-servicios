@@ -2,7 +2,7 @@
 
 **"¿Quién está lejos hoy? Acceso a servicios y vaciamiento urbano en Acámbaro"** (título de trabajo, D51)
 
-Fecha: 2026-11-13. Este documento junta las cifras definitivas de todas las fases y es la base para redactar los hallazgos del sitio y del PDF. El detalle está en `docs/resumen_fase4.md` (acceso), `docs/resumen_fase4b.md` (crecimiento y vaciamiento), `docs/validacion.md` (V1–V53) y `docs/decisiones.md` (D01–D57).
+Fecha: 2026-11-13, actualizado en la fase 6. Este documento junta las cifras definitivas de todas las fases y es la base para redactar los hallazgos del sitio y del PDF. El detalle está en `docs/resumen_fase4.md` (acceso), `docs/resumen_fase4b.md` (crecimiento y vaciamiento), `docs/metodo.md` (método y normas), `docs/contraste_planes.md` (planes oficiales), `docs/validacion.md` (V1–V58) y `docs/decisiones.md` (D01–D63). Lo que cambió en la fase 6 está al final (sección 8).
 
 **Cómo leer las cifras**
 - La población es la del **Censo 2020**, la más reciente por cuadra. No habrá otra hasta 2030. Los servicios son los vigentes en 2026. Es decir, se mide **quién vive lejos hoy de los servicios de hoy, con la gente de 2020**.
@@ -21,7 +21,7 @@ Fecha: 2026-11-13. Este documento junta las cifras definitivas de todas las fase
 | Primaria | 670 m | 2 km |
 | Secundaria | 1 330 m | 5 km |
 | Bachillerato | 3 330 m | 10 km |
-| Salud pública de primer nivel | 1 330 m | 5 km |
+| Salud pública de primer nivel (y salud abierta, D58) | 1 330 m | 5 km |
 | Tienda básica | 500 m | no medible |
 | Mercado o supermercado | 1 000 m | 10 km |
 
@@ -32,20 +32,24 @@ Fecha: 2026-11-13. Este documento junta las cifras definitivas de todas las fase
 | Primaria | 17 853 | 32 % | **firme** (55 / 32 / 10 %) |
 | Bachillerato público | 24 430 | 43 % | **frágil**: con el umbral holgado, 1 % |
 | Secundaria | 13 400 | 24 % | moderada |
-| Salud pública | 12 205 | 22 % | moderada |
+| Salud pública (cualquier unidad pública) | 12 205 | 22 % | moderada |
+| **Salud abierta a toda la población** (sin IMSS ordinario ni ISSSTE, D58) | **32 660** | **58 %** | **firme** en el sentido (72 / 58 / 26 % con los tres umbrales) |
 | Preescolar | 4 636 | 8 % | moderada |
 | Tienda básica | 556 | 1 % | firme (casi nadie lejos) |
+
+**Salud abierta**: la ciudad tiene 4 unidades que atienden a cualquier persona (Secretaría de Salud de Guanajuato). Las otras dos públicas, el Hospital General de Subzona 13 del IMSS y la clínica del ISSSTE, solo atienden a sus derechohabientes. Sin ellas, la gente lejos de una unidad de salud pasa de 22 % a 58 %. De las 11 479 personas **sin afiliación a servicios de salud** de la ciudad, **7 039 (61 %) viven lejos** de una unidad abierta (antes se contaban 2 380). La distancia mediana por persona sube de 950 a 1 470 m.
 
 Grupos que más usan cada servicio: 1 700 niñas y niños de 6–11 años lejos de una primaria (de 5 139); 1 730 personas de 60 y más lejos de salud pública (de 8 748); 2 799 de 60 y más y 1 157 con discapacidad lejos de un mercado o supermercado.
 
 ### Las otras localidades urbanas: lo más claro del estudio
 - **Irámuco (6 275 hab.)**: **no hay mercado ni supermercado registrado** (100 % lejos con cualquier umbral; el más cercano está en Santa Ana Maya, Michoacán, a 13–18 km). Primaria: 80 % lejos (88 / 80 / 56 %). Salud pública: 64 %. **Firme.**
-- **Parácuaro (4 159 hab.)**: **no hay secundaria dentro de la localidad**; la atiende la Secundaria Técnica 24, a unos 5.5 km por camino. **Firme.**
+- **Parácuaro (4 159 hab.)**: **no hay secundaria dentro de la localidad**; la atiende la Secundaria Técnica 24, a unos 5.5 km por camino. **Firme.** Es la única de las 4 localidades de 2 500 o más sin secundaria; las 4 tienen centro de salud abierto, como pide la norma de 1999.
+- En Irámuco, Parácuaro, Chupícuaro y lo rural, separar la salud abierta **no cambia** las cifras (todas sus unidades cercanas son de la Secretaría de Salud).
 - **Chupícuaro (2 583 hab.)**: preescolar 31 %, primaria 39 %; lo demás, bajo.
 
 ### Localidades rurales (208 localidades, 39 083 habitantes)
 - Mercado o supermercado: 15 733 personas lejos (40 %). **Firme en el sentido** (86 / 40 / 11 %), sin tianguis porque ninguna fuente los registra.
-- Salud pública: 6 635 (17 %). **Moderada**: si contaran 6 unidades sin CLUES, bajaría a 2 992; con el umbral holgado, 0.
+- Salud pública: 6 635 (17 %). **Moderada**: si contaran 6 unidades sin CLUES, bajaría a 2 992; con el umbral holgado, 0. Igual con salud abierta (1 152 sin afiliación lejos, 14 %); sin las Unidades Médicas Rurales del IMSS, +2 personas.
 - Escuelas: 2–3 % lejos con el principal. **Frágil** hacia arriba: con el estricto, 24–27 % para secundaria y bachillerato.
 - Tienda básica: **no medible** (el DENUE no registra tiendas rurales).
 
@@ -53,7 +57,8 @@ Grupos que más usan cada servicio: 1 700 niñas y niños de 6–11 años lejos 
 - Lo rural es aproximado: no ve ríos, cerros ni presas; las distancias reales probablemente son mayores.
 - 5 rutas comparadas con Google Maps: diferencia mediana de 2 %. Sirve para saber que el orden de magnitud está bien, no como margen de error.
 - La revisión remota de servicios no fue al azar: 74 % de los 68 revisados se ven en la imagen. Pendientes de campo: Monte Prieto (primaria) y el Mercado 22 de Octubre.
-- Falta cotejar el texto original del SNEU. Si el radio es distancia recorrida y no línea recta, el umbral correcto sería el estricto, y todas las cifras de la ciudad subirían.
+- La norma (SEDESOL 1999, que SEDATU 2024 reconoce como vigente) no dice si el radio es en línea recta: por eso se reportan tres umbrales (`docs/metodo.md`). Si fuera distancia recorrida, el umbral correcto sería el estricto y todas las cifras de la ciudad subirían.
+- Bachillerato: la norma da de 2 a 5 km para la preparatoria general; nuestros 2.5 / 3.33 / 5 km caen dentro de ese rango, y por eso la cifra es frágil.
 
 ---
 
@@ -65,6 +70,7 @@ Grupos que más usan cada servicio: 1 700 niñas y niños de 6–11 años lejos 
 - La pérdida de población se concentró en el **primer kilómetro alrededor del centro** (−2 093 personas, −12 %). **Firme.**
 - Pero el % de deshabitadas subió en **todos los anillos**, no solo en el centro. En 2020 el % de no habitadas es casi igual en el centro (26 %) que a 1–3 km (24–26 %), y un poco mayor en la orilla (31 %).
 - 4 AGEB "se vacían" (alto % de no habitadas y pierden población), con 1 227 habitantes, y están en la **orilla oriente**, no en el centro (D47). **Moderada**: depende de cortes de la tipología.
+- **Irámuco 2010–2020**: población +5 % (5 954 → 6 275), viviendas +27 % (1 839 → 2 336) y viviendas deshabitadas casi el doble (356 → 658). Venía de perder población desde 2000 (6 232). El PROT (2014, p. 59) describía "actualmente" un "fuerte crecimiento poblacional y de desarrollo habitacional": el crecimiento de casas ocurrió, el de población fue pequeño y buena parte de las casas nuevas quedó vacía. **Firme** (censos completos).
 - Las otras localidades urbanas tienen más viviendas no habitadas que la ciudad: Irámuco 38 %, Parácuaro 42 %, Chupícuaro 46 %. Ahí pesa mucho el uso temporal (18–20 % en Parácuaro y Chupícuaro).
 
 ### Con qué va junto el vaciamiento (correlaciones entre áreas, no causas)
@@ -189,9 +195,33 @@ Figura: `docs/figuras/fase5_nse.png`. Tablas: `nse_ageb.csv`, `nse_localidades.c
 8. **El índice socioeconómico es una aproximación por área**, no el NSE AMAI ni ingreso.
 9. **Las verificaciones fueron remotas** (Google Earth y Maps, D13) y no al azar. Las salidas de campo siguen pendientes. Las 28 zonas de cuadras nuevas 2010–2020 de las 4 localidades urbanas no se revisaron en imágenes.
 
-## 7. Decisiones pendientes para Alejandro
+## 7. Los planes oficiales (fase 6)
+
+Detalle en `docs/contraste_planes.md`. Figura: `docs/figuras/fase6_proyeccion.png`.
+
+- **Población proyectada contra censada**: el PROT (2014) proyectaba +5.07 % para la subregión entre 2010 y 2020; el censo dio **−1.4 %** (unas 11 900 personas menos de lo proyectado). Para Acámbaro daba 112 076 en 2014; el municipio nunca pasó de 110 718 (2000) y en 2020 tenía 108 697. **Firme.**
+- **La ciudad superó lo proyectado mientras el municipio y la subregión quedaron por debajo**: el PROT esperaba 51 613 habitantes en la ciudad en 2030 (misma definición que el censo); en 2020 había 56 597 y en 2025 unos 56 771. Es concentración en la ciudad y pérdida en el resto, no un "optimismo" general de las proyecciones. **Moderada** (compara una meta de 2030 con datos de 2020–2025).
+- **Diagnósticos que ya existían**: la "muy alta migración" (Plan Municipal, p. 18) sigue (14.9 % de los hogares recibe remesas en 2025); la falta de secundaria en Parácuaro (p. 64) sigue.
+- **Metas que no se cumplieron con el tiempo**: de los 7 polos de desarrollo rural, solo **Chupícuaro** tiene todo lo que pedía el plan (escuelas de preescolar a bachillerato, centro de salud y mercado). Parácuaro no tiene secundaria; Inchamácuaro no tiene bachillerato ni unidad de salud; en 4 polos el abasto **no se puede verificar** (sin mercado registrado; puede haber tianguis). El plan de ordenamiento comprometido a 6 meses (p. 241) no se localizó.
+- **Vivienda**: el Plan Municipal hablaba de "déficit habitacional" (p. 214); entre 2010 y 2020 el municipio ganó 6 348 viviendas sin ganar población y las deshabitadas llegaron a 11 130 (24 %).
+
+## 8. Qué cambió respecto a la versión anterior (fase 6, 2026-11-13)
+
+1. **Nueva medida: salud abierta a toda la población** (D58). En la ciudad, las personas lejos de una unidad de salud pasan de 12 205 (22 %) a **32 660 (58 %)** y las personas sin afiliación lejos, de 2 380 a **7 039**. Es el cambio más grande de la fase. En lo rural y en las otras 3 localidades urbanas, sin cambio. La medida anterior (salud pública) se conserva para comparar.
+2. **Nueva población de referencia: sin afiliación a servicios de salud** (Censo 2020), en ciudad y rural.
+3. **Localidades de 2 500 o más** y **polos de desarrollo** evaluados contra la norma de 1999 y la meta del Plan Municipal (D59, D60).
+4. **Irámuco 2000–2020** y **población 2000 y 2005** del municipio y la subregión (ITER bajados en esta fase, D63).
+5. **Proyección contra realidad** y **contraste con los planes** (`docs/contraste_planes.md`, D62).
+6. **Nota de método con referencias normativas** (`docs/metodo.md`): SEDESOL 1999, SEDATU–GIZ 2024, NOM-002-SEDATU-2022, la redacción acordada, el rango del bachillerato y la norma del tianguis.
+7. **Servicios junto a carreteras**: intentado, no interpretable con los datos actuales (D61); no se usa en los textos.
+8. **Sin cambios**: factor 1.33, umbrales, tipología, índice socioeconómico y todas las demás cifras de las secciones 1 a 6 (comprobado al volver a correr `11`, V54).
+
+## 9. Decisiones pendientes para Alejandro
 
 D54 (excepción urbana) y D56 (fórmula del índice) quedaron confirmadas por Alejandro el 2026-11-13.
 
-1. Pendientes que siguen de antes: cotejar el SNEU original; salidas de campo (`docs/verificar_campo.csv`); red de caminos rural (RNC al release).
-2. Siguiente fase: sitio web y reporte PDF.
+1. Pendientes que siguen de antes: cotejar el SNEU original (las páginas de SEDESOL, SEDATU y la NOM se citan como las diste; Claude no tiene esos documentos); salidas de campo (`docs/verificar_campo.csv` y `docs/verificar_campo_fase6.csv`, secundaria técnica de Parácuaro); red de caminos rural (RNC al release).
+2. Confirmar si hay un plan municipal más reciente o un PMDUOET publicado.
+3. ¿Qué medida de salud va como principal en el sitio: salud abierta (lo que puede usar cualquier persona) o salud pública? Propuesta de Claude: salud abierta como principal y salud pública como comparación, porque el 20 % sin afiliación no puede usar el IMSS ni el ISSSTE.
+4. Propuesta no aplicada (D63): con los ITER 2000 y 2005 se podría extender la superficie construida por habitante a 2000 y 2005.
+5. Siguiente fase: sitio web y reporte PDF.

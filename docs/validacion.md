@@ -332,3 +332,28 @@ Todos los resultados son **provisionales**: `verificacion_zonas.csv` sigue sin e
 - Sensibilidad rural: 0.87 y 0.81; mismo quintil solo 45 % y 44 % (el componente explica 43 %). El orden general se sostiene, pero el quintil de una localidad concreta **no es firme**.
 - Irámuco cae en el quintil urbano más bajo con sus 5 AGEB; por eso el cruce se repite solo con la ciudad (mismos quintiles): Q1 de la ciudad son 3 AGEB con 358 personas.
 - Cruce con el acceso: población de `acceso_cuadras` 69 613; sin quintil 1 692 (AGEB sin índice). Rural: 39 083; sin quintil 1 387.
+
+## Fase 6 — Ajustes y contraste con los planes (2026-11-13)
+
+Todas las claves en `data/processed/validacion_fase6.json`.
+
+**V54 · Control: nada de lo anterior cambió.** Se volvió a correr `11_accesibilidad.py` en un entorno nuevo: los CSV de salida son idénticos a los versionados; `acceso_cuadras.gpkg` cambia solo en bytes internos del archivo (1 658 cuadras, mismas columnas, mismos valores y geometrías). Se restauró el versionado.
+
+**V55 · Salud abierta (`27_salud_abierta.py`).**
+- Clasificación: 78 sedes de salud pública = 60 abiertas + 11 UMR (abiertas) + 7 solo derechohabientes; ninguna sin clasificar. 3 clasificadas por nombre (UMF ISSSTE de la ciudad, un ISSSTE del DENUE y una "clínica centro de salud rural").
+- SMP y DIF: 0 sedes de salud pública traen una clave CLUES de SMP o DIF (45 registros SMP y 1 DIF en la franja; el DIF es "de asistencia social", sin nivel de atención).
+- Control de igualdad: la distancia a "salud pública" recalculada en `27` es idéntica a la de `11` en las 1 658 cuadras (diferencia máxima 0 m) y en las 208 localidades rurales; la población lejos coincide con `acceso_resumen_por_localidad.csv` en las 5 zonas y los 3 umbrales.
+- Subconjunto: con salud abierta, nadie queda más cerca que con salud pública (es un subconjunto). Cambia la sede más cercana en 336 cuadras de la ciudad y en 16 localidades rurales; en 0 cuadras de Irámuco, Parácuaro y Chupícuaro.
+- PSINDER oculto: ciudad, 11 479 publicado por AGEB contra 11 106 visible por cuadra (373 ocultos, 3 %); 420 cuadras con "*". Rural: 8 039 visible; 67 localidades con "*" (278 habitantes en total); oculto rural = 58 personas (ITER municipal 22 418 − urbanas 14 321 − rurales visibles 8 039).
+- **Salió mal / cuidado**: el mínimo visible de sin afiliación en la ciudad (6 908) está cerca de la estimación por AGEB (7 039): el supuesto D10 no mueve el resultado.
+
+**V56 · Localidades ≥ 2 500 y polos (`28_localidades_y_polos.py`).** Cada "sí" trae las claves de las sedes (`*_ids`), comprobado para los 6 servicios en los 8 polos. Parácuaro: la secundaria más cercana al punto ITER es la Telesecundaria 847 (5 620 m, recta × 1.33); la ST 24 (D39) queda a una distancia parecida. Mediana por persona a pie en Parácuaro: 5 380 m.
+
+**V57 · Servicios junto a carreteras (`29_vialidades.py`).** 0 de 307 sedes a ≤ 50 m de un tramo "Carretera" (2 primarias a ≤ 100 m); 10 a ≤ 50 m de una avenida o bulevar. La red solo tiene 10.8 km de carretera en 5 localidades. **No interpretable** (D61).
+
+**V58 · Planes (`30_planes.py`).**
+- Citas: 34 de 34 encontradas en la página impresa indicada (`docs/verificar_citas_planes.csv`). Algunas cadenas aparecen también en otras páginas (p. ej. "8.9%" en p. 30 del PROT), lo que no cambia la cita.
+- Base del PROT: su población 2010 de la subregión (183 194, p. 29) es exactamente la suma del censo 2010 de los 4 municipios.
+- Ciudad: 31.64 % (PROT p. 30) × 183 194 = 57 963, contra 57 972 de la localidad 0001 en el censo 2010 (diferencia de 9 por redondeo del porcentaje): misma definición.
+- ITER 2000 y 2005 bajados al primer intento. El de 2005 usa otros nombres de columna (`p_total`, `t_vivhab`): se renombran. Irámuco aparece como "IRAMUCO" (2000) e "Iramuco" (2005), misma clave 0027.
+- **Salió mal**: el PROT es inconsistente consigo mismo (189 535 en 2014 es +3.5 % sobre 2010, más que el +3.14 % que da para 2016). Se reportan ambas cifras como aparecen. La gráfica que se esperaba en 2.2.2.3 (p. 47) no existe en el PDF.

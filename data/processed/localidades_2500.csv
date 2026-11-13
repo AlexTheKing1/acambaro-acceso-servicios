@@ -1,0 +1,5 @@
+cve_loc,localidad,pob_2020,salud_abierta_dentro,salud_abierta_n,salud_abierta_dist_m,salud_abierta_mas_cercano,secundaria_dentro,secundaria_n,secundaria_dist_m,secundaria_mas_cercano,secundaria_mediana_por_persona_a_pie_m,salud_abierta_ids,secundaria_ids,norma
+0001,Acámbaro,56597,sí,4,0,,sí,10,0.0,,,salud_primer_nivel-0005;salud_primer_nivel-0006;salud_primer_nivel-0023;salud_primer_nivel-0092,secundaria-0018;secundaria-0019;secundaria-0020;secundaria-0021;secundaria-0022;secundaria-0023;secundaria-0024;secundaria-0031;secundaria-0032;secundaria-S0018,más de 10 000 hab.: aplica el centro de salud urbano
+0027,Irámuco,6275,sí,1,0,,sí,1,0.0,,,salud_primer_nivel-0096,secundaria-0009,SEDESOL 1999: 1 centro de salud rural por localidad de 2 500 a 10 000 hab.
+0047,Parácuaro,4159,sí,1,0,,no,0,5620.0,Telesecundaria No. 847 (La Concepción; secundaria-0015),5380.0,salud_primer_nivel-0022,,SEDESOL 1999: 1 centro de salud rural por localidad de 2 500 a 10 000 hab.
+0017,Chupícuaro (Nuevo Chupícuaro),2583,sí,1,0,,sí,1,0.0,,,salud_primer_nivel-0016,secundaria-0013,SEDESOL 1999: 1 centro de salud rural por localidad de 2 500 a 10 000 hab.

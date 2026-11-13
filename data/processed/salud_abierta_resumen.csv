@@ -1,0 +1,91 @@
+medida,umbral,umbral_m,localidad,escala,grupo,variable,pob_lejos,pob_lejos_minimo_visible,pob_total,pct_lejos,localidades_lejos,cambio_vs_salud_publica
+salud_publica,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,25857,25857,56596,45.7,,0
+salud_publica,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,5373,5222,11479,46.8,,0
+salud_publica,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,5112,5112,6275,81.5,,0
+salud_publica,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,760,795,950,80.0,,0
+salud_publica,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,1281,1281,4159,30.8,,0
+salud_publica,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,302,282,1085,27.8,,0
+salud_publica,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,415,415,2583,16.1,,0
+salud_publica,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,122,124,756,16.1,,0
+salud_publica,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,19587,19587,39083,50.1,97.0,0
+salud_publica,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,3775,3775,8039,47.0,97.0,0
+salud_publica,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,12205,12205,56596,21.6,,0
+salud_publica,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,2380,2243,11479,20.7,,0
+salud_publica,principal,1330,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,4043,4043,6275,64.4,,0
+salud_publica,principal,1330,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,577,578,950,60.8,,0
+salud_publica,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,424,424,4159,10.2,,0
+salud_publica,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,86,71,1085,7.9,,0
+salud_publica,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,137,137,2583,5.3,,0
+salud_publica,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,39,25,756,5.2,,0
+salud_publica,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,6635,6635,39083,17.0,25.0,0
+salud_publica,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,1152,1152,8039,14.3,25.0,0
+salud_publica,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,2665,2665,56596,4.7,,0
+salud_publica,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,497,500,11479,4.3,,0
+salud_publica,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,1205,1205,6275,19.2,,0
+salud_publica,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,159,188,950,16.8,,0
+salud_publica,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,0,0,4159,0.0,,0
+salud_publica,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,0,0,1085,0.0,,0
+salud_publica,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,50,50,2583,1.9,,0
+salud_publica,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,14,18,756,1.9,,0
+salud_publica,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,0,0,39083,0.0,0.0,0
+salud_publica,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,0,0,8039,0.0,0.0,0
+salud_abierta,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,40695,40695,56596,71.9,,14838
+salud_abierta,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,8634,8471,11479,75.2,,3261
+salud_abierta,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,5112,5112,6275,81.5,,0
+salud_abierta,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,760,795,950,80.0,,0
+salud_abierta,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,1281,1281,4159,30.8,,0
+salud_abierta,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,302,282,1085,27.8,,0
+salud_abierta,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,415,415,2583,16.1,,0
+salud_abierta,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,122,124,756,16.1,,0
+salud_abierta,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,19594,19594,39083,50.1,98.0,7
+salud_abierta,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,3775,3775,8039,47.0,98.0,0
+salud_abierta,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,32660,32660,56596,57.7,,20455
+salud_abierta,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,7039,6908,11479,61.3,,4659
+salud_abierta,principal,1330,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,4043,4043,6275,64.4,,0
+salud_abierta,principal,1330,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,577,578,950,60.8,,0
+salud_abierta,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,424,424,4159,10.2,,0
+salud_abierta,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,86,71,1085,7.9,,0
+salud_abierta,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,137,137,2583,5.3,,0
+salud_abierta,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,39,25,756,5.2,,0
+salud_abierta,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,6635,6635,39083,17.0,25.0,0
+salud_abierta,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,1152,1152,8039,14.3,25.0,0
+salud_abierta,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,14964,14964,56596,26.4,,12299
+salud_abierta,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,3416,3226,11479,29.8,,2919
+salud_abierta,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,1205,1205,6275,19.2,,0
+salud_abierta,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,159,188,950,16.8,,0
+salud_abierta,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,0,0,4159,0.0,,0
+salud_abierta,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,0,0,1085,0.0,,0
+salud_abierta,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,50,50,2583,1.9,,0
+salud_abierta,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,14,18,756,1.9,,0
+salud_abierta,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,0,0,39083,0.0,0.0,0
+salud_abierta,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,0,0,8039,0.0,0.0,0
+salud_abierta_sin_umr,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,40695,40695,56596,71.9,,14838
+salud_abierta_sin_umr,estricto,1000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,8634,8471,11479,75.2,,3261
+salud_abierta_sin_umr,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,5112,5112,6275,81.5,,0
+salud_abierta_sin_umr,estricto,1000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,760,795,950,80.0,,0
+salud_abierta_sin_umr,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,1281,1281,4159,30.8,,0
+salud_abierta_sin_umr,estricto,1000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,302,282,1085,27.8,,0
+salud_abierta_sin_umr,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,415,415,2583,16.1,,0
+salud_abierta_sin_umr,estricto,1000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,122,124,756,16.1,,0
+salud_abierta_sin_umr,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,19827,19827,39083,50.7,100.0,240
+salud_abierta_sin_umr,estricto,3000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,3828,3828,8039,47.6,100.0,53
+salud_abierta_sin_umr,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,32660,32660,56596,57.7,,20455
+salud_abierta_sin_umr,principal,1330,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,7039,6908,11479,61.3,,4659
+salud_abierta_sin_umr,principal,1330,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,4043,4043,6275,64.4,,0
+salud_abierta_sin_umr,principal,1330,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,577,578,950,60.8,,0
+salud_abierta_sin_umr,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,424,424,4159,10.2,,0
+salud_abierta_sin_umr,principal,1330,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,86,71,1085,7.9,,0
+salud_abierta_sin_umr,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,137,137,2583,5.3,,0
+salud_abierta_sin_umr,principal,1330,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,39,25,756,5.2,,0
+salud_abierta_sin_umr,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,6637,6637,39083,17.0,26.0,2
+salud_abierta_sin_umr,principal,5000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,1152,1152,8039,14.3,26.0,0
+salud_abierta_sin_umr,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Población total,POBTOT,14964,14964,56596,26.4,,12299
+salud_abierta_sin_umr,holgado,2000,Acámbaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,3416,3226,11479,29.8,,2919
+salud_abierta_sin_umr,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Población total,POBTOT,1205,1205,6275,19.2,,0
+salud_abierta_sin_umr,holgado,2000,Irámuco,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,159,188,950,16.8,,0
+salud_abierta_sin_umr,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Población total,POBTOT,0,0,4159,0.0,,0
+salud_abierta_sin_umr,holgado,2000,Parácuaro,"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,0,0,1085,0.0,,0
+salud_abierta_sin_umr,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Población total,POBTOT,50,50,2583,1.9,,0
+salud_abierta_sin_umr,holgado,2000,Chupícuaro (Nuevo Chupícuaro),"ciudad (a pie, por calles)",Sin afiliación a servicios de salud,PSINDER,14,18,756,1.9,,0
+salud_abierta_sin_umr,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Población total,POBTOT,0,0,39083,0.0,0.0,0
+salud_abierta_sin_umr,holgado,10000,Localidades rurales (208),municipio (línea recta × factor),Sin afiliación a servicios de salud,PSINDER,0,0,8039,0.0,0.0,0

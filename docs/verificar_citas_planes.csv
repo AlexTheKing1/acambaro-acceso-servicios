@@ -1,0 +1,35 @@
+id,documento,pagina_impresa,texto,encontrada_en_la_pagina,paginas_donde_aparece
+mun_migracion,municipal,18,considerado como de muy alta migración,sí,18
+mun_pob_1980_2006,municipal,18,"98,126 habitantes en 1980 a una de 115,121 en el 2006",sí,18
+mun_turnos_emigracion,municipal,31,emigración y la baja población que existe en edad escolar,sí,31
+mun_derechohabiencia_2006,municipal,34,Para 2006 se tuvo una disminución considerable a 19.01%,sí,34
+mun_conapo_fuente,municipal,34,Proyección de Población del Consejo Nacional de Población (CONAPO) 2000-2030,sí,34
+mun_polos,municipal,6,microregiones o polos de desarrollo,sí,6
+mun_eje_iramuco,municipal,58,"Eje de desarrollo, Irámuco",sí,58
+mun_iramuco_viviendas,municipal,59,"concentró un total de 3,557 viviendas",sí,59
+mun_iramuco_escuelas,municipal,60,"11 centros de educación preescolar, 9 primarias y 3 tele secundarias",sí,60
+mun_iramuco_concentrador,municipal,61,Irámuco se constituirá como el principal concentrador de población micro regional,sí,61
+mun_paracuaro_secundaria,municipal,64,secundaria técnica localizada en la carretera Parácuaro- El Jaral,sí,64
+mun_deficit_habitacional,municipal,214,disminuir el déficit habitacional,sí,214
+mun_reservas_vivienda,municipal,215,Identificar y adquirir reservas de terreno para las acciones de vivienda,sí,215
+mun_fraccionamientos,municipal,216,Mantener estricto control de los fraccionamientos,sí,216
+mun_ordenamiento_6_meses,municipal,241,en un plazo no mayor a 6 meses a partir de la publicación de este plan,sí,241
+mun_meta_educacion_polos,municipal,254,medio superior al 100% en los Polos de Desarrollo Rural,sí,254
+mun_meta_abasto_polos,municipal,255,Cada Polo de Desarrollo contará con plazas públicas para el,sí,255
+mun_meta_escuelas_polos,municipal,255,Cada Polo deberá contar con escuelas desde preescolar hasta nivel,sí,255
+mun_meta_salud_polos,municipal,255,Crear centros comunitarios de salud en cada polo de desarrollo,sí,255
+prot_pob_2010,prot,29,183 mil 194 personas,sí,29
+prot_ciudad_pct,prot,30,alberga al 31.64% de la población de la Subregión,sí,30
+prot_acambaro_tasas,prot,30,un decremento en sus tasas poblacionales,sí,30
+prot_remesas,prot,31,El 20% de las viviendas de la Subregión reciben remesas,sí,31
+prot_cuadro3,prot,38,Dotación de equipamiento en la Subregión 10,sí,38
+prot_cuadro3_acambaro_2014,prot,38,"112,076",sí,38
+prot_cuadro3_subregion_2014,prot,38,"189,535",sí,38
+prot_ciudad_2030,prot,42,"con una población esperada de 51,613",sí,42
+prot_proyecciones,prot,47,2.2.2.3 Proyecciones de población,sí,8;47
+prot_exponencial,prot,47,La tendencia muestra un crecimiento poblacional exponencial,sí,47
+prot_migracion_no_contemplada,prot,47,no parecen contempladas en esta proyección,sí,47
+prot_iramuco,prot,59,actualmente haya un fuerte crecimiento poblacional y de desarrollo habitacional,sí,59
+prot_crec_2016,prot,59,3.14%,sí,45;59
+prot_crec_2020,prot,59,5.07%,sí,59
+prot_crec_2030,prot,59,8.9%,sí,30;59

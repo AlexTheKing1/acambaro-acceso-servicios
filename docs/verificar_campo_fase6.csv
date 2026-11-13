@@ -1,0 +1,2 @@
+orden,id,tipo,nombre,clave_sep,localidad_catalogo,motivo,lat,lon,enlace_google_maps,existe_campo,fecha_visita,foto,notas
+1,secundaria-S0002,secundaria,SECUNDARIA TECNICA NUM. 24,11DST0024Y,Ninguno [Escuela Tecnológica Agropecuaria],"Plan Municipal (p. 64) la ubica en la carretera Parácuaro–El Jaral; D39, en la carretera Acámbaro–Parácuaro km 9. Confirmar si es la misma escuela, si se reubicó o si hay otra secundaria técnica.",20.116475,-100.734091,"https://www.google.com/maps/search/?api=1&query=20.116475,-100.734091",,,,
