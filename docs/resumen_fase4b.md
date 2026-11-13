@@ -2,7 +2,7 @@
 
 Fecha: 2026-10-23; actualizado en la fase 4c (tipología final y crecimiento no registrado). Detalle técnico en `docs/validacion.md` (V39–V47) y `docs/decisiones.md` (D42–D52).
 
-> **Resultados provisionales.** `verificacion_zonas.csv` todavía no está en el release, así que las cuadras nuevas no se han revisado en imágenes. Cuando lo subas, `src/19_crecimiento.py` repite la comparación sin las zonas que marques "no".
+> **Actualización de la fase 5 (2026-11-13): resultados definitivos.** Alejandro revisó las 28 zonas INEGI y las 20 zonas GHSL. Se excluyó Z20-010 (error de dibujo, D53). Como es rural, ninguna cifra de este documento cambia. La sección 6 ya no es provisional, pero **las 42 ha fuera de cuadras no son vivienda**: de lo revisado, 44 % es invernadero o nave, 19 % baldío y 25 % vivienda (D52). Las 150 zonas de 2010–2020 del municipio se separaron en cambio de cartografía y crecimiento (D54). Todo está en `docs/resumen_final.md`.
 >
 > **Cómo se cuentan las cuadras nuevas en textos públicos (D49)**: con personas, cuadras y hectáreas, no con porcentajes, porque es un grupo pequeño. Los porcentajes de este documento son de trabajo. El hallazgo del preescolar se mantiene porque aparece con los tres umbrales.
 >

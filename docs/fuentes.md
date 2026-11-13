@@ -86,3 +86,14 @@ No se bajaron datos nuevos: se usaron los recortes ya versionados (MG 2010/2020/
 |---|---|---|
 | ITER 1990, 1995, 2000, 2005 (Guanajuato) | `https://www.inegi.org.mx/contenidos/programas/ccpv/{año}/datosabiertos/iter_11_{año}_csv.zip` y `.../datosabiertos/iter/iter_11_{año}_csv.zip` | Página HTML en lugar del zip (V43); no se exploraron catálogos |
 | `verificacion_zonas.csv` (release `datos-crudos`) | `01_descargar.py --solo verificacion` | Sigue sin estar (404) |
+
+## Fase 5 (2026-11-13)
+
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| ITER 2020, **nacional** | Censo 2020; archivo de datos fechado 2022-03-07 | `INEGI/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip` | Total nacional 2020 (comparación regional) |
+| ITER 2010, **nacional** | Censo 2010; archivo fechado 2016-08-29 | `INEGI/programas/ccpv/2010/datosabiertos/iter_nal_2010_csv.zip` | Total nacional 2010 |
+| ITER 2010 y 2020, Guanajuato (ya descargados) | ver arriba | ver arriba | Municipios vecinos, cabeceras y total estatal |
+| EIC 2025 (ya descargada) | ver arriba | ver arriba | Población 2025 de los 7 municipios, Guanajuato y el país; migración y remesas de Acámbaro y Guanajuato |
+| Revisión de zonas INEGI de Alejandro (Google Earth) | `verificacion_zonas.csv`, 28 zonas; subido al release antes del 2026-11-13 | `.../releases/download/datos-crudos/verificacion_zonas.csv` | V48, D53 |
+| Revisión de zonas GHSL de Alejandro (Google Earth) | `verificacion_zonas_ghsl.csv`, 20 zonas | `.../releases/download/datos-crudos/verificacion_zonas_ghsl.csv` | V50, D52 |

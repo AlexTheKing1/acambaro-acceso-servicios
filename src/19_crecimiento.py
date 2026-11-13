@@ -22,7 +22,7 @@ Luego compara, por localidad:
      (conjuntos de AGEB 2010 y 2020 que cubren el mismo suelo);
   5. una tipología de AGEB (criterios en CRITERIOS, aprobados por Alejandro: D47).
 Si data/raw/verificacion/verificacion_zonas.csv existe, repite 1 y 5 sin las cuadras
-de las zonas marcadas "no"; si no, todo es provisional.
+de las zonas marcadas "no" o excluidas por D53 (fase 5); si no, todo es provisional.
 
 Salidas en data/processed/:
   cuadras_antiguedad.gpkg / .csv           una fila por cuadra (posición = acceso_cuadras)
@@ -143,14 +143,22 @@ def antiguedad():
     return cu, cen
 
 
+# Zonas que se excluyen aunque no estén marcadas "no": errores de dibujo vistos en la
+# revisión de Alejandro (D53, fase 5). Z20-010 = un tramo de calle en San José de la Peña.
+EXCLUIR_ZONAS = {"Z20-010"}
+
+
 def zonas_no():
-    """Cuadras de zonas marcadas "no" en la revisión de Alejandro, como pares (CVEGEO, periodo)."""
+    """Cuadras de zonas marcadas "no" en la revisión de Alejandro, o excluidas por D53,
+    como pares (CVEGEO, periodo). La revisión no trae las claves: se toman de
+    docs/verificar_zonas_nuevas.csv por id."""
     if not VERIF_ZONAS.exists():
         return None
     z = pd.read_csv(VERIF_ZONAS, dtype=str)
-    z = z[z.existe_en_imagen.fillna("").str.strip().str.lower() == "no"]
+    z = z[(z.existe_en_imagen.fillna("").str.strip().str.lower() == "no") | z.id.isin(EXCLUIR_ZONAS)]
+    claves = pd.read_csv(RAIZ / "docs" / "verificar_zonas_nuevas.csv", dtype=str).set_index("id")
     per = {"2010-2020": N1020, "posterior a 2020": N20}
-    return {(c, per.get(p, p)) for p, cs in zip(z.periodo, z.claves_cuadras) for c in str(cs).split()}
+    return {(c, per.get(p, p)) for i, p in zip(z.id, z.periodo) for c in str(claves.claves_cuadras[i]).split()}
 
 
 # --- 2. Acceso según antigüedad ---------------------------------------------------
@@ -470,15 +478,13 @@ def main():
 
     excl = zonas_no()
     v["verificacion_zonas"] = "no está en el release: resultados provisionales" if excl is None else \
-        f"{len(excl)} cuadras en zonas marcadas 'no'"
+        f"{len(excl)} cuadras en zonas marcadas 'no' o excluidas (D53); de ellas en las 4 urbanas: " \
+        f"{sum((c, p) in excl for c, p in zip(cu.CVEGEO, cu.periodo))}"
 
-    tab, an = acceso(cu)
+    # Con la revisión (fase 5), las zonas "no" y las de D53 se quitan del cálculo base.
+    tab, an = acceso(cu, excl)
     tab["provisional"] = excl is None
     per = periferia(an)
-    if excl:
-        t2, a2 = acceso(cu, excl)
-        t2["sensibilidad"] = "sin zonas marcadas 'no'"
-        tab = pd.concat([tab.assign(sensibilidad="todas"), t2], ignore_index=True)
     viv = viviendas_2020(cu)
     dec, m10, unidad = decada(cu, cen)
     v["manzanas_2010_fuera_de_ageb_2020"] = int(m10.fuera_ageb_2020.sum())

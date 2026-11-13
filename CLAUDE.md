@@ -47,7 +47,12 @@ python src/19_crecimiento.py    # fase 4b: cuadras_antiguedad, crecimiento_*.csv
 python src/20_ghsl_serie.py     # ghsl_serie.csv, ghsl_sectores.csv
 python src/21_mapas_fase4b.py   # docs/figuras/fase4b_*.png
 python src/22_ghsl_sin_cuadras.py  # fase 4c: construcción GHSL fuera de cuadras -> ghsl_*.csv/gpkg, docs/zonas_ghsl_sin_cuadras.kml, docs/verificar_zonas_ghsl.csv
+python src/23_verificacion_zonas.py   # fase 5: revisión de zonas INEGI y GHSL, cambio de cartografía (D54)
+python src/24_comparacion_regional.py # comparacion_regional.csv, docs/figuras/fase5_regional.png
+python src/25_vaciamiento_correlatos.py  # vaciamiento_*.csv
+python src/26_nse_aproximado.py       # nse_*.csv, docs/figuras/fase5_nse.png
 ```
+La fase 5 necesita `01_descargar.py --solo verificacion iter2010 iter2020 iter_nacional eic2025 censo2020_ageb_mza`. Todas escriben su parte en `validacion_fase5.json`.
 `15` necesita `data/raw/verificacion/verificacion_servicios.csv` (`01_descargar.py --solo verificacion`). No hay `16` (reservado para la red rural si algún día se baja).
 `01_descargar.py --solo <fuentes>` baja solo esas fuentes (p. ej. `clues sep_escuelas asentamientos`); la red de OpenStreetMap solo se intenta con `--solo osm_caminos`.
 `02_recortar.py --solo <pasos>` corre solo algunos pasos (mg, mg2010, tablas, denue, servicios_mg, ghsl, sep, clues).
@@ -70,6 +75,8 @@ python src/22_ghsl_sin_cuadras.py  # fase 4c: construcción GHSL fuera de cuadra
 - La clave de una cuadra nueva posterior a 2020 puede repetir la de una cuadra 2020 renumerada: no unir tablas por CVEGEO entre ediciones; usar posición o la pareja (CVEGEO, origen).
 - Decisiones de fase 4c (Alejandro): tipología final con desatendida = 3 de 5 (2 de 5 como sensibilidad) y vaciándose dentro de su localidad (D47); centro = punto ITER 2020 (D48); cuadras nuevas en textos públicos con conteos, no porcentajes, y se mantiene el preescolar (D49); ITER 1990–2005 no se buscan (D50); título de trabajo (D51). Zona GHSL sin cuadras = ≥ 500 m² ganados 2010–2020 y < 25 % de la celda en cuadras del MG EIC 2025 (D52, provisional).
 - `19_crecimiento.py` reescribe `validacion_fase4b.json` sin las claves de `20` y `22`: correr `20` y `22` después de `19`.
+- Claves de los municipios vecinos (Gto.): Coroneo 010, Jerécuaro **019**, Salvatierra 028, Santiago Maravatío **036**, Tarandacuao 038, Tarimoro 039 (018 y 031 son otros municipios). El ITER nacional 2010 trae encabezados en minúsculas. En la EIC 2025, PCN_HOG_OPAIS = hogares que **reciben remesas**.
+- Decisiones de fase 5: D52 aceptado como detección de construcción, no de vivienda (Alejandro). Z20-010 excluida por error de dibujo (D53, `EXCLUIR_ZONAS` en `19`). Zona 2010–2020 en localidad con población en el ITER 2010 = cambio de cartografía, salvo en las 4 urbanas = crecimiento (D54, confirmado por Alejandro); las 28 zonas urbanas 2010–2020 no verificadas en imágenes se declaran como limitación. Comparación regional sobre VIVTOT, EIC 2025 con IC 90 % (D55). Índice socioeconómico aproximado, z dentro de cada conjunto, urbano y rural nunca se comparan, sin piso de tierra (D56, aprobado; el cruce rural índice–acceso es un indicio, no un hallazgo). Cruces con ≥ 30 viviendas (D57).
 
 ## Estado
 - Fase 0 y 1 (inventario y base geográfica): terminadas y revisadas por Alejandro el 2026-10-22 (decisiones D09–D12).
@@ -77,4 +84,5 @@ python src/22_ghsl_sin_cuadras.py  # fase 4c: construcción GHSL fuera de cuadra
 - Fase 3 (accesibilidad): terminada el 2026-10-23. Resumen en `docs/resumen_fase3.md`; sus pendientes se cerraron en la fase 4.
 - Fase 4 (decisiones finales y números definitivos): terminada el 2026-10-23. Resumen en `docs/resumen_fase4.md`. Pendiente de Alejandro: cotejar el texto original del SNEU (no se pudo abrir), salidas de campo con `docs/verificar_campo.csv`, revisar zonas con `docs/zonas_nuevas.kml` y subir `verificacion_zonas.csv`, red de caminos (RNC al release). Siguiente: sitio web y reporte PDF.
 - Fase 4b (crecimiento urbano y acceso): terminada el 2026-10-23, **provisional** hasta que llegue `verificacion_zonas.csv`. Resumen en `docs/resumen_fase4b.md`.
-- Fase 4c (decisiones de la 4b y crecimiento no registrado): terminada el 2026-10-23. Decisiones D47–D51 registradas; tipología final sin cambios en cifras. El GHSL ve 41.6 de 66.6 ha nuevas de la ciudad fuera de cuadras (sección 6 del resumen de la 4b, **provisional**). Pendiente de Alejandro: revisar `docs/zonas_ghsl_sin_cuadras.kml` / `docs/verificar_zonas_ghsl.csv` y aprobar el criterio D52. Siguiente: sitio web y reporte PDF.
+- Fase 4c (decisiones de la 4b y crecimiento no registrado): terminada el 2026-10-23; la parte provisional se cerró en la fase 5. Decisiones D47–D51 registradas; tipología final sin cambios en cifras. El GHSL ve 41.6 de 66.6 ha nuevas de la ciudad fuera de cuadras (sección 6 del resumen de la 4b, **provisional**). Pendiente de Alejandro: revisar `docs/zonas_ghsl_sin_cuadras.kml` / `docs/verificar_zonas_ghsl.csv` y aprobar el criterio D52. Siguiente: sitio web y reporte PDF.
+- Fase 5 (cierre del análisis): terminada el 2026-11-13. Verificaciones de zonas incorporadas (4b y 4c ya no son provisionales; cifras urbanas sin cambio), comparación regional, correlatos del vaciamiento, índice socioeconómico aproximado. **Resumen base para redactar: `docs/resumen_final.md`.** D54 y D56 confirmadas por Alejandro el 2026-11-13. Pendiente de Alejandro: el SNEU, el campo y la RNC. Siguiente: sitio web y reporte PDF.

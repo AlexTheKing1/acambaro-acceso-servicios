@@ -1,0 +1,804 @@
+{
+ "zonas": {
+  "inegi_revisadas": 28,
+  "inegi_sin_pareja_en_lista": [],
+  "inegi_existe_en_imagen": {
+   "si": 27,
+   "no se ve": 1
+  },
+  "inegi_por_periodo": [
+   {
+    "periodo": "2010-2020",
+    "existe_en_imagen": "si",
+    "zonas": 15
+   },
+   {
+    "periodo": "posterior a 2020",
+    "existe_en_imagen": "no se ve",
+    "zonas": 1
+   },
+   {
+    "periodo": "posterior a 2020",
+    "existe_en_imagen": "si",
+    "zonas": 12
+   }
+  ],
+  "inegi_excluidas": [
+   {
+    "id": "Z20-010",
+    "localidad": "San José de la Peña",
+    "n_cuadras": 1,
+    "superficie_ha": 0.01
+   }
+  ],
+  "posteriores_2020_sin_excluidas": {
+   "zonas": 12,
+   "cuadras": 16,
+   "ha": 12.74,
+   "antes": {
+    "zonas": 13,
+    "cuadras": 17,
+    "ha": 12.75
+   }
+  },
+  "z10_por_clase": [
+   {
+    "clase": "cambio de cartografía (pueblo que ya existía)",
+    "zonas": 118,
+    "cuadras": 247,
+    "ha": 199.6,
+    "localidades": 67,
+    "personas_en_las_cuadras_2020": NaN,
+    "pob_localidades_2010": 26991,
+    "pob_localidades_2020": 27075,
+    "viv_localidades_2010": 10699,
+    "viv_localidades_2020": 13078,
+    "zonas_revisadas": 14
+   },
+   {
+    "clase": "crecimiento (ampliación de localidad urbana)",
+    "zonas": 28,
+    "cuadras": 53,
+    "ha": 29.2,
+    "localidades": 4,
+    "personas_en_las_cuadras_2020": 356.0,
+    "pob_localidades_2010": 70257,
+    "pob_localidades_2020": 69614,
+    "viv_localidades_2010": 23804,
+    "viv_localidades_2020": 27032,
+    "zonas_revisadas": 0
+   },
+   {
+    "clase": "crecimiento nuevo (localidad sin población en 2010)",
+    "zonas": 4,
+    "cuadras": 23,
+    "ha": 19.0,
+    "localidades": 4,
+    "personas_en_las_cuadras_2020": NaN,
+    "pob_localidades_2010": 0,
+    "pob_localidades_2020": 191,
+    "viv_localidades_2010": 0,
+    "viv_localidades_2020": 104,
+    "zonas_revisadas": 1
+   }
+  ],
+  "z10_cartografia_por_cuadras_previas": [
+   {
+    "cuadras_en_mg2010": false,
+    "zonas": 32,
+    "ha": 108.2
+   },
+   {
+    "cuadras_en_mg2010": true,
+    "zonas": 86,
+    "ha": 91.3
+   }
+  ],
+  "z10_nombre_distinto_2010": [
+   {
+    "id": "Z10-075",
+    "localidad": "Las Huertas [Fraccionamiento]",
+    "nombre_iter2010": "Víctor Ávila Ávalos"
+   },
+   {
+    "id": "Z10-076",
+    "localidad": "Las Huertas [Fraccionamiento]",
+    "nombre_iter2010": "Víctor Ávila Ávalos"
+   },
+   {
+    "id": "Z10-077",
+    "localidad": "Las Huertas [Fraccionamiento]",
+    "nombre_iter2010": "Víctor Ávila Ávalos"
+   },
+   {
+    "id": "Z10-137",
+    "localidad": "San Pedro (La Placa)",
+    "nombre_iter2010": "Colonia San Pedro (La Placa)"
+   }
+  ],
+  "z10_sin_iter2010": [
+   {
+    "id": "Z10-031",
+    "localidad": "Colonia San Isidro",
+    "cve_loc": "0434",
+    "superficie_ha": 3.71
+   },
+   {
+    "id": "Z10-053",
+    "localidad": "Juan Pablo II (Las Varas)",
+    "cve_loc": "0422",
+    "superficie_ha": 9.85
+   },
+   {
+    "id": "Z10-072",
+    "localidad": "La Providencia [Fraccionamiento]",
+    "cve_loc": "0462",
+    "superficie_ha": 2.29
+   },
+   {
+    "id": "Z10-090",
+    "localidad": "Los Caballos [Fraccionamiento]",
+    "cve_loc": "0481",
+    "superficie_ha": 3.13
+   }
+  ],
+  "z10_revisadas_por_clase": {
+   "cambio de cartografía (pueblo que ya existía)": [
+    "Z10-017",
+    "Z10-025",
+    "Z10-030",
+    "Z10-032",
+    "Z10-050",
+    "Z10-064",
+    "Z10-073",
+    "Z10-082",
+    "Z10-088",
+    "Z10-116",
+    "Z10-118",
+    "Z10-119",
+    "Z10-135",
+    "Z10-149"
+   ],
+   "crecimiento nuevo (localidad sin población en 2010)": [
+    "Z10-053"
+   ]
+  },
+  "z10_crecimiento_nuevo_localidades": [
+   {
+    "cve_loc": "0422",
+    "localidad": "Juan Pablo II (Las Varas)",
+    "zonas": 1,
+    "ha": 9.85,
+    "pob_loc_2020": 30.0
+   },
+   {
+    "cve_loc": "0434",
+    "localidad": "Colonia San Isidro",
+    "zonas": 1,
+    "ha": 3.71,
+    "pob_loc_2020": 137.0
+   },
+   {
+    "cve_loc": "0462",
+    "localidad": "La Providencia [Fraccionamiento]",
+    "zonas": 1,
+    "ha": 2.29,
+    "pob_loc_2020": 24.0
+   },
+   {
+    "cve_loc": "0481",
+    "localidad": "Los Caballos [Fraccionamiento]",
+    "zonas": 1,
+    "ha": 3.13,
+    "pob_loc_2020": NaN
+   }
+  ],
+  "ghsl_por_tipo": [
+   {
+    "tipo": "baldío",
+    "zonas": 2,
+    "m2_ganados": 43719,
+    "ids": "G-001 G-018",
+    "pct_m2_revisados": 19.3
+   },
+   {
+    "tipo": "invernadero o nave",
+    "zonas": 8,
+    "m2_ganados": 99739,
+    "ids": "G-002 G-003 G-005 G-007 G-010 G-011 G-013 G-020",
+    "pct_m2_revisados": 43.9
+   },
+   {
+    "tipo": "otros",
+    "zonas": 4,
+    "m2_ganados": 26598,
+    "ids": "G-009 G-012 G-014 G-016",
+    "pct_m2_revisados": 11.7
+   },
+   {
+    "tipo": "vivienda",
+    "zonas": 6,
+    "m2_ganados": 56913,
+    "ids": "G-004 G-006 G-008 G-015 G-017 G-019",
+    "pct_m2_revisados": 25.1
+   }
+  ],
+  "ghsl_por_tipo_y_localidad": [
+   {
+    "localidad": "Acámbaro",
+    "tipo": "baldío",
+    "zonas": 2,
+    "m2": 43719
+   },
+   {
+    "localidad": "Acámbaro",
+    "tipo": "invernadero o nave",
+    "zonas": 6,
+    "m2": 85390
+   },
+   {
+    "localidad": "Acámbaro",
+    "tipo": "otros",
+    "zonas": 4,
+    "m2": 26598
+   },
+   {
+    "localidad": "Acámbaro",
+    "tipo": "vivienda",
+    "zonas": 3,
+    "m2": 37098
+   },
+   {
+    "localidad": "Chupícuaro (Nuevo Chupícuaro)",
+    "tipo": "vivienda",
+    "zonas": 1,
+    "m2": 8855
+   },
+   {
+    "localidad": "Irámuco",
+    "tipo": "invernadero o nave",
+    "zonas": 1,
+    "m2": 5039
+   },
+   {
+    "localidad": "Parácuaro",
+    "tipo": "invernadero o nave",
+    "zonas": 1,
+    "m2": 9310
+   },
+   {
+    "localidad": "Parácuaro",
+    "tipo": "vivienda",
+    "zonas": 2,
+    "m2": 10960
+   }
+  ],
+  "ghsl_existe_en_imagen": {
+   "no": 13,
+   "si": 6,
+   "no se ve": 1
+  },
+  "ghsl_m2_revisados_de_total": {
+   "revisados": 226969.0,
+   "total_78": 321719.0,
+   "pct": 70.5
+  },
+  "ghsl_sin_pareja": []
+ },
+ "regional": {
+  "chequeo_acambaro": {
+   "2010": 109030,
+   "2020": 108697,
+   "esperado": "109030 / 108697",
+   "ok": true
+  },
+  "chequeo_nacional_2020_suma_estados": {
+   "estados": 32,
+   "suma": 126014024,
+   "total": 126014024
+  },
+  "chequeo_valores_faltantes": 0,
+  "eic2025_sin_dato": [
+   "Coroneo (cabecera)",
+   "Jerécuaro (cabecera)",
+   "Salvatierra (cabecera)",
+   "Santiago Maravatío (cabecera)",
+   "Tarandacuao (cabecera)",
+   "Tarimoro (cabecera)"
+  ],
+  "acambaro_frente_a_vecinos": {
+   "municipio | cambio_pob_pct_2010_2020": {
+    "acambaro": -0.3,
+    "rango_de_mayor_a_menor": 3,
+    "de": 7,
+    "mediana_otros": -2.75,
+    "min_otros": -5.2,
+    "max_otros": 0.9
+   },
+   "municipio | cambio_viv_pct_2010_2020": {
+    "acambaro": 16.1,
+    "rango_de_mayor_a_menor": 2,
+    "de": 7,
+    "mediana_otros": 13.95,
+    "min_otros": 11.2,
+    "max_otros": 17.4
+   },
+   "municipio | pct_deshabitadas_2010": {
+    "acambaro": 19.0,
+    "rango_de_mayor_a_menor": 6,
+    "de": 7,
+    "mediana_otros": 21.799999999999997,
+    "min_otros": 18.8,
+    "max_otros": 27.7
+   },
+   "municipio | pct_deshabitadas_2020": {
+    "acambaro": 24.3,
+    "rango_de_mayor_a_menor": 7,
+    "de": 7,
+    "mediana_otros": 26.25,
+    "min_otros": 24.4,
+    "max_otros": 30.9
+   },
+   "municipio | pct_uso_temporal_2010": {
+    "acambaro": 10.9,
+    "rango_de_mayor_a_menor": 3,
+    "de": 7,
+    "mediana_otros": 9.85,
+    "min_otros": 7.5,
+    "max_otros": 13.6
+   },
+   "municipio | pct_uso_temporal_2020": {
+    "acambaro": 9.7,
+    "rango_de_mayor_a_menor": 5,
+    "de": 7,
+    "mediana_otros": 10.350000000000001,
+    "min_otros": 8.0,
+    "max_otros": 12.5
+   },
+   "municipio | pct_no_habitadas_2020": {
+    "acambaro": 34.0,
+    "rango_de_mayor_a_menor": 6,
+    "de": 7,
+    "mediana_otros": 37.5,
+    "min_otros": 32.4,
+    "max_otros": 40.8
+   },
+   "municipio | cambio_pob_pct_2020_2025": {
+    "acambaro": -0.5,
+    "rango_de_mayor_a_menor": 5,
+    "de": 7,
+    "mediana_otros": 0.7,
+    "min_otros": -11.4,
+    "max_otros": 9.8
+   },
+   "cabecera | cambio_pob_pct_2010_2020": {
+    "acambaro": -2.4,
+    "rango_de_mayor_a_menor": 4,
+    "de": 7,
+    "mediana_otros": -0.3999999999999999,
+    "min_otros": -6.7,
+    "max_otros": 3.8
+   },
+   "cabecera | cambio_viv_pct_2010_2020": {
+    "acambaro": 13.3,
+    "rango_de_mayor_a_menor": 4,
+    "de": 7,
+    "mediana_otros": 13.2,
+    "min_otros": 9.1,
+    "max_otros": 20.3
+   },
+   "cabecera | pct_deshabitadas_2010": {
+    "acambaro": 16.9,
+    "rango_de_mayor_a_menor": 6,
+    "de": 7,
+    "mediana_otros": 22.2,
+    "min_otros": 16.2,
+    "max_otros": 30.6
+   },
+   "cabecera | pct_deshabitadas_2020": {
+    "acambaro": 21.6,
+    "rango_de_mayor_a_menor": 7,
+    "de": 7,
+    "mediana_otros": 24.700000000000003,
+    "min_otros": 22.4,
+    "max_otros": 29.5
+   },
+   "cabecera | pct_uso_temporal_2010": {
+    "acambaro": 5.6,
+    "rango_de_mayor_a_menor": 4,
+    "de": 7,
+    "mediana_otros": 6.15,
+    "min_otros": 4.6,
+    "max_otros": 13.5
+   },
+   "cabecera | pct_uso_temporal_2020": {
+    "acambaro": 4.5,
+    "rango_de_mayor_a_menor": 7,
+    "de": 7,
+    "mediana_otros": 7.4,
+    "min_otros": 5.3,
+    "max_otros": 13.6
+   },
+   "cabecera | pct_no_habitadas_2020": {
+    "acambaro": 26.1,
+    "rango_de_mayor_a_menor": 7,
+    "de": 7,
+    "mediana_otros": 35.150000000000006,
+    "min_otros": 27.6,
+    "max_otros": 37.9
+   },
+   "cabecera | cambio_pob_pct_2020_2025": {
+    "acambaro": 0.3,
+    "rango_de_mayor_a_menor": 1,
+    "de": 1,
+    "mediana_otros": NaN,
+    "min_otros": NaN,
+    "max_otros": NaN
+   }
+  }
+ },
+ "vaciamiento": {
+  "rural (localidad)": {
+   "unidades": 208,
+   "con_minimo_30_viv": 93,
+   "pob_bajo_minimo": 1387,
+   "completas": 91,
+   "pob_en_unidades_con_oculto": 161,
+   "pob_total": 39083,
+   "oculto_por_variable": {
+    "cambio_pob_pct_2010_2020": 2
+   }
+  },
+  "urbano (AGEB)": {
+   "unidades": 126,
+   "con_minimo_30_viv": 56,
+   "pob_bajo_minimo": 1273,
+   "completas": 37,
+   "pob_en_unidades_con_oculto": 6898,
+   "pob_total": 69614,
+   "oculto_por_variable": {
+    "pct_uso_temporal": 9,
+    "pct_vivia_otra_entidad_2015": 11,
+    "cambio_pob_pct_2010_2020": 3
+   }
+  },
+  "eic2025": [
+   {
+    "unidad": "Acámbaro",
+    "variable": "% que en 2020 vivía en otra entidad",
+    "clave": "PCN_PRESOE20",
+    "valor": 1.15,
+    "error_estandar": 0.15,
+    "li90": 0.9,
+    "ls90": 1.4
+   },
+   {
+    "unidad": "Acámbaro",
+    "variable": "% que en 2020 vivía en EE. UU.",
+    "clave": "PCN_PRESEUA20",
+    "valor": 0.44,
+    "error_estandar": 0.06,
+    "li90": 0.34,
+    "ls90": 0.54
+   },
+   {
+    "unidad": "Acámbaro",
+    "variable": "% que en 2020 vivía en otro país (no EE. UU.)",
+    "clave": "PCN_PRESOP20",
+    "valor": 0.02,
+    "error_estandar": 0.02,
+    "li90": -0.01,
+    "ls90": 0.05
+   },
+   {
+    "unidad": "Acámbaro",
+    "variable": "% de hogares que reciben dinero de alguien que vive en otro país (remesas)",
+    "clave": "PCN_HOG_OPAIS",
+    "valor": 14.93,
+    "error_estandar": 0.71,
+    "li90": 13.76,
+    "ls90": 16.1
+   },
+   {
+    "unidad": "Guanajuato",
+    "variable": "% que en 2020 vivía en otra entidad",
+    "clave": "PCN_PRESOE20",
+    "valor": 1.43,
+    "error_estandar": 0.11,
+    "li90": 1.25,
+    "ls90": 1.61
+   },
+   {
+    "unidad": "Guanajuato",
+    "variable": "% que en 2020 vivía en EE. UU.",
+    "clave": "PCN_PRESEUA20",
+    "valor": 0.35,
+    "error_estandar": 0.02,
+    "li90": 0.32,
+    "ls90": 0.38
+   },
+   {
+    "unidad": "Guanajuato",
+    "variable": "% que en 2020 vivía en otro país (no EE. UU.)",
+    "clave": "PCN_PRESOP20",
+    "valor": 0.1,
+    "error_estandar": 0.03,
+    "li90": 0.05,
+    "ls90": 0.15
+   },
+   {
+    "unidad": "Guanajuato",
+    "variable": "% de hogares que reciben dinero de alguien que vive en otro país (remesas)",
+    "clave": "PCN_HOG_OPAIS",
+    "valor": 8.56,
+    "error_estandar": 0.14,
+    "li90": 8.33,
+    "ls90": 8.79
+   }
+  ]
+ },
+ "nse": {
+  "urbano": {
+   "conjunto": "urbano (AGEB)",
+   "cobertura": {
+    "unidades": 126,
+    "con_indice": 53,
+    "bajo_minimo_30_viv": 70,
+    "pob_bajo_minimo": 1273,
+    "con_oculto": 3,
+    "pob_con_oculto": 419,
+    "pob_con_indice": 67922,
+    "pob_total": 69614
+   },
+   "sensibilidad": {
+    "rho_base_vs_pesos_iguales": 0.969,
+    "rho_base_vs_pc1": 0.967,
+    "mismo_quintil_pesos_iguales_pct": 73.6,
+    "mismo_quintil_pc1_pct": 69.8,
+    "pc1_cargas": {
+     "GRAPROES": 0.403,
+     "VPH_AUTOM": 0.351,
+     "VPH_INTER": 0.365,
+     "VPH_PC": 0.415,
+     "VPH_REFRI": 0.335,
+     "VPH_LAVAD": 0.373,
+     "VPH_HMICRO": 0.382,
+     "VPH_2YMASD": 0.109
+    },
+    "pc1_varianza_explicada": 0.599
+   },
+   "perfil_por_quintil": [
+    {
+     "quintil": "Q1 (más bajo)",
+     "unidades": 11,
+     "poblacion": 9542,
+     "GRAPROES": 7.2,
+     "VPH_AUTOM": 33.3,
+     "VPH_INTER": 33.3,
+     "VPH_PC": 15.7,
+     "VPH_REFRI": 87.7,
+     "VPH_LAVAD": 70.4,
+     "VPH_HMICRO": 37.5,
+     "VPH_2YMASD": 66.8
+    },
+    {
+     "quintil": "Q2",
+     "unidades": 10,
+     "poblacion": 10395,
+     "GRAPROES": 8.1,
+     "VPH_AUTOM": 42.9,
+     "VPH_INTER": 29.3,
+     "VPH_PC": 19.8,
+     "VPH_REFRI": 93.3,
+     "VPH_LAVAD": 79.7,
+     "VPH_HMICRO": 44.5,
+     "VPH_2YMASD": 71.4
+    },
+    {
+     "quintil": "Q3",
+     "unidades": 11,
+     "poblacion": 11315,
+     "GRAPROES": 8.9,
+     "VPH_AUTOM": 44.0,
+     "VPH_INTER": 39.2,
+     "VPH_PC": 29.9,
+     "VPH_REFRI": 94.0,
+     "VPH_LAVAD": 81.5,
+     "VPH_HMICRO": 44.4,
+     "VPH_2YMASD": 74.6
+    },
+    {
+     "quintil": "Q4",
+     "unidades": 10,
+     "poblacion": 13846,
+     "GRAPROES": 9.2,
+     "VPH_AUTOM": 57.0,
+     "VPH_INTER": 43.6,
+     "VPH_PC": 32.5,
+     "VPH_REFRI": 95.5,
+     "VPH_LAVAD": 84.4,
+     "VPH_HMICRO": 51.1,
+     "VPH_2YMASD": 74.5
+    },
+    {
+     "quintil": "Q5 (más alto)",
+     "unidades": 11,
+     "poblacion": 22824,
+     "GRAPROES": 10.3,
+     "VPH_AUTOM": 51.0,
+     "VPH_INTER": 57.0,
+     "VPH_PC": 43.9,
+     "VPH_REFRI": 96.3,
+     "VPH_LAVAD": 86.5,
+     "VPH_HMICRO": 62.4,
+     "VPH_2YMASD": 75.9
+    }
+   ],
+   "pob_acceso_sin_quintil": 1692,
+   "pob_acceso_total": 69613,
+   "tipologia_por_quintil": {
+    "Q1 (más bajo)": {
+     "consolidada desatendida": 5,
+     "consolidada estable": 6,
+     "consolidada y vaciándose": 0,
+     "nueva y bien servida": 0
+    },
+    "Q2": {
+     "consolidada desatendida": 1,
+     "consolidada estable": 9,
+     "consolidada y vaciándose": 0,
+     "nueva y bien servida": 0
+    },
+    "Q3": {
+     "consolidada desatendida": 2,
+     "consolidada estable": 5,
+     "consolidada y vaciándose": 3,
+     "nueva y bien servida": 1
+    },
+    "Q4": {
+     "consolidada desatendida": 1,
+     "consolidada estable": 8,
+     "consolidada y vaciándose": 1,
+     "nueva y bien servida": 0
+    },
+    "Q5 (más alto)": {
+     "consolidada desatendida": 2,
+     "consolidada estable": 9,
+     "consolidada y vaciándose": 0,
+     "nueva y bien servida": 0
+    }
+   },
+   "rho_indice_vs_dist_centro": -0.032,
+   "rho_indice_vs_servicios_lejos": -0.348,
+   "quintiles_por_localidad": {
+    "Acámbaro": {
+     "Q1 (más bajo)": 3,
+     "Q2": 8,
+     "Q3": 10,
+     "Q4": 8,
+     "Q5 (más alto)": 11
+    },
+    "Chupícuaro (Nuevo Chupícuaro)": {
+     "Q1 (más bajo)": 1,
+     "Q2": 1,
+     "Q3": 0,
+     "Q4": 1,
+     "Q5 (más alto)": 0
+    },
+    "Irámuco": {
+     "Q1 (más bajo)": 5,
+     "Q2": 0,
+     "Q3": 0,
+     "Q4": 0,
+     "Q5 (más alto)": 0
+    },
+    "Parácuaro": {
+     "Q1 (más bajo)": 2,
+     "Q2": 1,
+     "Q3": 1,
+     "Q4": 1,
+     "Q5 (más alto)": 0
+    }
+   }
+  },
+  "rural": {
+   "conjunto": "rural (localidad)",
+   "cobertura": {
+    "unidades": 208,
+    "con_indice": 93,
+    "bajo_minimo_30_viv": 115,
+    "pob_bajo_minimo": 1387,
+    "con_oculto": 0,
+    "pob_con_oculto": 0,
+    "pob_con_indice": 37696,
+    "pob_total": 39083
+   },
+   "sensibilidad": {
+    "rho_base_vs_pesos_iguales": 0.865,
+    "rho_base_vs_pc1": 0.811,
+    "mismo_quintil_pesos_iguales_pct": 45.2,
+    "mismo_quintil_pc1_pct": 44.1,
+    "pc1_cargas": {
+     "GRAPROES": 0.267,
+     "VPH_AUTOM": 0.404,
+     "VPH_INTER": 0.211,
+     "VPH_PC": 0.387,
+     "VPH_REFRI": 0.372,
+     "VPH_LAVAD": 0.405,
+     "VPH_HMICRO": 0.43,
+     "VPH_2YMASD": 0.288
+    },
+    "pc1_varianza_explicada": 0.427
+   },
+   "perfil_por_quintil": [
+    {
+     "quintil": "Q1 (más bajo)",
+     "unidades": 19,
+     "poblacion": 4843,
+     "GRAPROES": 5.4,
+     "VPH_AUTOM": 43.1,
+     "VPH_INTER": 4.2,
+     "VPH_PC": 4.2,
+     "VPH_REFRI": 91.6,
+     "VPH_LAVAD": 74.8,
+     "VPH_HMICRO": 44.6,
+     "VPH_2YMASD": 59.5
+    },
+    {
+     "quintil": "Q2",
+     "unidades": 18,
+     "poblacion": 6271,
+     "GRAPROES": 6.4,
+     "VPH_AUTOM": 45.6,
+     "VPH_INTER": 5.4,
+     "VPH_PC": 6.4,
+     "VPH_REFRI": 94.0,
+     "VPH_LAVAD": 72.8,
+     "VPH_HMICRO": 44.4,
+     "VPH_2YMASD": 61.8
+    },
+    {
+     "quintil": "Q3",
+     "unidades": 19,
+     "poblacion": 10781,
+     "GRAPROES": 6.9,
+     "VPH_AUTOM": 43.7,
+     "VPH_INTER": 16.7,
+     "VPH_PC": 9.9,
+     "VPH_REFRI": 92.7,
+     "VPH_LAVAD": 81.2,
+     "VPH_HMICRO": 44.4,
+     "VPH_2YMASD": 69.3
+    },
+    {
+     "quintil": "Q4",
+     "unidades": 18,
+     "poblacion": 9137,
+     "GRAPROES": 7.0,
+     "VPH_AUTOM": 50.5,
+     "VPH_INTER": 17.9,
+     "VPH_PC": 12.4,
+     "VPH_REFRI": 96.6,
+     "VPH_LAVAD": 84.7,
+     "VPH_HMICRO": 54.1,
+     "VPH_2YMASD": 67.2
+    },
+    {
+     "quintil": "Q5 (más alto)",
+     "unidades": 19,
+     "poblacion": 6664,
+     "GRAPROES": 7.8,
+     "VPH_AUTOM": 56.3,
+     "VPH_INTER": 20.0,
+     "VPH_PC": 18.3,
+     "VPH_REFRI": 95.0,
+     "VPH_LAVAD": 84.8,
+     "VPH_HMICRO": 52.1,
+     "VPH_2YMASD": 71.3
+    }
+   ],
+   "pob_acceso_sin_quintil": 1387,
+   "pob_acceso_total": 39083
+  }
+ }
+}

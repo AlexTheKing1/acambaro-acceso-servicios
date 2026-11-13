@@ -78,7 +78,7 @@ def mapa_antiguedad(cu, cen):
     ax[0].legend(handles=[Patch(color=c, label=l) for l, c in PERIODOS.items()] +
                  [plt.Line2D([], [], ls=(0, (2, 3)), color=TINTA2, label="anillos de 500 m desde el centro (+)")],
                  loc="lower right", frameon=True, facecolor=FONDO, edgecolor=GRIS)
-    fig.text(0.01, 0.01, "Fuente: Marco Geoestadístico 2010, 2020 y EIC 2025 (INEGI). Provisional: falta la revisión de zonas en imágenes.",
+    fig.text(0.01, 0.01, "Fuente: Marco Geoestadístico 2010, 2020 y EIC 2025 (INEGI). Zonas revisadas en imágenes satelitales (fase 5).",
              color=TINTA2, fontsize=8)
     fig.savefig(FIG / "fase4b_antiguedad.png", dpi=150)
     plt.close(fig)

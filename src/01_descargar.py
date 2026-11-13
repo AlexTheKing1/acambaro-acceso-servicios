@@ -46,6 +46,14 @@ FUENTES = {
         (f"{INEGI}/programas/ccpv/2010/datosabiertos/ageb_y_manzana/resageburb_11_2010_csv.zip",
          "resageburb_11_2010_csv.zip"),
     ],
+    # Fase 5: ITER nacional (fila "Total nacional") para la comparación regional.
+    # Fuente nueva: máximo 2 intentos (regla de gasto).
+    "iter_nacional": [
+        (f"{INEGI}/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip",
+         "iter_00_cpv2020_csv.zip"),
+        (f"{INEGI}/programas/ccpv/2010/datosabiertos/iter_nal_2010_csv.zip",
+         "iter_nal_2010_csv.zip"),
+    ],
     "iter2010": [
         (f"{INEGI}/programas/ccpv/2010/datosabiertos/iter_11_2010_csv.zip",
          "iter_11_2010_csv.zip"),
@@ -116,8 +124,12 @@ OSM = {"osm_caminos": "overpass_caminos.json"}
 
 # Opcionales: revisión de Alejandro en Google Maps (no es error que falten)
 OPCIONALES = {
-    "verificacion": ["verificacion_zonas.csv", "verificacion_servicios.csv"],
+    "verificacion": ["verificacion_zonas.csv", "verificacion_servicios.csv",
+                     "verificacion_zonas_ghsl.csv"],
 }
+
+
+DOS_INTENTOS = {"iter_nacional"}
 
 
 def bajar(url, destino, intentos=4):
@@ -202,7 +214,7 @@ def main():
                 estado = "ya estaba"
             else:
                 print(f"bajando {fuente}/{nombre} ...", flush=True)
-                estado = bajar(url, destino)
+                estado = bajar(url, destino, intentos=2 if fuente in DOS_INTENTOS else 4)
             if destino.exists():
                 filas.append(fila_manifiesto(fuente, nombre, url, destino))
             elif fuente not in OPCIONALES:

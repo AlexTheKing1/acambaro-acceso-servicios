@@ -1,0 +1,151 @@
+﻿id,cve_loc,localidad,nombre_iter2010,nombre_distinto_2010,clase,cuadras_en_mg2010,n_cuadras,superficie_ha,pob_2020,pob_loc_2010,pob_loc_2020,viv_loc_2010,viv_loc_2020,en_kml,existe_en_imagen,que_se_ve,notas,lat,lon
+Z10-001,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,4,2.54,46.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.006637,-100.712256
+Z10-002,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,2,2.42,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.012446,-100.732106
+Z10-003,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,5,2.33,52.0,57972.0,56597.0,18813.0,21321.0,no,,,,19.990236,-100.732009
+Z10-004,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,2,1.83,8.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.025263,-100.712402
+Z10-005,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,2,1.44,39.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.019716,-100.687399
+Z10-006,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,3,1.35,14.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.01939,-100.689311
+Z10-007,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,1.26,8.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.020903,-100.737488
+Z10-008,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,1.22,40.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.017545,-100.721785
+Z10-009,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,2,0.85,42.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.008736,-100.716407
+Z10-010,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.72,2.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.027759,-100.680187
+Z10-011,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.6,3.0,57972.0,56597.0,18813.0,21321.0,no,,,,19.993361,-100.729179
+Z10-012,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,2,0.52,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.022097,-100.711639
+Z10-013,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.49,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.051234,-100.710572
+Z10-014,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.28,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.014906,-100.721676
+Z10-015,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.21,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.031676,-100.735511
+Z10-016,0001,Acámbaro,Acámbaro,False,crecimiento (ampliación de localidad urbana),True,1,0.18,0.0,57972.0,56597.0,18813.0,21321.0,no,,,,20.027411,-100.731414
+Z10-017,0004,Andocutín,Andocutín,False,cambio de cartografía (pueblo que ya existía),True,5,7.36,,782.0,739.0,393.0,517.0,sí,si,casas dispersas y cultivo,"Varias áreas: en algunas hay varias casas, con mucho terreno sin construir entre ellas y parte de cultivo.",19.958156,-100.870711
+Z10-018,0005,Arroyo Colorado,Arroyo Colorado,False,cambio de cartografía (pueblo que ya existía),True,1,1.0,,763.0,750.0,264.0,325.0,no,,,,20.002247,-100.625831
+Z10-019,0005,Arroyo Colorado,Arroyo Colorado,False,cambio de cartografía (pueblo que ya existía),True,2,0.76,,763.0,750.0,264.0,325.0,no,,,,20.007991,-100.627673
+Z10-020,0006,Arroyo de la Luna,Arroyo de la Luna,False,cambio de cartografía (pueblo que ya existía),True,2,0.9,,506.0,469.0,247.0,298.0,no,,,,20.024447,-100.590498
+Z10-021,0006,Arroyo de la Luna,Arroyo de la Luna,False,cambio de cartografía (pueblo que ya existía),True,2,0.62,,506.0,469.0,247.0,298.0,no,,,,20.026772,-100.592746
+Z10-022,0006,Arroyo de la Luna,Arroyo de la Luna,False,cambio de cartografía (pueblo que ya existía),True,1,0.44,,506.0,469.0,247.0,298.0,no,,,,20.021046,-100.587623
+Z10-023,0006,Arroyo de la Luna,Arroyo de la Luna,False,cambio de cartografía (pueblo que ya existía),True,2,0.31,,506.0,469.0,247.0,298.0,no,,,,20.017628,-100.59063
+Z10-024,0006,Arroyo de la Luna,Arroyo de la Luna,False,cambio de cartografía (pueblo que ya existía),True,1,0.24,,506.0,469.0,247.0,298.0,no,,,,20.023356,-100.589612
+Z10-025,0039,Buenavista (Los Moscos),Buenavista (Los Moscos),False,cambio de cartografía (pueblo que ya existía),False,4,5.25,,90.0,100.0,30.0,38.0,sí,si,varias casas y cultivo,"Varias casas, terreno de cultivo y una escuela dentro de la zona de casas.",19.97013,-100.974011
+Z10-026,0015,Chamácuaro,Chamácuaro,False,cambio de cartografía (pueblo que ya existía),True,1,0.53,,1288.0,1197.0,675.0,885.0,no,,,,20.099894,-100.826632
+Z10-027,0015,Chamácuaro,Chamácuaro,False,cambio de cartografía (pueblo que ya existía),True,1,0.19,,1288.0,1197.0,675.0,885.0,no,,,,20.099057,-100.826924
+Z10-028,0017,Chupícuaro (Nuevo Chupícuaro),Chupícuaro (Nuevo Chupícuaro),False,crecimiento (ampliación de localidad urbana),True,5,2.1,50.0,2273.0,2583.0,1226.0,1335.0,no,,,,20.06943,-100.680926
+Z10-029,0017,Chupícuaro (Nuevo Chupícuaro),Chupícuaro (Nuevo Chupícuaro),False,crecimiento (ampliación de localidad urbana),True,1,0.88,8.0,2273.0,2583.0,1226.0,1335.0,no,,,,20.067384,-100.682795
+Z10-030,0378,Colonia Eduardo Morales Herrejón,Colonia Eduardo Morales Herrejón,False,cambio de cartografía (pueblo que ya existía),False,13,9.59,,38.0,75.0,25.0,60.0,sí,si,"varias casas, baldío y cultivo","Zona grande junto a Z20-006: casas, terreno baldío entre ellas y una zona amplia de cultivo.",20.00434,-100.741363
+Z10-031,0434,Colonia San Isidro,,False,crecimiento nuevo (localidad sin población en 2010),False,4,3.71,,,137.0,,43.0,no,,,,19.969358,-100.918399
+Z10-032,0231,Colonia la Esperanza (Hilario Hernández),Colonia la Esperanza (Hilario Hernández),False,cambio de cartografía (pueblo que ya existía),False,7,7.67,,96.0,198.0,30.0,61.0,sí,si,casas en parte de la zona,Una parte con cierta densidad de casas; gran parte es terreno. Marcada de un lado como colonia y del otro como rancho.,20.017796,-100.74251
+Z10-033,0320,Colonia la Guadalupana,Colonia la Guadalupana,False,cambio de cartografía (pueblo que ya existía),True,3,4.44,,125.0,144.0,41.0,89.0,no,,,,20.110455,-100.820363
+Z10-034,0392,Colonia las Antenas,Colonia las Antenas,False,cambio de cartografía (pueblo que ya existía),False,4,4.03,,25.0,47.0,5.0,33.0,no,,,,19.983802,-100.736081
+Z10-035,0392,Colonia las Antenas,Colonia las Antenas,False,cambio de cartografía (pueblo que ya existía),False,1,0.31,,25.0,47.0,5.0,33.0,no,,,,19.988018,-100.737001
+Z10-036,0055,Corral de Piedras,Corral de Piedras,False,cambio de cartografía (pueblo que ya existía),True,1,1.17,,402.0,410.0,108.0,133.0,no,,,,20.071367,-100.763003
+Z10-037,0055,Corral de Piedras,Corral de Piedras,False,cambio de cartografía (pueblo que ya existía),True,1,1.04,,402.0,410.0,108.0,133.0,no,,,,20.072078,-100.761062
+Z10-038,0126,El Fresno,El Fresno,False,cambio de cartografía (pueblo que ya existía),False,3,3.27,,89.0,94.0,39.0,50.0,no,,,,20.067025,-100.78323
+Z10-039,0032,El Maguey,El Maguey,False,cambio de cartografía (pueblo que ya existía),True,1,1.23,,567.0,533.0,304.0,298.0,no,,,,20.117332,-100.680941
+Z10-040,0038,El Moral,El Moral,False,cambio de cartografía (pueblo que ya existía),True,1,3.71,,166.0,145.0,92.0,104.0,no,,,,19.978446,-100.750305
+Z10-041,0061,El Rodeo,El Rodeo,False,cambio de cartografía (pueblo que ya existía),True,1,1.11,,720.0,656.0,229.0,262.0,no,,,,19.962756,-100.626501
+Z10-042,0061,El Rodeo,El Rodeo,False,cambio de cartografía (pueblo que ya existía),True,1,0.62,,720.0,656.0,229.0,262.0,no,,,,19.967527,-100.621541
+Z10-043,0061,El Rodeo,El Rodeo,False,cambio de cartografía (pueblo que ya existía),True,2,0.36,,720.0,656.0,229.0,262.0,no,,,,19.964542,-100.621078
+Z10-044,0061,El Rodeo,El Rodeo,False,cambio de cartografía (pueblo que ya existía),True,1,0.12,,720.0,656.0,229.0,262.0,no,,,,19.964404,-100.622288
+Z10-045,0062,El Romero,El Romero,False,cambio de cartografía (pueblo que ya existía),True,1,0.27,,269.0,305.0,112.0,149.0,no,,,,20.019596,-100.772778
+Z10-046,0085,El Sauz,El Sauz,False,cambio de cartografía (pueblo que ya existía),True,1,0.84,,222.0,229.0,165.0,178.0,no,,,,20.149452,-100.656712
+Z10-047,0027,Irámuco,Irámuco,False,crecimiento (ampliación de localidad urbana),True,3,1.12,11.0,5954.0,6275.0,1839.0,2336.0,no,,,,19.967057,-100.915783
+Z10-048,0027,Irámuco,Irámuco,False,crecimiento (ampliación de localidad urbana),True,1,0.35,9.0,5954.0,6275.0,1839.0,2336.0,no,,,,19.964103,-100.926655
+Z10-049,0027,Irámuco,Irámuco,False,crecimiento (ampliación de localidad urbana),True,1,0.25,5.0,5954.0,6275.0,1839.0,2336.0,no,,,,19.96435,-100.941082
+Z10-050,0179,Isla Cerro Grande (Isla Chanaco),Isla Cerro Grande (Isla Chanaco),False,cambio de cartografía (pueblo que ya existía),False,8,5.74,,67.0,73.0,23.0,19.0,sí,si,"pocas casas, vegetación","Varias áreas, mayormente árboles y vegetación; en algunas partes pocas casas.",19.931567,-100.954778
+Z10-051,0028,Jaral del Refugio,Jaral del Refugio,False,cambio de cartografía (pueblo que ya existía),True,1,3.22,,724.0,826.0,370.0,462.0,no,,,,20.107369,-100.725382
+Z10-052,0028,Jaral del Refugio,Jaral del Refugio,False,cambio de cartografía (pueblo que ya existía),True,1,0.29,,724.0,826.0,370.0,462.0,no,,,,20.110186,-100.725587
+Z10-053,0422,Juan Pablo II (Las Varas),,False,crecimiento nuevo (localidad sin población en 2010),False,9,9.85,,,30.0,,25.0,sí,si,varias casas junto a cultivo,"Varias casas, no demasiadas, junto a terreno de cultivo; fuera de la zona hay invernaderos.",20.132123,-100.769995
+Z10-054,0010,La Carpa,La Carpa,False,cambio de cartografía (pueblo que ya existía),True,1,0.44,,237.0,294.0,89.0,113.0,no,,,,20.07294,-100.774144
+Z10-055,0010,La Carpa,La Carpa,False,cambio de cartografía (pueblo que ya existía),True,1,0.32,,237.0,294.0,89.0,113.0,no,,,,20.070745,-100.771644
+Z10-056,0010,La Carpa,La Carpa,False,cambio de cartografía (pueblo que ya existía),True,1,0.28,,237.0,294.0,89.0,113.0,no,,,,20.075976,-100.768077
+Z10-057,0010,La Carpa,La Carpa,False,cambio de cartografía (pueblo que ya existía),True,1,0.22,,237.0,294.0,89.0,113.0,no,,,,20.066269,-100.779388
+Z10-058,0016,La Chicharronera (Camino Blanco),La Chicharronera (Camino Blanco),False,cambio de cartografía (pueblo que ya existía),True,1,0.36,,214.0,196.0,107.0,110.0,no,,,,20.185505,-100.653907
+Z10-059,0012,La Concepción,La Concepción,False,cambio de cartografía (pueblo que ya existía),True,1,0.12,,533.0,501.0,208.0,226.0,no,,,,20.17473,-100.738009
+Z10-060,0019,La Encarnación,La Encarnación,False,cambio de cartografía (pueblo que ya existía),True,3,0.84,,803.0,842.0,271.0,392.0,no,,,,20.075018,-100.636206
+Z10-061,0019,La Encarnación,La Encarnación,False,cambio de cartografía (pueblo que ya existía),True,1,0.13,,803.0,842.0,271.0,392.0,no,,,,20.07131,-100.637792
+Z10-062,0390,La Joya,La Joya,False,cambio de cartografía (pueblo que ya existía),True,3,0.83,,167.0,159.0,65.0,59.0,no,,,,20.002699,-100.709395
+Z10-063,0390,La Joya,La Joya,False,cambio de cartografía (pueblo que ya existía),True,1,0.41,,167.0,159.0,65.0,59.0,no,,,,20.00407,-100.710928
+Z10-064,0035,La Mesa de San José,La Mesa de San José,False,cambio de cartografía (pueblo que ya existía),False,7,7.07,,115.0,100.0,71.0,81.0,sí,si,pueblo completo,Muchas casas; parece un pueblo entero.,20.179546,-100.713987
+Z10-065,0035,La Mesa de San José,La Mesa de San José,False,cambio de cartografía (pueblo que ya existía),False,1,0.55,,115.0,100.0,71.0,81.0,no,,,,20.178277,-100.711444
+Z10-066,0035,La Mesa de San José,La Mesa de San José,False,cambio de cartografía (pueblo que ya existía),False,1,0.48,,115.0,100.0,71.0,81.0,no,,,,20.180011,-100.711352
+Z10-067,0043,La Ortiga,La Ortiga,False,cambio de cartografía (pueblo que ya existía),True,1,0.23,,1244.0,1107.0,327.0,303.0,no,,,,19.96561,-100.997627
+Z10-068,0052,La Pila de los Árboles,La Pila de los Árboles,False,cambio de cartografía (pueblo que ya existía),True,1,0.7,,198.0,234.0,58.0,92.0,no,,,,20.050607,-100.900984
+Z10-069,0054,La Presa de Santa Inés,La Presa de Santa Inés,False,cambio de cartografía (pueblo que ya existía),True,2,0.43,,269.0,231.0,122.0,142.0,no,,,,19.98929,-100.599421
+Z10-070,0054,La Presa de Santa Inés,La Presa de Santa Inés,False,cambio de cartografía (pueblo que ya existía),True,1,0.32,,269.0,231.0,122.0,142.0,no,,,,19.990673,-100.602898
+Z10-071,0054,La Presa de Santa Inés,La Presa de Santa Inés,False,cambio de cartografía (pueblo que ya existía),True,1,0.19,,269.0,231.0,122.0,142.0,no,,,,19.985156,-100.602383
+Z10-072,0462,La Providencia [Fraccionamiento],,False,crecimiento nuevo (localidad sin población en 2010),False,5,2.29,,,24.0,,36.0,no,,,,20.045349,-100.750104
+Z10-073,0058,La Purísima Concepción,La Purísima Concepción,False,cambio de cartografía (pueblo que ya existía),True,3,5.88,,241.0,245.0,89.0,107.0,sí,si,"pocas casas, cultivo","Pocas casas; la gran mayoría es terreno sin construir, gran parte de cultivo.",20.07919,-100.655203
+Z10-074,0058,La Purísima Concepción,La Purísima Concepción,False,cambio de cartografía (pueblo que ya existía),True,1,0.86,,241.0,245.0,89.0,107.0,no,,,,20.084959,-100.653802
+Z10-075,0371,Las Huertas [Fraccionamiento],Víctor Ávila Ávalos,True,cambio de cartografía (pueblo que ya existía),False,4,2.02,,4.0,21.0,9.0,15.0,no,,,,19.98544,-100.737432
+Z10-076,0371,Las Huertas [Fraccionamiento],Víctor Ávila Ávalos,True,cambio de cartografía (pueblo que ya existía),False,4,1.71,,4.0,21.0,9.0,15.0,no,,,,19.984324,-100.737481
+Z10-077,0371,Las Huertas [Fraccionamiento],Víctor Ávila Ávalos,True,cambio de cartografía (pueblo que ya existía),False,2,0.62,,4.0,21.0,9.0,15.0,no,,,,19.987148,-100.736853
+Z10-078,0029,Las Jícamas (La Purísima),Las Jícamas (La Purísima),False,cambio de cartografía (pueblo que ya existía),True,2,1.74,,776.0,770.0,236.0,314.0,no,,,,20.060291,-100.842187
+Z10-079,0110,Las Maravillas,Las Maravillas,False,cambio de cartografía (pueblo que ya existía),False,1,1.92,,9.0,18.0,11.0,12.0,no,,,,20.091618,-100.70037
+Z10-080,0110,Las Maravillas,Las Maravillas,False,cambio de cartografía (pueblo que ya existía),False,1,0.66,,9.0,18.0,11.0,12.0,no,,,,20.09324,-100.700642
+Z10-081,0050,Las Partidas,Las Partidas,False,cambio de cartografía (pueblo que ya existía),True,3,2.58,,245.0,254.0,62.0,91.0,no,,,,20.026586,-100.850277
+Z10-082,0106,Las Trancas (Los Milagros),Las Trancas (Los Milagros),False,cambio de cartografía (pueblo que ya existía),False,7,4.93,,162.0,200.0,42.0,76.0,sí,si,"casas en núcleos, terreno",Varias casas concentradas en pequeñas zonas; la mayoría es terreno sin construir.,20.04624,-100.76887
+Z10-083,0106,Las Trancas (Los Milagros),Las Trancas (Los Milagros),False,cambio de cartografía (pueblo que ya existía),False,1,1.12,,162.0,200.0,42.0,76.0,no,,,,20.045298,-100.768941
+Z10-084,0106,Las Trancas (Los Milagros),Las Trancas (Los Milagros),False,cambio de cartografía (pueblo que ya existía),False,1,0.63,,162.0,200.0,42.0,76.0,no,,,,20.045321,-100.766325
+Z10-085,0106,Las Trancas (Los Milagros),Las Trancas (Los Milagros),False,cambio de cartografía (pueblo que ya existía),False,1,0.3,,162.0,200.0,42.0,76.0,no,,,,20.048344,-100.766825
+Z10-086,0254,Loma Linda,Loma Linda,False,cambio de cartografía (pueblo que ya existía),False,3,2.1,,54.0,52.0,18.0,24.0,no,,,,20.109274,-100.652939
+Z10-087,0254,Loma Linda,Loma Linda,False,cambio de cartografía (pueblo que ya existía),False,1,0.52,,54.0,52.0,18.0,24.0,no,,,,20.109175,-100.650458
+Z10-088,0030,Loretito de las Casas,Loretito de las Casas,False,cambio de cartografía (pueblo que ya existía),False,7,6.83,,76.0,49.0,58.0,66.0,sí,si,pueblo completo,Es un pueblo: una parte con mayor densidad de vivienda y otra con terreno de cultivo amplio.,20.080229,-100.70467
+Z10-089,0030,Loretito de las Casas,Loretito de las Casas,False,cambio de cartografía (pueblo que ya existía),False,1,0.18,,76.0,49.0,58.0,66.0,no,,,,20.078479,-100.704445
+Z10-090,0481,Los Caballos [Fraccionamiento],,False,crecimiento nuevo (localidad sin población en 2010),False,5,3.13,,,,,,no,,,,20.052903,-100.682628
+Z10-091,0018,Los Desmontes,Los Desmontes,False,cambio de cartografía (pueblo que ya existía),True,1,0.76,,1016.0,1121.0,378.0,443.0,no,,,,19.950952,-100.732997
+Z10-092,0018,Los Desmontes,Los Desmontes,False,cambio de cartografía (pueblo que ya existía),True,1,0.72,,1016.0,1121.0,378.0,443.0,no,,,,19.958181,-100.744991
+Z10-093,0018,Los Desmontes,Los Desmontes,False,cambio de cartografía (pueblo que ya existía),True,1,0.35,,1016.0,1121.0,378.0,443.0,no,,,,19.953427,-100.743036
+Z10-094,0022,Los Fresnos,Los Fresnos,False,cambio de cartografía (pueblo que ya existía),True,1,0.91,,158.0,157.0,52.0,51.0,no,,,,20.050364,-100.79737
+Z10-095,0022,Los Fresnos,Los Fresnos,False,cambio de cartografía (pueblo que ya existía),True,1,0.4,,158.0,157.0,52.0,51.0,no,,,,20.050978,-100.793924
+Z10-096,0022,Los Fresnos,Los Fresnos,False,cambio de cartografía (pueblo que ya existía),True,1,0.34,,158.0,157.0,52.0,51.0,no,,,,20.051571,-100.790996
+Z10-097,0022,Los Fresnos,Los Fresnos,False,cambio de cartografía (pueblo que ya existía),True,1,0.23,,158.0,157.0,52.0,51.0,no,,,,20.050888,-100.791245
+Z10-098,0132,Los Ángeles (El Carrizo),Los Ángeles (El Carrizo),False,cambio de cartografía (pueblo que ya existía),False,6,4.12,,81.0,42.0,28.0,32.0,no,,,,20.050379,-100.784763
+Z10-099,0042,Los Órganos (Los Órganos de Abajo),Los Órganos (Los Órganos de Abajo),False,cambio de cartografía (pueblo que ya existía),True,1,1.13,,526.0,540.0,187.0,214.0,no,,,,20.056484,-100.816655
+Z10-100,0036,Moncloa,Moncloa,False,cambio de cartografía (pueblo que ya existía),True,1,0.38,,127.0,86.0,75.0,74.0,no,,,,20.167177,-100.691047
+Z10-101,0037,Monte Prieto,Monte Prieto,False,cambio de cartografía (pueblo que ya existía),True,2,1.0,,965.0,1068.0,286.0,374.0,no,,,,20.085935,-100.778098
+Z10-102,0037,Monte Prieto,Monte Prieto,False,cambio de cartografía (pueblo que ya existía),True,1,0.71,,965.0,1068.0,286.0,374.0,no,,,,20.087514,-100.780868
+Z10-103,0037,Monte Prieto,Monte Prieto,False,cambio de cartografía (pueblo que ya existía),True,1,0.54,,965.0,1068.0,286.0,374.0,no,,,,20.084549,-100.780809
+Z10-104,0041,Obrajuelo,Obrajuelo,False,cambio de cartografía (pueblo que ya existía),True,1,2.46,,1042.0,942.0,382.0,485.0,no,,,,20.111879,-100.85274
+Z10-105,0041,Obrajuelo,Obrajuelo,False,cambio de cartografía (pueblo que ya existía),True,1,0.49,,1042.0,942.0,382.0,485.0,no,,,,20.102822,-100.847813
+Z10-106,0044,Palo Blanco del Refugio,Palo Blanco del Refugio,False,cambio de cartografía (pueblo que ya existía),True,2,1.08,,196.0,219.0,69.0,93.0,no,,,,20.010744,-100.790261
+Z10-107,0044,Palo Blanco del Refugio,Palo Blanco del Refugio,False,cambio de cartografía (pueblo que ya existía),True,1,0.59,,196.0,219.0,69.0,93.0,no,,,,20.011073,-100.786555
+Z10-108,0442,Parcialidad,Parcialidad,False,cambio de cartografía (pueblo que ya existía),False,5,2.67,,125.0,141.0,35.0,43.0,no,,,,19.964189,-100.943094
+Z10-109,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,2,1.52,15.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.135093,-100.765869
+Z10-110,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,4,1.42,4.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.152286,-100.755336
+Z10-111,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,2,1.26,0.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.149252,-100.768666
+Z10-112,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,1,0.79,0.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.13696,-100.762379
+Z10-113,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,1,0.64,0.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.150509,-100.763999
+Z10-114,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,1,0.39,0.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.151205,-100.752051
+Z10-115,0047,Parácuaro,Parácuaro,False,crecimiento (ampliación de localidad urbana),True,1,0.25,0.0,4058.0,4159.0,1926.0,2040.0,no,,,,20.149975,-100.761566
+Z10-116,0159,Piedras Chinas,Piedras Chinas,False,cambio de cartografía (pueblo que ya existía),False,6,12.45,,145.0,198.0,46.0,72.0,sí,si,"muy pocas casas, escuelas",Zona muy grande con muy pocas casas y mucho terreno; incluye una primaria y cerca un preescolar.,19.956166,-100.731616
+Z10-117,0159,Piedras Chinas,Piedras Chinas,False,cambio de cartografía (pueblo que ya existía),False,1,1.06,,145.0,198.0,46.0,72.0,no,,,,19.953106,-100.730694
+Z10-118,0315,Presa Solís [Campamento],Presa Solís [Campamento],False,cambio de cartografía (pueblo que ya existía),False,6,5.38,,84.0,91.0,32.0,31.0,sí,si,"varias casas, campo",Varias casas rodeadas de campo.,20.054952,-100.674389
+Z10-119,0056,Providencia de San Agustín,Providencia de San Agustín,False,cambio de cartografía (pueblo que ya existía),True,2,7.62,,305.0,304.0,127.0,160.0,sí,si,"muy pocas casas, cultivo",Muy pocas casas; la mayoría es terreno sin construir y de cultivo.,20.125052,-100.846706
+Z10-120,0057,Puerto de Cabras,Puerto de Cabras,False,cambio de cartografía (pueblo que ya existía),True,1,0.46,,241.0,252.0,119.0,162.0,no,,,,19.988348,-100.976218
+Z10-121,0063,San Agustín,San Agustín,False,cambio de cartografía (pueblo que ya existía),True,2,2.6,,194.0,189.0,78.0,92.0,no,,,,20.12697,-100.856427
+Z10-122,0063,San Agustín,San Agustín,False,cambio de cartografía (pueblo que ya existía),True,1,0.57,,194.0,189.0,78.0,92.0,no,,,,20.127064,-100.85321
+Z10-123,0064,San Antonio,San Antonio,False,cambio de cartografía (pueblo que ya existía),True,1,0.1,,426.0,369.0,199.0,198.0,no,,,,20.001546,-100.697916
+Z10-124,0067,San Diego de Alcalá (Hacienda de San Diego),San Diego de Alcalá (Hacienda de San Diego),False,cambio de cartografía (pueblo que ya existía),True,1,0.48,,1140.0,1279.0,462.0,586.0,no,,,,20.030242,-100.869447
+Z10-125,0070,San Francisco Parácuaro,San Francisco Parácuaro,False,cambio de cartografía (pueblo que ya existía),True,1,1.03,,517.0,529.0,224.0,235.0,no,,,,20.145034,-100.754209
+Z10-126,0290,San José de Medina,San José de Medina,False,cambio de cartografía (pueblo que ya existía),False,5,4.78,,37.0,46.0,9.0,24.0,no,,,,20.067015,-100.673272
+Z10-127,0073,San Juan Jaripeo,San Juan Jaripeo,False,cambio de cartografía (pueblo que ya existía),True,1,1.57,,1173.0,1088.0,530.0,611.0,no,,,,20.005321,-100.75247
+Z10-128,0073,San Juan Jaripeo,San Juan Jaripeo,False,cambio de cartografía (pueblo que ya existía),True,1,0.28,,1173.0,1088.0,530.0,611.0,no,,,,20.00624,-100.754209
+Z10-129,0073,San Juan Jaripeo,San Juan Jaripeo,False,cambio de cartografía (pueblo que ya existía),True,1,0.14,,1173.0,1088.0,530.0,611.0,no,,,,20.007816,-100.751088
+Z10-130,0075,San Juan Viejo,San Juan Viejo,False,cambio de cartografía (pueblo que ya existía),True,1,0.49,,734.0,672.0,273.0,322.0,no,,,,20.090177,-100.745832
+Z10-131,0075,San Juan Viejo,San Juan Viejo,False,cambio de cartografía (pueblo que ya existía),True,1,0.42,,734.0,672.0,273.0,322.0,no,,,,20.094501,-100.746938
+Z10-132,0076,San Luis de los Agustinos,San Luis de los Agustinos,False,cambio de cartografía (pueblo que ya existía),True,1,0.21,,254.0,178.0,115.0,139.0,no,,,,20.192728,-100.690513
+Z10-133,0092,San Mateo Tócuaro,San Mateo Tócuaro,False,cambio de cartografía (pueblo que ya existía),True,1,1.24,,1589.0,1685.0,540.0,717.0,no,,,,19.975648,-100.735736
+Z10-134,0077,San Miguel,San Miguel,False,cambio de cartografía (pueblo que ya existía),True,1,0.12,,779.0,842.0,200.0,238.0,no,,,,20.03995,-100.647196
+Z10-135,0078,San Nicolás de Tolentino,San Nicolás de Tolentino,False,cambio de cartografía (pueblo que ya existía),True,4,5.2,,401.0,353.0,135.0,172.0,sí,si,casi sin construcción,Solo un par de construcciones; la vasta mayoría es terreno de cultivo.,20.022946,-100.671206
+Z10-136,0078,San Nicolás de Tolentino,San Nicolás de Tolentino,False,cambio de cartografía (pueblo que ya existía),True,2,0.71,,401.0,353.0,135.0,172.0,no,,,,20.024651,-100.672294
+Z10-137,0268,San Pedro (La Placa),Colonia San Pedro (La Placa),True,cambio de cartografía (pueblo que ya existía),False,4,2.41,,54.0,40.0,22.0,20.0,no,,,,20.066493,-100.671109
+Z10-138,0079,San Rafael,San Rafael,False,cambio de cartografía (pueblo que ya existía),True,3,1.27,,382.0,385.0,198.0,224.0,no,,,,20.082647,-100.836331
+Z10-139,0080,San Ramón,San Ramón,False,cambio de cartografía (pueblo que ya existía),True,1,0.69,,233.0,153.0,112.0,95.0,no,,,,20.081871,-100.689552
+Z10-140,0080,San Ramón,San Ramón,False,cambio de cartografía (pueblo que ya existía),True,2,0.68,,233.0,153.0,112.0,95.0,no,,,,20.080217,-100.696102
+Z10-141,0087,San Vicente Munguía,San Vicente Munguía,False,cambio de cartografía (pueblo que ya existía),True,1,0.61,,363.0,423.0,254.0,322.0,no,,,,20.103926,-100.595301
+Z10-142,0081,Santa Clara,Santa Clara,False,cambio de cartografía (pueblo que ya existía),True,2,1.61,,303.0,286.0,104.0,123.0,no,,,,19.96531,-100.767823
+Z10-143,0081,Santa Clara,Santa Clara,False,cambio de cartografía (pueblo que ya existía),True,1,1.29,,303.0,286.0,104.0,123.0,no,,,,19.955382,-100.768049
+Z10-144,0081,Santa Clara,Santa Clara,False,cambio de cartografía (pueblo que ya existía),True,1,0.97,,303.0,286.0,104.0,123.0,no,,,,19.952974,-100.768209
+Z10-145,0083,Santa Inés,Santa Inés,False,cambio de cartografía (pueblo que ya existía),True,3,0.75,,419.0,432.0,182.0,226.0,no,,,,20.049177,-100.590052
+Z10-146,0089,Solís,Solís,False,cambio de cartografía (pueblo que ya existía),True,1,0.31,,618.0,606.0,195.0,254.0,no,,,,20.050275,-100.678573
+Z10-147,0089,Solís,Solís,False,cambio de cartografía (pueblo que ya existía),True,1,0.12,,618.0,606.0,195.0,254.0,no,,,,20.049499,-100.678545
+Z10-148,0089,Solís,Solís,False,cambio de cartografía (pueblo que ya existía),True,1,0.03,,618.0,606.0,195.0,254.0,no,,,,20.052075,-100.678209
+Z10-149,0093,Tres Marías,Tres Marías,False,cambio de cartografía (pueblo que ya existía),False,9,7.52,,78.0,96.0,56.0,62.0,sí,si,pueblo con cultivo,"Tres Marías. Varias áreas: una con más densidad de casas, otras con menos, terreno sin construir y una zona grande de cultivo.",20.134408,-100.697626
+Z10-150,0093,Tres Marías,Tres Marías,False,cambio de cartografía (pueblo que ya existía),False,1,0.35,,78.0,96.0,56.0,62.0,no,,,,20.136224,-100.697078
