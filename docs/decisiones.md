@@ -417,3 +417,25 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Decisión**: un intento por año para bajar del INEGI los ITER 2000 y 2005 de Guanajuato (autorizado por Alejandro en esta fase; D50 sigue sin cambio para la superficie por habitante). **Ambos funcionaron** (`cgpv2000_iter_11_csv.zip`, `cpv2005_iter_11_csv.zip`). Se usan solo para la gráfica de proyección contra censo y la serie de población de Irámuco. 2005 es el II Conteo de Población y Vivienda. No traen viviendas deshabitadas.
 - **Pendiente propuesto (no aplicado)**: con estos ITER se podría extender la serie de superficie construida por habitante (GHSL 2000 y 2005, D45/D50). No se hizo porque D50 la deja en 2010 y 2020.
 - **Quién**: Alejandro (autorizó el intento); Claude.
+
+### D64 · 2026-11-13 · Medida principal y titular de salud
+- **Decisión**: la medida principal de salud es **salud abierta** (D58). El **titular** en `docs/resumen_final.md`, `docs/contraste_planes.md` y el sitio es la población **sin afiliación** lejos de una unidad abierta (ciudad: 7 039 de 11 479, 61 %). El 58 % (toda la población, salud abierta) y el 22 % (toda la población, cualquier unidad pública) van como comparación, con la explicación de que los afiliados al IMSS o al ISSSTE sí pueden usar esas clínicas.
+- **Nota obligatoria**: parte de la población sin afiliación se atiende en consultorios de farmacia (servicios médicos privados en la CLUES), que no se cuentan como salud pública.
+- **Campo**: las 4 unidades abiertas de la ciudad pasan a `docs/verificar_campo_fase6.csv` (confirmar que funcionan y atienden a cualquier persona).
+- **Opciones**: salud pública como principal (D20); salud abierta para toda la población como titular.
+- **Quién**: Alejandro.
+
+### D65 · 2026-11-13 · Plan Municipal de Desarrollo 2040 y Programa de Gobierno 2024–2027
+- **Decisión**: el contraste se amplía a cuatro documentos. Los dos nuevos están escaneados y se citan sobre el texto OCR que subió Alejandro, siempre con la **página impresa del Periódico Oficial**: en el Plan 2040, la página del PDF coincide con la impresa; en el Programa, página impresa = página del PDF + 15. La página de cada línea del OCR se toma del último encabezado "PAGINA N"; la verificación automática acepta la página vecina y la marca (no hizo falta: 64 de 64 en su página). Las dudosas se revisan en la imagen.
+- **Ajustes a las citas propuestas**: la frase textual "menor número de [...] escuelas" está solo en p. 158; en p. 143 la idea aparece con otras palabras ("Proporción de equipamiento educativo [...] inferior a la proporción estatal"). En p. 172 el ordenamiento aparece como "Contar con un instrumento técnico normativo en materia ambiental y territorial dentro del Municipio" (corrección de Alejandro). La población 2010 y 2015 del Programa empieza en p. 41 y sigue en p. 42: se cita p. 41–42.
+- **Errata del Programa**: en p. 55 dice que Irámuco tiene "6,725" habitantes (revisado en la imagen); en p. 43 da 6 275, igual que el censo. Se anota sin darle peso.
+- **Dato no verificado**: el PMDUOET podría estar en revisión del IPLANEG; no se afirma.
+- **Quién**: Alejandro (documentos, citas, páginas); Claude (verificación).
+
+### D66 · 2026-11-13 · Los polos se evalúan con el plan de 2006
+- **Decisión**: la evaluación por polos (ajuste 9) usa el Plan 2006, el único que define los polos con su sede y les fija metas de servicios. El Plan 2040 no tiene polos, metas por localidad ni proyecciones. El Programa 2025 dice que "el municipio cuenta con 11 polos de desarrollo rural" (p. 55), pero no los enumera ni les fija metas, y atribuye su imagen al Plan 2040, cuyo texto no los menciona. No se pueden evaluar.
+- **Quién**: Alejandro (enfoque); Claude agregó la mención de los 11 polos del Programa, encontrada al verificar p. 55.
+
+### D67 · 2026-11-13 · Superficie construida por habitante 2000 y 2005: versión 1.1
+- **Decisión**: no se calcula ahora. Queda como pendiente de la versión 1.1 (anotado en `CLAUDE.md`). Responde a la propuesta de D63.
+- **Quién**: Alejandro.

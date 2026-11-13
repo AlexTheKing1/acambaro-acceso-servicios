@@ -372,8 +372,15 @@
  },
  "planes": {
   "citas": {
-   "total": 34,
-   "no_encontradas": []
+   "total": 64,
+   "por_documento": {
+    "municipal": 19,
+    "programa": 17,
+    "prot": 15,
+    "plan2040": 13
+   },
+   "no_encontradas": [],
+   "pagina_vecina": []
   },
   "iramuco_2010_2020": {
    "POBTOT": {

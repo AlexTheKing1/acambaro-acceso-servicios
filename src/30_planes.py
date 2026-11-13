@@ -5,6 +5,13 @@ Documentos (release "datos-crudos", 01_descargar.py --solo planes):
     La página del PDF coincide con la página impresa.
   - Programa Regional de Ordenamiento Territorial de la Subregión 10 (SEDATU–IPLANEG, 2014).
     Página impresa = página del PDF − 1. Aquí se cita siempre la página impresa.
+  - Plan Municipal de Desarrollo 2040 (aprobado 25/03/2015; P.O. núm. 118, 2.ª parte, 24/07/2015,
+    p. 106–186). Escaneado: se usa el OCR que subió Alejandro. Página del PDF = página impresa.
+  - Programa de Gobierno Municipal 2024–2027 (aprobado 23/07/2025; P.O. núm. 173, 2.ª parte,
+    29/08/2025, p. 18–97). Escaneado: OCR de Alejandro. Página impresa = página del PDF + 15.
+  En los dos escaneados, la página impresa se toma de los encabezados del Periódico Oficial
+  ("PAGINA N") que trae el OCR; donde hay dos encabezados seguidos el OCR puede correrse una
+  página, por eso se acepta la página vecina y se marca (D65).
 
 1. Extrae el texto (pdftotext -layout) y verifica que cada cita usada en
    docs/contraste_planes.md esté en la página citada -> docs/verificar_citas_planes.csv.
@@ -20,6 +27,7 @@ Documentos (release "datos-crudos", 01_descargar.py --solo planes):
 import json
 import re
 import subprocess
+import unicodedata
 import zipfile
 from pathlib import Path
 
@@ -37,7 +45,9 @@ DOCS = RAIZ / "docs"
 
 PDF = {"municipal": RAW / "planes" / "plan_municipal_desarrollo_2030.pdf",
        "prot": RAW / "planes" / "prot_subregion10_2014.pdf"}
-DESFASE = {"municipal": 0, "prot": 1}   # página del PDF = impresa + desfase
+OCR = {"plan2040": RAW / "planes" / "plan_municipal_desarrollo_2040_ocr.txt",
+       "programa": RAW / "planes" / "programa_gobierno_2024_2027_ocr.txt"}
+DESFASE = {"municipal": 0, "prot": 1, "plan2040": 0, "programa": -15}   # página del PDF = impresa + desfase
 SUBREGION = {"002": "Acámbaro", "010": "Coroneo", "019": "Jerécuaro", "038": "Tarandacuao"}
 Z90 = 1.645
 
@@ -77,6 +87,38 @@ CITAS = [
     ("prot_crec_2016", "prot", 59, "3.14%"),
     ("prot_crec_2020", "prot", 59, "5.07%"),
     ("prot_crec_2030", "prot", 59, "8.9%"),
+    # Plan Municipal de Desarrollo 2040 (2015), OCR
+    ("p40_unidades_2010", "plan2040", 127, "23 unidades de servicio médico, 1 IMSS, 1 ISSTE y 21 de SSG"),
+    ("p40_carencia_salud", "plan2040", 138, "el 24.6% de la población presenta carencia por acceso a servicios de salud"),
+    ("p40_intensidad_migratoria", "plan2040", 138, "intensidad migratoria clasificado como alto"),
+    ("p40_amenaza_migracion", "plan2040", 142, "amenazas los temas de corrupción en gobierno, el narcotráfico y la migración"),
+    ("p40_equipamiento_educativo", "plan2040", 143, "Proporción de equipamiento educativo (primarias, secundarias, bachillerato y universidad) por número de habitantes inferior a la proporción estatal"),
+    ("p40_menor_numero_escuelas", "plan2040", 158, "menor número de bibliotecas públicas, escuelas en primarias, en secundaria y en bachillerato por habitante"),
+    ("p40_salud_localidades", "plan2040", 162, "Garantizar el acceso a servicios de salud en localidades rurales y urbanas"),
+    ("p40_instituto_planeacion", "plan2040", 166, "Contar con el Instituto de Planeación que integre los planes y proyectos"),
+    ("p40_equipamiento_urbano", "plan2040", 169, "Impulsar el equipamiento urbano de educación, salud, vialidad y deporte acorde a las necesidades de todo el municipio"),
+    ("p40_instrumento_territorial", "plan2040", 172, "Contar con un instrumento técnico normativo en materia ambiental y territorial dentro del Municipio"),
+    ("p40_pduoet", "plan2040", 174, "Programa de Desarrollo Urbano y Ordenamiento Ecológico Territorial del Municipio"),
+    ("p40_implan", "plan2040", 174, "Creación de Instituto Municipal de Planeación"),
+    ("p40_observatorio", "plan2040", 176, "la creación de un observatorio ciudadano local"),
+    # Programa de Gobierno Municipal 2024–2027 (2025), OCR
+    ("pg_pob_2010_2015", "programa", 41, "presentó una población de 109 mil 30 habitantes"),
+    ("pg_pob_2015", "programa", 41, "contaba con 112 mil 125 habitantes"),
+    ("pg_pob_2020_disminucion", "programa", 42, "de 108 mil 697 habitantes, esto significa que en el último quinquenio la población tuvo paulatina disminución"),
+    ("pg_remesas", "programa", 43, "fue un total de 68 millones de dólares"),
+    ("pg_iramuco_p43", "programa", 43, "275 habitantes siendo el 5.77 por ciento"),
+    ("pg_sin_afiliacion", "programa", 44, "el 20.72"),
+    ("pg_unidades_salud", "programa", 45, "26 unidades de atención médica, de las cuales 1 corresponde al Instituto Mexicano del Seguro Social"),
+    ("pg_unidades_ssg", "programa", 45, "24 unidades a la Secretaría de Salud del Estado de Guanajuato"),
+    ("pg_viviendas_habitadas", "programa", 49, "30,171 viviendas habitadas"),
+    ("pg_iramuco_6725", "programa", 55, "6.18 por ciento con 6,725"),
+    ("pg_baja_cobertura", "programa", 55, "baja cobertura de servicios públicos y equipamiento, debido a condiciones de dispersión y baja accesibilidad"),
+    ("pg_11_polos", "programa", 55, "el municipio cuenta con 11 polos de desarrollo rural"),
+    ("pg_pmduoet_elaboracion", "programa", 60, "encuentra en elaboración por un grupo de especialistas"),
+    ("pg_concluir_pmduoet", "programa", 68, "Concluir el Programa Municipal de Desarrollo Urbano"),
+    ("pg_actualizar_2040", "programa", 68, "Actualizar el Plan de Desarrollo Municipal visión 2040"),
+    ("pg_unidad_medica_dif", "programa", 73, "llevando la Unidad médica"),
+    ("pg_4_mercados", "programa", 83, "proyecto integral de los 4 mercados"),
 ]
 
 # Cifras proyectadas transcritas de los planes (D62). tipo: exacta (número escrito) o derivada.
@@ -105,6 +147,26 @@ def normal(t):
     return re.sub(r"\s+", " ", t).replace("- ", "-")
 
 
+def normal_ocr(t):
+    """Más tolerante para el OCR: minúsculas, sin acentos, sin cortes de línea ni dobles espacios."""
+    t = unicodedata.normalize("NFKD", t.lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = re.sub(r"-\s*\n\s*", "", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def paginas_ocr(doc):
+    """{página impresa: texto}, según el último encabezado 'PAGINA N' del Periódico Oficial."""
+    out, pag = {}, None
+    for linea in OCR[doc].read_text(encoding="utf-8").splitlines():
+        m = re.search(r"P[AÁ]GINA\s+(\d+)", linea)
+        if m:
+            pag = int(m.group(1))
+        if pag is not None:
+            out[pag] = out.get(pag, "") + linea + "\n"
+    return out
+
+
 def leer_iter(fuente, nombre_zip, interno):
     with zipfile.ZipFile(RAW / fuente / nombre_zip) as z, z.open(interno) as f:
         t = pd.read_csv(f, dtype=str, encoding_errors="replace")
@@ -116,17 +178,30 @@ def leer_iter(fuente, nombre_zip, interno):
 def main():
     v = {}
     # --- 1. Citas ------------------------------------------------------------------------
-    pags = {d: texto_paginas(d) for d in PDF}
+    # Todo a {página impresa: texto normalizado}
+    paginas = {}
+    for d in PDF:
+        paginas[d] = {i + 1 - DESFASE[d]: normal(x) for i, x in enumerate(texto_paginas(d))}
+    for d in OCR:
+        paginas[d] = {k: normal_ocr(x) for k, x in paginas_ocr(d).items()}
     filas = []
     for cid, doc, pag, cad in CITAS:
-        t = normal(pags[doc][pag - 1 + DESFASE[doc]])
-        ok = normal(cad) in t
-        otras = [i + 1 - DESFASE[doc] for i, x in enumerate(pags[doc]) if normal(cad) in normal(x)]
-        filas.append({"id": cid, "documento": doc, "pagina_impresa": pag, "texto": cad,
-                      "encontrada_en_la_pagina": "sí" if ok else "no", "paginas_donde_aparece": ";".join(map(str, otras))})
+        q = normal_ocr(cad) if doc in OCR else normal(cad)
+        donde = sorted(k for k, x in paginas[doc].items() if q in x)
+        if pag in donde:
+            estado = "sí"
+        elif {pag - 1, pag + 1} & set(donde) and doc in OCR:
+            estado = "página vecina (encabezados del OCR)"
+        else:
+            estado = "no"
+        filas.append({"id": cid, "documento": doc, "texto_de": "OCR" if doc in OCR else "pdftotext",
+                      "pagina_impresa": pag, "pagina_pdf": pag + DESFASE[doc], "texto": cad,
+                      "encontrada_en_la_pagina": estado, "paginas_donde_aparece": ";".join(map(str, donde))})
     citas = pd.DataFrame(filas)
     citas.to_csv(DOCS / "verificar_citas_planes.csv", index=False)
-    v["citas"] = {"total": len(citas), "no_encontradas": citas[citas.encontrada_en_la_pagina == "no"].id.tolist()}
+    v["citas"] = {"total": len(citas), "por_documento": citas.documento.value_counts().to_dict(),
+                  "no_encontradas": citas[citas.encontrada_en_la_pagina == "no"].id.tolist(),
+                  "pagina_vecina": citas[citas.encontrada_en_la_pagina.str.startswith("página")].id.tolist()}
 
     # --- Censos ---------------------------------------------------------------------------
     it = {
@@ -208,14 +283,28 @@ def main():
     # es correcta (otra escuela o reubicación). Lista aparte para no tocar docs/verificar_campo.csv.
     sed = pd.read_csv(P / "servicios_sedes_fase4.csv", dtype=str)
     st = sed[sed.claves_sep_clues.fillna("").str.contains("11DST0024Y")].iloc[0]
-    pd.DataFrame([{
+    campo = [{
         "orden": 1, "id": st.id_sede, "tipo": "secundaria", "nombre": st.nombre, "clave_sep": "11DST0024Y",
         "localidad_catalogo": st.localidad,
         "motivo": "Plan Municipal (p. 64) la ubica en la carretera Parácuaro–El Jaral; D39, en la carretera "
                   "Acámbaro–Parácuaro km 9. Confirmar si es la misma escuela, si se reubicó o si hay otra secundaria técnica.",
         "lat": st.lat, "lon": st.lon,
         "enlace_google_maps": f"https://www.google.com/maps/search/?api=1&query={st.lat},{st.lon}",
-        "existe_campo": "", "fecha_visita": "", "foto": "", "notas": ""}]).to_csv(DOCS / "verificar_campo_fase6.csv", index=False)
+        "existe_campo": "", "fecha_visita": "", "foto": "", "notas": ""}]
+    # Las 4 unidades de salud abierta de la ciudad (D58, D64): son las que sostienen el titular
+    # de salud; confirmar que funcionan y que atienden a cualquier persona.
+    cl = pd.read_csv(P / "salud_clasificacion_instituciones.csv", dtype=str)
+    ab = cl[(cl.cve_loc == "0001") & (cl.en_acambaro == "True") & cl.clase.isin(["abierta", "abierta_umr"])]
+    for k, r in enumerate(ab.itertuples(), start=2):
+        campo.append({"orden": k, "id": r.id_sede, "tipo": "salud_primer_nivel (salud abierta)", "nombre": r.nombre,
+                      "clave_sep": "", "localidad_catalogo": r.localidad,
+                      "motivo": f"Salud abierta de la ciudad ({r.institucion}). Confirmar que funciona y que atiende a "
+                                "cualquier persona, con o sin afiliación (D64).",
+                      "lat": r.lat, "lon": r.lon,
+                      "enlace_google_maps": f"https://www.google.com/maps/search/?api=1&query={r.lat},{r.lon}",
+                      "existe_campo": "", "fecha_visita": "", "foto": "", "notas": ""})
+    assert len(ab) == 4, ab
+    pd.DataFrame(campo).to_csv(DOCS / "verificar_campo_fase6.csv", index=False)
 
     f = P / "validacion_fase6.json"
     todo = json.loads(f.read_text()) if f.exists() else {}

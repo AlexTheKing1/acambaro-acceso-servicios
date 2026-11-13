@@ -119,7 +119,12 @@ DEL_RELEASE = {
     "sep_escuelas": ["cct11.csv", "cct16.csv"],
     # Fase 6: Plan Municipal de Desarrollo Acámbaro 2030 (COPLADEM 2003–2006) y
     # Programa Regional de Ordenamiento Territorial, Subregión 10 (SEDATU–IPLANEG 2014)
-    "planes": ["plan_municipal_desarrollo_2030.pdf", "prot_subregion10_2014.pdf"],
+    # Ampliación (D65): Plan Municipal de Desarrollo 2040 (P.O. núm. 118, 2.ª parte, 24/07/2015) y
+    # Programa de Gobierno Municipal 2024–2027 (P.O. núm. 173, 2.ª parte, 29/08/2025). Son escaneos:
+    # se usan los textos OCR que subió Alejandro.
+    "planes": ["plan_municipal_desarrollo_2030.pdf", "prot_subregion10_2014.pdf",
+               "plan_municipal_desarrollo_2040.pdf", "programa_gobierno_2024_2027.pdf",
+               "plan_municipal_desarrollo_2040_ocr.txt", "programa_gobierno_2024_2027_ocr.txt"],
 }
 # Red de caminos para la escala municipio (D26). La Red Nacional de Caminos del
 # INEGI no tiene URL directa localizable (sus páginas son dinámicas; 2 intentos

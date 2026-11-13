@@ -117,3 +117,12 @@ No están en el release ni en el repositorio. Se citan con las páginas que dio 
 | SEDESOL (1999), *Sistema Normativo de Equipamiento Urbano*, tomo I Educación y cultura, tomo II Salud y asistencia social, tomo III Comercio y abasto | Radios de servicio urbano recomendables; un centro de salud rural por localidad de 2 500 a 10 000 hab.; preparatoria general y Colegio de Bachilleres 2–5 km, CBTIS y CONALEP 5–10 km; mercado público 750 m; tianguis o mercado sobre ruedas 750–1 000 m. Sin glosario ni definición de si el radio es en línea recta |
 | SEDATU y GIZ (2024), *Lineamientos de equipamiento* | p. 19 (no sustituyen al "Sistema Normativo vigente"), p. 26–27 (marco de accesibilidad), p. 80 ("radio caminable de 800 metros") |
 | NOM-002-SEDATU-2022 | Clasificación del equipamiento; no fija distancias |
+
+### Ampliación del contraste (2026-11-13)
+
+| Dato | Versión / fecha | URL directa | Uso |
+|---|---|---|---|
+| Plan Municipal de Desarrollo 2040 de Acámbaro | Aprobado por el Ayuntamiento el 25/03/2015 (acta 86); Periódico Oficial del Gobierno del Estado de Guanajuato núm. 118, 2.ª parte, 24/07/2015, p. 106–186. Escaneo de 264 páginas (todo el ejemplar; página del PDF = página impresa) | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2040.pdf` | Contraste (D65) |
+| Texto OCR del Plan 2040 | Subido por Alejandro; trae los encabezados "PAGINA 106…186" del Periódico Oficial | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2040_ocr.txt` | Verificación de citas |
+| Programa de Gobierno Municipal 2024–2027 de Acámbaro | Aprobado el 23/07/2025; Periódico Oficial núm. 173, 2.ª parte, 29/08/2025, p. 18–97. Escaneo de 82 páginas (página impresa = página del PDF + 15) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027.pdf` | Contraste (D65) |
+| Texto OCR del Programa de Gobierno | Subido por Alejandro; encabezados "PÁGINA N" (dobles en algunas páginas de tablas) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027_ocr.txt` | Verificación de citas |

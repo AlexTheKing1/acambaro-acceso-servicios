@@ -12,6 +12,7 @@ Esta carpeta no se sube al repositorio. `python src/01_descargar.py` la llena so
 | `verificacion_zonas.csv` | Revisión de las 28 zonas de cuadras nuevas en Google Earth (Alejandro) | antes del 2026-11-13 |
 | `verificacion_zonas_ghsl.csv` | Revisión de las 20 zonas GHSL sin cuadras (Alejandro) | antes del 2026-11-13 |
 | `plan_municipal_desarrollo_2030.pdf`, `prot_subregion10_2014.pdf` | Plan Municipal de Desarrollo Acámbaro 2030 y PROT Subregión 10 (fase 6; `--solo planes`) | antes del 2026-11-13 |
+| `plan_municipal_desarrollo_2040.pdf`, `programa_gobierno_2024_2027.pdf` y sus `_ocr.txt` | Plan Municipal de Desarrollo 2040 (2015) y Programa de Gobierno 2024–2027 (2025), escaneos con su OCR (fase 6; `--solo planes`) | 2026-11-13 |
 
 CONAPO no está disponible y ya no se busca (D24).
 

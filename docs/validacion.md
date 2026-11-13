@@ -357,3 +357,11 @@ Todas las claves en `data/processed/validacion_fase6.json`.
 - Ciudad: 31.64 % (PROT p. 30) × 183 194 = 57 963, contra 57 972 de la localidad 0001 en el censo 2010 (diferencia de 9 por redondeo del porcentaje): misma definición.
 - ITER 2000 y 2005 bajados al primer intento. El de 2005 usa otros nombres de columna (`p_total`, `t_vivhab`): se renombran. Irámuco aparece como "IRAMUCO" (2000) e "Iramuco" (2005), misma clave 0027.
 - **Salió mal**: el PROT es inconsistente consigo mismo (189 535 en 2014 es +3.5 % sobre 2010, más que el +3.14 % que da para 2016). Se reportan ambas cifras como aparecen. La gráfica que se esperaba en 2.2.2.3 (p. 47) no existe en el PDF.
+
+**V59 · Citas de los cuatro planes (ampliación de la fase 6).**
+- `docs/verificar_citas_planes.csv`: **64 de 64** citas encontradas en la página impresa indicada (34 del Plan 2006 y el PROT con `pdftotext`; 13 del Plan 2040 y 17 del Programa 2025 con el OCR). Ninguna quedó en "página vecina".
+- Páginas comprobadas en la imagen: Plan 2040, PDF 107 = p. 107 y PDF 172 = p. 172 (la frase del instrumento técnico normativo, al pie, bajo "CIUDADES"); Programa, PDF 28 = p. 43 y PDF 40 = p. 55 (dice "6,725" para Irámuco: errata del documento).
+- El OCR del Programa trae encabezados dobles en páginas de tablas (27/28, 29/30, 33/34, 35/36): el texto de esas páginas puede asignarse a la segunda. No afectó a ninguna cita.
+- Barrido de las acciones del Programa (p. 61–89), buscando salud, médic, educa, escuel, abasto, mercado, tianguis, clínica, hospital, construcción y rehabilitación. Hay acciones de salud del DIF (unidad médica, rehabilitación), apoyos educativos, mercados de la ciudad (p. 83), panteones, agua, canchas y calles. **Ninguna construye unidades de salud, escuelas o mercados en las localidades.**
+- Plan 2040: sin "polo", "deshabitad" ni "proyecci" en todo el OCR. El mapa 4 (p. 175) no tiene leyenda legible.
+- **Salió mal / cuidado**: el Plan 2040 (p. 127) suma 23 unidades, pero desglosa 24 de la SSG. El Programa (p. 44) da 22 522 sin afiliación; el censo, 22 418.
