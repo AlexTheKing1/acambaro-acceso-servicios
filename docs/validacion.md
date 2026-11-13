@@ -291,3 +291,44 @@ Todos los resultados son **provisionales**: `verificacion_zonas.csv` sigue sin e
 - Mediana de distancia al centro de las zonas: ciudad 3.2 km (igual que las cuadras nuevas del MG), Parácuaro 1.3 km, Chupícuaro 1.6 km, Irámuco 2.5 km.
 - KML: 20 Placemark; se abre con ElementTree. `verificar_zonas_ghsl.csv`: 78 filas, columnas vacías existe_en_imagen / que_se_ve / notas; al volver a correr se conserva lo anotado (por id).
 - **Sin revisar en imágenes**: todo lo anterior es provisional.
+
+## Fase 5 (2026-11-13) — cierre del análisis
+
+**V48 · Revisión de zonas INEGI (`verificacion_zonas.csv`, 28 zonas; `23_verificacion_zonas.py`).**
+- Las 28 ids del archivo tienen pareja en `docs/verificar_zonas_nuevas.csv` (0 huérfanas). 2010–2020: 15 de 15 "si". Posteriores a 2020: 12 "si" y 1 "no se ve" (Z20-010, San José de la Peña: "parece ser un tramo de calle").
+- Lo que se ve es casi siempre **poca construcción**: en 2020+ predominan "pocas casas" con terreno o cultivo (9 de 12); Z20-011 es invernadero y bodegas; Z20-008 (La Ortiga) es la única con "varias casas con calles". En 2010–2020, 3 son pueblos completos o casi (La Mesa de San José, Loretito de las Casas, Tres Marías) y el resto son casas dispersas o en núcleos con mucho terreno y cultivo.
+- **Z20-010 excluida (D53)**: 1 cuadra, 0.01 ha, sin población. Se agregó `EXCLUIR_ZONAS` en `19_crecimiento.py` (las claves se toman de `verificar_zonas_nuevas.csv` por id, porque la revisión no las trae). Cuadras posteriores a 2020 en el municipio: de 13 zonas / 17 cuadras / 12.75 ha a **12 / 16 / 12.74 ha**.
+- **Recálculo de la fase 4b**: se corrieron `19 → 20 → 22 → 21`. Z20-010 no está en ninguna de las 4 localidades urbanas ("de ellas en las 4 urbanas: 0"), así que **ninguna cifra de la 4b cambia**: `crecimiento_acceso.csv` es idéntico salvo la columna `provisional` (ahora False), y la tipología, las viviendas y el GHSL salen iguales (comparado contra la versión anterior guardada aparte). Ya no hay zonas "no" que restar: la base definitiva es la misma que la provisional. El pie del mapa `fase4b_antiguedad.png` ya no dice "provisional".
+- Limitación: las 28 zonas de 2010–2020 de las 4 localidades urbanas (29.2 ha) **no estaban entre las revisadas** (el KML llevaba las 15 más grandes, todas rurales). Su existencia descansa en el MG y en que el GHSL ve 0.6 ha de construcción en ellas.
+
+**V49 · Zonas 2010–2020 y el ITER 2010 (D54; `zonas_2010_2020_clase.csv`).**
+- Las 150 zonas se unieron al ITER 2010 por clave de localidad. 146 tienen pareja; 4 no (Colonia San Isidro 0434, Juan Pablo II 0422, La Providencia 0462, Los Caballos 0481: localidades creadas después de 2010). 4 zonas tienen nombre distinto con la misma clave (Las Huertas [Fraccionamiento] = "Víctor Ávila Ávalos" en 2010, 3 zonas; San Pedro (La Placa) = "Colonia San Pedro (La Placa)"); se tratan como la misma localidad, pero Las Huertas podría ser una clave reutilizada: no se pudo comprobar.
+- Resultado: **cambio de cartografía** 118 zonas, 247 cuadras, 199.6 ha, en 67 localidades rurales con 26 991 hab. en 2010 y 27 075 en 2020 (+0.3 %; viviendas 10 699 → 13 078). **Ampliación de localidad urbana** 28 zonas, 53 cuadras, 29.2 ha, 356 personas en las cuadras. **Crecimiento nuevo** 4 zonas, 23 cuadras, 19.0 ha; esas localidades tenían 191 hab. en 2020 (Los Caballos sin dato ITER 2020).
+- Dentro de "cambio de cartografía", 86 zonas (91.3 ha) están en localidades que ya tenían alguna cuadra en el MG 2010 y 32 (108.2 ha) en localidades sin ninguna. Que la población de esas localidades no cambie (+84 personas en 10 años) mientras se dibujan 200 ha de cuadras confirma la lectura de Alejandro: es el INEGI dibujando pueblos que ya estaban.
+- Las 15 revisadas: 14 caen en "cambio de cartografía" y 1 (Z10-053, Juan Pablo II, 30 hab. en 2020) en "crecimiento nuevo".
+- Personas: el censo por cuadra solo existe para las localidades urbanas; para las rurales se da la población de la localidad entera, no la de la zona.
+
+**V50 · Revisión de zonas GHSL (`verificacion_zonas_ghsl.csv`, 20 zonas; `verificacion_ghsl_resultado.csv`).**
+- 20 de 20 con pareja en `ghsl_zonas_sin_cuadras.csv`. existe_en_imagen: 6 "si", 13 "no", 1 "no se ve". Las 20 suman 22.7 ha ganadas, el **70.5 %** de los m² de las 78 zonas.
+- Clasificación de `que_se_ve` (reglas en `REGLAS_GHSL`, revisadas una por una): **vivienda** 6 zonas, 5.7 ha (25 %: G-004, G-006, G-008, G-015, G-017, G-019; G-004 incluye el CECyTEG); **invernadero o nave** 8 zonas, 10.0 ha (44 %: G-002, G-003, G-005, G-007, G-010, G-011, G-013, G-020); **baldío** 2 zonas, 4.4 ha (19 %: G-001, la más grande, y G-018); **otros** 4 zonas, 2.7 ha (12 %: G-009 y G-012 casa aislada con bodega, G-014 probable panteón, G-016 no se distingue casa de invernadero).
+- En la ciudad: de 19.3 ha revisadas, 3.7 ha son vivienda (3 zonas), 8.5 invernadero o nave, 4.4 baldío y 2.7 otros. Parácuaro: 1.1 ha vivienda, 0.9 nave. Chupícuaro: 0.9 ha vivienda. Irámuco: 0.5 invernadero.
+- **Lo que salió mal**: el GHSL leyó como construcción nueva invernaderos y suelo desnudo. La zona más grande (G-001, 3.9 ha "ganadas") es terreno baldío con terracería. Las 42 ha "fuera de cuadras" de la ciudad **no son vivienda**: de lo revisado, solo una cuarta parte lo es. No se extrapola a las 58 zonas no revisadas (29.5 % de los m²).
+
+**V51 · Comparación regional (`24_comparacion_regional.py`, `comparacion_regional.csv`).**
+- Fuentes: ITER 2010 y 2020 de Guanajuato (ya usados) e ITER nacional 2010 y 2020 (nuevos; bajaron al primer intento). El ITER nacional 2010 trae los encabezados en minúsculas (se pasan a mayúsculas).
+- Chequeos: Acámbaro 109 030 (2010) y 108 697 (2020), iguales a lo usado desde la fase 1. Total nacional 2020 = suma de los 32 totales estatales del mismo archivo (126 014 024). 0 valores faltantes en las 18 filas × 5 variables.
+- **Error corregido antes de correr**: en el plan escribí las claves 018 y 031 para Jerécuaro y Santiago Maravatío; son **019 y 036** (018 es Jaral del Progreso y 031 San Francisco del Rincón). Se verificó por nombre en el ITER.
+- EIC 2025: población municipal con IC 90 % para los 7 municipios, Guanajuato y el país. La EIC publica cabecera solo para Acámbaro de entre los 7: las otras 6 cabeceras quedan sin dato 2025.
+
+**V52 · Correlatos del vaciamiento (`25_vaciamiento_correlatos.py`).**
+- Urbano: 126 AGEB; 56 con ≥ 30 viviendas (las 70 restantes tienen 1 273 personas). Con dato completo en todas las variables, 37 (6 898 personas en AGEB con algún "*"). Los "*" están en % uso temporal (9 AGEB), % que vivía en otra entidad en 2015 (11) y cambio de población (3, unidades sin gente en 2010). Cada correlación usa las AGEB con dato en esas dos variables (n en la tabla).
+- Rural: 208 localidades; 93 con ≥ 30 viviendas (1 387 personas quedan fuera); 2 sin dato de cambio de población.
+- EIC 2025: el diccionario dice que PCN_HOG_OPAIS es "% de hogares donde alguien **recibe dinero** de una persona que vive en otro país" (remesas), no "hogares con un integrante en otro país". Se corrigió la etiqueta antes de usarla. PCN_PRESOP20 es "otro país distinto de EE. UU.".
+
+**V53 · Índice socioeconómico aproximado (`26_nse_aproximado.py`).**
+- **Piso de tierra fuera**: el INEGI lo oculta en 16 de las 56 AGEB con ≥ 30 viviendas (10 060 personas). Con él, el índice urbano cubría 38 AGEB; sin él, **53 AGEB, 67 922 de 69 614 personas**. Las 3 AGEB que faltan tienen "*" en computadora (419 personas).
+- Rural: 93 localidades con índice, 37 696 de 39 083 personas (sin "*" en las variables usadas).
+- Sensibilidad urbana: correlación de rangos con pesos iguales 0.97 y con el primer componente principal 0.97 (explica 60 % de la varianza; todas las cargas positivas, la más baja "2 dormitorios o más", 0.11). Mismo quintil: 74 % y 70 %. **Firme.**
+- Sensibilidad rural: 0.87 y 0.81; mismo quintil solo 45 % y 44 % (el componente explica 43 %). El orden general se sostiene, pero el quintil de una localidad concreta **no es firme**.
+- Irámuco cae en el quintil urbano más bajo con sus 5 AGEB; por eso el cruce se repite solo con la ciudad (mismos quintiles): Q1 de la ciudad son 3 AGEB con 358 personas.
+- Cruce con el acceso: población de `acceso_cuadras` 69 613; sin quintil 1 692 (AGEB sin índice). Rural: 39 083; sin quintil 1 387.

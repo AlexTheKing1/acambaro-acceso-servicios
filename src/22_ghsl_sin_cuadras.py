@@ -8,7 +8,7 @@ nuevas del MG suman ~18 ha. Aquí se ubica la diferencia:
   2. Cada celda se cruza con las cuadras del MG más reciente (MG EIC 2025, todas las del
      municipio): fracción de la celda cubierta por cuadras. La ganancia se reparte en
      "dentro de cuadras" (ganancia × fracción) y "fuera" (el resto), sin umbral.
-  3. Celda "sin cuadras" (D52, provisional): ganancia >= GANANCIA_MIN m² y < COBERTURA_MAX
+  3. Celda "sin cuadras" (D52; detecta construcción, no vivienda): ganancia >= GANANCIA_MIN m² y < COBERTURA_MAX
      de su superficie en cuadras. Las celdas contiguas (vecindad de 8) forman una zona.
 
 Salidas:

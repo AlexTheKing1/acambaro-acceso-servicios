@@ -322,8 +322,43 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Decisión**: "¿Quién está lejos hoy? Acceso a servicios y vaciamiento urbano en Acámbaro". Puede cambiar al redactar.
 - **Quién**: Alejandro.
 
-### D52 · 2026-10-23 · Construcción del GHSL fuera de las cuadras del INEGI (provisional)
+### D52 · 2026-10-23 · Construcción del GHSL fuera de las cuadras del INEGI (aceptado en la fase 5, ver abajo)
 - **Decisión**: (a) **Contabilidad sin umbral**: se usan las celdas GHS-BUILT-S de 100 m a ≤ 1 km de las 4 localidades urbanas, con la misma asignación que D45. Para cada celda, los m² ganados entre 2010 y 2020 se reparten según qué fracción de la celda está cubierta por cuadras del MG más reciente (MG EIC 2025, todas las del municipio): esa parte cuenta "dentro de cuadras" y el resto "fuera". (b) Una **celda "sin cuadras"** ganó ≥ 500 m² (5 % de la celda) y tiene < 25 % de su superficie en cuadras. (c) Las celdas sin cuadras que se tocan (también por la esquina) forman una **zona**. Las zonas se ordenan por m² ganados; el KML lleva las 20 más grandes.
 - **Opciones**: corte de cobertura en 10, 25 o 50 %; ganancia mínima de 200, 500 o 1 000 m²; usar el polígono de la localidad en lugar de las cuadras (incluye calles); contar solo celdas sin ninguna cuadra.
-- **Quién**: Claude (provisional, **pendiente de la revisión de Alejandro** con `docs/verificar_zonas_ghsl.csv`).
+- **Quién**: Claude; aceptado por Alejandro el 2026-11-13 con la precisión de abajo (D52, fase 5).
 - **Por qué**: una celda urbana ya construida en 2010 tiene normalmente 69–90 % de su superficie en cuadras (percentiles 10–90), porque las calles no son cuadra. Con menos de 25 %, la celda está claramente fuera de la traza del INEGI. 500 m² equivale a unas 4–5 casas y evita contar como crecimiento las variaciones pequeñas del modelo. Los resultados se mueven poco con los cortes alternativos (V46).
+
+---
+
+## Fase 5 — Cierre del análisis (2026-11-13)
+
+### D52 (cierre) · 2026-11-13 · Qué detecta el criterio del GHSL
+- **Decisión**: el criterio se acepta tal cual (≥ 500 m² ganados, < 25 % de la celda en cuadras) como **detección de construcción, no de vivienda**. La conclusión sobre crecimiento residencial fuera de la traza del INEGI se basa en la revisión visual de las 20 zonas más grandes (V50), no en las 42 ha.
+- **Quién**: Alejandro.
+- **Por qué**: de lo revisado, 44 % de los m² son invernaderos o naves, 19 % baldío y solo 25 % vivienda.
+
+### D53 · 2026-11-13 · Excluir la zona Z20-010
+- **Decisión**: la zona Z20-010 (San José de la Peña, 1 cuadra, 0.01 ha) se excluye de todo cálculo por ser un error de dibujo (un tramo de calle). La exclusión es por id (`EXCLUIR_ZONAS` en `19_crecimiento.py`), además de las zonas que se marquen "no".
+- **Quién**: Alejandro (observación en Google Earth); Claude la aplicó.
+- **Efecto**: ninguno en la fase 4b (es rural); las cuadras posteriores a 2020 del municipio pasan de 17 a 16 (V48).
+
+### D54 · 2026-11-13 · Zonas 2010–2020: cambio de cartografía o crecimiento
+- **Decisión**: si la localidad de una zona 2010–2020 ya tenía población en el ITER 2010, la zona es **cambio de cartografía** (pueblo que existía y el INEGI empezó a dibujar en cuadras), no crecimiento nuevo. Excepción: en las 4 localidades urbanas (D09), que ya estaban dibujadas completas en 2010, las cuadras nuevas se tratan como **ampliación** (crecimiento), como en la fase 4b. Sin población en 2010 = **crecimiento nuevo**.
+- **Opciones**: la regla literal (toda localidad con población 2010 → cartografía, incluida la ciudad), que borraría el crecimiento de la ciudad que sí se ve en el MG y en el GHSL; o separar por si la localidad tenía cuadras en el MG 2010, que dejaría como "ampliación" a pueblos como La Mesa de San José o Tres Marías, que Alejandro vio completos.
+- **Quién**: regla de Alejandro; la excepción urbana es de Claude, **por confirmar**.
+- **Por qué**: las 67 localidades rurales con cambio de cartografía no ganaron población (26 991 → 27 075) mientras se dibujaban 200 ha de cuadras.
+
+### D55 · 2026-11-13 · Comparación regional: unidades y denominador
+- **Decisión**: Acámbaro (002), Coroneo (010), Jerécuaro (019), Salvatierra (028), Santiago Maravatío (036), Tarandacuao (038) y Tarimoro (039), más Guanajuato y el país; municipio completo y cabecera (localidad 0001). % deshabitadas y % uso temporal sobre el total de viviendas (VIVTOT), como en la fase 4b. EIC 2025: solo población, con intervalo de 90 % (valor ± 1.645 × error estándar); las viviendas de la encuesta no se mezclan con las del censo.
+- **Quién**: Alejandro (municipios y variables; EIC 2025 pedida en la aprobación del plan); Claude (denominador e intervalo).
+
+### D56 · 2026-11-13 · Índice socioeconómico aproximado
+- **Decisión**: índice = 0.5 · z(escolaridad promedio) + 0.5 · promedio de z(% de viviendas habitadas con automóvil, internet, computadora, refrigerador, lavadora, horno de microondas y 2 dormitorios o más). Los z se calculan **dentro de cada conjunto** (AGEB urbanas de las 4 localidades; localidades rurales); quintiles dentro de cada conjunto. Urbano y rural **no se comparan** entre sí y se cruzan con el acceso por separado. El piso de tierra queda fuera (oculto en 16 de 56 AGEB). Sensibilidad: pesos iguales y primer componente principal.
+- **Opciones**: pesos iguales; componente principal; incluir piso de tierra, drenaje o excusado (casi sin variación en lo urbano y con muchos "*").
+- **Quién**: Claude (fórmula, **por aprobar**); Alejandro (separación urbano/rural, en la aprobación del plan).
+- **Por qué**: la regla AMAI da peso propio a la escolaridad y el resto a bienes y conectividad; el censo publica por área lo más parecido. No es el NSE oficial (que se calcula por hogar con su propio cuestionario) ni es ingreso.
+
+### D57 · 2026-11-13 · Unidades para los cruces de vaciamiento y nivel socioeconómico
+- **Decisión**: AGEB urbanas y localidades rurales con ≥ 30 viviendas (mismo mínimo que la tipología, D47). Correlación de rangos de Spearman y medianas por cuartil. Descriptivo, no causal.
+- **Quién**: Claude.
+- **Por qué**: con menos viviendas los porcentajes saltan con una sola casa y el "*" del INEGI oculta casi todo.

@@ -1,0 +1,21 @@
+﻿id,localidad,cve_loc,superficie_ha,m2_ganados,celdas,dist_centro_m,localidades_rurales_en_zona,existe_en_imagen,que_se_ve,tipo,notas
+G-001,Acámbaro,0001,28.6,38567,29,2893,,no,terreno baldío,baldío,Solo terreno baldío y caminos de terracería que se conectan con calles de colonias vecinas.
+G-002,Acámbaro,0001,11.9,26153,12,2789,Las Malayas (La Providencia) (0270),no,invernadero / naves agrícolas,invernadero o nave,Naves o invernaderos muy grandes; hay un rancho cerca pero fuera del contorno.
+G-003,Acámbaro,0001,12.8,25426,13,2614,Hacienda Real de Acámbaro (0338),no,invernadero,invernadero o nave,
+G-004,Acámbaro,0001,7.9,20110,8,3171,,si,casas dispersas,vivienda,Dentro de la zona está el CECYTEG Plantel Acámbaro.
+G-005,Acámbaro,0001,11.9,13413,12,2770,,no,invernadero,invernadero o nave,
+G-006,Acámbaro,0001,8.9,11634,9,4381,,si,pocas casas,vivienda,Un par de casas y mucho terreno baldío junto a la carretera.
+G-007,Parácuaro,0047,4.0,9310,4,1867,Los Coss [Rancho] (0323),no,nave / terreno particular,invernadero o nave,Nave o edificio en terreno particular.
+G-008,Chupícuaro (Nuevo Chupícuaro),0017,5.9,8855,6,1243,,si,casas y establecimientos,vivienda,
+G-009,Acámbaro,0001,4.0,8296,4,1346,,no,casa aislada / bodega,otros,"Una casa, una bodega y un cilindro (posible tanque o silo)."
+G-010,Acámbaro,0001,3.0,7184,3,3188,,no,invernadero,invernadero o nave,
+G-011,Acámbaro,0001,2.0,7052,2,1744,Puente de Fierro [Invernadero] (0451),no,invernadero,invernadero o nave,
+G-012,Acámbaro,0001,3.0,6828,3,2704,Hacienda de Guadalupe (El Rancho) (0336),no,casa aislada / bodega,otros,Terreno con una casa y una bodega.
+G-013,Acámbaro,0001,2.0,6162,2,2417,,no,invernadero,invernadero o nave,
+G-014,Acámbaro,0001,2.0,5915,2,3972,,no,panteón (probable),otros,Terreno que parece panteón.
+G-015,Parácuaro,0047,3.0,5869,3,1296,Isaías Zúñiga (Las Varas) (0389),si,casas dispersas,vivienda,
+G-016,Acámbaro,0001,4.9,5559,5,2436,La Escondida (0224); El Milagro (0450),no se ve,casas dispersas o invernadero,otros,No queda claro si son casas dispersas o invernadero.
+G-017,Acámbaro,0001,4.0,5354,4,4288,,si,casas dispersas,vivienda,
+G-018,Acámbaro,0001,7.9,5152,8,3113,,no,terreno baldío,baldío,Terreno baldío y terracería.
+G-019,Parácuaro,0047,2.0,5091,2,2022,,si,pocas casas,vivienda,
+G-020,Irámuco,0027,2.0,5039,2,1676,,no,invernadero,invernadero o nave,
