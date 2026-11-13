@@ -93,7 +93,7 @@ Se compararon AGEB urbanas y localidades rurales con al menos 30 viviendas. La m
 | Ampliación de las 4 localidades urbanas | 28 | 29.2 | 356 en las cuadras nuevas |
 | Crecimiento nuevo: localidad que no existía en 2010 | 4 | 19.0 | 191 en 2020 (Colonia San Isidro, Juan Pablo II, La Providencia; Los Caballos sin dato) |
 
-  Que esas 67 localidades no ganaran población (+84 personas en 10 años) mientras aparecían 200 ha de cuadras confirma lo que viste: La Mesa de San José, Loretito de las Casas y Tres Marías son pueblos completos que ya estaban. **Firme** en el sentido; la regla para las localidades urbanas está por confirmar (D54).
+  Que esas 67 localidades no ganaran población (+84 personas en 10 años) mientras aparecían 200 ha de cuadras confirma lo que viste: La Mesa de San José, Loretito de las Casas y Tres Marías son pueblos completos que ya estaban. **Firme** en el sentido (regla confirmada por Alejandro, D54). **Limitación**: las 28 zonas de las 4 localidades urbanas (29.2 ha, 356 personas) no se revisaron en imágenes. Su existencia descansa en el Marco Geoestadístico; el GHSL solo ve 0.6 ha de construcción en ellas.
 
 ### Construcción fuera de las cuadras (GHSL)
 - El GHSL ve **67 ha** de construcción nueva en la ciudad entre 2010 y 2020: 25 dentro de cuadras y **42 fuera**. Es un modelo satelital de 100 m, no un dibujo de casas.
@@ -171,7 +171,7 @@ Promedio de servicios básicos lejos por persona (de 5: preescolar, primaria, se
 - El nivel del índice **no** se relaciona con la distancia al centro de la ciudad (correlación −0.03): hay AGEB de nivel alto y bajo tanto en el centro como en la orilla.
 - Tipología: 5 de las 11 AGEB del quintil urbano más bajo son "consolidadas desatendidas" (3 de Irámuco y 2 de la orilla de la ciudad); en los otros quintiles, 1 o 2. El quintil más bajo reúne Irámuco (6 000 personas), 2 AGEB de Parácuaro, 1 de Chupícuaro y solo 3 AGEB pequeñas de la ciudad.
 
-**Confiabilidad**: urbano **moderada**. Con pesos iguales o con componentes principales, el Q1 sigue en 3.0 y el Q5 en 0.8–0.9, pero el resultado depende mucho de Irámuco. Rural **frágil**: con los índices alternativos, el quintil con más servicios lejos pasa a ser Q2 (1.0) y el Q1 baja a 0.8, y solo 45 % de las localidades quedan en el mismo quintil.
+**Confiabilidad**: urbano **moderada**. Con pesos iguales o con componentes principales, el Q1 sigue en 3.0 y el Q5 en 0.8–0.9, pero el resultado depende mucho de Irámuco. Rural **frágil, y se presenta como indicio, no como hallazgo** (D56): con los índices alternativos, el quintil con más servicios lejos pasa a ser Q2 (1.0) y el Q1 baja a 0.8, y solo 45 % de las localidades quedan en el mismo quintil.
 
 Figura: `docs/figuras/fase5_nse.png`. Tablas: `nse_ageb.csv`, `nse_localidades.csv`, `nse_acceso.csv`.
 
@@ -187,11 +187,11 @@ Figura: `docs/figuras/fase5_nse.png`. Tablas: `nse_ageb.csv`, `nse_localidades.c
 6. **No hay población por localidad de 1990–2005** (D50). La serie de población por localidad empieza en 2010.
 7. **Todo es descriptivo.** Las correlaciones son entre áreas, no entre personas: que las AGEB con más gente de otro estado tengan más casas vacías no dice que esas personas dejen casas vacías.
 8. **El índice socioeconómico es una aproximación por área**, no el NSE AMAI ni ingreso.
-9. **Las verificaciones fueron remotas** (Google Earth y Maps, D13) y no al azar. Las salidas de campo siguen pendientes.
+9. **Las verificaciones fueron remotas** (Google Earth y Maps, D13) y no al azar. Las salidas de campo siguen pendientes. Las 28 zonas de cuadras nuevas 2010–2020 de las 4 localidades urbanas no se revisaron en imágenes.
 
 ## 7. Decisiones pendientes para Alejandro
 
-1. **D54, regla para las localidades urbanas**: confirmar que las cuadras nuevas de las 4 localidades urbanas cuentan como ampliación (crecimiento) y no como cambio de cartografía.
-2. **D56, fórmula del índice socioeconómico**: aprobar los pesos (mitad escolaridad, mitad bienes) y las 8 variables.
-3. Pendientes que siguen de antes: cotejar el SNEU original; salidas de campo (`docs/verificar_campo.csv`); red de caminos rural (RNC al release).
-4. Siguiente fase: sitio web y reporte PDF.
+D54 (excepción urbana) y D56 (fórmula del índice) quedaron confirmadas por Alejandro el 2026-11-13.
+
+1. Pendientes que siguen de antes: cotejar el SNEU original; salidas de campo (`docs/verificar_campo.csv`); red de caminos rural (RNC al release).
+2. Siguiente fase: sitio web y reporte PDF.

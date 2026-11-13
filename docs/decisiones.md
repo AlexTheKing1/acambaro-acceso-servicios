@@ -345,7 +345,8 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 ### D54 · 2026-11-13 · Zonas 2010–2020: cambio de cartografía o crecimiento
 - **Decisión**: si la localidad de una zona 2010–2020 ya tenía población en el ITER 2010, la zona es **cambio de cartografía** (pueblo que existía y el INEGI empezó a dibujar en cuadras), no crecimiento nuevo. Excepción: en las 4 localidades urbanas (D09), que ya estaban dibujadas completas en 2010, las cuadras nuevas se tratan como **ampliación** (crecimiento), como en la fase 4b. Sin población en 2010 = **crecimiento nuevo**.
 - **Opciones**: la regla literal (toda localidad con población 2010 → cartografía, incluida la ciudad), que borraría el crecimiento de la ciudad que sí se ve en el MG y en el GHSL; o separar por si la localidad tenía cuadras en el MG 2010, que dejaría como "ampliación" a pueblos como La Mesa de San José o Tres Marías, que Alejandro vio completos.
-- **Quién**: regla de Alejandro; la excepción urbana es de Claude, **por confirmar**.
+- **Quién**: regla de Alejandro; la excepción urbana la propuso Claude y **Alejandro la confirmó el 2026-11-13**.
+- **Limitación declarada (Alejandro)**: las 28 zonas urbanas de 2010–2020 (29.2 ha, 356 personas) no se verificaron en imágenes; se presentan como limitación.
 - **Por qué**: las 67 localidades rurales con cambio de cartografía no ganaron población (26 991 → 27 075) mientras se dibujaban 200 ha de cuadras.
 
 ### D55 · 2026-11-13 · Comparación regional: unidades y denominador
@@ -355,7 +356,7 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 ### D56 · 2026-11-13 · Índice socioeconómico aproximado
 - **Decisión**: índice = 0.5 · z(escolaridad promedio) + 0.5 · promedio de z(% de viviendas habitadas con automóvil, internet, computadora, refrigerador, lavadora, horno de microondas y 2 dormitorios o más). Los z se calculan **dentro de cada conjunto** (AGEB urbanas de las 4 localidades; localidades rurales); quintiles dentro de cada conjunto. Urbano y rural **no se comparan** entre sí y se cruzan con el acceso por separado. El piso de tierra queda fuera (oculto en 16 de 56 AGEB). Sensibilidad: pesos iguales y primer componente principal.
 - **Opciones**: pesos iguales; componente principal; incluir piso de tierra, drenaje o excusado (casi sin variación en lo urbano y con muchos "*").
-- **Quién**: Claude (fórmula, **por aprobar**); Alejandro (separación urbano/rural, en la aprobación del plan).
+- **Quién**: Claude propuso la fórmula y **Alejandro la aprobó el 2026-11-13**; la separación urbano/rural también es de Alejandro (en la aprobación del plan). El cruce rural entre índice y acceso se presenta como **indicio, no como hallazgo**, por su sensibilidad al método (V53).
 - **Por qué**: la regla AMAI da peso propio a la escolaridad y el resto a bienes y conectividad; el censo publica por área lo más parecido. No es el NSE oficial (que se calcula por hogar con su propio cuestionario) ni es ingreso.
 
 ### D57 · 2026-11-13 · Unidades para los cruces de vaciamiento y nivel socioeconómico

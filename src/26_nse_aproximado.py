@@ -201,7 +201,7 @@ def figura(cr):
     AZUL, TINTA, TINTA2 = "#2a78d6", "#0b0b0b", "#52514e"
     t = cr[cr.indice == "principal"]
     fig, axs = plt.subplots(1, 2, figsize=(11, 4.4))
-    titulos = {"urbano (AGEB)": "Ciudad y localidades urbanas (por AGEB)", "rural (localidad)": "Localidades rurales"}
+    titulos = {"urbano (AGEB)": "Ciudad y localidades urbanas (por AGEB)", "rural (localidad)": "Localidades rurales (indicio: sensible al método)"}
     for ax, (conj, tit) in zip(axs, titulos.items()):
         s = t[t.conjunto == conj]
         x = np.arange(len(s))
