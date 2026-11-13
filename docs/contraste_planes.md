@@ -18,7 +18,7 @@ Nombres cortos: **Plan 2006** = Plan Municipal de Desarrollo Acámbaro 2030; **P
 | Quién | COPLADEM Acámbaro (Comité de Planeación para el Desarrollo Municipal) | SEDATU e IPLANEG (Instituto de Planeación, Estadística y Geografía de Guanajuato) | Ayuntamiento de Acámbaro | Ayuntamiento de Acámbaro |
 | Cuándo | Administración 2003–2006; usa cifras de 2006 | 2014 (cita datos hasta 2015) | Aprobado el 25/03/2015; Periódico Oficial núm. 118, 2.ª parte, 24/07/2015, p. 106–186 | Aprobado el 23/07/2025; Periódico Oficial núm. 173, 2.ª parte, 29/08/2025, p. 18–97 |
 | Horizonte | 2030 | 2030 (escenarios) | 2040 (dice "Plan Municipal 2012-2040") | 2024–2027 |
-| Cobertura | Municipio, en 8 "ejes de desarrollo" o micro regiones ("polos de desarrollo", p. 6), con metas por polo | Subregión 10: Acámbaro, Coroneo, Jerécuaro y Tarandacuao | Municipio; objetivos generales, **sin polos ni metas por localidad, sin proyecciones de población** | Municipio; diagnóstico y acciones por dependencia. Menciona "11 polos de desarrollo rural" (p. 55), sin enumerarlos ni fijarles metas |
+| Cobertura | Municipio, en 8 "ejes de desarrollo" o micro regiones ("polos de desarrollo", p. 6), con metas por polo | Subregión 10: Acámbaro, Coroneo, Jerécuaro y Tarandacuao | Municipio; objetivos generales. En su texto no enumera polos ni fija metas por localidad, y no trae proyecciones de población (su Mapa 4, p. 175, no es legible) | Municipio; diagnóstico y acciones por dependencia. Menciona "11 polos de desarrollo rural" (p. 55), sin enumerarlos ni fijarles metas |
 | Archivo (release `datos-crudos`) | `plan_municipal_desarrollo_2030.pdf` | `prot_subregion10_2014.pdf` | `plan_municipal_desarrollo_2040.pdf` (escaneo) + `_ocr.txt` | `programa_gobierno_2024_2027.pdf` (escaneo; página impresa = página del PDF + 15) + `_ocr.txt` |
 
 ---
@@ -54,7 +54,7 @@ Nombres cortos: **Plan 2006** = Plan Municipal de Desarrollo Acámbaro 2030; **P
 
 ## 4. Metas por polo de desarrollo (Plan 2006, p. 254–255)
 
-La evaluación por polos usa el **Plan 2006** porque es el único que define los polos con su sede y les fija metas. El Plan 2040 abandonó ese enfoque: no tiene polos, metas por localidad ni proyecciones. El Programa 2025 dice que "el municipio cuenta con 11 polos de desarrollo rural" (p. 55), una clasificación de las localidades por "ubicación, accesibilidad, vocación natural y productiva", pero no los enumera ni les fija metas de servicios. No se pueden evaluar.
+La evaluación usa el plan de 2006 porque es el único que nombra sedes y fija metas por polo. El Plan 2040 no enumera polos ni fija metas por localidad en su texto, y el Programa 2025 menciona 11 polos de desarrollo rural (p. 55) sin enumerarlos ni fijarles metas. Su Mapa 4 (p. 175) no es legible en el escaneo, así que no se puede descartar que muestre polos.
 
 El Plan 2006 se fija como meta que **cada polo de desarrollo rural** tenga "infraestructura educativa desde el nivel pre-escolar hasta el nivel medio superior al 100%" (p. 254), "plazas públicas para el comercio y abasto" y "centros comunitarios de salud" (p. 255).
 - Polos = los 8 ejes de desarrollo del plan; sede = la localidad que da nombre al eje (D60).
@@ -99,7 +99,7 @@ Las 3 localidades de 2 500 a 10 000 habitantes cumplen la norma del centro de sa
 - **Coherencia interna del PROT**: su cifra de 2014 para la subregión (189 535, +3.5 % sobre 2010) es mayor que la que da para 2016 (+3.14 %). Se reportan las dos como aparecen.
 - **2005** es el II Conteo de Población y Vivienda, que dio cifras más bajas que los censos de 2000 y 2010 en toda la subregión. La cifra del Plan 2006 para 2006 (115 121) es 13 % mayor que la del Conteo 2005 (101 762).
 - **Plan 2040, unidades de salud**: dice "23 unidades [...] 1 IMSS, 1 ISSTE y 21 de SSG" y luego divide las de la SSG en 1 hospital general, 1 unidad móvil, 1 centro de salud urbano y 21 rurales, que suman 24 (p. 127). Se cita como aparece.
-- **Programa 2025, polos**: atribuye su imagen de polos al Plan 2040 (p. 55), pero el texto del Plan 2040 no menciona polos. Su mapa 4 (p. 175) no tiene leyenda legible en el escaneo.
+- **Programa 2025, polos**: atribuye su imagen de polos al Plan 2040 (p. 55), pero el texto del Plan 2040 no los enumera. Su Mapa 4 (p. 175) no es legible en el escaneo y podría mostrarlos.
 
 ## 6. Pendientes para Alejandro
 

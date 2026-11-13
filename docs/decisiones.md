@@ -433,7 +433,7 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 - **Quién**: Alejandro (documentos, citas, páginas); Claude (verificación).
 
 ### D66 · 2026-11-13 · Los polos se evalúan con el plan de 2006
-- **Decisión**: la evaluación por polos (ajuste 9) usa el Plan 2006, el único que define los polos con su sede y les fija metas de servicios. El Plan 2040 no tiene polos, metas por localidad ni proyecciones. El Programa 2025 dice que "el municipio cuenta con 11 polos de desarrollo rural" (p. 55), pero no los enumera ni les fija metas, y atribuye su imagen al Plan 2040, cuyo texto no los menciona. No se pueden evaluar.
+- **Decisión** (redacción de Alejandro): "La evaluación usa el plan de 2006 porque es el único que nombra sedes y fija metas por polo. El Plan 2040 no enumera polos ni fija metas por localidad en su texto, y el Programa 2025 menciona 11 polos de desarrollo rural (p. 55) sin enumerarlos ni fijarles metas." El Programa atribuye su imagen de polos al Plan 2040. No se dice que el Plan 2040 haya abandonado el enfoque, porque su Mapa 4 (p. 175) no es legible en el escaneo y podría mostrarlos.
 - **Quién**: Alejandro (enfoque); Claude agregó la mención de los 11 polos del Programa, encontrada al verificar p. 55.
 
 ### D67 · 2026-11-13 · Superficie construida por habitante 2000 y 2005: versión 1.1
