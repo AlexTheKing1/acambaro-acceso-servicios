@@ -15,12 +15,12 @@ Fecha: 2026-11-14. Revisión externa antes de publicar el sitio y el PDF. **No s
 | 1. Resumen en lenguaje sencillo | pendiente (se escribe al final) |
 | 2. Reproducibilidad | en curso |
 | 3. Tabla de cifras | **terminada** |
-| 4. Consistencia | pendiente |
+| 4. Consistencia | **terminada** |
 | 5. Los seis hallazgos | **terminada** |
 | 6. Límites que el reporte debe declarar | **terminada** |
-| 7. Lenguaje | pendiente |
+| 7. Lenguaje | **terminada** |
 | 8. Citas de los planes | **terminada** |
-| 9. Observaciones clasificadas | pendiente |
+| 9. Observaciones clasificadas | **terminada** |
 
 ---
 
@@ -87,7 +87,7 @@ Se rastrearon las cifras de `resumen_final.md` (R), `contraste_planes.md` (C) y 
 | Primer kilómetro: −2 093 personas, −12 % | R | `crecimiento_viviendas_2010_2020.csv` | sí (−11.6 %). Matiz: el anillo 0–500 m **ganó** 97; la pérdida es de 500 a 1 500 m; ver 7 |
 | "El % de deshabitadas subió en todos los anillos" | R | ídem, filas `anillo_unidades` | **NO**: en el anillo de 3.5–4 km bajó (30.0 → 19.4 %), y de 3 a 4 km junto bajó de 26.2 a 24.7 % |
 | No habitadas 2020: centro 26 %, 1–3 km 24–26 %, orilla 31 % | R | `crecimiento_viviendas.csv` | sí (25.9; 24.2 y 26.3; 30.5) |
-| 4 AGEB que se vacían, 1 227 habitantes | R | `tipologia_ageb.csv` | sí. "Orilla oriente": no comprobado (la tabla no trae coordenadas) |
+| 4 AGEB que se vacían, 1 227 habitantes | R | `tipologia_ageb.csv` | sí. "Orilla oriente" comprobado con las coordenadas de sus cuadras: las 4 quedan de 2.3 a 3.4 km al oriente y suroriente del centro |
 | Irámuco: 5 954 → 6 275 (+5 %) | R, C | ITER (crudo) | sí (+5.4 %) |
 | Irámuco: viviendas 1 839 → 2 336 (+27 %) | R, C | ídem | sí |
 | Irámuco: deshabitadas 356 → 658; 19 % → 28 % | R, C | ídem | sí (19.4 y 28.2) |
@@ -158,6 +158,53 @@ Se rastrearon las cifras de `resumen_final.md` (R), `contraste_planes.md` (C) y 
 | Umbrales rurales (2, 2, 5, 10, 5, 10 km) | R | `UMBRALES_RURAL` | sí |
 | Radios de la norma de 1999 (750, 500, 1 000 m…), páginas de SEDATU 2024 y NOM-002 | M | documentos que no están en el repositorio | **no cotejable** (el propio texto lo declara) |
 | DENUE 05/2026, CLUES agosto 2026, SEP consultado el 2026-10-22 | M | `docs/fuentes.md`; nombres y fechas de los archivos del release | sí |
+
+---
+
+## 4. Consistencia
+
+### 4.1 La misma cifra con valores distintos
+
+| Qué | Dónde | Valores | Comentario |
+|---|---|---|---|
+| Población de la ciudad | resumen 1 / resumen 2 y contraste | **56 596** / **56 597** | 56 596 es la suma de cuadras; 56 597 es el ITER. Falta una persona en el censo por manzana. Hay que elegir una y decir por qué la otra difiere |
+| Secundaria más cercana a Parácuaro | resumen 1 / contraste 3 y 4 | "la Secundaria Técnica 24, a unos **5.5 km**" / "la más cercana al centro es la Telesecundaria 847, a unos **5.6 km**" / mediana **5.4 km** | Tres cifras y dos escuelas para la misma idea. Las tres salen bien de las tablas, pero miden cosas distintas. El resumen dice además "por camino"; es línea recta × 1.33 |
+| Mercado más cercano a Irámuco | resumen 1 y contraste 3 / contraste 4 | **13–18 km** / **15.2 km** | Rango por cuadra y valor desde el centro. Las dos son línea recta × 1.33 (11.4 km en línea recta desde el centro) |
+| Sin afiliación en la ciudad | resumen y contraste / ITER | **11 479** / 11 515 | 11 479 es la suma de AGEB con dato. El texto lo presenta como "las personas sin afiliación" de la ciudad |
+| Niños de 6 a 11 y personas de 60+ | resumen 1 / ITER | 5 139 y 8 748 / 5 167 y 8 773 | Misma causa: AGEB ocultas. La regla 6 del proyecto pide decir cuánta gente se pierde; aquí no se dice |
+| Deshabitadas del municipio | lista de hallazgos / resumen 4 | 24 % / 24.3 % | Solo redondeo |
+| Localidades que "cumplen la norma" del centro de salud | resumen 1 / contraste 4 | "las 4" / "las 3 de 2 500 a 10 000" | La norma citada aplica a 3; la ciudad tiene otra regla |
+| Hectáreas de cuadras nuevas urbanas | `validacion.md` V39 / resto | 29.3 / 29.2 | Redondeo |
+| Citas verificadas | `validacion.md` V58 / V59 | 34 / 64 | V58 quedó con la cifra de antes de la ampliación; V59 la corrige. No es error, pero confunde |
+
+### 4.2 El mismo nombre para cosas distintas, o nombres distintos para lo mismo
+
+- **"No habitadas" y "deshabitadas"** se usan con sentidos distintos (no habitadas = deshabitadas + uso temporal), pero el resumen **nunca define** "no habitadas". En la sección 2 aparecen 26 % de no habitadas y 22 % de deshabitadas para la misma ciudad sin explicación.
+- **"Salud pública"** nombra dos cosas: la medida anterior (cualquier unidad pública) y, en la tabla de umbrales, también la abierta. Después de D64 conviene que "salud pública" solo nombre la medida de comparación.
+- **"Por camino"**: en lo rural, el resumen escribe "por camino" y "por camino estimado" para lo mismo (línea recta × 1.33). Solo el segundo es correcto.
+- **"Bachillerato"**: en la tabla de la ciudad es "bachillerato público" (43 %); primaria, secundaria y preescolar son "todas las escuelas" (con solo públicas serían 38 %, 37 % y 8 %). La tabla mezcla los dos criterios sin avisar. Con todos los bachilleratos, lejos queda 2 %.
+- **"Promedio"** en los ejemplos del índice socioeconómico: son medianas entre AGEB.
+- **"Manzana" y "AGEB"** aparecen en el resumen (limitación 2). Es documento de trabajo, pero la sección 6 se va a copiar al sitio: ahí debe decir "cuadra" (regla del proyecto).
+
+### 4.3 Textos que no siguen una decisión vigente
+
+| Decisión | Qué pide | Qué dice el texto |
+|---|---|---|
+| **D64** (la medida principal de salud es la abierta) | Que el titular y la medida principal sean salud abierta | Tres análisis siguen usando la medida anterior sin decirlo: los grupos de edad ("1 730 personas de 60 y más lejos de salud pública"), la **tipología** de AGEB (D47) y el cruce con el **índice socioeconómico**. En la ciudad la diferencia es de 22 % a 58 %, así que la tipología y el cruce cambiarían. El resumen dice "sin cambios" (sección 8.8), que es cierto, pero no dice que quedaron con la medida que ya no es la principal |
+| **D35** (redacción de Irámuco) | "no hay mercado ni supermercado registrado; puede existir un tianguis que ninguna fuente captura" | El resumen (línea de Irámuco) y el contraste (fila de Irámuco y síntesis) dicen solo "no hay / no tiene mercado ni supermercado registrado", sin la segunda mitad. La tabla de polos sí la trae |
+| **D39** (Parácuaro) | "no hay secundaria dentro de la localidad"; la atiende la ST 24 | El contraste dice que la más cercana al centro es la Telesecundaria 847. No contradice a D39, pero el lector ve dos escuelas "más cercanas" |
+| **D49** (cuadras nuevas con conteos, no porcentajes) | En textos públicos, conteos | El resumen usa "48 % contra 13 %". Es documento de trabajo y D49 lo permite; al pasar al sitio hay que cambiarlo |
+| **D62** (sin cifras aproximadas de los planes) | Cifras con página y cuadro | Se cumple. "Unos 57 960" y "unas 11 900" son cálculos del estudio, no cifras de los planes |
+| **D66** (no decir que el Plan 2040 abandonó los polos) | — | Se cumple |
+| **D56** (lo rural del índice como indicio) | — | Se cumple |
+| **D52** (el GHSL no es vivienda) | — | Se cumple |
+| Regla 6 de `CLAUDE.md` (decir cuánta población se pierde por el "*") | En cada paso | No se dice en los denominadores de 4.1 (11 479, 5 139, 8 748) |
+
+### 4.4 Otros
+
+- Los encabezados de `resumen_final.md` y `metodo.md` remiten a "D01–D63" y "V1–V58". Las decisiones llegan a D67 y las validaciones a V59.
+- La síntesis del contraste pone "Proyecto Nuevo (p. 166 y 174)"; ver sección 8.
+- La sensibilidad "solo confirmadas" (D28) da por confirmada toda sede que esté en el DENUE. Por eso **no pone a prueba la clínica del ISSSTE**, que el catálogo marca "no confirmada" y la CLUES "fuera de operación" (D36). No afecta al titular de salud; sí a la comparación del 22 %, que nadie recalculó sin esa clínica.
 
 ---
 
@@ -343,6 +390,47 @@ Entre 2010 y 2020 **la ciudad perdió y el resto del municipio ganó**. La ciuda
 
 ---
 
+## 7. Lenguaje
+
+### 7.1 Causa donde solo hay coincidencia
+
+| Dónde | Frase | Por qué excede los datos | Alternativa |
+|---|---|---|---|
+| Resumen 2, rural | "Es el patrón de pueblos que envejecen y donde quedan casas vacías o de quien vive fuera" | Es una correlación de 2020 entre 93 localidades (más gente mayor, más casas no habitadas). No hay dato de que esos pueblos estén envejeciendo ni de quién son las casas | "Las localidades con más personas mayores tienen más viviendas no habitadas" |
+| Resumen 2, ciudad | "Esto apunta a que, en la ciudad, la vivienda vacía está también en zonas de la orilla que crecieron" | Salta de una correlación con "gente nacida en otro estado" a una lectura espacial que esa correlación no muestra. Además son 42 AGEB y 54 correlaciones probadas | Dar el dato de los anillos (que sí lo muestra) y dejar la correlación como lo que es |
+| Resumen 2, Irámuco; contraste, Irámuco | "buena parte de las casas nuevas quedó vacía"; "Hubo crecimiento habitacional, pero buena parte quedó vacía" | El censo dice que hay 497 viviendas más y 302 deshabitadas más. No dice que las vacías sean las nuevas | "Las viviendas aumentaron en 497 y las deshabitadas en 302" |
+| Contraste, ordenamiento (dos veces) | "Lo que muestran los datos es lo que un instrumento así busca evitar"; "Mientras tanto: vivienda nueva sin gente nueva…" | Sugiere que la falta del instrumento explica el vaciamiento. No hay nada en el estudio que lo pruebe; y toda la región muestra lo mismo | Poner los dos hechos uno junto al otro sin unirlos |
+| Contraste, vivienda | "El problema de hoy no es la falta de casas, sino las casas vacías" | Es una conclusión. Puede haber déficit y casas vacías a la vez (vivienda que no es de quien la necesita). El estudio no midió déficit | "En 2020 había 11 130 viviendas deshabitadas" |
+| Resumen 7; contraste, la ciudad | "Es concentración en la ciudad y pérdida en el resto"; "se concentró población en la ciudad y se perdió en el resto" | Lo contradicen los censos de 2010 y 2020 (hallazgo 5) | Ver redacción del hallazgo 5 |
+| Resumen 3 | "confirma lo que viste" | Que 67 localidades no ganaran población es compatible con la lectura de Alejandro; no la confirma por sí solo | "concuerda con lo que se ve en las imágenes" |
+| Resumen 3 | "la diferencia con las viejas se explica sobre todo por estar en la orilla" | Es una comparación por anillos, no una explicación | "la diferencia casi desaparece al comparar con cuadras viejas a la misma distancia del centro" |
+| Resumen 4 | "las viviendas crecieron 11–17 % sin gente nueva" | Correcto para el saldo; pero "sin gente nueva" no se sabe (puede haber llegado y salido gente) | "sin que creciera la población" |
+| Contraste, educación | "Uno ve superávit y otro déficit **porque** los dos miden en total" | Además miden lugares distintos (subregión y municipio), en años distintos y contra referencias distintas. No es solo eso | Quitar el "porque" |
+| Resumen 5 | "Pero buena parte se debe a Irámuco" | Aquí es aritmética (composición del quintil), no causa. Se sostiene | — |
+
+### 7.2 Adjetivos y adverbios que los datos no sostienen
+
+| Dónde | Frase | Observación |
+|---|---|---|
+| Resumen 1, título | "Las otras localidades urbanas: **lo más claro del estudio**" | Es una opinión. Lo más firme del estudio son los totales censales |
+| Lista de hallazgos | "Irámuco es **la peor servida**" | Solo entre las 4 localidades urbanas (hallazgo 2) |
+| Resumen 2 | "La pérdida de población **se concentró** en el primer kilómetro" | El anillo de 0 a 500 m ganó 97 personas. La pérdida está entre 500 m y 1.5 km (−2 190 y −1 280) |
+| Resumen 2 | "subió en **todos** los anillos" | No en el de 3.5 a 4 km (sección 3.3) |
+| Resumen 4 | "en viviendas vacías está **un poco mejor** que sus vecinos" | 24.3 contra 24.4 % de Salvatierra: empate. "Mejor" es además un juicio |
+| Resumen 7 | "el municipio **nunca** pasó de 110 718" | Solo en censos (sección 3.6) |
+| Contraste, Irámuco | "la población **apenas** volvió a su nivel de 2000" | 6 275 contra 6 232: volvió y lo pasó por 43. Sobra "apenas" |
+| Resumen 3 | "**Firme** (aparece con los tres umbrales)" para el preescolar de las cuadras nuevas | Con el holgado, el efecto son las 58 personas de las 6 cuadras de Chupícuaro; en la ciudad se invierte (0 % contra 7 %) |
+| Resumen 1 | "**Firme**" para "a unos 5.5 km por camino" | Lo firme es que no hay secundaria dentro. La distancia es una estimación |
+| Resumen 5 | "no se relaciona con la distancia al centro" | Falso en la ciudad (sección 3.5) |
+| Contraste, encabezado | "repiten **los mismos** diagnósticos" | No los cuatro en cada tema (hallazgo 6) |
+| Contraste, acciones | "**No hay** acciones para construir unidades de salud, escuelas o mercados" | Afirmación de ausencia sobre OCR. Mejor: "no se encontraron" |
+
+### 7.3 Lo que está bien
+
+El resumen avisa al principio que todo es descriptivo, titula la sección como "correlaciones entre áreas, no causas", presenta lo rural del índice como indicio y no extrapola el GHSL. El contraste dice que no evalúa a ninguna administración y marca lo no verificado. El problema no es de tono general: son las frases sueltas de arriba.
+
+---
+
 ## 8. Citas de los planes
 
 **Verificación automática, vuelta a correr.** `src/30_planes.py` corrió sin errores en la copia, con los cuatro documentos bajados de nuevo del release. Sus salidas son **idénticas byte por byte** a las versionadas: `docs/verificar_citas_planes.csv` (**64 de 64** citas en su página), `iramuco_serie.csv`, `proyecciones_vs_censo.csv`, `verificar_campo_fase6.csv`, `validacion_fase6.json` y la figura.
@@ -371,3 +459,56 @@ Entre 2010 y 2020 **la ciudad perdió y el resto del municipio ganó**. La ciuda
 | Plan 2040: sin "polo", "deshabitad" ni "proyecci" | Confirmado en el OCR | Sí (sobre OCR) |
 
 **Límite de fondo**: las afirmaciones de ausencia en el Plan 2040 y el Programa 2025 descansan en un texto OCR. Que una palabra no aparezca en el OCR no prueba que no esté en el documento (tablas, mapas e imágenes no se leen). El Mapa 4 del Plan 2040 ya se declara ilegible; lo mismo vale, en menor grado, para todo lo demás.
+
+---
+
+## 9. Observaciones clasificadas
+
+### (a) Errores que hay que corregir
+
+1. **"Concentración" (hallazgo 5; resumen 7; contraste, fila "La ciudad").** Entre 2010 y 2020 la ciudad perdió 1 375 habitantes y el resto del municipio ganó 1 042; la ciudad pesa menos que en 2010. No hubo concentración en esa década. Las cifras del hallazgo están bien; la interpretación no.
+2. **"El índice no se relaciona con la distancia al centro de la ciudad (−0.03)" (resumen 5).** El −0.03 mezcla las 4 localidades. En la ciudad sola es −0.58: el índice baja al alejarse del centro. La frase dice lo contrario de lo que muestran los datos de la ciudad.
+3. **"El municipio nunca pasó de 110 718" (resumen 7).** La Encuesta Intercensal 2015 dio 112 125, y el propio contraste la cita. O se dice "en un censo" o se incluye 2015.
+4. **"El % de deshabitadas subió en todos los anillos" (resumen 2; `resumen_fase4b.md`).** En el anillo exterior bajó.
+5. **Hallazgo 3, "hay aulas suficientes en total".** El dato es de la subregión (PROT, cuadro 3), no de la ciudad. Como está escrito, afirma algo de la ciudad que ningún dato del estudio respalda.
+6. **Explicación del titular de salud (resumen 1 y contraste).** "La diferencia es real solo para quien no tiene afiliación" no es correcto: 23 295 personas afiliadas al INSABI o al Seguro Popular dependen de las mismas 4 unidades, y al menos 12 926 de ellas viven lejos. El titular puede quedarse; la explicación y la magnitud deben corregirse.
+7. **Parácuaro: dos escuelas y tres distancias** (4.1). Elegir una frase y usarla en todos lados. "Por camino" no es correcto.
+8. **Cuatro citas que no son literales o no están en la página** (sección 8): CONAPO (p. 34), "en al ámbito" (p. 61), "un interacción" (p. 59) y "Proyecto Nuevo" (p. 166).
+9. **"Que no se ha publicado" (hallazgo 6).** No está comprobado después de julio de 2025. O se comprueba en el Periódico Oficial, o se escribe "en julio de 2025 seguía en elaboración".
+
+### (b) Matices de redacción
+
+1. Dar el titular de salud con su piso: "al menos 6 908" o "unas 7 000 (entre 6 900 y 7 300)", y decir que 11 479 es el total con dato (11 515 en el ITER).
+2. "La peor servida": añadir "de las 4 localidades urbanas".
+3. Polos: decir 1 cumple, 2 no, 4 no se pueden evaluar; y que en 3 polos el bachillerato es un telebachillerato o videobachillerato.
+4. Irámuco: usar siempre la redacción completa de D35 (con el tianguis).
+5. Irámuco: explicar por qué "tiene" primaria en la tabla de polos y a la vez 80 % vive lejos de una.
+6. Primaria en la ciudad: decir que 32 % cuenta todas las primarias; con solo públicas, 38 %.
+7. Tabla de la ciudad: avisar que bachillerato es "público" y los demás niveles "todas".
+8. Preescolar de las cuadras nuevas: no llamarlo "firme con los tres umbrales".
+9. Definir "no habitadas" la primera vez.
+10. "Ninguno menciona la vivienda deshabitada": el Plan 2006 tiene una ficha con "79 sin habitar" (p. 171). Mejor "ninguno la trata como tema".
+11. "El Programa 2025 es el primero que reconoce la disminución": el PROT ya proyectaba la baja de la ciudad.
+12. Pérdida de población "en el primer kilómetro": es de 500 m a 1.5 km.
+13. Las frases de 7.1 y 7.2.
+14. Deshabitadas: decir que 24.3 % es el más bajo de la región, empatado con Salvatierra.
+15. Ejemplos del índice: son medianas.
+16. Encabezados: D01–D67 y V1–V59. Unificar 56 596 y 56 597.
+17. Al pasar a textos públicos: "cuadra" y no "manzana"; conteos y no porcentajes en las cuadras nuevas (D49).
+18. Las afirmaciones de ausencia en los planes escaneados: "no se encontró" en lugar de "no hay".
+
+### (c) Pendientes para la versión 1.1
+
+1. **Población que depende de las unidades abiertas**: sumar sin afiliación, INSABI / Seguro Popular e IMSS-Bienestar, con el método D10, y reportarla junto al titular. Decisión de Alejandro.
+2. **Tipología e índice socioeconómico con salud abierta** (hoy usan la medida anterior, 4.3).
+3. **Sensibilidad del factor rural** en una tabla propia (1.0, 1.2, 1.33, 1.5), como la que se usó aquí en la sección 6.
+4. **Red de caminos rural** (RNC), que sigue pendiente.
+5. **Encuesta Intercensal 2015** en la serie de población y en la gráfica de proyección.
+6. **Aulas, grupos o matrícula de la ciudad** (estadística 911 de la SEP), si se quiere sostener la primera mitad del hallazgo 3.
+7. **Cotejo de las normas** (SEDESOL 1999, SEDATU 2024, NOM-002).
+8. **Campo**: las 4 unidades abiertas, la ST 24, Monte Prieto, el Mercado 22 de Octubre, y los telebachilleratos de los polos.
+9. **Estado del PMDUOET** en el Periódico Oficial.
+10. **Sensibilidad sin la clínica del ISSSTE** para la comparación del 22 %.
+11. **Agregar a `CITAS`** las frases del contraste que hoy no se verifican solas (sección 8).
+12. **Superficie construida por habitante en 2000 y 2005** (D67, ya anotado).
+13. **Correlaciones del vaciamiento**: reportar cuántas se probaron y no destacar las que no pasarían una corrección.
