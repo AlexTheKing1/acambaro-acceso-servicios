@@ -5,22 +5,100 @@ Fecha: 2026-11-14. Revisión externa antes de publicar el sitio y el PDF. **No s
 **Cómo se hizo**
 - Todo se volvió a correr en una **copia fuera del repositorio**. En el repositorio el único archivo nuevo es este.
 - Las cifras se recalcularon con código propio del revisor, leyendo las tablas de `data/processed/` y, donde se pudo, los archivos originales del INEGI recién bajados (ITER 2000, 2005, 2010 y 2020, Censo 2020 por manzana). No se usaron las funciones de los scripts revisados para comprobarlos.
-- Los crudos se bajaron de nuevo: INEGI y JRC con `01_descargar.py`; el release `datos-crudos` (12 archivos) con la API autenticada de GitHub.
+- Los crudos se bajaron de nuevo: INEGI y JRC con `01_descargar.py`; el release `datos-crudos` (12 archivos) con la API autenticada de GitHub, como pidió Alejandro.
 - Orden pedido por Alejandro: primero cifras, consistencia, hallazgos, lenguaje y citas; después reproducibilidad.
 
-**Estado de las secciones**
+---
 
-| Sección | Estado |
-|---|---|
-| 1. Resumen en lenguaje sencillo | pendiente (se escribe al final) |
-| 2. Reproducibilidad | en curso |
-| 3. Tabla de cifras | **terminada** |
-| 4. Consistencia | **terminada** |
-| 5. Los seis hallazgos | **terminada** |
-| 6. Límites que el reporte debe declarar | **terminada** |
-| 7. Lenguaje | **terminada** |
-| 8. Citas de los planes | **terminada** |
-| 9. Observaciones clasificadas | **terminada** |
+## 1. Resumen en lenguaje sencillo
+
+**Qué se revisó.** Se volvió a correr todo el análisis desde los datos originales, se rastrearon las cifras de los tres documentos hasta su archivo (94 filas de comprobación; muchas traen varias cifras), se volvieron a verificar las citas de los cuatro planes y se puso a prueba cada uno de los seis hallazgos.
+
+**Lo que está bien**
+
+- **El análisis se reproduce.** De 28 scripts, 27 corrieron sin error con los datos bajados de nuevo, y **todas las tablas, mapas y figuras salieron iguales** a las que están guardadas. Solo falló el script del inventario, que no afecta a ninguna cifra.
+- **Las cifras están bien copiadas.** De 94 comprobaciones, 84 coinciden con su archivo, 6 coinciden con un matiz que el texto no dice, 3 no se sostienen y 1 no se puede cotejar (las normas). Ninguna de las cifras de los seis hallazgos está mal.
+- **Las citas de los planes están en su página.** 64 de 64, igual que antes. De las 53 frases entre comillas del contraste, 4 necesitan un ajuste pequeño.
+- **Los límites principales ya están declarados**: lo rural medido en línea recta, la verificación remota, los tianguis, las normas sin cotejar.
+
+**Lo que hay que corregir antes de publicar**
+
+1. **"Concentración" no es lo que pasó.** Entre 2010 y 2020 la ciudad perdió 1 375 habitantes y el resto del municipio **ganó** 1 042. La ciudad pesa hoy menos que en 2010. Los números del hallazgo 5 están bien; la palabra "concentración" los contradice.
+2. **El titular de salud se queda corto y su explicación tiene un hueco.** Las 7 039 personas sin afiliación están bien contadas (el piso seguro es 6 908). Pero el texto dice que solo ellas dependen de las 4 unidades abiertas. No es así: quien en 2020 estaba en el INSABI o el Seguro Popular (23 295 personas en la ciudad) tampoco puede usar el IMSS ni el ISSSTE. Al menos 12 926 de ellas también viven lejos. El grupo afectado es de unas 19 800 personas, no de 7 000.
+3. **"Hay aulas suficientes" no es un dato de la ciudad.** Viene de un cuadro del programa regional de 2014 que suma las aulas de cuatro municipios. El estudio no tiene ningún dato de aulas de la ciudad. La otra mitad del hallazgo (32 % lejos de una primaria) sí es firme.
+4. **Dos frases dicen lo contrario de los datos**: que el nivel socioeconómico "no se relaciona con la distancia al centro de la ciudad" (en la ciudad sí: baja al alejarse), y que las viviendas deshabitadas subieron "en todos los anillos" (en el de la orilla bajaron).
+5. **"El municipio nunca pasó de 110 718 habitantes"** solo vale para los censos. La encuesta de 2015 dio 112 125, y el propio contraste la cita.
+6. **Parácuaro**: los documentos dan tres distancias (5.4, 5.5 y 5.6 km) y nombran dos escuelas como "la más cercana". Lo único medido son 4.2 km en línea recta.
+7. **"Un ordenamiento que no se ha publicado"** no está comprobado: lo último que se sabe es de julio de 2025.
+
+**Veredicto de los seis hallazgos**
+
+| # | Hallazgo | Veredicto |
+|---|---|---|
+| 1 | Salud: 7 039 de 11 479 sin afiliación, lejos de una unidad abierta | **Firme con matiz**: el número es sólido y es un piso |
+| 2 | Irámuco, Parácuaro y los polos | **Firme con matiz**: "la peor" solo entre las 4 localidades urbanas; de 7 polos, 1 cumple, 2 no y 4 no se pueden evaluar |
+| 3 | Aulas suficientes, pero 32 % lejos de una primaria | **Débil** la primera mitad; **firme** la segunda |
+| 4 | 24 % de viviendas deshabitadas; Irámuco | **Firme** |
+| 5 | La ciudad superó lo proyectado; la subregión bajó | **Firme** en las cifras; **débil** como "concentración" |
+| 6 | Cuatro planes repiten, tres prometen, ninguno mide | **Firme con matiz**: falta comprobar que el ordenamiento sigue sin publicarse |
+
+**Qué tan sensibles son los resultados**
+
+- **A los tres umbrales**: los hallazgos 1, 2 y 3 mantienen el sentido con los tres. Las cifras cambian mucho (salud: 75, 61 o 30 %), y eso debe ir siempre junto al número.
+- **A los datos ocultos del censo**: poco. En salud, entre 60 y 63 %. Los hallazgos 2 a 5 no dependen de datos ocultos.
+- **Al factor 1.33 en lo rural**: los seis hallazgos casi no dependen de él (solo los "5.6 km" de Parácuaro y las distancias de los polos). Las cifras rurales del resumen sí, y mucho: la población rural lejos de salud va de 6 % a 28 % según el factor.
+- **A lo no verificado en campo**: las 4 unidades de salud abiertas y los mercados de Chupícuaro y Parácuaro se ven en imágenes. Las primarias y secundarias casi no se revisaron en imagen; descansan en el catálogo de la SEP.
+
+**Qué decide Alejandro**: cómo queda el titular de salud (punto 2), si el hallazgo 5 se sigue llamando "concentración" y si el hallazgo 3 conserva la frase de las aulas. La lista completa está en la sección 9.
+
+---
+
+## 2. Reproducibilidad
+
+**Entorno.** Contenedor nuevo, Python 3.13, librerías de `requirements.txt` instaladas sin cambios de versión. Todo en una copia fuera del repositorio.
+
+**Datos originales.** Se bajaron de nuevo los 41 archivos: 29 del INEGI y del JRC con `01_descargar.py` (sin fallas) y 12 del release `datos-crudos` con la API autenticada de GitHub. La dirección directa que usa el script también responde (se probó con un archivo); el error 401 de la primera prueba fue de una consulta de encabezados, no de la descarga. No se intentó la red de OpenStreetMap, como manda `CLAUDE.md`.
+
+**Resultado.** 28 scripts; **27 corrieron sin error**; 1 falló.
+
+| Script | Corrió | Salidas comparadas con las versionadas |
+|---|---|---|
+| `01_descargar.py` | sí (por fuentes) | 29 archivos bajados. El release se bajó con la API autenticada |
+| `02_recortar.py` | sí | CSV idénticos; 5 GPKG con el mismo contenido |
+| `03_base_geografica.py` | sí | idénticas; 3 GPKG con el mismo contenido |
+| `04_inventario.py` | **no: falla** | Se detiene con "File is not a zip file". Intenta abrir como ZIP todos los archivos del manifiesto, y desde la fase 2 hay archivos que no lo son (JSON, CSV, PDF). `docs/inventario.md` no se puede regenerar; se quedó en la fase 1 |
+| `05_mapa_fase1.py` | sí | figura idéntica |
+| `06_catalogo_servicios.py` | sí | idénticas |
+| `07_listas_verificacion.py` | sí | Regenera las dos listas sin una columna que añaden `09` y `17`. Después de correr esos dos, quedan idénticas |
+| `08_mapa_fase2.py` | sí | figura idéntica |
+| `09_catalogo_sep_clues.py` | sí | idénticas |
+| `10_redes.py` | sí | mismo contenido |
+| `15_catalogo_fase4.py` | sí | idénticas |
+| `11_accesibilidad.py` | sí | CSV idénticos; `acceso_cuadras.gpkg` con el mismo contenido (1 658 cuadras, 0 valores distintos) |
+| `12`, `13`, `14`, `17`, `18` | sí | idénticas (CSV, KML y 7 mapas) |
+| `19_crecimiento.py` | sí | CSV idénticos. Borra dos claves de `validacion_fase4b.json`, que `20` y `22` reponen (ya está avisado en `CLAUDE.md`) |
+| `20`, `21`, `22`, `23` | sí | idénticas |
+| `24`, `25`, `26` | sí | idénticas |
+| `27_salud_abierta.py` | sí | idénticas |
+| `28_localidades_y_polos.py` | sí | idénticas |
+| `29_vialidades.py` | sí | idénticas |
+| `30_planes.py` | sí | idénticas, incluidas las 64 citas y la figura |
+
+**Al terminar la cadena completa**: todos los CSV, JSON, KML, PNG y Markdown generados son **idénticos byte por byte** a los versionados. Los 15 archivos GPKG tienen bytes distintos y **el mismo contenido** (mismas capas, filas, valores y geometrías, comparados uno por uno): el formato guarda la fecha de escritura.
+
+**Qué prueba esto.** Que las tablas guardadas salen de los scripts guardados y de los datos originales, sin pasos a mano, y que nada depende del azar ni del orden. **No prueba** que el método sea correcto; eso es lo que revisan las secciones 3 a 7.
+
+**No corrido**
+
+- `01_descargar.py --solo osm_caminos`: prohibido reintentar (`CLAUDE.md`).
+- No existe el `16` (reservado para la red rural).
+
+**Observaciones de reproducibilidad**
+
+1. `04_inventario.py` no corre con los datos actuales (arriba).
+2. `data/raw/manifiesto.csv` (tamaño y huella de cada archivo original) no se versiona. Sin él no se puede saber si un archivo bajado dentro de un año es el mismo. Esta vez lo fue, porque las salidas coinciden. La dirección del DENUE no lleva versión: cuando el INEGI publique el siguiente corte, `01` bajará otro archivo y las cifras de abasto cambiarán.
+3. El orden importa en tres sitios (`07` antes de `09` y `17`; `19` antes de `20` y `22`; `15` antes de `11`). Está documentado; un solo script que corra todo en orden lo haría más seguro.
+4. `07` reescribe `docs/verificar_servicios_muestra.csv`, que `CLAUDE.md` pide no regenerar. En la copia terminó idéntico, pero es un riesgo si alguien corre `07` solo.
 
 ---
 
@@ -28,7 +106,7 @@ Fecha: 2026-11-14. Revisión externa antes de publicar el sitio y el PDF. **No s
 
 Se rastrearon las cifras de `resumen_final.md` (R), `contraste_planes.md` (C) y `metodo.md` (M) hasta el archivo del que salen. "Recalculado" = el revisor volvió a obtener el número con su propio código.
 
-**Resultado general**: de 118 cifras revisadas, **110 coinciden**, 5 coinciden con un matiz que el texto no dice, y **3 no coinciden o no se sostienen** (marcadas **NO**). Ninguna cifra de los seis hallazgos está mal copiada; los problemas están en cómo se interpretan dos de ellas (secciones 5 y 9).
+**Resultado general**: 94 filas de comprobación (muchas traen varias cifras). **84 coinciden**; 6 coinciden con un matiz que el texto no dice; **3 no coinciden o no se sostienen** (marcadas **NO**); 1 no se puede cotejar. Ninguna cifra de los seis hallazgos está mal copiada; los problemas están en cómo se interpretan dos de ellas (secciones 5 y 9).
 
 ### 3.1 Acceso en la ciudad
 
@@ -439,7 +517,7 @@ El resumen avisa al principio que todo es descriptivo, titula la sección como "
 
 **Segunda verificación, del revisor.** Con un programa aparte se buscaron las 53 frases entre comillas de `contraste_planes.md` y las de la sección 7 del resumen en los cuatro documentos. Resultado:
 
-- **47 aparecen tal cual** en la página citada.
+- **47 aparecen tal cual** en la página citada (2 de ellas partidas por un corchete o por las columnas de una tabla).
 - **3 no son literales**, aunque van entre comillas:
   - "Proyección de Población del CONAPO 2000-2030" (Plan 2006, p. 34). El original dice "Proyección de Población del Consejo Nacional de Población (CONAPO) 2000-2030".
   - "…y el segundo en el ámbito municipal" (Plan 2006, p. 61). El original dice "en **al** ámbito municipal" (errata del plan, corregida sin avisar).
