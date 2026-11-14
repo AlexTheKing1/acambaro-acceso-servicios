@@ -16,8 +16,8 @@ Fecha: 2026-11-14. Revisión externa antes de publicar el sitio y el PDF. **No s
 | 2. Reproducibilidad | en curso |
 | 3. Tabla de cifras | **terminada** |
 | 4. Consistencia | pendiente |
-| 5. Los seis hallazgos | pendiente |
-| 6. Límites que el reporte debe declarar | pendiente |
+| 5. Los seis hallazgos | **terminada** |
+| 6. Límites que el reporte debe declarar | **terminada** |
 | 7. Lenguaje | pendiente |
 | 8. Citas de los planes | **terminada** |
 | 9. Observaciones clasificadas | pendiente |
@@ -158,6 +158,188 @@ Se rastrearon las cifras de `resumen_final.md` (R), `contraste_planes.md` (C) y 
 | Umbrales rurales (2, 2, 5, 10, 5, 10 km) | R | `UMBRALES_RURAL` | sí |
 | Radios de la norma de 1999 (750, 500, 1 000 m…), páginas de SEDATU 2024 y NOM-002 | M | documentos que no están en el repositorio | **no cotejable** (el propio texto lo declara) |
 | DENUE 05/2026, CLUES agosto 2026, SEP consultado el 2026-10-22 | M | `docs/fuentes.md`; nombres y fechas de los archivos del release | sí |
+
+---
+
+## 5. Los seis hallazgos
+
+Veredictos: **firme** = se sostiene como está escrito; **firme con matiz** = el dato es sólido, pero la frase dice algo más de lo que el dato permite; **débil** = la frase, como está escrita, no se sostiene.
+
+| # | Hallazgo | Veredicto |
+|---|---|---|
+| 1 | Salud | **Firme con matiz** (el número es sólido; se queda corto y falta decir a quién deja fuera) |
+| 2 | Localidades | **Firme con matiz** |
+| 3 | Ciudad: aulas y primaria | **Débil** en la primera mitad; **firme** en la segunda |
+| 4 | Vivienda | **Firme** |
+| 5 | Concentración | **Débil** como "concentración"; **firme** en las cifras |
+| 6 | Planes | **Firme con matiz** |
+
+### Hallazgo 1. Salud
+
+> En la ciudad, 7 039 de las 11 479 personas sin afiliación (61 %) viven lejos de una unidad abierta a toda la población.
+
+**Evidencia.** `acceso_salud_abierta.csv` y `salud_abierta_resumen.csv`. Recalculado por el revisor cuadra por cuadra: 32 660 personas a más de 1 330 m a pie de las 4 unidades de la Secretaría de Salud; de ellas, 6 908 sin afiliación contadas a la vista.
+
+**Tres umbrales.** 75 / 61 / 30 %. El sentido se mantiene con los tres; la cifra cambia mucho (de 8 634 a 3 416 personas). A 100 m por debajo y por encima del umbral principal hay 584 y 471 personas sin afiliación: la cifra no está parada sobre un borde.
+
+**Valores ocultos.** Poca dependencia. 7 039 es una estimación por AGEB (D10). El piso seguro es **6 908** (lo que se ve cuadra por cuadra). El techo es 7 281 (si las 373 personas ocultas vivieran todas lejos). En porcentaje: entre 60 y 63 %. El denominador 11 479 deja fuera 36 personas de AGEB ocultas (el ITER da 11 515).
+
+**Factor 1.33 rural.** No interviene: es la ciudad, medida por calles. Sí interviene la otra aplicación del 1.33: el umbral principal (1 330 m) es el radio de la norma multiplicado por 1.33. Si la norma se refiriera a distancia recorrida, valdría el estricto (75 %).
+
+**Unidades no verificadas.** Las 4 unidades abiertas están confirmadas por la CLUES y se ven en Street View o satélite. Lo que falta es de campo: que funcionen y que atiendan a cualquier persona (`verificar_campo_fase6.csv`). La clínica del ISSSTE, que la CLUES da como fuera de operación (D36), **no afecta** a este hallazgo, porque no cuenta como abierta; solo afecta a la comparación del 22 %.
+
+**Lo que el texto no dice y debería (matiz principal).** El resumen y el contraste explican que "quien está afiliado al IMSS o al ISSSTE sí puede usar esas clínicas; quien no tiene afiliación, no", y que "la diferencia es real solo para quien no tiene afiliación". Eso deja fuera al grupo más grande. En el Censo 2020, la ciudad tiene:
+
+| Afiliación (Censo 2020, localidad 0001) | Personas |
+|---|---:|
+| IMSS | 16 258 |
+| ISSSTE (federal y estatal) | 5 370 |
+| **INSABI / Seguro Popular** | **23 295** |
+| IMSS-Bienestar | 152 |
+| **Sin afiliación** | **11 515** |
+
+Quien estaba afiliado al INSABI o al Seguro Popular **tampoco puede usar las clínicas del IMSS ni del ISSSTE**: se atiende en las mismas 4 unidades abiertas. El revisor contó, cuadra por cuadra, **12 926 afiliados al INSABI a más de 1 330 m de una unidad abierta** (57 % de los 22 811 visibles). Es decir: las personas que dependen de las unidades abiertas y viven lejos de una son, como mínimo, unas **19 800** (6 908 + 12 926), no 7 039. El titular no está mal; es el piso de un grupo casi tres veces mayor.
+
+**Otros matices.** (a) "Unidad" no dice capacidad: una de las 4 tiene 11 consultorios y otras dos tienen 2. (b) Los consultorios de farmacia no cuentan; el texto ya lo dice. (c) El censo es de 2020 y el INSABI ya no existe; la gente sigue dependiendo de las mismas unidades.
+
+**Redacción más fuerte que los datos permiten.**
+> En la ciudad de Acámbaro, al menos 6 900 de las 11 500 personas sin ninguna afiliación (6 de cada 10) viven a más de 1.3 km a pie de las cuatro unidades de salud que atienden a cualquier persona. Lo mismo les pasa a unas 12 900 personas que en 2020 estaban afiliadas al INSABI o al Seguro Popular, que tampoco pueden usar las clínicas del IMSS ni del ISSSTE.
+
+### Hallazgo 2. Localidades
+
+> Irámuco es la peor servida (80 % lejos de una primaria, sin mercado registrado); Parácuaro no tiene secundaria (la más cercana a unos 5.6 km); de los 7 polos rurales del plan de 2006, solo Chupícuaro cumple la meta.
+
+**Evidencia.** `acceso_resumen_por_localidad.csv`, `polos_desarrollo.csv`, `localidades_2500.csv`, `servicios_sedes_fase4.csv`.
+
+**Irámuco.**
+- Primaria: 88 / 80 / 56 % con los tres umbrales. Firme. Sus 2 primarias están confirmadas por la SEP; con solo confirmadas y con solo públicas la cifra no cambia. No depende de valores ocultos (la población total por cuadra no se oculta).
+- Mercado: el catálogo trae 108 tiendas de abarrotes y ningún mercado ni supermercado. 100 % lejos con cualquier umbral y con cualquier factor (el más cercano está a 11.4 km en línea recta). Pero **"sin mercado registrado" no es "sin abasto"**: ninguna fuente registra tianguis (D35).
+- "**La peor servida**": se sostiene **entre las 4 localidades urbanas**. Irámuco es la peor en 4 de los 5 servicios básicos (mercado 100 %, primaria 80 %, salud 64 %, preescolar 25 %); en secundaria la peor es Parácuaro. No se comparó con las 208 localidades rurales, que se miden de otra forma. Dicho sin ese límite, "la peor servida" es más de lo que los datos permiten.
+- Hay una tensión que el reporte debe explicar: la tabla de polos dice que Irámuco "sí" tiene preescolar, primaria, secundaria, bachillerato y salud. Las dos cosas son ciertas: los servicios existen dentro del pueblo, pero la mayoría de su gente vive a más de 670 m de una primaria.
+
+**Parácuaro.**
+- "No tiene secundaria dentro de la localidad": firme. No hay ninguna en SEP, Marco Geoestadístico ni DENUE. No depende de umbrales ni del factor.
+- "A unos 5.6 km": es **línea recta (4.2 km) × 1.33**. La distancia real por carretera no se midió. Con factor 1.2 serían 5.1 km; con 1.5, 6.3 km. Lo único medido es 4.2 km en línea recta.
+- Los documentos dan tres cifras para lo mismo: 5.5 km (resumen, a la ST 24), 5.6 km (contraste, a la Telesecundaria 847 desde el centro) y 5.4 km (mediana por persona). Y nombran dos escuelas distintas como "la más cercana". Ver 4.1.
+- Las dos secundarias cercanas están confirmadas por la SEP; ninguna se revisó en imagen. La ubicación de la ST 24 es justo lo que está pendiente de campo.
+
+**Polos.**
+- "Solo Chupícuaro cumple" es verdad **con lo que registran las fuentes**, pero el resultado completo es: 1 cumple, 2 no cumplen (Parácuaro e Inchamácuaro) y **4 no se pueden evaluar** por el abasto. Decir solo "de 7, 1 cumple" hace pensar que 6 fallan.
+- Chupícuaro cumple con una sola sede de cada cosa: una telesecundaria, un bachillerato SABES, una UMAPS y un mercado de 6 locales. El mercado, el bachillerato y la UMAPS se ven en imagen; la telesecundaria solo está confirmada por la SEP.
+- En 3 polos (San Mateo Tócuaro, Chamácuaro y Arroyo de la Luna) el "sí" de bachillerato es un **telebachillerato o videobachillerato** que solo registra la SEP, sin revisión en imagen. El plan de 2006 pedía "nivel medio superior", así que cuentan; conviene decirlo.
+- Que Inchamácuaro "no tiene" bachillerato ni salud es firme (no hay sede dentro). Sus distancias (3.3 y 3.7 km) son línea recta × 1.33.
+- La "sede" de cada polo es la localidad que da nombre al eje; el plan no lo dice (D60). Es un supuesto del estudio.
+
+**Veredicto: firme con matiz.**
+
+**Redacción más fuerte.**
+> De las cuatro localidades urbanas, Irámuco es la peor servida: 8 de cada 10 habitantes viven a más de 670 m a pie de una primaria y no hay mercado ni supermercado registrado (puede haber un tianguis que ninguna fuente capta). Parácuaro no tiene secundaria dentro del pueblo; las dos más cercanas están a unos 4 km en línea recta. De los 7 polos rurales del plan de 2006, Chupícuaro tiene todo lo que el plan pedía; a Parácuaro y a Inchamácuaro les falta algo, y en los otros 4 no se puede saber porque no hay registro de tianguis.
+
+### Hallazgo 3. Ciudad
+
+> Hay aulas suficientes en total, pero el 32 % vive lejos de una primaria.
+
+**Segunda mitad: firme.** 17 853 personas (31.5 %) a más de 670 m a pie de una primaria; 55 / 32 / 10 % con los tres umbrales. No depende de valores ocultos ni del factor rural. La cifra es más bien **conservadora**: cuenta todas las primarias, incluidas 5 privadas y 2 puntos sin confirmar que probablemente no son primarias ("UTL" y "Jardín de Niños Fray Pedro de Gante"). Con solo confirmadas, 35 % (19 654); con solo públicas, 38 % (21 460). Solo 2 de las 24 primarias de la ciudad se revisaron en imagen; 20 están confirmadas por la SEP.
+
+**Primera mitad: débil.** "Aulas suficientes en total" sale del cuadro 3 del PROT (p. 38), que el revisor leyó en el PDF: 1 499 aulas de primaria existentes contra 451 necesarias. Ese cuadro es de **la subregión completa** (4 municipios, 189 535 habitantes), con datos de alrededor de 2014. No hay en el repositorio ningún dato de aulas, grupos ni matrícula **de la ciudad**, ni actual. El hallazgo junta una cifra de la subregión con una de la ciudad como si fueran del mismo lugar. Además, el Plan 2040 dice lo contrario para el municipio (menos escuelas por habitante que el estado, p. 158); el propio contraste lo reconoce.
+
+**Otros matices.** Distancia no es cupo: el estudio mide dónde está la escuela, no si tiene lugar ni cuántos turnos. Y quien "vive lejos" es toda la población; niñas y niños de 6 a 11 años son 1 700 (mínimo visible 1 583).
+
+**Redacción más fuerte.**
+> En la ciudad, una de cada tres personas (32 %) vive a más de 670 m a pie de una primaria; entre ellas, unas 1 700 niñas y niños de 6 a 11 años. El programa regional de 2014 calculó que en la subregión sobraban aulas de primaria: contar aulas en total no dice si están cerca de donde vive la gente.
+
+### Hallazgo 4. Vivienda
+
+> 24 % de las viviendas del municipio está deshabitada; en Irámuco, 2010–2020, población +5 %, viviendas +27 %, deshabitadas de 356 a 658.
+
+**Evidencia.** Recalculado de los ITER 2010 y 2020 bajados del INEGI. Municipio 2020: 11 130 deshabitadas de 45 739 viviendas = 24.3 %. Irámuco: 5 954 → 6 275 (+5.4 %); 1 839 → 2 336 viviendas (+27.0 %); 356 → 658 deshabitadas.
+
+**Umbrales, ocultos, factor, verificación.** Nada de eso interviene: son totales de localidad publicados por el censo, sin "*". Las cifras de 2010 por manzana sí están ocultas en 9 de cada 10, pero este hallazgo no las usa.
+
+**Matices.**
+- "Deshabitada" es la definición del censo el día del levantamiento. No incluye las de uso temporal (otro 9.7 %). Con las dos, 34 % de las viviendas del municipio no están habitadas.
+- Contexto que cambia la lectura: 24.3 % es **el más bajo de los 7 municipios de la región** (24.4 a 30.9 %), aunque muy por encima de Guanajuato (15.7 %).
+- En Irámuco, las habitadas también crecieron (1 218 → 1 444). De 497 viviendas más, 302 son deshabitadas más. Los datos no dicen que las vacías sean las nuevas (ver 7).
+
+**Veredicto: firme.** La frase ya es la más fuerte que los datos permiten. Solo convendría decir "en 2020".
+
+### Hallazgo 5. Concentración
+
+> La ciudad superó en 2020 lo proyectado para 2030 (56 597 contra 51 613); la subregión bajó 1.4 % frente a +5.07 % proyectado.
+
+**Las cifras: firmes.** 56 597 y los totales de la subregión salen del ITER (recalculados). 51 613 y +5.07 % están en el PROT (p. 42 y 59, leídos en el PDF). La cifra de la ciudad es comparable (misma localidad).
+
+**La palabra "concentración": no se sostiene.** El resumen dice: "Es concentración en la ciudad y pérdida en el resto". Los censos dicen otra cosa:
+
+| | 2010 | 2020 | Cambio |
+|---|---:|---:|---:|
+| Ciudad | 57 972 | 56 597 | **−1 375** (−2.4 %) |
+| Resto del municipio | 51 058 | 52 100 | **+1 042** (+2.0 %) |
+| Parte de la ciudad en el municipio | 53.2 % | 52.1 % | baja |
+| Parte de la ciudad en la subregión | 31.6 % | 31.3 % | baja |
+
+Entre 2010 y 2020 **la ciudad perdió y el resto del municipio ganó**. La ciudad pesa hoy menos que en 2010, no más. La concentración solo aparece si se compara con 2000 (ciudad 55 516, 50.1 % del municipio), y todo ese cambio ocurrió antes de 2010. Quien perdió fueron los otros tres municipios de la subregión (−3.0 %).
+
+**"Superó lo proyectado".** El PROT proyectaba que la ciudad **bajaría**. Estar en 2020 por encima de una meta de baja para 2030 es casi inevitable: en línea recta de 2010 a 2030, en 2020 le tocarían unos 54 800. Lo que sí se puede decir es que la ciudad bajó más despacio de lo proyectado (1 375 en diez años, contra unos 3 200 que pedía ese ritmo). El resumen ya lo califica de "moderada"; el hallazgo, tal como está en la lista, no.
+
+**Subregión.** −1.4 % contra +5.07 %: firme. Dos avisos: el PROT se contradice (da más población para 2014 que para 2016; el contraste lo declara), y el resumen dice que el municipio "nunca pasó de 110 718", lo que solo vale para los censos: la Encuesta Intercensal 2015 dio 112 125, casi igual a lo que el PROT esperaba para 2014 (112 076). La caída se ve entre 2015 y 2020.
+
+**Umbrales, ocultos, factor, verificación.** No intervienen. La EIC 2025 de la ciudad (56 771) tiene un intervalo de ±10 %: no sirve para decir si subió o bajó.
+
+**Veredicto: débil como "concentración"; firme en las cifras.**
+
+**Redacción más fuerte.**
+> El programa regional de 2014 esperaba que la subregión creciera 5 % entre 2010 y 2020; bajó 1.4 %. Para la ciudad esperaba una baja hasta 51 613 habitantes en 2030; en 2020 tenía 56 597: perdió población, pero más despacio de lo previsto. Entre 2010 y 2020 la ciudad perdió 1 375 habitantes y el resto del municipio ganó 1 042.
+
+### Hallazgo 6. Planes
+
+> Cuatro documentos (2006–2025) repiten los diagnósticos; tres prometen un ordenamiento que no se ha publicado; ninguno mide dónde están los servicios.
+
+**"Repiten los diagnósticos": con matiz.** No son los cuatro en cada tema. Migración: los cuatro (verificado). Irámuco y Parácuaro como casos aparte: tres (el Plan 2040 "no los trata por separado", según el propio contraste). Poco equipamiento en las localidades: explícito en 2006 y 2025.
+
+**"Tres prometen un ordenamiento": firme.** 2006 (p. 241, plazo de 6 meses), 2015 (p. 172 y 174) y 2025 (p. 60 y 68). Las tres citas están en su página. El PROT es, él mismo, un programa de ordenamiento, pero regional.
+
+**"Que no se ha publicado": no comprobado.** Lo único que hay es que el Programa de julio de 2025 dice que "se encuentra en elaboración". Nadie revisó el Periódico Oficial entre agosto de 2025 y hoy (noviembre de 2026). El propio contraste deja como "no verificado" que podría estar en revisión del IPLANEG. Además, el Plan 2006 (p. 241) habla de "actualizar y evaluar el Plan Director de Desarrollo Urbano": en 2006 ya existía un instrumento urbano anterior, que el contraste no menciona.
+
+**"Ninguno mide dónde están los servicios": firme con matiz.** Ninguno mide distancia a escuelas, clínicas o mercados. Pero el Plan 2006 sí dice dónde están por micro región y por comunidad (fichas, p. 60, 64 y 171), y el PROT mide accesibilidad a carretera pavimentada (p. 51). Más exacto: "ninguno mide a qué distancia vive la gente de los servicios".
+
+**Dependencia del OCR.** Todo lo del Plan 2040 y del Programa 2025 se leyó en un OCR. Las 30 citas positivas están en su página. Las afirmaciones de ausencia ("no menciona", "no hay acciones para construir…") son las más frágiles: una tabla o un mapa mal leído no aparece en la búsqueda.
+
+**Veredicto: firme con matiz.**
+
+**Redacción más fuerte.**
+> Los cuatro documentos, de 2006 a 2025, señalan la migración; tres prometen un instrumento municipal de ordenamiento territorial (2006, 2015 y 2025), que en julio de 2025 seguía en elaboración según el propio Programa de Gobierno. Ninguno mide a qué distancia vive la gente de las escuelas, las clínicas o los mercados.
+
+---
+
+## 6. Límites que el reporte debe declarar
+
+### Los que pidió revisar Alejandro
+
+| Límite | ¿Está declarado? | Qué falta |
+|---|---|---|
+| Distancias rurales en línea recta × 1.33 | Sí (resumen 1 y 6; método 1; D26) | Decir **cuánto** pesa. Recalculado por el revisor, población rural lejos según el factor (1.0 / 1.2 / **1.33** / 1.5): salud 6 % / 12 % / **17 %** / 28 %; mercado 17 % / 34 % / **40 %** / 49 %; secundaria 0.2 % / 2 % / **3 %** / 9 %. Las cifras rurales se duplican o se reducen a la mitad con cambios razonables del factor. El 1.33 se calibró con las calles de la ciudad, no con caminos rurales |
+| Verificación remota y no en campo | Sí (resumen 6.9; D13, D41) | Decir que solo se revisaron 68 de unas 300 sedes de escuelas y salud, que no fue al azar, y que entre las revisadas 1 de cada 4 no se vio |
+| Fechas de los catálogos frente al Censo 2020 | Sí, en general (resumen 6.1; método 1) | Falta decir: (a) el catálogo SEP **no tiene fecha de corte** (D40); (b) la CLUES de agosto de 2026 da como fuera de operación la clínica del ISSSTE que el estudio cuenta (D36); (c) son 6 años entre la población y los servicios |
+| Tianguis que ninguna fuente captura | Sí (resumen 1 y 6.4; método 3; D35) | Bien declarado. Mantenerlo pegado a cada frase sobre mercados, no solo en la lista de límites |
+| Normas no cotejadas | Sí (método 2; resumen 9) | Bien declarado. Es el límite que más pesa en la ciudad: todos los umbrales salen de radios que nadie del proyecto ha visto en el documento original, y de un supuesto (que el radio es en línea recta) que la norma no dice |
+| Citas sobre OCR | Sí (contraste, encabezado; D65) | Falta separar: las citas **positivas** están verificadas; las afirmaciones de **ausencia** sobre OCR no se pueden verificar del todo |
+
+### Los que faltan
+
+1. **"Sin afiliación" no es todo el que depende de las unidades abiertas.** En el Censo 2020, la afiliación al INSABI o al Seguro Popular cuenta como "con afiliación". En la ciudad son 23 295 personas, el doble de las que no tienen ninguna (hallazgo 1).
+2. **La distancia no mide capacidad ni calidad.** Una escuela cerca puede no tener cupo; una unidad de salud puede tener 2 consultorios u 11, o no tener médico ese día. El estudio mide dónde está el servicio, nada más.
+3. **El umbral principal lleva dentro un supuesto.** Multiplicar el radio de la norma por 1.33 da por hecho que la norma habla de línea recta. Si hablara de distancia recorrida, todas las cifras de la ciudad serían las del umbral estricto (primaria 55 % en vez de 32 %; salud abierta sin afiliación 75 % en vez de 61 %).
+4. **"Lejos" es a pie.** En la ciudad no se considera transporte público, bicicleta ni automóvil. El bachillerato a 3.3 km a pie y la primaria a 670 m no son la misma clase de "lejos".
+5. **Cinco rutas de control.** La comparación con Google Maps son 5 rutas elegidas, 4 en la ciudad. No hay ningún control de las distancias rurales.
+6. **Muchas correlaciones, pocos casos.** En el vaciamiento se probaron 54 correlaciones; con 42 AGEB en la ciudad, algunas saldrían "moderadas" por azar. Las que se destacan (0.41, −0.36, 0.38) no se corrigieron por eso.
+7. **Vivienda "deshabitada" es una foto del día del censo.** Marzo de 2020. No distingue casa abandonada de casa en venta o en renta, ni de casa de migrante que vuelve.
+8. **Las AGEB de 2010 y 2020 no son las mismas.** La comparación por anillos y por AGEB usa "unidades comparables" armadas por el estudio (D44), que cubren 92 % de las viviendas de la ciudad.
+9. **Las proyecciones del PROT son de CONAPO sobre el Censo 2010.** Compararlas con el censo de 2020 dice que la proyección no se cumplió, no por qué.
+10. **La Encuesta Intercensal 2015 no está en el estudio.** Daba 112 125 habitantes al municipio. Sin ella, la serie parece plana entre 2010 y 2020; con ella, sube y luego cae.
+11. **El polo se evalúa en su localidad sede**, que el plan de 2006 no nombra (D60). Y "tiene" significa "hay al menos una sede dentro", aunque sea un telebachillerato.
+12. **El estado del ordenamiento municipal no se consultó** después de julio de 2025.
+13. **El 2005 es un conteo**, no un censo, y dio cifras bajas en toda la región. El contraste lo dice; la gráfica debe decirlo también.
 
 ---
 
