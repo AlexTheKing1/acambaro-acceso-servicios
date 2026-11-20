@@ -775,6 +775,16 @@
     "subregion 2025": 182793.0,
     "ciudad 2025": 56771.0
    }
+  },
+  "eic2015": {
+   "fuente": "INEGI, Encuesta Intercensal 2015, tabulado 01_poblacion_gto.xls, hoja 02",
+   "que_mide": "población total en viviendas particulares habitadas (estimador)",
+   "acambaro": 112125,
+   "error_estandar": 5145.5,
+   "limite_inferior": 103624,
+   "limite_superior": 120626,
+   "programa_2025_p41": 112125,
+   "coincide": true
   }
  }
 }

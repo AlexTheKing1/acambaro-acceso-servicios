@@ -288,6 +288,25 @@ def main():
     }
     figura(tabla)
 
+    # --- Fase 8: cotejo de la Encuesta Intercensal 2015 (cifra citada por el Programa 2025, p. 41) ----
+    # Tabulado 01 de Guanajuato, hoja "02": población total en viviendas particulares habitadas por
+    # municipio (estimador, error estándar e intervalo del INEGI). No se agrega a la gráfica (pendiente 1.1).
+    f15 = RAW / "eic2015" / "01_poblacion_gto.xls"
+    if f15.exists():
+        h = pd.read_excel(f15, sheet_name="02", header=None)
+        h = h[(h[1].astype(str).str.startswith("002 ")) & (h[2].astype(str).str.strip() == "Total")]
+        val = {str(r[3]).strip(): float(r[4]) for _, r in h.iterrows()}
+        v["eic2015"] = {"fuente": "INEGI, Encuesta Intercensal 2015, tabulado 01_poblacion_gto.xls, hoja 02",
+                        "que_mide": "población total en viviendas particulares habitadas (estimador)",
+                        "acambaro": round(val["Valor"]), "error_estandar": round(val["Error estándar"], 1),
+                        "limite_inferior": round(val["Límite inferior de confianza"]),
+                        "limite_superior": round(val["Límite superior de confianza"]),
+                        "programa_2025_p41": 112125,
+                        "coincide": round(val["Valor"]) == 112125}
+        assert v["eic2015"]["coincide"], v["eic2015"]
+    else:
+        v["eic2015"] = {"no_corrido": "falta data/raw/eic2015/01_poblacion_gto.xls (01_descargar.py --solo eic2015)"}
+
     # --- Punto de verificación en campo: secundaria técnica de Parácuaro ---------------------
     # Plan Municipal p. 64: "secundaria técnica localizada en la carretera Parácuaro- El Jaral".
     # D39: la ST 24 (11DST0024Y) está en la carretera Acámbaro–Parácuaro km 9 (domicilio del catálogo SEP).
