@@ -181,6 +181,10 @@ def main():
     v["urbano"]["tipologia_por_quintil"] = pd.crosstab(na.quintil, na.clase).to_dict("index")
     # Índice vs distancia al centro (urbano) y vs servicios lejos de la AGEB
     v["urbano"]["rho_indice_vs_dist_centro"] = round(spearmanr(na.indice, na.dist_centro_m, nan_policy="omit")[0], 3)
+    # Fase 8 (revisión final, a2): el −0.03 mezcla las 4 localidades; dentro de la ciudad se reporta aparte
+    ci = na[na.localidad == "Acámbaro"]
+    v["urbano"]["rho_indice_vs_dist_centro_solo_ciudad"] = round(spearmanr(ci.indice, ci.dist_centro_m, nan_policy="omit")[0], 3)
+    v["urbano"]["agebs_ciudad_con_indice"] = int(ci.indice.notna().sum())
     v["urbano"]["rho_indice_vs_servicios_lejos"] = round(spearmanr(na.indice, na.servicios_lejos, nan_policy="omit")[0], 3)
     v["urbano"]["quintiles_por_localidad"] = pd.crosstab(na.localidad, na.quintil).to_dict("index")
     v23.guardar_validacion("nse", v)

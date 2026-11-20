@@ -700,12 +700,12 @@
  },
  "planes": {
   "citas": {
-   "total": 64,
+   "total": 75,
    "por_documento": {
-    "municipal": 19,
-    "programa": 17,
-    "prot": 15,
-    "plan2040": 13
+    "municipal": 24,
+    "prot": 19,
+    "programa": 18,
+    "plan2040": 14
    },
    "no_encontradas": [],
    "pagina_vecina": []

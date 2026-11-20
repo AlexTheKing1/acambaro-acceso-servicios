@@ -64,6 +64,11 @@ CITAS = [
     ("mun_iramuco_escuelas", "municipal", 60, "11 centros de educación preescolar, 9 primarias y 3 tele secundarias"),
     ("mun_iramuco_concentrador", "municipal", 61, "Irámuco se constituirá como el principal concentrador de población micro regional"),
     ("mun_paracuaro_secundaria", "municipal", 64, "secundaria técnica localizada en la carretera Parácuaro- El Jaral"),
+    ("mun_secundaria_agropecuaria", "municipal", 31, "una secundaria técnica agropecuaria"),
+    ("mun_arroyo_colorado_sin_habitar", "municipal", 171, "120 (79 sin habitar)"),
+    ("mun_plan_director", "municipal", 241, "Actualizar y evaluar el Plan Director de Desarrollo Urbano"),
+    ("mun_conapo_fuente_completa", "municipal", 34, "Proyección de Población del Consejo Nacional de Población (CONAPO) 2000-2030"),
+    ("mun_iramuco_segundo", "municipal", 61, "el segundo en al ámbito municipal"),
     ("mun_deficit_habitacional", "municipal", 214, "disminuir el déficit habitacional"),
     ("mun_reservas_vivienda", "municipal", 215, "Identificar y adquirir reservas de terreno para las acciones de vivienda"),
     ("mun_fraccionamientos", "municipal", 216, "Mantener estricto control de los fraccionamientos"),
@@ -84,10 +89,15 @@ CITAS = [
     ("prot_exponencial", "prot", 47, "La tendencia muestra un crecimiento poblacional exponencial"),
     ("prot_migracion_no_contemplada", "prot", 47, "no parecen contempladas en esta proyección"),
     ("prot_iramuco", "prot", 59, "actualmente haya un fuerte crecimiento poblacional y de desarrollo habitacional"),
+    ("prot_crecimiento_periferia", "prot", 59, "En Acámbaro, el crecimiento urbano ocurre en la periferia de la cabecera municipal y en otras"),
+    ("prot_interaccion_michoacan", "prot", 59, "un interacción con Michoacán la que ha propiciado"),
+    ("prot_cuadro3_primaria", "prot", 38, "1,048"),
+    ("prot_accesibilidad_carretera", "prot", 51, "Acámbaro presenta una accesibilidad media (94.75%)"),
     ("prot_crec_2016", "prot", 59, "3.14%"),
     ("prot_crec_2020", "prot", 59, "5.07%"),
     ("prot_crec_2030", "prot", 59, "8.9%"),
     # Plan Municipal de Desarrollo 2040 (2015), OCR
+    ("p40_horizonte", "plan2040", 106, "Plan Municipal 2012-2040"),
     ("p40_unidades_2010", "plan2040", 127, "23 unidades de servicio médico, 1 IMSS, 1 ISSTE y 21 de SSG"),
     ("p40_carencia_salud", "plan2040", 138, "el 24.6% de la población presenta carencia por acceso a servicios de salud"),
     ("p40_intensidad_migratoria", "plan2040", 138, "intensidad migratoria clasificado como alto"),
@@ -114,6 +124,7 @@ CITAS = [
     ("pg_iramuco_6725", "programa", 55, "6.18 por ciento con 6,725"),
     ("pg_baja_cobertura", "programa", 55, "baja cobertura de servicios públicos y equipamiento, debido a condiciones de dispersión y baja accesibilidad"),
     ("pg_11_polos", "programa", 55, "el municipio cuenta con 11 polos de desarrollo rural"),
+    ("pg_pmduoet_programa", "programa", 60, "programa que se encuentra en elaboración por un grupo de especialistas en la materia"),
     ("pg_pmduoet_elaboracion", "programa", 60, "encuentra en elaboración por un grupo de especialistas"),
     ("pg_concluir_pmduoet", "programa", 68, "Concluir el Programa Municipal de Desarrollo Urbano"),
     ("pg_actualizar_2040", "programa", 68, "Actualizar el Plan de Desarrollo Municipal visión 2040"),
@@ -279,15 +290,18 @@ def main():
 
     # --- Punto de verificación en campo: secundaria técnica de Parácuaro ---------------------
     # Plan Municipal p. 64: "secundaria técnica localizada en la carretera Parácuaro- El Jaral".
-    # D39: la ST 24 (11DST0024Y) está en la carretera Acámbaro–Parácuaro km 9. No se asume cuál
-    # es correcta (otra escuela o reubicación). Lista aparte para no tocar docs/verificar_campo.csv.
+    # D39: la ST 24 (11DST0024Y) está en la carretera Acámbaro–Parácuaro km 9 (domicilio del catálogo SEP).
+    # D68 (fase 8): Alejandro la verificó en Google Maps junto a Jaral del Refugio, a 54 m del punto
+    # del catálogo; las dos descripciones nombran el mismo tramo. Queda confirmar en campo que funciona.
+    # Lista aparte para no tocar docs/verificar_campo.csv.
     sed = pd.read_csv(P / "servicios_sedes_fase4.csv", dtype=str)
     st = sed[sed.claves_sep_clues.fillna("").str.contains("11DST0024Y")].iloc[0]
     campo = [{
         "orden": 1, "id": st.id_sede, "tipo": "secundaria", "nombre": st.nombre, "clave_sep": "11DST0024Y",
         "localidad_catalogo": st.localidad,
-        "motivo": "Plan Municipal (p. 64) la ubica en la carretera Parácuaro–El Jaral; D39, en la carretera "
-                  "Acámbaro–Parácuaro km 9. Confirmar si es la misma escuela, si se reubicó o si hay otra secundaria técnica.",
+        "motivo": "Ubicación verificada en Google Maps (Alejandro, D68): junto a Jaral del Refugio, en el tramo que el "
+                  "Plan Municipal (p. 64) llama carretera Parácuaro–El Jaral y la SEP, carretera Acámbaro–Parácuaro km 9. "
+                  "Confirmar en campo que funciona.",
         "lat": st.lat, "lon": st.lon,
         "enlace_google_maps": f"https://www.google.com/maps/search/?api=1&query={st.lat},{st.lon}",
         "existe_campo": "", "fecha_visita": "", "foto": "", "notas": ""}]
