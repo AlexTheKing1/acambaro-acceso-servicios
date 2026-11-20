@@ -365,3 +365,32 @@ Todas las claves en `data/processed/validacion_fase6.json`.
 - Barrido de las acciones del Programa (p. 61–89), buscando salud, médic, educa, escuel, abasto, mercado, tianguis, clínica, hospital, construcción y rehabilitación. Hay acciones de salud del DIF (unidad médica, rehabilitación), apoyos educativos, mercados de la ciudad (p. 83), panteones, agua, canchas y calles. **Ninguna construye unidades de salud, escuelas o mercados en las localidades.**
 - Plan 2040: sin "polo", "deshabitad" ni "proyecci" en todo el OCR. El mapa 4 (p. 175) no tiene leyenda legible.
 - **Salió mal / cuidado**: el Plan 2040 (p. 127) suma 23 unidades, pero desglosa 24 de la SSG. El Programa (p. 44) da 22 522 sin afiliación; el censo, 22 418.
+
+## Fase 8 — Aplicar la revisión final (2026-11-20)
+
+Claves nuevas en `data/processed/validacion_fase6.json` (`salud_abierta.dependen_de_abiertas`), `validacion_fase5.json` (`nse.urbano.rho_indice_vs_dist_centro_solo_ciudad`) y `validacion_fase8.json` (`factor_rural`).
+
+**V60 · Grupo que depende de las unidades abiertas (D69; `27_salud_abierta.py`).**
+- Control: las 90 filas que ya tenía `salud_abierta_resumen.csv` (población total y sin afiliación) quedan idénticas en las 6 columnas numéricas; `acceso_salud_abierta.csv` solo gana las columnas `PDER_SEGP` y `PDER_IMSSB`.
+- Ciudad, umbral principal: 20 147 de 34 889 (57.7 %), piso 19 879. Por componente: sin afiliación 7 039 (piso 6 908), INSABI / Seguro Popular 13 041 (piso 12 926), IMSS-Bienestar 67. Tres umbrales: 25 199 / 20 147 / 9 381 (72.2 / 57.7 / 26.9 %).
+- Control independiente: el piso del INSABI (12 926) es el que contó la revisión final con su propio código (sección 5 de `docs/revision_final.md`).
+- Otras localidades, principal: Irámuco 3 761 de 5 822 (64.6 %, piso 3 699); Parácuaro 338 de 3 311 (10.2 %, piso 287); Chupícuaro 112 de 2 147 (5.2 %, piso 78). Rural (factor 1.33): 5 947 de 32 797 (18.1 %).
+- Oculto ("*"): los totales con dato por AGEB son 34 889 en la ciudad contra 34 962 publicados para la localidad (73 personas). AGEB ocultas en la ciudad: 19 (sin afiliación), 12 (INSABI), 19 (IMSS-Bienestar). En lo rural, 67 localidades tienen "*" en las tres variables.
+- El grupo publicado es el 62 % de la ciudad, el 93 % de Irámuco, el 80 % de Parácuaro y el 83 % de Chupícuaro.
+- **Cuidado**: afiliaciones repetidas (suma de afiliaciones − población afiliada): ciudad 830; en Irámuco, Parácuaro y Chupícuaro sale 0–11, pero es un piso, porque alguna afiliación está oculta en la localidad.
+- **Salió mal y se corrigió**: en la primera corrida el conteo de afiliaciones repetidas daba vacío en las 3 localidades pequeñas (una afiliación oculta anulaba la suma); ahora suma lo visible y dice cuáles faltan.
+
+**V61 · Factor de rodeo rural y Parácuaro (`31_sensibilidad_factor.py`).**
+- Control: con 1.33 reproduce exactamente `acceso_resumen_por_localidad.csv` (rural, 5 categorías, 3 umbrales).
+- Población rural lejos con el umbral principal y factores 1.0 / 1.2 / 1.33 / 1.5: salud abierta 5.7 / 12.3 / 17.0 / 28.0 %; mercado o supermercado 17.3 / 33.5 / 40.3 / 48.9 %; secundaria 0.2 / 1.9 / 2.7 / 8.7 %; bachillerato 0.0 / 0.6 / 2.8 / 3.7 %; preescolar 1.4 / 2.4 / 3.0 / 3.1 %; primaria 0.2 / 1.0 / 1.8 / 2.1 %.
+- Parácuaro (D68): la ST 24 del catálogo SEP y el punto de Alejandro están a 54 m. Desde el punto ITER de Parácuaro: ST 24 a 4 279 m en línea recta (Google Maps, 4 340 m), Telesecundaria 847 a 4 254 m. Estimado del método 5 691 m contra 4 900 m por carretera: sobreestimó 791 m (16 %); factor real 1.15.
+
+**V62 · `04_inventario.py`.** Ya no se detiene: los 13 archivos del manifiesto que no son ZIP (CSV, JSON, XLSX, PDF, TXT) se listan sin abrirlos. Corrido contra los 41 archivos bajados en la fase 7; `docs/inventario.md` queda al día (antes estaba en la fase 1).
+
+**V63 · Citas, fase 8 (`30_planes.py`).**
+- 11 citas nuevas en `CITAS` (las que la revisión encontró sin verificación automática y las nuevas del contraste): **75 de 75** en la página impresa indicada.
+- Tres citas del contraste se corrigieron para que sean literales: la fuente CONAPO del Plan 2006 (p. 34) completa, y las erratas del original con "[sic]" ("en al ámbito", p. 61 del Plan 2006; "un interacción", p. 59 del PROT). "Proyecto Nuevo" se cita solo en p. 174 del Plan 2040.
+- Búsqueda independiente (el código de la revisión, quitando "[sic]") sobre los textos corregidos: todas las citas están en su página, salvo dos que el texto parte a propósito (una inserción "[municipios]" y una frase repartida en dos columnas de una tabla del OCR).
+- Correlación índice – distancia al centro: −0.032 en las 53 AGEB de las 4 localidades, **−0.583 en las 40 AGEB de la ciudad**.
+
+**V64 · Encuesta Intercensal 2015 (`30_planes.py`, clave `planes.eic2015`).** Tabulado del INEGI `01_poblacion_gto.xls` (elaborado el 24/10/2016), hoja 02, población total en viviendas particulares habitadas por municipio. Acámbaro: **112 125**, igual a la cifra del Programa de Gobierno 2025 (p. 41). Error estándar 5 145; límites 103 624 y 120 626 (± 1.65 errores estándar: intervalo de 90 %), que incluyen las cifras de los censos de 2000 (110 718) y 2020 (108 697). El conjunto de datos abiertos de la EIC 2015 no está en la dirección que sigue el patrón de la EIC 2025 (página HTML); se usó el tabulado. Para leer el `.xls` se agregó `xlrd==2.0.1` a `requirements.txt`; `01_descargar.py` ahora revisa también la firma de los `.xls`. Las demás salidas de `30` no cambian (citas 75 de 75).

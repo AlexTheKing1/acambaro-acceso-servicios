@@ -669,6 +669,8 @@
     }
    },
    "rho_indice_vs_dist_centro": -0.032,
+   "rho_indice_vs_dist_centro_solo_ciudad": -0.583,
+   "agebs_ciudad_con_indice": 40,
    "rho_indice_vs_servicios_lejos": -0.348,
    "quintiles_por_localidad": {
     "Acámbaro": {

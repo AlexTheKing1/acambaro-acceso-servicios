@@ -65,6 +65,11 @@ FUENTES = {
         (f"{INEGI}/programas/ccpv/2005/datosabiertos/cpv2005_iter_11_csv.zip",
          "cpv2005_iter_11_csv.zip"),
     ],
+    # Fase 8: Encuesta Intercensal 2015, tabulado 01 (población) de Guanajuato, para cotejar la cifra
+    # de Acámbaro que cita el Programa de Gobierno 2025 (p. 41). Fuente nueva: máximo 2 intentos.
+    "eic2015": [
+        (f"{INEGI}/programas/intercensal/2015/tabulados/01_poblacion_gto.xls", "01_poblacion_gto.xls"),
+    ],
     "iter2010": [
         (f"{INEGI}/programas/ccpv/2010/datosabiertos/iter_11_2010_csv.zip",
          "iter_11_2010_csv.zip"),
@@ -148,7 +153,7 @@ OPCIONALES = {
 }
 
 
-DOS_INTENTOS = {"iter_nacional", "iter2000", "iter2005"}
+DOS_INTENTOS = {"iter_nacional", "iter2000", "iter2005", "eic2015"}
 
 
 def bajar(url, destino, intentos=4):
@@ -164,11 +169,15 @@ def bajar(url, destino, intentos=4):
                         f.write(bloque)
                 tmp.rename(destino)
             # INEGI responde 200 con una página HTML cuando un archivo no existe.
-            # (Los CSV del release no son ZIP: solo se revisa la firma de .zip y .xlsx.)
+            # (Los CSV del release no son ZIP: solo se revisa la firma de .zip, .xlsx y .xls.)
             with open(destino, "rb") as f:
-                if destino.suffix in (".zip", ".xlsx") and f.read(2) != b"PK":
+                firma = f.read(4)
+                if destino.suffix in (".zip", ".xlsx") and firma[:2] != b"PK":
                     destino.unlink()
                     return "la respuesta no es un ZIP"
+                if destino.suffix == ".xls" and firma != b"\xd0\xcf\x11\xe0":   # Excel 97 (OLE)
+                    destino.unlink()
+                    return "la respuesta no es un XLS"
             return "ok"
         except requests.RequestException as e:
             if i == intentos - 1:

@@ -10,6 +10,11 @@ mun_iramuco_viviendas,municipal,pdftotext,59,59,"concentró un total de 3,557 vi
 mun_iramuco_escuelas,municipal,pdftotext,60,60,"11 centros de educación preescolar, 9 primarias y 3 tele secundarias",sí,60
 mun_iramuco_concentrador,municipal,pdftotext,61,61,Irámuco se constituirá como el principal concentrador de población micro regional,sí,61
 mun_paracuaro_secundaria,municipal,pdftotext,64,64,secundaria técnica localizada en la carretera Parácuaro- El Jaral,sí,64
+mun_secundaria_agropecuaria,municipal,pdftotext,31,31,una secundaria técnica agropecuaria,sí,31
+mun_arroyo_colorado_sin_habitar,municipal,pdftotext,171,171,120 (79 sin habitar),sí,171
+mun_plan_director,municipal,pdftotext,241,241,Actualizar y evaluar el Plan Director de Desarrollo Urbano,sí,241
+mun_conapo_fuente_completa,municipal,pdftotext,34,34,Proyección de Población del Consejo Nacional de Población (CONAPO) 2000-2030,sí,34
+mun_iramuco_segundo,municipal,pdftotext,61,61,el segundo en al ámbito municipal,sí,61
 mun_deficit_habitacional,municipal,pdftotext,214,214,disminuir el déficit habitacional,sí,214
 mun_reservas_vivienda,municipal,pdftotext,215,215,Identificar y adquirir reservas de terreno para las acciones de vivienda,sí,215
 mun_fraccionamientos,municipal,pdftotext,216,216,Mantener estricto control de los fraccionamientos,sí,216
@@ -30,9 +35,14 @@ prot_proyecciones,prot,pdftotext,47,48,2.2.2.3 Proyecciones de población,sí,8;
 prot_exponencial,prot,pdftotext,47,48,La tendencia muestra un crecimiento poblacional exponencial,sí,47
 prot_migracion_no_contemplada,prot,pdftotext,47,48,no parecen contempladas en esta proyección,sí,47
 prot_iramuco,prot,pdftotext,59,60,actualmente haya un fuerte crecimiento poblacional y de desarrollo habitacional,sí,59
+prot_crecimiento_periferia,prot,pdftotext,59,60,"En Acámbaro, el crecimiento urbano ocurre en la periferia de la cabecera municipal y en otras",sí,59
+prot_interaccion_michoacan,prot,pdftotext,59,60,un interacción con Michoacán la que ha propiciado,sí,59
+prot_cuadro3_primaria,prot,pdftotext,38,39,"1,048",sí,38
+prot_accesibilidad_carretera,prot,pdftotext,51,52,Acámbaro presenta una accesibilidad media (94.75%),sí,51
 prot_crec_2016,prot,pdftotext,59,60,3.14%,sí,45;59
 prot_crec_2020,prot,pdftotext,59,60,5.07%,sí,59
 prot_crec_2030,prot,pdftotext,59,60,8.9%,sí,30;59
+p40_horizonte,plan2040,OCR,106,106,Plan Municipal 2012-2040,sí,106;109
 p40_unidades_2010,plan2040,OCR,127,127,"23 unidades de servicio médico, 1 IMSS, 1 ISSTE y 21 de SSG",sí,127
 p40_carencia_salud,plan2040,OCR,138,138,el 24.6% de la población presenta carencia por acceso a servicios de salud,sí,138
 p40_intensidad_migratoria,plan2040,OCR,138,138,intensidad migratoria clasificado como alto,sí,138
@@ -58,6 +68,7 @@ pg_viviendas_habitadas,programa,OCR,49,34,"30,171 viviendas habitadas",sí,49
 pg_iramuco_6725,programa,OCR,55,40,"6.18 por ciento con 6,725",sí,55
 pg_baja_cobertura,programa,OCR,55,40,"baja cobertura de servicios públicos y equipamiento, debido a condiciones de dispersión y baja accesibilidad",sí,55
 pg_11_polos,programa,OCR,55,40,el municipio cuenta con 11 polos de desarrollo rural,sí,55
+pg_pmduoet_programa,programa,OCR,60,45,programa que se encuentra en elaboración por un grupo de especialistas en la materia,sí,60
 pg_pmduoet_elaboracion,programa,OCR,60,45,encuentra en elaboración por un grupo de especialistas,sí,60
 pg_concluir_pmduoet,programa,OCR,68,53,Concluir el Programa Municipal de Desarrollo Urbano,sí,68
 pg_actualizar_2040,programa,OCR,68,53,Actualizar el Plan de Desarrollo Municipal visión 2040,sí,68

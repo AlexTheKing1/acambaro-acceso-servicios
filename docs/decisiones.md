@@ -251,6 +251,7 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 
 ### D39 · 2026-10-23 · Parácuaro: secundaria
 - **Decisión**: la secundaria que atiende a Parácuaro es la **Escuela Secundaria Técnica Núm. 24** (clave 11DST0024Y), en la carretera Acámbaro–Parácuaro km 9, fuera del pueblo. Redacción: "no hay secundaria dentro de la localidad".
+- **Nota de la fase 8**: ver D68 (ubicación verificada; en los textos públicos ya no se dice cuál de las dos secundarias cercanas "atiende" a Parácuaro).
 - **Comprobación** (V34): es la misma que calculó la fase 3. Está a 4.2 km en línea recta del centro de Parácuaro (5.5 km estimados por camino, mediana). Para la mitad norte del pueblo, la Telesecundaria 847 de La Concepción queda a una distancia casi igual.
 - **Quién**: Alejandro.
 
@@ -438,4 +439,27 @@ Formato: fecha · decisión · opciones consideradas · quién decidió · por q
 
 ### D67 · 2026-11-13 · Superficie construida por habitante 2000 y 2005: versión 1.1
 - **Decisión**: no se calcula ahora. Queda como pendiente de la versión 1.1 (anotado en `CLAUDE.md`). Responde a la propuesta de D63.
+- **Quién**: Alejandro.
+
+---
+
+## Fase 8 — Aplicar la revisión final (2026-11-20)
+
+### D68 · 2026-11-20 · Parácuaro: ubicación de la Secundaria Técnica 24 y redacción única
+- **Verificación de Alejandro** (Google Maps): la Esc. Sec. Téc. 24 está en 20.116199, −100.734521, junto a Jaral del Refugio. Desde el centro de Parácuaro mide 4.34 km en línea recta (herramienta "Medir distancia") y unos 4.9 km por carretera.
+- **Comprobación** (V61): es la misma escuela del catálogo SEP (11DST0024Y, activa), cuyo punto está a 54 m del de Alejandro. Desde el punto ITER de Parácuaro: 4.28 km en línea recta; el método estimaba 5.69 km (× 1.33). El factor sobreestimó el recorrido en 0.8 km (16 %); el factor real de esa ruta es 1.15.
+- **D39 no estaba mal**: "carretera Acámbaro–Parácuaro km 9" es el domicilio que da el propio catálogo SEP. La escuela está a unos 9 km del centro de Acámbaro, entre Acámbaro y Parácuaro, en el tramo que el Plan Municipal 2006 (p. 64) llama "carretera Parácuaro- El Jaral". Las dos descripciones nombran el mismo lugar: se retira la "diferencia de ubicación" del contraste.
+- **Redacción única** (Alejandro): "Parácuaro no tiene secundaria dentro del pueblo. Las dos más cercanas, la Secundaria Técnica 24 (junto a Jaral del Refugio) y la Telesecundaria 847 de La Concepción, están a unos 4.3 km en línea recta. La ST 24 está a unos 4.9 km por carretera (verificado en Google Maps)." Se nombran las dos porque la Telesecundaria 847 queda a la misma distancia en línea recta (4.25 km). No se dice cuál atiende al pueblo; esa parte de D39 ya no se usa en los textos públicos. Se quitan las cifras 5.4, 5.5 y 5.6 km de los textos; las tablas (`polos_desarrollo.csv`, `localidades_2500.csv`) siguen dando la estimación del método.
+- **Límite nuevo** (`docs/metodo.md`, límite 20): en este caso el factor 1.33 sobreestimó el recorrido.
+- **Quién**: Alejandro (verificación y redacción); Claude (comprobación).
+
+### D69 · 2026-11-20 · Titular de salud: el grupo que depende de las unidades abiertas (reemplaza el titular de D64)
+- **Decisión**: el titular de salud es el grupo que depende de las unidades abiertas a toda la población: personas sin afiliación a servicios de salud (PSINDER), afiliadas al INSABI / Seguro Popular (PDER_SEGP) y afiliadas al IMSS-Bienestar (PDER_IMSSB), según la clasificación del Censo 2020. Ninguna puede usar las clínicas del IMSS ordinario ni del ISSSTE. Se reporta la estimación (D10), el piso seguro y los tres umbrales, para la ciudad, Irámuco, Parácuaro, Chupícuaro y lo rural.
+- **Por qué**: la revisión final (fase 7) mostró que el titular anterior (7 039 sin afiliación) dejaba fuera a 23 295 personas del INSABI / Seguro Popular que dependen de las mismas 4 unidades.
+- **Resultado** (V60), ciudad, umbral principal: 20 147 personas del grupo viven lejos (piso 19 879), el 57.7 % de las 34 889 del grupo (72 / 58 / 27 % con los tres umbrales). Subgrupo sin afiliación: 7 039 personas (piso 6 908; 61 % de las sin afiliación). Comparaciones, sobre toda la ciudad: 32 660 personas lejos de salud abierta (58 % de la población total) y 12 205 de cualquier unidad pública (22 %).
+- **Redacción** (Alejandro, 2026-11-20): el titular se dice primero en personas ("unas 20 100 personas que dependen de las unidades abiertas viven lejos de una") y el porcentaje después, aclarando de qué total es, para no confundirlo con el 58 % de toda la población.
+- **IMSS-Bienestar**: se incluye por decisión de Alejandro (152 personas en la ciudad).
+- **Cómo se calcula**: cada componente se estima por AGEB con su propio "*" y el grupo es la suma (`DEP_ABIERTA` en `27_salud_abierta.py`). No es una columna del censo.
+- **Cuidados que se declaran**: es la clasificación de 2020 (el INSABI ya no existe); el censo permite varias afiliaciones (al menos 830 personas en la ciudad tienen más de una), así que parte del grupo puede tener también IMSS o ISSSTE.
+- **Sin cambio**: la tipología (D47) y el cruce con el índice socioeconómico siguen con la medida anterior (pendiente de la versión 1.1).
 - **Quién**: Alejandro.

@@ -4,11 +4,15 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 
 ## Archivos crudos (data/raw/, no versionados)
 
-| Fuente | Archivo | MB | Contenido del zip |
+| Fuente | Archivo | MB | Contenido |
 |---|---|---|---|
 | censo2020_ageb_mza | ageb_mza_urbana_11_cpv2020_csv.zip | 10.4 | 3 archivos; datos: conjunto_de_datos_ageb_urbana_11_cpv2020.csv, diccionario_datos_ageb_urbana_11_cpv2020.csv |
 | iter2020 | iter_11_cpv2020_csv.zip | 1.9 | 4 archivos; datos: tam_loc.csv.csv, conjunto_de_datos_iter_11CSV20.csv, diccionario_datos_iter_11CSV20.csv |
 | censo2010_ageb_mza | resageburb_11_2010_csv.zip | 6.5 | 3 archivos; datos: resultados_ageb_urbana_11_cpv2010.csv, fd_resultados_ageb_urbana_cpv2010.csv |
+| iter_nacional | iter_00_cpv2020_csv.zip | 36.6 | 4 archivos; datos: tam_loc.csv.csv, conjunto_de_datos_iter_00CSV20.csv, diccionario_datos_iter_00CSV20.csv |
+| iter_nacional | iter_nal_2010_csv.zip | 24.5 | 4 archivos; datos: tam_loc.csv, iter_00_cpv2010.csv, fd_iter_cpv2010.csv |
+| iter2000 | cgpv2000_iter_11_csv.zip | 1.0 | 3 archivos; datos: cgpv2000_iter_11.csv, fd_cgpv2000_iter.csv |
+| iter2005 | cpv2005_iter_11_csv.zip | 0.9 | 3 archivos; datos: cpv2005_iter_11.csv, fd_cpv2005_iter.csv |
 | iter2010 | iter_11_2010_csv.zip | 1.3 | 4 archivos; datos: tam_loc.csv, iter_11_cpv2010.csv, fd_iter_cpv2010.csv |
 | mg2010_acambaro | 702825585853_s.zip | 0.7 | 108 archivos; datos: 110020027A.shp, 110020027CA.shp, 110020027E.shp, 110020027L.shp … (+23) |
 | mg2010_acambaro | 702825561291_s.zip | 1.4 | 1401 archivos; datos: 110020176E.shp, 110020176L.shp, 110020176M.shp, 110020176SIA.shp … (+463) |
@@ -20,6 +24,7 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | denue | denue_11_csv.zip | 28.0 | 3 archivos; datos: denue_diccionario_de_datos.csv, denue_inegi_11_.csv |
 | denue | denue_16_csv.zip | 26.9 | 3 archivos; datos: denue_diccionario_de_datos.csv, denue_inegi_16_.csv |
 | denue | denue_22_csv.zip | 10.4 | 3 archivos; datos: denue_diccionario_de_datos.csv, denue_inegi_22_.csv |
+| asentamientos | asentamientos_11_002.json | 0.0 | archivo JSON (no es ZIP) |
 | ghsl_built_s | GHS_BUILT_S_E1975_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 7.5 | 2 archivos; datos: GHS_BUILT_S_E1975_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
 | ghsl_built_s | GHS_BUILT_S_E1980_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 8.3 | 2 archivos; datos: GHS_BUILT_S_E1980_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
 | ghsl_built_s | GHS_BUILT_S_E1985_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 9.0 | 2 archivos; datos: GHS_BUILT_S_E1985_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
@@ -30,11 +35,27 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | ghsl_built_s | GHS_BUILT_S_E2010_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 12.4 | 2 archivos; datos: GHS_BUILT_S_E2010_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
 | ghsl_built_s | GHS_BUILT_S_E2015_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 13.8 | 2 archivos; datos: GHS_BUILT_S_E2015_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
 | ghsl_built_s | GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C9.zip | 14.9 | 2 archivos; datos: GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C9.tif |
+| clues | ESTABLECIMIENTO_SALUD_202608.xlsx | 26.5 | archivo XLSX (no es ZIP) |
+| sep_escuelas | cct11.csv | 15.8 | archivo CSV (no es ZIP) |
+| sep_escuelas | cct16.csv | 19.6 | archivo CSV (no es ZIP) |
+| planes | plan_municipal_desarrollo_2030.pdf | 1.5 | archivo PDF (no es ZIP) |
+| planes | prot_subregion10_2014.pdf | 2.7 | archivo PDF (no es ZIP) |
+| planes | plan_municipal_desarrollo_2040.pdf | 19.7 | archivo PDF (no es ZIP) |
+| planes | programa_gobierno_2024_2027.pdf | 13.2 | archivo PDF (no es ZIP) |
+| planes | plan_municipal_desarrollo_2040_ocr.txt | 0.1 | archivo TXT (no es ZIP) |
+| planes | programa_gobierno_2024_2027_ocr.txt | 0.2 | archivo TXT (no es ZIP) |
+| verificacion | verificacion_zonas.csv | 0.0 | archivo CSV (no es ZIP) |
+| verificacion | verificacion_servicios.csv | 0.0 | archivo CSV (no es ZIP) |
+| verificacion | verificacion_zonas_ghsl.csv | 0.0 | archivo CSV (no es ZIP) |
 
 ## Capas geográficas recortadas a Acámbaro (data/processed/*.gpkg)
 
 | Archivo | Capa | Registros | Geometría | Sistema de coordenadas | Columnas clave |
 |---|---|---|---|---|---|
+| acceso_cuadras.gpkg | cuadras | 1658 | Unknown | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, CVE_AGEB, POBTOT |
+| cuadras_antiguedad.gpkg | cuadras | 1658 | Unknown | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, CVE_AGEB, POBTOT, VIVTOT |
+| ghsl_cambio_2010_2020.gpkg | celdas | 2650 | Polygon | Mexico ITRF2008 / LCC (EPSG:6372) |  |
+| ghsl_cambio_2010_2020.gpkg | zonas | 78 | MultiPolygon | Mexico ITRF2008 / LCC (EPSG:6372) |  |
 | localidades2020.gpkg | localidades | 212 | Point | WGS 84 (EPSG:4326) | CVEGEO, LOC, NOM_LOC, POBTOT, VIVTOT |
 | manzanas2020_poblacion.gpkg | manzanas | 1620 | Polygon | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, CVE_AGEB, CVE_MZA, AMBITO, TIPOMZA, NOM_LOC, POBTOT |
 | manzanas2020_poblacion.gpkg | caserio_disperso | 32 | MultiPoint | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, CVE_AGEB, CVE_MZA, TIPOMZA, AMBITO, NOM_LOC, POBTOT |
@@ -88,21 +109,72 @@ Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/f
 | mg_eic2025_acambaro.gpkg | servicios_lineas | 1413 | LineString | MEXICO_ITRF_2008_LCC | CVEGEO, CVE_LOC, NOMSERV, TIPO, AMBITO |
 | mg_eic2025_servicios_buffer10km.gpkg | puntos | 1897 | Point | Mexico ITRF2008 / LCC (EPSG:6372) | CVEGEO, CVE_LOC, CVE_AGEB, CVE_MZA, NOMSERV, TIPO, AMBITO |
 | mg_eic2025_servicios_buffer10km.gpkg | areas | 829 | MultiPolygon | Mexico ITRF2008 / LCC (EPSG:6372) | CVEGEO, CVE_LOC, NOMSERV, TIPO, AMBITO |
+| red_peatonal.gpkg | tramos | 25484 | LineString | MEXICO_ITRF_2008_LCC | longitud, CVE_LOC |
+| red_peatonal.gpkg | uniones | 455 | LineString | MEXICO_ITRF_2008_LCC |  |
 | servicios.gpkg | registros | 3606 | Point | Mexico ITRF2008 / LCC (EPSG:6372) | codigo_act |
 | servicios.gpkg | sedes | 3308 | Point | Mexico ITRF2008 / LCC (EPSG:6372) |  |
+| servicios_fase3.gpkg | sedes | 3586 | Point | Mexico ITRF2008 / LCC (EPSG:6372) |  |
+| servicios_fase3.gpkg | registros_sep_clues | 987 | Point | Mexico ITRF2008 / LCC (EPSG:6372) |  |
+| servicios_fase4.gpkg | sedes | 3586 | Point | Mexico ITRF2008 / LCC (EPSG:6372) |  |
 
 ## Tablas recortadas a Acámbaro (data/processed/*.csv)
 
 | Archivo | Filas | Columnas | Columnas clave |
 |---|---|---|---|
+| acceso_cuadras.csv | 1658 | 54 | CVEGEO, CVE_LOC, CVE_AGEB, POBTOT |
+| acceso_localidades.csv | 208 | 52 | CVEGEO, LOC, NOM_LOC, POBTOT |
+| acceso_resumen_por_localidad.csv | 1365 | 17 |  |
+| acceso_salud_abierta.csv | 1866 | 16 | CVEGEO, CVE_LOC, CVE_AGEB, POBTOT |
+| acceso_sensibilidad.csv | 126 | 8 |  |
 | censo2010_mza_acambaro.csv | 1465 | 198 | LOC, NOM_LOC, AGEB, MZA, POBTOT, VIVTOT |
 | censo2020_mza_acambaro.csv | 1783 | 230 | LOC, NOM_LOC, AGEB, MZA, POBTOT, VIVTOT |
+| clues_buffer10km.csv | 173 | 64 | LATITUD, LONGITUD |
+| colonias_catalogo.csv | 147 | 8 |  |
+| colonias_cuadras.csv | 1620 | 9 | CVEGEO, CVE_LOC, POBTOT |
+| comparacion_regional.csv | 16 | 28 |  |
+| conteo_servicios_por_localidad.csv | 86 | 20 | NOM_LOC |
+| contexto_ageb.csv | 126 | 11 |  |
+| contexto_localidades.csv | 212 | 11 |  |
+| crecimiento_acceso.csv | 252 | 17 |  |
+| crecimiento_acceso_periferia.csv | 315 | 13 |  |
+| crecimiento_acceso_por_anillo.csv | 903 | 18 |  |
+| crecimiento_viviendas.csv | 339 | 25 |  |
+| crecimiento_viviendas_2010_2020.csv | 286 | 38 |  |
+| cuadras_antiguedad.csv | 1658 | 23 | CVEGEO, CVE_LOC, CVE_AGEB, POBTOT, VIVTOT |
 | denue_acambaro_buffer10km.csv | 16142 | 43 | codigo_act, nombre_act, per_ocu, latitud, longitud, fecha_alta |
 | eic2025_acambaro.csv | 10 | 349 | CVEGEO, CVE_LOC, NOM_LOC, ESTIMADOR, POBTOT |
+| ghsl_dentro_fuera_cuadras.csv | 4 | 13 |  |
+| ghsl_sectores.csv | 76 | 9 |  |
+| ghsl_serie.csv | 51 | 11 |  |
+| ghsl_sin_cuadras_sensibilidad.csv | 20 | 6 |  |
+| ghsl_zonas_sin_cuadras.csv | 78 | 14 |  |
+| iramuco_serie.csv | 5 | 9 | POBTOT, VIVTOT |
 | iter2010_acambaro.csv | 217 | 200 | LOC, NOM_LOC, LONGITUD, LATITUD, POBTOT, VIVTOT |
 | iter2020_acambaro.csv | 215 | 286 | LOC, NOM_LOC, LONGITUD, LATITUD, POBTOT, VIVTOT |
 | localidades2020.csv | 212 | 9 | CVEGEO, LOC, NOM_LOC, POBTOT, VIVTOT |
+| localidades_2500.csv | 4 | 15 |  |
+| nse_acceso.csv | 45 | 13 |  |
+| nse_ageb.csv | 53 | 24 | LOC, AGEB, POBTOT, VIVTOT |
+| nse_localidades.csv | 93 | 19 | LOC, NOM_LOC, POBTOT, VIVTOT |
+| polos_desarrollo.csv | 8 | 37 |  |
+| proyecciones_vs_censo.csv | 22 | 12 |  |
+| salud_abierta_resumen.csv | 225 | 13 |  |
+| salud_clasificacion_instituciones.csv | 78 | 16 |  |
+| sensibilidad_factor_rural.csv | 72 | 8 |  |
+| sep_escuelas_buffer10km.csv | 1620 | 78 |  |
+| servicios_junto_carretera.csv | 307 | 17 |  |
 | servicios_sedes.csv | 3308 | 21 |  |
+| servicios_sedes_fase3.csv | 3586 | 31 |  |
+| servicios_sedes_fase4.csv | 3586 | 38 |  |
+| tipologia_ageb.csv | 126 | 23 |  |
+| tipologia_sensibilidad.csv | 7 | 10 |  |
+| vaciamiento_correlaciones.csv | 54 | 7 |  |
+| vaciamiento_cuartiles.csv | 12 | 12 |  |
+| vaciamiento_eic2025.csv | 8 | 7 |  |
+| vaciamiento_unidades.csv | 334 | 17 | POBTOT, VIVTOT |
+| verificacion_ghsl_resultado.csv | 20 | 12 |  |
+| verificacion_zonas_resultado.csv | 28 | 16 |  |
+| zonas_2010_2020_clase.csv | 150 | 20 |  |
 
 ## GHS-BUILT-S R2023A dentro del municipio (solo años observados)
 

@@ -53,8 +53,8 @@ Población del Censo 2020. Las cifras por grupo de edad son estimaciones (D10). 
 | Mercado o supermercado | **100 % — no hay mercado ni supermercado registrado; puede existir un tianguis que ninguna fuente captura** | 16 % | 20 % |
 | Tienda básica | 2 % | 4 % | 1 % |
 
-- **Parácuaro**: la secundaria que lo atiende es la Escuela Secundaria Técnica Núm. 24, en la carretera Acámbaro–Parácuaro km 9. Está a 4.2 km en línea recta del centro del pueblo, unos 5.5 km por camino. Es la misma que calculó la fase 3. Para la mitad norte del pueblo, la Telesecundaria 847 de La Concepción queda a una distancia casi igual.
-- **Irámuco**: el mercado registrado más cercano es el Mercado Revolución de Santa Ana Maya (Michoacán), a 13–18 km.
+- **Parácuaro**: la secundaria que lo atiende es la Escuela Secundaria Técnica Núm. 24, en la carretera Acámbaro–Parácuaro km 9. Está a 4.2 km en línea recta del centro del pueblo, unos 5.5 km por camino. Es la misma que calculó la fase 3. Para la mitad norte del pueblo, la Telesecundaria 847 de La Concepción queda a una distancia casi igual. **Corregido en la fase 8 (D68):** Parácuaro no tiene secundaria dentro del pueblo. Las dos más cercanas, la Secundaria Técnica 24 (junto a Jaral del Refugio) y la Telesecundaria 847 de La Concepción, están a unos 4.3 km en línea recta. La ST 24 está a unos 4.9 km por carretera (verificado en Google Maps). Los "5.5 km" eran línea recta × 1.33.
+- **Irámuco**: el mercado registrado más cercano es el Mercado Revolución de Santa Ana Maya (Michoacán), a 13–18 km estimados (línea recta × 1.33; 11.4 km en línea recta desde el centro).
 
 ### Localidades rurales (208 localidades, 39 083 habitantes)
 
@@ -152,4 +152,4 @@ Ojo: en tu verificación, dos de ellas salieron "no" ("Centro Médico la Soledad
 ## Algo que salió mal
 
 - Al recalcular, el factor de rodeo se recalibró solo, a 1.349, y movió entre 1 y 6 m algunas distancias. La causa fue la reubicación del CECyTE: los recorridos desde el norte de la ciudad hacia el sur tienen más rodeo. Como tus umbrales se derivan de 1.33, el factor se dejó fijo en 1.33 y el 1.349 se reporta como chequeo.
-- En la fase 3 escribí que la Secundaria Técnica 24 estaba "a ~4 km" de Parácuaro. Era la distancia en línea recta; por camino son unos 5.5 km.
+- En la fase 3 escribí que la Secundaria Técnica 24 estaba "a ~4 km" de Parácuaro. Era la distancia en línea recta; por camino estimado (× 1.33) eran unos 5.5 km. En la fase 8 Alejandro midió en Google Maps 4.9 km por carretera (D68).

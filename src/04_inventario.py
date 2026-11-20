@@ -36,8 +36,14 @@ def main():
     L = ["# Inventario de datos", "",
          "Generado por `src/04_inventario.py`. Versiones y fechas de publicación: `docs/fuentes.md`.", "",
          "## Archivos crudos (data/raw/, no versionados)", "",
-         "| Fuente | Archivo | MB | Contenido del zip |", "|---|---|---|---|"]
+         "| Fuente | Archivo | MB | Contenido |", "|---|---|---|---|"]
     for _, r in man.iterrows():
+        # Desde la fase 2 el manifiesto también tiene archivos que no son ZIP
+        # (CSV, JSON, XLSX, PDF, TXT del release): se listan sin abrirlos (V62).
+        if not str(r.archivo).lower().endswith(".zip"):
+            tipo = Path(str(r.archivo)).suffix.lstrip(".").upper() or "sin extensión"
+            L.append(f"| {r.fuente} | {r.archivo} | {r.bytes / 1e6:.1f} | archivo {tipo} (no es ZIP) |")
+            continue
         nombres = [n for n in zipfile.ZipFile(RAW / r.fuente / r.archivo).namelist() if not n.endswith("/")]
         datos = sorted((n.split("/")[-1] for n in nombres if n.lower().endswith((".csv", ".shp", ".tif"))),
                        key=lambda n: not n.lower().endswith((".shp", ".tif")))
