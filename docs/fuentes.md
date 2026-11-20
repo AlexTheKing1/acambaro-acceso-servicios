@@ -126,3 +126,12 @@ No están en el release ni en el repositorio. Se citan con las páginas que dio 
 | Texto OCR del Plan 2040 | Subido por Alejandro; trae los encabezados "PAGINA 106…186" del Periódico Oficial | `.../releases/download/datos-crudos/plan_municipal_desarrollo_2040_ocr.txt` | Verificación de citas |
 | Programa de Gobierno Municipal 2024–2027 de Acámbaro | Aprobado el 23/07/2025; Periódico Oficial núm. 173, 2.ª parte, 29/08/2025, p. 18–97. Escaneo de 82 páginas (página impresa = página del PDF + 15) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027.pdf` | Contraste (D65) |
 | Texto OCR del Programa de Gobierno | Subido por Alejandro; encabezados "PÁGINA N" (dobles en algunas páginas de tablas) | `.../releases/download/datos-crudos/programa_gobierno_2024_2027_ocr.txt` | Verificación de citas |
+
+## Fase 8 (2026-11-20)
+
+| Dato | Versión / fecha | Dónde | Uso |
+|---|---|---|---|
+| Ubicación y distancia de la Esc. Sec. Téc. 24 (Google Maps) | Verificación de Alejandro, fase 8: 20.116199, −100.734521; 4.34 km en línea recta y unos 4.9 km por carretera desde el centro de Parácuaro | Google Maps ("Medir distancia" y ruta en auto) | D68 |
+| Ficha municipal de Acámbaro del IPLANEG | Consultada por Alejandro el 2026-11-12: el PMDUOET no aparece | URL no registrada (pendiente de Alejandro) | Hallazgo 6 |
+| Encuesta Intercensal 2015, población del municipio (112 125) | Citada por el Programa de Gobierno 2024–2027, p. 41 | No se bajó de INEGI; sin cotejar | Hallazgo 5 |
+
