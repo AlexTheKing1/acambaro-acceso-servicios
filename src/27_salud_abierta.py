@@ -12,6 +12,11 @@ Se usa la misma red, los mismos orígenes y el mismo umbral de salud que
 11_accesibilidad.py (no se cambia nada de lo anterior). Sensibilidad: sin UMR.
 
 Población: total y sin afiliación a servicios de salud (PSINDER, Censo 2020).
+Fase 8 (D69): también afiliados al INSABI / Seguro Popular (PDER_SEGP) y al
+IMSS-Bienestar (PDER_IMSSB), y el grupo que depende de las unidades abiertas
+(DEP_ABIERTA = PSINDER + PDER_SEGP + PDER_IMSSB). DEP_ABIERTA no es una columna
+del censo: se calcula sumando, para cada medida, la estimación, el mínimo visible
+y el total de sus tres componentes (cada componente con su propio "*").
 Ciudad: método D10 por AGEB (total publicado de la AGEB × proporción de su
 población en cuadras lejanas) con el mínimo visible por cuadra al lado. Rural:
 ITER por localidad; lo oculto ("*") se cuantifica.
@@ -48,7 +53,13 @@ URBANAS, FACTOR, SNAP_MAX = acc11.URBANAS, acc11.FACTOR_FIJO, acc11.SNAP_MAX
 UMB_C = acc11.UMBRALES_CIUDAD["salud_publica"]
 UMB_R = acc11.UMBRALES_RURAL["salud_publica"]
 NIVELES = acc11.NIVELES
-GRUPOS = {"POBTOT": "Población total", "PSINDER": "Sin afiliación a servicios de salud"}
+GRUPOS = {"POBTOT": "Población total", "PSINDER": "Sin afiliación a servicios de salud",
+          "PDER_SEGP": "Afiliada al INSABI / Seguro Popular",
+          "PDER_IMSSB": "Afiliada al IMSS-Bienestar"}
+# Grupo derivado (D69): suma de componentes, cada uno con su propio "*"
+DERIVADOS = {"DEP_ABIERTA": ("Depende de las unidades abiertas (sin afiliación + INSABI/Seguro Popular + IMSS-Bienestar)",
+                             ["PSINDER", "PDER_SEGP", "PDER_IMSSB"])}
+AFILIACIONES = ["PDER_IMSS", "PDER_ISTE", "PDER_ISTEE", "PAFIL_PDOM", "PDER_SEGP", "PDER_IMSSB", "PAFIL_IPRIV", "PAFIL_OTRAI"]
 
 
 # --- Clasificación (D58) --------------------------------------------------------------
@@ -73,6 +84,24 @@ def clasificar(fila):
     if any(k in nom for k in ("CENTRO DE SALUD", "UMAPS")):
         return "abierta", "por nombre: centro de salud"
     return "sin_clasificar", "sin CLUES ni nombre reconocible"
+
+
+def agregar_derivados(filas, localidad):
+    """Agrega las filas de DERIVADOS sumando las de sus componentes (misma medida, umbral y localidad)."""
+    ult = {f["variable"]: f for f in filas[::-1] if f["localidad"] == localidad
+           and f["medida"] == filas[-1]["medida"] and f["umbral"] == filas[-1]["umbral"]}
+    for var, (gnom, comps) in DERIVADOS.items():
+        base = ult[comps[0]]
+        est = sum(ult[c]["_est"] for c in comps)
+        vis = sum(ult[c]["_vis"] for c in comps)
+        tot = sum(ult[c]["_tot"] for c in comps)
+        f = {k: base[k] for k in ("medida", "umbral", "umbral_m", "localidad", "escala")}
+        f.update({"grupo": gnom, "variable": var, "pob_lejos": round(est), "pob_lejos_minimo_visible": round(vis),
+                  "pob_total": round(tot), "pct_lejos": round(100 * est / tot, 1) if tot else None,
+                  "_est": est, "_vis": vis, "_tot": tot})
+        if "localidades_lejos" in base:
+            f["localidades_lejos"] = base["localidades_lejos"]
+        filas.append(f)
 
 
 def main():
@@ -128,10 +157,13 @@ def main():
     cu = gpd.GeoDataFrame(cu, geometry="geometry", crs=crs)
     cu["localidad"] = cu.CVE_LOC.map(URBANAS)
     # PSINDER por cuadra (con "*"): solo para las cuadras 2020 y el caserío (CVEGEO único en 2020)
-    mza_c, ageb_c, loc_c, mun_c = base03.censo_manzanas("censo2020_mza_acambaro.csv", list(GRUPOS))
-    ps = mza_c.drop_duplicates("CVEGEO").set_index("CVEGEO").PSINDER
+    mza_c, ageb_c, loc_c, mun_c = base03.censo_manzanas("censo2020_mza_acambaro.csv",
+                                                        list(GRUPOS) + AFILIACIONES + ["PDER_SS"])
     es2020 = cu.origen != "cuadra nueva posterior a 2020"
-    cu["PSINDER"] = np.where(es2020, cu.CVEGEO.map(ps), np.nan)
+    unico = mza_c.drop_duplicates("CVEGEO").set_index("CVEGEO")
+    for var in GRUPOS:
+        if var != "POBTOT":
+            cu[var] = np.where(es2020, cu.CVEGEO.map(unico[var]), np.nan)
 
     comp_loc = {}
     for loc in URBANAS:
@@ -173,9 +205,9 @@ def main():
 
     # --- Rural ------------------------------------------------------------------------
     loc = gpd.read_file(P / "localidades2020.gpkg")
-    iter20 = base03.numeros(pd.read_csv(P / "iter2020_acambaro.csv", dtype=str), ["POBTOT", "PSINDER"])
-    rur = loc[~loc.LOC.isin(URBANAS)].drop(columns="POBTOT").merge(iter20[["LOC", "POBTOT", "PSINDER"]], on="LOC", how="left").to_crs(crs)
-    tr = rur[["CVEGEO", "LOC", "NOM_LOC", "POBTOT", "PSINDER"]].copy()
+    iter20 = base03.numeros(pd.read_csv(P / "iter2020_acambaro.csv", dtype=str), list(GRUPOS))
+    rur = loc[~loc.LOC.isin(URBANAS)].drop(columns="POBTOT").merge(iter20[["LOC"] + list(GRUPOS)], on="LOC", how="left").to_crs(crs)
+    tr = rur[["CVEGEO", "LOC", "NOM_LOC"] + list(GRUPOS)].copy()
     for nom, s in variantes.items():
         j = gpd.sjoin_nearest(rur[["geometry"]], s[["id_sede", "geometry"]], how="left", distance_col="dr")
         j = j[~j.index.duplicated()]
@@ -186,7 +218,7 @@ def main():
 
     # --- Población lejos ------------------------------------------------------------------
     ageb_c["CVE_AGEB"] = ageb_c.AGEB
-    tc = tabla.join(cu[["POBTOT", "PSINDER"]])
+    tc = tabla.join(cu[list(GRUPOS)])
     filas = []
     for nom in variantes:
         for nivel, uc, ur in zip(NIVELES, UMB_C, UMB_R):
@@ -208,7 +240,9 @@ def main():
                     filas.append({"medida": nom, "umbral": nivel, "umbral_m": uc, "localidad": nombre,
                                   "escala": "ciudad (a pie, por calles)", "grupo": gnom, "variable": var,
                                   "pob_lejos": round(est), "pob_lejos_minimo_visible": round(vis), "pob_total": round(tot),
-                                  "pct_lejos": round(100 * est / tot, 1) if tot else None})
+                                  "pct_lejos": round(100 * est / tot, 1) if tot else None,
+                                  "_est": est, "_vis": vis, "_tot": tot})
+                agregar_derivados(filas, nombre)
             lejos_r = tr[f"d_{nom}"] > ur
             for var, gnom in GRUPOS.items():
                 vis, tot = float(tr.loc[lejos_r, var].sum()), float(tr[var].sum())
@@ -216,8 +250,9 @@ def main():
                               "escala": "municipio (línea recta × factor)", "grupo": gnom, "variable": var,
                               "pob_lejos": round(vis), "pob_lejos_minimo_visible": round(vis), "pob_total": round(tot),
                               "pct_lejos": round(100 * vis / tot, 1) if tot else None,
-                              "localidades_lejos": int(lejos_r.sum())})
-    res = pd.DataFrame(filas)
+                              "localidades_lejos": int(lejos_r.sum()), "_est": vis, "_vis": vis, "_tot": tot})
+            agregar_derivados(filas, "Localidades rurales (208)")
+    res = pd.DataFrame(filas).drop(columns=["_est", "_vis", "_tot"])
     # Control: salud_publica / POBTOT igual que en acceso_resumen_por_localidad.csv
     ref_s = pd.read_csv(P / "acceso_resumen_por_localidad.csv")
     ref_s = ref_s[(ref_s.categoria == "salud_publica") & (ref_s.variable == "POBTOT")].set_index(["localidad", "umbral"]).pob_lejos
@@ -244,6 +279,23 @@ def main():
     v["psinder_oculto"]["iter_municipio"] = float(it_tot)
     v["psinder_oculto"]["iter_urbanas"] = float(it_urb)
     v["psinder_oculto"]["rural_oculto"] = float(it_tot - it_urb - tr.PSINDER.sum())
+
+    # D69: oculto de los componentes y afiliaciones múltiples
+    v["dependen_de_abiertas"] = {}
+    for clv, nombre in URBANAS.items():
+        lt = loc_c[loc_c.LOC == clv].iloc[0]
+        d = {"publicado_localidad": {k: float(lt[k]) for k in ["PSINDER", "PDER_SEGP", "PDER_IMSSB"]},
+             "suma_agebs_con_dato": {k: float(ageb_c[ageb_c.LOC == clv][k].sum()) for k in ["PSINDER", "PDER_SEGP", "PDER_IMSSB"]},
+             "agebs_ocultas": {k: int(ageb_c[ageb_c.LOC == clv][k].isna().sum()) for k in ["PSINDER", "PDER_SEGP", "PDER_IMSSB"]},
+             # Una persona puede tener varias afiliaciones: suma de afiliaciones − población afiliada
+             # (piso: si alguna afiliación está oculta en la localidad, la cuenta real es mayor)
+             "afiliaciones_repetidas_al_menos": float(pd.Series([lt[a] for a in AFILIACIONES]).sum() - lt["PDER_SS"]),
+             "afiliaciones_ocultas_en_la_localidad": [a for a in AFILIACIONES if pd.isna(lt[a])]}
+        d["grupo_publicado_localidad"] = sum(d["publicado_localidad"].values())
+        d["grupo_pct_poblacion"] = round(100 * d["grupo_publicado_localidad"] / float(lt["POBTOT"]), 1)
+        v["dependen_de_abiertas"][nombre] = d
+    v["dependen_de_abiertas"]["rural_visible"] = {k: float(tr[k].sum()) for k in ["PSINDER", "PDER_SEGP", "PDER_IMSSB"]}
+    v["dependen_de_abiertas"]["rural_localidades_con_asterisco"] = {k: int(tr[k].isna().sum()) for k in ["PSINDER", "PDER_SEGP", "PDER_IMSSB"]}
 
     # Salidas por cuadra / localidad
     out = pd.concat([tc.assign(escala="ciudad"),

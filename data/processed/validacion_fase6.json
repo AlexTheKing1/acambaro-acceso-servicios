@@ -76,6 +76,109 @@
    "iter_urbanas": 14321.0,
    "rural_oculto": 58.0
   },
+  "dependen_de_abiertas": {
+   "Acámbaro": {
+    "publicado_localidad": {
+     "PSINDER": 11515.0,
+     "PDER_SEGP": 23295.0,
+     "PDER_IMSSB": 152.0
+    },
+    "suma_agebs_con_dato": {
+     "PSINDER": 11479.0,
+     "PDER_SEGP": 23267.0,
+     "PDER_IMSSB": 143.0
+    },
+    "agebs_ocultas": {
+     "PSINDER": 19,
+     "PDER_SEGP": 12,
+     "PDER_IMSSB": 19
+    },
+    "afiliaciones_repetidas_al_menos": 830.0,
+    "afiliaciones_ocultas_en_la_localidad": [],
+    "grupo_publicado_localidad": 34962.0,
+    "grupo_pct_poblacion": 61.8
+   },
+   "Irámuco": {
+    "publicado_localidad": {
+     "PSINDER": 957.0,
+     "PDER_SEGP": 4875.0,
+     "PDER_IMSSB": 9.0
+    },
+    "suma_agebs_con_dato": {
+     "PSINDER": 950.0,
+     "PDER_SEGP": 4865.0,
+     "PDER_IMSSB": 7.0
+    },
+    "agebs_ocultas": {
+     "PSINDER": 6,
+     "PDER_SEGP": 2,
+     "PDER_IMSSB": 4
+    },
+    "afiliaciones_repetidas_al_menos": 3.0,
+    "afiliaciones_ocultas_en_la_localidad": [
+     "PAFIL_PDOM"
+    ],
+    "grupo_publicado_localidad": 5841.0,
+    "grupo_pct_poblacion": 93.1
+   },
+   "Parácuaro": {
+    "publicado_localidad": {
+     "PSINDER": 1093.0,
+     "PDER_SEGP": 2231.0,
+     "PDER_IMSSB": 8.0
+    },
+    "suma_agebs_con_dato": {
+     "PSINDER": 1085.0,
+     "PDER_SEGP": 2221.0,
+     "PDER_IMSSB": 5.0
+    },
+    "agebs_ocultas": {
+     "PSINDER": 6,
+     "PDER_SEGP": 3,
+     "PDER_IMSSB": 5
+    },
+    "afiliaciones_repetidas_al_menos": 11.0,
+    "afiliaciones_ocultas_en_la_localidad": [
+     "PAFIL_PDOM"
+    ],
+    "grupo_publicado_localidad": 3332.0,
+    "grupo_pct_poblacion": 80.1
+   },
+   "Chupícuaro (Nuevo Chupícuaro)": {
+    "publicado_localidad": {
+     "PSINDER": 756.0,
+     "PDER_SEGP": 1376.0,
+     "PDER_IMSSB": 15.0
+    },
+    "suma_agebs_con_dato": {
+     "PSINDER": 756.0,
+     "PDER_SEGP": 1376.0,
+     "PDER_IMSSB": 15.0
+    },
+    "agebs_ocultas": {
+     "PSINDER": 0,
+     "PDER_SEGP": 0,
+     "PDER_IMSSB": 0
+    },
+    "afiliaciones_repetidas_al_menos": 0.0,
+    "afiliaciones_ocultas_en_la_localidad": [
+     "PAFIL_PDOM",
+     "PAFIL_OTRAI"
+    ],
+    "grupo_publicado_localidad": 2147.0,
+    "grupo_pct_poblacion": 83.1
+   },
+   "rural_visible": {
+    "PSINDER": 8039.0,
+    "PDER_SEGP": 24650.0,
+    "PDER_IMSSB": 108.0
+   },
+   "rural_localidades_con_asterisco": {
+    "PSINDER": 67,
+    "PDER_SEGP": 67,
+    "PDER_IMSSB": 67
+   }
+  },
   "resumen_principal": {
    "Acámbaro | POBTOT | salud_publica": [
     12205,
@@ -85,6 +188,21 @@
    "Acámbaro | PSINDER | salud_publica": [
     2380,
     20.7,
+    0
+   ],
+   "Acámbaro | PDER_SEGP | salud_publica": [
+    5276,
+    22.7,
+    0
+   ],
+   "Acámbaro | PDER_IMSSB | salud_publica": [
+    41,
+    28.4,
+    0
+   ],
+   "Acámbaro | DEP_ABIERTA | salud_publica": [
+    7696,
+    22.1,
     0
    ],
    "Irámuco | POBTOT | salud_publica": [
@@ -97,6 +215,21 @@
     60.8,
     0
    ],
+   "Irámuco | PDER_SEGP | salud_publica": [
+    3178,
+    65.3,
+    0
+   ],
+   "Irámuco | PDER_IMSSB | salud_publica": [
+    6,
+    78.7,
+    0
+   ],
+   "Irámuco | DEP_ABIERTA | salud_publica": [
+    3761,
+    64.6,
+    0
+   ],
    "Parácuaro | POBTOT | salud_publica": [
     424,
     10.2,
@@ -107,6 +240,21 @@
     7.9,
     0
    ],
+   "Parácuaro | PDER_SEGP | salud_publica": [
+    253,
+    11.4,
+    0
+   ],
+   "Parácuaro | PDER_IMSSB | salud_publica": [
+    0,
+    0.3,
+    0
+   ],
+   "Parácuaro | DEP_ABIERTA | salud_publica": [
+    338,
+    10.2,
+    0
+   ],
    "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_publica": [
     137,
     5.3,
@@ -114,6 +262,21 @@
    ],
    "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_publica": [
     39,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_SEGP | salud_publica": [
+    72,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_IMSSB | salud_publica": [
+    1,
+    6.1,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | DEP_ABIERTA | salud_publica": [
+    112,
     5.2,
     0
    ],
@@ -127,6 +290,21 @@
     14.3,
     0
    ],
+   "Localidades rurales (208) | PDER_SEGP | salud_publica": [
+    4771,
+    19.4,
+    0
+   ],
+   "Localidades rurales (208) | PDER_IMSSB | salud_publica": [
+    24,
+    22.2,
+    0
+   ],
+   "Localidades rurales (208) | DEP_ABIERTA | salud_publica": [
+    5947,
+    18.1,
+    0
+   ],
    "Acámbaro | POBTOT | salud_abierta": [
     32660,
     57.7,
@@ -137,6 +315,21 @@
     61.3,
     4659
    ],
+   "Acámbaro | PDER_SEGP | salud_abierta": [
+    13041,
+    56.1,
+    7765
+   ],
+   "Acámbaro | PDER_IMSSB | salud_abierta": [
+    66,
+    46.3,
+    25
+   ],
+   "Acámbaro | DEP_ABIERTA | salud_abierta": [
+    20147,
+    57.7,
+    12451
+   ],
    "Irámuco | POBTOT | salud_abierta": [
     4043,
     64.4,
@@ -145,6 +338,21 @@
    "Irámuco | PSINDER | salud_abierta": [
     577,
     60.8,
+    0
+   ],
+   "Irámuco | PDER_SEGP | salud_abierta": [
+    3178,
+    65.3,
+    0
+   ],
+   "Irámuco | PDER_IMSSB | salud_abierta": [
+    6,
+    78.7,
+    0
+   ],
+   "Irámuco | DEP_ABIERTA | salud_abierta": [
+    3761,
+    64.6,
     0
    ],
    "Parácuaro | POBTOT | salud_abierta": [
@@ -157,6 +365,21 @@
     7.9,
     0
    ],
+   "Parácuaro | PDER_SEGP | salud_abierta": [
+    253,
+    11.4,
+    0
+   ],
+   "Parácuaro | PDER_IMSSB | salud_abierta": [
+    0,
+    0.3,
+    0
+   ],
+   "Parácuaro | DEP_ABIERTA | salud_abierta": [
+    338,
+    10.2,
+    0
+   ],
    "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_abierta": [
     137,
     5.3,
@@ -164,6 +387,21 @@
    ],
    "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_abierta": [
     39,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_SEGP | salud_abierta": [
+    72,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_IMSSB | salud_abierta": [
+    1,
+    6.1,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | DEP_ABIERTA | salud_abierta": [
+    112,
     5.2,
     0
    ],
@@ -177,6 +415,21 @@
     14.3,
     0
    ],
+   "Localidades rurales (208) | PDER_SEGP | salud_abierta": [
+    4771,
+    19.4,
+    0
+   ],
+   "Localidades rurales (208) | PDER_IMSSB | salud_abierta": [
+    24,
+    22.2,
+    0
+   ],
+   "Localidades rurales (208) | DEP_ABIERTA | salud_abierta": [
+    5947,
+    18.1,
+    0
+   ],
    "Acámbaro | POBTOT | salud_abierta_sin_umr": [
     32660,
     57.7,
@@ -187,6 +440,21 @@
     61.3,
     4659
    ],
+   "Acámbaro | PDER_SEGP | salud_abierta_sin_umr": [
+    13041,
+    56.1,
+    7765
+   ],
+   "Acámbaro | PDER_IMSSB | salud_abierta_sin_umr": [
+    66,
+    46.3,
+    25
+   ],
+   "Acámbaro | DEP_ABIERTA | salud_abierta_sin_umr": [
+    20147,
+    57.7,
+    12451
+   ],
    "Irámuco | POBTOT | salud_abierta_sin_umr": [
     4043,
     64.4,
@@ -195,6 +463,21 @@
    "Irámuco | PSINDER | salud_abierta_sin_umr": [
     577,
     60.8,
+    0
+   ],
+   "Irámuco | PDER_SEGP | salud_abierta_sin_umr": [
+    3178,
+    65.3,
+    0
+   ],
+   "Irámuco | PDER_IMSSB | salud_abierta_sin_umr": [
+    6,
+    78.7,
+    0
+   ],
+   "Irámuco | DEP_ABIERTA | salud_abierta_sin_umr": [
+    3761,
+    64.6,
     0
    ],
    "Parácuaro | POBTOT | salud_abierta_sin_umr": [
@@ -207,6 +490,21 @@
     7.9,
     0
    ],
+   "Parácuaro | PDER_SEGP | salud_abierta_sin_umr": [
+    253,
+    11.4,
+    0
+   ],
+   "Parácuaro | PDER_IMSSB | salud_abierta_sin_umr": [
+    0,
+    0.3,
+    0
+   ],
+   "Parácuaro | DEP_ABIERTA | salud_abierta_sin_umr": [
+    338,
+    10.2,
+    0
+   ],
    "Chupícuaro (Nuevo Chupícuaro) | POBTOT | salud_abierta_sin_umr": [
     137,
     5.3,
@@ -214,6 +512,21 @@
    ],
    "Chupícuaro (Nuevo Chupícuaro) | PSINDER | salud_abierta_sin_umr": [
     39,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_SEGP | salud_abierta_sin_umr": [
+    72,
+    5.2,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | PDER_IMSSB | salud_abierta_sin_umr": [
+    1,
+    6.1,
+    0
+   ],
+   "Chupícuaro (Nuevo Chupícuaro) | DEP_ABIERTA | salud_abierta_sin_umr": [
+    112,
     5.2,
     0
    ],
@@ -225,6 +538,21 @@
    "Localidades rurales (208) | PSINDER | salud_abierta_sin_umr": [
     1152,
     14.3,
+    0
+   ],
+   "Localidades rurales (208) | PDER_SEGP | salud_abierta_sin_umr": [
+    4771,
+    19.4,
+    0
+   ],
+   "Localidades rurales (208) | PDER_IMSSB | salud_abierta_sin_umr": [
+    24,
+    22.2,
+    0
+   ],
+   "Localidades rurales (208) | DEP_ABIERTA | salud_abierta_sin_umr": [
+    5947,
+    18.1,
     0
    ]
   },
