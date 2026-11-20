@@ -272,7 +272,7 @@ Se aplicó la revisión final independiente (`docs/revision_final.md`) con las d
 | 2 | Irámuco "la peor servida"; Parácuaro, secundaria "a unos 5.5 km" (o 5.6); "solo Chupícuaro cumple" | "La peor de las 4 urbanas", con la frase completa del tianguis; Parácuaro con la frase única, las dos escuelas a 4.3 km en línea recta y la ST 24 a 4.9 km por carretera (D68); polos: 1 cumple, 2 no, 4 no se pueden evaluar |
 | 3 | "Hay aulas suficientes en total, pero el 32 % vive lejos de una primaria" | 32 % (38 % solo públicas), con los tres umbrales; el superávit de aulas (subregión) pasa al hallazgo 6; indicio del índice dentro de la ciudad (−0.58) |
 | 4 | 24 % deshabitadas; Irámuco | Sin cambio de cifras; "en 2020" y el empate con Salvatierra |
-| 5 | "La ciudad superó en 2020 lo proyectado para 2030": concentración en la ciudad | "Se planeó para un municipio que crecería, y no creció": subregión, municipio (con la Intercensal 2015) y ciudad contra resto del municipio. Sin "concentración" |
+| 5 | Comparaba la ciudad en 2020 con la proyección del PROT para 2030 y lo leía como un cambio en el reparto de la población | "Se planeó para un municipio que crecería, y no creció": subregión, municipio (con la Intercensal 2015) y ciudad contra resto del municipio. Sin "concentración" |
 | 6 | "Tres prometen un ordenamiento que no se ha publicado" | "En julio de 2025 seguía en elaboración (p. 60) y no aparece en la ficha municipal del IPLANEG" |
 
 Además:
